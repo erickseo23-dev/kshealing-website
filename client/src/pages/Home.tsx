@@ -1,9 +1,9 @@
+import Navigation from "@/components/Navigation";
+import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Link } from "wouter";
-import { ArrowRight, Sparkles, Users, BookOpen, Zap } from "lucide-react";
-import Navigation from "@/components/Navigation";
-import Footer from "@/components/Footer";
+import { Sparkles, Heart, Zap, BookOpen, Users, ArrowRight } from "lucide-react";
 
 export default function Home() {
   return (
@@ -11,32 +11,31 @@ export default function Home() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="relative overflow-hidden py-20 md:py-32 bg-gradient-to-br from-background via-background to-primary/5">
-        {/* Decorative elements */}
-        <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <div className="absolute top-20 right-10 w-72 h-72 bg-primary/10 rounded-full blur-3xl"></div>
-          <div className="absolute bottom-0 left-10 w-96 h-96 bg-accent/5 rounded-full blur-3xl"></div>
+      <section className="relative py-24 md:py-40 bg-gradient-to-br from-primary via-primary/95 to-primary/90 text-white overflow-hidden">
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute top-20 right-20 w-72 h-72 bg-accent rounded-full mix-blend-multiply filter blur-3xl"></div>
+          <div className="absolute bottom-20 left-20 w-72 h-72 bg-secondary rounded-full mix-blend-multiply filter blur-3xl"></div>
         </div>
-
+        
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl mx-auto text-center">
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-6">
-              <Sparkles size={16} className="text-primary" />
-              <span className="text-sm font-medium text-primary">Por primera vez en la historia</span>
+            <div className="inline-block mb-6 px-4 py-2 rounded-full bg-accent/20 border border-accent/50">
+              <p className="text-accent font-medium text-sm">Por primera vez en la historia</p>
             </div>
-
-            <h1 className="font-display text-5xl md:text-7xl font-bold text-foreground mb-6 leading-tight">
-              Recuerda Quién Eres <span className="text-primary">Realmente</span>
+            
+            <h1 className="font-display text-5xl md:text-7xl font-bold mb-6 leading-tight">
+              Recuerda Quién Eres<br />
+              <span className="text-secondary">Realmente</span>
             </h1>
-
-            <p className="text-xl md:text-2xl text-muted-foreground mb-8 leading-relaxed font-serif">
+            
+            <p className="text-xl md:text-2xl text-white/90 mb-8 font-serif leading-relaxed">
               La Energía Crística Keiouvos Stharef te devuelve a tu verdadera naturaleza divina. Un sistema de sanación energética que transforma tu vida desde adentro.
             </p>
-
-            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+            
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/que-es-ks-healing">
                 <a>
-                  <Button size="lg" className="bg-primary hover:bg-primary/90 text-white gap-2">
+                  <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-primary gap-2">
                     Descubre KS Healing
                     <ArrowRight size={20} />
                   </Button>
@@ -44,78 +43,57 @@ export default function Home() {
               </Link>
               <Link href="/el-libro">
                 <a>
-                  <Button size="lg" variant="outline" className="gap-2">
+                  <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10 gap-2">
                     <BookOpen size={20} />
                     Leer el Libro
                   </Button>
                 </a>
               </Link>
             </div>
-
-            {/* Stats */}
-            <div className="grid grid-cols-3 gap-4 md:gap-8 pt-12 border-t border-border">
-              <div>
-                <div className="text-3xl md:text-4xl font-display font-bold text-primary mb-2">5000+</div>
-                <p className="text-sm text-muted-foreground">Practicantes Activos</p>
-              </div>
-              <div>
-                <div className="text-3xl md:text-4xl font-display font-bold text-primary mb-2">45+</div>
-                <p className="text-sm text-muted-foreground">Países</p>
-              </div>
-              <div>
-                <div className="text-3xl md:text-4xl font-display font-bold text-primary mb-2">17</div>
-                <p className="text-sm text-muted-foreground">Capítulos del Libro</p>
-              </div>
-            </div>
           </div>
         </div>
       </section>
 
-      {/* Features Section */}
+      {/* What is KS Healing */}
       <section className="py-20 md:py-32">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-4">
-              ¿Por Qué KS Healing?
+          <div className="max-w-3xl mx-auto mb-16">
+            <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-6 text-center">
+              ¿Qué es <span className="text-primary">KS Healing</span>?
             </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Un sistema integral de transformación que combina transmisión energética, educación espiritual y práctica consciente.
+            <p className="text-lg text-muted-foreground text-center leading-relaxed">
+              Un sistema de sanación energética que utiliza la Energía Crística Keiouvos Stharef para facilitar transformación profunda en los sistemas energéticos humanos.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
               {
-                icon: Zap,
-                title: "Transmisión Energética Viva",
-                description: "Energía intencionalizada que actúa en múltiples niveles de tu ser",
-              },
-              {
-                icon: Users,
-                title: "Guía Experto",
-                description: "Acompañamiento directo de YOHEV y facilitadores certificados",
-              },
-              {
                 icon: Sparkles,
-                title: "Transformación Comprobada",
-                description: "Miles de practicantes en transformación activa en todo el mundo",
+                title: "Experiencia Directa",
+                description: "Conecta con la Energía KS a través de ejercicios prácticos y transmisiones intencionales",
               },
               {
-                icon: BookOpen,
-                title: "Accesible para Todos",
-                description: "No requiere conocimientos previos, solo apertura y consciencia",
+                icon: Heart,
+                title: "Sanación Profunda",
+                description: "Transforma patrones emocionales y energéticos que limitan tu vida",
+              },
+              {
+                icon: Zap,
+                title: "Expansión de Consciencia",
+                description: "Accede a estados más profundos de presencia y claridad interna",
               },
             ].map((feature, idx) => {
               const Icon = feature.icon;
               return (
-                <Card key={idx} className="p-6 hover:shadow-lg transition-shadow border-border/50">
+                <Card key={idx} className="p-8 border-border/50 hover:shadow-lg transition-shadow">
                   <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
                     <Icon size={24} className="text-primary" />
                   </div>
-                  <h3 className="font-display text-lg font-bold text-foreground mb-2">
+                  <h3 className="font-display text-xl font-bold text-foreground mb-3">
                     {feature.title}
                   </h3>
-                  <p className="text-sm text-muted-foreground">
+                  <p className="text-muted-foreground">
                     {feature.description}
                   </p>
                 </Card>
@@ -125,29 +103,30 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-20 md:py-32 bg-gradient-to-r from-primary/10 to-accent/10 border-y border-border">
+      {/* About YOHEV */}
+      <section className="py-20 md:py-32 bg-primary/5">
         <div className="container mx-auto px-4">
-          <div className="max-w-2xl mx-auto text-center">
-            <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-6">
-              Comienza Tu Viaje de Transformación
-            </h2>
-            <p className="text-lg text-muted-foreground mb-8">
-              Si has sentido el llamado a leer esto, es porque ya existe en ti una resonancia con esta frecuencia. 
-              No necesitas ser perfecto. Solo necesitas estar abierto.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/sesiones">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center max-w-5xl mx-auto">
+            <div>
+              <div className="aspect-square rounded-2xl bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center">
+                <Users size={64} className="text-primary" />
+              </div>
+            </div>
+            <div>
+              <h2 className="font-display text-4xl font-bold text-foreground mb-6">
+                Conoce a <span className="text-primary">YOHEV</span>
+              </h2>
+              <p className="text-lg text-muted-foreground mb-4 leading-relaxed">
+                Dr. Erick Gurrola, conocido como YOHEV, es el maestro y fundador de KS Healing. Su viaje espiritual lo llevó a descubrir y canalizar la Energía Crística Keiouvos Stharef.
+              </p>
+              <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
+                Con más de dos décadas de experiencia en transformación espiritual, YOHEV ha dedicado su vida a ayudar a miles de personas a recordar su verdadera naturaleza divina.
+              </p>
+              <Link href="/sobre-yohev">
                 <a>
-                  <Button size="lg" className="bg-primary hover:bg-primary/90 text-white">
-                    Reservar una Sesión
-                  </Button>
-                </a>
-              </Link>
-              <Link href="/cursos">
-                <a>
-                  <Button size="lg" variant="outline">
-                    Ver Cursos
+                  <Button className="bg-primary hover:bg-primary/90 text-white gap-2">
+                    Conocer su Historia
+                    <ArrowRight size={20} />
                   </Button>
                 </a>
               </Link>
@@ -156,49 +135,80 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Testimonials Preview */}
+      {/* The Book */}
       <section className="py-20 md:py-32">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-4">
-              Historias de Transformación
+          <div className="max-w-4xl mx-auto">
+            <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-6 text-center">
+              El Libro: <span className="text-primary">Un Portal Vivo</span>
             </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Descubre cómo la Energía KS ha transformado vidas en todo el mundo
+            <p className="text-lg text-muted-foreground text-center mb-12 leading-relaxed">
+              Más que un libro. Un sistema integrado de narrativa, técnica, ejercicios prácticos y transmisión directa de Energía KS.
             </p>
-          </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {[
-              {
-                name: "María González",
-                location: "México",
-                quote: "La Energía KS cambió mi vida. Pasé de vivir en el miedo a vivir en la paz.",
-              },
-              {
-                name: "Juan Rodríguez",
-                location: "España",
-                quote: "Después de recibir KS Healing, mi perspectiva sobre la vida se transformó completamente.",
-              },
-              {
-                name: "Ana Martínez",
-                location: "Argentina",
-                quote: "Finalmente entiendo quién soy realmente. KS Healing me devolvió a mí misma.",
-              },
-            ].map((testimonial, idx) => (
-              <Card key={idx} className="p-6 border-border/50">
-                <div className="flex gap-1 mb-4">
-                  {[...Array(5)].map((_, i) => (
-                    <Sparkles key={i} size={16} className="text-accent fill-accent" />
-                  ))}
-                </div>
-                <p className="text-muted-foreground mb-4 italic">"{testimonial.quote}"</p>
-                <div>
-                  <p className="font-semibold text-foreground">{testimonial.name}</p>
-                  <p className="text-sm text-muted-foreground">{testimonial.location}</p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <Card className="p-8 border-border/50">
+                <h3 className="font-display text-2xl font-bold text-foreground mb-4">17 Capítulos</h3>
+                <p className="text-muted-foreground mb-6">
+                  Desde la historia personal de YOHEV hasta técnicas avanzadas de KS Healing, incluyendo 10 ejercicios prácticos con códigos QR.
+                </p>
+                <ul className="space-y-2 text-sm text-muted-foreground">
+                  <li>✓ Narrativa profunda y transformadora</li>
+                  <li>✓ Manual técnico completo</li>
+                  <li>✓ Ejercicios prácticos guiados</li>
+                  <li>✓ Códigos QR con transmisión directa</li>
+                </ul>
+              </Card>
+
+              <Card className="p-8 border-border/50 bg-primary/5">
+                <h3 className="font-display text-2xl font-bold text-foreground mb-4">Transmisión Viva</h3>
+                <p className="text-muted-foreground mb-6">
+                  Cada palabra está intencionalizada con Energía KS. Al leer, tu sistema energético entra en resonancia con una frecuencia de alta vibración.
+                </p>
+                <div className="flex flex-col gap-3">
+                  <Link href="/el-libro">
+                    <a>
+                      <Button className="w-full bg-primary hover:bg-primary/90 text-white">
+                        Explorar el Libro
+                      </Button>
+                    </a>
+                  </Link>
+                  <Button variant="outline" className="w-full">
+                    Descargar Introducción Gratis
+                  </Button>
                 </div>
               </Card>
-            ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="py-20 md:py-32 bg-gradient-to-r from-primary to-primary/80">
+        <div className="container mx-auto px-4 text-center text-white">
+          <h2 className="font-display text-4xl md:text-5xl font-bold mb-6">
+            Comienza Tu Transformación
+          </h2>
+          <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
+            Elige el camino que resuena con tu alma
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link href="/sesiones">
+              <a>
+                <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-primary gap-2">
+                  Sesión Privada
+                  <ArrowRight size={20} />
+                </Button>
+              </a>
+            </Link>
+            <Link href="/cursos">
+              <a>
+                <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10 gap-2">
+                  Explorar Cursos
+                  <ArrowRight size={20} />
+                </Button>
+              </a>
+            </Link>
           </div>
         </div>
       </section>

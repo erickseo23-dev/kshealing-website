@@ -43,40 +43,40 @@
 }
 
 :root {
-  /* KS Healing Color Palette */
-  --primary: oklch(0.45 0.15 142); /* Vibrant Green */
+  /* KS Healing - Azul Marino + Dorado + Cian */
+  --primary: oklch(0.15 0.08 260); /* Azul marino profundo */
   --primary-foreground: oklch(0.98 0 0); /* White */
-  --sidebar-primary: oklch(0.40 0.14 142); /* Darker Green */
+  --sidebar-primary: oklch(0.20 0.08 260); /* Azul marino más claro */
   --sidebar-primary-foreground: oklch(0.98 0 0);
-  --chart-1: oklch(0.45 0.15 142);
-  --chart-2: oklch(0.35 0.12 260); /* Deep Blue */
-  --chart-3: oklch(0.50 0.16 142);
-  --chart-4: oklch(0.40 0.14 260);
-  --chart-5: oklch(0.30 0.10 260);
+  --chart-1: oklch(0.60 0.20 70); /* Dorado */
+  --chart-2: oklch(0.55 0.18 200); /* Cian */
+  --chart-3: oklch(0.15 0.08 260);
+  --chart-4: oklch(0.20 0.08 260);
+  --chart-5: oklch(0.10 0.06 260);
   --radius: 0.75rem;
   --background: oklch(0.99 0.001 0);
-  --foreground: oklch(0.15 0.02 260);
+  --foreground: oklch(0.15 0.08 260);
   --card: oklch(0.98 0.001 0);
-  --card-foreground: oklch(0.15 0.02 260);
+  --card-foreground: oklch(0.15 0.08 260);
   --popover: oklch(0.98 0.001 0);
-  --popover-foreground: oklch(0.15 0.02 260);
-  --secondary: oklch(0.35 0.12 260); /* Deep Blue */
-  --secondary-foreground: oklch(0.98 0 0);
+  --popover-foreground: oklch(0.15 0.08 260);
+  --secondary: oklch(0.60 0.20 70); /* Dorado */
+  --secondary-foreground: oklch(0.15 0.08 260);
   --muted: oklch(0.92 0.002 260);
   --muted-foreground: oklch(0.50 0.05 260);
-  --accent: oklch(0.65 0.18 60); /* Gold/Amber */
-  --accent-foreground: oklch(0.15 0.02 260);
+  --accent: oklch(0.55 0.18 200); /* Cian */
+  --accent-foreground: oklch(0.15 0.08 260);
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: oklch(0.985 0 0);
   --border: oklch(0.90 0.003 260);
   --input: oklch(0.95 0.002 260);
-  --ring: oklch(0.45 0.15 142);
+  --ring: oklch(0.55 0.18 200);
   --sidebar: oklch(0.98 0.001 0);
-  --sidebar-foreground: oklch(0.15 0.02 260);
-  --sidebar-accent: oklch(0.65 0.18 60);
-  --sidebar-accent-foreground: oklch(0.15 0.02 260);
+  --sidebar-foreground: oklch(0.15 0.08 260);
+  --sidebar-accent: oklch(0.60 0.20 70);
+  --sidebar-accent-foreground: oklch(0.15 0.08 260);
   --sidebar-border: oklch(0.90 0.003 260);
-  --sidebar-ring: oklch(0.45 0.15 142);
+  --sidebar-ring: oklch(0.55 0.18 200);
 }
 
 .dark {
