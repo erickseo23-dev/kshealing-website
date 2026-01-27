@@ -4,7 +4,12 @@ import { ArrowLeft } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 
-export default function NotFound() {
+interface PlaceholderProps {
+  title: string;
+  description: string;
+}
+
+export default function Placeholder({ title, description }: PlaceholderProps) {
   return (
     <div className="min-h-screen flex flex-col bg-background">
       <Navigation />
@@ -12,18 +17,18 @@ export default function NotFound() {
       <section className="flex-1 flex items-center justify-center py-32">
         <div className="container mx-auto px-4 text-center">
           <div className="max-w-2xl mx-auto">
-            <h1 className="font-display text-7xl font-bold text-primary mb-6">
-              404
+            <h1 className="font-display text-5xl font-bold text-foreground mb-6">
+              {title}
             </h1>
-            <h2 className="font-display text-4xl font-bold text-foreground mb-6">
-              Página No Encontrada
-            </h2>
-            <p className="text-xl text-muted-foreground mb-12">
-              Lo sentimos, la página que buscas no existe o ha sido movida.
+            <p className="text-xl text-muted-foreground mb-8">
+              {description}
+            </p>
+            <p className="text-lg text-muted-foreground mb-12">
+              Esta sección está en desarrollo. Pronto estará disponible con contenido completo.
             </p>
             <Link href="/">
               <a>
-                <Button size="lg" className="bg-primary hover:bg-primary/90 text-white gap-2">
+                <Button className="bg-primary hover:bg-primary/90 text-white gap-2">
                   <ArrowLeft size={20} />
                   Volver al Inicio
                 </Button>
