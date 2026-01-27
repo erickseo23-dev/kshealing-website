@@ -108,8 +108,12 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center max-w-5xl mx-auto">
             <div>
-              <div className="aspect-square rounded-2xl bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center">
-                <Users size={64} className="text-primary" />
+              <div className="aspect-square rounded-2xl overflow-hidden shadow-2xl">
+                <img 
+                  src="/images/yohev-foto.jpg" 
+                  alt="YOHEV - Dr. Erick Gurrola" 
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
             <div>
@@ -138,7 +142,7 @@ export default function Home() {
       {/* The Book */}
       <section className="py-20 md:py-32">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-5xl mx-auto">
             <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-6 text-center">
               El Libro: <span className="text-primary">Un Portal Vivo</span>
             </h2>
@@ -146,38 +150,48 @@ export default function Home() {
               Más que un libro. Un sistema integrado de narrativa, técnica, ejercicios prácticos y transmisión directa de Energía KS.
             </p>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <Card className="p-8 border-border/50">
-                <h3 className="font-display text-2xl font-bold text-foreground mb-4">17 Capítulos</h3>
-                <p className="text-muted-foreground mb-6">
-                  Desde la historia personal de YOHEV hasta técnicas avanzadas de KS Healing, incluyendo 10 ejercicios prácticos con códigos QR.
-                </p>
-                <ul className="space-y-2 text-sm text-muted-foreground">
-                  <li>✓ Narrativa profunda y transformadora</li>
-                  <li>✓ Manual técnico completo</li>
-                  <li>✓ Ejercicios prácticos guiados</li>
-                  <li>✓ Códigos QR con transmisión directa</li>
-                </ul>
-              </Card>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+              <div className="rounded-2xl overflow-hidden shadow-2xl">
+                <img 
+                  src="/images/portada-libro.png" 
+                  alt="KS Healing - La Nueva Frecuencia Crística" 
+                  className="w-full h-auto"
+                />
+              </div>
 
-              <Card className="p-8 border-border/50 bg-primary/5">
-                <h3 className="font-display text-2xl font-bold text-foreground mb-4">Transmisión Viva</h3>
-                <p className="text-muted-foreground mb-6">
-                  Cada palabra está intencionalizada con Energía KS. Al leer, tu sistema energético entra en resonancia con una frecuencia de alta vibración.
-                </p>
-                <div className="flex flex-col gap-3">
-                  <Link href="/el-libro">
-                    <a>
-                      <Button className="w-full bg-primary hover:bg-primary/90 text-white">
-                        Explorar el Libro
-                      </Button>
-                    </a>
-                  </Link>
-                  <Button variant="outline" className="w-full">
-                    Descargar Introducción Gratis
-                  </Button>
-                </div>
-              </Card>
+              <div className="space-y-6">
+                <Card className="p-8 border-border/50">
+                  <h3 className="font-display text-2xl font-bold text-foreground mb-4">17 Capítulos</h3>
+                  <p className="text-muted-foreground mb-6">
+                    Desde la historia personal de YOHEV hasta técnicas avanzadas de KS Healing, incluyendo 10 ejercicios prácticos con códigos QR.
+                  </p>
+                  <ul className="space-y-2 text-sm text-muted-foreground">
+                    <li>✓ Narrativa profunda y transformadora</li>
+                    <li>✓ Manual técnico completo</li>
+                    <li>✓ Ejercicios prácticos guiados</li>
+                    <li>✓ Códigos QR con transmisión directa</li>
+                  </ul>
+                </Card>
+
+                <Card className="p-8 border-border/50 bg-primary/5">
+                  <h3 className="font-display text-2xl font-bold text-foreground mb-4">Transmisión Viva</h3>
+                  <p className="text-muted-foreground mb-6">
+                    Cada palabra está intencionalizada con Energía KS. Al leer, tu sistema energético entra en resonancia con una frecuencia de alta vibración.
+                  </p>
+                  <div className="flex flex-col gap-3">
+                    <Link href="/el-libro">
+                      <a>
+                        <Button className="w-full bg-primary hover:bg-primary/90 text-white">
+                          Explorar el Libro
+                        </Button>
+                      </a>
+                    </Link>
+                    <Button variant="outline" className="w-full">
+                      Descargar Introducción Gratis
+                    </Button>
+                  </div>
+                </Card>
+              </div>
             </div>
           </div>
         </div>
