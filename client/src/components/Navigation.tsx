@@ -11,10 +11,14 @@ export default function Navigation() {
     { label: "SOBRE YOHEV", href: "/sobre-yohev" },
     { label: "¿QUÉ ES KS HEALING?", href: "/que-es-ks-healing" },
     { label: "EL LIBRO", href: "/el-libro" },
-    { label: "CURSOS", href: "/cursos" },
-    { label: "SESIONES KS", href: "/sesiones" },
-    { label: "DIRECTORIO", href: "/directorio" },
     { label: "BLOG", href: "/blog" },
+    { label: "TESTIMONIOS", href: "/testimonios" },
+    { label: "EVENTOS", href: "/eventos" },
+    { label: "RECURSOS", href: "/recursos" },
+    { label: "DIRECTORIO", href: "/directorio" },
+    { label: "TIENDA", href: "/tienda" },
+    { label: "MEDITACIONES", href: "/meditaciones" },
+    { label: "PORTAL", href: "/portal-miembros" },
   ];
 
   return (
@@ -31,10 +35,10 @@ export default function Navigation() {
         </Link>
 
         {/* Desktop Navigation */}
-        <div className="hidden lg:flex items-center gap-1">
+        <div className="hidden lg:flex items-center gap-1 overflow-x-auto">
           {navItems.map((item) => (
             <Link key={item.href} href={item.href}>
-              <a className="px-3 py-2 text-sm font-medium text-foreground hover:text-primary hover:bg-primary/5 rounded-md transition-colors">
+              <a className="px-3 py-2 text-xs font-medium text-foreground hover:text-primary hover:bg-primary/5 rounded-md transition-colors whitespace-nowrap">
                 {item.label}
               </a>
             </Link>
@@ -59,7 +63,7 @@ export default function Navigation() {
 
       {/* Mobile Navigation */}
       {isOpen && (
-        <div className="lg:hidden border-t border-border bg-background/98 backdrop-blur">
+        <div className="lg:hidden border-t border-border bg-background/98 backdrop-blur max-h-96 overflow-y-auto">
           <div className="container mx-auto px-4 py-4 space-y-2">
             {navItems.map((item) => (
               <Link key={item.href} href={item.href}>
