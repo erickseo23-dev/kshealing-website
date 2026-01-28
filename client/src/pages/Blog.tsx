@@ -8,63 +8,58 @@ import { Calendar, User, ArrowRight } from "lucide-react";
 const blogPosts = [
   {
     id: 1,
-    title: "Comprendiendo la Energía Crística Keiouvos Stharef",
-    excerpt: "Explora los fundamentos de la Energía KS y cómo funciona en tu sistema energético para facilitar transformación profunda.",
+    title: "Cómo la Energía KS Transforma tu Realidad",
+    excerpt: "Descubre los tres pilares de la transformación a través de la Energía KS y cómo activar tu verdadero potencial.",
     author: "YOHEV",
-    date: "27 de Enero, 2026",
-    category: "Educación",
+    date: "15 de Enero, 2026",
+    category: "Transformación",
     readTime: "8 min",
     image: "/images/blog-1.jpg",
+    slug: "article-1",
   },
   {
     id: 2,
-    title: "El Viaje de la Consciencia: De la Ignorancia al Recuerdo",
-    excerpt: "Una reflexión sobre cómo la Energía KS facilita el viaje del alma hacia el recuerdo de su verdadera naturaleza divina.",
+    title: "Los 7 Chakras y el Chakra Timo: La Puerta al Corazón Energético",
+    excerpt: "Explora el sistema de chakras y descubre el Chakra Timo, el centro de tu poder creativo y manifestación.",
     author: "YOHEV",
-    date: "20 de Enero, 2026",
-    category: "Espiritualidad",
+    date: "12 de Enero, 2026",
+    category: "Energía",
     readTime: "10 min",
     image: "/images/blog-2.jpg",
+    slug: "article-2",
   },
   {
     id: 3,
-    title: "Coherencia Energética: La Base de la Sanación Real",
-    excerpt: "Descubre cómo la coherencia entre cuerpo, mente y espíritu es la verdadera base para una sanación que perdura.",
+    title: "Entrelazamiento Cuántico y Consciencia: La Ciencia Detrás de KS Healing",
+    excerpt: "Comprende cómo la física cuántica explica el funcionamiento de KS Healing y tu poder de crear realidad.",
     author: "YOHEV",
-    date: "13 de Enero, 2026",
-    category: "Sanación",
-    readTime: "7 min",
+    date: "8 de Enero, 2026",
+    category: "Ciencia",
+    readTime: "12 min",
     image: "/images/blog-3.jpg",
+    slug: "article-3",
   },
   {
     id: 4,
-    title: "Los Centros Energéticos y la Activación de KS Healing",
-    excerpt: "Aprende cómo los ejercicios de KS Healing activan tus centros energéticos para facilitar transformación integral.",
+    title: "Sintropía vs Entropía: Por Qué Tu Cuerpo Necesita Regeneración Energética",
+    excerpt: "Descubre cómo la Energía KS activa procesos sintropicos que regeneran tu cuerpo y revierten el envejecimiento.",
     author: "YOHEV",
-    date: "6 de Enero, 2026",
-    category: "Técnica",
+    date: "5 de Enero, 2026",
+    category: "Sanación",
     readTime: "9 min",
     image: "/images/blog-4.jpg",
+    slug: "article-4",
   },
   {
     id: 5,
-    title: "Frecuencia de Alta Vibración: Vivir desde la Coherencia",
-    excerpt: "Explora qué significa vivir en una frecuencia de alta vibración y cómo KS Healing facilita este estado de ser.",
+    title: "Testimonios Reales: Cómo KS Healing Cambió Vidas",
+    excerpt: "Lee historias auténticas de transformación de profesionales que experimentaron el poder de KS Healing.",
     author: "YOHEV",
-    date: "30 de Diciembre, 2025",
-    category: "Consciencia",
-    readTime: "8 min",
+    date: "1 de Enero, 2026",
+    category: "Testimonios",
+    readTime: "10 min",
     image: "/images/blog-5.jpg",
-  },
-  {
-    id: 6,
-    title: "El Toroide: Geometría Sagrada de la Energía Vital",
-    excerpt: "Descubre la importancia del modelo toroidal en KS Healing y cómo refleja la estructura energética del universo.",
-    author: "YOHEV",
-    date: "23 de Diciembre, 2025",
-    category: "Geometría Sagrada",
-    readTime: "11 min",
-    image: "/images/blog-6.jpg",
+    slug: "article-5",
   },
 ];
 
@@ -126,10 +121,14 @@ export default function Blog() {
                     </div>
                   </div>
                   
-                  <Button variant="outline" className="w-full gap-2">
-                    Leer Artículo
-                    <ArrowRight size={16} />
-                  </Button>
+                  <Link href={`/blog/${post.slug}`}>
+                    <a>
+                      <Button variant="outline" className="w-full gap-2">
+                        Leer Artículo
+                        <ArrowRight size={16} />
+                      </Button>
+                    </a>
+                  </Link>
                 </div>
               </Card>
             ))}

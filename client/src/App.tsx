@@ -9,6 +9,11 @@ import SobreYohev from "./pages/SobreYohev";
 import QueEsKSHealing from "./pages/QueEsKSHealing";
 import ElLibro from "./pages/ElLibro";
 import Blog from "./pages/Blog";
+import BlogArticle1 from "./pages/BlogArticle1";
+import BlogArticle2 from "./pages/BlogArticle2";
+import BlogArticle3 from "./pages/BlogArticle3";
+import BlogArticle4 from "./pages/BlogArticle4";
+import BlogArticle5 from "./pages/BlogArticle5";
 import Testimonios from "./pages/Testimonios";
 import Eventos from "./pages/Eventos";
 import Recursos from "./pages/Recursos";
@@ -25,6 +30,11 @@ function Router() {
       <Route path={"/que-es-ks-healing"} component={QueEsKSHealing} />
       <Route path={"/el-libro"} component={ElLibro} />
       <Route path={"/blog"} component={Blog} />
+      <Route path={"/blog/article-1"} component={BlogArticle1} />
+      <Route path={"/blog/article-2"} component={BlogArticle2} />
+      <Route path={"/blog/article-3"} component={BlogArticle3} />
+      <Route path={"/blog/article-4"} component={BlogArticle4} />
+      <Route path={"/blog/article-5"} component={BlogArticle5} />
       <Route path={"/testimonios"} component={Testimonios} />
       <Route path={"/eventos"} component={Eventos} />
       <Route path={"/recursos"} component={Recursos} />
