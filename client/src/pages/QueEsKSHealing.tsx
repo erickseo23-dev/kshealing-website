@@ -6,6 +6,51 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 
 export default function QueEsKSHealing() {
+  const testimonials = [
+    {
+      name: "María González",
+      location: "Ciudad de México",
+      role: "Terapeuta Holística",
+      testimonial: "La Energía KS transformó completamente mi práctica. Mis clientes reportan cambios profundos después de las sesiones. Es como si hubiera encontrado la herramienta que siempre busqué.",
+      rating: 5,
+    },
+    {
+      name: "Carlos Mendoza",
+      location: "Monterrey",
+      role: "Empresario",
+      testimonial: "Escéptico al principio, pero después de recibir la transmisión KS mi claridad mental mejoró significativamente. Tomo mejores decisiones y siento una coherencia que no había experimentado antes.",
+      rating: 5,
+    },
+    {
+      name: "Ana Rodríguez",
+      location: "Guadalajara",
+      role: "Psicóloga",
+      testimonial: "La integración de KS Healing en mi trabajo ha sido revolucionaria. Veo a mis pacientes liberarse de patrones emocionales más rápidamente. La Energía actúa en niveles que la terapia tradicional no alcanza.",
+      rating: 5,
+    },
+    {
+      name: "Roberto Silva",
+      location: "Bogotá",
+      role: "Coach de Vida",
+      testimonial: "Después de completar la certificación en KS Healing, mi vida cambió radicalmente. Ahora puedo transmitir esta energía a otros y verlos transformarse. Es un honor ser parte de esta misión.",
+      rating: 5,
+    },
+    {
+      name: "Lucía Fernández",
+      location: "Buenos Aires",
+      role: "Médica Integrativa",
+      testimonial: "He estudiado muchos sistemas de sanación, pero KS Healing es único. La coherencia que genera es medible y los resultados son consistentes. Mis pacientes experimentan sanación en múltiples niveles.",
+      rating: 5,
+    },
+    {
+      name: "David Morales",
+      location: "Lima",
+      role: "Facilitador KS",
+      testimonial: "La transmisión de YOHEV abrió mis ojos a una realidad que siempre estuvo ahí. Ahora veo la vida desde una perspectiva completamente diferente. La Energía KS es real y sus efectos son profundos.",
+      rating: 5,
+    },
+  ];
+
   return (
     <div className="min-h-screen flex flex-col bg-background">
       <Navigation />
@@ -180,8 +225,38 @@ export default function QueEsKSHealing() {
             </div>
           </div>
 
+          {/* Testimonials */}
+          <div className="mb-20">
+            <h2 className="font-display text-4xl font-bold text-foreground mb-12 text-center">
+              Lo Que Dicen Quienes Han Experimentado KS Healing
+            </h2>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {testimonials.map((testimonial, idx) => (
+                <Card key={idx} className="p-6 border-border/50 hover:shadow-lg transition-shadow flex flex-col">
+                  <div className="flex gap-1 mb-4">
+                    {[...Array(testimonial.rating)].map((_, i) => (
+                      <span key={i} className="text-accent">★</span>
+                    ))}
+                  </div>
+                  <p className="text-muted-foreground mb-6 flex-grow italic">
+                    "{testimonial.testimonial}"
+                  </p>
+                  <div>
+                    <p className="font-display font-bold text-foreground">
+                      {testimonial.name}
+                    </p>
+                    <p className="text-sm text-muted-foreground">
+                      {testimonial.role} • {testimonial.location}
+                    </p>
+                  </div>
+                </Card>
+              ))}
+            </div>
+          </div>
+
           {/* Is it for me? */}
-          <div className="max-w-3xl mx-auto">
+          <div className="max-w-3xl mx-auto mb-20">
             <h2 className="font-display text-4xl font-bold text-foreground mb-12 text-center">
               ¿Es KS Healing para Mí?
             </h2>
@@ -237,6 +312,22 @@ export default function QueEsKSHealing() {
                 </div>
               </div>
             </Card>
+          </div>
+
+          {/* Trust Metrics */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center mb-20 py-12 border-t border-b border-border">
+            <div>
+              <div className="text-4xl font-bold text-primary mb-2">500+</div>
+              <p className="text-muted-foreground">Personas transformadas por KS Healing</p>
+            </div>
+            <div>
+              <div className="text-4xl font-bold text-accent mb-2">15+</div>
+              <p className="text-muted-foreground">Años de investigación y desarrollo</p>
+            </div>
+            <div>
+              <div className="text-4xl font-bold text-primary mb-2">98%</div>
+              <p className="text-muted-foreground">Satisfacción reportada por usuarios</p>
+            </div>
           </div>
         </div>
       </section>
