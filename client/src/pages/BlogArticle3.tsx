@@ -27,8 +27,12 @@ export default function BlogArticle3() {
       <main className="container py-12">
         <article className="max-w-3xl mx-auto">
           {/* Featured Image */}
-          <div className="mb-8 rounded-lg overflow-hidden bg-gradient-to-br from-primary/20 to-accent/20 h-96 flex items-center justify-center">
-            <Zap size={80} className="text-primary/40" />
+          <div className="mb-8 rounded-lg overflow-hidden h-96">
+            <img 
+              src="/images/blog-cuantica.png" 
+              alt="Entrelazamiento Cuántico y Consciencia"
+              className="w-full h-full object-cover"
+            />
           </div>
 
           {/* Article Body */}
