@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { CheckCircle2 } from "lucide-react";
 import { useState } from "react";
 import EjercicioLayout from "@/components/EjercicioLayout";
-import KajabiForm from "@/components/KajabiForm";
+import BookClubForm from "@/components/BookClubForm";
 
 export default function Ejercicio8() {
   const [completed, setCompleted] = useState(false);
@@ -74,7 +74,7 @@ export default function Ejercicio8() {
                 <p className="text-sm text-muted-foreground mb-6">
                   Regístrate para acceder a materiales adicionales y conectar con nuestra comunidad.
                 </p>
-                <KajabiForm />
+                <BookClubForm />
               </div>
             </div>
           </div>
