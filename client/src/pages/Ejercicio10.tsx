@@ -2,12 +2,14 @@ import { Button } from "@/components/ui/button";
 import { CheckCircle2 } from "lucide-react";
 import { useState } from "react";
 import EjercicioLayout from "@/components/EjercicioLayout";
+import ProtectedEjercicio from "@/components/ProtectedEjercicio";
 
 export default function Ejercicio10() {
   const [completed, setCompleted] = useState(false);
 
   return (
-    <EjercicioLayout>
+    <ProtectedEjercicio ejercicioNumber={10}>
+      <EjercicioLayout>
       {/* Header */}
       <div className="bg-gradient-to-r from-primary/10 to-accent/10 border-b border-border">
         <div className="container py-8">
@@ -134,6 +136,7 @@ export default function Ejercicio10() {
           </section>
         </article>
       </div>
-    </EjercicioLayout>
+        </EjercicioLayout>
+    </ProtectedEjercicio>
   );
 }
