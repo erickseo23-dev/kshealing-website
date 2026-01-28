@@ -1,6 +1,5 @@
 import { createContext, useContext, useEffect, useState, ReactNode } from "react";
 import { supabase } from "@/lib/supabase";
-// import { syncUserToKajabi } from "@/lib/kajabi";
 import { User } from "@supabase/supabase-js";
 
 interface AuthContextType {
@@ -23,16 +22,26 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   const [user, setUser] = useState<User | null>(null);
   const [loading, setLoading] = useState(true);
 
-  // Verificar sesión al montar el componente
   useEffect(() => {
+    // Configurar el listener de cambios de autenticación PRIMERO
+    const { data: { subscription } } = supabase.auth.onAuthStateChange(
+      (event, session) => {
+        console.log("🔐 Auth state changed:", event, session?.user?.email);
+        setUser(session?.user ?? null);
+        setLoading(false);
+      }
+    );
+
+    // Luego verificar la sesión actual
     const checkSession = async () => {
       try {
-        const {
-          data: { session },
-        } = await supabase.auth.getSession();
-        setUser(session?.user ?? null);
+        const { data: { session } } = await supabase.auth.getSession();
+        console.log("📍 Current session:", session?.user?.email);
+        if (session?.user) {
+          setUser(session.user);
+        }
       } catch (error) {
-        console.error("Error checking session:", error);
+        console.error("❌ Error checking session:", error);
       } finally {
         setLoading(false);
       }
@@ -40,13 +49,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
 
     checkSession();
 
-    // Escuchar cambios de autenticación
-    const {
-      data: { subscription },
-    } = supabase.auth.onAuthStateChange((_event, session) => {
-      setUser(session?.user ?? null);
-    });
-
+    // Limpiar el subscription al desmontar
     return () => {
       subscription?.unsubscribe();
     };
@@ -54,7 +57,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
 
   const login = async (email: string, password: string) => {
     try {
-      const { error } = await supabase.auth.signInWithPassword({
+      const { data, error } = await supabase.auth.signInWithPassword({
         email,
         password,
       });
@@ -62,8 +65,11 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       if (error) {
         throw new Error(error.message);
       }
+
+      console.log("✅ Login successful:", data.user?.email);
+      setUser(data.user);
     } catch (error) {
-      console.error("Error logging in:", error);
+      console.error("❌ Error logging in:", error);
       throw error;
     }
   };
@@ -100,14 +106,10 @@ export function AuthProvider({ children }: { children: ReactNode }) {
         throw new Error(userError.message);
       }
 
-      // Actualizar el estado del usuario después del registro
+      console.log("✅ Registration successful:", authData.user?.email);
       setUser(authData.user ?? null);
-
-      // Sincronización con Kajabi desactivada temporalmente
-      // TODO: Configurar sincronización con Kajabi usando webhooks o backend
-      console.log("✓ Usuario registrado en Supabase. Sincronización con Kajabi pendiente.");
     } catch (error) {
-      console.error("Error registering:", error);
+      console.error("❌ Error registering:", error);
       throw error;
     }
   };
@@ -119,8 +121,11 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       if (error) {
         throw new Error(error.message);
       }
+
+      console.log("✅ Logout successful");
+      setUser(null);
     } catch (error) {
-      console.error("Error logging out:", error);
+      console.error("❌ Error logging out:", error);
       throw error;
     }
   };
