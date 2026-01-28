@@ -24,6 +24,9 @@ export default function ProtectedEjercicio({
   useEffect(() => {
     if (!loading && !isAuthenticated) {
       setShowRegisterModal(true);
+    } else if (!loading && isAuthenticated) {
+      // Cerrar modal cuando el usuario se autentica
+      setShowRegisterModal(false);
     }
   }, [loading, isAuthenticated]);
 
@@ -73,7 +76,11 @@ export default function ProtectedEjercicio({
 
         <RegisterModal
           isOpen={showRegisterModal}
-          onClose={() => setShowRegisterModal(false)}
+          onClose={() => {
+            setShowRegisterModal(false);
+            // Forzar una actualización del estado de autenticación
+            window.location.reload();
+          }}
         />
       </>
     );
