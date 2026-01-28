@@ -2,14 +2,13 @@ import { Button } from "@/components/ui/button";
 import { CheckCircle2 } from "lucide-react";
 import { useState } from "react";
 import EjercicioLayout from "@/components/EjercicioLayout";
-import ProtectedEjercicio from "@/components/ProtectedEjercicio";
+import KajabiForm from "@/components/KajabiForm";
 
 export default function Ejercicio5() {
   const [completed, setCompleted] = useState(false);
 
   return (
-    <ProtectedEjercicio ejercicioNumber={5}>
-      <EjercicioLayout>
+    <EjercicioLayout>
       {/* Header */}
       <div className="bg-gradient-to-r from-primary/10 to-accent/10 border-b border-border">
         <div className="container py-8">
@@ -41,27 +40,45 @@ export default function Ejercicio5() {
                 Cuando expulsas la entropía, liberas patrones antiguos, traumas almacenados y bloqueos que han estado limitándote. Tu cuerpo se siente más ligero, más vivo, más coherente.
               </p>
             </div>
-          </section>
+          </section>        {/* Main Content: Video + Form (2 columns) */}
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
+          {/* Video Section (2 columns on desktop) */}
+          <div className="lg:col-span-2">
+            <section>
+              <h2 className="text-2xl font-display font-bold text-foreground mb-6">
+                Video del Ejercicio
+              </h2>
+              <div className="bg-gradient-to-br from-primary/10 to-accent/10 rounded-lg overflow-hidden border border-border aspect-video flex items-center justify-center">
+                <div className="text-center">
+                  <p className="text-muted-foreground mb-4">
+                    El video será disponible aquí una vez que lo subas a YouTube
+                  </p>
+                  <p className="text-sm text-muted-foreground">
+                    Espacio reservado para: iframe de YouTube privado
+                  </p>
+                </div>
+              </div>
+              <p className="text-sm text-muted-foreground mt-4">
+                Procura buscar un momento de calma y soledad para practicar este ejercicio. Esto te permitirá disfrutar más de la experiencia y recibir la transmisión energética con mayor claridad.
+              </p>
+            </section>
+          </div>
 
-          {/* Video Section */}
-          <section className="mb-12">
-            <h2 className="text-2xl font-display font-bold text-foreground mb-6">
-              Video del Ejercicio
-            </h2>
-            <div className="bg-gradient-to-br from-primary/10 to-accent/10 rounded-lg overflow-hidden border border-border aspect-video flex items-center justify-center">
-              <div className="text-center">
-                <p className="text-muted-foreground mb-4">
-                  El video será disponible aquí una vez que lo subas a YouTube
+          {/* Kajabi Form (1 column on desktop) */}
+          <div className="lg:col-span-1">
+            <div className="sticky top-24">
+              <div className="bg-card rounded-lg border border-border p-6">
+                <h3 className="text-lg font-display font-bold text-foreground mb-4">
+                  Únete al Book Club
+                </h3>
+                <p className="text-sm text-muted-foreground mb-6">
+                  Regístrate para acceder a materiales adicionales y conectar con nuestra comunidad.
                 </p>
-                <p className="text-sm text-muted-foreground">
-                  Espacio reservado para: iframe de YouTube privado
-                </p>
+                <KajabiForm />
               </div>
             </div>
-            <p className="text-sm text-muted-foreground mt-4">
-              Este ejercicio es especialmente poderoso después de haber completado los ejercicios anteriores.
-            </p>
-          </section>
+          </div>
+        </div>
 
           {/* Instructions */}
           <section className="mb-12 p-8 bg-card rounded-lg border border-border">
@@ -134,6 +151,5 @@ export default function Ejercicio5() {
         </article>
       </div>
       </EjercicioLayout>
-    </ProtectedEjercicio>
   );
 }
