@@ -215,6 +215,87 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Latest Blog Posts */}
+      <section className="py-20 md:py-32 bg-primary/5">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto mb-16">
+            <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-6 text-center">
+              Últimos <span className="text-primary">Posts</span>
+            </h2>
+            <p className="text-lg text-muted-foreground text-center leading-relaxed">
+              Artículos y reflexiones sobre transformación, energía y consciencia
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto mb-8">
+            {[
+              {
+                id: 1,
+                titulo: "Cómo la Energía KS Transforma tu Realidad",
+                descripcion: "Descubre los 3 pilares de transformación que hacen de KS Healing un sistema único",
+                fecha: "15 Enero 2026",
+                imagen: "/images/blog-transformacion.png",
+                link: "/blog/article-1",
+              },
+              {
+                id: 2,
+                titulo: "Los 7 Chakras y el Chakra Timo",
+                descripcion: "Explora el centro de tu poder creativo y su conexión con la Energía Crística",
+                fecha: "12 Enero 2026",
+                imagen: "/images/blog-chakras.png",
+                link: "/blog/article-2",
+              },
+              {
+                id: 3,
+                titulo: "Entrelazamiento Cuántico y Consciencia",
+                descripcion: "La ciencia detrás de KS Healing: cómo la cuántica explica la transformación",
+                fecha: "8 Enero 2026",
+                imagen: "/images/blog-cuantica.png",
+                link: "/blog/article-3",
+              },
+            ].map((post) => (
+              <Card key={post.id} className="overflow-hidden hover:shadow-lg transition-shadow flex flex-col">
+                <div className="relative h-40 overflow-hidden bg-gradient-to-br from-primary/20 to-accent/20">
+                  <img 
+                    src={post.imagen} 
+                    alt={post.titulo}
+                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                <div className="p-6 flex-grow flex flex-col">
+                  <p className="text-xs text-primary font-semibold mb-2">{post.fecha}</p>
+                  <h3 className="font-display text-lg font-bold text-foreground mb-3">
+                    {post.titulo}
+                  </h3>
+                  <p className="text-muted-foreground text-sm mb-4 flex-grow">
+                    {post.descripcion}
+                  </p>
+                  <Link href={post.link}>
+                    <a>
+                      <Button variant="outline" className="w-full border-primary text-primary hover:bg-primary/10 gap-2">
+                        Leer Artículo
+                        <ArrowRight size={16} />
+                      </Button>
+                    </a>
+                  </Link>
+                </div>
+              </Card>
+            ))}
+          </div>
+
+          <div className="text-center">
+            <Link href="/blog">
+              <a>
+                <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-primary/10 gap-2">
+                  Ver Todos los Artículos
+                  <ArrowRight size={20} />
+                </Button>
+              </a>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* The Book */}
       <section className="py-20 md:py-32">
         <div className="container mx-auto px-4">

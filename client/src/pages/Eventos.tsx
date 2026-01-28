@@ -16,6 +16,7 @@ const eventos = [
     precio: "$1,200 USD",
     incluye: ["Alojamiento", "Comidas", "Transmisiones directas", "Ejercicios prácticos", "Material de curso"],
     estado: "Próximamente",
+    imagen: "/images/evento-retiro.png",
   },
   {
     id: 2,
@@ -28,6 +29,7 @@ const eventos = [
     precio: "$299 USD",
     incluye: ["Acceso a grabaciones", "Material descargable", "Comunidad privada", "Certificado"],
     estado: "Abierto",
+    imagen: "/images/evento-seminario.png",
   },
   {
     id: 3,
@@ -40,6 +42,7 @@ const eventos = [
     precio: "$49 USD por sesión",
     incluye: ["Transmisión en vivo", "Meditación guiada", "Acceso a grabación"],
     estado: "Abierto",
+    imagen: "/images/evento-meditacion.png",
   },
   {
     id: 4,
@@ -52,6 +55,7 @@ const eventos = [
     precio: "$1,999 USD",
     incluye: ["8 módulos completos", "Transmisiones en vivo", "Mentoría individual", "Certificado oficial"],
     estado: "Próximamente",
+    imagen: "/images/evento-taller.png",
   },
   {
     id: 5,
@@ -64,6 +68,7 @@ const eventos = [
     precio: "$199 USD",
     incluye: ["Sesión grabada", "Presentación en PDF", "Acceso a comunidad"],
     estado: "Abierto",
+    imagen: "/images/evento-seminario.png",
   },
   {
     id: 6,
@@ -76,6 +81,7 @@ const eventos = [
     precio: "$1,800 USD",
     incluye: ["Alojamiento", "Comidas vegetarianas", "Meditaciones guiadas", "Transmisiones"],
     estado: "Próximamente",
+    imagen: "/images/evento-meditacion.png",
   },
 ];
 
@@ -104,19 +110,25 @@ export default function Eventos() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {eventos.map((evento) => (
               <Card key={evento.id} className="overflow-hidden hover:shadow-lg transition-shadow flex flex-col">
+                <div className="relative h-48 overflow-hidden bg-gradient-to-br from-primary/20 to-accent/20">
+                  <img 
+                    src={evento.imagen} 
+                    alt={evento.title}
+                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                  />
+                  <div className="absolute inset-0 bg-black/30"></div>
+                  <span className={`absolute top-4 right-4 text-xs font-semibold px-3 py-1 rounded-full ${
+                    evento.estado === "Abierto" 
+                      ? "bg-green-100 text-green-700" 
+                      : "bg-amber-100 text-amber-700"
+                  }`}>
+                    {evento.estado}
+                  </span>
+                </div>
                 <div className="bg-gradient-to-r from-primary/10 to-accent/10 p-6 border-b border-border">
-                  <div className="flex items-start justify-between mb-3">
-                    <h3 className="font-display text-2xl font-bold text-foreground flex-1">
-                      {evento.title}
-                    </h3>
-                    <span className={`text-xs font-semibold px-3 py-1 rounded-full whitespace-nowrap ml-2 ${
-                      evento.estado === "Abierto" 
-                        ? "bg-green-100 text-green-700" 
-                        : "bg-amber-100 text-amber-700"
-                    }`}>
-                      {evento.estado}
-                    </span>
-                  </div>
+                  <h3 className="font-display text-2xl font-bold text-foreground mb-3">
+                    {evento.title}
+                  </h3>
                   <p className="text-muted-foreground">
                     {evento.description}
                   </p>
