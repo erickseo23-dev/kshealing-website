@@ -1,5 +1,6 @@
 import { createContext, useContext, useEffect, useState, ReactNode } from "react";
 import { supabase } from "@/lib/supabase";
+import { syncUserToKajabi } from "@/lib/kajabi";
 import { User } from "@supabase/supabase-js";
 
 interface AuthContextType {
@@ -99,9 +100,13 @@ export function AuthProvider({ children }: { children: ReactNode }) {
         throw new Error(userError.message);
       }
 
-      // Sincronizar con Kajabi (aquí iría la lógica)
-      // Por ahora solo registramos en Supabase
-      console.log("User registered and synced with Kajabi");
+      // Sincronizar con Kajabi automáticamente
+      try {
+        await syncUserToKajabi(email, nombre, apellido);
+        console.log("✓ Usuario registrado y sincronizado con Kajabi");
+      } catch (kajabiError) {
+        console.warn("Warning: Could not sync with Kajabi, but user registered successfully", kajabiError);
+      }
     } catch (error) {
       console.error("Error registering:", error);
       throw error;
