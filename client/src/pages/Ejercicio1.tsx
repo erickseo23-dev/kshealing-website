@@ -1,14 +1,15 @@
 import { Button } from "@/components/ui/button";
 import { CheckCircle2 } from "lucide-react";
 import { useState } from "react";
+import EjercicioLayout from "@/components/EjercicioLayout";
 
 export default function Ejercicio1() {
   const [completed, setCompleted] = useState(false);
 
   return (
-    <div className="min-h-screen bg-background">
+    <EjercicioLayout>
       {/* Header */}
-      <header className="bg-gradient-to-r from-primary/10 to-accent/10 border-b border-border">
+      <div className="bg-gradient-to-r from-primary/10 to-accent/10 border-b border-border">
         <div className="container py-8">
           <h1 className="text-4xl font-display font-bold text-foreground mb-2">
             Ejercicio 1. Para Conectar con el Campo KS
@@ -17,10 +18,10 @@ export default function Ejercicio1() {
             Establece una conexión consciente con el Campo Energético Keiouvos Stharef
           </p>
         </div>
-      </header>
+      </div>
 
       {/* Content */}
-      <main className="container py-12">
+      <div className="container py-12">
         <article className="max-w-3xl mx-auto">
           {/* Introduction */}
           <section className="mb-12 p-8 bg-card rounded-lg border border-border">
@@ -129,7 +130,7 @@ export default function Ejercicio1() {
             </p>
           </section>
         </article>
-      </main>
-    </div>
+      </div>
+    </EjercicioLayout>
   );
 }
