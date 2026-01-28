@@ -12,7 +12,7 @@ export default function Home() {
 
       {/* Hero Section */}
       <section className="relative py-24 md:py-40 text-white overflow-hidden" style={{
-        backgroundImage: 'url(/images/hero-background-clean.png)',
+        backgroundImage: 'url(/images/hero-background.png)',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundAttachment: 'fixed'
