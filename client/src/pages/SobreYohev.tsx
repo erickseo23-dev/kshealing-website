@@ -28,14 +28,14 @@ export default function SobreYohev() {
       <section className="py-20 md:py-32">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
-            {/* Image Placeholder */}
+            {/* Image */}
             <div className="relative">
-              <div className="aspect-square rounded-2xl bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center">
-                <div className="text-center">
-                  <div className="text-6xl mb-4">🌟</div>
-                  <p className="text-muted-foreground">[Foto de YOHEV]</p>
-                </div>
-              </div>
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 rounded-2xl blur-2xl"></div>
+              <img 
+                src="/sdfsf.jpeg" 
+                alt="Dr. Erick Gurrola - YOHEV" 
+                className="relative w-full rounded-2xl shadow-2xl object-cover aspect-square"
+              />
             </div>
 
             {/* Content */}
@@ -46,6 +46,9 @@ export default function SobreYohev() {
               <div className="space-y-4 text-muted-foreground mb-8">
                 <p className="text-lg leading-relaxed">
                   He estado cerca de desencarnar en más de una ocasión en mi vida. Esas experiencias me enseñaron a vivir con propósito, una gracia que no todos reciben de forma directa.
+                </p>
+                <p className="text-lg leading-relaxed">
+                  En esos momentos de claridad absoluta, comprendí que mi verdadera misión es traer una nueva frecuencia de sanación a la humanidad: la Energía Keiouvos Stharef.
                 </p>
                 <p className="text-lg leading-relaxed">
                   Mi Maestro me reveló mi misión con una claridad que silenció todas mis dudas: "Sé un sol en la tierra. Recuerda quién eres y entonces sé."
@@ -67,33 +70,33 @@ export default function SobreYohev() {
 
           {/* Mission & Vision */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-20">
-            <Card className="p-8 border-border/50 hover:shadow-lg transition-shadow">
-              <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
+            <Card className="p-8 border-border/50 hover:shadow-lg transition-shadow bg-gradient-to-br from-primary/10 to-background">
+              <div className="w-12 h-12 rounded-lg bg-primary/20 flex items-center justify-center mb-4">
                 <Heart size={24} className="text-primary" />
               </div>
               <h3 className="font-display text-2xl font-bold text-foreground mb-4">Mi Misión</h3>
-              <p className="text-muted-foreground">
-                Ayudar a la humanidad a recordar quiénes son realmente, a recuperar su poder interior y convertirse en "soles en la tierra".
+              <p className="text-muted-foreground leading-relaxed">
+                Facilitar el despertar de la consciencia humana a través de la transmisión de la Energía Keiouvos Stharef, permitiendo que cada ser recuerde su verdadera naturaleza divina.
               </p>
             </Card>
 
-            <Card className="p-8 border-border/50 hover:shadow-lg transition-shadow">
-              <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
-                <Lightbulb size={24} className="text-primary" />
+            <Card className="p-8 border-border/50 hover:shadow-lg transition-shadow bg-gradient-to-br from-accent/10 to-background">
+              <div className="w-12 h-12 rounded-lg bg-accent/20 flex items-center justify-center mb-4">
+                <Lightbulb size={24} className="text-accent" />
               </div>
               <h3 className="font-display text-2xl font-bold text-foreground mb-4">Mi Visión</h3>
-              <p className="text-muted-foreground">
-                Una humanidad despierta, coherente y consciente de su verdadera naturaleza divina, viviendo en paz y propósito.
+              <p className="text-muted-foreground leading-relaxed">
+                Un mundo donde millones de personas viven en coherencia energética, donde la sanación es accesible a todos, y donde la verdadera transformación ocurre desde adentro.
               </p>
             </Card>
 
-            <Card className="p-8 border-border/50 hover:shadow-lg transition-shadow">
-              <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
+            <Card className="p-8 border-border/50 hover:shadow-lg transition-shadow bg-gradient-to-br from-primary/5 to-accent/5">
+              <div className="w-12 h-12 rounded-lg bg-primary/20 flex items-center justify-center mb-4">
                 <Users size={24} className="text-primary" />
               </div>
               <h3 className="font-display text-2xl font-bold text-foreground mb-4">Mi Compromiso</h3>
-              <p className="text-muted-foreground">
-                Transmitir la Energía KS con amor, responsabilidad y respeto, honrando el libre albedrío de cada persona.
+              <p className="text-muted-foreground leading-relaxed">
+                Transmitir la Energía KS con amor, responsabilidad y respeto, honrando el libre albedrío de cada persona en su camino de transformación.
               </p>
             </Card>
           </div>

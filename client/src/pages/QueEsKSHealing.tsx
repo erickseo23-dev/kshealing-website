@@ -32,8 +32,11 @@ export default function QueEsKSHealing() {
               <h2 className="font-display text-3xl font-bold text-foreground mb-6">
                 Definición
               </h2>
+              <p className="text-lg text-muted-foreground leading-relaxed mb-4">
+                KS Healing es un sistema de sanación energética que utiliza la Energía Keiouvos Stharef para facilitar transformación profunda en los sistemas energéticos humanos.
+              </p>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                KS Healing es un sistema de sanación energética que utiliza la Energía Crística Keiouvos Stharef para facilitar transformación profunda en los sistemas energéticos humanos. No es una religión, no requiere creencias previas, y funciona respetando el libre albedrío de cada persona.
+                No es una religión, no requiere creencias previas, y funciona respetando el libre albedrío de cada persona. La Energía KS actúa en la coherencia pura, reorganizando los campos energéticos hacia su estado natural de armonía y salud.
               </p>
             </Card>
           </div>
@@ -53,7 +56,7 @@ export default function QueEsKSHealing() {
                   El Cuerpo KS
                 </h3>
                 <p className="text-muted-foreground mb-4">
-                  Una estructura energética que se activa en ti a través de la transmisión directa de YOHEV.
+                  Una estructura energética multidimensional que se activa en ti a través de la transmisión directa de YOHEV. Es el vehículo a través del cual la Energía KS fluye y se integra en tu ser.
                 </p>
                 <ul className="space-y-2 text-sm text-muted-foreground">
                   <li className="flex gap-2">
@@ -79,7 +82,7 @@ export default function QueEsKSHealing() {
                   El Campo KS
                 </h3>
                 <p className="text-muted-foreground mb-4">
-                  Un campo energético que se genera alrededor de ti y que actúa en múltiples niveles.
+                  Un campo energético toroidal que se genera alrededor de ti y que actúa en múltiples niveles: físico, emocional, mental y espiritual. Este campo es dinámico y se expande con tu práctica.
                 </p>
                 <ul className="space-y-2 text-sm text-muted-foreground">
                   <li className="flex gap-2">
@@ -105,7 +108,7 @@ export default function QueEsKSHealing() {
                   La Transmisión
                 </h3>
                 <p className="text-muted-foreground mb-4">
-                  La Energía KS se transmite de forma intencionalizada a través de múltiples canales.
+                  La Energía KS se transmite de forma intencionalizada a través de múltiples canales, llevando la frecuencia de alta coherencia directamente a tu sistema energético.
                 </p>
                 <ul className="space-y-2 text-sm text-muted-foreground">
                   <li className="flex gap-2">
