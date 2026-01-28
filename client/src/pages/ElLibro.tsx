@@ -200,7 +200,7 @@ export default function ElLibro() {
                   Contenido Completo
                 </h3>
                 <p className="text-muted-foreground mb-4">
-                  Más de 300 páginas de contenido profundo: narrativa inspiradora, técnica avanzada y práctica transformadora.
+                  234 páginas de contenido profundo: narrativa inspiradora, técnica avanzada y práctica transformadora.
                 </p>
                 <p className="text-sm text-primary font-medium">
                   Narrativa + Técnica + Práctica
