@@ -14,7 +14,7 @@ const blogPosts = [
     date: "15 de Enero, 2026",
     category: "Transformación",
     readTime: "8 min",
-    image: "/images/blog-1.jpg",
+    image: "/images/blog-transformacion.png",
     slug: "article-1",
   },
   {
@@ -25,7 +25,7 @@ const blogPosts = [
     date: "12 de Enero, 2026",
     category: "Energía",
     readTime: "10 min",
-    image: "/images/blog-2.jpg",
+    image: "/images/blog-chakras.png",
     slug: "article-2",
   },
   {
@@ -36,7 +36,7 @@ const blogPosts = [
     date: "8 de Enero, 2026",
     category: "Ciencia",
     readTime: "12 min",
-    image: "/images/blog-3.jpg",
+    image: "/images/blog-cuantica.png",
     slug: "article-3",
   },
   {
@@ -47,7 +47,7 @@ const blogPosts = [
     date: "5 de Enero, 2026",
     category: "Sanación",
     readTime: "9 min",
-    image: "/images/blog-4.jpg",
+    image: "/images/blog-sintropía.png",
     slug: "article-4",
   },
   {
@@ -58,7 +58,7 @@ const blogPosts = [
     date: "1 de Enero, 2026",
     category: "Testimonios",
     readTime: "10 min",
-    image: "/images/blog-5.jpg",
+    image: "/images/blog-testimonios.png",
     slug: "article-5",
   },
 ];
@@ -88,11 +88,11 @@ export default function Blog() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {blogPosts.map((post) => (
               <Card key={post.id} className="overflow-hidden hover:shadow-lg transition-shadow flex flex-col">
-                <div className="h-48 bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center">
-                  <div className="text-center text-muted-foreground">
-                    <p className="font-display text-2xl font-bold text-primary/50">{post.id}</p>
-                  </div>
-                </div>
+                <img
+                  src={post.image}
+                  alt={post.title}
+                  className="w-full h-48 object-cover"
+                />
                 
                 <div className="p-6 flex flex-col flex-grow">
                   <div className="flex items-center gap-2 mb-3">
