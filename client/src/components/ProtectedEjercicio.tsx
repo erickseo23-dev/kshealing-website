@@ -76,11 +76,7 @@ export default function ProtectedEjercicio({
 
         <RegisterModal
           isOpen={showRegisterModal}
-          onClose={() => {
-            setShowRegisterModal(false);
-            // Forzar una actualización del estado de autenticación
-            window.location.reload();
-          }}
+          onClose={() => setShowRegisterModal(false)}
         />
       </>
     );
