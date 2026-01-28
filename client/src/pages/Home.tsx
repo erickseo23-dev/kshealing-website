@@ -20,7 +20,7 @@ export default function Home() {
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl mx-auto text-center">
             <div className="inline-block mb-6 px-4 py-2 rounded-full bg-accent/20 border border-accent/50">
-              <p className="text-accent font-medium text-sm">Por primera vez en la historia</p>
+              <p className="text-accent font-medium text-sm">SER UN SOL EN LA TIERRA</p>
             </div>
             
             <h1 className="font-display text-5xl md:text-7xl font-bold mb-6 leading-tight">
@@ -29,7 +29,7 @@ export default function Home() {
             </h1>
             
             <p className="text-xl md:text-2xl text-white/90 mb-8 font-serif leading-relaxed">
-              La Energía Crística Keiouvos Stharef te devuelve a tu verdadera naturaleza divina. Un sistema de sanación energética que transforma tu vida desde adentro.
+              La Energía KS Keiouvos Stharef te devuelve a tu verdadera naturaleza divina. Un sistema de sanación energética que transforma tu vida desde adentro.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -62,7 +62,7 @@ export default function Home() {
               ¿Qué es <span className="text-primary">KS Healing</span>?
             </h2>
             <p className="text-lg text-muted-foreground text-center leading-relaxed">
-              Un sistema de sanación energética que utiliza la Energía Crística Keiouvos Stharef para facilitar transformación profunda en los sistemas energéticos humanos.
+              Un sistema de sanación energética que utiliza la Energía Keiouvos Stharef para facilitar transformación profunda en los sistemas energéticos humanos.
             </p>
           </div>
 
@@ -121,7 +121,7 @@ export default function Home() {
                 Conoce a <span className="text-primary">YOHEV</span>
               </h2>
               <p className="text-lg text-muted-foreground mb-4 leading-relaxed">
-                Dr. Erick Gurrola, conocido como YOHEV, es el maestro y fundador de KS Healing. Su viaje espiritual lo llevó a descubrir y canalizar la Energía Crística Keiouvos Stharef.
+                Dr. Erick Gurrola, conocido como YOHEV, es el maestro y fundador de KS Healing. Su viaje espiritual lo llevó a descubrir y canalizar la KS.
               </p>
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
                 Con más de dos décadas de experiencia en transformación espiritual, YOHEV ha dedicado su vida a ayudar a miles de personas a recordar su verdadera naturaleza divina.
@@ -235,13 +235,13 @@ export default function Home() {
 
               <div className="space-y-6">
                 <Card className="p-8 border-border/50">
-                  <h3 className="font-display text-2xl font-bold text-foreground mb-4">17 Capítulos</h3>
+                  <h3 className="font-display text-2xl font-bold text-foreground mb-4">18 Capítulos</h3>
                   <p className="text-muted-foreground mb-6">
                     Desde la historia personal de YOHEV hasta técnicas avanzadas de KS Healing, incluyendo 10 ejercicios prácticos con códigos QR.
                   </p>
                   <ul className="space-y-2 text-sm text-muted-foreground">
                     <li>✓ Narrativa profunda y transformadora</li>
-                    <li>✓ Manual técnico completo</li>
+                    <li>✓ Una nueva visión cosmológica</li>
                     <li>✓ Ejercicios prácticos guiados</li>
                     <li>✓ Códigos QR con transmisión directa</li>
                   </ul>
