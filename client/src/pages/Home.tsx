@@ -11,11 +11,13 @@ export default function Home() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="relative py-24 md:py-40 bg-gradient-to-br from-primary via-primary/95 to-primary/90 text-white overflow-hidden">
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-20 right-20 w-72 h-72 bg-accent rounded-full mix-blend-multiply filter blur-3xl"></div>
-          <div className="absolute bottom-20 left-20 w-72 h-72 bg-secondary rounded-full mix-blend-multiply filter blur-3xl"></div>
-        </div>
+      <section className="relative py-24 md:py-40 text-white overflow-hidden" style={{
+        backgroundImage: 'url(/images/hero-background.png)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundAttachment: 'fixed'
+      }}>
+        <div className="absolute inset-0 bg-black/40"></div>
         
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl mx-auto text-center">
