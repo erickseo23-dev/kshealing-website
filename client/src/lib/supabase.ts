@@ -4,7 +4,14 @@ const supabaseUrl = "https://hglpgsjgoxlcehhmahyo.supabase.co";
 const supabaseAnonKey =
   "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhnbHBnc2pnb3hsY2VoaG1haHlvIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Njk2Mjg1MDgsImV4cCI6MjA4NTIwNDUwOH0.tQOVjvmgcMNeugx72urCWgJ9kA0GEuWD-U5GecK63xg";
 
-export const supabase = createClient(supabaseUrl, supabaseAnonKey);
+export const supabase = createClient(supabaseUrl, supabaseAnonKey, {
+  auth: {
+    storage: typeof window !== 'undefined' ? window.localStorage : undefined,
+    autoRefreshToken: true,
+    persistSession: true,
+    detectSessionInUrl: true,
+  },
+});
 
 /**
  * Tipos de usuario para Supabase
