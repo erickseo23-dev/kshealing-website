@@ -66,7 +66,7 @@ export default function ElLibro() {
                     <span className="text-primary font-bold">2</span>
                   </div>
                   <div>
-                    <h3 className="font-display font-bold text-foreground mb-1">Manual Técnico Completo</h3>
+                    <h3 className="font-display font-bold text-foreground mb-1">Descripción y visión cosmológica</h3>
                     <p className="text-muted-foreground">Explicación profunda de KS Healing, el Cuerpo KS, el Campo KS y la Energía Crística</p>
                   </div>
                 </div>
