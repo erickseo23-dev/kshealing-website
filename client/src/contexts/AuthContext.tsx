@@ -100,6 +100,9 @@ export function AuthProvider({ children }: { children: ReactNode }) {
         throw new Error(userError.message);
       }
 
+      // Actualizar el estado del usuario después del registro
+      setUser(authData.user ?? null);
+
       // Sincronización con Kajabi desactivada temporalmente
       // TODO: Configurar sincronización con Kajabi usando webhooks o backend
       console.log("✓ Usuario registrado en Supabase. Sincronización con Kajabi pendiente.");
