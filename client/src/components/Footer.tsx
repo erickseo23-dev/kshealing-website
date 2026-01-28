@@ -20,7 +20,7 @@ export default function Footer() {
             </p>
             <div className="flex gap-3">
               <a 
-                href="https://facebook.com/kshealing" 
+                href="https://www.facebook.com/Dr.ErickGurrola" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="p-2 hover:bg-primary/10 rounded-lg transition-colors text-muted-foreground hover:text-primary"
@@ -29,7 +29,7 @@ export default function Footer() {
                 <Facebook size={18} />
               </a>
               <a 
-                href="https://youtube.com/kshealing" 
+                href="https://www.youtube.com/@drerickgurrola" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="p-2 hover:bg-primary/10 rounded-lg transition-colors text-muted-foreground hover:text-primary"
@@ -38,7 +38,7 @@ export default function Footer() {
                 <Youtube size={18} />
               </a>
               <a 
-                href="https://instagram.com/kshealing" 
+                href="https://www.instagram.com/erickgurrolaoficial/" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="p-2 hover:bg-primary/10 rounded-lg transition-colors text-muted-foreground hover:text-primary"
