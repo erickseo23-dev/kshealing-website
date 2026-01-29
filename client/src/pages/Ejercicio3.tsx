@@ -69,10 +69,10 @@ export default function Ejercicio3() {
             <div className="sticky top-24">
               <div className="bg-card rounded-lg border border-border p-6">
                 <h3 className="text-lg font-display font-bold text-foreground mb-4">
-                  Únete al Book Club
+
                 </h3>
                 <p className="text-sm text-muted-foreground mb-6">
-                  Regístrate para acceder a materiales adicionales y conectar con nuestra comunidad.
+
                 </p>
                 <BookClubCTA />
               </div>

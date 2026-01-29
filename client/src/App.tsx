@@ -32,6 +32,7 @@ import Ejercicio7 from "./pages/Ejercicio7";
 import Ejercicio8 from "./pages/Ejercicio8";
 import Ejercicio9 from "./pages/Ejercicio9";
 import Ejercicio10 from "./pages/Ejercicio10";
+import ThankYou from "./pages/ThankYou";
 
 function Router() {
   return (
@@ -63,6 +64,7 @@ function Router() {
       <Route path={"/ejercicio-8-equilibrar-cuerpos"} component={Ejercicio8} />
       <Route path={"/ejercicio-9-limpiar-energia-culpa"} component={Ejercicio9} />
       <Route path={"/ejercicio-10-entrenar-timo"} component={Ejercicio10} />
+      <Route path={"/thank-you"} component={ThankYou} />
       <Route path={"/404"} component={NotFound} />
       <Route component={NotFound} />
     </Switch>
