@@ -127,7 +127,7 @@ export default function Home() {
                 Dr. Erick Gurrola, conocido por su nombre espiritual YOHEV, es el maestro y fundador de KS Healing. Su viaje espiritual lo llevó a descubrir y canalizar la Energía KS y enseñar a otros a sanarse a sí mismos con esta energía de altísima vibración.
               </p>
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                Con más de dos décadas de experiencia en transformación espiritual, YOHEV ha dedicado su vida a ayudar a miles de personas a recordar su verdadera naturaleza divina.
+                Con más de una década de experiencia en transformación espiritual, YOHEV ha dedicado su vida a ayudar a miles de personas a recordar su verdadera naturaleza divina.
               </p>
               <Link href="/sobre-yohev">
                 <a>
@@ -218,7 +218,7 @@ export default function Home() {
                 <Card className="p-8 border-border/50">
                   <h3 className="font-display text-2xl font-bold text-foreground mb-4">18 Capítulos</h3>
                   <p className="text-muted-foreground mb-6">
-                    Desde la historia personal de YOHEV hasta el conocimiento profundo de la Energía KS y las bases de KS Healing, incluyendo 10 ejercicios prácticos con códigos QR.
+                    Desde la historia personal de YOHEV hasta el conocimiento profundo de la Energía KS y las bases de la terapia KS Healing, incluyendo 10 ejercicios prácticos con códigos QR.
                   </p>
                   <ul className="space-y-2 text-sm text-muted-foreground">
                     <li>✓ Narrativa profunda y transformadora</li>
