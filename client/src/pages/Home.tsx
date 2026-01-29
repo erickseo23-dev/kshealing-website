@@ -218,7 +218,7 @@ export default function Home() {
                 <Card className="p-8 border-border/50">
                   <h3 className="font-display text-2xl font-bold text-foreground mb-4">18 Capítulos</h3>
                   <p className="text-muted-foreground mb-6">
-                    Desde la historia personal de YOHEV hasta técnicas avanzadas de KS Healing, incluyendo 10 ejercicios prácticos con códigos QR.
+                    Desde la historia personal de YOHEV hasta el conocimiento profundo de la Energía KS y las bases de KS Healing, incluyendo 10 ejercicios prácticos con códigos QR.
                   </p>
                   <ul className="space-y-2 text-sm text-muted-foreground">
                     <li>✓ Narrativa profunda y transformadora</li>
