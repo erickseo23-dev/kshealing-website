@@ -64,7 +64,7 @@ export default function Home() {
               ¿Qué es <span className="text-primary">KS Healing</span>?
             </h2>
             <p className="text-lg text-muted-foreground text-center leading-relaxed">
-              Un sistema de sanación energética que utiliza la Energía Keiouvos Stharef para facilitar transformación profunda en los sistemas energéticos humanos.
+              Un sistema de sanación energética que utiliza la Energía Keiouvos Stharef para facilitar la transformación profunda de los sistemas energéticos humanos.
             </p>
           </div>
 
@@ -72,18 +72,18 @@ export default function Home() {
             {[
               {
                 icon: Sparkles,
-                title: "Experiencia Directa",
-                description: "Conecta con la Energía KS a través de ejercicios prácticos y transmisiones intencionales",
+                title: "Conexión Divina",
+                description: "Conectar con la Energía KS es más que una experiencia, es una relación profunda con el Creador.",
               },
               {
                 icon: Heart,
                 title: "Sanación Profunda",
-                description: "Transforma patrones emocionales y energéticos que limitan tu vida",
+                description: "Transforma patrones emocionales y energéticos que limitan tu vida, restableciendo el arquetipo divino original",
               },
               {
                 icon: Zap,
                 title: "Expansión de Consciencia",
-                description: "Accede a estados más profundos de presencia y claridad interna",
+                description: "Accede a estados más profundos de presencia, coherencia y claridad interna",
               },
             ].map((feature, idx) => {
               const Icon = feature.icon;
@@ -123,7 +123,7 @@ export default function Home() {
                 Conoce a <span className="text-primary">YOHEV</span>
               </h2>
               <p className="text-lg text-muted-foreground mb-4 leading-relaxed">
-                Dr. Erick Gurrola, conocido como YOHEV, es el maestro y fundador de KS Healing. Su viaje espiritual lo llevó a descubrir y canalizar la KS.
+                Dr. Erick Gurrola, conocido por su nombre espiritual YOHEV, es el maestro y fundador de KS Healing. Su viaje espiritual lo llevó a descubrir y canalizar la Energía KS y enseñar a otros a sanarse a sí mismos con esta energía de altísima vibración.
               </p>
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
                 Con más de dos décadas de experiencia en transformación espiritual, YOHEV ha dedicado su vida a ayudar a miles de personas a recordar su verdadera naturaleza divina.
@@ -149,7 +149,7 @@ export default function Home() {
               Próximos <span className="text-primary">Eventos</span>
             </h2>
             <p className="text-lg text-muted-foreground text-center leading-relaxed">
-              Seminarios, retiros y sesiones grupales donde experimentarás la transmisión directa de Energía KS.
+              Seminarios, retiros, certificaciones y sesiones grupales donde experimentarás la transmisión directa de Energía KS.
             </p>
           </div>
 
@@ -252,7 +252,8 @@ export default function Home() {
                 <Card className="p-8 border-border/50 bg-primary/5">
                   <h3 className="font-display text-2xl font-bold text-foreground mb-4">Transmisión Viva</h3>
                   <p className="text-muted-foreground mb-6">
-                    Cada palabra está intencionalizada con Energía KS. Al leer, tu sistema energético entra en resonancia con una frecuencia de alta vibración.
+                    Estuve escribiendo y cargando de energía este libro durante cinco años. Cada palabra está intencionada con Energía KS. Al leer, tu sistema energético entra en resonancia con una frecuencia de alta vibración.
+                                                         -YOHEV-
                   </p>
                   <div className="flex flex-col gap-3">
                     <Link href="/el-libro">
