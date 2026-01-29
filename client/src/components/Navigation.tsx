@@ -8,8 +8,8 @@ export default function Navigation() {
 
   const navItems = [
     { label: "HOME", href: "/" },
-    { label: "SOBRE YOHEV", href: "/sobre-yohev" },
     { label: "¿QUÉ ES KS HEALING?", href: "/que-es-ks-healing" },
+    { label: "SOBRE YOHEV", href: "/sobre-yohev" },
     { label: "EL LIBRO", href: "/el-libro" },
     { label: "BLOG", href: "/blog" },
     { label: "TESTIMONIOS", href: "/testimonios" },
