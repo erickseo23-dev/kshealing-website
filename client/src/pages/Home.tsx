@@ -229,7 +229,7 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
               <div className="rounded-2xl overflow-hidden shadow-2xl">
                 <img 
-                  src="/images/portada-libro.png" 
+                  src="/images/book-cover.png" 
                   alt="KS Healing - La Nueva Frecuencia Crística" 
                   className="w-full h-auto"
                 />
