@@ -53,7 +53,7 @@ export default function Ejercicio1() {
                 <iframe
                   width="100%"
                   height="500"
-                  src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                  src="https://www.youtube.com/embed/gMDvBjPulQ8"
                   title="Ejercicio 1: Conectar con el Campo KS"
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
