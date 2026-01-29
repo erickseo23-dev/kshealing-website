@@ -49,15 +49,17 @@ export default function Ejercicio1() {
               <h2 className="text-2xl font-display font-bold text-foreground mb-6">
                 Video del Ejercicio
               </h2>
-              <div className="bg-gradient-to-br from-primary/10 to-accent/10 rounded-lg overflow-hidden border border-border aspect-video flex items-center justify-center">
-                <div className="text-center">
-                  <p className="text-muted-foreground mb-4">
-                    El video será disponible aquí una vez que lo subas a YouTube
-                  </p>
-                  <p className="text-sm text-muted-foreground">
-                    Espacio reservado para: iframe de YouTube privado
-                  </p>
-                </div>
+              <div className="rounded-lg overflow-hidden border border-border">
+                <iframe
+                  width="100%"
+                  height="500"
+                  src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                  title="Ejercicio 1: Conectar con el Campo KS"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  className="w-full"
+                />
               </div>
               <p className="text-sm text-muted-foreground mt-4">
                 Procura buscar un momento de calma y soledad para practicar este ejercicio. Esto te permitirá disfrutar más de la experiencia y recibir la transmisión energética con mayor claridad.
