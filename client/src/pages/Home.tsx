@@ -291,47 +291,55 @@ export default function Home() {
               {
                 title: "KS Healing",
                 description: "La base fundamental de la sanación energética. Aprende a trabajar directamente con la Energía Keiouvos Stharef para transformar tu campo vibracional y recordar tu verdadera naturaleza divina.",
-                icon: "✨",
+                image: "/images/ks-healing-program.png",
                 color: "from-primary/20 to-primary/5",
                 href: "/ks-healing",
               },
               {
                 title: "D.A.R.T.",
                 description: "Deep Archetypal Renewal Therapy. Trabaja en la raíz de tus patrones internos para reemplazar arquetipos negativos por arquetipos positivos y balanceados.",
-                icon: "🔄",
+                image: "/images/dart-program.png",
                 color: "from-accent/20 to-accent/5",
                 href: "/dart",
               },
               {
                 title: "Genética Sagrada",
                 description: "Accede a la sabiduría ancestral de tu linaje. Activa tu ADN espiritual y reconecta con el poder hereditario de tu familia.",
-                icon: "🧬",
+                image: "/images/genetica-sagrada-program.png",
                 color: "from-primary/20 to-accent/10",
                 href: "/genetica-sagrada",
               },
               {
                 title: "Retiro Sagrado",
                 description: "Una experiencia inmersiva de transformación profunda. Retiros presenciales donde experimentarás transmisiones intensivas de Energía KS en comunidad.",
-                icon: "🏔️",
+                image: "/images/retiro-sagrado-program.png",
                 color: "from-accent/20 to-primary/10",
                 href: "/retiro-sagrado",
               },
             ].map((program, idx) => (
-              <Card key={idx} className={`p-8 border-border/50 hover:shadow-xl transition-all hover:-translate-y-2 bg-gradient-to-br ${program.color} flex flex-col`}>
-                <div className="text-5xl mb-4">{program.icon}</div>
-                <h3 className="font-display text-2xl font-bold text-foreground mb-3">
-                  {program.title}
-                </h3>
-                <p className="text-muted-foreground mb-6 flex-grow leading-relaxed">
-                  {program.description}
-                </p>
-                <Link href={program.href}>
-                  <a>
-                    <Button variant="outline" className="w-full border-primary text-primary hover:bg-primary/10">
-                      Conocer Más
-                    </Button>
-                  </a>
-                </Link>
+              <Card key={idx} className="overflow-hidden border-border/50 hover:shadow-xl transition-all hover:-translate-y-2 flex flex-col">
+                <div className="relative h-48 overflow-hidden">
+                  <img
+                    src={program.image}
+                    alt={program.title}
+                    className="w-full h-full object-cover hover:scale-105 transition-transform"
+                  />
+                </div>
+                <div className={`p-8 bg-gradient-to-br ${program.color} flex flex-col flex-grow`}>
+                  <h3 className="font-display text-2xl font-bold text-foreground mb-3">
+                    {program.title}
+                  </h3>
+                  <p className="text-muted-foreground mb-6 flex-grow leading-relaxed">
+                    {program.description}
+                  </p>
+                  <Link href={program.href}>
+                    <a>
+                      <Button variant="outline" className="w-full border-primary text-primary hover:bg-primary/10">
+                        Conocer Más
+                      </Button>
+                    </a>
+                  </Link>
+                </div>
               </Card>
             ))}
           </div>
