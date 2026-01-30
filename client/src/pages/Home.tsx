@@ -362,8 +362,8 @@ export default function Home() {
         </div>
         
         {/* SVG Divider - Bottom of Programs Section */}
-        <svg className="w-full" style={{height: '100px', backgroundColor: '#ffffff', borderColor: '#e6e6e6'}} viewBox="0 0 1200 120" preserveAspectRatio="none">
-          <path d="M0,60 Q300,0 600,60 T1200,60 L1200,120 L0,120 Z" fill="#000" opacity="0.08"/>
+        <svg className="w-full" style={{height: '100px', backgroundColor: '#000000'}} viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path d="M0,60 Q300,0 600,60 T1200,60 L1200,120 L0,120 Z" fill="#000" opacity="1"/>
         </svg>
       </section>
 
