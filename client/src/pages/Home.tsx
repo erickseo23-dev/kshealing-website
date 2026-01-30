@@ -585,7 +585,7 @@ export default function Home() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/sesiones">
               <a>
-                <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-primary gap-2">
+                <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-primary gap-2" style={{color: '#ffffff'}}>
                   Sesión Privada
                   <ArrowRight size={20} />
                 </Button>
