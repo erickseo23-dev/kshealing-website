@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -6,6 +7,122 @@ import { Link } from "wouter";
 import { Sparkles, Heart, Zap, BookOpen, Users, ArrowRight, Star } from "lucide-react";
 import { eventos } from "@/lib/events";
 import { testimonios } from "@/lib/testimonials";
+
+function TestimonialsCarousel() {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const handlePrevious = () => {
+    setCurrentIndex((prev) => (prev === 0 ? testimonios.length - 1 : prev - 1));
+  };
+
+  const handleNext = () => {
+    setCurrentIndex((prev) => (prev === testimonios.length - 1 ? 0 : prev + 1));
+  };
+
+  const currentTestimonio = testimonios[currentIndex];
+
+  return (
+    <section className="py-20 md:py-32 bg-background">
+      <div className="container mx-auto px-4">
+        <div className="max-w-3xl mx-auto mb-16">
+          <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-6 text-center">
+            Historias de <span className="text-primary">Transformación</span>
+          </h2>
+          <p className="text-lg text-muted-foreground text-center leading-relaxed">
+            Experiencias reales de personas que han trabajado con la Energía KS
+          </p>
+        </div>
+
+        <div className="max-w-3xl mx-auto mb-12">
+          {/* Carousel Card */}
+          <Card className="p-8 md:p-12 border-border/50 min-h-[400px] flex flex-col">
+            {/* Stars */}
+            <div className="flex gap-1 mb-4">
+              {Array.from({ length: currentTestimonio.rating }).map((_, i) => (
+                <Star key={i} size={16} className="fill-secondary text-secondary" />
+              ))}
+            </div>
+
+            {/* Quote */}
+            <p className="text-lg text-foreground mb-8 flex-grow leading-relaxed italic">
+              "{currentTestimonio.text}"
+            </p>
+
+            {/* Author Info */}
+            <div className="border-t border-border pt-6 mb-8">
+              <h3 className="font-display text-xl font-bold text-foreground mb-2">
+                {currentTestimonio.name}
+              </h3>
+              <p className="text-sm text-primary font-semibold mb-2">
+                {currentTestimonio.title}
+              </p>
+              <p className="text-xs text-muted-foreground mb-3">
+                {currentTestimonio.location}
+              </p>
+              <span className="inline-block text-xs font-semibold text-primary bg-primary/10 px-3 py-1 rounded-full">
+                {currentTestimonio.certification}
+              </span>
+            </div>
+
+            {/* Navigation Controls */}
+            <div className="flex items-center justify-between gap-4">
+              <Button
+                onClick={handlePrevious}
+                variant="outline"
+                className="border-primary text-primary hover:bg-primary/10"
+              >
+                ← Anterior
+              </Button>
+
+              {/* Indicators */}
+              <div className="flex gap-2">
+                {testimonios.map((_, idx) => (
+                  <button
+                    key={idx}
+                    onClick={() => setCurrentIndex(idx)}
+                    className={`w-2 h-2 rounded-full transition-all ${
+                      idx === currentIndex
+                        ? "bg-primary w-8"
+                        : "bg-border hover:bg-primary/50"
+                    }`}
+                    aria-label={`Ir al testimonio ${idx + 1}`}
+                  />
+                ))}
+              </div>
+
+              <Button
+                onClick={handleNext}
+                variant="outline"
+                className="border-primary text-primary hover:bg-primary/10"
+              >
+                Siguiente →
+              </Button>
+            </div>
+          </Card>
+        </div>
+
+        {/* Counter */}
+        <div className="text-center mb-8">
+          <p className="text-sm text-muted-foreground">
+            Testimonio {currentIndex + 1} de {testimonios.length}
+          </p>
+        </div>
+
+        {/* View All Link */}
+        <div className="text-center">
+          <Link href="/testimonios">
+            <a>
+              <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-primary/10 gap-2">
+                Ver Todos los Testimonios
+                <ArrowRight size={20} />
+              </Button>
+            </a>
+          </Link>
+        </div>
+      </div>
+    </section>
+  );
+}
 
 export default function Home() {
   return (
@@ -265,64 +382,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Testimonials Section */}
-      <section className="py-20 md:py-32 bg-background">
-        <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto mb-16">
-            <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-6 text-center">
-              Historias de <span className="text-primary">Transformación</span>
-            </h2>
-            <p className="text-lg text-muted-foreground text-center leading-relaxed">
-              Experiencias reales de personas que han trabajado con la Energía KS
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto mb-12">
-            {testimonios.slice(0, 3).map((testimonio) => (
-              <Card key={testimonio.id} className="p-8 border-border/50 hover:shadow-lg transition-shadow flex flex-col">
-                {/* Stars */}
-                <div className="flex gap-1 mb-4">
-                  {Array.from({ length: testimonio.rating }).map((_, i) => (
-                    <Star key={i} size={16} className="fill-secondary text-secondary" />
-                  ))}
-                </div>
-
-                {/* Quote */}
-                <p className="text-foreground mb-6 flex-grow leading-relaxed italic">
-                  "{testimonio.text}"
-                </p>
-
-                {/* Author Info */}
-                <div className="border-t border-border pt-4">
-                  <h3 className="font-display font-bold text-foreground mb-1">
-                    {testimonio.name}
-                  </h3>
-                  <p className="text-sm text-primary font-semibold mb-1">
-                    {testimonio.title}
-                  </p>
-                  <p className="text-xs text-muted-foreground mb-2">
-                    {testimonio.location}
-                  </p>
-                  <span className="inline-block text-xs font-semibold text-primary bg-primary/10 px-3 py-1 rounded-full">
-                    {testimonio.certification}
-                  </span>
-                </div>
-              </Card>
-            ))}
-          </div>
-
-          <div className="text-center">
-            <Link href="/testimonios">
-              <a>
-                <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-primary/10 gap-2">
-                  Ver Todos los Testimonios
-                  <ArrowRight size={20} />
-                </Button>
-              </a>
-            </Link>
-          </div>
-        </div>
-      </section>
+      {/* Testimonials Carousel Section */}
+      <TestimonialsCarousel />
 
       {/* Latest Blog Posts */}
       <section className="py-20 md:py-32 bg-primary/5">
