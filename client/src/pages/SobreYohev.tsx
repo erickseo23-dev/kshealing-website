@@ -15,7 +15,7 @@ export default function SobreYohev() {
     const fetchYoutubeVideos = async () => {
       try {
         // Using YouTube's public API to get latest videos from the channel
-        const channelId = "UCnDIbTSPJHLpFzmB0iPkH_A"; // Dr. Erick Gurrola channel ID
+        const channelId = "UCAXCnGTE3YIjQuZFP--sACw"; // Dr. Erick Gurrola channel ID
         const apiKey = "AIzaSyB7CtKN53btaGlhxAfN6sv6wboAbTBEs2E"; // Public API key
         
         const response = await fetch(
