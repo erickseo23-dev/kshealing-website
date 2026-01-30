@@ -1,9 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Link } from "wouter";
-import { ArrowRight, Check, Zap, Brain, Heart, Shield } from "lucide-react";
+import { ArrowRight, Check, Zap, Brain, Heart, Shield, Star } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import { dartTestimonials } from "@/lib/programTestimonials";
 
 export default function DART() {
   return (
@@ -210,6 +211,40 @@ export default function DART() {
                     <Check size={16} className="text-accent" />
                   </div>
                   <p className="text-muted-foreground">{benefit}</p>
+                </div>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials Section */}
+      <section className="py-20 md:py-32 bg-accent/5">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto mb-16 text-center">
+            <h2 className="font-display text-4xl font-bold text-foreground mb-6">
+              Transformaciones con <span className="text-accent">D.A.R.T.</span>
+            </h2>
+            <p className="text-lg text-muted-foreground">
+              Descubre cómo D.A.R.T. ha transformado arquetipos y vidas
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            {dartTestimonials.map((testimonial) => (
+              <Card key={testimonial.id} className="p-8 border-border/50 hover:shadow-lg transition-shadow flex flex-col">
+                <div className="flex gap-1 mb-4">
+                  {[...Array(testimonial.rating)].map((_, i) => (
+                    <Star key={i} size={16} className="fill-accent text-accent" />
+                  ))}
+                </div>
+                <p className="text-muted-foreground mb-6 flex-grow italic">
+                  "{testimonial.quote}"
+                </p>
+                <div className="border-t border-border/50 pt-4">
+                  <p className="font-display font-bold text-foreground">{testimonial.name}</p>
+                  <p className="text-sm text-muted-foreground">{testimonial.title}</p>
+                  <p className="text-xs text-accent mt-1">{testimonial.certification}</p>
                 </div>
               </Card>
             ))}
