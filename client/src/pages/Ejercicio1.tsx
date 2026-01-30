@@ -246,6 +246,12 @@ export default function Ejercicio1() {
           totalExercises={totalExercises}
         />
       </div>
+
+      {/* Programas Section */}
+      <ProgramasSection />
+
+      {/* Eventos Section */}
+      <EventosSection />
     </EjercicioLayout>
   );
 }
