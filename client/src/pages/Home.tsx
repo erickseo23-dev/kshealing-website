@@ -363,8 +363,8 @@ export default function Home() {
       </section>
 
       {/* SVG Divider - Bottom of Programs Section */}
-      <svg className="w-full h-24 md:h-32 text-background" viewBox="0 0 1200 120" preserveAspectRatio="none">
-        <path d="M0,50 Q300,0 600,50 T1200,50 L1200,120 L0,120 Z" fill="currentColor" opacity="0.1"/>
+      <svg className="w-full h-24 md:h-32" viewBox="0 0 1200 120" preserveAspectRatio="none" style={{display: 'block'}}>
+        <path d="M0,50 Q300,100 600,50 T1200,50 L1200,0 L0,0 Z" fill="rgba(0,0,0,0.05)" />
       </svg>
 
       {/* Upcoming Events */}
