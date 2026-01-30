@@ -149,13 +149,13 @@ export default function Home() {
         
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl mx-auto text-center">
-            <div className="inline-block mb-6 px-4 py-2 rounded-full bg-accent/20 border border-accent/50">
-              <p className="text-accent font-medium text-sm">SER UN SOL EN LA TIERRA</p>
+            <div className="inline-block mb-6 px-4 py-2 rounded-full bg-accent/20 border border-accent/50" style={{color: '#ffffff'}}>
+              <p className="text-accent font-medium text-sm" style={{color: '#ffffff'}}>SER UN SOL EN LA TIERRA</p>
             </div>
             
             <h1 className="font-display text-5xl md:text-7xl font-bold mb-6 leading-tight">
               Recuerda Quién Eres<br />
-              <span className="text-secondary">Realmente</span>
+              <span className="text-secondary" style={{color: '#fbbc0e'}}>Realmente</span>
             </h1>
             
             <p className="text-xl md:text-2xl text-white/90 mb-8 font-serif leading-relaxed">
@@ -165,7 +165,7 @@ export default function Home() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/que-es-ks-healing">
                 <a>
-                  <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-primary gap-2">
+                  <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-primary gap-2" style={{color: '#ffffff'}}>
                     Descubre KS Healing
                     <ArrowRight size={20} />
                   </Button>
@@ -362,7 +362,7 @@ export default function Home() {
         </div>
         
         {/* SVG Divider - Bottom of Programs Section */}
-        <svg className="w-full" style={{height: '100px'}} viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <svg className="w-full" style={{height: '100px', backgroundColor: '#ffffff', borderColor: '#e6e6e6'}} viewBox="0 0 1200 120" preserveAspectRatio="none">
           <path d="M0,60 Q300,0 600,60 T1200,60 L1200,120 L0,120 Z" fill="#000" opacity="0.08"/>
         </svg>
       </section>
