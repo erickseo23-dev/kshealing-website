@@ -15,6 +15,8 @@ import EjercicioCard from "@/components/EjercicioCard";
 import RecommendationItem from "@/components/RecommendationItem";
 import ExerciseProgress from "@/components/ExerciseProgress";
 import ExerciseNavigation from "@/components/ExerciseNavigation";
+import ProgramasSection from "@/components/ProgramasSection";
+import EventosSection from "@/components/EventosSection";
 
 export default function Ejercicio1() {
   const [completed, setCompleted] = useState(false);
