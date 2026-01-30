@@ -3,8 +3,9 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Link } from "wouter";
-import { Sparkles, Heart, Zap, BookOpen, Users, ArrowRight } from "lucide-react";
+import { Sparkles, Heart, Zap, BookOpen, Users, ArrowRight, Star } from "lucide-react";
 import { eventos } from "@/lib/events";
+import { testimonios } from "@/lib/testimonials";
 
 export default function Home() {
   return (
@@ -260,6 +261,65 @@ export default function Home() {
                 </Card>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials Section */}
+      <section className="py-20 md:py-32 bg-background">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto mb-16">
+            <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-6 text-center">
+              Historias de <span className="text-primary">Transformación</span>
+            </h2>
+            <p className="text-lg text-muted-foreground text-center leading-relaxed">
+              Experiencias reales de personas que han trabajado con la Energía KS
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto mb-12">
+            {testimonios.slice(0, 3).map((testimonio) => (
+              <Card key={testimonio.id} className="p-8 border-border/50 hover:shadow-lg transition-shadow flex flex-col">
+                {/* Stars */}
+                <div className="flex gap-1 mb-4">
+                  {Array.from({ length: testimonio.rating }).map((_, i) => (
+                    <Star key={i} size={16} className="fill-secondary text-secondary" />
+                  ))}
+                </div>
+
+                {/* Quote */}
+                <p className="text-foreground mb-6 flex-grow leading-relaxed italic">
+                  "{testimonio.text}"
+                </p>
+
+                {/* Author Info */}
+                <div className="border-t border-border pt-4">
+                  <h3 className="font-display font-bold text-foreground mb-1">
+                    {testimonio.name}
+                  </h3>
+                  <p className="text-sm text-primary font-semibold mb-1">
+                    {testimonio.title}
+                  </p>
+                  <p className="text-xs text-muted-foreground mb-2">
+                    {testimonio.location}
+                  </p>
+                  <span className="inline-block text-xs font-semibold text-primary bg-primary/10 px-3 py-1 rounded-full">
+                    {testimonio.certification}
+                  </span>
+                </div>
+              </Card>
+            ))}
+          </div>
+
+          <div className="text-center">
+            <Link href="/testimonios">
+              <a>
+                <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-primary/10 gap-2">
+                  Ver Todos los Testimonios
+                  <ArrowRight size={20} />
+                </Button>
+              </a>
+            </Link>
           </div>
         </div>
       </section>
