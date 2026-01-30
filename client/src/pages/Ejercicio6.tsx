@@ -25,7 +25,7 @@ export default function Ejercicio6() {
   return (
     <EjercicioLayout>
       {/* Header Mejorado */}
-      <div className="bg-gradient-to-r from-blue-900/20 via-blue-700/20 to-slate-600/20 border-b border-border relative overflow-hidden">
+      <div className="bg-gradient-to-r from-blue-900/20 via-slate-700/20 to-slate-600/20 border-b border-border relative overflow-hidden">
         {/* Fondo decorativo */}
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-0 right-0 w-96 h-96 bg-blue-600 rounded-full blur-3xl" />
@@ -34,7 +34,7 @@ export default function Ejercicio6() {
 
         <div className="container py-12 relative z-10">
           <div className="flex items-start gap-6 mb-6">
-            <div className="p-4 bg-gradient-to-br from-blue-900 to-emerald-600 rounded-lg">
+            <div className="p-4 bg-gradient-to-br from-blue-900 to-slate-600 rounded-lg">
               <Zap className="w-8 h-8 text-white" />
             </div>
             <div>
@@ -65,7 +65,7 @@ export default function Ejercicio6() {
         <EjercicioCard
           icon={Lightbulb}
           title="Introducción al Ejercicio"
-          colorClass="from-blue-900/10 to-emerald-600/10"
+          colorClass="from-blue-900/10 to-slate-600/10"
           variant="intro"
         >
           <div className="space-y-4 text-muted-foreground leading-relaxed">
@@ -96,8 +96,8 @@ export default function Ejercicio6() {
 
               {/* Video Container mejorado */}
               <div className="relative group">
-                <div className="absolute -inset-1 bg-gradient-to-r from-blue-900 to-emerald-600 rounded-lg blur opacity-25 group-hover:opacity-75 transition duration-1000" />
-                <div className="relative bg-gradient-to-br from-blue-900 to-emerald-600/10 rounded-lg overflow-hidden border border-border aspect-video flex items-center justify-center">
+                <div className="absolute -inset-1 bg-gradient-to-r from-blue-900 to-slate-600 rounded-lg blur opacity-25 group-hover:opacity-75 transition duration-1000" />
+                <div className="relative bg-gradient-to-br from-blue-900 to-slate-600/10 rounded-lg overflow-hidden border border-border aspect-video flex items-center justify-center">
                   <div className="text-center">
                     <div className="mb-4 inline-block p-4 bg-blue-600/20 rounded-full">
                       <Wind className="w-8 h-8 text-blue-400 animate-spin" />
@@ -141,7 +141,7 @@ export default function Ejercicio6() {
         <EjercicioCard
           icon={Heart}
           title="Recomendaciones para la Práctica"
-          colorClass="from-blue-900/10 to-emerald-600/10"
+          colorClass="from-blue-900/10 to-slate-600/10"
           variant="recommendations"
         >
           <ul className="space-y-4">
@@ -174,13 +174,13 @@ export default function Ejercicio6() {
         </EjercicioCard>
 
         {/* Sección de Completación mejorada */}
-        <div className="mt-12 p-8 bg-gradient-to-r from-blue-900 to-emerald-600/10 rounded-lg border border-emerald-500/20">
+        <div className="mt-12 p-8 bg-gradient-to-r from-blue-900 to-slate-600/10 rounded-lg border border-emerald-500/20">
           <div className="flex flex-col md:flex-row items-center justify-between gap-6">
             <div>
               <h3 className="text-xl font-display font-bold text-foreground mb-2 flex items-center gap-2">
                 {completed ? (
                   <>
-                    <CheckCircle2 className="w-6 h-6 text-green-500" />
+                    <CheckCircle2 className="w-6 h-6 text-blue-400" />
                     ¡Ejercicio Completado!
                   </>
                 ) : (
@@ -200,8 +200,8 @@ export default function Ejercicio6() {
               onClick={() => setCompleted(!completed)}
               className={`gap-2 whitespace-nowrap ${
                 completed
-                  ? "bg-gradient-to-r from-blue-800 to-emerald-600 hover:from-blue-900 hover:to-emerald-700"
-                  : "bg-gradient-to-r from-blue-900 to-emerald-600 hover:from-blue-900 to-emerald-700"
+                  ? "bg-gradient-to-r from-blue-800 to-slate-600 hover:from-blue-900 hover:to-emerald-700"
+                  : "bg-gradient-to-r from-blue-900 to-slate-600 hover:from-blue-900 to-emerald-700"
               }`}
             >
               <CheckCircle2 size={20} />

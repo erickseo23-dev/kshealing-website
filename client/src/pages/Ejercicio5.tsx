@@ -187,7 +187,7 @@ export default function Ejercicio5() {
               <h3 className="text-xl font-display font-bold text-foreground mb-2 flex items-center gap-2">
                 {completed ? (
                   <>
-                    <CheckCircle2 className="w-6 h-6 text-green-500" />
+                    <CheckCircle2 className="w-6 h-6 text-blue-400" />
                     ¡Ejercicio Completado!
                   </>
                 ) : (
@@ -207,7 +207,7 @@ export default function Ejercicio5() {
               onClick={() => setCompleted(!completed)}
               className={`gap-2 whitespace-nowrap ${
                 completed
-                  ? "bg-gradient-to-r from-blue-800 to-emerald-600 hover:from-blue-900 hover:to-emerald-700"
+                  ? "bg-gradient-to-r from-blue-800 to-slate-600 hover:from-blue-900 hover:to-emerald-700"
                   : "bg-gradient-to-r from-blue-800 to-slate-600 hover:from-blue-900 hover:to-teal-700"
               }`}
             >

@@ -25,7 +25,7 @@ export default function Ejercicio1() {
   return (
     <EjercicioLayout>
       {/* Header Mejorado */}
-      <div className="bg-gradient-to-r from-blue-900/20 via-blue-700/20 to-slate-600/20 border-b border-border relative overflow-hidden">
+      <div className="bg-gradient-to-r from-blue-900/20 via-slate-700/20 to-slate-600/20 border-b border-border relative overflow-hidden">
         {/* Fondo decorativo */}
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-0 right-0 w-96 h-96 bg-blue-600 rounded-full blur-3xl" />
@@ -34,7 +34,7 @@ export default function Ejercicio1() {
 
         <div className="container py-12 relative z-10">
           <div className="flex items-start gap-6 mb-6">
-            <div className="p-4 bg-gradient-to-br from-blue-800 to-blue-600 rounded-lg">
+            <div className="p-4 bg-gradient-to-br from-blue-800 to-slate-600 rounded-lg">
               <Compass className="w-8 h-8 text-white" />
             </div>
             <div>
@@ -66,7 +66,7 @@ export default function Ejercicio1() {
         <EjercicioCard
           icon={Lightbulb}
           title="Introducción al Ejercicio"
-          colorClass="from-blue-800/10 to-blue-600/10"
+          colorClass="from-blue-800/10 to-slate-600/10"
           variant="intro"
         >
           <div className="space-y-4 text-muted-foreground leading-relaxed">
@@ -100,7 +100,7 @@ export default function Ejercicio1() {
           <div className="lg:col-span-2">
             <section>
               <h2 className="text-2xl font-display font-bold text-foreground mb-6 flex items-center gap-3">
-                <Sparkles className="w-6 h-6 text-slate-400" />
+                <Sparkles className="w-6 h-6 text-blue-400" />
                 Video del Ejercicio
               </h2>
 
@@ -151,7 +151,7 @@ export default function Ejercicio1() {
         <EjercicioCard
           icon={Heart}
           title="Recomendaciones para la Práctica"
-          colorClass="from-indigo-800/10 to-pink-500/10"
+          colorClass="from-blue-800/10 to-pink-500/10"
           variant="recommendations"
         >
           <ul className="space-y-4">
@@ -184,18 +184,18 @@ export default function Ejercicio1() {
         </EjercicioCard>
 
         {/* Sección de Completación mejorada */}
-        <div className="mt-12 p-8 bg-gradient-to-r from-blue-700/10 to-slate-500/10 rounded-lg border border-emerald-500/20">
+        <div className="mt-12 p-8 bg-gradient-to-r from-blue-800/10 to-slate-600/10 rounded-lg border border-emerald-500/20">
           <div className="flex flex-col md:flex-row items-center justify-between gap-6">
             <div>
               <h3 className="text-xl font-display font-bold text-foreground mb-2 flex items-center gap-2">
                 {completed ? (
                   <>
-                    <CheckCircle2 className="w-6 h-6 text-green-500" />
+                    <CheckCircle2 className="w-6 h-6 text-blue-400" />
                     ¡Ejercicio Completado!
                   </>
                 ) : (
                   <>
-                    <Sparkles className="w-6 h-6 text-slate-400" />
+                    <Sparkles className="w-6 h-6 text-blue-400" />
                     ¿Completaste el ejercicio?
                   </>
                 )}
@@ -210,7 +210,7 @@ export default function Ejercicio1() {
               onClick={() => setCompleted(!completed)}
               className={`gap-2 whitespace-nowrap ${
                 completed
-                  ? "bg-gradient-to-r from-blue-800 to-emerald-600 hover:from-blue-900 hover:to-emerald-700"
+                  ? "bg-gradient-to-r from-blue-800 to-slate-600 hover:from-blue-900 hover:to-emerald-700"
                   : "bg-gradient-to-r from-primary to-accent hover:from-primary/90 hover:to-accent/90"
               }`}
             >
