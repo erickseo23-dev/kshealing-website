@@ -39,84 +39,13 @@ export default function KSHealing() {
       {/* What is KS Healing */}
       <section className="py-20 md:py-32">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
-            <div>
-              <h2 className="font-display text-4xl font-bold text-foreground mb-6">
-                ¿Qué es <span className="text-primary">KS Healing</span>?
-              </h2>
-              <div className="space-y-4 text-muted-foreground mb-8">
-                <p className="text-lg leading-relaxed">
-                  KS Healing es un sistema de sanación energética revolucionario que utiliza la Energía Keiouvos Stharef (KS) para facilitar transformación profunda en los sistemas energéticos humanos.
-                </p>
-                <p className="text-lg leading-relaxed">
-                  Un sistema de sanación energética que utiliza la Energía Keiouvos Stharef para facilitar la transformación profunda de los sistemas energéticos humanos.
-                </p>
-              </div>
-              <ul className="space-y-3 mb-8">
-                {[
-                  "Transformar patrones emocionales limitantes",
-                  "Restaurar la coherencia divina original",
-                  "Elevar tu vibración y consciencia",
-                  "Recordar tu verdadera naturaleza divina",
-                ].map((item, idx) => (
-                  <li key={idx} className="flex gap-3 text-muted-foreground">
-                    <Check size={20} className="text-primary flex-shrink-0 mt-1" />
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 rounded-2xl blur-2xl"></div>
-              <img 
-                src="/sdfsf.jpeg" 
-                alt="KS Healing" 
-                className="relative w-full rounded-2xl shadow-2xl object-cover aspect-square"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* The 7 Bodies */}
-      <section className="py-20 md:py-32 bg-primary/5">
-        <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto mb-16 text-center">
             <h2 className="font-display text-4xl font-bold text-foreground mb-6">
-              Sanación de los <span className="text-primary">7 Cuerpos</span>
+              ¿Qué es <span className="text-primary">KS Healing</span>?
             </h2>
             <p className="text-lg text-muted-foreground">
-              KS Healing actúa sobre todos los niveles de tu ser, no solo el físico
+              Un sistema de sanación energética que utiliza la Energía Keiouvos Stharef para facilitar la transformación profunda de los sistemas energéticos humanos.
             </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 max-w-6xl mx-auto">
-            {[
-              { name: "Cuerpo Físico", icon: "💪", description: "Sanación y vitalidad del cuerpo material" },
-              { name: "Cuerpo Emocional", icon: "❤️", description: "Liberación de emociones limitantes" },
-              { name: "Cuerpo Mental", icon: "🧠", description: "Claridad mental y reprogramación" },
-              { name: "Cuerpo Intuitivo", icon: "✨", description: "Conexión con tu intuición divina" },
-              { name: "Cuerpo Álmico", icon: "🌟", description: "Alineación con tu propósito de alma" },
-              { name: "Cuerpo Espiritual", icon: "🙏", description: "Conexión con lo sagrado" },
-              { name: "Cuerpo Divino", icon: "👑", description: "Unión con tu naturaleza divina" },
-            ].map((body, idx) => (
-              <Card key={idx} className="p-6 border-border/50 bg-gradient-to-br from-primary/10 to-background hover:shadow-lg transition-shadow text-center">
-                <div className="text-4xl mb-3">{body.icon}</div>
-                <h3 className="font-display font-bold text-foreground mb-2">{body.name}</h3>
-                <p className="text-sm text-muted-foreground">{body.description}</p>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Benefits with Images */}
-      <section className="py-20 md:py-32">
-        <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto mb-16 text-center">
-            <h2 className="font-display text-4xl font-bold text-foreground mb-6">
-              Beneficios de <span className="text-primary">KS Healing</span>
-            </h2>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
@@ -153,6 +82,38 @@ export default function KSHealing() {
                     {benefit.description}
                   </p>
                 </div>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* The 7 Bodies */}
+      <section className="py-20 md:py-32 bg-primary/5">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto mb-16 text-center">
+            <h2 className="font-display text-4xl font-bold text-foreground mb-6">
+              Sanación de los <span className="text-primary">7 Cuerpos</span>
+            </h2>
+            <p className="text-lg text-muted-foreground">
+              KS Healing actúa sobre todos los niveles de tu ser, no solo el físico
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 max-w-6xl mx-auto">
+            {[
+              { name: "Cuerpo Físico", icon: "💪", description: "Sanación y vitalidad del cuerpo material" },
+              { name: "Cuerpo Emocional", icon: "❤️", description: "Liberación de emociones limitantes" },
+              { name: "Cuerpo Mental", icon: "🧠", description: "Claridad mental y reprogramación" },
+              { name: "Cuerpo Intuitivo", icon: "✨", description: "Conexión con tu intuición divina" },
+              { name: "Cuerpo Álmico", icon: "🌟", description: "Alineación con tu propósito de alma" },
+              { name: "Cuerpo Espiritual", icon: "🙏", description: "Conexión con lo sagrado" },
+              { name: "Cuerpo Divino", icon: "👑", description: "Unión con tu naturaleza divina" },
+            ].map((body, idx) => (
+              <Card key={idx} className="p-6 border-border/50 bg-gradient-to-br from-primary/10 to-background hover:shadow-lg transition-shadow text-center">
+                <div className="text-4xl mb-3">{body.icon}</div>
+                <h3 className="font-display font-bold text-foreground mb-2">{body.name}</h3>
+                <p className="text-sm text-muted-foreground">{body.description}</p>
               </Card>
             ))}
           </div>
