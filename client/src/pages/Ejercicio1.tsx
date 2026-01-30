@@ -25,20 +25,20 @@ export default function Ejercicio1() {
   return (
     <EjercicioLayout>
       {/* Header Mejorado */}
-      <div className="bg-gradient-to-r from-blue-600/20 via-cyan-600/20 to-teal-600/20 border-b border-border relative overflow-hidden">
+      <div className="bg-gradient-to-r from-blue-900/20 via-blue-700/20 to-slate-600/20 border-b border-border relative overflow-hidden">
         {/* Fondo decorativo */}
         <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-0 right-0 w-96 h-96 bg-cyan-500 rounded-full blur-3xl" />
+          <div className="absolute top-0 right-0 w-96 h-96 bg-blue-600 rounded-full blur-3xl" />
           <div className="absolute bottom-0 left-0 w-96 h-96 bg-blue-500 rounded-full blur-3xl" />
         </div>
 
         <div className="container py-12 relative z-10">
           <div className="flex items-start gap-6 mb-6">
-            <div className="p-4 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-lg">
+            <div className="p-4 bg-gradient-to-br from-blue-800 to-blue-600 rounded-lg">
               <Compass className="w-8 h-8 text-white" />
             </div>
             <div>
-              <div className="text-sm font-semibold text-cyan-400 mb-2">
+              <div className="text-sm font-semibold text-blue-300 mb-2">
                 EJERCICIO {exerciseNumber}
               </div>
               <h1 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-2">
@@ -66,13 +66,13 @@ export default function Ejercicio1() {
         <EjercicioCard
           icon={Lightbulb}
           title="Introducción al Ejercicio"
-          colorClass="from-blue-500/10 to-cyan-500/10"
+          colorClass="from-blue-800/10 to-blue-600/10"
           variant="intro"
         >
           <div className="space-y-4 text-muted-foreground leading-relaxed">
             <p>
               Este ejercicio te permite establecer una{" "}
-              <span className="text-cyan-400 font-semibold">
+              <span className="text-blue-300 font-semibold">
                 conexión consciente
               </span>{" "}
               con el Campo Energético KS. A través de esta práctica, activarás tu
@@ -100,13 +100,13 @@ export default function Ejercicio1() {
           <div className="lg:col-span-2">
             <section>
               <h2 className="text-2xl font-display font-bold text-foreground mb-6 flex items-center gap-3">
-                <Sparkles className="w-6 h-6 text-amber-500" />
+                <Sparkles className="w-6 h-6 text-slate-400" />
                 Video del Ejercicio
               </h2>
 
               {/* Video Container mejorado */}
               <div className="relative group">
-                <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 to-cyan-600 rounded-lg blur opacity-25 group-hover:opacity-75 transition duration-1000" />
+                <div className="absolute -inset-1 bg-gradient-to-r from-blue-900 to-slate-600 rounded-lg blur opacity-25 group-hover:opacity-75 transition duration-1000" />
                 <div className="relative bg-gradient-to-br from-primary/10 to-accent/10 rounded-lg overflow-hidden border border-border aspect-video flex items-center justify-center">
                   <div className="text-center">
                     <div className="mb-4 inline-block p-4 bg-primary/20 rounded-full">
@@ -151,7 +151,7 @@ export default function Ejercicio1() {
         <EjercicioCard
           icon={Heart}
           title="Recomendaciones para la Práctica"
-          colorClass="from-purple-500/10 to-pink-500/10"
+          colorClass="from-indigo-800/10 to-pink-500/10"
           variant="recommendations"
         >
           <ul className="space-y-4">
@@ -184,7 +184,7 @@ export default function Ejercicio1() {
         </EjercicioCard>
 
         {/* Sección de Completación mejorada */}
-        <div className="mt-12 p-8 bg-gradient-to-r from-emerald-500/10 to-teal-500/10 rounded-lg border border-emerald-500/20">
+        <div className="mt-12 p-8 bg-gradient-to-r from-blue-700/10 to-slate-500/10 rounded-lg border border-emerald-500/20">
           <div className="flex flex-col md:flex-row items-center justify-between gap-6">
             <div>
               <h3 className="text-xl font-display font-bold text-foreground mb-2 flex items-center gap-2">
@@ -195,7 +195,7 @@ export default function Ejercicio1() {
                   </>
                 ) : (
                   <>
-                    <Sparkles className="w-6 h-6 text-amber-500" />
+                    <Sparkles className="w-6 h-6 text-slate-400" />
                     ¿Completaste el ejercicio?
                   </>
                 )}
@@ -210,7 +210,7 @@ export default function Ejercicio1() {
               onClick={() => setCompleted(!completed)}
               className={`gap-2 whitespace-nowrap ${
                 completed
-                  ? "bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-700 hover:to-emerald-700"
+                  ? "bg-gradient-to-r from-blue-800 to-emerald-600 hover:from-blue-900 hover:to-emerald-700"
                   : "bg-gradient-to-r from-primary to-accent hover:from-primary/90 hover:to-accent/90"
               }`}
             >

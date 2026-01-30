@@ -25,20 +25,20 @@ export default function Ejercicio6() {
   return (
     <EjercicioLayout>
       {/* Header Mejorado */}
-      <div className="bg-gradient-to-r from-green-700/20 via-emerald-600/20 to-teal-600/20 border-b border-border relative overflow-hidden">
+      <div className="bg-gradient-to-r from-blue-900/20 via-blue-700/20 to-slate-600/20 border-b border-border relative overflow-hidden">
         {/* Fondo decorativo */}
         <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-0 right-0 w-96 h-96 bg-emerald-500 rounded-full blur-3xl" />
-          <div className="absolute bottom-0 left-0 w-96 h-96 bg-emerald-500 rounded-full blur-3xl" />
+          <div className="absolute top-0 right-0 w-96 h-96 bg-blue-600 rounded-full blur-3xl" />
+          <div className="absolute bottom-0 left-0 w-96 h-96 bg-blue-600 rounded-full blur-3xl" />
         </div>
 
         <div className="container py-12 relative z-10">
           <div className="flex items-start gap-6 mb-6">
-            <div className="p-4 bg-gradient-to-br from-green-700 to-emerald-600 rounded-lg">
+            <div className="p-4 bg-gradient-to-br from-blue-900 to-emerald-600 rounded-lg">
               <Zap className="w-8 h-8 text-white" />
             </div>
             <div>
-              <div className="text-sm font-semibold text-emerald-400 mb-2">
+              <div className="text-sm font-semibold text-blue-300 mb-2">
                 EJERCICIO {exerciseNumber}
               </div>
               <h1 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-2">
@@ -65,7 +65,7 @@ export default function Ejercicio6() {
         <EjercicioCard
           icon={Lightbulb}
           title="Introducción al Ejercicio"
-          colorClass="from-green-700/10 to-emerald-600/10"
+          colorClass="from-blue-900/10 to-emerald-600/10"
           variant="intro"
         >
           <div className="space-y-4 text-muted-foreground leading-relaxed">
@@ -90,17 +90,17 @@ export default function Ejercicio6() {
           <div className="lg:col-span-2">
             <section>
               <h2 className="text-2xl font-display font-bold text-foreground mb-6 flex items-center gap-3">
-                <Sparkles className="w-6 h-6 text-emerald-500" />
+                <Sparkles className="w-6 h-6 text-blue-400" />
                 Video del Ejercicio
               </h2>
 
               {/* Video Container mejorado */}
               <div className="relative group">
-                <div className="absolute -inset-1 bg-gradient-to-r from-green-700 to-emerald-600 rounded-lg blur opacity-25 group-hover:opacity-75 transition duration-1000" />
-                <div className="relative bg-gradient-to-br from-green-700 to-emerald-600/10 rounded-lg overflow-hidden border border-border aspect-video flex items-center justify-center">
+                <div className="absolute -inset-1 bg-gradient-to-r from-blue-900 to-emerald-600 rounded-lg blur opacity-25 group-hover:opacity-75 transition duration-1000" />
+                <div className="relative bg-gradient-to-br from-blue-900 to-emerald-600/10 rounded-lg overflow-hidden border border-border aspect-video flex items-center justify-center">
                   <div className="text-center">
-                    <div className="mb-4 inline-block p-4 bg-emerald-500/20 rounded-full">
-                      <Wind className="w-8 h-8 text-emerald-500 animate-spin" />
+                    <div className="mb-4 inline-block p-4 bg-blue-600/20 rounded-full">
+                      <Wind className="w-8 h-8 text-blue-400 animate-spin" />
                     </div>
                     <p className="text-muted-foreground mb-4">
                       El video será disponible aquí una vez que lo subas a YouTube
@@ -114,7 +114,7 @@ export default function Ejercicio6() {
 
               <div className="mt-4 p-4 bg-card rounded-lg border border-border">
                 <p className="text-sm text-muted-foreground flex items-start gap-2">
-                  <span className="text-emerald-500 font-bold flex-shrink-0 mt-1">
+                  <span className="text-blue-400 font-bold flex-shrink-0 mt-1">
                     ⏱
                   </span>
                   <span>
@@ -141,7 +141,7 @@ export default function Ejercicio6() {
         <EjercicioCard
           icon={Heart}
           title="Recomendaciones para la Práctica"
-          colorClass="from-green-700/10 to-emerald-600/10"
+          colorClass="from-blue-900/10 to-emerald-600/10"
           variant="recommendations"
         >
           <ul className="space-y-4">
@@ -174,7 +174,7 @@ export default function Ejercicio6() {
         </EjercicioCard>
 
         {/* Sección de Completación mejorada */}
-        <div className="mt-12 p-8 bg-gradient-to-r from-green-700 to-emerald-600/10 rounded-lg border border-emerald-500/20">
+        <div className="mt-12 p-8 bg-gradient-to-r from-blue-900 to-emerald-600/10 rounded-lg border border-emerald-500/20">
           <div className="flex flex-col md:flex-row items-center justify-between gap-6">
             <div>
               <h3 className="text-xl font-display font-bold text-foreground mb-2 flex items-center gap-2">
@@ -185,7 +185,7 @@ export default function Ejercicio6() {
                   </>
                 ) : (
                   <>
-                    <Sparkles className="w-6 h-6 text-emerald-500" />
+                    <Sparkles className="w-6 h-6 text-blue-400" />
                     ¿Completaste el ejercicio?
                   </>
                 )}
@@ -200,8 +200,8 @@ export default function Ejercicio6() {
               onClick={() => setCompleted(!completed)}
               className={`gap-2 whitespace-nowrap ${
                 completed
-                  ? "bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-700 hover:to-emerald-700"
-                  : "bg-gradient-to-r from-green-700 to-emerald-600 hover:from-green-700 to-emerald-700"
+                  ? "bg-gradient-to-r from-blue-800 to-emerald-600 hover:from-blue-900 hover:to-emerald-700"
+                  : "bg-gradient-to-r from-blue-900 to-emerald-600 hover:from-blue-900 to-emerald-700"
               }`}
             >
               <CheckCircle2 size={20} />
@@ -213,7 +213,7 @@ export default function Ejercicio6() {
         {/* Próximos Pasos */}
         <section className="mt-12 pt-8 border-t border-border">
           <h3 className="text-xl font-display font-bold text-foreground mb-4 flex items-center gap-2">
-            <Compass className="w-6 h-6 text-emerald-500" />
+            <Compass className="w-6 h-6 text-blue-400" />
             Próximos Pasos
           </h3>
           <div className="space-y-4 text-muted-foreground">
