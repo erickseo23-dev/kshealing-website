@@ -156,27 +156,38 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto mb-8">
             {eventos.slice(0, 3).map((event) => (
-              <Card key={event.id} className="p-6 border-border/50 hover:shadow-lg transition-shadow flex flex-col">
-                <div className="mb-4">
-                  <span className="text-xs font-bold text-white bg-primary px-3 py-1 rounded-full">
-                    {event.tipo || "Evento"}
-                  </span>
+              <Card key={event.id} className="overflow-hidden border-border/50 hover:shadow-lg transition-shadow flex flex-col">
+                {event.imagen && (
+                  <div className="relative h-48 overflow-hidden bg-muted">
+                    <img
+                      src={event.imagen}
+                      alt={event.title}
+                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                    />
+                  </div>
+                )}
+                <div className="p-6 flex flex-col flex-grow">
+                  <div className="mb-4">
+                    <span className="text-xs font-bold text-white bg-primary px-3 py-1 rounded-full">
+                      {event.tipo || "Evento"}
+                    </span>
+                  </div>
+                  <div className="flex-grow">
+                    <p className="text-sm text-primary font-semibold mb-2">{event.fecha}</p>
+                    <h3 className="font-display text-lg font-bold text-foreground mb-2">
+                      {event.title}
+                    </h3>
+                    <p className="text-sm text-muted-foreground mb-3 flex items-center gap-2">
+                      📍 {event.ubicacion}
+                    </p>
+                    <p className="text-muted-foreground text-sm">
+                      {event.description}
+                    </p>
+                  </div>
+                  <Button className="w-full mt-6 bg-primary hover:bg-primary/90 text-white">
+                    Más Información
+                  </Button>
                 </div>
-                <div className="flex-grow">
-                  <p className="text-sm text-primary font-semibold mb-2">{event.fecha}</p>
-                  <h3 className="font-display text-lg font-bold text-foreground mb-2">
-                    {event.title}
-                  </h3>
-                  <p className="text-sm text-muted-foreground mb-3 flex items-center gap-2">
-                    📍 {event.ubicacion}
-                  </p>
-                  <p className="text-muted-foreground text-sm">
-                    {event.description}
-                  </p>
-                </div>
-                <Button className="w-full mt-6 bg-primary hover:bg-primary/90 text-white">
-                  Más Información
-                </Button>
               </Card>
             ))}
           </div>
