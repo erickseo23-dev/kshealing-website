@@ -4,7 +4,7 @@ import { Link } from "wouter";
 
 export default function ProgramasSection() {
   return (
-    <section className="py-20 md:py-32 bg-black relative overflow-hidden">
+    <section className="py-20 md:py-32 bg-white relative overflow-hidden">
       {/* Background accent */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-0 left-0 w-96 h-96 bg-primary rounded-full blur-3xl" />
@@ -81,7 +81,7 @@ export default function ProgramasSection() {
       </div>
 
       {/* SVG Divider - Bottom of Programs Section */}
-      <svg className="w-full" style={{height: '100px', backgroundColor: '#000000'}} viewBox="0 0 1200 120" preserveAspectRatio="none">
+      <svg className="w-full" style={{height: '100px', backgroundColor: '#ffffff'}} viewBox="0 0 1200 120" preserveAspectRatio="none">
         <path d="M0,60 Q300,0 600,60 T1200,60 L1200,120 L0,120 Z" fill="#000" opacity="1"/>
       </svg>
     </section>
