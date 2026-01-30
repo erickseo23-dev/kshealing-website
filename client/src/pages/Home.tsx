@@ -250,7 +250,7 @@ export default function Home() {
               <div className="absolute -inset-4 bg-gradient-to-br from-primary/20 to-accent/20 rounded-3xl blur-xl opacity-50"></div>
               <div className="relative aspect-square rounded-2xl overflow-hidden shadow-2xl border border-primary/20">
                 <img 
-                  src="/images/yohev-foto.jpg" 
+                  src="/images/yohev-foto-anterior.jpg" 
                   alt="YOHEV - Dr. Erick Gurrola" 
                   className="w-full h-full object-cover"
                 />
