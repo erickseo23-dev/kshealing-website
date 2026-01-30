@@ -1,66 +1,137 @@
 import { Button } from "@/components/ui/button";
-import { CheckCircle2 } from "lucide-react";
+import {
+  CheckCircle2,
+  Zap,
+  Lightbulb,
+  Heart,
+  Compass,
+  Wind,
+  Sparkles,
+} from "lucide-react";
 import { useState } from "react";
 import EjercicioLayout from "@/components/EjercicioLayout";
 import BookClubCTA from "@/components/BookClubCTA";
+import EjercicioCard from "@/components/EjercicioCard";
+import RecommendationItem from "@/components/RecommendationItem";
+import ExerciseProgress from "@/components/ExerciseProgress";
+import ExerciseNavigation from "@/components/ExerciseNavigation";
 
 export default function Ejercicio2() {
   const [completed, setCompleted] = useState(false);
 
+  const exerciseNumber = 2;
+  const totalExercises = 10;
+
   return (
     <EjercicioLayout>
-      {/* Header */}
-      <div className="bg-gradient-to-r from-primary/10 to-accent/10 border-b border-border">
-        <div className="container py-8">
-          <h1 className="text-4xl font-display font-bold text-foreground mb-2">
-            Ejercicio 2. Para Activar los Chakras de las Manos
-          </h1>
-          <p className="text-muted-foreground">
-            Despierta el poder energético en tus manos
-          </p>
+      {/* Header Mejorado - Verde Esmeralda a Turquesa */}
+      <div className="bg-gradient-to-r from-emerald-600/20 via-teal-600/20 to-cyan-600/20 border-b border-border relative overflow-hidden">
+        {/* Fondo decorativo */}
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute top-0 right-0 w-96 h-96 bg-emerald-500 rounded-full blur-3xl" />
+          <div className="absolute bottom-0 left-0 w-96 h-96 bg-teal-500 rounded-full blur-3xl" />
+        </div>
+
+        <div className="container py-12 relative z-10">
+          <div className="flex items-start gap-6 mb-6">
+            <div className="p-4 bg-gradient-to-br from-emerald-500 to-teal-500 rounded-lg">
+              <Zap className="w-8 h-8 text-white" />
+            </div>
+            <div>
+              <div className="text-sm font-semibold text-emerald-400 mb-2">
+                EJERCICIO {exerciseNumber}
+              </div>
+              <h1 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-2">
+                Para Activar los Chakras de las Manos
+              </h1>
+              <p className="text-lg text-muted-foreground">
+                Despierta el poder energético en tus manos
+              </p>
+            </div>
+          </div>
+
+          {/* Progreso */}
+          <ExerciseProgress
+            currentExercise={exerciseNumber}
+            totalExercises={totalExercises}
+            completed={completed}
+          />
         </div>
       </div>
 
       {/* Content */}
       <div className="container py-12">
-        <article className="max-w-3xl mx-auto">
-          {/* Introduction */}
-          <section className="mb-12 p-8 bg-card rounded-lg border border-border">
-            <h2 className="text-2xl font-display font-bold text-foreground mb-4">
-              Introducción al Ejercicio
-            </h2>
-            <div className="space-y-4 text-muted-foreground leading-relaxed">
-              <p>
-                Las manos son centros energéticos poderosos. Cada mano contiene chakras que actúan como transmisores y receptores de energía. Cuando estos chakras están activos, tus manos se convierten en instrumentos de sanación y manifestación.
-              </p>
-              <p>
-                Este ejercicio te permite activar conscientemente los chakras de tus manos, despertando su capacidad natural de canalizar y proyectar energía. Esto es fundamental para cualquier trabajo energético posterior, incluyendo la capacidad de transmitir KS Healing a otros.
-              </p>
-              <p>
-                Durante esta práctica, sentirás cómo la energía comienza a fluir a través de tus palmas. Algunos reportan sensaciones de calor, hormigueo, o simplemente una presencia energética clara en sus manos.
-              </p>
-            </div>
-          </section>        {/* Main Content: Video + Form (2 columns) */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
+        {/* Introducción mejorada */}
+        <EjercicioCard
+          icon={Lightbulb}
+          title="Introducción al Ejercicio"
+          colorClass="from-emerald-500/10 to-teal-500/10"
+          variant="intro"
+        >
+          <div className="space-y-4 text-muted-foreground leading-relaxed">
+            <p>
+              Las manos son{" "}
+              <span className="text-emerald-400 font-semibold">
+                centros energéticos poderosos
+              </span>
+              . Cada mano contiene chakras que actúan como transmisores y receptores
+              de energía. Cuando estos chakras están activos, tus manos se convierten
+              en instrumentos de sanación y manifestación.
+            </p>
+            <p>
+              Este ejercicio te permite activar conscientemente los chakras de tus
+              manos, despertando su capacidad natural de canalizar y proyectar
+              energía. Esto es fundamental para cualquier trabajo energético
+              posterior, incluyendo la capacidad de transmitir KS Healing a otros.
+            </p>
+            <p>
+              Durante esta práctica, sentirás cómo la energía comienza a fluir a
+              través de tus palmas. Algunos reportan sensaciones de calor, hormigueo,
+              o simplemente una presencia energética clara en sus manos.
+            </p>
+          </div>
+        </EjercicioCard>
+
+        {/* Main Content: Video + Form (2 columns) */}
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 my-12">
           {/* Video Section (2 columns on desktop) */}
           <div className="lg:col-span-2">
             <section>
-              <h2 className="text-2xl font-display font-bold text-foreground mb-6">
+              <h2 className="text-2xl font-display font-bold text-foreground mb-6 flex items-center gap-3">
+                <Sparkles className="w-6 h-6 text-emerald-500" />
                 Video del Ejercicio
               </h2>
-              <div className="bg-gradient-to-br from-primary/10 to-accent/10 rounded-lg overflow-hidden border border-border aspect-video flex items-center justify-center">
-                <div className="text-center">
-                  <p className="text-muted-foreground mb-4">
-                    El video será disponible aquí una vez que lo subas a YouTube
-                  </p>
-                  <p className="text-sm text-muted-foreground">
-                    Espacio reservado para: iframe de YouTube privado
-                  </p>
+
+              {/* Video Container mejorado */}
+              <div className="relative group">
+                <div className="absolute -inset-1 bg-gradient-to-r from-emerald-600 to-teal-600 rounded-lg blur opacity-25 group-hover:opacity-75 transition duration-1000" />
+                <div className="relative bg-gradient-to-br from-emerald-500/10 to-teal-500/10 rounded-lg overflow-hidden border border-border aspect-video flex items-center justify-center">
+                  <div className="text-center">
+                    <div className="mb-4 inline-block p-4 bg-emerald-500/20 rounded-full">
+                      <Wind className="w-8 h-8 text-emerald-500 animate-spin" />
+                    </div>
+                    <p className="text-muted-foreground mb-4">
+                      El video será disponible aquí una vez que lo subas a YouTube
+                    </p>
+                    <p className="text-sm text-muted-foreground">
+                      Espacio reservado para: iframe de YouTube privado
+                    </p>
+                  </div>
                 </div>
               </div>
-              <p className="text-sm text-muted-foreground mt-4">
-                Procura buscar un momento de calma y soledad para practicar este ejercicio. Esto te permitirá disfrutar más de la experiencia y recibir la transmisión energética con mayor claridad.
-              </p>
+
+              <div className="mt-4 p-4 bg-card rounded-lg border border-border">
+                <p className="text-sm text-muted-foreground flex items-start gap-2">
+                  <span className="text-emerald-500 font-bold flex-shrink-0 mt-1">
+                    ⏱
+                  </span>
+                  <span>
+                    Procura buscar un momento de calma y soledad para practicar este
+                    ejercicio. Esto te permitirá disfrutar más de la experiencia y
+                    recibir la transmisión energética con mayor claridad.
+                  </span>
+                </p>
+              </div>
             </section>
           </div>
 
@@ -68,88 +139,110 @@ export default function Ejercicio2() {
           <div className="lg:col-span-1">
             <div className="sticky top-24">
               <div className="bg-card rounded-lg border border-border p-6">
-                <h3 className="text-lg font-display font-bold text-foreground mb-4">
-
-                </h3>
-                <p className="text-sm text-muted-foreground mb-6">
-
-                </p>
                 <BookClubCTA />
               </div>
             </div>
           </div>
         </div>
 
-          {/* Instructions */}
-          <section className="mb-12 p-8 bg-card rounded-lg border border-border">
-            <h2 className="text-2xl font-display font-bold text-foreground mb-4">
-              Recomendaciones para la Práctica
-            </h2>
-            <ul className="space-y-3 text-muted-foreground">
-              <li className="flex gap-3">
-                <span className="text-primary font-bold flex-shrink-0">✓</span>
-                <span>Coloca tus manos en una posición cómoda frente a ti</span>
-              </li>
-              <li className="flex gap-3">
-                <span className="text-primary font-bold flex-shrink-0">✓</span>
-                <span>Mantén las palmas abiertas y receptivas</span>
-              </li>
-              <li className="flex gap-3">
-                <span className="text-primary font-bold flex-shrink-0">✓</span>
-                <span>Observa cualquier sensación que surja en tus manos</span>
-              </li>
-              <li className="flex gap-3">
-                <span className="text-primary font-bold flex-shrink-0">✓</span>
-                <span>No fuerces nada, simplemente permite que suceda</span>
-              </li>
-              <li className="flex gap-3">
-                <span className="text-primary font-bold flex-shrink-0">✓</span>
-                <span>Después del ejercicio, tómate tiempo para sentir el cambio</span>
-              </li>
-            </ul>
-          </section>
+        {/* Recomendaciones mejoradas */}
+        <EjercicioCard
+          icon={Heart}
+          title="Recomendaciones para la Práctica"
+          colorClass="from-emerald-500/10 to-teal-500/10"
+          variant="recommendations"
+        >
+          <ul className="space-y-4">
+            <RecommendationItem
+              icon={Compass}
+              text="Coloca tus manos en una posición cómoda frente a ti"
+              index={0}
+            />
+            <RecommendationItem
+              icon={Zap}
+              text="Mantén las palmas abiertas y receptivas"
+              index={1}
+            />
+            <RecommendationItem
+              icon={Lightbulb}
+              text="Observa cualquier sensación que surja en tus manos"
+              index={2}
+            />
+            <RecommendationItem
+              icon={Wind}
+              text="No fuerces nada, simplemente permite que suceda"
+              index={3}
+            />
+            <RecommendationItem
+              icon={Sparkles}
+              text="Después del ejercicio, tómate tiempo para sentir el cambio"
+              index={4}
+            />
+          </ul>
+        </EjercicioCard>
 
-          {/* Completion Button */}
-          <section className="mt-12 p-8 bg-gradient-to-r from-primary/10 to-accent/10 rounded-lg border border-primary/20">
-            <div className="flex items-center justify-between">
-              <div>
-                <h3 className="text-xl font-display font-bold text-foreground mb-2">
-                  {completed ? "¡Ejercicio Completado!" : "¿Completaste el ejercicio?"}
-                </h3>
-                <p className="text-muted-foreground">
-                  {completed
-                    ? "Excelente. Tu progreso ha sido registrado."
-                    : "Marca este ejercicio como completado cuando termines la práctica."}
-                </p>
-              </div>
-              <Button
-                onClick={() => setCompleted(!completed)}
-                className={`gap-2 ${
-                  completed
-                    ? "bg-green-600 hover:bg-green-700"
-                    : "bg-primary hover:bg-primary/90"
-                }`}
-              >
-                <CheckCircle2 size={20} />
-                {completed ? "Completado" : "Marcar como Completado"}
-              </Button>
+        {/* Sección de Completación mejorada */}
+        <div className="mt-12 p-8 bg-gradient-to-r from-emerald-500/10 to-teal-500/10 rounded-lg border border-emerald-500/20">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-6">
+            <div>
+              <h3 className="text-xl font-display font-bold text-foreground mb-2 flex items-center gap-2">
+                {completed ? (
+                  <>
+                    <CheckCircle2 className="w-6 h-6 text-green-500" />
+                    ¡Ejercicio Completado!
+                  </>
+                ) : (
+                  <>
+                    <Sparkles className="w-6 h-6 text-emerald-500" />
+                    ¿Completaste el ejercicio?
+                  </>
+                )}
+              </h3>
+              <p className="text-muted-foreground">
+                {completed
+                  ? "Excelente. Tu progreso ha sido registrado. Continúa con el siguiente ejercicio."
+                  : "Marca este ejercicio como completado cuando termines la práctica."}
+              </p>
             </div>
-          </section>
+            <Button
+              onClick={() => setCompleted(!completed)}
+              className={`gap-2 whitespace-nowrap ${
+                completed
+                  ? "bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-700 hover:to-emerald-700"
+                  : "bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700"
+              }`}
+            >
+              <CheckCircle2 size={20} />
+              {completed ? "Completado ✓" : "Marcar como Completado"}
+            </Button>
+          </div>
+        </div>
 
-          {/* Next Steps */}
-          <section className="mt-12 pt-8 border-t border-border">
-            <h3 className="text-xl font-display font-bold text-foreground mb-4">
-              Próximos Pasos
-            </h3>
-            <p className="text-muted-foreground mb-4">
-              Con tus chakras de manos activados, estás listo para recibir la siguiente transmisión. Cada ejercicio construye sobre el anterior, creando una base sólida para tu transformación energética.
+        {/* Próximos Pasos */}
+        <section className="mt-12 pt-8 border-t border-border">
+          <h3 className="text-xl font-display font-bold text-foreground mb-4 flex items-center gap-2">
+            <Compass className="w-6 h-6 text-emerald-500" />
+            Próximos Pasos
+          </h3>
+          <div className="space-y-4 text-muted-foreground">
+            <p>
+              Con tus chakras de manos activados, estás listo para recibir la
+              siguiente transmisión. Cada ejercicio construye sobre el anterior,
+              creando una base sólida para tu transformación energética.
             </p>
-            <p className="text-muted-foreground">
-              Practica este ejercicio regularmente para mantener tus canales energéticos abiertos y receptivos.
+            <p className="text-lg font-semibold text-foreground">
+              Practica este ejercicio regularmente para mantener tus canales
+              energéticos abiertos y receptivos.
             </p>
-          </section>
-        </article>
+          </div>
+        </section>
+
+        {/* Navegación entre ejercicios */}
+        <ExerciseNavigation
+          currentExercise={exerciseNumber}
+          totalExercises={totalExercises}
+        />
       </div>
-      </EjercicioLayout>
+    </EjercicioLayout>
   );
 }
