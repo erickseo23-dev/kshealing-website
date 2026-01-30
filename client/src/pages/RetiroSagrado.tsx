@@ -54,14 +54,14 @@ export default function RetiroSagrado() {
           <div className="max-w-3xl mx-auto">
             <Card className="p-12 border-border/50 bg-gradient-to-br from-background to-primary/10">
               <h2 className="font-display text-3xl font-bold text-foreground mb-6">
-                El Final del Año No Siempre se Siente Ligero
+                Inicia el Nuevo Ciclo desde la Presencia Viva
               </h2>
               <div className="space-y-4 text-muted-foreground text-lg leading-relaxed">
                 <p>
-                  Después de meses intensos, decisiones importantes, desgaste emocional y procesos internos profundos, muchas personas llegan a diciembre cansadas, saturadas o desconectadas de sí mismas, aunque "todo parezca estar bien".
+                  Después de meses intensos, decisiones importantes, desgaste emocional y procesos internos profundos, muchas personas llegan a un nuevo ciclo sin haber verdaderamente cerrado o integrado lo vivido. Sin presencia, sin claridad, sin conexión con el ahora.
                 </p>
                 <p className="font-semibold text-foreground mt-6">
-                  Este retiro nace para eso: para recordarte cómo se siente estar bien desde dentro.
+                  Este retiro nace para eso: para enseñarte a habitar el presente como base de todo lo que viene. La presencia viva es el fundamento del nuevo ciclo.
                 </p>
               </div>
             </Card>
@@ -110,8 +110,8 @@ export default function RetiroSagrado() {
                   },
                   {
                     icon: Check,
-                    title: "Cerrar el Año desde la Coherencia",
-                    description: "No desde el agotamiento, sino desde la plenitud"
+                    title: "Habitar el Presente como Base",
+                    description: "Aprender a estar aquí, ahora, como fundamento del nuevo ciclo"
                   },
                   {
                     icon: Users,
@@ -184,7 +184,7 @@ export default function RetiroSagrado() {
                   </li>
                   <li className="flex gap-3">
                     <Check size={20} className="text-primary flex-shrink-0 mt-0.5" />
-                    <span>Quieres cerrar el año con claridad, no con prisa</span>
+                    <span>Quieres iniciar el nuevo ciclo con presencia y claridad, no con prisa</span>
                   </li>
                   <li className="flex gap-3">
                     <Check size={20} className="text-primary flex-shrink-0 mt-0.5" />
@@ -335,10 +335,10 @@ export default function RetiroSagrado() {
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="font-display text-4xl font-bold text-foreground mb-6">
-              Cierra el Año desde la <span className="text-primary">Coherencia</span>
+              Inicia el Nuevo Ciclo desde la <span className="text-primary">Presencia Viva</span>
             </h2>
             <p className="text-lg text-muted-foreground mb-8">
-              Cupo limitado para garantizar una experiencia íntima y profunda.
+              Cupo limitado para garantizar una experiencia íntima y profunda. Domingo 01 de Febrero.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" className="bg-primary hover:bg-primary/90 text-white">
