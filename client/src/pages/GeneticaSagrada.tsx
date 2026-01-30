@@ -101,7 +101,7 @@ export default function GeneticaSagrada() {
 
           <div className="max-w-4xl mx-auto mb-16">
             <img 
-              src="/images/adn-cuantico-12-capas-final.png" 
+              src="/images/adn-cuantico-12-capas-espiral.png" 
               alt="Las 12 Capas del ADN Cuantico" 
               className="w-full h-auto rounded-lg shadow-2xl border border-primary/20"
             />
