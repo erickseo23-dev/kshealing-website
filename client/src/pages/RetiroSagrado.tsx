@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Link } from "wouter";
-import { ArrowRight, Check, Mountain, Users, Heart, Zap, Star } from "lucide-react";
+import { Check, Heart, Zap, Users, Star, Leaf, Sparkles } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { retiroSagradoTestimonials } from "@/lib/programTestimonials";
@@ -12,238 +12,213 @@ export default function RetiroSagrado() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="py-20 md:py-32 bg-gradient-to-br from-background via-background to-accent/5">
+      <section className="py-20 md:py-32 bg-gradient-to-br from-background via-background to-primary/5">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
-            <div className="inline-block mb-6 px-4 py-2 rounded-full bg-accent/10 border border-accent/20">
-              <span className="text-accent font-semibold">🏔️ Experiencia Inmersiva</span>
+            <div className="inline-block mb-6 px-4 py-2 rounded-full bg-primary/10 border border-primary/20">
+              <span className="text-primary font-semibold">🕉️ Experiencia Vivencial</span>
             </div>
             <h1 className="font-display text-5xl md:text-6xl font-bold text-foreground mb-6">
-              Retiro <span className="text-accent">Sagrado</span>
+              Retiro <span className="text-primary">Sagrado</span>
             </h1>
-            <p className="text-xl text-muted-foreground mb-8">
-              Una experiencia inmersiva de transformación profunda. Retiros presenciales donde experimentarás transmisiones intensivas de Energía KS en comunidad.
+            <p className="text-xl text-muted-foreground mb-6">
+              Claves Internas para el Bienestar Verdadero
+            </p>
+            <p className="text-lg text-muted-foreground mb-8 italic">
+              "El bienestar se activa cuando todo dentro de mí se ordena."
+            </p>
+            <p className="text-lg text-muted-foreground mb-8">
+              Un espacio profundo para cerrar el año en coherencia, calma y alineación interior. Una pausa necesaria antes de iniciar un nuevo ciclo.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-accent hover:bg-accent/90 text-white">
-                Reservar tu Lugar
+              <Button size="lg" className="bg-primary hover:bg-primary/90 text-white">
+                Reservar Mi Lugar
               </Button>
               <Button size="lg" variant="outline">
-                Ver Próximas Fechas
+                Unirse al Club de Retiro
               </Button>
             </div>
           </div>
         </div>
       </section>
 
-      {/* What is Retiro Sagrado */}
-      <section className="py-20 md:py-32">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
-            <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-br from-accent/20 to-primary/20 rounded-2xl blur-2xl"></div>
-              <img 
-                src="/sdfsf.jpeg" 
-                alt="Retiro Sagrado" 
-                className="relative w-full rounded-2xl shadow-2xl object-cover aspect-square"
-              />
-            </div>
-            <div>
-              <h2 className="font-display text-4xl font-bold text-foreground mb-6">
-                ¿Qué es el <span className="text-accent">Retiro Sagrado</span>?
-              </h2>
-              <div className="space-y-4 text-muted-foreground mb-8">
-                <p className="text-lg leading-relaxed">
-                  El Retiro Sagrado es una experiencia transformadora diseñada para aquellos que desean sumergirse completamente en la Energía KS y experimentar una transformación profunda en comunidad.
-                </p>
-                <p className="text-lg leading-relaxed">
-                  Durante varios días, te desconectas del mundo exterior y te conectas profundamente con tu ser interior, rodeado de facilitadores expertos y una comunidad de buscadores espirituales.
-                </p>
-                <p className="text-lg leading-relaxed font-semibold text-accent">
-                  Es un espacio sagrado donde la transformación ocurre a todos los niveles de tu ser.
-                </p>
-              </div>
-              <ul className="space-y-3">
-                {[
-                  "Transmisiones intensivas de Energía KS",
-                  "Meditaciones y prácticas guiadas",
-                  "Sesiones de sanación grupal",
-                  "Conexión profunda con otros participantes",
-                  "Experiencias transformadoras",
-                ].map((item, idx) => (
-                  <li key={idx} className="flex gap-3 text-muted-foreground">
-                    <Check size={20} className="text-accent flex-shrink-0 mt-1" />
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Retreat Experience */}
-      <section className="py-20 md:py-32 bg-accent/5">
-        <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto mb-16 text-center">
-            <h2 className="font-display text-4xl font-bold text-foreground mb-6">
-              La Experiencia del <span className="text-accent">Retiro</span>
-            </h2>
-            <p className="text-lg text-muted-foreground">
-              Cada día está diseñado para profundizar tu transformación
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            {[
-              {
-                icon: Mountain,
-                title: "Ambiente Sagrado",
-                description: "Retiros en lugares especialmente seleccionados por su energía y belleza natural",
-              },
-              {
-                icon: Users,
-                title: "Comunidad Transformadora",
-                description: "Comparte la experiencia con otros buscadores espirituales en el mismo camino",
-              },
-              {
-                icon: Zap,
-                title: "Transmisiones Intensivas",
-                description: "Recibe transmisiones directas de Energía KS de YOHEV y facilitadores certificados",
-              },
-              {
-                icon: Heart,
-                title: "Sanación Profunda",
-                description: "Accede a estados de sanación y transformación que no son posibles en la vida cotidiana",
-              },
-            ].map((item, idx) => {
-              const Icon = item.icon;
-              return (
-                <Card key={idx} className="p-8 border-border/50 hover:shadow-lg transition-shadow">
-                  <div className="w-12 h-12 rounded-lg bg-accent/20 flex items-center justify-center mb-4">
-                    <Icon size={24} className="text-accent" />
-                  </div>
-                  <h3 className="font-display text-xl font-bold text-foreground mb-3">
-                    {item.title}
-                  </h3>
-                  <p className="text-muted-foreground">
-                    {item.description}
-                  </p>
-                </Card>
-              );
-            })}
-          </div>
-        </div>
-      </section>
-
-      {/* Retreat Schedule */}
-      <section className="py-20 md:py-32">
-        <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto mb-16 text-center">
-            <h2 className="font-display text-4xl font-bold text-foreground mb-6">
-              Estructura del <span className="text-accent">Retiro</span>
-            </h2>
-          </div>
-
-          <div className="max-w-3xl mx-auto space-y-8">
-            {[
-              {
-                day: "Día 1",
-                title: "Llegada y Apertura",
-                description: "Bienvenida, orientación y primera transmisión de Energía KS para establecer el espacio sagrado",
-              },
-              {
-                day: "Día 2-3",
-                title: "Profundización",
-                description: "Transmisiones intensivas, meditaciones guiadas y trabajo energético profundo",
-              },
-              {
-                day: "Día 4",
-                title: "Integración y Expansión",
-                description: "Sesiones de sanación grupal, prácticas avanzadas y conexión comunitaria",
-              },
-              {
-                day: "Día 5",
-                title: "Cierre y Regreso",
-                description: "Ceremonia de cierre, integración de la experiencia y preparación para llevar la transformación a tu vida",
-              },
-            ].map((item, idx) => (
-              <div key={idx} className="flex gap-6">
-                <div className="flex flex-col items-center">
-                  <div className="w-12 h-12 rounded-full bg-accent flex items-center justify-center text-white font-display font-bold">
-                    {idx + 1}
-                  </div>
-                  {idx < 3 && <div className="w-1 h-16 bg-accent/30 mt-2"></div>}
-                </div>
-                <div className="pb-8">
-                  <h3 className="font-display text-xl font-bold text-foreground mb-1">
-                    {item.day}: {item.title}
-                  </h3>
-                  <p className="text-muted-foreground">
-                    {item.description}
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* What to Expect */}
-      <section className="py-20 md:py-32 bg-gradient-to-br from-accent/5 via-background to-primary/5">
+      {/* The Problem */}
+      <section className="py-20 md:py-32 bg-primary/5">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
-            <Card className="p-12 border-border/50 bg-gradient-to-br from-accent/10 to-background">
-              <h2 className="font-display text-4xl font-bold text-foreground mb-6">
-                Qué Esperar en el <span className="text-accent">Retiro</span>
+            <Card className="p-12 border-border/50 bg-gradient-to-br from-background to-primary/10">
+              <h2 className="font-display text-3xl font-bold text-foreground mb-6">
+                El Final del Año No Siempre se Siente Ligero
               </h2>
-              <div className="space-y-4 text-muted-foreground">
-                <p className="text-lg leading-relaxed">
-                  El Retiro Sagrado es una experiencia transformadora que va más allá de lo intelectual. Espera experimentar:
+              <div className="space-y-4 text-muted-foreground text-lg leading-relaxed">
+                <p>
+                  Después de meses intensos, decisiones importantes, desgaste emocional y procesos internos profundos, muchas personas llegan a diciembre cansadas, saturadas o desconectadas de sí mismas, aunque "todo parezca estar bien".
                 </p>
-                <ul className="space-y-3 mt-6">
-                  {[
-                    "Transmisiones de Energía KS que transforman tu campo vibracional",
-                    "Liberación de emociones y patrones profundos",
-                    "Momentos de claridad y conexión divina",
-                    "Sanación en todos los niveles de tu ser",
-                    "Conexión profunda con otros participantes",
-                    "Cambios duraderos en tu percepción y vida",
-                  ].map((item, idx) => (
-                    <li key={idx} className="flex gap-3">
-                      <Check size={20} className="text-accent flex-shrink-0 mt-0.5" />
-                      <span>{item}</span>
-                    </li>
-                  ))}
-                </ul>
+                <p className="font-semibold text-foreground mt-6">
+                  Este retiro nace para eso: para recordarte cómo se siente estar bien desde dentro.
+                </p>
               </div>
             </Card>
           </div>
         </div>
       </section>
 
-      {/* Benefits */}
+      {/* What You'll Experience */}
       <section className="py-20 md:py-32">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto mb-16 text-center">
             <h2 className="font-display text-4xl font-bold text-foreground mb-6">
-              Beneficios del <span className="text-accent">Retiro Sagrado</span>
+              ¿Qué Viviremos <span className="text-primary">Juntos</span>?
             </h2>
+            <p className="text-lg text-muted-foreground">
+              Una experiencia energética guiada de 4 horas en vivo con YOHEV
+            </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+          <div className="max-w-3xl mx-auto">
+            <Card className="p-8 border-border/50 bg-gradient-to-br from-primary/10 to-background mb-8">
+              <p className="text-lg text-muted-foreground leading-relaxed mb-8">
+                No es una clase. No es teoría. Es una experiencia vivencial profunda diseñada para ayudarte a:
+              </p>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                {[
+                  {
+                    icon: Heart,
+                    title: "Recuperar Estabilidad Emocional",
+                    description: "Reconecta con tu equilibrio emocional profundo"
+                  },
+                  {
+                    icon: Zap,
+                    title: "Calmar el Sistema Nervioso",
+                    description: "Restaura tu paz interior y coherencia"
+                  },
+                  {
+                    icon: Leaf,
+                    title: "Alinear Mente, Emoción, Cuerpo y Energía",
+                    description: "Integra todos tus niveles de ser"
+                  },
+                  {
+                    icon: Sparkles,
+                    title: "Reconectar con tu Centro Interno",
+                    description: "Accede a tu verdadera naturaleza divina"
+                  },
+                  {
+                    icon: Check,
+                    title: "Cerrar el Año desde la Coherencia",
+                    description: "No desde el agotamiento, sino desde la plenitud"
+                  },
+                  {
+                    icon: Users,
+                    title: "Comenzar el Próximo Ciclo",
+                    description: "Desde un lugar más estable y consciente"
+                  },
+                ].map((item, idx) => {
+                  const Icon = item.icon;
+                  return (
+                    <div key={idx} className="flex gap-4">
+                      <Icon size={24} className="text-primary flex-shrink-0 mt-1" />
+                      <div>
+                        <h4 className="font-semibold text-foreground mb-1">{item.title}</h4>
+                        <p className="text-sm text-muted-foreground">{item.description}</p>
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Program Details */}
+      <section className="py-20 md:py-32 bg-primary/5">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <Card className="p-8 border-border/50 bg-background">
+                <h3 className="font-display text-2xl font-bold text-foreground mb-6">Estructura del Retiro</h3>
+                <div className="space-y-4 text-muted-foreground">
+                  <div>
+                    <p className="font-semibold text-foreground">Duración:</p>
+                    <p>4 horas sagradas de conexión profunda</p>
+                  </div>
+                  <div>
+                    <p className="font-semibold text-foreground">Modalidad:</p>
+                    <p>En vivo por Zoom</p>
+                  </div>
+                  <div>
+                    <p className="font-semibold text-foreground">Horario:</p>
+                    <p>10:00 a 14:00 hrs (hora CDMX)</p>
+                  </div>
+                  <div>
+                    <p className="font-semibold text-foreground">Ambiente:</p>
+                    <p>Sin celular, sin redes y sin interrupciones</p>
+                  </div>
+                  <div>
+                    <p className="font-semibold text-foreground">Grabación:</p>
+                    <p>El evento queda grabado para acceso posterior</p>
+                  </div>
+                </div>
+              </Card>
+
+              <Card className="p-8 border-border/50 bg-background">
+                <h3 className="font-display text-2xl font-bold text-foreground mb-6">Para Quién es Este Retiro</h3>
+                <ul className="space-y-3 text-muted-foreground">
+                  <li className="flex gap-3">
+                    <Check size={20} className="text-primary flex-shrink-0 mt-0.5" />
+                    <span>Sientes que has hecho mucho trabajo interno, pero te cuesta sostener el bienestar</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <Check size={20} className="text-primary flex-shrink-0 mt-0.5" />
+                    <span>Te notas cansado emocional o mentalmente</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <Check size={20} className="text-primary flex-shrink-0 mt-0.5" />
+                    <span>Quieres cerrar el año con claridad, no con prisa</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <Check size={20} className="text-primary flex-shrink-0 mt-0.5" />
+                    <span>Deseas comenzar el próximo ciclo desde un lugar más estable y consciente</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <Check size={20} className="text-primary flex-shrink-0 mt-0.5" />
+                    <span>Buscas un espacio de silencio, guía y restauración real</span>
+                  </li>
+                </ul>
+                <p className="text-sm text-primary mt-6 font-semibold">
+                  No necesitas experiencia previa. Solo la disposición de estar contigo.
+                </p>
+              </Card>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Previous Retiros */}
+      <section className="py-20 md:py-32">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto mb-16 text-center">
+            <h2 className="font-display text-4xl font-bold text-foreground mb-6">
+              Retiros <span className="text-primary">Anteriores</span>
+            </h2>
+            <p className="text-lg text-muted-foreground">
+              Accede a todos los retiros pasados con el Club de Retiro Sagrado
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto">
             {[
-              "Transformación profunda y acelerada",
-              "Liberación de patrones ancestrales",
-              "Conexión directa con tu propósito",
-              "Sanación integral en todos los niveles",
-              "Comunidad de apoyo duradero",
-              "Herramientas para mantener la transformación",
-            ].map((benefit, idx) => (
-              <Card key={idx} className="p-6 border-border/50 bg-gradient-to-br from-accent/10 to-background">
-                <div className="flex gap-4">
-                  <Check size={24} className="text-accent flex-shrink-0 mt-1" />
-                  <p className="text-muted-foreground">{benefit}</p>
+              "Volver al Silencio",
+              "Limpia Tu Energía",
+              "Código de Luz",
+              "Recupera Tu Centro",
+              "Sana y Cierra Ciclos",
+              "Y más por venir...",
+            ].map((retiro, idx) => (
+              <Card key={idx} className="p-6 border-border/50 bg-gradient-to-br from-primary/10 to-background hover:shadow-lg transition-shadow">
+                <div className="flex gap-3">
+                  <Sparkles size={24} className="text-primary flex-shrink-0" />
+                  <p className="font-semibold text-foreground">{retiro}</p>
                 </div>
               </Card>
             ))}
@@ -251,33 +226,93 @@ export default function RetiroSagrado() {
         </div>
       </section>
 
+      {/* Club de Retiro Sagrado */}
+      <section className="py-20 md:py-32 bg-gradient-to-br from-primary/5 via-background to-accent/5">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto">
+            <Card className="p-12 border-border/50 bg-gradient-to-br from-primary/10 to-background">
+              <h2 className="font-display text-4xl font-bold text-foreground mb-6">
+                Club de <span className="text-primary">Retiro Sagrado</span>
+              </h2>
+              <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
+                Una membresía mensual creada para quienes desean un acompañamiento espiritual continuo, sin prisas ni exigencias, a lo largo del año.
+              </p>
+
+              <div className="space-y-4 mb-8">
+                <div className="flex gap-4">
+                  <Check size={24} className="text-primary flex-shrink-0 mt-0.5" />
+                  <div>
+                    <p className="font-semibold text-foreground">Acceso a Todos los Retiros</p>
+                    <p className="text-muted-foreground">Acceso a este retiro y todos los retiros futuros mientras tu membresía esté activa</p>
+                  </div>
+                </div>
+                <div className="flex gap-4">
+                  <Check size={24} className="text-primary flex-shrink-0 mt-0.5" />
+                  <div>
+                    <p className="font-semibold text-foreground">Grabaciones Completas</p>
+                    <p className="text-muted-foreground">Acceso inmediato a las grabaciones de todos los retiros anteriores</p>
+                  </div>
+                </div>
+                <div className="flex gap-4">
+                  <Check size={24} className="text-primary flex-shrink-0 mt-0.5" />
+                  <div>
+                    <p className="font-semibold text-foreground">Comunidad Privada</p>
+                    <p className="text-muted-foreground">Acceso a la comunidad del club y contenido de valor adicional</p>
+                  </div>
+                </div>
+                <div className="flex gap-4">
+                  <Check size={24} className="text-primary flex-shrink-0 mt-0.5" />
+                  <div>
+                    <p className="font-semibold text-foreground">Flexibilidad</p>
+                    <p className="text-muted-foreground">Puedes cancelar en cualquier momento, sin compromisos a largo plazo</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-background p-6 rounded-lg mb-8">
+                <p className="text-3xl font-bold text-primary mb-2">$500 MXN</p>
+                <p className="text-muted-foreground">Membresía mensual</p>
+              </div>
+
+              <p className="text-muted-foreground italic mb-8">
+                Es una forma sencilla y profunda de sostener tu bienestar, claridad y equilibrio, integrando la práctica espiritual en tu vida cotidiana.
+              </p>
+
+              <Button size="lg" className="w-full bg-primary hover:bg-primary/90 text-white">
+                Unirse al Club de Retiro Sagrado
+              </Button>
+            </Card>
+          </div>
+        </div>
+      </section>
+
       {/* Testimonials Section */}
-      <section className="py-20 md:py-32 bg-accent/5">
+      <section className="py-20 md:py-32">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto mb-16 text-center">
             <h2 className="font-display text-4xl font-bold text-foreground mb-6">
-              Experiencias del <span className="text-accent">Retiro Sagrado</span>
+              Experiencias del <span className="text-primary">Retiro Sagrado</span>
             </h2>
             <p className="text-lg text-muted-foreground">
-              Descubre cómo el Retiro ha transformado vidas
+              Descubre cómo el Retiro Sagrado ha transformado la vida de participantes
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
             {retiroSagradoTestimonials.map((testimonial) => (
-              <Card key={testimonial.id} className="p-8 border-border/50 hover:shadow-lg transition-shadow flex flex-col">
+              <Card key={testimonial.id} className="p-6 border-border/50 hover:shadow-lg transition-shadow">
                 <div className="flex gap-1 mb-4">
-                  {[...Array(testimonial.rating)].map((_, i) => (
-                    <Star key={i} size={16} className="fill-accent text-accent" />
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} size={16} className="fill-primary text-primary" />
                   ))}
                 </div>
-                <p className="text-muted-foreground mb-6 flex-grow italic">
-                  "{testimonial.quote}"
-                </p>
-                <div className="border-t border-border/50 pt-4">
-                  <p className="font-display font-bold text-foreground">{testimonial.name}</p>
+                <p className="text-muted-foreground mb-6 italic">"{testimonial.quote}"</p>
+                <div>
+                  <p className="font-semibold text-foreground">{testimonial.name}</p>
                   <p className="text-sm text-muted-foreground">{testimonial.title}</p>
-                  <p className="text-xs text-accent mt-1">{testimonial.certification}</p>
+                  {testimonial.certification && (
+                    <p className="text-sm text-primary mt-1">✓ {testimonial.certification}</p>
+                  )}
                 </div>
               </Card>
             ))}
@@ -286,26 +321,23 @@ export default function RetiroSagrado() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 md:py-32 bg-gradient-to-r from-accent/10 to-primary/10 border-t border-border">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="font-display text-4xl font-bold text-foreground mb-6">
-            Vive la Transformación Sagrada
-          </h2>
-          <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Únete a una experiencia transformadora que cambiará tu vida para siempre.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-accent hover:bg-accent/90 text-white gap-2">
-              Reservar tu Lugar
-              <ArrowRight size={20} />
-            </Button>
-            <Link href="/eventos">
-              <a>
-                <Button size="lg" variant="outline">
-                  Ver Próximas Fechas
-                </Button>
-              </a>
-            </Link>
+      <section className="py-20 md:py-32 bg-gradient-to-br from-primary/10 to-accent/10">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto text-center">
+            <h2 className="font-display text-4xl font-bold text-foreground mb-6">
+              Cierra el Año desde la <span className="text-primary">Coherencia</span>
+            </h2>
+            <p className="text-lg text-muted-foreground mb-8">
+              Cupo limitado para garantizar una experiencia íntima y profunda.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button size="lg" className="bg-primary hover:bg-primary/90 text-white">
+                Reservar Mi Lugar
+              </Button>
+              <Button size="lg" variant="outline">
+                Unirse al Club
+              </Button>
+            </div>
           </div>
         </div>
       </section>

@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Link } from "wouter";
-import { ArrowRight, Check, Dna, Zap, Heart, Users, Star } from "lucide-react";
+import { ArrowRight, Check, Dna, Zap, Heart, Users, Star, BookOpen } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { geneticaSagradaTestimonials } from "@/lib/programTestimonials";
@@ -16,20 +16,23 @@ export default function GeneticaSagrada() {
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <div className="inline-block mb-6 px-4 py-2 rounded-full bg-primary/10 border border-primary/20">
-              <span className="text-primary font-semibold">🧬 Programa Ancestral</span>
+              <span className="text-primary font-semibold">🧬 Taller Online</span>
             </div>
             <h1 className="font-display text-5xl md:text-6xl font-bold text-foreground mb-6">
               Genética <span className="text-primary">Sagrada</span>
             </h1>
-            <p className="text-xl text-muted-foreground mb-8">
-              Accede a la sabiduría ancestral de tu linaje. Activa tu ADN espiritual y reconecta con el poder hereditario de tu familia.
+            <p className="text-xl text-muted-foreground mb-6">
+              Afina las 12 CAPAS de tu ADN Cuántico a su Octava Divina
+            </p>
+            <p className="text-lg text-muted-foreground mb-8 italic">
+              "No se trata de cambiar tu ADN… sino de recordar cómo suena cuando vibra con la melodía de tu alma."
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" className="bg-primary hover:bg-primary/90 text-white">
-                Explorar tu Linaje
+                Inscribirse Ahora
               </Button>
               <Button size="lg" variant="outline">
-                Ver Próximos Talleres
+                Ver Próximas Fechas
               </Button>
             </div>
           </div>
@@ -39,205 +42,84 @@ export default function GeneticaSagrada() {
       {/* What is Genética Sagrada */}
       <section className="py-20 md:py-32">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
-            <div>
-              <h2 className="font-display text-4xl font-bold text-foreground mb-6">
-                ¿Qué es <span className="text-primary">Genética Sagrada</span>?
-              </h2>
-              <div className="space-y-4 text-muted-foreground mb-8">
-                <p className="text-lg leading-relaxed">
-                  Genética Sagrada es un programa diseñado para acceder a la sabiduría ancestral de tu linaje familiar y activar el potencial divino codificado en tu ADN espiritual.
-                </p>
-                <p className="text-lg leading-relaxed">
-                  Este programa reconoce que no solo heredamos genes físicos, sino también patrones energéticos, creencias, talentos y dones de nuestros ancestros.
-                </p>
-                <p className="text-lg leading-relaxed">
-                  A través de Genética Sagrada, aprendes a:
-                </p>
-              </div>
-              <ul className="space-y-3 mb-8">
-                {[
-                  "Conectar con la sabiduría de tu linaje ancestral",
-                  "Activar el ADN espiritual dormido",
-                  "Sanar traumas generacionales",
-                  "Reclamar los dones heredados de tu familia",
-                  "Honrar y integrar la herencia divina",
-                ].map((item, idx) => (
-                  <li key={idx} className="flex gap-3 text-muted-foreground">
-                    <Check size={20} className="text-primary flex-shrink-0 mt-1" />
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 rounded-2xl blur-2xl"></div>
-              <img 
-                src="/sdfsf.jpeg" 
-                alt="Genética Sagrada" 
-                className="relative w-full rounded-2xl shadow-2xl object-cover aspect-square"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Ancestral Wisdom */}
-      <section className="py-20 md:py-32 bg-primary/5">
-        <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto mb-16 text-center">
             <h2 className="font-display text-4xl font-bold text-foreground mb-6">
-              La Sabiduría de tus <span className="text-primary">Ancestros</span>
+              ¿Qué es <span className="text-primary">Genética Sagrada</span>?
             </h2>
-            <p className="text-lg text-muted-foreground">
-              Tu linaje familiar es un tesoro de conocimiento y poder
-            </p>
           </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            {[
-              {
-                icon: Dna,
-                title: "Herencia Genética Espiritual",
-                description: "Tu ADN contiene la memoria y sabiduría de generaciones de ancestros",
-              },
-              {
-                icon: Zap,
-                title: "Dones y Talentos Heredados",
-                description: "Activa los dones especiales que tu familia ha cultivado a lo largo del tiempo",
-              },
-              {
-                icon: Heart,
-                title: "Sanación Generacional",
-                description: "Sana traumas y patrones que se han transmitido de generación en generación",
-              },
-              {
-                icon: Users,
-                title: "Conexión Familiar Profunda",
-                description: "Reconecta con tus ancestros y honra su legado en tu vida",
-              },
-            ].map((item, idx) => {
-              const Icon = item.icon;
-              return (
-                <Card key={idx} className="p-8 border-border/50 hover:shadow-lg transition-shadow">
-                  <div className="w-12 h-12 rounded-lg bg-primary/20 flex items-center justify-center mb-4">
-                    <Icon size={24} className="text-primary" />
-                  </div>
-                  <h3 className="font-display text-xl font-bold text-foreground mb-3">
-                    {item.title}
-                  </h3>
-                  <p className="text-muted-foreground">
-                    {item.description}
-                  </p>
-                </Card>
-              );
-            })}
-          </div>
-        </div>
-      </section>
-
-      {/* DNA Activation */}
-      <section className="py-20 md:py-32">
-        <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto mb-16 text-center">
-            <h2 className="font-display text-4xl font-bold text-foreground mb-6">
-              Activación del <span className="text-primary">ADN Espiritual</span>
-            </h2>
-            <p className="text-lg text-muted-foreground">
-              Despierta el potencial divino codificado en tu ser
-            </p>
-          </div>
-
-          <div className="max-w-3xl mx-auto space-y-8">
-            {[
-              {
-                step: 1,
-                title: "Exploración del Linaje",
-                description: "Accedemos a la información energética de tu árbol genealógico y ancestros",
-              },
-              {
-                step: 2,
-                title: "Identificación de Dones",
-                description: "Identificamos los talentos y dones especiales heredados de tu familia",
-              },
-              {
-                step: 3,
-                title: "Activación del ADN",
-                description: "Utilizamos la Energía KS para activar el ADN espiritual dormido",
-              },
-              {
-                step: 4,
-                title: "Integración y Empoderamiento",
-                description: "Integras los dones ancestrales y te empodera para usarlos en tu vida",
-              },
-            ].map((item) => (
-              <div key={item.step} className="flex gap-6">
-                <div className="flex flex-col items-center">
-                  <div className="w-12 h-12 rounded-full bg-primary flex items-center justify-center text-white font-display font-bold">
-                    {item.step}
-                  </div>
-                  {item.step < 4 && <div className="w-1 h-16 bg-primary/30 mt-2"></div>}
-                </div>
-                <div className="pb-8">
-                  <h3 className="font-display text-xl font-bold text-foreground mb-2">
-                    {item.title}
-                  </h3>
-                  <p className="text-muted-foreground">
-                    {item.description}
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Healing Generational Trauma */}
-      <section className="py-20 md:py-32 bg-gradient-to-br from-primary/5 via-background to-accent/5">
-        <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
-            <Card className="p-12 border-border/50 bg-gradient-to-br from-primary/10 to-background">
-              <h2 className="font-display text-4xl font-bold text-foreground mb-6">
-                Sanación de Traumas <span className="text-primary">Generacionales</span>
-              </h2>
-              <div className="space-y-4 text-muted-foreground">
-                <p className="text-lg leading-relaxed">
-                  Los traumas no sanados en una generación se transmiten a la siguiente. Genética Sagrada te permite identificar y sanar estos patrones ancestrales.
-                </p>
-                <p className="text-lg leading-relaxed">
-                  Al sanar tu linaje, no solo te liberas a ti mismo, sino que también ayudas a sanar a tus ancestros y proteges a las generaciones futuras.
-                </p>
-                <p className="text-lg leading-relaxed font-semibold text-primary">
-                  Eres el punto de quiebre donde termina el sufrimiento ancestral y comienza la sanación.
-                </p>
+            <Card className="p-8 border-border/50 bg-gradient-to-br from-primary/10 to-background mb-8">
+              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+                Un viaje profundo de 21 días para reconectar con el código original de tu ser. Aprenderás a identificar y afinar las 12 capas de tu ADN espiritual para alinearlas con su frecuencia perfecta: la Octava Divina de tu ADN.
+              </p>
+              <div className="space-y-4">
+                <div className="flex gap-4">
+                  <Check size={20} className="text-primary flex-shrink-0 mt-1" />
+                  <div>
+                    <h4 className="font-semibold text-foreground mb-1">Estructura Energética del ADN Espiritual</h4>
+                    <p className="text-muted-foreground">Conocerás cómo está estructurado tu ADN a nivel energético y espiritual</p>
+                  </div>
+                </div>
+                <div className="flex gap-4">
+                  <Check size={20} className="text-primary flex-shrink-0 mt-1" />
+                  <div>
+                    <h4 className="font-semibold text-foreground mb-1">Identificación de Desentonaciones</h4>
+                    <p className="text-muted-foreground">Descubrirás qué ha desentonado cada capa: traumas, linajes ancestrales, karmas, represión</p>
+                  </div>
+                </div>
+                <div className="flex gap-4">
+                  <Check size={20} className="text-primary flex-shrink-0 mt-1" />
+                  <div>
+                    <h4 className="font-semibold text-foreground mb-1">Afinación Multidimensional</h4>
+                    <p className="text-muted-foreground">Afinarás capa por capa desde tu Yo físico, emocional, mental, universal y divino</p>
+                  </div>
+                </div>
+                <div className="flex gap-4">
+                  <Check size={20} className="text-primary flex-shrink-0 mt-1" />
+                  <div>
+                    <h4 className="font-semibold text-foreground mb-1">Conexión con el Arquetipo Divino</h4>
+                    <p className="text-muted-foreground">YOHEV conectará el Arquetipo Divino Original a cada una de tus capas y a tu vida cotidiana</p>
+                  </div>
+                </div>
               </div>
             </Card>
           </div>
         </div>
       </section>
 
-      {/* Benefits */}
-      <section className="py-20 md:py-32">
+      {/* The 12 DNA Layers */}
+      <section className="py-20 md:py-32 bg-primary/5">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto mb-16 text-center">
             <h2 className="font-display text-4xl font-bold text-foreground mb-6">
-              Beneficios de <span className="text-primary">Genética Sagrada</span>
+              Las 12 Capas del <span className="text-primary">ADN Cuántico</span>
             </h2>
+            <p className="text-lg text-muted-foreground">
+              Cada capa representa una dimensión de tu ser que será afinada a su Octava Divina
+            </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-5xl mx-auto">
             {[
-              "Conexión profunda con tu herencia ancestral",
-              "Activación de dones y talentos heredados",
-              "Sanación de traumas generacionales",
-              "Mayor claridad sobre tu propósito familiar",
-              "Empoderamiento personal y familiar",
-              "Honra y respeto por tu linaje",
-            ].map((benefit, idx) => (
-              <Card key={idx} className="p-6 border-border/50 bg-gradient-to-br from-primary/10 to-background">
-                <div className="flex gap-4">
-                  <Check size={24} className="text-primary flex-shrink-0 mt-1" />
-                  <p className="text-muted-foreground">{benefit}</p>
+              "Capa del ADN Nuclear",
+              "Capa del Linaje Materno",
+              "Capa del Linaje Paterno",
+              "Capa del Cuerpo Vital",
+              "Capa del Cuerpo Astral",
+              "Capa del Ego",
+              "Capa del ECO",
+              "Capa del Cuerpo Mental Multidimensional",
+              "Capa del Cuerpo Mental de Simultaneidad Encarnativa",
+              "Capa del Árbol de La Vida",
+              "Capa del Adam Kadmón",
+              "Capa del Universo Multidimensional",
+            ].map((layer, idx) => (
+              <Card key={idx} className="p-4 border-border/50 bg-background hover:bg-primary/5 transition-colors">
+                <div className="flex gap-3">
+                  <div className="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0">
+                    <span className="text-primary font-semibold text-sm">{idx + 1}</span>
+                  </div>
+                  <p className="text-muted-foreground">{layer}</p>
                 </div>
               </Card>
             ))}
@@ -245,8 +127,102 @@ export default function GeneticaSagrada() {
         </div>
       </section>
 
+      {/* Program Details */}
+      <section className="py-20 md:py-32">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+              <Card className="p-8 border-border/50 bg-gradient-to-br from-primary/10 to-background">
+                <h3 className="font-display text-2xl font-bold text-foreground mb-6">Estructura del Taller</h3>
+                <div className="space-y-4 text-muted-foreground">
+                  <div>
+                    <p className="font-semibold text-foreground">Duración:</p>
+                    <p>3 semanas</p>
+                  </div>
+                  <div>
+                    <p className="font-semibold text-foreground">Modalidad:</p>
+                    <p>Online en vivo por Zoom</p>
+                  </div>
+                  <div>
+                    <p className="font-semibold text-foreground">Frecuencia:</p>
+                    <p>1 clase semanal (3 sábados consecutivos)</p>
+                  </div>
+                  <div>
+                    <p className="font-semibold text-foreground">Horario:</p>
+                    <p>11:00 a 14:00 hrs (CDMX)</p>
+                  </div>
+                  <div>
+                    <p className="font-semibold text-foreground">Acceso:</p>
+                    <p>Grabaciones disponibles por tiempo indefinido</p>
+                  </div>
+                </div>
+              </Card>
+
+              <Card className="p-8 border-border/50 bg-gradient-to-br from-primary/10 to-background">
+                <h3 className="font-display text-2xl font-bold text-foreground mb-6">Qué Incluye</h3>
+                <ul className="space-y-3 text-muted-foreground">
+                  <li className="flex gap-3">
+                    <Check size={20} className="text-primary flex-shrink-0 mt-0.5" />
+                    <span>3 clases semanales en vivo con YOHEV (grabadas)</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <Check size={20} className="text-primary flex-shrink-0 mt-0.5" />
+                    <span>Manual completo del taller con estructura de las 12 capas</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <Check size={20} className="text-primary flex-shrink-0 mt-0.5" />
+                    <span>Ejercicios de activación de cada capa del ADN energético</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <Check size={20} className="text-primary flex-shrink-0 mt-0.5" />
+                    <span>Audios y códigos de afinación de las 12 capas</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <Check size={20} className="text-primary flex-shrink-0 mt-0.5" />
+                    <span>Guía para mantener tu ADN activado/afinado</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <Check size={20} className="text-primary flex-shrink-0 mt-0.5" />
+                    <span>Acceso a grupo privado para seguimiento e integración</span>
+                  </li>
+                </ul>
+              </Card>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* For Whom */}
+      <section className="py-20 md:py-32 bg-gradient-to-br from-primary/5 via-background to-accent/5">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto">
+            <h2 className="font-display text-4xl font-bold text-foreground mb-12 text-center">
+              Este Taller es para Ti si...
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {[
+                "Sientes que tu alma guarda un diseño original más elevado que aún no has manifestado",
+                "Has hecho trabajo personal pero algo aún no termina de desbloquearse",
+                "Quieres comprender y afinar tus bloqueos físicos, emocionales, mentales o espirituales",
+                "Estás listo para recibir una activación profunda de las 12 capas de tu ADN desde la Energía KS",
+              ].map((reason, idx) => (
+                <Card key={idx} className="p-6 border-border/50 bg-background">
+                  <div className="flex gap-4">
+                    <Heart size={24} className="text-primary flex-shrink-0 mt-1" />
+                    <p className="text-muted-foreground">{reason}</p>
+                  </div>
+                </Card>
+              ))}
+            </div>
+            <p className="text-center text-muted-foreground mt-8">
+              <span className="font-semibold text-foreground">Abierto a todo el público a partir de 9 años</span> (menores acompañados por adulto)
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Testimonials Section */}
-      <section className="py-20 md:py-32 bg-primary/5">
+      <section className="py-20 md:py-32">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto mb-16 text-center">
             <h2 className="font-display text-4xl font-bold text-foreground mb-6">
@@ -259,19 +235,19 @@ export default function GeneticaSagrada() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
             {geneticaSagradaTestimonials.map((testimonial) => (
-              <Card key={testimonial.id} className="p-8 border-border/50 hover:shadow-lg transition-shadow flex flex-col">
+              <Card key={testimonial.id} className="p-6 border-border/50 hover:shadow-lg transition-shadow">
                 <div className="flex gap-1 mb-4">
-                  {[...Array(testimonial.rating)].map((_, i) => (
+                  {[...Array(5)].map((_, i) => (
                     <Star key={i} size={16} className="fill-primary text-primary" />
                   ))}
                 </div>
-                <p className="text-muted-foreground mb-6 flex-grow italic">
-                  "{testimonial.quote}"
-                </p>
-                <div className="border-t border-border/50 pt-4">
-                  <p className="font-display font-bold text-foreground">{testimonial.name}</p>
+                <p className="text-muted-foreground mb-6 italic">"{testimonial.quote}"</p>
+                <div>
+                  <p className="font-semibold text-foreground">{testimonial.name}</p>
                   <p className="text-sm text-muted-foreground">{testimonial.title}</p>
-                  <p className="text-xs text-primary mt-1">{testimonial.certification}</p>
+                  {testimonial.certification && (
+                    <p className="text-sm text-primary mt-1">✓ {testimonial.certification}</p>
+                  )}
                 </div>
               </Card>
             ))}
@@ -280,26 +256,18 @@ export default function GeneticaSagrada() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 md:py-32 bg-gradient-to-r from-primary/10 to-accent/10 border-t border-border">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="font-display text-4xl font-bold text-foreground mb-6">
-            Reconecta con tu Herencia Divina
-          </h2>
-          <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Descubre el poder ancestral que vive en tu ADN y actívalo en tu vida.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-primary hover:bg-primary/90 text-white gap-2">
-              Comenzar Exploración
-              <ArrowRight size={20} />
+      <section className="py-20 md:py-32 bg-gradient-to-br from-primary/10 to-accent/10">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto text-center">
+            <h2 className="font-display text-4xl font-bold text-foreground mb-6">
+              Activa y Resuena en la <span className="text-primary">Octava Divina</span> de tu ADN
+            </h2>
+            <p className="text-lg text-muted-foreground mb-8">
+              Tu alma ya sabe… ahora tu ADN lo recordará.
+            </p>
+            <Button size="lg" className="bg-primary hover:bg-primary/90 text-white">
+              Inscribirse Ahora
             </Button>
-            <Link href="/eventos">
-              <a>
-                <Button size="lg" variant="outline">
-                  Ver Próximos Talleres
-                </Button>
-              </a>
-            </Link>
           </div>
         </div>
       </section>

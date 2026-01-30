@@ -360,12 +360,12 @@ export default function Home() {
             ))}
           </div>
         </div>
+        
+        {/* SVG Divider - Bottom of Programs Section */}
+        <svg className="w-full" style={{height: '100px'}} viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path d="M0,60 Q300,0 600,60 T1200,60 L1200,120 L0,120 Z" fill="#000" opacity="0.08"/>
+        </svg>
       </section>
-
-      {/* SVG Divider - Bottom of Programs Section */}
-      <svg className="w-full h-24 md:h-32 text-background" viewBox="0 0 1200 120" preserveAspectRatio="none">
-        <path d="M0,50 Q300,100 600,50 T1200,50 L1200,0 L0,0 Z" fill="currentColor" opacity="0.1"/>
-      </svg>
 
       {/* Upcoming Events */}
       <section className="py-20 md:py-32 bg-gradient-to-br from-primary/5 via-background to-accent/5">
