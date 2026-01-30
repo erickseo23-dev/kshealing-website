@@ -40,7 +40,7 @@ export default function Ejercicio6() {
               <Zap className="w-8 h-8 text-white" />
             </div>
             <div>
-              <div className="text-sm font-semibold text-blue-300 mb-2">
+              <div className="text-sm font-semibold text-black mb-2">
                 EJERCICIO {exerciseNumber}
               </div>
               <h1 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-2">
