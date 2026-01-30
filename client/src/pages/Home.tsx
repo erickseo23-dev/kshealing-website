@@ -74,17 +74,17 @@ export default function Home() {
               {
                 icon: Sparkles,
                 title: "Conexión Divina",
-                description: "Conectar con la Energía KS es más que una experiencia, es una relación profunda con el Creador.",
+                description: "Conectar con la Energía KS es más que una experiencia espiritual, es desarrollar una relación profunda con el Creador y contigo mismo. Es encontrar tu propio lugar en la creación, tanto en la Tierra como en los planos superiores. Es reconocer a Dios en ti y recordar tu propia naturaleza divina",
               },
               {
                 icon: Heart,
                 title: "Sanación Profunda",
-                description: "Transforma patrones emocionales y energéticos que limitan tu vida, restableciendo el arquetipo divino original",
+                description: "Transforma patrones emocionales y energéticos que limitan tu vida, restableciendo tus sistemas energéticos al arquetipo divino original. Somos perfectos, bellos, sanos y abundantes por diseño. Solo debemos recordar y recuperar la coherencia divina que hemos olvidado",
               },
               {
                 icon: Zap,
                 title: "Expansión de Consciencia",
-                description: "Accede a estados más profundos de presencia, coherencia y claridad interna",
+                description: "Accede a estados más profundos de presencia, coherencia y claridad interna. Renovar los arquetipos negativos de la personalidad; equilibrar tus cuerpos de dolor y de placer, y soltar todo el dolor emocional para sanar en todos los niveles, es parte de tu viaje transformador en KS Healing",
               },
             ].map((feature, idx) => {
               const Icon = feature.icon;
