@@ -7,7 +7,6 @@ import { Link } from "wouter";
 import { Sparkles, Heart, Zap, BookOpen, Users, ArrowRight, Star } from "lucide-react";
 import { eventos } from "@/lib/events";
 import { testimonios } from "@/lib/testimonials";
-import RetiroGallery from "@/components/RetiroGallery";
 
 function TestimonialsCarousel() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -367,9 +366,6 @@ export default function Home() {
           <path d="M0,60 Q300,0 600,60 T1200,60 L1200,120 L0,120 Z" fill="#000" opacity="1"/>
         </svg>
       </section>
-
-      {/* Retiro Gallery */}
-      <RetiroGallery />
 
       {/* Upcoming Events */}
       <section className="py-20 md:py-32 bg-gradient-to-br from-primary/5 via-background to-accent/5">
