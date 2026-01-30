@@ -233,12 +233,22 @@ export default function Home() {
         </div>
       </section>
 
+      {/* SVG Divider */}
+      <svg className="w-full h-24 md:h-32 text-background" viewBox="0 0 1200 120" preserveAspectRatio="none" style={{transform: 'scaleY(-1)'}}>
+        <path d="M0,50 Q300,0 600,50 T1200,50 L1200,120 L0,120 Z" fill="currentColor" opacity="0.1"/>
+      </svg>
+
       {/* About YOHEV */}
-      <section className="py-20 md:py-32 bg-primary/5">
+      <section className="relative py-20 md:py-32 bg-gradient-to-br from-background via-primary/3 to-background overflow-hidden">
+        {/* Background accent */}
+        <div className="absolute top-0 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl -z-10"></div>
+        <div className="absolute bottom-0 left-0 w-96 h-96 bg-accent/5 rounded-full blur-3xl -z-10"></div>
+
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center max-w-5xl mx-auto">
-            <div>
-              <div className="aspect-square rounded-2xl overflow-hidden shadow-2xl">
+            <div className="relative">
+              <div className="absolute -inset-4 bg-gradient-to-br from-primary/20 to-accent/20 rounded-3xl blur-xl opacity-50"></div>
+              <div className="relative aspect-square rounded-2xl overflow-hidden shadow-2xl border border-primary/20">
                 <img 
                   src="/images/yohev-foto.jpg" 
                   alt="YOHEV - Dr. Erick Gurrola" 
@@ -247,23 +257,29 @@ export default function Home() {
               </div>
             </div>
             <div>
-              <h2 className="font-display text-4xl font-bold text-foreground mb-6">
-                Conoce a <span className="text-primary">YOHEV</span>
+              <div className="inline-block px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-6">
+                <p className="text-sm font-semibold text-primary">✨ Maestro Fundador</p>
+              </div>
+              <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-6">
+                Conoce a <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">YOHEV</span>
               </h2>
+              <div className="w-12 h-1 bg-gradient-to-r from-primary to-accent rounded-full mb-8"></div>
               <p className="text-lg text-muted-foreground mb-4 leading-relaxed">
                 Dr. Erick Gurrola, conocido por su nombre espiritual YOHEV, es el maestro y fundador de KS Healing. Su viaje espiritual lo llevó a descubrir y canalizar la Energía KS y enseñar a otros a sanarse a sí mismos con esta energía de altísima vibración.
               </p>
-              <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
+              <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
                 Con más de una década de experiencia en transformación espiritual, YOHEV ha dedicado su vida a ayudar a miles de personas a recordar su verdadera naturaleza divina.
               </p>
-              <Link href="/sobre-yohev">
-                <a>
-                  <Button className="bg-primary hover:bg-primary/90 text-white gap-2">
-                    Conocer su Historia
-                    <ArrowRight size={20} />
-                  </Button>
-                </a>
-              </Link>
+              <div className="flex gap-4">
+                <Link href="/sobre-yohev">
+                  <a>
+                    <Button className="bg-primary hover:bg-primary/90 text-white gap-2">
+                      Conocer su Historia
+                      <ArrowRight size={20} />
+                    </Button>
+                  </a>
+                </Link>
+              </div>
             </div>
           </div>
         </div>
