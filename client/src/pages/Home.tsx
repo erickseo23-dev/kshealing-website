@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -10,6 +10,15 @@ import { testimonios } from "@/lib/testimonials";
 
 function TestimonialsCarousel() {
   const [currentIndex, setCurrentIndex] = useState(0);
+
+  // Auto-rotate carousel every 5 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prev) => (prev === testimonios.length - 1 ? 0 : prev + 1));
+    }, 5000);
+
+    return () => clearInterval(interval);
+  }, []);
 
   const handlePrevious = () => {
     setCurrentIndex((prev) => (prev === 0 ? testimonios.length - 1 : prev - 1));
