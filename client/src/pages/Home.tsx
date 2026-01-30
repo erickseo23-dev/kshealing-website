@@ -269,6 +269,71 @@ export default function Home() {
         </div>
       </section>
 
+      {/* KS Healing Programs */}
+      <section className="py-20 md:py-32 bg-gradient-to-br from-primary/5 via-background to-accent/5 relative overflow-hidden">
+        {/* Decorative SVG Divider */}
+        <svg className="absolute top-0 left-0 w-full" viewBox="0 0 1200 120" preserveAspectRatio="none" style={{height: '120px'}}>
+          <path d="M0,50 Q300,100 600,50 T1200,50 L1200,0 L0,0 Z" fill="rgba(var(--primary-rgb), 0.1)" />
+        </svg>
+        
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="max-w-3xl mx-auto mb-16 text-center">
+            <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-6">
+              Programas de <span className="text-primary">KS Healing Systems</span>
+            </h2>
+            <p className="text-lg text-muted-foreground leading-relaxed">
+              Cada programa está diseñado para un paso diferente en tu viaje de transformación y evolución espiritual
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+            {[
+              {
+                title: "KS Healing",
+                description: "La base fundamental de la sanación energética. Aprende a trabajar directamente con la Energía Keiouvos Stharef para transformar tu campo vibracional y recordar tu verdadera naturaleza divina.",
+                icon: "✨",
+                color: "from-primary/20 to-primary/5",
+              },
+              {
+                title: "D.A.R.T.",
+                description: "Deep Archetypal Renewal Therapy. Trabaja en la raíz de tus patrones internos para reemplazar arquetipos negativos por arquetipos positivos y balanceados.",
+                icon: "🔄",
+                color: "from-accent/20 to-accent/5",
+              },
+              {
+                title: "Genética Sagrada",
+                description: "Accede a la sabiduría ancestral de tu linaje. Activa tu ADN espiritual y reconecta con el poder hereditario de tu familia.",
+                icon: "🧬",
+                color: "from-primary/20 to-accent/10",
+              },
+              {
+                title: "Retiro Sagrado",
+                description: "Una experiencia inmersiva de transformación profunda. Retiros presenciales donde experimentarás transmisiones intensivas de Energía KS en comunidad.",
+                icon: "🏔️",
+                color: "from-accent/20 to-primary/10",
+              },
+            ].map((program, idx) => (
+              <Card key={idx} className={`p-8 border-border/50 hover:shadow-xl transition-all hover:-translate-y-2 bg-gradient-to-br ${program.color} flex flex-col`}>
+                <div className="text-5xl mb-4">{program.icon}</div>
+                <h3 className="font-display text-2xl font-bold text-foreground mb-3">
+                  {program.title}
+                </h3>
+                <p className="text-muted-foreground mb-6 flex-grow leading-relaxed">
+                  {program.description}
+                </p>
+                <Link href="/que-es-ks-healing">
+                  <a>
+                    <Button variant="outline" className="w-full border-primary text-primary hover:bg-primary/10">
+                      Conocer Más
+                    </Button>
+                  </a>
+                </Link>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Upcoming Events */}
       <section className="py-20 md:py-32 bg-gradient-to-br from-primary/5 via-background to-accent/5">
         <div className="container mx-auto px-4">
