@@ -16,7 +16,7 @@ export default function SobreYohev() {
       try {
         // Using YouTube's public API to get latest videos from the channel
         const channelId = "UCvNgGPLh1VZMSuGRHxvqIrw"; // Dr. Erick Gurrola channel ID
-        const apiKey = "AIzaSyDQwYzHZNfKhVzQAqKCWbXVqJKfHXqrqsQ"; // Public API key
+        const apiKey = "AIzaSyB7CtKN53btaGlhxAfN6sv6wboAbTBEs2E"; // Public API key
         
         const response = await fetch(
           `https://www.googleapis.com/youtube/v3/search?key=${apiKey}&channelId=${channelId}&part=snippet&order=date&maxResults=6&type=video`
