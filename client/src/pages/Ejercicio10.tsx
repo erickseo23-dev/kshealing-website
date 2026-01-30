@@ -6,7 +6,6 @@ import {
   Heart,
   Compass,
   Wind,
-  Sparkles,
 } from "lucide-react";
 import { useState } from "react";
 import EjercicioLayout from "@/components/EjercicioLayout";
@@ -166,7 +165,7 @@ export default function Ejercicio10() {
               index={3}
             />
             <RecommendationItem
-              icon={Sparkles}
+              icon={Heart}
               text="Tómate tiempo después para integrar la experiencia"
               index={4}
             />
