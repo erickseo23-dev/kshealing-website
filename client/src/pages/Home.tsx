@@ -293,24 +293,28 @@ export default function Home() {
                 description: "La base fundamental de la sanación energética. Aprende a trabajar directamente con la Energía Keiouvos Stharef para transformar tu campo vibracional y recordar tu verdadera naturaleza divina.",
                 icon: "✨",
                 color: "from-primary/20 to-primary/5",
+                href: "/ks-healing",
               },
               {
                 title: "D.A.R.T.",
                 description: "Deep Archetypal Renewal Therapy. Trabaja en la raíz de tus patrones internos para reemplazar arquetipos negativos por arquetipos positivos y balanceados.",
                 icon: "🔄",
                 color: "from-accent/20 to-accent/5",
+                href: "/dart",
               },
               {
                 title: "Genética Sagrada",
                 description: "Accede a la sabiduría ancestral de tu linaje. Activa tu ADN espiritual y reconecta con el poder hereditario de tu familia.",
                 icon: "🧬",
                 color: "from-primary/20 to-accent/10",
+                href: "/genetica-sagrada",
               },
               {
                 title: "Retiro Sagrado",
                 description: "Una experiencia inmersiva de transformación profunda. Retiros presenciales donde experimentarás transmisiones intensivas de Energía KS en comunidad.",
                 icon: "🏔️",
                 color: "from-accent/20 to-primary/10",
+                href: "/retiro-sagrado",
               },
             ].map((program, idx) => (
               <Card key={idx} className={`p-8 border-border/50 hover:shadow-xl transition-all hover:-translate-y-2 bg-gradient-to-br ${program.color} flex flex-col`}>
@@ -321,7 +325,7 @@ export default function Home() {
                 <p className="text-muted-foreground mb-6 flex-grow leading-relaxed">
                   {program.description}
                 </p>
-                <Link href="/que-es-ks-healing">
+                <Link href={program.href}>
                   <a>
                     <Button variant="outline" className="w-full border-primary text-primary hover:bg-primary/10">
                       Conocer Más
