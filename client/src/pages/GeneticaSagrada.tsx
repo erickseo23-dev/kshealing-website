@@ -1,12 +1,102 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Link } from "wouter";
-import { ArrowRight, Check, Dna, Zap, Heart, Users, Star, BookOpen } from "lucide-react";
+import { ArrowRight, Check, Dna, Zap, Heart, Users, Star, BookOpen, ChevronDown } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { geneticaSagradaTestimonials } from "@/lib/programTestimonials";
+import { useState } from "react";
+
+const dnaLayers = [
+  {
+    number: 1,
+    name: "ADN Nuclear",
+    description: "Tu material genético físico. La base biológica que contiene toda la información de tu linaje ancestral. Es el código que heredaste de tus padres y que se expresa en tu cuerpo físico.",
+    focus: "Sanación del cuerpo físico y la salud genética",
+    benefits: ["Limpieza de patrones genéticos heredados", "Activación del potencial físico", "Armonización celular"]
+  },
+  {
+    number: 2,
+    name: "Linaje Materno",
+    description: "La herencia energética de tu madre y todas las mujeres de tu línea materna. Contiene la sabiduría femenina, la capacidad de recibir, la intuición y el poder creativo de tu linaje femenino.",
+    focus: "Sanación de la relación con lo femenino y la madre",
+    benefits: ["Reconexión con la sabiduría materna", "Liberación de creencias limitantes maternas", "Activación de la intuición femenina"]
+  },
+  {
+    number: 3,
+    name: "Linaje Paterno",
+    description: "La herencia energética de tu padre y todos los hombres de tu línea paterna. Contiene la fuerza masculina, la capacidad de actuar, la voluntad y el poder de tu linaje masculino.",
+    focus: "Sanación de la relación con lo masculino y el padre",
+    benefits: ["Reconexión con la fuerza paterna", "Liberación de patrones paternos limitantes", "Activación del poder masculino"]
+  },
+  {
+    number: 4,
+    name: "Cuerpo Vital",
+    description: "Tu cuerpo energético que rodea el físico. Es el puente entre tu alma y tu cuerpo material. Contiene tu vitalidad, tu energía de vida y tu capacidad de manifestación.",
+    focus: "Aumento de vitalidad y energía de vida",
+    benefits: ["Incremento de energía vital", "Mejora del aura energética", "Conexión cuerpo-espíritu"]
+  },
+  {
+    number: 5,
+    name: "Cuerpo Astral",
+    description: "Tu cuerpo emocional y de deseos. Es donde residen tus emociones, tus sueños y tu capacidad de conexión con otros seres. Contiene tu resonancia emocional y tu poder de atracción.",
+    focus: "Sanación emocional y equilibrio del deseo",
+    benefits: ["Liberación de bloqueos emocionales", "Armonización de relaciones", "Equilibrio del deseo y la pasión"]
+  },
+  {
+    number: 6,
+    name: "Ego",
+    description: "Tu identidad individual y tu sentido del yo. No es negativo, es tu vehículo de identidad que te permite experimentar la vida como un ser único. Contiene tu poder personal y tu voluntad.",
+    focus: "Fortalecimiento del yo auténtico",
+    benefits: ["Claridad de identidad personal", "Recuperación del poder personal", "Autenticidad genuina"]
+  },
+  {
+    number: 7,
+    name: "ECO",
+    description: "Tu campo holográfico de proyección. Es el campo energético que proyecta tu realidad. Contiene tu capacidad de crear y manifestar a través de la coherencia energética.",
+    focus: "Alineación del campo holográfico",
+    benefits: ["Manifestación consciente", "Coherencia energética", "Creación de realidad alineada"]
+  },
+  {
+    number: 8,
+    name: "Cuerpo Mental Multidimensional",
+    description: "Tu mente cuántica que existe en múltiples dimensiones simultáneamente. Contiene tu capacidad de pensamiento elevado, tu conexión con realidades paralelas y tu potencial mental ilimitado.",
+    focus: "Expansión de la conciencia mental",
+    benefits: ["Acceso a inteligencia multidimensional", "Pensamiento cuántico", "Conexión con realidades paralelas"]
+  },
+  {
+    number: 9,
+    name: "Cuerpo Mental de Simultaneidad Encarnativa",
+    description: "Tu conexión con todas tus encarnaciones simultáneamente. Contiene la sabiduría de todas tus vidas pasadas, presentes y futuras que existen al mismo tiempo en el continuo cuántico.",
+    focus: "Integración de todas las encarnaciones",
+    benefits: ["Acceso a sabiduría de vidas pasadas", "Integración kármica", "Comprensión de propósito encarnativo"]
+  },
+  {
+    number: 10,
+    name: "Árbol de La Vida",
+    description: "El código sagrado de tu alma. Es la estructura divina que contiene los 10 sefirots y representa el camino de tu evolución espiritual. Tu conexión con la geometría sagrada del universo.",
+    focus: "Activación del código sagrado del alma",
+    benefits: ["Conexión con geometría sagrada", "Activación de los sefirots", "Alineación con propósito divino"]
+  },
+  {
+    number: 11,
+    name: "Adam Kadmón",
+    description: "Tu Arquetipo Divino Original. Es la plantilla perfecta de tu ser antes de cualquier distorsión. Contiene tu verdadera naturaleza divina y tu diseño original como expresión del Creador.",
+    focus: "Reconexión con el Arquetipo Divino",
+    benefits: ["Recordar tu verdadera naturaleza", "Alineación con diseño original", "Expresión auténtica divina"]
+  },
+  {
+    number: 12,
+    name: "Universo Multidimensional",
+    description: "Tu conexión con el Campo Unificado. Es la capa más elevada donde tu ser individual se funde con el Universo infinito. Contiene tu unidad con toda la creación y tu verdadera naturaleza cósmica.",
+    focus: "Unificación con el Campo Divino",
+    benefits: ["Experiencia de unidad cósmica", "Conexión con Fuente", "Realización de tu naturaleza infinita"]
+  }
+];
 
 export default function GeneticaSagrada() {
+  const [expandedLayer, setExpandedLayer] = useState<number | null>(null);
+
   return (
     <div className="min-h-screen flex flex-col bg-background">
       <Navigation />
@@ -106,37 +196,86 @@ export default function GeneticaSagrada() {
               className="w-full h-auto rounded-lg shadow-2xl border border-primary/20"
             />
           </div>
+        </div>
+      </section>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-5xl mx-auto">
-            {[
-              "Capa del ADN Nuclear",
-              "Capa del Linaje Materno",
-              "Capa del Linaje Paterno",
-              "Capa del Cuerpo Vital",
-              "Capa del Cuerpo Astral",
-              "Capa del Ego",
-              "Capa del ECO",
-              "Capa del Cuerpo Mental Multidimensional",
-              "Capa del Cuerpo Mental de Simultaneidad Encarnativa",
-              "Capa del Árbol de La Vida",
-              "Capa del Adam Kadmón",
-              "Capa del Universo Multidimensional",
-            ].map((layer, idx) => (
-              <Card key={idx} className="p-4 border-border/50 bg-background hover:bg-primary/5 transition-colors">
-                <div className="flex gap-3">
-                  <div className="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0">
-                    <span className="text-primary font-semibold text-sm">{idx + 1}</span>
-                  </div>
-                  <p className="text-muted-foreground">{layer}</p>
-                </div>
-              </Card>
-            ))}
+      {/* Expandable DNA Layers Details */}
+      <section className="py-20 md:py-32">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <div className="mb-16 text-center">
+              <h2 className="font-display text-4xl font-bold text-foreground mb-6">
+                Descripción Detallada de las <span className="text-primary">12 Capas</span>
+              </h2>
+              <p className="text-lg text-muted-foreground">
+                Haz clic en cada capa para explorar su significado y beneficios
+              </p>
+            </div>
+
+            <div className="space-y-4">
+              {dnaLayers.map((layer) => (
+                <Card 
+                  key={layer.number}
+                  className="border-border/50 overflow-hidden transition-all duration-300 hover:shadow-lg"
+                >
+                  <button
+                    onClick={() => setExpandedLayer(expandedLayer === layer.number ? null : layer.number)}
+                    className="w-full p-6 flex items-center justify-between bg-gradient-to-r from-background to-primary/5 hover:from-primary/5 hover:to-primary/10 transition-colors"
+                  >
+                    <div className="flex items-center gap-4 text-left">
+                      <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0">
+                        <span className="text-primary font-bold text-lg">{layer.number}</span>
+                      </div>
+                      <div>
+                        <h3 className="font-display text-xl font-bold text-foreground">
+                          {layer.name}
+                        </h3>
+                        <p className="text-sm text-muted-foreground mt-1">
+                          {layer.focus}
+                        </p>
+                      </div>
+                    </div>
+                    <ChevronDown 
+                      size={24} 
+                      className={`text-primary flex-shrink-0 transition-transform duration-300 ${
+                        expandedLayer === layer.number ? 'rotate-180' : ''
+                      }`}
+                    />
+                  </button>
+
+                  {expandedLayer === layer.number && (
+                    <div className="px-6 pb-6 border-t border-border/50 bg-background/50">
+                      <div className="space-y-6 mt-6">
+                        <div>
+                          <h4 className="font-semibold text-foreground mb-3">Descripción</h4>
+                          <p className="text-muted-foreground leading-relaxed">
+                            {layer.description}
+                          </p>
+                        </div>
+
+                        <div>
+                          <h4 className="font-semibold text-foreground mb-3">Beneficios de la Afinación</h4>
+                          <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
+                            {layer.benefits.map((benefit, idx) => (
+                              <div key={idx} className="flex gap-3 p-3 rounded-lg bg-primary/5 border border-primary/10">
+                                <Check size={18} className="text-primary flex-shrink-0 mt-0.5" />
+                                <p className="text-sm text-muted-foreground">{benefit}</p>
+                              </div>
+                            ))}
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  )}
+                </Card>
+              ))}
+            </div>
           </div>
         </div>
       </section>
 
       {/* Program Details */}
-      <section className="py-20 md:py-32">
+      <section className="py-20 md:py-32 bg-primary/5">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">

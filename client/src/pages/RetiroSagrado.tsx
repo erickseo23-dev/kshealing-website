@@ -19,17 +19,23 @@ export default function RetiroSagrado() {
               <span className="text-primary font-semibold">🕉️ Experiencia Vivencial</span>
             </div>
             <h1 className="font-display text-5xl md:text-6xl font-bold text-foreground mb-6">
-              Retiro <span className="text-primary">Sagrado</span>
+              Retiro <span className="text-primary">Sagrado 7</span>
             </h1>
             <p className="text-xl text-muted-foreground mb-6">
+              Presencia Viva - Domingo 01 de Febrero
+            </p>
+            <p className="text-lg text-muted-foreground mb-2">
               Claves Internas para el Bienestar Verdadero
             </p>
             <p className="text-lg text-muted-foreground mb-8 italic">
               "El bienestar se activa cuando todo dentro de mí se ordena."
             </p>
             <p className="text-lg text-muted-foreground mb-8">
-              Un espacio profundo para cerrar el año en coherencia, calma y alineación interior. Una pausa necesaria antes de iniciar un nuevo ciclo.
+              Un espacio profundo para iniciar el nuevo ciclo en coherencia, calma y alineación interior. Aprender a habitar el presente como base de todo lo que viene.
             </p>
+            <div className="inline-block mb-6 px-4 py-2 rounded-full bg-primary/10 border border-primary/20">
+              <span className="text-primary font-semibold">📅 Próximo Domingo 01 de Febrero | 10:00 - 14:00 hrs (CDMX)</span>
+            </div>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" className="bg-primary hover:bg-primary/90 text-white">
                 Reservar Mi Lugar
@@ -145,6 +151,10 @@ export default function RetiroSagrado() {
                   <div>
                     <p className="font-semibold text-foreground">Modalidad:</p>
                     <p>En vivo por Zoom</p>
+                  </div>
+                  <div>
+                    <p className="font-semibold text-foreground">Fecha:</p>
+                    <p className="font-bold text-primary">Domingo 01 de Febrero de 2026</p>
                   </div>
                   <div>
                     <p className="font-semibold text-foreground">Horario:</p>
