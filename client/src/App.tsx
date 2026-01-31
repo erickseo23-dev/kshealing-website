@@ -41,6 +41,7 @@ import Cursos from "./pages/Cursos";
 import PoliticaPrivacidad from "./pages/PoliticaPrivacidad";
 import TerminosServicio from "./pages/TerminosServicio";
 import PoliticaCookies from "./pages/PoliticaCookies";
+import CookieConsent from "./components/CookieConsent";
 
 function Router() {
   return (
@@ -103,6 +104,7 @@ function App() {
           <TooltipProvider>
             <Toaster />
             <Router />
+            <CookieConsent />
           </TooltipProvider>
         </AuthProvider>
       </ThemeProvider>
