@@ -92,6 +92,31 @@ export default function KSHealing() {
             </div>
           </div>
 
+          {/* Divine Connection Section */}
+          <div className="mt-20 pt-20 border-t border-primary/20">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
+              <div className="relative">
+                <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 rounded-2xl blur-2xl"></div>
+                <img 
+                  src="/images/ks-healing-divine-connection.png" 
+                  alt="Conexión Divina" 
+                  className="relative w-full rounded-2xl shadow-2xl object-cover aspect-video"
+                />
+              </div>
+              <div>
+                <h3 className="font-display text-3xl font-bold text-foreground mb-6">
+                  Conecta con tu <span className="text-primary">Verdadera Naturaleza Divina</span>
+                </h3>
+                <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
+                  La Energía Keiouvos Stharef es la llave que abre la puerta a tu conexión divina más profunda. No es algo externo que te falta, sino algo que ya existe en ti y que necesita ser recordado y activado.
+                </p>
+                <p className="text-lg text-muted-foreground leading-relaxed">
+                  A través de KS Healing, accedes a estados de presencia donde reconoces a Dios en ti, donde tu verdadera naturaleza divina se revela con claridad y coherencia.
+                </p>
+              </div>
+            </div>
+          </div>
+
           {/* Key Benefits Section */}
           <div className="mt-20 pt-20 border-t border-primary/20">
             <h3 className="font-display text-3xl font-bold text-center text-foreground mb-12">
@@ -236,6 +261,35 @@ export default function KSHealing() {
                 </div>
               </Card>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Consciousness Expansion Section */}
+      <section className="py-20 md:py-32">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
+            <div className="relative">
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 rounded-2xl blur-2xl"></div>
+              <img 
+                src="/images/ks-healing-consciousness-expansion.png" 
+                alt="Expansión de Consciencia" 
+                className="relative w-full rounded-2xl shadow-2xl object-cover aspect-video"
+              />
+            </div>
+            <div>
+              <h2 className="font-display text-4xl font-bold text-foreground mb-6">
+                Expande tu <span className="text-primary">Consciencia</span>
+              </h2>
+              <div className="space-y-4 text-muted-foreground mb-8">
+                <p className="text-lg leading-relaxed">
+                  La verdadera sanación es expansión de consciencia. A medida que trabajas con KS Healing, accedes a estados más profundos de presencia, claridad y comprensión interna.
+                </p>
+                <p className="text-lg leading-relaxed">
+                  Tu perspectiva cambia. Lo que antes parecía un problema se revela como una oportunidad de crecimiento. Tu vida fluye con mayor coherencia, propósito y paz.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
