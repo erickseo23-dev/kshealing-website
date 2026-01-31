@@ -109,18 +109,17 @@ export default function Ejercicio1() {
               {/* Video Container mejorado */}
               <div className="relative group">
                 <div className="absolute -inset-1 bg-gradient-to-r from-blue-900 to-slate-600 rounded-lg blur opacity-25 group-hover:opacity-75 transition duration-1000" />
-                <div className="relative bg-gradient-to-br from-primary/10 to-accent/10 rounded-lg overflow-hidden border border-border aspect-video flex items-center justify-center">
-                  <div className="text-center">
-                    <div className="mb-4 inline-block p-4 bg-primary/20 rounded-full">
-                      <Wind className="w-8 h-8 text-primary animate-spin" />
-                    </div>
-                    <p className="text-muted-foreground mb-4">
-                      El video será disponible aquí una vez que lo subas a YouTube
-                    </p>
-                    <p className="text-sm text-muted-foreground">
-                      Espacio reservado para: iframe de YouTube privado
-                    </p>
-                  </div>
+                <div className="relative bg-black rounded-lg overflow-hidden border border-border aspect-video">
+                  <iframe
+                    width="100%"
+                    height="100%"
+                    src="https://www.youtube.com/embed/LozuToRSiX4"
+                    title="Ejercicio 1: Para Conectar con el Campo KS"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowFullScreen
+                    className="w-full h-full"
+                  />
                 </div>
               </div>
 
