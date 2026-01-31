@@ -317,7 +317,7 @@ export default function ElLibro() {
                   </div>
                 </div>
                 <div className="text-3xl font-display font-bold text-primary mb-6">
-                  $45 USD
+                  $24.99 USD
                 </div>
                 <Button className="w-full bg-primary hover:bg-primary/90 text-white">
                   Comprar en Amazon
@@ -347,7 +347,7 @@ export default function ElLibro() {
                   </div>
                 </div>
                 <div className="text-3xl font-display font-bold text-primary mb-6">
-                  $25 USD
+                  $9.99 USD
                 </div>
                 <Button className="w-full bg-primary hover:bg-primary/90 text-white">
                   Descargar Ahora
