@@ -69,6 +69,35 @@ export default function RetiroSagrado() {
         </div>
       </section>
 
+      {/* Presence Section */}
+      <section className="py-20 md:py-32">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
+            <div className="relative">
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 rounded-2xl blur-2xl"></div>
+              <img 
+                src="/images/retiro-sagrado-presence.png" 
+                alt="Presencia Viva" 
+                className="relative w-full rounded-2xl shadow-2xl object-cover aspect-video"
+              />
+            </div>
+            <div>
+              <h2 className="font-display text-4xl font-bold text-foreground mb-6">
+                Habitar la <span className="text-primary">Presencia Viva</span>
+              </h2>
+              <div className="space-y-4 text-muted-foreground mb-8">
+                <p className="text-lg leading-relaxed">
+                  La presencia no es un concepto. Es una experiencia encarnada donde tu cuerpo, mente y espiritu estan completamente aqui, ahora, sin division ni distraccion.
+                </p>
+                <p className="text-lg leading-relaxed">
+                  En este retiro aprenderas a habitar ese espacio de presencia como base solida para todo lo que viene. Desde ahi, cualquier decision es mas clara, cualquier relacion es mas profunda, y tu vida fluye con coherencia.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* What You'll Experience */}
       <section className="py-20 md:py-32">
         <div className="container mx-auto px-4">
@@ -296,6 +325,35 @@ export default function RetiroSagrado() {
         </div>
       </section>
 
+      {/* Sacred Gathering */}
+      <section className="py-20 md:py-32 bg-primary/5">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
+            <div className="relative order-2 lg:order-1">
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 rounded-2xl blur-2xl"></div>
+              <img 
+                src="/images/retiro-sagrado-gathering.png" 
+                alt="Reunion Sagrada" 
+                className="relative w-full rounded-2xl shadow-2xl object-cover aspect-video"
+              />
+            </div>
+            <div className="order-1 lg:order-2">
+              <h2 className="font-display text-4xl font-bold text-foreground mb-6">
+                El Poder de la <span className="text-primary">Reunion Sagrada</span>
+              </h2>
+              <div className="space-y-4 text-muted-foreground mb-8">
+                <p className="text-lg leading-relaxed">
+                  No vienes solo. Vienes a un espacio donde multiples consciencias se reune en coherencia, en proposito compartido, en energia colectiva.
+                </p>
+                <p className="text-lg leading-relaxed">
+                  Ese campo energetico amplifica tu propia transformacion. La presencia de otros que buscan lo mismo te sostiene, te inspira, te eleva. Es la magia de la reunion sagrada: juntos, somos mas.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Testimonials Section */}
       <section className="py-20 md:py-32">
         <div className="container mx-auto px-4">
@@ -326,6 +384,35 @@ export default function RetiroSagrado() {
                 </div>
               </Card>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Renewal Section */}
+      <section className="py-20 md:py-32">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
+            <div className="relative">
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 rounded-2xl blur-2xl"></div>
+              <img 
+                src="/images/retiro-sagrado-renewal.png" 
+                alt="Renovacion y Nuevo Comienzo" 
+                className="relative w-full rounded-2xl shadow-2xl object-cover aspect-video"
+              />
+            </div>
+            <div>
+              <h2 className="font-display text-4xl font-bold text-foreground mb-6">
+                Inicia el Nuevo Ciclo desde la <span className="text-primary">Renovacion</span>
+              </h2>
+              <div className="space-y-4 text-muted-foreground mb-8">
+                <p className="text-lg leading-relaxed">
+                  Este retiro es un punto de inflexion. Cierra lo que necesita cerrarse, integra lo que necesita integrarse, y abre la puerta a un nuevo ciclo desde la claridad y la coherencia.
+                </p>
+                <p className="text-lg leading-relaxed">
+                  Cuando termines estas 4 horas, no seras la misma persona. Habras tocado la presencia viva, habras sentido el campo sagrado, habras renovado tu intencion para lo que viene.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
