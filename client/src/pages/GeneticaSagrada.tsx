@@ -368,6 +368,35 @@ export default function GeneticaSagrada() {
         </div>
       </section>
 
+      {/* Multidimensional Consciousness Section */}
+      <section className="py-20 md:py-32">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
+            <div className="relative">
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 rounded-2xl blur-2xl"></div>
+              <img 
+                src="/images/genetica-sagrada-multidimensional.png" 
+                alt="Consciencia Multidimensional" 
+                className="relative w-full rounded-2xl shadow-2xl object-cover aspect-video"
+              />
+            </div>
+            <div>
+              <h2 className="font-display text-4xl font-bold text-foreground mb-6">
+                Expande tu <span className="text-primary">Consciencia Multidimensional</span>
+              </h2>
+              <div className="space-y-4 text-muted-foreground mb-8">
+                <p className="text-lg leading-relaxed">
+                  Eres mucho más que tu cuerpo físico. Tu consciencia existe simultáneamente en múltiples dimensiones, conectada con tus encarnaciones pasadas, presentes y futuras.
+                </p>
+                <p className="text-lg leading-relaxed">
+                  Genética Sagrada te enseña a navegar estas dimensiones, integrando la sabiduría de todas tus vidas en una sola consciencia unificada y coherente.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Testimonials Section */}
       <section className="py-20 md:py-32">
         <div className="container mx-auto px-4">
