@@ -78,13 +78,61 @@ const productos = [
     stock: "Disponible",
     enlace: "https://a.co/d/2RWWKcJ",
   },
+  {
+    id: 7,
+    nombre: "KS Healing - Certificación",
+    precio: "Por definir",
+    descripcion: "Programa de formación en la técnica de sanación energética KS Healing. Aprende a trabajar directamente con la Energía Keiouvos Stharef y conviértete en practitioner certificado.",
+    categoria: "Cursos",
+    rating: 5,
+    resenas: 42,
+    imagen: "🎓",
+    stock: "Disponible",
+    enlace: "https://kajabi.com",
+  },
+  {
+    id: 8,
+    nombre: "D.A.R.T. - Deep Archetypal Renewal Therapy",
+    precio: "Por definir",
+    descripcion: "Programa avanzado de transformación profunda que trabaja con arquetipos internos y renovación de patrones. Dirigido por YOHEV.",
+    categoria: "Cursos",
+    rating: 4.9,
+    resenas: 28,
+    imagen: "✨",
+    stock: "Disponible",
+    enlace: "https://kajabi.com",
+  },
+  {
+    id: 9,
+    nombre: "Genética Sagrada - Las 12 Capas del ADN",
+    precio: "Por definir",
+    descripcion: "Exploración profunda de las 12 dimensiones del ADN espiritual. Accede a la sabiduría ancestral de tu linaje y activa tu potencial multidimensional.",
+    categoria: "Cursos",
+    rating: 5,
+    resenas: 35,
+    imagen: "🧬",
+    stock: "Disponible",
+    enlace: "https://kajabi.com",
+  },
+  {
+    id: 10,
+    nombre: "Meditación Ascendente",
+    precio: "Por definir",
+    descripcion: "Método progresivo de expansión de consciencia. Desarrolla presencia, claridad interna y regulación emocional a través de la práctica continua guiada.",
+    categoria: "Cursos",
+    rating: 5,
+    resenas: 89,
+    imagen: "🧘",
+    stock: "Disponible",
+    enlace: "https://kajabi.com",
+  },
 ];
 
 export default function Tienda() {
   const [filtroCategoria, setFiltroCategoria] = useState("");
   const [carrito, setCarrito] = useState<typeof productos>([]);
 
-  const categorias = ["Libros"];
+  const categorias = ["Libros", "Cursos"];
   
   const productosFiltrados = filtroCategoria
     ? productos.filter((p) => p.categoria === filtroCategoria)
