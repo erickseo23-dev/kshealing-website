@@ -1,0 +1,38 @@
+# Manus specific files
+vite-plugin-manus-runtime
+.manus-logs
+vite.config.ts
+
+# Development files
+.env.local
+.env.*.local
+.manus*
+skills/
+
+# Build artifacts
+dist/
+build/
+.cache/
+
+# Dependencies
+node_modules/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Documentation
+*.md
+HISTORIAL_TRABAJO_ANTERIOR.md
+EJERCICIOS_DESIGN.md
+GUIA_ELEMENTOR_PRO.md
+KAJABI_INTEGRATION.md
+RESUMEN_VIDEO_YOUTUBE.md
+SITIO_WEB_ESTADO.md
+
+# Upload folder
+upload/
+
+# Git
+.git/
+.gitignore
