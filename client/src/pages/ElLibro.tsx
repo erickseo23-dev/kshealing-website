@@ -381,14 +381,12 @@ export default function ElLibro() {
           <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
             El libro es el primer paso. Los ejercicios y videos de transmisión te guiarán hacia la experiencia directa de la Energía Keiouvos Stharef.
           </p>
-          <Link href="/el-libro#comprar">
-            <a>
-              <Button size="lg" className="bg-primary hover:bg-primary/90 text-white gap-2">
-                Obtener el Libro
-                <ArrowRight size={20} />
-              </Button>
-            </a>
-          </Link>
+          <a href="https://a.co/d/ini6U2Y" target="_blank" rel="noopener noreferrer">
+            <Button size="lg" className="bg-primary hover:bg-primary/90 text-white gap-2">
+              Obtener el Libro
+              <ArrowRight size={20} />
+            </Button>
+          </a>
         </div>
       </section>
 
