@@ -15,6 +15,7 @@ import EjercicioCard from "@/components/EjercicioCard";
 import RecommendationItem from "@/components/RecommendationItem";
 import ExerciseProgress from "@/components/ExerciseProgress";
 import ExerciseNavigation from "@/components/ExerciseNavigation";
+import YouTubeVideo from "@/components/YouTubeVideo";
 import ProgramasSection from "@/components/ProgramasSection";
 import EventosSection from "@/components/EventosSection";
 
@@ -96,23 +97,8 @@ export default function Ejercicio9() {
                 Video del Ejercicio
               </h2>
 
-              {/* Video Container mejorado */}
-              <div className="relative group">
-                <div className="absolute -inset-1 bg-gradient-to-r from-slate-600 to-slate-600 rounded-lg blur opacity-25 group-hover:opacity-75 transition duration-1000" />
-                <div className="relative bg-gradient-to-br from-slate-600 to-slate-600/10 rounded-lg overflow-hidden border border-border aspect-video flex items-center justify-center">
-                  <div className="text-center">
-                    <div className="mb-4 inline-block p-4 bg-blue-600/20 rounded-full">
-                      <Wind className="w-8 h-8 text-blue-400 animate-spin" />
-                    </div>
-                    <p className="text-muted-foreground mb-4">
-                      El video será disponible aquí una vez que lo subas a YouTube
-                    </p>
-                    <p className="text-sm text-muted-foreground">
-                      Espacio reservado para: iframe de YouTube privado
-                    </p>
-                  </div>
-                </div>
-              </div>
+              {/* Video */}
+              <YouTubeVideo videoId="g3vEufn4dis" />
 
               <div className="mt-4 p-4 bg-card rounded-lg border border-border">
                 <p className="text-sm text-muted-foreground flex items-start gap-2">
