@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Navigation } from "@/components/Navigation";
-import { Footer } from "@/components/Footer";
+import Footer from "@/components/Footer";
 
 export default function RetiroSagrado() {
   return (
