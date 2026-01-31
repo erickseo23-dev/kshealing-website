@@ -66,22 +66,16 @@ export default function Footer() {
             <h3 className="font-display text-sm font-bold mb-4 text-foreground uppercase tracking-wide">Servicios</h3>
             <ul className="space-y-3 text-sm">
               <li><Link href="/eventos"><a className="text-muted-foreground hover:text-primary transition-colors">Eventos</a></Link></li>
-              <li><Link href="/meditaciones"><a className="text-muted-foreground hover:text-primary transition-colors">Meditaciones</a></Link></li>
-              <li><Link href="/directorio"><a className="text-muted-foreground hover:text-primary transition-colors">Directorio</a></Link></li>
-              <li><Link href="/tienda"><a className="text-muted-foreground hover:text-primary transition-colors">Tienda</a></Link></li>
               <li><Link href="/testimonios"><a className="text-muted-foreground hover:text-primary transition-colors">Testimonios</a></Link></li>
             </ul>
           </div>
 
-          {/* Recursos */}
+          {/* Programas */}
           <div>
-            <h3 className="font-display text-sm font-bold mb-4 text-foreground uppercase tracking-wide">Recursos</h3>
+            <h3 className="font-display text-sm font-bold mb-4 text-foreground uppercase tracking-wide">Programas</h3>
             <ul className="space-y-3 text-sm">
-              <li><Link href="/recursos"><a className="text-muted-foreground hover:text-primary transition-colors">Centro de Recursos</a></Link></li>
-              <li><a href="#" className="text-muted-foreground hover:text-primary transition-colors">Preguntas Frecuentes</a></li>
-              <li><a href="#" className="text-muted-foreground hover:text-primary transition-colors">Guía de Inicio</a></li>
-              <li><a href="#" className="text-muted-foreground hover:text-primary transition-colors">Certificación</a></li>
-              <li><Link href="/portal-miembros"><a className="text-muted-foreground hover:text-primary transition-colors">Portal de Miembros</a></Link></li>
+              <li><Link href="/cursos"><a className="text-muted-foreground hover:text-primary transition-colors">Cursos</a></Link></li>
+              <li><Link href="/blog"><a className="text-muted-foreground hover:text-primary transition-colors">Blog</a></Link></li>
             </ul>
           </div>
 
