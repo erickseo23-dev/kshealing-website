@@ -46,9 +46,9 @@ export default function DART() {
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-br from-accent/20 to-primary/20 rounded-2xl blur-2xl"></div>
               <img 
-                src="/sdfsf.jpeg" 
-                alt="D.A.R.T. Therapy" 
-                className="relative w-full rounded-2xl shadow-2xl object-cover aspect-square"
+                src="/images/dart-archetypal-transformation.png" 
+                alt="D.A.R.T. Transformacion Arquetipica" 
+                className="relative w-full rounded-2xl shadow-2xl object-cover aspect-video"
               />
             </div>
             <div>
@@ -127,6 +127,35 @@ export default function DART() {
         </div>
       </section>
 
+      {/* Neural Restructuring Section */}
+      <section className="py-20 md:py-32">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
+            <div>
+              <h2 className="font-display text-4xl font-bold text-foreground mb-6">
+                Reestructuración <span className="text-accent">Neural y Energética</span>
+              </h2>
+              <div className="space-y-4 text-muted-foreground mb-8">
+                <p className="text-lg leading-relaxed">
+                  D.A.R.T. no solo trabaja a nivel consciente. A través de visualización profunda y trabajo energético, accedemos a los patrones arquetípicos almacenados en tu inconsciente y los reestructuramos desde la raíz.
+                </p>
+                <p className="text-lg leading-relaxed">
+                  Este proceso crea nuevas rutas neurales y reorganiza tu campo energético, permitiendo que experimentes cambios duraderos y transformacionales.
+                </p>
+              </div>
+            </div>
+            <div className="relative">
+              <div className="absolute inset-0 bg-gradient-to-br from-accent/20 to-primary/20 rounded-2xl blur-2xl"></div>
+              <img 
+                src="/images/dart-neural-patterns.png" 
+                alt="Reestructuración Neural" 
+                className="relative w-full rounded-2xl shadow-2xl object-cover aspect-video"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* How D.A.R.T. Works */}
       <section className="py-20 md:py-32 bg-gradient-to-br from-accent/5 via-background to-primary/5">
         <div className="container mx-auto px-4">
@@ -183,6 +212,35 @@ export default function DART() {
                 </div>
               );
             })}
+          </div>
+        </div>
+      </section>
+
+      {/* Consciousness Expansion */}
+      <section className="py-20 md:py-32">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
+            <div className="relative order-2 lg:order-1">
+              <div className="absolute inset-0 bg-gradient-to-br from-accent/20 to-primary/20 rounded-2xl blur-2xl"></div>
+              <img 
+                src="/images/dart-consciousness-expansion.png" 
+                alt="Expansión de Consciencia" 
+                className="relative w-full rounded-2xl shadow-2xl object-cover aspect-video"
+              />
+            </div>
+            <div className="order-1 lg:order-2">
+              <h2 className="font-display text-4xl font-bold text-foreground mb-6">
+                Expansión de <span className="text-accent">Consciencia</span>
+              </h2>
+              <div className="space-y-4 text-muted-foreground mb-8">
+                <p className="text-lg leading-relaxed">
+                  Cuando reemplazas arquetipos limitantes por arquetipos balanceados, tu percepción se expande. Ves la vida desde una perspectiva más elevada, donde los patrones que antes te controlaban ahora están bajo tu consciencia.
+                </p>
+                <p className="text-lg leading-relaxed">
+                  Esta expansión no es temporal. Es una reestructuración profunda que te permite acceder a nuevas capacidades, relaciones más sanas y una vida alineada con tu verdadera naturaleza.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
