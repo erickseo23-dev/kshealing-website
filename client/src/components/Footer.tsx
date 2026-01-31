@@ -113,9 +113,9 @@ export default function Footer() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
             {/* Legal Links */}
             <div className="flex gap-6 text-sm justify-center md:justify-start">
-              <a href="#" className="text-muted-foreground hover:text-primary transition-colors">Política de Privacidad</a>
-              <a href="#" className="text-muted-foreground hover:text-primary transition-colors">Términos de Servicio</a>
-              <a href="#" className="text-muted-foreground hover:text-primary transition-colors">Cookies</a>
+              <Link href="/politica-privacidad"><a className="text-muted-foreground hover:text-primary transition-colors">Política de Privacidad</a></Link>
+              <Link href="/terminos-servicio"><a className="text-muted-foreground hover:text-primary transition-colors">Términos de Servicio</a></Link>
+              <Link href="/politica-cookies"><a className="text-muted-foreground hover:text-primary transition-colors">Cookies</a></Link>
             </div>
 
             {/* Copyright */}
