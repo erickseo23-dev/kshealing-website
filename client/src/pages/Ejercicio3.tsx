@@ -17,7 +17,6 @@ import ExerciseProgress from "@/components/ExerciseProgress";
 import ExerciseNavigation from "@/components/ExerciseNavigation";
 import ProgramasSection from "@/components/ProgramasSection";
 import EventosSection from "@/components/EventosSection";
-import YouTubeVideo from "@/components/YouTubeVideo";
 
 export default function Ejercicio3() {
   const [completed, setCompleted] = useState(false);
@@ -107,8 +106,18 @@ export default function Ejercicio3() {
               {/* Video Container mejorado */}
               <div className="relative group">
                 <div className="absolute -inset-1 bg-gradient-to-r from-slate-700 to-slate-600 rounded-lg blur opacity-25 group-hover:opacity-75 transition duration-1000" />
-                <div className="relative bg-black rounded-lg overflow-hidden border border-blue-400/30 p-1">
-                  <YouTubeVideo videoId="fomCinXMEfk" title="Ejercicio 3 - Para Recibir Sanación Energética" />
+                <div className="relative bg-gradient-to-br from-blue-800/10 to-slate-400/10 rounded-lg overflow-hidden border border-border aspect-video flex items-center justify-center">
+                  <div className="text-center">
+                    <div className="mb-4 inline-block p-4 bg-blue-600/20 rounded-full">
+                      <Wind className="w-8 h-8 text-blue-400 animate-spin" />
+                    </div>
+                    <p className="text-muted-foreground mb-4">
+                      El video será disponible aquí una vez que lo subas a YouTube
+                    </p>
+                    <p className="text-sm text-muted-foreground">
+                      Espacio reservado para: iframe de YouTube privado
+                    </p>
+                  </div>
                 </div>
               </div>
 
