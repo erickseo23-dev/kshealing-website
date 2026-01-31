@@ -37,6 +37,7 @@ import KSHealing from "./pages/KSHealing";
 import DART from "./pages/DART";
 import GeneticaSagrada from "./pages/GeneticaSagrada";
 import RetiroSagrado from "./pages/RetiroSagrado";
+import Cursos from "./pages/Cursos";
 
 function Router() {
   return (
@@ -44,6 +45,7 @@ function Router() {
       <Route path={"/"} component={Home} />
       <Route path={"/sobre-yohev"} component={SobreYohev} />
       <Route path={"/que-es-ks-healing"} component={QueEsKSHealing} />
+      <Route path={"/cursos"} component={Cursos} />
       <Route path={"/el-libro"} component={ElLibro} />
       <Route path={"/blog"} component={Blog} />
       <Route path={"/blog/article-1"} component={BlogArticle1} />

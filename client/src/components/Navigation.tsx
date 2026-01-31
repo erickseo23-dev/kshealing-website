@@ -10,15 +10,11 @@ export default function Navigation() {
     { label: "HOME", href: "/" },
     { label: "¿QUÉ ES KS HEALING?", href: "/que-es-ks-healing" },
     { label: "SOBRE YOHEV", href: "/sobre-yohev" },
+    { label: "CURSOS", href: "/cursos" },
     { label: "EL LIBRO", href: "/el-libro" },
     { label: "BLOG", href: "/blog" },
     { label: "TESTIMONIOS", href: "/testimonios" },
     { label: "EVENTOS", href: "/eventos" },
-    { label: "RECURSOS", href: "/recursos" },
-    { label: "DIRECTORIO", href: "/directorio" },
-    { label: "TIENDA", href: "/tienda" },
-    { label: "MEDITACIONES", href: "/meditaciones" },
-    { label: "PORTAL", href: "/portal-miembros" },
   ];
 
   return (
