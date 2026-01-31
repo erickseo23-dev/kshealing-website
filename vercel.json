@@ -12,11 +12,5 @@
       "main": true
     }
   },
-  "regions": ["sfo1"],
-  "functions": {
-    "dist/index.js": {
-      "memory": 1024,
-      "maxDuration": 60
-    }
-  }
+  "regions": ["sfo1"]
 }
