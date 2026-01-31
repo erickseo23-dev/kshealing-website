@@ -390,6 +390,85 @@ export default function ElLibro() {
         </div>
       </section>
 
+      {/* Nuestros Libros Section */}
+      <section className="py-20 md:py-32 bg-background border-t border-border">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="font-display text-4xl font-bold text-foreground mb-4">
+              Nuestros Libros
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              Explora la sabiduría y transformación a través de nuestras publicaciones
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {/* Libro 1 */}
+            <div className="bg-card rounded-lg overflow-hidden border border-border hover:shadow-lg transition-shadow">
+              <div className="bg-gradient-to-br from-blue-100 to-slate-100 h-40 flex items-center justify-center">
+                <span className="text-5xl">📕</span>
+              </div>
+              <div className="p-6">
+                <h3 className="font-display text-lg font-bold text-foreground mb-2">KS Healing</h3>
+                <p className="text-sm text-muted-foreground mb-4">
+                  La base fundamental de la sanación energética. Aprende a trabajar directamente con la Energía Keiouvos Stharef.
+                </p>
+                <div className="space-y-2">
+                  <a href="https://a.co/d/ini6U2Y" target="_blank" rel="noopener noreferrer" className="block">
+                    <Button variant="outline" className="w-full text-xs">Pasta Blanda - $24.99</Button>
+                  </a>
+                  <a href="https://a.co/d/45jDr6p" target="_blank" rel="noopener noreferrer" className="block">
+                    <Button variant="outline" className="w-full text-xs">Ebook Kindle - $9.99</Button>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* Libro 2 */}
+            <div className="bg-card rounded-lg overflow-hidden border border-border hover:shadow-lg transition-shadow">
+              <div className="bg-gradient-to-br from-blue-100 to-slate-100 h-40 flex items-center justify-center">
+                <span className="text-5xl">📘</span>
+              </div>
+              <div className="p-6">
+                <h3 className="font-display text-lg font-bold text-foreground mb-2">Secretos de los Arcángeles</h3>
+                <p className="text-sm text-muted-foreground mb-4">
+                  Obra de Claribel Puga que explora la sabiduría ancestral de los arcángeles y su influencia en la transformación.
+                </p>
+                <div className="space-y-2">
+                  <a href="https://a.co/d/en9RPql" target="_blank" rel="noopener noreferrer" className="block">
+                    <Button variant="outline" className="w-full text-xs">Pasta Blanda - $28.99</Button>
+                  </a>
+                  <a href="https://a.co/d/6Tg6XGj" target="_blank" rel="noopener noreferrer" className="block">
+                    <Button variant="outline" className="w-full text-xs">Ebook Kindle - $12.99</Button>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* Libro 3 */}
+            <div className="bg-card rounded-lg overflow-hidden border border-border hover:shadow-lg transition-shadow">
+              <div className="bg-gradient-to-br from-blue-100 to-slate-100 h-40 flex items-center justify-center">
+                <span className="text-5xl">📙</span>
+              </div>
+              <div className="p-6">
+                <h3 className="font-display text-lg font-bold text-foreground mb-2">Valentina en el Reino Astral</h3>
+                <p className="text-sm text-muted-foreground mb-4">
+                  Obra conjunta de Claribel Puga y Yohev que narra un viaje transformador a través de los reinos astrales.
+                </p>
+                <div className="space-y-2">
+                  <a href="https://a.co/d/fJyOYVP" target="_blank" rel="noopener noreferrer" className="block">
+                    <Button variant="outline" className="w-full text-xs">Pasta Blanda - $32.99</Button>
+                  </a>
+                  <a href="https://a.co/d/2RWWKcJ" target="_blank" rel="noopener noreferrer" className="block">
+                    <Button variant="outline" className="w-full text-xs">Ebook Kindle - $14.99</Button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <Footer />
     </div>
   );

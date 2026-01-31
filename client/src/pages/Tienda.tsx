@@ -2,111 +2,81 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { ShoppingCart, Star, Heart } from "lucide-react";
+import { ShoppingCart, Star, Heart, ExternalLink } from "lucide-react";
 import { useState } from "react";
 
 const productos = [
   {
     id: 1,
-    nombre: "Libro KS Healing - Edición Física",
-    precio: "$49.99",
-    precioOriginal: "$59.99",
-    descripcion: "Edición impresa del libro completo con portada premium y papel de calidad.",
+    nombre: "KS Healing - Edición Pasta Blanda",
+    precio: "$24.99",
+    descripcion: "Edición impresa del libro completo con portada de tapa blanda, papel de calidad premium y códigos QR funcionales.",
     categoria: "Libros",
     rating: 5,
     resenas: 87,
     imagen: "📕",
     stock: "En stock",
+    enlace: "https://a.co/d/ini6U2Y",
   },
   {
     id: 2,
-    nombre: "Libro KS Healing - Edición Digital",
-    precio: "$29.99",
-    descripcion: "Versión PDF del libro completo con códigos QR para acceso a videos.",
+    nombre: "KS Healing - Edición Ebook Kindle",
+    precio: "$9.99",
+    descripcion: "Versión digital del libro completo con enlaces directos a los videos. Acceso inmediato, portátil y en tu dispositivo.",
     categoria: "Libros",
     rating: 5,
     resenas: 156,
     imagen: "📱",
     stock: "Disponible",
+    enlace: "https://a.co/d/45jDr6p",
   },
   {
     id: 3,
-    nombre: "Bundle: Libro + Meditaciones",
-    precio: "$69.99",
-    precioOriginal: "$89.99",
-    descripcion: "Libro completo + 7 meditaciones guiadas de Energía KS.",
-    categoria: "Bundles",
+    nombre: "Secretos de los Arcángeles - Pasta Blanda",
+    precio: "$28.99",
+    descripcion: "Obra de Claribel Puga que explora la sabiduría ancestral de los arcángeles y su influencia en la transformación personal.",
+    categoria: "Libros",
     rating: 4.9,
-    resenas: 42,
-    imagen: "📦",
+    resenas: 64,
+    imagen: "📘",
     stock: "En stock",
+    enlace: "https://a.co/d/en9RPql",
   },
   {
     id: 4,
-    nombre: "Cristal Energizado KS Healing",
-    precio: "$39.99",
-    descripcion: "Cristal de cuarzo blanco energizado con Energía KS para amplificar tu práctica.",
-    categoria: "Accesorios",
-    rating: 4.8,
-    resenas: 34,
-    imagen: "💎",
-    stock: "En stock",
+    nombre: "Secretos de los Arcángeles - Ebook Kindle",
+    precio: "$12.99",
+    descripcion: "Versión digital con acceso inmediato a la sabiduría de los arcángeles en tu dispositivo.",
+    categoria: "Libros",
+    rating: 4.9,
+    resenas: 42,
+    imagen: "📱",
+    stock: "Disponible",
+    enlace: "https://a.co/d/6Tg6XGj",
   },
   {
     id: 5,
-    nombre: "Meditación Ascendente - Pack Completo",
-    precio: "$79.99",
-    precioOriginal: "$99.99",
-    descripcion: "12 meditaciones progresivas con guía completa para practicantes avanzados.",
-    categoria: "Audio",
-    rating: 4.9,
-    resenas: 68,
-    imagen: "🎵",
-    stock: "Disponible",
+    nombre: "Valentina en el Reino Astral - Pasta Blanda",
+    precio: "$32.99",
+    descripcion: "Obra conjunta de Claribel Puga y Yohev que narra un viaje transformador a través de los reinos astrales.",
+    categoria: "Libros",
+    rating: 5,
+    resenas: 78,
+    imagen: "📙",
+    stock: "En stock",
+    enlace: "https://a.co/d/fJyOYVP",
   },
   {
     id: 6,
-    nombre: "Tapete de Meditación KS Healing",
-    precio: "$59.99",
-    descripcion: "Tapete premium con símbolo de Energía KS para crear espacio sagrado.",
-    categoria: "Accesorios",
-    rating: 4.7,
-    resenas: 28,
-    imagen: "🧘",
-    stock: "En stock",
-  },
-  {
-    id: 7,
-    nombre: "Vela Energizada KS Healing",
-    precio: "$24.99",
-    descripcion: "Vela aromática energizada con intención de coherencia y transformación.",
-    categoria: "Accesorios",
-    rating: 4.8,
-    resenas: 45,
-    imagen: "🕯️",
-    stock: "En stock",
-  },
-  {
-    id: 8,
-    nombre: "Diario de Práctica KS Healing",
-    precio: "$19.99",
-    descripcion: "Diario estructurado para registrar tu práctica y transformación.",
+    nombre: "Valentina en el Reino Astral - Ebook Kindle",
+    precio: "$14.99",
+    descripcion: "Versión digital del viaje astral de Valentina con acceso inmediato en tu dispositivo.",
     categoria: "Libros",
-    rating: 4.6,
-    resenas: 22,
-    imagen: "📔",
-    stock: "En stock",
-  },
-  {
-    id: 9,
-    nombre: "Certificado de Practicante",
-    precio: "$1,999",
-    descripcion: "Programa completo de certificación con 8 módulos, mentoría y transmisiones.",
-    categoria: "Certificaciones",
-    rating: 4.9,
-    resenas: 156,
-    imagen: "🎓",
-    stock: "Abierto",
+    rating: 5,
+    resenas: 55,
+    imagen: "📱",
+    stock: "Disponible",
+    enlace: "https://a.co/d/2RWWKcJ",
   },
 ];
 
@@ -114,7 +84,7 @@ export default function Tienda() {
   const [filtroCategoria, setFiltroCategoria] = useState("");
   const [carrito, setCarrito] = useState<typeof productos>([]);
 
-  const categorias = ["Libros", "Audio", "Accesorios", "Bundles", "Certificaciones"];
+  const categorias = ["Libros"];
   
   const productosFiltrados = filtroCategoria
     ? productos.filter((p) => p.categoria === filtroCategoria)
@@ -129,21 +99,21 @@ export default function Tienda() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="py-16 md:py-24 bg-gradient-to-br from-primary via-primary/95 to-primary/90 text-white">
+      <section className="py-16 md:py-24 bg-gradient-to-br from-blue-800 via-blue-900 to-slate-700 text-white">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="font-display text-5xl md:text-6xl font-bold mb-6">
-              Tienda KS Healing
+              Nuestros Libros
             </h1>
             <p className="text-xl text-white/90">
-              Recursos, libros, meditaciones y accesorios para tu práctica
+              Explora la sabiduría y transformación a través de nuestras publicaciones
             </p>
           </div>
         </div>
       </section>
 
       {/* Filters and Cart */}
-      <section className="py-8 bg-primary/5 border-b border-border">
+      <section className="py-8 bg-blue-50 border-b border-border">
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between mb-6">
             <div>
@@ -153,8 +123,8 @@ export default function Tienda() {
                   onClick={() => setFiltroCategoria("")}
                   className={`px-4 py-2 rounded-lg font-semibold transition-colors ${
                     filtroCategoria === ""
-                      ? "bg-primary text-white"
-                      : "bg-background border border-border text-foreground hover:bg-primary/10"
+                      ? "bg-blue-800 text-white"
+                      : "bg-background border border-border text-foreground hover:bg-blue-100"
                   }`}
                 >
                   Todos
@@ -165,20 +135,14 @@ export default function Tienda() {
                     onClick={() => setFiltroCategoria(cat)}
                     className={`px-4 py-2 rounded-lg font-semibold transition-colors ${
                       filtroCategoria === cat
-                        ? "bg-primary text-white"
-                        : "bg-background border border-border text-foreground hover:bg-primary/10"
+                        ? "bg-blue-800 text-white"
+                        : "bg-background border border-border text-foreground hover:bg-blue-100"
                     }`}
                   >
                     {cat}
                   </button>
                 ))}
               </div>
-            </div>
-            <div className="text-right">
-              <button className="relative inline-flex items-center gap-2 px-4 py-2 rounded-lg border border-border hover:bg-primary/10 transition-colors">
-                <ShoppingCart size={20} />
-                <span className="font-semibold">{carrito.length}</span>
-              </button>
             </div>
           </div>
         </div>
@@ -190,16 +154,16 @@ export default function Tienda() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {productosFiltrados.map((producto) => (
               <Card key={producto.id} className="overflow-hidden hover:shadow-lg transition-shadow flex flex-col">
-                <div className="bg-gradient-to-br from-primary/10 to-accent/10 h-48 flex items-center justify-center relative group">
+                <div className="bg-gradient-to-br from-blue-100 to-slate-100 h-48 flex items-center justify-center relative group">
                   <span className="text-6xl">{producto.imagen}</span>
                   <button className="absolute top-3 right-3 p-2 rounded-lg bg-white/80 hover:bg-white transition-colors opacity-0 group-hover:opacity-100">
-                    <Heart size={20} className="text-primary" />
+                    <Heart size={20} className="text-blue-800" />
                   </button>
                 </div>
 
                 <div className="p-6 flex flex-col flex-grow">
                   <div className="mb-2">
-                    <span className="text-xs font-semibold text-primary bg-primary/10 px-2 py-1 rounded">
+                    <span className="text-xs font-semibold text-blue-800 bg-blue-100 px-2 py-1 rounded">
                       {producto.categoria}
                     </span>
                   </div>
@@ -219,7 +183,7 @@ export default function Tienda() {
                         <Star
                           key={i}
                           size={14}
-                          className={i < Math.floor(producto.rating) ? "fill-secondary text-secondary" : "text-muted-foreground"}
+                          className={i < Math.floor(producto.rating) ? "fill-blue-500 text-blue-500" : "text-muted-foreground"}
                         />
                       ))}
                     </div>
@@ -231,27 +195,28 @@ export default function Tienda() {
                   {/* Price */}
                   <div className="mb-4">
                     <div className="flex items-center gap-2">
-                      <span className="text-2xl font-bold text-primary">
+                      <span className="text-2xl font-bold text-blue-800">
                         {producto.precio}
                       </span>
-                      {producto.precioOriginal && (
-                        <span className="text-sm text-muted-foreground line-through">
-                          {producto.precioOriginal}
-                        </span>
-                      )}
                     </div>
                     <p className="text-xs text-green-600 font-semibold mt-1">
                       {producto.stock}
                     </p>
                   </div>
 
-                  <Button
-                    onClick={() => agregarAlCarrito(producto)}
-                    className="w-full bg-primary hover:bg-primary/90 text-white gap-2"
+                  <a
+                    href={producto.enlace}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full"
                   >
-                    <ShoppingCart size={16} />
-                    Agregar al Carrito
-                  </Button>
+                    <Button
+                      className="w-full bg-blue-800 hover:bg-blue-900 text-white gap-2"
+                    >
+                      <ExternalLink size={16} />
+                      Ver en Amazon
+                    </Button>
+                  </a>
                 </div>
               </Card>
             ))}
@@ -260,17 +225,14 @@ export default function Tienda() {
       </section>
 
       {/* CTA */}
-      <section className="py-16 md:py-24 bg-primary/5">
+      <section className="py-16 md:py-24 bg-blue-50">
         <div className="container mx-auto px-4 text-center">
           <h2 className="font-display text-3xl font-bold text-foreground mb-6">
-            ¿No encuentras lo que buscas?
+            ¿Buscas más?
           </h2>
           <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Contáctanos para solicitudes personalizadas, regalos corporativos o productos especiales.
+            Descubre nuestros programas de formación, cursos y meditaciones guiadas en la sección de Cursos.
           </p>
-          <Button className="bg-primary hover:bg-primary/90 text-white px-8 py-3">
-            Contactar Ventas
-          </Button>
         </div>
       </section>
 
