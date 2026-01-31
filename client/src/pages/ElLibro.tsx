@@ -319,7 +319,7 @@ export default function ElLibro() {
                 <div className="text-3xl font-display font-bold text-primary mb-6">
                   $24.99 USD
                 </div>
-                <a href="https://www.amazon.com/-/es/dp/B0GKVGH3W4/ref=tmm_pap_swatch_0?_encoding=UTF8&dib_tag=se&dib=eyJ2IjoiMSJ9.xDfZj1g-33CCTglYUUVKunCiy892vz7K7QyH-fMKBp7b6KBMps5m0jlt_WQmVigEmIq5MX5WoPbjSyo5fTTWD9IS6RO4OLphkAmdUvqEiVA._LEbK88gSa6UE21R7yBkiBtOZZXVhaSRhUVF7wgOxqs&qid=1769892064&sr=8-2" target="_blank" rel="noopener noreferrer" className="w-full">
+                <a href="https://a.co/d/ini6U2Y" target="_blank" rel="noopener noreferrer" className="w-full">
                   <Button className="w-full bg-primary hover:bg-primary/90 text-white">
                     Comprar en Amazon
                   </Button>
@@ -351,9 +351,11 @@ export default function ElLibro() {
                 <div className="text-3xl font-display font-bold text-primary mb-6">
                   $9.99 USD
                 </div>
-                <Button className="w-full bg-primary hover:bg-primary/90 text-white">
-                  Comprar en Amazon
-                </Button>
+                <a href="https://a.co/d/45jDr6p" target="_blank" rel="noopener noreferrer" className="w-full">
+                  <Button className="w-full bg-primary hover:bg-primary/90 text-white">
+                    Comprar en Amazon
+                  </Button>
+                </a>
               </Card>
             </div>
 
