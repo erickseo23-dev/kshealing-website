@@ -17,6 +17,7 @@ import ExerciseProgress from "@/components/ExerciseProgress";
 import ExerciseNavigation from "@/components/ExerciseNavigation";
 import ProgramasSection from "@/components/ProgramasSection";
 import EventosSection from "@/components/EventosSection";
+import YouTubeVideo from "@/components/YouTubeVideo";
 
 export default function Ejercicio4() {
   const [completed, setCompleted] = useState(false);
@@ -107,18 +108,8 @@ export default function Ejercicio4() {
               {/* Video Container mejorado */}
               <div className="relative group">
                 <div className="absolute -inset-1 bg-gradient-to-r from-blue-900 to-slate-600 rounded-lg blur opacity-25 group-hover:opacity-75 transition duration-1000" />
-                <div className="relative bg-gradient-to-br from-blue-800/10 to-slate-600/10 rounded-lg overflow-hidden border border-border aspect-video flex items-center justify-center">
-                  <div className="text-center">
-                    <div className="mb-4 inline-block p-4 bg-indigo-600/20 rounded-full">
-                      <Wind className="w-8 h-8 text-blue-300 animate-spin" />
-                    </div>
-                    <p className="text-muted-foreground mb-4">
-                      El video será disponible aquí una vez que lo subas a YouTube
-                    </p>
-                    <p className="text-sm text-muted-foreground">
-                      Espacio reservado para: iframe de YouTube privado
-                    </p>
-                  </div>
+                <div className="relative bg-gradient-to-br from-blue-800/10 to-slate-600/10 rounded-lg overflow-hidden border border-border">
+                  <YouTubeVideo videoId="jXZHRRpqApk" />
                 </div>
               </div>
 
