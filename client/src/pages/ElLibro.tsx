@@ -300,12 +300,12 @@ export default function ElLibro() {
                   <h3 className="font-display font-bold text-foreground text-xl">Versión Impresa</h3>
                 </div>
                 <p className="text-muted-foreground mb-6">
-                  Portada de tapa dura, papel de calidad premium, códigos QR funcionales. Perfecto para leer y practicar.
+                  Portada de tapa blanda, papel de calidad premium, códigos QR funcionales. Perfecto para leer y practicar.
                 </p>
                 <div className="space-y-3 mb-6 pb-6 border-b border-border">
                   <div className="flex gap-2 text-sm">
                     <Zap size={16} className="text-primary flex-shrink-0" />
-                    <span className="text-foreground">Tapa dura de calidad premium</span>
+                    <span className="text-foreground">Tapa blanda</span>
                   </div>
                   <div className="flex gap-2 text-sm">
                     <Zap size={16} className="text-primary flex-shrink-0" />
@@ -330,12 +330,12 @@ export default function ElLibro() {
                   <h3 className="font-display font-bold text-foreground text-xl">Versión Digital</h3>
                 </div>
                 <p className="text-muted-foreground mb-6">
-                  PDF interactivo con enlaces directos a los videos. Acceso inmediato, portátil y fácil de compartir.
+                  Ebook Kindle interactivo con enlaces directos a los videos. Acceso inmediato, portátil y en tu dispositivo.
                 </p>
                 <div className="space-y-3 mb-6 pb-6 border-b border-border">
                   <div className="flex gap-2 text-sm">
                     <Zap size={16} className="text-primary flex-shrink-0" />
-                    <span className="text-foreground">PDF interactivo con enlaces</span>
+                    <span className="text-foreground">Ebook interactivo con enlaces</span>
                   </div>
                   <div className="flex gap-2 text-sm">
                     <Zap size={16} className="text-primary flex-shrink-0" />
@@ -350,7 +350,7 @@ export default function ElLibro() {
                   $9.99 USD
                 </div>
                 <Button className="w-full bg-primary hover:bg-primary/90 text-white">
-                  Descargar Ahora
+                  Comprar en Amazon
                 </Button>
               </Card>
             </div>
