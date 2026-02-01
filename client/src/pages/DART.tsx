@@ -113,7 +113,7 @@ export default function DART() {
               </h2>
               <div className="space-y-4 text-muted-foreground mb-8">
                 <p className="text-lg leading-relaxed">
-                  Dentro de D.A.R.T., Yohev integró la técnica Equiliminal, creada para sostener un estado de equilibrio entre el Cuerpo del Dolor y el Cuerpo del Placer.
+                  Dentro de D.A.R.T., YOHEV integró la técnica Equiliminal, creada para sostener un estado de equilibrio entre el Cuerpo del Dolor y el Cuerpo del Placer.
                 </p>
                 <p className="text-lg leading-relaxed">
                   Esta técnica evita desbordes emocionales durante los procesos de renovación profunda, permitiendo que avances con claridad, seguridad interna y una sensación real de "piso" al reescribir tu programación.

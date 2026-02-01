@@ -6,7 +6,7 @@ import { ArrowRight, Heart, Lightbulb, Users, Facebook, Instagram, Youtube, Musi
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 
-export default function SobreYohev() {
+export default function SobreYOHEV() {
   const [youtubeVideos, setYoutubeVideos] = useState<any[]>([]);
   const [loading, setLoading] = useState(true);
 
@@ -77,10 +77,10 @@ export default function SobreYohev() {
               </h2>
               <div className="space-y-4 text-muted-foreground mb-8">
                 <p className="text-lg leading-relaxed">
-                  Yohev es el pionero y creador de KS Healing, una tecnología de sanación energética de nueva generación que ha transformado la vida de miles de personas en múltiples países.
+                  YOHEV es el pionero y creador de KS Healing, una tecnología de sanación energética de nueva generación que ha transformado la vida de miles de personas en múltiples países.
                 </p>
                 <p className="text-lg leading-relaxed">
-                  A través de una década de estudio, práctica y canalización, Yohev fue el primer ser humano en el planeta en descargar y utilizar la energía KS, una energía viva, consciente y programable que trabaja directamente sobre el campo vibracional del ser humano.
+                  A través de una década de estudio, práctica y canalización, YOHEV fue el primer ser humano en el planeta en descargar y utilizar la energía KS, una energía viva, consciente y programable que trabaja directamente sobre el campo vibracional del ser humano.
                 </p>
                 <p className="text-lg leading-relaxed">
                   Desde muy temprano en su camino espiritual, sintió el llamado a explorar la naturaleza de la energía, la conciencia y la sanación más allá de los métodos tradicionales.
@@ -150,7 +150,7 @@ export default function SobreYohev() {
                   D.A.R.T. — Deep Archetypal Renewal Therapy
                 </p>
                 <p className="text-lg leading-relaxed">
-                  Como extensión natural de KS Healing, Yohev desarrolló D.A.R.T., una terapia diseñada para trabajar donde se originan muchos de los patrones que determinan la vida de una persona: los arquetipos internos programados en el inconsciente.
+                  Como extensión natural de KS Healing, YOHEV desarrolló D.A.R.T., una terapia diseñada para trabajar donde se originan muchos de los patrones que determinan la vida de una persona: los arquetipos internos programados en el inconsciente.
                 </p>
                 <p className="text-lg leading-relaxed">
                   D.A.R.T. combina trabajo energético, visualización profunda e intervención consciente para reemplazar arquetipos negativos por arquetipos positivos y balanceados, haciendo que la transformación sea estructural y energética.
@@ -212,7 +212,7 @@ export default function SobreYohev() {
                 Equiliminalidad: Estabilidad Emocional para Cambios Profundos
               </h3>
               <p className="text-lg text-muted-foreground leading-relaxed mb-4">
-                Dentro de esta terapia, Yohev integró la técnica Equiliminal, creada para sostener un estado de equilibrio entre el Cuerpo del Dolor y el Cuerpo del Placer, evitando desbordes emocionales durante los procesos de renovación profunda.
+                Dentro de esta terapia, YOHEV integró la técnica Equiliminal, creada para sostener un estado de equilibrio entre el Cuerpo del Dolor y el Cuerpo del Placer, evitando desbordes emocionales durante los procesos de renovación profunda.
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed">
                 Esta base permite que la persona avance con claridad, seguridad interna y una sensación real de "piso" al reescribir su programación.
@@ -239,7 +239,7 @@ export default function SobreYohev() {
                     Descubrimiento de la Energía KS
                   </h3>
                   <p className="text-muted-foreground">
-                    Yohev descubrió y estructuró la Energía Keiouvos Stharef, una frecuencia de origen divino específica para esta era de evolución humana.
+                    YOHEV descubrió y estructuró la Energía Keiouvos Stharef, una frecuencia de origen divino específica para esta era de evolución humana.
                   </p>
                 </div>
               </div>
@@ -256,7 +256,7 @@ export default function SobreYohev() {
                     Desarrollo de KS Healing
                   </h3>
                   <p className="text-muted-foreground">
-                    Durante más de diez años, Yohev ha dedicado su vida a desarrollar y perfeccionar el método KS Healing, acompañando a personas en procesos profundos de liberación y transformación.
+                    Durante más de diez años, YOHEV ha dedicado su vida a desarrollar y perfeccionar el método KS Healing, acompañando a personas en procesos profundos de liberación y transformación.
                   </p>
                 </div>
               </div>
@@ -273,7 +273,7 @@ export default function SobreYohev() {
                     Formación de Facilitadores
                   </h3>
                   <p className="text-muted-foreground">
-                    Yohev es maestro y mentor que ha formado a practicantes en KS Healing y metodologías de transformación interna, guiando procesos que ayudan a las personas a recuperar su centro.
+                    YOHEV es maestro y mentor que ha formado a practicantes en KS Healing y metodologías de transformación interna, guiando procesos que ayudan a las personas a recuperar su centro.
                   </p>
                 </div>
               </div>
@@ -289,7 +289,7 @@ export default function SobreYohev() {
                     Expansión Global
                   </h3>
                   <p className="text-muted-foreground">
-                    La misión de Yohev es clara: ayudar a seres humanos a recordar quiénes son, liberarse de la programación que limita su potencial y volver a habitar su vida con poder interno, propósito y expansión.
+                    La misión de YOHEV es clara: ayudar a seres humanos a recordar quiénes son, liberarse de la programación que limita su potencial y volver a habitar su vida con poder interno, propósito y expansión.
                   </p>
                 </div>
               </div>

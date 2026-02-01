@@ -24,7 +24,7 @@ export default function RetiroSagrado() {
               La Arquitectura <span className="text-primary">del Amor</span>
             </h1>
             <p className="text-lg text-primary font-semibold mb-4">
-              Facilitado directamente por Yohev
+              Facilitado directamente por YOHEV
             </p>
             <p className="text-xl text-muted-foreground mb-6">
               Del amor herido al Amor como principio divino

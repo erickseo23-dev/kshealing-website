@@ -58,7 +58,7 @@ const productos = [
     id: 5,
     nombre: "Valentina en el Reino Astral - Pasta Blanda",
     precio: "$32.99",
-    descripcion: "Obra conjunta de Claribel Puga y Yohev que narra un viaje transformador a través de los reinos astrales.",
+    descripcion: "Obra conjunta de Claribel Puga y YOHEV que narra un viaje transformador a través de los reinos astrales.",
     categoria: "Libros",
     rating: 5,
     resenas: 78,

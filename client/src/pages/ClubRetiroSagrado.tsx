@@ -26,16 +26,16 @@ export default function ClubRetiroSagrado() {
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl">
             <div className="inline-block mb-6 px-4 py-2 rounded-full bg-white/20 border border-white/30 backdrop-blur">
-              <span className="text-black font-semibold">💕 Transformación Continua con Yohev</span>
+              <span className="text-black font-semibold">💕 Transformación Continua con YOHEV</span>
             </div>
             <h1 className="font-display text-5xl md:text-6xl font-bold text-black mb-6">
               Club del Retiro Sagrado
             </h1>
             <p className="text-xl md:text-2xl text-black/90 mb-8">
-              12 meses de transformación. 12 retiros en vivo. Siempre con Yohev.
+              12 meses de transformación. 12 retiros en vivo. Siempre con YOHEV.
             </p>
             <p className="text-lg text-black/80 mb-12 max-w-2xl">
-              Un viaje profundo de sanación, consciencia y transformación personal. Cada mes, un nuevo retiro facilitado directamente por Yohev. Cada retiro, una nueva oportunidad de evolucionar.
+              Un viaje profundo de sanación, consciencia y transformación personal. Cada mes, un nuevo retiro facilitado directamente por YOHEV. Cada retiro, una nueva oportunidad de evolucionar.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a href={kajabi_anual} target="_blank" rel="noopener noreferrer">
@@ -170,6 +170,44 @@ export default function ClubRetiroSagrado() {
         </div>
       </section>
 
+      {/* Retiros 2025 - Incluidos en Tu Membresía */}
+      <section className="py-20 md:py-32 bg-background">
+        <div className="container mx-auto px-4">
+          <div className="max-w-5xl mx-auto">
+            <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-6 text-center">
+              Retiros 2025 - Incluidos en Tu Membresía
+            </h2>
+            <p className="text-center text-muted-foreground mb-16 text-lg">
+              Acceso a todas las grabaciones de retiros anteriores mientras mantengas tu membresía activa
+            </p>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {[
+                { nombre: "VOLVER AL SILENCIO", image: "/images/retiro-volver-silencio.png" },
+                { nombre: "LIMPIA TU ENERGÍA", image: "/images/retiro-limpia-energia.png" },
+                { nombre: "CÓDIGOS DE LUZ", image: "/images/retiro-codigos-luz.png" },
+                { nombre: "RECUPERA TU CENTRO", image: "/images/retiro-recupera-centro.png" },
+                { nombre: "SANA Y CIERRA CICLOS", image: "/images/retiro-sana-ciclos.png" },
+                { nombre: "CLAVES INTERNAS PARA EL BIENESTAR VERDADERO", image: "/images/retiro-claves-bienestar.png" },
+              ].map((retiro, idx) => (
+                <div key={idx} className="group relative overflow-hidden rounded-lg h-40 cursor-pointer">
+                  <img
+                    src={retiro.image}
+                    alt={retiro.nombre}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent flex items-end p-4">
+                    <h3 className="text-white font-display font-bold text-sm md:text-base leading-tight">
+                      {retiro.nombre}
+                    </h3>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Testimonios Section */}
       <section className="py-20 md:py-32 bg-background">
         <div className="container mx-auto px-4">
@@ -184,17 +222,17 @@ export default function ClubRetiroSagrado() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {[
                 {
-                  quote: "Soy miembro desde hace 8 meses. La facilidad de Yohev es increíble. Cada retiro me da herramientas nuevas. Las grabaciones me permiten profundizar cuando lo necesito.",
+                  quote: "Soy miembro desde hace 8 meses. La facilidad de YOHEV es increíble. Cada retiro me da herramientas nuevas. Las grabaciones me permiten profundizar cuando lo necesito.",
                   author: "María C.",
                   role: "Miembro - 8 meses"
                 },
                 {
-                  quote: "Lo mejor es que Yohev está siempre presente. No es un facilitador genérico. Su energía y conocimiento transforman cada retiro. He revisado grabaciones varias veces.",
+                  quote: "Lo mejor es que YOHEV está siempre presente. No es un facilitador genérico. Su energía y conocimiento transforman cada retiro. He revisado grabaciones varias veces.",
                   author: "Roberto M.",
                   role: "Miembro - 1 año"
                 },
                 {
-                  quote: "Perdí algunos retiros por trabajo, pero poder verlos grabados con Yohev facilitando me permitió no quedarme atrás. El Club es flexible y profundo.",
+                  quote: "Perdí algunos retiros por trabajo, pero poder verlos grabados con YOHEV facilitando me permitió no quedarme atrás. El Club es flexible y profundo.",
                   author: "Alejandra T.",
                   role: "Miembro - 6 meses"
                 }
@@ -245,7 +283,7 @@ export default function ClubRetiroSagrado() {
 
                 <ul className="space-y-4 mb-8">
                   {[
-                    "Acceso a retiros en vivo con Yohev",
+                    "Acceso a retiros en vivo con YOHEV",
                     "Todas las grabaciones disponibles",
                     "Comunidad de miembros",
                     "Acceso permanente a grabaciones",
@@ -284,7 +322,7 @@ export default function ClubRetiroSagrado() {
 
                 <ul className="space-y-4 mb-8">
                   {[
-                    "Acceso a retiros en vivo con Yohev",
+                    "Acceso a retiros en vivo con YOHEV",
                     "Todas las grabaciones disponibles",
                     "Comunidad de miembros",
                     "Acceso permanente a grabaciones",
@@ -310,7 +348,7 @@ export default function ClubRetiroSagrado() {
                 Garantía de satisfacción: Reembolso completo en los primeros 7 días si no estás satisfecho.
               </p>
               <p className="text-muted-foreground text-sm">
-                Todos los retiros son facilitados directamente por Yohev. Acceso ilimitado a grabaciones.
+                Todos los retiros son facilitados directamente por YOHEV. Acceso ilimitado a grabaciones.
               </p>
             </div>
           </div>
@@ -329,7 +367,7 @@ export default function ClubRetiroSagrado() {
               {[
                 {
                   q: "¿Quién facilita los retiros?",
-                  a: "Todos los retiros del Club son facilitados directamente por Yohev. No son con otros facilitadores. Yohev aporta su experiencia, profundidad espiritual y presencia única a cada retiro."
+                  a: "Todos los retiros del Club son facilitados directamente por YOHEV. No son con otros facilitadores. YOHEV aporta su experiencia, profundidad espiritual y presencia única a cada retiro."
                 },
                 {
                   q: "¿Cuándo comienza mi membresía?",
@@ -365,50 +403,12 @@ export default function ClubRetiroSagrado() {
         </div>
       </section>
 
-      {/* Retiros 2025 - Incluidos en Tu Membresía */}
-      <section className="py-20 md:py-32 bg-background">
-        <div className="container mx-auto px-4">
-          <div className="max-w-5xl mx-auto">
-            <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-6 text-center">
-              Retiros 2025 - Incluidos en Tu Membresía
-            </h2>
-            <p className="text-center text-muted-foreground mb-16 text-lg">
-              Acceso a todas las grabaciones de retiros anteriores mientras mantengas tu membresía activa
-            </p>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {[
-                { nombre: "VOLVER AL SILENCIO", image: "/images/retiro-volver-silencio.png" },
-                { nombre: "LIMPIA TU ENERGÍA", image: "/images/retiro-limpia-energia.png" },
-                { nombre: "CÓDIGOS DE LUZ", image: "/images/retiro-codigos-luz.png" },
-                { nombre: "RECUPERA TU CENTRO", image: "/images/retiro-recupera-centro.png" },
-                { nombre: "SANA Y CIERRA CICLOS", image: "/images/retiro-sana-ciclos.png" },
-                { nombre: "CLAVES INTERNAS PARA EL BIENESTAR VERDADERO", image: "/images/retiro-claves-bienestar.png" },
-              ].map((retiro, idx) => (
-                <div key={idx} className="group relative overflow-hidden rounded-lg h-40 cursor-pointer">
-                  <img
-                    src={retiro.image}
-                    alt={retiro.nombre}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent flex items-end p-4">
-                    <h3 className="text-white font-display font-bold text-sm md:text-base leading-tight">
-                      {retiro.nombre}
-                    </h3>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Final CTA */}
       <section className="py-16 md:py-24 bg-primary/5">
         <div className="container mx-auto px-4">
           <div className="max-w-2xl mx-auto text-center">
             <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-6">
-              ¿Listo para Tu Transformación con Yohev?
+              ¿Listo para Tu Transformación con YOHEV?
             </h2>
             <p className="text-lg text-muted-foreground mb-8">
               Únete a cientos de personas que ya están transformando sus vidas a través del Club del Retiro Sagrado.

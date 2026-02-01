@@ -35,10 +35,10 @@ export default function ProximosRetiros() {
               <span className="text-primary font-semibold">📅 Próximos Retiros</span>
             </div>
             <h1 className="font-display text-5xl md:text-6xl font-bold text-foreground mb-6">
-              Retiros Sagrados <span className="text-primary">2026 con Yohev</span>
+              Retiros Sagrados <span className="text-primary">2026 con YOHEV</span>
             </h1>
             <p className="text-xl text-muted-foreground mb-8">
-              Explora nuestro calendario de retiros transformacionales. Todos facilitados directamente por Yohev. Cada retiro es una oportunidad para profundizar en tu consciencia y transformación personal.
+              Explora nuestro calendario de retiros transformacionales. Todos facilitados directamente por YOHEV. Cada retiro es una oportunidad para profundizar en tu consciencia y transformación personal.
             </p>
           </div>
         </div>

@@ -453,7 +453,7 @@ export default function ElLibro() {
               <div className="p-6">
                 <h3 className="font-display text-lg font-bold text-foreground mb-2">Valentina en el Reino Astral</h3>
                 <p className="text-sm text-muted-foreground mb-4">
-                  Obra conjunta de Claribel Puga y Yohev que narra un viaje transformador a través de los reinos astrales.
+                  Obra conjunta de Claribel Puga y YOHEV que narra un viaje transformador a través de los reinos astrales.
                 </p>
                 <div className="space-y-2">
                   <a href="https://a.co/d/fJyOYVP" target="_blank" rel="noopener noreferrer" className="block">
