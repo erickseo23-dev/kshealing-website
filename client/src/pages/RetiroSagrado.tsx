@@ -1,7 +1,7 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
-import { Check, Heart, Zap, Users, Star, Leaf, Sparkles } from "lucide-react";
+import { Check, Heart, Zap, Users, Star, Leaf, Sparkles, Share2 } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { retiroSagradoTestimonials } from "@/lib/programTestimonials";
@@ -72,9 +72,9 @@ export default function RetiroSagrado() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 rounded-2xl blur-2xl"></div>
-              <img 
-                src="/images/retiro-sagrado-presence.png" 
-                alt="El Amor como Principio Divino" 
+                     <img 
+                src="/images/retiro-8-consciencia-amor.png" 
+                alt="Consciencia del Amor" 
                 className="relative w-full rounded-2xl shadow-2xl object-cover aspect-video"
               />
             </div>
@@ -96,9 +96,29 @@ export default function RetiroSagrado() {
             </div>
           </div>
         </div>
+      </section>      {/* Share Section */}
+      <section className="py-12 md:py-16 bg-background border-t border-border">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <p className="text-muted-foreground font-semibold">¿Te resuena este retiro?</p>
+            <Button 
+              size="lg" 
+              variant="outline"
+              onClick={() => {
+                const url = window.location.href;
+                const text = "Retiro Sagrado 8: La Arquitectura del Amor - Del amor herido al Amor como principio divino";
+                window.open(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}&quote=${encodeURIComponent(text)}`, '_blank', 'width=600,height=400');
+              }}
+              className="gap-2"
+            >
+              <Share2 size={18} />
+              Compartir en Facebook
+            </Button>
+          </div>
+        </div>
       </section>
 
-      {/* What Distorts Love */}
+      {/* Testimonials Section */}
       <section className="py-20 md:py-32 bg-primary/5">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
