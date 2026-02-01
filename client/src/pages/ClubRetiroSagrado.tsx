@@ -71,10 +71,10 @@ export default function ClubRetiroSagrado() {
                   <Calendar size={32} className="text-primary flex-shrink-0 mt-1" />
                   <div>
                     <h3 className="font-display text-2xl font-bold text-foreground mb-2">
-                      Retiros Mensuales con Yohev
+                      Retiros Mensuales con YOHEV
                     </h3>
                     <p className="text-muted-foreground">
-                      Cada primer domingo del mes (8-12 hrs CDMX). Conexión en directo con la comunidad. Facilitados directamente por Yohev. Acceso a todos los retiros del año.
+                      Cada primer domingo del mes (8-12 hrs CDMX). Conexión en directo con la comunidad. Facilitados directamente por YOHEV. Disponibles mientras mantengas tu membresía activa.
                     </p>
                   </div>
                 </div>
@@ -116,7 +116,7 @@ export default function ClubRetiroSagrado() {
                       Contenido Exclusivo
                     </h3>
                     <p className="text-muted-foreground">
-                      Acceso permanente a grabaciones de todos los retiros. Contenido exclusivo solo para miembros del Club. Tu biblioteca de transformación es tuya para siempre.
+                      Acceso a grabaciones de todos los retiros. Contenido exclusivo solo para miembros del Club. Disponible mientras mantengas tu membresía activa.
                     </p>
                   </div>
                 </div>
@@ -130,27 +130,27 @@ export default function ClubRetiroSagrado() {
       <section className="py-20 md:py-32 bg-primary/5">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
-            <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-6 text-center">
-              Los 12 Retiros de 2026 con Yohev
-            </h2>
+              <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-6 text-center">
+                Los 12 Retiros de 2026 con YOHEV
+              </h2>
             <p className="text-center text-muted-foreground mb-16 text-lg">
               Un viaje progresivo de transformación, mes a mes
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {[
+                { mes: "Enero", nombre: "PRESENCIA VIVA", image: "/images/retiro-presencia-viva.png" },
                 { mes: "Febrero", nombre: "LA ARQUITECTURA DEL AMOR", image: "/images/retiro-8-amor-divino.png" },
-                { mes: "Marzo", nombre: "VOLVER AL SILENCIO", image: "/images/retiro-volver-silencio.png" },
-                { mes: "Abril", nombre: "LIMPIA TU ENERGÍA", image: "/images/retiro-limpia-energia.png" },
-                { mes: "Mayo", nombre: "CÓDIGOS DE LUZ", image: "/images/retiro-codigos-luz.png" },
-                { mes: "Junio", nombre: "RECUPERA TU CENTRO", image: "/images/retiro-recupera-centro.png" },
-                { mes: "Julio", nombre: "SANA Y CIERRA CICLOS", image: "/images/retiro-sana-ciclos.png" },
-                { mes: "Agosto", nombre: "CLAVES INTERNAS PARA EL BIENESTAR", image: "/images/retiro-claves-bienestar.png" },
-                { mes: "Septiembre", nombre: "PRESENCIA VIVA", image: "/images/retiro-presencia-viva.png" },
-                { mes: "Octubre", nombre: "ROMPE LA CAPA DE ESTRÉS", image: "/images/retiro-estres.png" },
-                { mes: "Noviembre", nombre: "EL ARTE DE SOLTAR", image: "/images/retiro-soltar.png" },
-                { mes: "Diciembre", nombre: "EL PODER DE ELEGIR", image: "/images/retiro-poder-elegir.png" },
-                { mes: "Enero 2027", nombre: "CIERRA EL AÑO EN LUZ", image: "/images/retiro-cierre.png" },
+                { mes: "Marzo", nombre: "REINICIO ENERGÉTICO PROFUNDO", image: "/images/retiro-reinicio.png" },
+                { mes: "Abril", nombre: "EL NIÑO QUE HABITA EN TI", image: "/images/retiro-nino-interior.png" },
+                { mes: "Mayo", nombre: "EL VÍNCULO MATERNO", image: "/images/retiro-vinculo-materno.png" },
+                { mes: "Junio", nombre: "LA FUERZA PATERNA", image: "/images/retiro-fuerza-paterna.png" },
+                { mes: "Julio", nombre: "ROMPE LA CAPA DEL ESTRÉS CRÓNICO", image: "/images/retiro-estres.png" },
+                { mes: "Agosto", nombre: "EL ARTE DE SOLTAR CON CONCIENCIA", image: "/images/retiro-soltar.png" },
+                { mes: "Septiembre", nombre: "EL PODER DE ELEGIR", image: "/images/retiro-poder-elegir.png" },
+                { mes: "Octubre", nombre: "PROTECCIÓN ENERGÉTICA CONSCIENTE", image: "/images/retiro-proteccion.png" },
+                { mes: "Noviembre", nombre: "EL LLAMADO DE LOS ANCESTROS", image: "/images/retiro-ancestros.png" },
+                { mes: "Diciembre", nombre: "CIERRA EL AÑO EN LUZ", image: "/images/retiro-cierre.png" },
               ].map((retiro, idx) => (
                 <div key={idx} className="group relative overflow-hidden rounded-lg h-48 cursor-pointer">
                   <img
@@ -346,6 +346,10 @@ export default function ClubRetiroSagrado() {
                 {
                   q: "¿Puedo cambiar entre plan mensual y anual?",
                   a: "Sí. Puedes comenzar con el plan mensual y cambiar al anual en cualquier momento. Contacta a nuestro equipo de soporte para asistencia."
+                },
+                {
+                  q: "¿Qué pasa si cancelo mi membresía?",
+                  a: "Puedes cancelar tu suscripción en cualquier momento sin penalización. Sin embargo, al cancelar pierdes acceso inmediato a todo el contenido del Club, incluyendo grabaciones y acceso a la comunidad. El contenido solo está disponible mientras mantengas tu membresía activa."
                 }
               ].map((faq, idx) => (
                 <Card key={idx} className="p-6 border-border/50 bg-primary/5">
@@ -355,6 +359,44 @@ export default function ClubRetiroSagrado() {
                   </h3>
                   <p className="text-muted-foreground ml-6">{faq.a}</p>
                 </Card>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Retiros 2025 - Incluidos en Tu Membresía */}
+      <section className="py-20 md:py-32 bg-background">
+        <div className="container mx-auto px-4">
+          <div className="max-w-5xl mx-auto">
+            <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-6 text-center">
+              Retiros 2025 - Incluidos en Tu Membresía
+            </h2>
+            <p className="text-center text-muted-foreground mb-16 text-lg">
+              Acceso a todas las grabaciones de retiros anteriores mientras mantengas tu membresía activa
+            </p>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {[
+                { nombre: "VOLVER AL SILENCIO", image: "/images/retiro-volver-silencio.png" },
+                { nombre: "LIMPIA TU ENERGÍA", image: "/images/retiro-limpia-energia.png" },
+                { nombre: "CÓDIGOS DE LUZ", image: "/images/retiro-codigos-luz.png" },
+                { nombre: "RECUPERA TU CENTRO", image: "/images/retiro-recupera-centro.png" },
+                { nombre: "SANA Y CIERRA CICLOS", image: "/images/retiro-sana-ciclos.png" },
+                { nombre: "CLAVES INTERNAS PARA EL BIENESTAR VERDADERO", image: "/images/retiro-claves-bienestar.png" },
+              ].map((retiro, idx) => (
+                <div key={idx} className="group relative overflow-hidden rounded-lg h-40 cursor-pointer">
+                  <img
+                    src={retiro.image}
+                    alt={retiro.nombre}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent flex items-end p-4">
+                    <h3 className="text-white font-display font-bold text-sm md:text-base leading-tight">
+                      {retiro.nombre}
+                    </h3>
+                  </div>
+                </div>
               ))}
             </div>
           </div>
