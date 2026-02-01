@@ -120,12 +120,10 @@ function TestimonialsCarousel() {
         {/* View All Link */}
         <div className="text-center">
           <Link href="/testimonios">
-            <a>
-              <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-primary/10 gap-2">
-                Ver Todos los Testimonios
-                <ArrowRight size={20} />
-              </Button>
-            </a>
+            <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-primary/10 gap-2">
+              Ver Todos los Testimonios
+              <ArrowRight size={20} />
+            </Button>
           </Link>
         </div>
       </div>
@@ -164,20 +162,16 @@ export default function Home() {
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/que-es-ks-healing">
-                <a>
-                  <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-primary gap-2" style={{color: '#ffffff'}}>
-                    Descubre KS Healing
-                    <ArrowRight size={20} />
-                  </Button>
-                </a>
+                <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-primary gap-2" style={{color: '#ffffff'}}>
+                  Descubre KS Healing
+                  <ArrowRight size={20} />
+                </Button>
               </Link>
               <Link href="/el-libro">
-                <a>
-                  <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10 gap-2">
-                    <BookOpen size={20} />
-                    Leer el Libro
-                  </Button>
-                </a>
+                <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10 gap-2">
+                  <BookOpen size={20} />
+                  Leer el Libro
+                </Button>
               </Link>
             </div>
           </div>
@@ -272,12 +266,10 @@ export default function Home() {
               </p>
               <div className="flex gap-4">
                 <Link href="/sobre-yohev">
-                  <a>
-                    <Button className="bg-primary hover:bg-primary/90 text-white gap-2">
-                      Conocer su Historia
-                      <ArrowRight size={20} />
-                    </Button>
-                  </a>
+                  <Button className="bg-primary hover:bg-primary/90 text-white gap-2">
+                    Conocer su Historia
+                    <ArrowRight size={20} />
+                  </Button>
                 </Link>
               </div>
             </div>
@@ -349,11 +341,9 @@ export default function Home() {
                     {program.description}
                   </p>
                   <Link href={program.href}>
-                    <a>
-                      <Button variant="outline" className="w-full border-primary text-primary hover:bg-primary/10">
-                        Conocer Más
-                      </Button>
-                    </a>
+                    <Button variant="outline" className="w-full border-primary text-primary hover:bg-primary/10">
+                      Conocer Más
+                    </Button>
                   </Link>
                 </div>
               </Card>
@@ -421,12 +411,10 @@ export default function Home() {
 
           <div className="text-center">
             <Link href="/eventos">
-              <a>
-                <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-primary/10 gap-2">
-                  Ver Todos los Eventos
-                  <ArrowRight size={20} />
-                </Button>
-              </a>
+              <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-primary/10 gap-2">
+                Ver Todos los Eventos
+                <ArrowRight size={20} />
+              </Button>
             </Link>
           </div>
         </div>
@@ -474,11 +462,9 @@ export default function Home() {
                   </p>
                   <div className="flex flex-col gap-3">
                     <Link href="/el-libro">
-                      <a>
-                        <Button className="w-full bg-primary hover:bg-primary/90 text-white">
-                          Explorar el Libro
-                        </Button>
-                      </a>
+                      <Button className="w-full bg-primary hover:bg-primary/90 text-white">
+                        Explorar el Libro
+                      </Button>
                     </Link>
                   </div>
                 </Card>
@@ -547,12 +533,10 @@ export default function Home() {
                     {post.descripcion}
                   </p>
                   <Link href={post.link}>
-                    <a>
-                      <Button variant="outline" className="w-full border-primary text-primary hover:bg-primary/10 gap-2">
-                        Leer Artículo
-                        <ArrowRight size={16} />
-                      </Button>
-                    </a>
+                    <Button variant="outline" className="w-full border-primary text-primary hover:bg-primary/10 gap-2">
+                      Leer Artículo
+                      <ArrowRight size={16} />
+                    </Button>
                   </Link>
                 </div>
               </Card>
@@ -561,12 +545,10 @@ export default function Home() {
 
           <div className="text-center">
             <Link href="/blog">
-              <a>
-                <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-primary/10 gap-2">
-                  Ver Todos los Artículos
-                  <ArrowRight size={20} />
-                </Button>
-              </a>
+              <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-primary/10 gap-2">
+                Ver Todos los Artículos
+                <ArrowRight size={20} />
+              </Button>
             </Link>
           </div>
         </div>
@@ -583,20 +565,16 @@ export default function Home() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/sesiones">
-              <a>
-                <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-primary gap-2" style={{color: '#ffffff'}}>
-                  Sesión Privada
-                  <ArrowRight size={20} />
-                </Button>
-              </a>
+              <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-primary gap-2" style={{color: '#ffffff'}}>
+                Sesión Privada
+                <ArrowRight size={20} />
+              </Button>
             </Link>
             <Link href="/cursos">
-              <a>
-                <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10 gap-2">
-                  Explorar Cursos
-                  <ArrowRight size={20} />
-                </Button>
-              </a>
+              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10 gap-2">
+                Explorar Cursos
+                <ArrowRight size={20} />
+              </Button>
             </Link>
           </div>
         </div>
