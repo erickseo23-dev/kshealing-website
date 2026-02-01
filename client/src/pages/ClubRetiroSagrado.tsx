@@ -45,7 +45,7 @@ export default function ClubRetiroSagrado() {
                 </Button>
               </a>
               <Link href="/retiro-sagrado">
-                <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10 font-bold text-lg px-8 py-6">
+                <Button size="lg" variant="outline" className="border-black text-black hover:bg-black/10 font-bold text-lg px-8 py-6">
                   Conocer más
                 </Button>
               </Link>
