@@ -30,7 +30,7 @@ export const eventos: Event[] = [
     imagen: "/images/retiro-8-amor-divino.png",
     tipo: "Retiro Sagrado",
     tema: "Relaciones",
-    modalidad: "En Vivo"
+    modalidad: "Online en Vivo"
   },
   {
     id: 2,
@@ -46,7 +46,7 @@ export const eventos: Event[] = [
     imagen: "/images/retiro-reinicio.png",
     tipo: "Retiro Sagrado",
     tema: "Transformación",
-    modalidad: "En Vivo"
+    modalidad: "Online en Vivo"
   },
   {
     id: 3,
@@ -62,7 +62,7 @@ export const eventos: Event[] = [
     imagen: "/images/retiro-nino-interior.png",
     tipo: "Retiro Sagrado",
     tema: "Sanación",
-    modalidad: "En Vivo"
+    modalidad: "Online en Vivo"
   },
   {
     id: 4,
@@ -78,7 +78,7 @@ export const eventos: Event[] = [
     imagen: "/images/retiro-vinculo-materno.png",
     tipo: "Retiro Sagrado",
     tema: "Relaciones",
-    modalidad: "En Vivo"
+    modalidad: "Online en Vivo"
   },
   {
     id: 5,
@@ -94,7 +94,7 @@ export const eventos: Event[] = [
     imagen: "/images/retiro-fuerza-paterna.png",
     tipo: "Retiro Sagrado",
     tema: "Transformación",
-    modalidad: "En Vivo"
+    modalidad: "Online en Vivo"
   },
   {
     id: 6,
@@ -110,7 +110,7 @@ export const eventos: Event[] = [
     imagen: "/images/retiro-estres.png",
     tipo: "Retiro Sagrado",
     tema: "Sanación",
-    modalidad: "En Vivo"
+    modalidad: "Online en Vivo"
   },
   {
     id: 7,
@@ -126,7 +126,7 @@ export const eventos: Event[] = [
     imagen: "/images/retiro-soltar.png",
     tipo: "Retiro Sagrado",
     tema: "Transformación",
-    modalidad: "En Vivo"
+    modalidad: "Online en Vivo"
   },
   {
     id: 8,
@@ -142,7 +142,7 @@ export const eventos: Event[] = [
     imagen: "/images/retiro-poder-elegir.png",
     tipo: "Retiro Sagrado",
     tema: "Consciencia",
-    modalidad: "En Vivo"
+    modalidad: "Online en Vivo"
   },
   {
     id: 9,
@@ -158,7 +158,7 @@ export const eventos: Event[] = [
     imagen: "/images/retiro-proteccion.png",
     tipo: "Retiro Sagrado",
     tema: "Sanación",
-    modalidad: "En Vivo"
+    modalidad: "Online en Vivo"
   },
   {
     id: 10,
@@ -174,7 +174,7 @@ export const eventos: Event[] = [
     imagen: "/images/retiro-ancestros.png",
     tipo: "Retiro Sagrado",
     tema: "Transformación",
-    modalidad: "En Vivo"
+    modalidad: "Online en Vivo"
   },
   {
     id: 11,
@@ -190,6 +190,6 @@ export const eventos: Event[] = [
     imagen: "/images/retiro-cierre.png",
     tipo: "Retiro Sagrado",
     tema: "Consciencia",
-    modalidad: "En Vivo"
+    modalidad: "Online en Vivo"
   }
 ];

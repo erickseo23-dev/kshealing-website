@@ -1,10 +1,12 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
-import { Check, Heart, Zap, Users, Star, Leaf, Sparkles, Share2 } from "lucide-react";
+import { Check, Heart, Zap, Users, Star, Leaf, Sparkles, Share2, Calendar, Clock, MapPin, ArrowRight } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { retiroSagradoTestimonials } from "@/lib/programTestimonials";
+import { eventos } from "@/lib/events";
+import { useState } from "react";
 
 export default function RetiroSagrado() {
   return (
@@ -476,6 +478,124 @@ export default function RetiroSagrado() {
               <p className="text-muted-foreground text-sm">
                 Los resultados varían según la apertura y disposición de cada participante.
               </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Próximos Retiros Section */}
+      <section className="py-20 md:py-32 bg-background border-t border-border">
+        <div className="container mx-auto px-4">
+          <div className="max-w-5xl mx-auto">
+            <div className="mb-16">
+              <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-6 text-center">
+                Próximos <span className="text-primary">Retiros 2026</span>
+              </h2>
+              <p className="text-lg text-muted-foreground text-center">
+                Continúa tu transformación con los retiros que vienen. Cada mes, un nuevo tema, una nueva oportunidad.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+              {eventos
+                .filter(e => e.tipo === "Retiro Sagrado")
+                .slice(1, 4)
+                .map(retiro => (
+                  <Card key={retiro.id} className="p-6 border-border/50 bg-gradient-to-br from-background to-primary/5 hover:shadow-lg transition-all">
+                    {retiro.imagen && (
+                      <div className="relative h-32 overflow-hidden rounded-lg mb-4 bg-muted">
+                        <img
+                          src={retiro.imagen}
+                          alt={retiro.title}
+                          className="w-full h-full object-cover"
+                        />
+                      </div>
+                    )}
+                    <div className="inline-block mb-3 px-3 py-1 rounded-full bg-primary/10 border border-primary/20">
+                      <span className="text-primary font-semibold text-sm">{retiro.tema}</span>
+                    </div>
+                    <h3 className="font-display text-lg font-bold text-foreground mb-2">
+                      {retiro.title}
+                    </h3>
+                    <p className="text-sm text-muted-foreground mb-4">{retiro.description}</p>
+                    <div className="space-y-2 mb-4">
+                      <div className="flex items-center gap-2 text-sm text-foreground">
+                        <Calendar size={14} className="text-primary" />
+                        <span>{retiro.fecha}</span>
+                      </div>
+                      <div className="flex items-center gap-2 text-sm text-foreground">
+                        <Clock size={14} className="text-primary" />
+                        <span>{retiro.horario}</span>
+                      </div>
+                    </div>
+                    <Link href={`/retiro-detalle?id=${retiro.id}`}>
+                      <Button size="sm" className="w-full bg-primary hover:bg-primary/90 text-white">
+                        Ver Detalles
+                      </Button>
+                    </Link>
+                  </Card>
+                ))}
+            </div>
+
+            <div className="text-center">
+              <Link href="/proximos-retiros">
+                <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-primary/10 gap-2">
+                  Ver Todos los Retiros 2026
+                  <ArrowRight size={20} />
+                </Button>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Retiros Pasados Section */}
+      <section className="py-20 md:py-32 bg-primary/5 border-t border-border">
+        <div className="container mx-auto px-4">
+          <div className="max-w-5xl mx-auto">
+            <div className="mb-16">
+              <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-6 text-center">
+                Retiros Incluidos en tu <span className="text-primary">Membresía</span>
+              </h2>
+              <p className="text-lg text-muted-foreground text-center">
+                Acceso a toda la biblioteca de retiros anteriores. Revive, integra y profundiza en tu práctica.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+              {[
+                { title: "Retiro 1: Fundamentos del Amor", image: "/images/retiro-8-amor-divino.png" },
+                { title: "Retiro 2: Sanación de Heridas", image: "/images/retiro-reinicio.png" },
+                { title: "Retiro 3: Reconstrucción Interna", image: "/images/retiro-nino-interior.png" },
+                { title: "Retiro 4: Vínculos Conscientes", image: "/images/retiro-vinculo-materno.png" },
+                { title: "Retiro 5: Autoridad Personal", image: "/images/retiro-fuerza-paterna.png" },
+                { title: "Retiro 6: Liberación Emocional", image: "/images/retiro-estres.png" },
+                { title: "Retiro 7: El Arte de Soltar", image: "/images/retiro-soltar.png" },
+                { title: "Retiro 8: Arquitectura del Amor", image: "/images/retiro-8-amor-divino.png" },
+              ].map((retiro, idx) => (
+                <div key={idx} className="group relative overflow-hidden rounded-lg h-40 cursor-pointer">
+                  <img
+                    src={retiro.image}
+                    alt={retiro.title}
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                  />
+                  <div className="absolute inset-0 bg-black/40 group-hover:bg-black/60 transition-colors flex items-end p-4">
+                    <p className="text-white font-semibold text-sm">{retiro.title}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            <div className="mt-12 p-8 bg-background rounded-lg border border-primary/20 text-center">
+              <p className="text-foreground font-semibold mb-2">
+                Acceso ilimitado a todos los retiros grabados
+              </p>
+              <p className="text-muted-foreground mb-6">
+                Integrados en tu membresía del Club del Retiro Sagrado. Practica a tu ritmo, revisa cuantas veces necesites.
+              </p>
+              <Button size="lg" className="bg-primary hover:bg-primary/90 text-white">
+                Unirse al Club
+              </Button>
             </div>
           </div>
         </div>
