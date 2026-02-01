@@ -94,12 +94,10 @@ export default function ElLibro() {
 
               <div className="flex gap-4">
                 <Link href="/el-libro#comprar">
-                  <a>
-                    <Button size="lg" className="bg-primary hover:bg-primary/90 text-white gap-2">
-                      Comprar Ahora
-                      <ArrowRight size={20} />
-                    </Button>
-                  </a>
+                  <Button size="lg" className="bg-primary hover:bg-primary/90 text-white gap-2">
+                    Comprar Ahora
+                    <ArrowRight size={20} />
+                  </Button>
                 </Link>
               </div>
             </div>
@@ -315,11 +313,9 @@ export default function ElLibro() {
                 <div className="text-3xl font-display font-bold text-primary mb-6">
                   $24.99 USD
                 </div>
-                <a href="https://a.co/d/ini6U2Y" target="_blank" rel="noopener noreferrer" className="w-full">
-                  <Button className="w-full bg-primary hover:bg-primary/90 text-white">
-                    Comprar en Amazon
-                  </Button>
-                </a>
+                <Button className="w-full bg-primary hover:bg-primary/90 text-white" onClick={() => window.open('https://a.co/d/ini6U2Y', '_blank')}>
+                  Comprar en Amazon
+                </Button>
               </Card>
 
               <Card className="p-8 border-2 border-primary/50 hover:shadow-lg transition-all bg-gradient-to-br from-primary/5 to-transparent">
@@ -347,11 +343,9 @@ export default function ElLibro() {
                 <div className="text-3xl font-display font-bold text-primary mb-6">
                   $9.99 USD
                 </div>
-                <a href="https://a.co/d/45jDr6p" target="_blank" rel="noopener noreferrer" className="w-full">
-                  <Button className="w-full bg-primary hover:bg-primary/90 text-white">
-                    Comprar en Amazon
-                  </Button>
-                </a>
+                <Button className="w-full bg-primary hover:bg-primary/90 text-white" onClick={() => window.open('https://a.co/d/45jDr6p', '_blank')}>
+                  Comprar en Amazon
+                </Button>
               </Card>
             </div>
 
