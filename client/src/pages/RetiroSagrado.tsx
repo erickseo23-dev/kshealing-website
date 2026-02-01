@@ -408,10 +408,10 @@ export default function RetiroSagrado() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="font-display text-4xl font-bold text-foreground mb-12 text-center">
-              Testimonios del Retiro 8
+              Testimonios del Club del Retiro Sagrado
             </h2>
             <p className="text-center text-muted-foreground mb-12 text-lg">
-              Historias de transformación en relaciones y vínculos familiares
+              Experiencias de miembros que han accedido a todos los retiros pasados y en vivo
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <Card className="p-8 border-border/50 bg-background">
@@ -423,10 +423,10 @@ export default function RetiroSagrado() {
                   </div>
                 </div>
                 <p className="text-muted-foreground italic mb-6">
-                  "Después del retiro, mi relación cambió completamente. No porque hiciera algo diferente, sino porque dejé de necesitar que mi pareja 'me completara'. Ahora amamos desde un lugar de paz, no de miedo."
+                  "Soy miembro desde hace 8 meses y he asistido a todos los retiros en vivo. Cada uno me ha dado herramientas diferentes. Ahora reviso las grabaciones de los retiros pasados cuando necesito profundizar en un tema específico."
                 </p>
                 <p className="font-semibold text-foreground">María C.</p>
-                <p className="text-sm text-muted-foreground">Pareja de 8 años</p>
+                <p className="text-sm text-muted-foreground">Miembro del Club - 8 meses</p>
               </Card>
               <Card className="p-8 border-border/50 bg-background">
                 <div className="flex items-center gap-2 mb-4">
@@ -437,10 +437,10 @@ export default function RetiroSagrado() {
                   </div>
                 </div>
                 <p className="text-muted-foreground italic mb-6">
-                  "Lo que más me sorprendió fue entender que no estaba "roto" en el amor. Simplemente amaba desde un filtro herido. Ahora veo a mis hijos y a mi pareja con otros ojos."
+                  "Lo mejor del Club es tener acceso a todas las grabaciones. He revisado 'Volver al Silencio' más de 5 veces. Cada visión me revela algo nuevo. Es como tener un maestro disponible siempre."
                 </p>
                 <p className="font-semibold text-foreground">Roberto M.</p>
-                <p className="text-sm text-muted-foreground">Padre de 3 hijos</p>
+                <p className="text-sm text-muted-foreground">Miembro del Club - 1 año</p>
               </Card>
               <Card className="p-8 border-border/50 bg-background">
                 <div className="flex items-center gap-2 mb-4">
@@ -451,10 +451,10 @@ export default function RetiroSagrado() {
                   </div>
                 </div>
                 <p className="text-muted-foreground italic mb-6">
-                  "Vine al retiro con el corazón cerrado. Salí con la capacidad de amar sin perderme. La meditación de 'Recordar el Amor' fue lo que más me transformó."
+                  "Perdí algunos retiros en vivo por trabajo, pero poder verlos grabados me permitió no quedarme atrás. El Club es flexible y realmente se adapta a tu ritmo de vida."
                 </p>
                 <p className="font-semibold text-foreground">Alejandra T.</p>
-                <p className="text-sm text-muted-foreground">Relación reciente</p>
+                <p className="text-sm text-muted-foreground">Miembro del Club - 6 meses</p>
               </Card>
               <Card className="p-8 border-border/50 bg-background">
                 <div className="flex items-center gap-2 mb-4">
@@ -465,18 +465,18 @@ export default function RetiroSagrado() {
                   </div>
                 </div>
                 <p className="text-muted-foreground italic mb-6">
-                  "Después de 20 años de matrimonio, creía que todo estaba 'resuelto'. Este retiro me mostró que aún había capas profundas de sanación. Mi familia lo siente."
+                  "Después de estar en el Club, mi familia ha notado el cambio. No es solo un retiro, es un proceso continuo. Poder acceder a todos los retiros anteriores ha sido transformador."
                 </p>
                 <p className="font-semibold text-foreground">Carlos L.</p>
-                <p className="text-sm text-muted-foreground">Matrimonio de 20 años</p>
+                <p className="text-sm text-muted-foreground">Miembro del Club - 10 meses</p>
               </Card>
             </div>
             <div className="mt-12 p-8 bg-background rounded-lg border border-primary/20 text-center">
               <p className="text-foreground font-semibold mb-2">
-                Estos testimonios reflejan cambios reales en cómo las personas se relacionan consigo mismas y con otros.
+                Acceso ilimitado a todos los retiros en vivo + grabaciones de retiros anteriores
               </p>
               <p className="text-muted-foreground text-sm">
-                Los resultados varían según la apertura y disposición de cada participante.
+                Practica a tu ritmo, revisa cuantas veces necesites, integra profundamente cada enseñanza.
               </p>
             </div>
           </div>
@@ -564,14 +564,14 @@ export default function RetiroSagrado() {
 
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               {[
-                { title: "Retiro 1: Fundamentos del Amor", image: "/images/retiro-8-amor-divino.png" },
-                { title: "Retiro 2: Sanación de Heridas", image: "/images/retiro-reinicio.png" },
-                { title: "Retiro 3: Reconstrucción Interna", image: "/images/retiro-nino-interior.png" },
-                { title: "Retiro 4: Vínculos Conscientes", image: "/images/retiro-vinculo-materno.png" },
-                { title: "Retiro 5: Autoridad Personal", image: "/images/retiro-fuerza-paterna.png" },
-                { title: "Retiro 6: Liberación Emocional", image: "/images/retiro-estres.png" },
-                { title: "Retiro 7: El Arte de Soltar", image: "/images/retiro-soltar.png" },
-                { title: "Retiro 8: Arquitectura del Amor", image: "/images/retiro-8-amor-divino.png" },
+                { title: "Retiro Sagrado 1 - VOLVER AL SILENCIO", image: "/images/retiro-volver-silencio.png" },
+                { title: "Retiro Sagrado 2 - LIMPIA TU ENERGÍA", image: "/images/retiro-limpia-energia.png" },
+                { title: "Retiro Sagrado 3 - CÓDIGOS DE LUZ", image: "/images/retiro-codigos-luz.png" },
+                { title: "Retiro Sagrado 4 - RECUPERA TU CENTRO", image: "/images/retiro-recupera-centro.png" },
+                { title: "Retiro Sagrado 5 - SANA Y CIERRA CICLOS", image: "/images/retiro-sana-ciclos.png" },
+                { title: "Retiro Sagrado 6 - CLAVES INTERNAS PARA EL BIENESTAR VERDADERO", image: "/images/retiro-claves-bienestar.png" },
+                { title: "Retiro Sagrado 7 - PRESENCIA VIVA", image: "/images/retiro-presencia-viva.png" },
+                { title: "Retiro Sagrado 8 - LA ARQUITECTURA DEL AMOR", image: "/images/retiro-8-amor-divino.png" },
               ].map((retiro, idx) => (
                 <div key={idx} className="group relative overflow-hidden rounded-lg h-40 cursor-pointer">
                   <img
