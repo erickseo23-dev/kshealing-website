@@ -12,8 +12,48 @@ export default function ClubRetiroSagrado() {
   const kajabi_anual = "https://www.i3cdigital.com/offers/JvrtZ9TF";
   const [expandedFAQ, setExpandedFAQ] = useState<number | null>(null);
   const [selectedRetiro, setSelectedRetiro] = useState<any>(null);
+  const [selectedRetiro2025, setSelectedRetiro2025] = useState<any>(null);
 
   const retirosSagrados2026 = eventos.filter(evento => evento.tipo === "Retiro Sagrado").slice(0, 12);
+
+  const retiros2025 = [
+    {
+      id: 1,
+      nombre: "Volver al Silencio",
+      img: "/images/retiro-volver-silencio.png",
+      descripcion: "Un retiro para aquietar el ruido interno, soltar la sobreestimulación y regresar al centro. Un espacio de pausa consciente donde el silencio se convierte en guía y claridad."
+    },
+    {
+      id: 2,
+      nombre: "Limpia tu Energía",
+      img: "/images/retiro-limpia-energia.png",
+      descripcion: "Un encuentro para liberar cargas emocionales, mentales y energéticas acumuladas. Ideal para quienes sienten cansancio profundo, saturación interna o desgaste invisible."
+    },
+    {
+      id: 3,
+      nombre: "Códigos de Luz",
+      img: "/images/retiro-codigos-luz.png",
+      descripcion: "Un retiro de reconexión con el orden interno y la información sutil de equilibrio. Permite recordar estados de coherencia profunda y alineación más allá del esfuerzo mental."
+    },
+    {
+      id: 4,
+      nombre: "Recupera tu Centro",
+      img: "/images/retiro-recupera-centro.png",
+      descripcion: "Diseñado para volver al eje interno cuando la vida, el estrés o las emociones desbalancean. Un espacio para reencontrarte contigo y restablecer estabilidad en medio del movimiento."
+    },
+    {
+      id: 5,
+      nombre: "Sana y Cierra Ciclos",
+      img: "/images/retiro-sana-ciclos.png",
+      descripcion: "Un retiro para cerrar procesos abiertos, relaciones y etapas inconclusas sin arrastre. Ayuda a liberar lo que ya cumplió su función y recuperar energía para el presente."
+    },
+    {
+      id: 6,
+      nombre: "Claves Internas para el Bienestar Verdadero",
+      img: "/images/retiro-claves-bienestar.png",
+      descripcion: "Un encuentro de comprensión profunda sobre lo que realmente sostiene el bienestar. Integra regulación emocional, coherencia mental, presencia corporal y orden energético."
+    }
+  ];
 
   return (
     <div className="min-h-screen flex flex-col bg-background">
@@ -149,6 +189,38 @@ export default function ClubRetiroSagrado() {
             </p>
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {/* Presencia Viva - Enero 2026 - Ya Disponible */}
+              <Card 
+                key="presencia-viva" 
+                className="overflow-hidden border-border/50 bg-background hover:shadow-lg transition-all cursor-pointer relative"
+                onClick={() => setSelectedRetiro({
+                  id: 'presencia-viva',
+                  title: 'Presencia Viva',
+                  fecha: 'Domingo, 4 de enero de 2026',
+                  horario: '8:00 - 12:00 hrs (CDMX)',
+                  modalidad: 'Online en Vivo',
+                  participantes: 'Comunidad del Club',
+                  imagen: '/images/retiro-presencia-viva.png',
+                  description: 'Un retiro para iniciar el nuevo ciclo desde la consciencia y no desde la prisa. Enseña a habitar el presente como base de claridad, calma y coherencia en la vida cotidiana.',
+                  incluye: ['Sesión en vivo con YOHEV', 'Grabación disponible', 'Acceso a comunidad', 'Materiales de apoyo']
+                })}
+              >
+                <div className="absolute top-4 right-4 bg-primary text-white px-3 py-1 rounded-full text-xs font-bold z-10">
+                  YA DISPONIBLE
+                </div>
+                <div className="relative h-40 overflow-hidden">
+                  <img 
+                    src="/images/retiro-presencia-viva.png" 
+                    alt="Presencia Viva"
+                    className="w-full h-full object-cover hover:scale-105 transition-transform"
+                  />
+                </div>
+                <div className="p-4">
+                  <p className="text-sm text-primary font-semibold mb-1">Enero</p>
+                  <h3 className="font-semibold text-foreground text-sm">Presencia Viva</h3>
+                </div>
+              </Card>
+
               {retirosSagrados2026.map((retiro) => (
                 <Card 
                   key={retiro.id} 
@@ -267,16 +339,16 @@ export default function ClubRetiroSagrado() {
               Retiros 2025 - Incluidos en Tu Membresía
             </h2>
             
+            <p className="text-center text-muted-foreground mb-12 text-lg">
+              Haz click en cualquier retiro para ver más detalles
+            </p>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {[
-                { nombre: "Volver al Silencio", img: "/images/retiro-volver-silencio.png" },
-                { nombre: "Limpia tu Energía", img: "/images/retiro-limpia-energia.png" },
-                { nombre: "Códigos de Luz", img: "/images/retiro-codigos-luz.png" },
-                { nombre: "Recupera tu Centro", img: "/images/retiro-recupera-centro.png" },
-                { nombre: "Sana y Cierra Ciclos", img: "/images/retiro-sana-ciclos.png" },
-                { nombre: "Claves Internas para el Bienestar Verdadero", img: "/images/retiro-claves-bienestar.png" }
-              ].map((retiro, idx) => (
-                <Card key={idx} className="overflow-hidden border-border/50 bg-primary/5 hover:shadow-lg transition-all">
+              {retiros2025.map((retiro) => (
+                <Card 
+                  key={retiro.id} 
+                  className="overflow-hidden border-border/50 bg-primary/5 hover:shadow-lg transition-all cursor-pointer"
+                  onClick={() => setSelectedRetiro2025(retiro)}
+                >
                   <div className="relative h-40 overflow-hidden">
                     <img 
                       src={retiro.img} 
@@ -290,6 +362,54 @@ export default function ClubRetiroSagrado() {
                 </Card>
               ))}
             </div>
+
+            {selectedRetiro2025 && (
+              <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4" onClick={() => setSelectedRetiro2025(null)}>
+                <Card className="max-w-2xl w-full bg-background border-border/50 max-h-[90vh] overflow-y-auto" onClick={(e) => e.stopPropagation()}>
+                  <div className="relative">
+                    <img 
+                      src={selectedRetiro2025.img} 
+                      alt={selectedRetiro2025.nombre}
+                      className="w-full h-64 object-cover"
+                    />
+                    <button
+                      onClick={() => setSelectedRetiro2025(null)}
+                      className="absolute top-4 right-4 bg-black/50 hover:bg-black/70 text-white p-2 rounded-full transition-all"
+                    >
+                      <X size={24} />
+                    </button>
+                  </div>
+                  
+                  <div className="p-8">
+                    <h2 className="font-display text-3xl font-bold text-foreground mb-4">
+                      {selectedRetiro2025.nombre}
+                    </h2>
+                    
+                    <p className="text-muted-foreground mb-6 text-lg leading-relaxed">
+                      {selectedRetiro2025.descripcion}
+                    </p>
+
+                    <div className="bg-primary/10 border border-primary/20 rounded-lg p-6 mb-8">
+                      <p className="text-foreground font-semibold flex items-center gap-2">
+                        <Check size={20} className="text-primary" />
+                        Este retiro ya está disponible en tu membresía
+                      </p>
+                      <p className="text-muted-foreground mt-2 text-sm">
+                        Accede a la grabación completa desde tu plataforma de miembro
+                      </p>
+                    </div>
+
+                    <div className="border-t border-border/30 pt-6">
+                      <a href="https://www.i3cdigital.com/products/club-de-retiro-sagrado" target="_blank" rel="noopener noreferrer">
+                        <Button size="lg" className="w-full bg-primary hover:bg-primary/90 text-white font-bold py-6">
+                          Acceder a Mi Membresía
+                        </Button>
+                      </a>
+                    </div>
+                  </div>
+                </Card>
+              </div>
+            )}
           </div>
         </div>
       </section>
