@@ -1,49 +1,11 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
-import { Calendar, Filter, Heart, Users, Clock, MapPin } from "lucide-react";
+import { Calendar, Filter, Heart, Clock, MapPin } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { useState } from "react";
-
-interface Retiro {
-  id: number;
-  numero: number;
-  titulo: string;
-  descripcion: string;
-  fecha: string;
-  hora: string;
-  duracion: string;
-  tema: string;
-  modalidad: "En Vivo" | "Grabado" | "Híbrido";
-  lugar: string;
-  precio: string;
-  beneficios: string[];
-  enlace: string;
-}
-
-const retiros: Retiro[] = [
-  {
-    id: 1,
-    numero: 8,
-    titulo: "La Arquitectura del Amor",
-    descripcion: "Del amor herido al Amor como principio divino",
-    fecha: "8 de Febrero 2025",
-    hora: "7:00 - 11:00 hrs (CDMX)",
-    duracion: "4 horas",
-    tema: "Relaciones",
-    modalidad: "En Vivo",
-    lugar: "Club del Retiro Sagrado",
-    precio: "Acceso al Club",
-    beneficios: [
-      "Comprensión profunda del amor divino",
-      "Transformación de patrones relacionales",
-      "Integración emocional",
-      "Certificado de participación"
-    ],
-    enlace: "/retiro-sagrado"
-  }
-];
+import { eventos } from "@/lib/events";
 
 const temas = ["Todos", "Relaciones", "Transformación", "Consciencia", "Sanación"];
 const modalidades = ["Todas", "En Vivo", "Grabado", "Híbrido"];
@@ -52,7 +14,10 @@ export default function ProximosRetiros() {
   const [filtroTema, setFiltroTema] = useState("Todos");
   const [filtroModalidad, setFiltroModalidad] = useState("Todas");
 
-  const retirosFiltrados = retiros.filter(retiro => {
+  // Filtrar solo retiros sagrados
+  const retirosSagrados = eventos.filter(evento => evento.tipo === "Retiro Sagrado");
+
+  const retirosFiltrados = retirosSagrados.filter(retiro => {
     const temaMatch = filtroTema === "Todos" || retiro.tema === filtroTema;
     const modalidadMatch = filtroModalidad === "Todas" || retiro.modalidad === filtroModalidad;
     return temaMatch && modalidadMatch;
@@ -70,7 +35,7 @@ export default function ProximosRetiros() {
               <span className="text-primary font-semibold">📅 Próximos Retiros</span>
             </div>
             <h1 className="font-display text-5xl md:text-6xl font-bold text-foreground mb-6">
-              Retiros Sagrados <span className="text-primary">2025</span>
+              Retiros Sagrados <span className="text-primary">2026</span>
             </h1>
             <p className="text-xl text-muted-foreground mb-8">
               Explora nuestro calendario de retiros transformacionales. Cada retiro es una oportunidad para profundizar en tu consciencia y transformación personal.
@@ -139,17 +104,17 @@ export default function ProximosRetiros() {
           {retirosFiltrados.length > 0 ? (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
               {retirosFiltrados.map(retiro => (
-                <Link key={retiro.id} href={retiro.enlace}>
+                <Link key={retiro.id} href={`/retiro-sagrado?id=${retiro.id}`}>
                   <Card className="h-full p-8 border-border/50 bg-gradient-to-br from-background to-primary/5 hover:shadow-2xl transition-all cursor-pointer group">
                     {/* Header */}
                     <div className="mb-6 pb-6 border-b border-border/50">
                       <div className="inline-block mb-3 px-3 py-1 rounded-full bg-primary/10 border border-primary/20">
-                        <span className="text-primary font-semibold text-sm">Retiro {retiro.numero}</span>
+                        <span className="text-primary font-semibold text-sm">{retiro.tipo}</span>
                       </div>
                       <h3 className="font-display text-2xl font-bold text-foreground mb-2 group-hover:text-primary transition-colors">
-                        {retiro.titulo}
+                        {retiro.title}
                       </h3>
-                      <p className="text-muted-foreground italic">{retiro.descripcion}</p>
+                      <p className="text-muted-foreground italic">{retiro.description}</p>
                     </div>
 
                     {/* Info Grid */}
@@ -166,7 +131,7 @@ export default function ProximosRetiros() {
                         <Clock size={18} className="text-primary flex-shrink-0 mt-0.5" />
                         <div>
                           <p className="text-sm text-muted-foreground">Hora</p>
-                          <p className="text-foreground font-semibold">{retiro.hora}</p>
+                          <p className="text-foreground font-semibold">{retiro.horario}</p>
                         </div>
                       </div>
 
@@ -183,7 +148,7 @@ export default function ProximosRetiros() {
                     <div className="mb-6 pb-6 border-t border-border/50">
                       <p className="text-sm font-semibold text-foreground mb-3">Incluye:</p>
                       <ul className="space-y-2">
-                        {retiro.beneficios.slice(0, 2).map((beneficio, idx) => (
+                        {retiro.incluye?.slice(0, 2).map((beneficio, idx) => (
                           <li key={idx} className="flex gap-2 text-sm text-muted-foreground">
                             <Heart size={14} className="text-primary flex-shrink-0 mt-0.5" />
                             <span>{beneficio}</span>
@@ -224,13 +189,13 @@ export default function ProximosRetiros() {
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="font-display text-4xl font-bold text-foreground mb-6">
-              ¿No ves el retiro que buscas?
+              Un Retiro para Cada Etapa de tu Transformación
             </h2>
             <p className="text-lg text-muted-foreground mb-8">
-              Nuevos retiros se agregan regularmente. Suscríbete para recibir notificaciones cuando se abra la inscripción a nuevos eventos.
+              Cada mes, un nuevo tema. Cada retiro, una nueva oportunidad de profundizar en tu consciencia y sanar desde la raíz.
             </p>
             <Button size="lg" className="bg-primary hover:bg-primary/90 text-white">
-              Notificarme de Nuevos Retiros
+              Unirse al Club del Retiro Sagrado
             </Button>
           </div>
         </div>
