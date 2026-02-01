@@ -18,11 +18,14 @@ export default function RetiroSagrado() {
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <div className="inline-block mb-6 px-4 py-2 rounded-full bg-primary/10 border border-primary/20">
-              <span className="text-primary font-semibold">💕 Retiro Sagrado 8</span>
+              <span className="text-primary font-semibold">💕 Retiro Sagrado 8 - CON YOHEV</span>
             </div>
             <h1 className="font-display text-5xl md:text-6xl font-bold text-foreground mb-6">
               La Arquitectura <span className="text-primary">del Amor</span>
             </h1>
+            <p className="text-lg text-primary font-semibold mb-4">
+              Facilitado directamente por Yohev
+            </p>
             <p className="text-xl text-muted-foreground mb-6">
               Del amor herido al Amor como principio divino
             </p>
@@ -33,9 +36,11 @@ export default function RetiroSagrado() {
               <span className="text-primary font-semibold">📅 Domingo 8 de Febrero | 7:00 - 11:00 hrs (CDMX)</span>
             </div>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-primary hover:bg-primary/90 text-white">
-                Unirse al Club del Retiro
-              </Button>
+              <Link href="/club-retiro-sagrado">
+                <Button size="lg" className="bg-primary hover:bg-primary/90 text-white">
+                  Unirse al Club del Retiro
+                </Button>
+              </Link>
               <Button size="lg" variant="outline">
                 Más Información
               </Button>
