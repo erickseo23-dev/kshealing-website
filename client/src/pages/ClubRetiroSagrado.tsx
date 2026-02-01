@@ -170,6 +170,44 @@ export default function ClubRetiroSagrado() {
         </div>
       </section>
 
+      {/* Retiros 2025 - Incluidos en Tu Membresía */}
+      <section className="py-20 md:py-32 bg-background">
+        <div className="container mx-auto px-4">
+          <div className="max-w-5xl mx-auto">
+            <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-6 text-center">
+              Retiros 2025 - Incluidos en Tu Membresía
+            </h2>
+            <p className="text-center text-muted-foreground mb-16 text-lg">
+              Acceso a todas las grabaciones de retiros anteriores mientras mantengas tu membresía activa
+            </p>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {[
+                { nombre: "VOLVER AL SILENCIO", image: "/images/retiro-volver-silencio.png" },
+                { nombre: "LIMPIA TU ENERGÍA", image: "/images/retiro-limpia-energia.png" },
+                { nombre: "CÓDIGOS DE LUZ", image: "/images/retiro-codigos-luz.png" },
+                { nombre: "RECUPERA TU CENTRO", image: "/images/retiro-recupera-centro.png" },
+                { nombre: "SANA Y CIERRA CICLOS", image: "/images/retiro-sana-ciclos.png" },
+                { nombre: "CLAVES INTERNAS PARA EL BIENESTAR VERDADERO", image: "/images/retiro-claves-bienestar.png" },
+              ].map((retiro, idx) => (
+                <div key={idx} className="group relative overflow-hidden rounded-lg h-40 cursor-pointer">
+                  <img
+                    src={retiro.image}
+                    alt={retiro.nombre}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent flex items-end p-4">
+                    <h3 className="text-white font-display font-bold text-sm md:text-base leading-tight">
+                      {retiro.nombre}
+                    </h3>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Testimonios Section */}
       <section className="py-20 md:py-32 bg-background">
         <div className="container mx-auto px-4">
@@ -359,44 +397,6 @@ export default function ClubRetiroSagrado() {
                   </h3>
                   <p className="text-muted-foreground ml-6">{faq.a}</p>
                 </Card>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Retiros 2025 - Incluidos en Tu Membresía */}
-      <section className="py-20 md:py-32 bg-background">
-        <div className="container mx-auto px-4">
-          <div className="max-w-5xl mx-auto">
-            <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-6 text-center">
-              Retiros 2025 - Incluidos en Tu Membresía
-            </h2>
-            <p className="text-center text-muted-foreground mb-16 text-lg">
-              Acceso a todas las grabaciones de retiros anteriores mientras mantengas tu membresía activa
-            </p>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {[
-                { nombre: "VOLVER AL SILENCIO", image: "/images/retiro-volver-silencio.png" },
-                { nombre: "LIMPIA TU ENERGÍA", image: "/images/retiro-limpia-energia.png" },
-                { nombre: "CÓDIGOS DE LUZ", image: "/images/retiro-codigos-luz.png" },
-                { nombre: "RECUPERA TU CENTRO", image: "/images/retiro-recupera-centro.png" },
-                { nombre: "SANA Y CIERRA CICLOS", image: "/images/retiro-sana-ciclos.png" },
-                { nombre: "CLAVES INTERNAS PARA EL BIENESTAR VERDADERO", image: "/images/retiro-claves-bienestar.png" },
-              ].map((retiro, idx) => (
-                <div key={idx} className="group relative overflow-hidden rounded-lg h-40 cursor-pointer">
-                  <img
-                    src={retiro.image}
-                    alt={retiro.nombre}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent flex items-end p-4">
-                    <h3 className="text-white font-display font-bold text-sm md:text-base leading-tight">
-                      {retiro.nombre}
-                    </h3>
-                  </div>
-                </div>
               ))}
             </div>
           </div>
