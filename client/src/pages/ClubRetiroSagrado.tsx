@@ -1,15 +1,19 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { Check, Heart, Users, Calendar, Play, Star, ArrowRight, Lock, ChevronDown } from "lucide-react";
+import { Check, Heart, Users, Calendar, Play, Star, ArrowRight, Lock, ChevronDown, X, Clock, MapPin } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Link } from "wouter";
 import { useState } from "react";
+import { eventos } from "@/lib/events";
 
 export default function ClubRetiroSagrado() {
   const kajabi_mensual = "https://www.i3cdigital.com/offers/GdzCo9uE/checkout";
   const kajabi_anual = "https://www.i3cdigital.com/offers/JvrtZ9TF";
   const [expandedFAQ, setExpandedFAQ] = useState<number | null>(null);
+  const [selectedRetiro, setSelectedRetiro] = useState<any>(null);
+
+  const retirosSagrados2026 = eventos.filter(evento => evento.tipo === "Retiro Sagrado").slice(0, 12);
 
   return (
     <div className="min-h-screen flex flex-col bg-background">
@@ -140,37 +144,117 @@ export default function ClubRetiroSagrado() {
             <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-12 text-center">
               Los 12 Retiros de 2026 con YOHEV
             </h2>
+            <p className="text-center text-muted-foreground mb-12 text-lg">
+              Haz click en cualquier retiro para ver más detalles
+            </p>
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {[
-                { mes: "Enero", nombre: "Presencia Viva", img: "/images/retiro-presencia-viva.png" },
-                { mes: "Febrero", nombre: "La Arquitectura del Amor", img: "/images/retiro-8-amor-divino.png" },
-                { mes: "Marzo", nombre: "Reinicio Energético Profundo", img: "/images/retiro-reinicio.png" },
-                { mes: "Abril", nombre: "El Niño que Habita en Ti", img: "/images/retiro-nino-interior.png" },
-                { mes: "Mayo", nombre: "El Vínculo Materno", img: "/images/retiro-vinculo-materno.png" },
-                { mes: "Junio", nombre: "La Fuerza Paterna", img: "/images/retiro-fuerza-paterna.png" },
-                { mes: "Julio", nombre: "Rompe la Capa del Estrés Crónico", img: "/images/retiro-estres.png" },
-                { mes: "Agosto", nombre: "El Arte de Soltar con Conciencia", img: "/images/retiro-soltar.png" },
-                { mes: "Septiembre", nombre: "El Poder de Elegir", img: "/images/retiro-poder-elegir.png" },
-                { mes: "Octubre", nombre: "Protección Energética Consciente", img: "/images/retiro-proteccion.png" },
-                { mes: "Noviembre", nombre: "El Llamado de los Ancestros", img: "/images/retiro-ancestros.png" },
-                { mes: "Diciembre", nombre: "Cierra el Año en Luz", img: "/images/retiro-cierre.png" }
-              ].map((retiro, idx) => (
-                <Card key={idx} className="overflow-hidden border-border/50 bg-background hover:shadow-lg transition-all">
+              {retirosSagrados2026.map((retiro) => (
+                <Card 
+                  key={retiro.id} 
+                  className="overflow-hidden border-border/50 bg-background hover:shadow-lg transition-all cursor-pointer"
+                  onClick={() => setSelectedRetiro(retiro)}
+                >
                   <div className="relative h-40 overflow-hidden">
                     <img 
-                      src={retiro.img} 
-                      alt={retiro.nombre}
+                      src={retiro.imagen} 
+                      alt={retiro.title}
                       className="w-full h-full object-cover hover:scale-105 transition-transform"
                     />
                   </div>
                   <div className="p-4">
-                    <p className="text-sm text-primary font-semibold mb-1">{retiro.mes}</p>
-                    <h3 className="font-semibold text-foreground text-sm">{retiro.nombre}</h3>
+                    <p className="text-sm text-primary font-semibold mb-1">{retiro.fecha.split(",")[0]}</p>
+                    <h3 className="font-semibold text-foreground text-sm">{retiro.title}</h3>
                   </div>
                 </Card>
               ))}
             </div>
+
+            {selectedRetiro && (
+              <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4" onClick={() => setSelectedRetiro(null)}>
+                <Card className="max-w-2xl w-full bg-background border-border/50 max-h-[90vh] overflow-y-auto" onClick={(e) => e.stopPropagation()}>
+                  <div className="relative">
+                    <img 
+                      src={selectedRetiro.imagen} 
+                      alt={selectedRetiro.title}
+                      className="w-full h-64 object-cover"
+                    />
+                    <button
+                      onClick={() => setSelectedRetiro(null)}
+                      className="absolute top-4 right-4 bg-black/50 hover:bg-black/70 text-white p-2 rounded-full transition-all"
+                    >
+                      <X size={24} />
+                    </button>
+                  </div>
+                  
+                  <div className="p-8">
+                    <h2 className="font-display text-3xl font-bold text-foreground mb-4">
+                      {selectedRetiro.title}
+                    </h2>
+                    
+                    <p className="text-muted-foreground mb-6 text-lg leading-relaxed">
+                      {selectedRetiro.description}
+                    </p>
+
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                      <div className="flex items-start gap-3">
+                        <Calendar size={24} className="text-primary flex-shrink-0 mt-1" />
+                        <div>
+                          <p className="text-sm text-muted-foreground">Fecha</p>
+                          <p className="font-semibold text-foreground">{selectedRetiro.fecha}</p>
+                        </div>
+                      </div>
+
+                      <div className="flex items-start gap-3">
+                        <Clock size={24} className="text-primary flex-shrink-0 mt-1" />
+                        <div>
+                          <p className="text-sm text-muted-foreground">Horario</p>
+                          <p className="font-semibold text-foreground">{selectedRetiro.horario}</p>
+                        </div>
+                      </div>
+
+                      <div className="flex items-start gap-3">
+                        <MapPin size={24} className="text-primary flex-shrink-0 mt-1" />
+                        <div>
+                          <p className="text-sm text-muted-foreground">Modalidad</p>
+                          <p className="font-semibold text-foreground">{selectedRetiro.modalidad}</p>
+                        </div>
+                      </div>
+
+                      <div className="flex items-start gap-3">
+                        <Users size={24} className="text-primary flex-shrink-0 mt-1" />
+                        <div>
+                          <p className="text-sm text-muted-foreground">Participantes</p>
+                          <p className="font-semibold text-foreground">{selectedRetiro.participantes}</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    {selectedRetiro.incluye && selectedRetiro.incluye.length > 0 && (
+                      <div className="mb-8">
+                        <h3 className="font-semibold text-foreground mb-4 text-lg">Incluye:</h3>
+                        <ul className="space-y-2">
+                          {selectedRetiro.incluye.map((item, idx) => (
+                            <li key={idx} className="flex items-center gap-2 text-muted-foreground">
+                              <Check size={18} className="text-primary flex-shrink-0" />
+                              {item}
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
+
+                    <div className="border-t border-border/30 pt-6">
+                      <a href="#pricing">
+                        <Button size="lg" className="w-full bg-primary hover:bg-primary/90 text-white font-bold py-6">
+                          Unirse al Club para Acceder
+                        </Button>
+                      </a>
+                    </div>
+                  </div>
+                </Card>
+              </div>
+            )}
           </div>
         </div>
       </section>
