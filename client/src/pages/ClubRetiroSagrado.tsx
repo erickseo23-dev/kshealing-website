@@ -1,13 +1,15 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { Check, Heart, Users, Calendar, Play, Star, ArrowRight, Lock } from "lucide-react";
+import { Check, Heart, Users, Calendar, Play, Star, ArrowRight, Lock, ChevronDown } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Link } from "wouter";
+import { useState } from "react";
 
 export default function ClubRetiroSagrado() {
   const kajabi_mensual = "https://www.i3cdigital.com/offers/GdzCo9uE/checkout";
   const kajabi_anual = "https://www.i3cdigital.com/offers/JvrtZ9TF";
+  const [expandedFAQ, setExpandedFAQ] = useState<number | null>(null);
 
   return (
     <div className="min-h-screen flex flex-col bg-background">
@@ -107,7 +109,7 @@ export default function ClubRetiroSagrado() {
                       Acceso a la Comunidad del Club
                     </h3>
                     <p className="text-muted-foreground">
-                      Conecta con cientos de personas en tu mismo camino de transformación. Comparte experiencias, preguntas y crece juntos en un espacio seguro.
+                      Conecta con otros miembros en transformación. Comparte experiencias, aprende de otros y crece juntos en comunidad.
                     </p>
                   </div>
                 </div>
@@ -115,7 +117,7 @@ export default function ClubRetiroSagrado() {
 
               <Card className="p-8 border-border/50 bg-gradient-to-br from-background to-primary/5 hover:shadow-lg transition-all">
                 <div className="flex items-start gap-4 mb-4">
-                  <Heart size={32} className="text-primary flex-shrink-0 mt-1" />
+                  <Lock size={32} className="text-primary flex-shrink-0 mt-1" />
                   <div>
                     <h3 className="font-display text-2xl font-bold text-foreground mb-2">
                       Contenido Exclusivo
@@ -131,93 +133,88 @@ export default function ClubRetiroSagrado() {
         </div>
       </section>
 
-      {/* Retiros 2026 Preview with Images */}
+      {/* Retiros 2026 Section */}
       <section className="py-20 md:py-32 bg-primary/5">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
-              <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-6 text-center">
-                Los 12 Retiros de 2026 con YOHEV
-              </h2>
-            <p className="text-center text-muted-foreground mb-16 text-lg">
-              Un viaje progresivo de transformación, mes a mes
-            </p>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {[
-                { mes: "Enero", nombre: "PRESENCIA VIVA", image: "/images/retiro-presencia-viva.png" },
-                { mes: "Febrero", nombre: "LA ARQUITECTURA DEL AMOR", image: "/images/retiro-8-amor-divino.png" },
-                { mes: "Marzo", nombre: "REINICIO ENERGÉTICO PROFUNDO", image: "/images/retiro-reinicio.png" },
-                { mes: "Abril", nombre: "EL NIÑO QUE HABITA EN TI", image: "/images/retiro-nino-interior.png" },
-                { mes: "Mayo", nombre: "EL VÍNCULO MATERNO", image: "/images/retiro-vinculo-materno.png" },
-                { mes: "Junio", nombre: "LA FUERZA PATERNA", image: "/images/retiro-fuerza-paterna.png" },
-                { mes: "Julio", nombre: "ROMPE LA CAPA DEL ESTRÉS CRÓNICO", image: "/images/retiro-estres.png" },
-                { mes: "Agosto", nombre: "EL ARTE DE SOLTAR CON CONCIENCIA", image: "/images/retiro-soltar.png" },
-                { mes: "Septiembre", nombre: "EL PODER DE ELEGIR", image: "/images/retiro-poder-elegir.png" },
-                { mes: "Octubre", nombre: "PROTECCIÓN ENERGÉTICA CONSCIENTE", image: "/images/retiro-proteccion.png" },
-                { mes: "Noviembre", nombre: "EL LLAMADO DE LOS ANCESTROS", image: "/images/retiro-ancestros.png" },
-                { mes: "Diciembre", nombre: "CIERRA EL AÑO EN LUZ", image: "/images/retiro-cierre.png" },
-              ].map((retiro, idx) => (
-                <div key={idx} className="group relative overflow-hidden rounded-lg h-48 cursor-pointer">
-                  <img
-                    src={retiro.image}
-                    alt={retiro.nombre}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
-                  <div className="absolute bottom-0 left-0 right-0 p-4 text-white">
-                    <p className="text-sm font-semibold opacity-90">{retiro.mes}</p>
-                    <p className="font-display text-lg font-bold line-clamp-2">{retiro.nombre}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Retiros 2025 - Incluidos en Tu Membresía */}
-      <section className="py-20 md:py-32 bg-background">
-        <div className="container mx-auto px-4">
-          <div className="max-w-5xl mx-auto">
-            <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-6 text-center">
-              Retiros 2025 - Incluidos en Tu Membresía
+            <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-12 text-center">
+              Los 12 Retiros de 2026 con YOHEV
             </h2>
-            <p className="text-center text-muted-foreground mb-16 text-lg">
-              Acceso a todas las grabaciones de retiros anteriores mientras mantengas tu membresía activa
-            </p>
-
+            
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {[
-                { nombre: "VOLVER AL SILENCIO", image: "/images/retiro-volver-silencio.png" },
-                { nombre: "LIMPIA TU ENERGÍA", image: "/images/retiro-limpia-energia.png" },
-                { nombre: "CÓDIGOS DE LUZ", image: "/images/retiro-codigos-luz.png" },
-                { nombre: "RECUPERA TU CENTRO", image: "/images/retiro-recupera-centro.png" },
-                { nombre: "SANA Y CIERRA CICLOS", image: "/images/retiro-sana-ciclos.png" },
-                { nombre: "CLAVES INTERNAS PARA EL BIENESTAR VERDADERO", image: "/images/retiro-claves-bienestar.png" },
+                { mes: "Enero", nombre: "Presencia Viva", img: "/images/retiro-presencia-viva.png" },
+                { mes: "Febrero", nombre: "La Arquitectura del Amor", img: "/images/retiro-8-amor-divino.png" },
+                { mes: "Marzo", nombre: "Reinicio Energético Profundo", img: "/images/retiro-reinicio.png" },
+                { mes: "Abril", nombre: "El Niño que Habita en Ti", img: "/images/retiro-nino-interior.png" },
+                { mes: "Mayo", nombre: "El Vínculo Materno", img: "/images/retiro-vinculo-materno.png" },
+                { mes: "Junio", nombre: "La Fuerza Paterna", img: "/images/retiro-fuerza-paterna.png" },
+                { mes: "Julio", nombre: "Rompe la Capa del Estrés Crónico", img: "/images/retiro-estres.png" },
+                { mes: "Agosto", nombre: "El Arte de Soltar con Conciencia", img: "/images/retiro-soltar.png" },
+                { mes: "Septiembre", nombre: "El Poder de Elegir", img: "/images/retiro-poder-elegir.png" },
+                { mes: "Octubre", nombre: "Protección Energética Consciente", img: "/images/retiro-proteccion.png" },
+                { mes: "Noviembre", nombre: "El Llamado de los Ancestros", img: "/images/retiro-ancestros.png" },
+                { mes: "Diciembre", nombre: "Cierra el Año en Luz", img: "/images/retiro-cierre.png" }
               ].map((retiro, idx) => (
-                <div key={idx} className="group relative overflow-hidden rounded-lg h-40 cursor-pointer">
-                  <img
-                    src={retiro.image}
-                    alt={retiro.nombre}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent flex items-end p-4">
-                    <h3 className="text-white font-display font-bold text-sm md:text-base leading-tight">
-                      {retiro.nombre}
-                    </h3>
+                <Card key={idx} className="overflow-hidden border-border/50 bg-background hover:shadow-lg transition-all">
+                  <div className="relative h-40 overflow-hidden">
+                    <img 
+                      src={retiro.img} 
+                      alt={retiro.nombre}
+                      className="w-full h-full object-cover hover:scale-105 transition-transform"
+                    />
                   </div>
-                </div>
+                  <div className="p-4">
+                    <p className="text-sm text-primary font-semibold mb-1">{retiro.mes}</p>
+                    <h3 className="font-semibold text-foreground text-sm">{retiro.nombre}</h3>
+                  </div>
+                </Card>
               ))}
             </div>
           </div>
         </div>
       </section>
 
-      {/* Testimonios Section */}
+      {/* Retiros 2025 Section */}
       <section className="py-20 md:py-32 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
-            <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-6 text-center">
+            <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-12 text-center">
+              Retiros 2025 - Incluidos en Tu Membresía
+            </h2>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {[
+                { nombre: "Volver al Silencio", img: "/images/retiro-volver-silencio.png" },
+                { nombre: "Limpia tu Energía", img: "/images/retiro-limpia-energia.png" },
+                { nombre: "Códigos de Luz", img: "/images/retiro-codigos-luz.png" },
+                { nombre: "Recupera tu Centro", img: "/images/retiro-recupera-centro.png" },
+                { nombre: "Sana y Cierra Ciclos", img: "/images/retiro-sana-ciclos.png" },
+                { nombre: "Claves Internas para el Bienestar Verdadero", img: "/images/retiro-claves-bienestar.png" }
+              ].map((retiro, idx) => (
+                <Card key={idx} className="overflow-hidden border-border/50 bg-primary/5 hover:shadow-lg transition-all">
+                  <div className="relative h-40 overflow-hidden">
+                    <img 
+                      src={retiro.img} 
+                      alt={retiro.nombre}
+                      className="w-full h-full object-cover hover:scale-105 transition-transform"
+                    />
+                  </div>
+                  <div className="p-4">
+                    <h3 className="font-semibold text-foreground text-sm">{retiro.nombre}</h3>
+                  </div>
+                </Card>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials Section */}
+      <section className="py-20 md:py-32 bg-primary/5">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-12 text-center">
               Lo Que Dicen Nuestros Miembros
             </h2>
             <p className="text-center text-muted-foreground mb-16 text-lg">
@@ -278,12 +275,11 @@ export default function ClubRetiroSagrado() {
                   <h3 className="font-display text-2xl font-bold text-foreground mb-2">
                     Membresía Mensual
                   </h3>
-                  <p className="text-muted-foreground mb-6">Prueba el Club sin compromiso a largo plazo</p>
-                  <div className="flex items-baseline gap-2 mb-4">
-                    <span className="font-display text-4xl font-bold text-foreground">$500</span>
-                    <span className="text-muted-foreground">MXN/mes</span>
+                  <p className="text-muted-foreground mb-6">Flexibilidad total, cancela cuando quieras</p>
+                  <div className="mb-6">
+                    <span className="font-display text-5xl font-bold text-primary">$500</span>
+                    <span className="text-muted-foreground">/mes</span>
                   </div>
-                  <p className="text-sm text-muted-foreground mb-8">Cancelable en cualquier momento</p>
                 </div>
 
                 <ul className="space-y-4 mb-8">
@@ -301,28 +297,27 @@ export default function ClubRetiroSagrado() {
                   ))}
                 </ul>
 
-                <a href={kajabi_mensual} target="_blank" rel="noopener noreferrer" className="block">
+                <a href={kajabi_mensual} target="_blank" rel="noopener noreferrer">
                   <Button size="lg" className="w-full bg-primary hover:bg-primary/90 text-white font-bold text-lg py-6">
-                    Comenzar Mensual
+                    Comenzar Ahora
                   </Button>
                 </a>
               </Card>
 
-              {/* Annual Plan - Recommended */}
-              <Card className="p-8 border-2 border-primary bg-gradient-to-br from-primary/10 to-primary/5 hover:shadow-lg transition-all relative">
-                <div className="absolute top-0 right-0 bg-primary text-white px-4 py-2 rounded-bl-lg font-semibold text-sm">
-                  Ahorra 2 meses
+              {/* Annual Plan */}
+              <Card className="p-8 border-2 border-primary bg-background relative hover:shadow-lg transition-all">
+                <div className="absolute -top-4 -right-4 bg-primary text-white px-4 py-2 rounded-full text-sm font-bold">
+                  MEJOR VALOR
                 </div>
                 <div className="mb-8">
                   <h3 className="font-display text-2xl font-bold text-foreground mb-2">
                     Membresía Anual
                   </h3>
-                  <p className="text-muted-foreground mb-6">La mejor opción. Ahorra equivalente a 2 meses</p>
-                  <div className="flex items-baseline gap-2 mb-4">
-                    <span className="font-display text-4xl font-bold text-foreground">$5,000</span>
-                    <span className="text-muted-foreground">MXN/año</span>
+                  <p className="text-muted-foreground mb-6">Ahorra $1,000 vs pagar mensual</p>
+                  <div className="mb-6">
+                    <span className="font-display text-5xl font-bold text-primary">$5,000</span>
+                    <span className="text-muted-foreground">/año</span>
                   </div>
-                  <p className="text-sm text-primary font-semibold mb-8">Solo $416 por mes</p>
                 </div>
 
                 <ul className="space-y-4 mb-8">
@@ -340,20 +335,17 @@ export default function ClubRetiroSagrado() {
                   ))}
                 </ul>
 
-                <a href={kajabi_anual} target="_blank" rel="noopener noreferrer" className="block">
+                <a href={kajabi_anual} target="_blank" rel="noopener noreferrer">
                   <Button size="lg" className="w-full bg-primary hover:bg-primary/90 text-white font-bold text-lg py-6">
-                    Comenzar Anual
+                    Comenzar Ahora
                   </Button>
                 </a>
               </Card>
             </div>
 
-            <div className="text-center p-8 bg-background rounded-lg border border-border/50">
-              <p className="text-foreground font-semibold mb-2">
-                Garantía de satisfacción: Reembolso completo en los primeros 7 días si no estás satisfecho.
-              </p>
-              <p className="text-muted-foreground text-sm">
-                Todos los retiros son facilitados directamente por YOHEV. Acceso ilimitado a grabaciones.
+            <div className="text-center">
+              <p className="text-muted-foreground">
+                Ambos planes incluyen acceso completo a todos los retiros en vivo, grabaciones, comunidad y contenido exclusivo.
               </p>
             </div>
           </div>
@@ -368,39 +360,65 @@ export default function ClubRetiroSagrado() {
               Preguntas Frecuentes
             </h2>
 
-            <div className="space-y-6">
+            <div className="space-y-4">
               {[
                 {
                   q: "¿Quién facilita los retiros?",
                   a: "Todos los retiros del Club son facilitados directamente por YOHEV. No son con otros facilitadores. YOHEV aporta su experiencia, profundidad espiritual y presencia única a cada retiro."
                 },
                 {
-                  q: "¿Cuándo comienza mi membresía?",
-                  a: "Tu acceso comienza inmediatamente después de completar el pago. Recibirás un email con las instrucciones de acceso a la plataforma."
+                  q: "¿Cuándo comienza mi membresía y cómo accedo?",
+                  a: "Tu acceso comienza inmediatamente después de completar el pago en Kajabi. Recibirás un email con las instrucciones de acceso a la plataforma y el link de Zoom para los retiros en vivo. Si no recibes el email, revisa tu carpeta de spam."
                 },
                 {
-                  q: "¿Puedo ver los retiros en vivo si no estoy en la zona horaria CDMX?",
-                  a: "Sí. Los retiros se graban y tienes acceso ilimitado a todas las grabaciones. Puedes verlas en cualquier momento que te convenga."
+                  q: "¿A qué hora son los retiros y en qué zona horaria?",
+                  a: "Los retiros son cada primer domingo del mes de 8:00 a 12:00 hrs (CDMX). Febrero es excepción: domingo 8 de febrero de 7:00 a 11:00 hrs (CDMX). Todos los retiros son EN VIVO, POR ZOOM."
+                },
+                {
+                  q: "¿Puedo ver los retiros si no estoy en la zona horaria CDMX?",
+                  a: "Sí. Los retiros se graban y tienes acceso ilimitado a todas las grabaciones. Puedes verlas en cualquier momento que te convenga, desde cualquier parte del mundo."
                 },
                 {
                   q: "¿Qué pasa si me pierdo un retiro en vivo?",
-                  a: "No hay problema. La grabación estará disponible en tu plataforma dentro de 24 horas. Puedes verla cuantas veces necesites."
+                  a: "No hay problema. La grabación estará disponible en tu plataforma dentro de 24 horas. Puedes verla cuantas veces necesites mientras mantengas tu membresía activa."
                 },
                 {
                   q: "¿Puedo cambiar entre plan mensual y anual?",
-                  a: "Sí. Puedes comenzar con el plan mensual y cambiar al anual en cualquier momento. Contacta a nuestro equipo de soporte para asistencia."
+                  a: "Sí. Puedes comenzar con el plan mensual y cambiar al anual en cualquier momento. Contacta a nuestro equipo de soporte en Kajabi para asistencia con el cambio de plan."
                 },
                 {
                   q: "¿Qué pasa si cancelo mi membresía?",
                   a: "Puedes cancelar tu suscripción en cualquier momento sin penalización. Sin embargo, al cancelar pierdes acceso inmediato a todo el contenido del Club, incluyendo grabaciones y acceso a la comunidad. El contenido solo está disponible mientras mantengas tu membresía activa."
+                },
+                {
+                  q: "¿Hay soporte técnico si tengo problemas con Zoom?",
+                  a: "Sí. Nuestro equipo de soporte está disponible para ayudarte con cualquier problema técnico. Puedes contactar a través de la plataforma de Kajabi o enviar un email a soporte."
                 }
               ].map((faq, idx) => (
-                <Card key={idx} className="p-6 border-border/50 bg-primary/5">
-                  <h3 className="font-semibold text-foreground mb-3 flex items-start gap-2">
-                    <span className="text-primary font-bold mt-1">Q:</span>
-                    {faq.q}
-                  </h3>
-                  <p className="text-muted-foreground ml-6">{faq.a}</p>
+                <Card 
+                  key={idx} 
+                  className="border-border/50 bg-primary/5 hover:shadow-md transition-all cursor-pointer"
+                  onClick={() => setExpandedFAQ(expandedFAQ === idx ? null : idx)}
+                >
+                  <div className="p-6">
+                    <div className="flex items-center justify-between gap-4">
+                      <h3 className="font-semibold text-foreground flex items-center gap-2 flex-1">
+                        <span className="text-primary font-bold">Q:</span>
+                        {faq.q}
+                      </h3>
+                      <ChevronDown 
+                        size={20} 
+                        className={`text-primary flex-shrink-0 transition-transform ${
+                          expandedFAQ === idx ? 'rotate-180' : ''
+                        }`}
+                      />
+                    </div>
+                    {expandedFAQ === idx && (
+                      <p className="text-muted-foreground ml-6 mt-4 pt-4 border-t border-border/30">
+                        {faq.a}
+                      </p>
+                    )}
+                  </div>
                 </Card>
               ))}
             </div>
