@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { Check, Heart, Users, Calendar, Play, Star, ArrowRight, Lock, ChevronDown, X, Clock, MapPin } from "lucide-react";
+import { Check, Heart, Users, Calendar, Play, Star, ArrowRight, Lock, ChevronDown, X, Clock, MapPin, Facebook, MessageCircle, Twitter, Linkedin, Share2 } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Link } from "wouter";
@@ -15,6 +15,22 @@ export default function ClubRetiroSagrado() {
   const [selectedRetiro2025, setSelectedRetiro2025] = useState<any>(null);
 
   const retirosSagrados2026 = eventos.filter(evento => evento.tipo === "Retiro Sagrado").slice(0, 12);
+
+  const shareOnSocial = (platform: string, retiroTitle: string) => {
+    const url = window.location.href;
+    const text = `Descubre el Retiro Sagrado: ${retiroTitle} con YOHEV. Transformación, sanación y consciencia. Únete al Club del Retiro Sagrado.`;
+    
+    const shareUrls: { [key: string]: string } = {
+      facebook: `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}&quote=${encodeURIComponent(text)}`,
+      whatsapp: `https://wa.me/?text=${encodeURIComponent(text + ' ' + url)}`,
+      twitter: `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(url)}`,
+      linkedin: `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(url)}`
+    };
+    
+    if (shareUrls[platform]) {
+      window.open(shareUrls[platform], '_blank', 'width=600,height=400');
+    }
+  };
 
   const retiros2025 = [
     {
@@ -316,6 +332,40 @@ export default function ClubRetiroSagrado() {
                       </div>
                     )}
 
+                    <div className="border-t border-border/30 pt-6 mb-6">
+                      <p className="text-sm text-muted-foreground mb-4 font-semibold">Comparte este retiro:</p>
+                      <div className="flex gap-3 flex-wrap">
+                        <button
+                          onClick={() => shareOnSocial('facebook', selectedRetiro.title)}
+                          className="flex items-center gap-2 px-4 py-2 bg-[#1877F2] hover:bg-[#165FD8] text-white rounded-lg transition-all text-sm font-medium"
+                        >
+                          <Facebook size={18} />
+                          Facebook
+                        </button>
+                        <button
+                          onClick={() => shareOnSocial('whatsapp', selectedRetiro.title)}
+                          className="flex items-center gap-2 px-4 py-2 bg-[#25D366] hover:bg-[#1FA854] text-white rounded-lg transition-all text-sm font-medium"
+                        >
+                          <MessageCircle size={18} />
+                          WhatsApp
+                        </button>
+                        <button
+                          onClick={() => shareOnSocial('twitter', selectedRetiro.title)}
+                          className="flex items-center gap-2 px-4 py-2 bg-[#000000] hover:bg-[#1a1a1a] text-white rounded-lg transition-all text-sm font-medium"
+                        >
+                          <Twitter size={18} />
+                          Twitter
+                        </button>
+                        <button
+                          onClick={() => shareOnSocial('linkedin', selectedRetiro.title)}
+                          className="flex items-center gap-2 px-4 py-2 bg-[#0A66C2] hover:bg-[#084B9E] text-white rounded-lg transition-all text-sm font-medium"
+                        >
+                          <Linkedin size={18} />
+                          LinkedIn
+                        </button>
+                      </div>
+                    </div>
+
                     <div className="border-t border-border/30 pt-6">
                       <a href="#pricing">
                         <Button size="lg" className="w-full bg-primary hover:bg-primary/90 text-white font-bold py-6">
@@ -397,6 +447,40 @@ export default function ClubRetiroSagrado() {
                       <p className="text-muted-foreground mt-2 text-sm">
                         Accede a la grabación completa desde tu plataforma de miembro
                       </p>
+                    </div>
+
+                    <div className="border-t border-border/30 pt-6 mb-6">
+                      <p className="text-sm text-muted-foreground mb-4 font-semibold">Comparte este retiro:</p>
+                      <div className="flex gap-3 flex-wrap">
+                        <button
+                          onClick={() => shareOnSocial('facebook', selectedRetiro2025.nombre)}
+                          className="flex items-center gap-2 px-4 py-2 bg-[#1877F2] hover:bg-[#165FD8] text-white rounded-lg transition-all text-sm font-medium"
+                        >
+                          <Facebook size={18} />
+                          Facebook
+                        </button>
+                        <button
+                          onClick={() => shareOnSocial('whatsapp', selectedRetiro2025.nombre)}
+                          className="flex items-center gap-2 px-4 py-2 bg-[#25D366] hover:bg-[#1FA854] text-white rounded-lg transition-all text-sm font-medium"
+                        >
+                          <MessageCircle size={18} />
+                          WhatsApp
+                        </button>
+                        <button
+                          onClick={() => shareOnSocial('twitter', selectedRetiro2025.nombre)}
+                          className="flex items-center gap-2 px-4 py-2 bg-[#000000] hover:bg-[#1a1a1a] text-white rounded-lg transition-all text-sm font-medium"
+                        >
+                          <Twitter size={18} />
+                          Twitter
+                        </button>
+                        <button
+                          onClick={() => shareOnSocial('linkedin', selectedRetiro2025.nombre)}
+                          className="flex items-center gap-2 px-4 py-2 bg-[#0A66C2] hover:bg-[#084B9E] text-white rounded-lg transition-all text-sm font-medium"
+                        >
+                          <Linkedin size={18} />
+                          LinkedIn
+                        </button>
+                      </div>
                     </div>
 
                     <div className="border-t border-border/30 pt-6">
