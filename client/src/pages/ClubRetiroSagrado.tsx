@@ -16,15 +16,15 @@ export default function ClubRetiroSagrado() {
 
   const retirosSagrados2026 = eventos.filter(evento => evento.tipo === "Retiro Sagrado").slice(0, 12);
 
-  const shareOnSocial = (platform: string, retiroTitle: string) => {
-    const url = window.location.href;
-    const text = `Descubre el Retiro Sagrado: ${retiroTitle} con YOHEV. Transformación, sanación y consciencia. Únete al Club del Retiro Sagrado.`;
+  const shareOnSocial = (platform: string, retiroTitle: string, retiroDescription?: string) => {
+    const clubUrl = 'https://www.i3cdigital.com/products/club-de-retiro-sagrado';
+    const text = `Descubre el Retiro Sagrado: ${retiroTitle} con YOHEV. ${retiroDescription || 'Transformación, sanación y consciencia.'} Únete al Club del Retiro Sagrado.`;
     
     const shareUrls: { [key: string]: string } = {
-      facebook: `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}&quote=${encodeURIComponent(text)}`,
-      whatsapp: `https://wa.me/?text=${encodeURIComponent(text + ' ' + url)}`,
-      twitter: `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(url)}`,
-      linkedin: `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(url)}`
+      facebook: `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(clubUrl)}&quote=${encodeURIComponent(text)}`,
+      whatsapp: `https://wa.me/?text=${encodeURIComponent(text + ' ' + clubUrl)}`,
+      twitter: `https://twitter.com/intent/tweet?text=${encodeURIComponent(text + ' ' + clubUrl)}`,
+      linkedin: `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(clubUrl)}`
     };
     
     if (shareUrls[platform]) {
@@ -336,28 +336,28 @@ export default function ClubRetiroSagrado() {
                       <p className="text-sm text-muted-foreground mb-4 font-semibold">Comparte este retiro:</p>
                       <div className="flex gap-3 flex-wrap">
                         <button
-                          onClick={() => shareOnSocial('facebook', selectedRetiro.title)}
+                          onClick={() => shareOnSocial('facebook', selectedRetiro.title, selectedRetiro.description)}
                           className="flex items-center gap-2 px-4 py-2 bg-[#1877F2] hover:bg-[#165FD8] text-white rounded-lg transition-all text-sm font-medium"
                         >
                           <Facebook size={18} />
                           Facebook
                         </button>
                         <button
-                          onClick={() => shareOnSocial('whatsapp', selectedRetiro.title)}
+                          onClick={() => shareOnSocial('whatsapp', selectedRetiro.title, selectedRetiro.description)}
                           className="flex items-center gap-2 px-4 py-2 bg-[#25D366] hover:bg-[#1FA854] text-white rounded-lg transition-all text-sm font-medium"
                         >
                           <MessageCircle size={18} />
                           WhatsApp
                         </button>
                         <button
-                          onClick={() => shareOnSocial('twitter', selectedRetiro.title)}
+                          onClick={() => shareOnSocial('twitter', selectedRetiro.title, selectedRetiro.description)}
                           className="flex items-center gap-2 px-4 py-2 bg-[#000000] hover:bg-[#1a1a1a] text-white rounded-lg transition-all text-sm font-medium"
                         >
                           <Twitter size={18} />
                           Twitter
                         </button>
                         <button
-                          onClick={() => shareOnSocial('linkedin', selectedRetiro.title)}
+                          onClick={() => shareOnSocial('linkedin', selectedRetiro.title, selectedRetiro.description)}
                           className="flex items-center gap-2 px-4 py-2 bg-[#0A66C2] hover:bg-[#084B9E] text-white rounded-lg transition-all text-sm font-medium"
                         >
                           <Linkedin size={18} />
@@ -453,28 +453,28 @@ export default function ClubRetiroSagrado() {
                       <p className="text-sm text-muted-foreground mb-4 font-semibold">Comparte este retiro:</p>
                       <div className="flex gap-3 flex-wrap">
                         <button
-                          onClick={() => shareOnSocial('facebook', selectedRetiro2025.nombre)}
+                          onClick={() => shareOnSocial('facebook', selectedRetiro2025.nombre, selectedRetiro2025.descripcion)}
                           className="flex items-center gap-2 px-4 py-2 bg-[#1877F2] hover:bg-[#165FD8] text-white rounded-lg transition-all text-sm font-medium"
                         >
                           <Facebook size={18} />
                           Facebook
                         </button>
                         <button
-                          onClick={() => shareOnSocial('whatsapp', selectedRetiro2025.nombre)}
+                          onClick={() => shareOnSocial('whatsapp', selectedRetiro2025.nombre, selectedRetiro2025.descripcion)}
                           className="flex items-center gap-2 px-4 py-2 bg-[#25D366] hover:bg-[#1FA854] text-white rounded-lg transition-all text-sm font-medium"
                         >
                           <MessageCircle size={18} />
                           WhatsApp
                         </button>
                         <button
-                          onClick={() => shareOnSocial('twitter', selectedRetiro2025.nombre)}
+                          onClick={() => shareOnSocial('twitter', selectedRetiro2025.nombre, selectedRetiro2025.descripcion)}
                           className="flex items-center gap-2 px-4 py-2 bg-[#000000] hover:bg-[#1a1a1a] text-white rounded-lg transition-all text-sm font-medium"
                         >
                           <Twitter size={18} />
                           Twitter
                         </button>
                         <button
-                          onClick={() => shareOnSocial('linkedin', selectedRetiro2025.nombre)}
+                          onClick={() => shareOnSocial('linkedin', selectedRetiro2025.nombre, selectedRetiro2025.descripcion)}
                           className="flex items-center gap-2 px-4 py-2 bg-[#0A66C2] hover:bg-[#084B9E] text-white rounded-lg transition-all text-sm font-medium"
                         >
                           <Linkedin size={18} />
