@@ -10,7 +10,7 @@ export default function Navigation() {
     { label: "HOME", href: "/" },
     { label: "¿QUÉ ES KS HEALING?", href: "/que-es-ks-healing" },
     { label: "SOBRE YOHEV", href: "/sobre-yohev" },
-    { label: "CURSOS", href: "/cursos" },
+    { label: "CURSOS Y PROGRAMAS", href: "/cursos" },
     { label: "EL LIBRO", href: "/el-libro" },
     { label: "BLOG", href: "/blog" },
     { label: "TESTIMONIOS", href: "/testimonios" },
@@ -43,9 +43,11 @@ export default function Navigation() {
 
         {/* CTA Button - Desktop */}
         <div className="hidden lg:flex items-center gap-4">
-          <Button className="bg-primary hover:bg-primary/90 text-white">
-            Comenzar
-          </Button>
+          <Link href="/club-retiro-sagrado">
+            <Button className="bg-primary hover:bg-primary/90 text-white">
+              Club
+            </Button>
+          </Link>
         </div>
 
         {/* Mobile Menu Button */}
@@ -71,9 +73,11 @@ export default function Navigation() {
                 </a>
               </Link>
             ))}
-            <Button className="w-full bg-primary hover:bg-primary/90 text-white mt-4">
-              Comenzar
-            </Button>
+            <Link href="/club-retiro-sagrado" className="block">
+              <Button className="w-full bg-primary hover:bg-primary/90 text-white mt-4">
+                Club
+              </Button>
+            </Link>
           </div>
         </div>
       )}

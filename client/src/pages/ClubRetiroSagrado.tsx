@@ -26,15 +26,15 @@ export default function ClubRetiroSagrado() {
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl">
             <div className="inline-block mb-6 px-4 py-2 rounded-full bg-white/20 border border-white/30 backdrop-blur">
-              <span className="text-white font-semibold">💕 Transformación Continua con Yohev</span>
+              <span className="text-black font-semibold">💕 Transformación Continua con Yohev</span>
             </div>
-            <h1 className="font-display text-5xl md:text-6xl font-bold text-white mb-6">
+            <h1 className="font-display text-5xl md:text-6xl font-bold text-black mb-6">
               Club del Retiro Sagrado
             </h1>
-            <p className="text-xl md:text-2xl text-white/90 mb-8">
+            <p className="text-xl md:text-2xl text-black/90 mb-8">
               12 meses de transformación. 12 retiros en vivo. Siempre con Yohev.
             </p>
-            <p className="text-lg text-white/80 mb-12 max-w-2xl">
+            <p className="text-lg text-black/80 mb-12 max-w-2xl">
               Un viaje profundo de sanación, consciencia y transformación personal. Cada mes, un nuevo retiro facilitado directamente por Yohev. Cada retiro, una nueva oportunidad de evolucionar.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
@@ -71,10 +71,10 @@ export default function ClubRetiroSagrado() {
                   <Calendar size={32} className="text-primary flex-shrink-0 mt-1" />
                   <div>
                     <h3 className="font-display text-2xl font-bold text-foreground mb-2">
-                      12 Retiros en Vivo con Yohev
+                      Retiros Mensuales con Yohev
                     </h3>
                     <p className="text-muted-foreground">
-                      Cada primer domingo del mes (8-12 hrs CDMX). Conexión en directo con la comunidad. Facilitados directamente por Yohev.
+                      Cada primer domingo del mes (8-12 hrs CDMX). Conexión en directo con la comunidad. Facilitados directamente por Yohev. Acceso a todos los retiros del año.
                     </p>
                   </div>
                 </div>
@@ -99,10 +99,10 @@ export default function ClubRetiroSagrado() {
                   <Users size={32} className="text-primary flex-shrink-0 mt-1" />
                   <div>
                     <h3 className="font-display text-2xl font-bold text-foreground mb-2">
-                      Comunidad Global
+                      Acceso a la Comunidad del Club
                     </h3>
                     <p className="text-muted-foreground">
-                      Conecta con cientos de personas en tu mismo camino de transformación. Comparte experiencias y crece juntos.
+                      Conecta con cientos de personas en tu mismo camino de transformación. Comparte experiencias, preguntas y crece juntos en un espacio seguro.
                     </p>
                   </div>
                 </div>
@@ -113,10 +113,10 @@ export default function ClubRetiroSagrado() {
                   <Heart size={32} className="text-primary flex-shrink-0 mt-1" />
                   <div>
                     <h3 className="font-display text-2xl font-bold text-foreground mb-2">
-                      Acceso Permanente
+                      Contenido Exclusivo
                     </h3>
                     <p className="text-muted-foreground">
-                      Mantén acceso a todas las grabaciones incluso después de terminar tu membresía. Tu biblioteca de transformación es tuya.
+                      Acceso permanente a grabaciones de todos los retiros. Contenido exclusivo solo para miembros del Club. Tu biblioteca de transformación es tuya para siempre.
                     </p>
                   </div>
                 </div>
