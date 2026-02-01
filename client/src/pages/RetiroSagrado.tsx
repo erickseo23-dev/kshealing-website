@@ -15,27 +15,27 @@ export default function RetiroSagrado() {
 
       {/* Hero Section */}
       <section className="py-20 md:py-32 bg-cover bg-center bg-no-repeat relative" style={{backgroundImage: 'url(/images/retiro-8-amor-divino.png)'}}>
-        <div className="absolute inset-0 bg-black/40"></div>
+        <div className="absolute inset-0 bg-black/50"></div>
         <div className="relative z-10">
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto text-center">
-              <div className="inline-block mb-6 px-4 py-2 rounded-full bg-primary/10 border border-primary/20">
-                <span className="text-primary font-semibold">💕 Retiro Sagrado 8 - CON YOHEV</span>
+              <div className="inline-block mb-6 px-4 py-2 rounded-full bg-white/20 backdrop-blur-sm border border-white/30">
+                <span className="text-white font-semibold">💕 Retiro Sagrado 8 - CON YOHEV</span>
               </div>
-              <h1 className="font-display text-5xl md:text-6xl font-bold text-foreground mb-6">
-                La Arquitectura <span className="text-primary">del Amor</span>
+              <h1 className="font-display text-5xl md:text-6xl font-bold text-white mb-6 drop-shadow-lg">
+                La Arquitectura <span className="text-yellow-300">del Amor</span>
               </h1>
-              <p className="text-lg text-primary font-semibold mb-4">
+              <p className="text-lg text-white font-semibold mb-4 drop-shadow">
                 Facilitado directamente por YOHEV
               </p>
-              <p className="text-xl text-muted-foreground mb-6">
+              <p className="text-xl text-white mb-6 drop-shadow">
                 Del amor herido al Amor como principio divino
               </p>
-              <p className="text-lg text-muted-foreground mb-8 italic">
+              <p className="text-lg text-white mb-8 italic drop-shadow">
                 "El Amor verdadero no te rompe, te recuerda quién eres."
               </p>
-              <div className="inline-block mb-6 px-4 py-2 rounded-full bg-primary/10 border border-primary/20">
-                <span className="text-primary font-semibold">📅 Domingo 8 de Febrero | 7:00 - 11:00 hrs (CDMX)</span>
+              <div className="inline-block mb-6 px-4 py-2 rounded-full bg-white/20 backdrop-blur-sm border border-white/30">
+                <span className="text-white font-semibold">📅 Domingo 8 de Febrero | 7:00 - 11:00 hrs (CDMX)</span>
               </div>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link href="/club-retiro-sagrado">
@@ -533,7 +533,7 @@ export default function RetiroSagrado() {
                         <span>{retiro.horario}</span>
                       </div>
                     </div>
-                    <Link href={`/retiro-detalle?id=${retiro.id}`}>
+                    <Link href="/club-retiro-sagrado">
                       <Button size="sm" className="w-full bg-primary hover:bg-primary/90 text-white">
                         Ver Detalles
                       </Button>
@@ -543,7 +543,7 @@ export default function RetiroSagrado() {
             </div>
 
             <div className="text-center">
-              <Link href="/proximos-retiros">
+              <Link href="/club-retiro-sagrado">
                 <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-primary/10 gap-2">
                   Ver Todos los Retiros 2026
                   <ArrowRight size={20} />
