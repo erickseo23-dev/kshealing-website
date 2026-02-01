@@ -37,8 +37,10 @@ import KSHealing from "./pages/KSHealing";
 import DART from "./pages/DART";
 import GeneticaSagrada from "./pages/GeneticaSagrada";
 import RetiroSagrado from "./pages/RetiroSagrado";
-import ClubRetiroSagrado from "./pages/ClubRetiroSagrado";
 import Cursos from "./pages/Cursos";
+import ProximosRetiros from "@/pages/ProximosRetiros";
+import RetiroDetalle from "@/pages/RetiroDetalle";
+import ClubRetiroSagrado from "@/pages/ClubRetiroSagrado";
 import PoliticaPrivacidad from "./pages/PoliticaPrivacidad";
 import TerminosServicio from "./pages/TerminosServicio";
 import PoliticaCookies from "./pages/PoliticaCookies";
@@ -80,6 +82,8 @@ function Router() {
       <Route path={"/dart"} component={DART} />
       <Route path={"/genetica-sagrada"} component={GeneticaSagrada} />
       <Route path={"/retiro-sagrado"} component={RetiroSagrado} />
+      <Route path="/proximos-retiros" component={ProximosRetiros} />
+      <Route path="/retiro/:id" component={RetiroDetalle} />
       <Route path={"/club-retiro-sagrado"} component={ClubRetiroSagrado} />
       <Route path={"/politica-privacidad"} component={PoliticaPrivacidad} />
       <Route path={"/terminos-servicio"} component={TerminosServicio} />

@@ -9,17 +9,17 @@ const cursos = [
   {
     id: 1,
     title: "KS Healing",
-    subtitle: "Sanación Energética Consciente",
-    description: "La base fundamental de la sanación energética. Aprende a trabajar directamente con la Energía Keiouvos Stharef para acompañar procesos internos, emocionales y de consciencia.",
+    subtitle: "Sanacion Energetica Consciente",
+    description: "La base fundamental de la sanacion energetica. Aprende a trabajar directamente con la Energia Keiouvos Stharef para acompanar procesos internos, emocionales y de consciencia.",
     duration: "8 semanas",
     investment: "$297 USD",
     level: "Principiante",
     icon: "⚡",
     benefits: [
-      "Acompañamiento energético consciente",
-      "Técnicas de presencia y intención",
-      "Integración de mente, emoción y espíritu",
-      "Certificación como practicante"
+      "Acompanamiento energetico consciente",
+      "Tecnicas de presencia e intencion",
+      "Integracion de mente, emocion y espiritu",
+      "Certificacion como practicante"
     ],
     color: "from-blue-600 to-blue-800",
     kajabi: "https://kajabi.com/ks-healing",
@@ -34,49 +34,67 @@ const cursos = [
     level: "Intermedio",
     icon: "🔄",
     benefits: [
-      "Identificación de arquetipos limitantes",
-      "Renovación de patrones internos",
-      "Transformación profunda de creencias",
-      "Integración de sombra y luz"
+      "Identificacion de arquetipos limitantes",
+      "Renovacion de patrones internos",
+      "Transformacion profunda de creencias",
+      "Integracion de sombra y luz"
     ],
     color: "from-purple-600 to-purple-800",
     kajabi: "https://kajabi.com/dart",
   },
   {
     id: 3,
-    title: "Genética Sagrada",
+    title: "Genetica Sagrada",
     subtitle: "Las 12 Capas del ADN Espiritual",
-    description: "Accede a la sabiduría ancestral de tu linaje. Explora las 12 capas de tu ADN espiritual y activa el potencial multidimensional que siempre estuvo en ti.",
+    description: "Accede a la sabiduria ancestral de tu linaje. Explora las 12 capas de tu ADN espiritual y activa el potencial multidimensional que siempre estuvo en ti.",
     duration: "12 semanas",
     investment: "$497 USD",
     level: "Avanzado",
     icon: "🧬",
     benefits: [
-      "Exploración de las 12 capas del ADN",
-      "Sanación de linaje ancestral",
-      "Activación multidimensional",
-      "Integración de consciencia cósmica"
+      "Exploracion de las 12 capas del ADN",
+      "Sanacion de linaje ancestral",
+      "Activacion multidimensional",
+      "Integracion de consciencia cosmica"
     ],
     color: "from-amber-600 to-amber-800",
     kajabi: "https://kajabi.com/genetica-sagrada",
   },
   {
     id: 4,
-    title: "Meditación Ascendente",
-    subtitle: "Expansión Progresiva de Consciencia",
-    description: "Un método progresivo que te guía desde la percepción ordinaria hacia estados profundos de presencia, claridad interna y consciencia lúcida aplicable a tu vida cotidiana.",
+    title: "Meditacion Ascendente",
+    subtitle: "Expansion Progresiva de Consciencia",
+    description: "Un metodo progresivo que te guia desde la percepcion ordinaria hacia estados profundos de presencia, claridad interna y consciencia lucida aplicable a tu vida cotidiana.",
     duration: "6 semanas",
     investment: "$197 USD",
     level: "Principiante",
     icon: "🧘",
     benefits: [
-      "Expansión de consciencia",
-      "Regulación emocional",
+      "Expansion de consciencia",
+      "Regulacion emocional",
       "Presencia y claridad mental",
-      "Práctica sostenida y transformadora"
+      "Practica sostenida y transformadora"
     ],
     color: "from-teal-600 to-teal-800",
     kajabi: "https://kajabi.com/meditacion-ascendente",
+  },
+  {
+    id: 5,
+    title: "Retiro Sagrado",
+    subtitle: "Transformacion Mensual en Vivo",
+    description: "Un programa de transformacion continua con retiros mensuales en vivo via Zoom. Acceso ilimitado a todos los retiros 2026 + grabaciones de retiros anteriores. Practica a tu ritmo y profundiza en cada ensenanza.",
+    duration: "12 meses",
+    investment: "Membresia Anual",
+    level: "Todos los niveles",
+    icon: "💕",
+    benefits: [
+      "Retiros mensuales en vivo via Zoom",
+      "Acceso a todas las grabaciones",
+      "Comunidad de transformacion",
+      "Practica continua y sostenida"
+    ],
+    color: "from-rose-600 to-rose-800",
+    kajabi: "https://kajabi.com/retiro-sagrado",
   },
 ];
 
@@ -93,7 +111,7 @@ export default function Cursos() {
               Nuestros <span className="text-accent">Cursos y Programas</span>
             </h1>
             <p className="text-xl text-primary-foreground/90 max-w-2xl mx-auto leading-relaxed">
-              Elige tu camino de transformación. Cada programa está diseñado para un paso diferente en tu viaje de consciencia y evolución espiritual.
+              Elige tu camino de transformacion. Cada programa esta disenado para un paso diferente en tu viaje de consciencia y evolucion espiritual.
             </p>
           </div>
         </div>
@@ -133,14 +151,14 @@ export default function Cursos() {
                     <div className="flex items-center gap-3">
                       <Clock size={18} className="text-primary flex-shrink-0" />
                       <div>
-                        <p className="text-xs text-muted-foreground">Duración</p>
+                        <p className="text-xs text-muted-foreground">Duracion</p>
                         <p className="font-semibold text-foreground">{curso.duration}</p>
                       </div>
                     </div>
                     <div className="flex items-center gap-3">
                       <DollarSign size={18} className="text-primary flex-shrink-0" />
                       <div>
-                        <p className="text-xs text-muted-foreground">Inversión</p>
+                        <p className="text-xs text-muted-foreground">Inversion</p>
                         <p className="font-semibold text-foreground">{curso.investment}</p>
                       </div>
                     </div>
@@ -150,7 +168,7 @@ export default function Cursos() {
                   <div className="mb-8">
                     <h3 className="font-semibold text-foreground mb-4 flex items-center gap-2">
                       <CheckCircle size={18} className="text-primary" />
-                      Qué aprenderás
+                      Que aprenderas
                     </h3>
                     <ul className="space-y-2">
                       {curso.benefits.map((benefit, idx) => (
@@ -177,15 +195,15 @@ export default function Cursos() {
           {/* CTA Section */}
           <div className="bg-gradient-to-r from-primary/10 to-accent/10 border border-primary/20 rounded-2xl p-12 text-center">
             <h2 className="font-display text-3xl font-bold text-foreground mb-4">
-              ¿No sabes por dónde empezar?
+              No sabes por donde empezar?
             </h2>
             <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Si tienes dudas sobre cuál programa es el más adecuado para ti, te recomendamos comenzar con Meditación Ascendente o KS Healing como base sólida.
+              Si tienes dudas sobre cual programa es el mas adecuado para ti, te recomendamos comenzar con Meditacion Ascendente o KS Healing como base solida.
             </p>
             <Link href="/que-es-ks-healing">
               <a>
                 <Button className="bg-primary hover:bg-primary/90 text-white font-semibold">
-                  Conoce más sobre KS Healing
+                  Conoce mas sobre KS Healing
                 </Button>
               </a>
             </Link>
