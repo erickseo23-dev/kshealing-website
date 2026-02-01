@@ -32,7 +32,7 @@ export default function ClubRetiroSagrado() {
               Club del Retiro Sagrado
             </h1>
             <p className="text-xl md:text-2xl text-black/90 mb-8">
-              12 meses de transformación. 12 retiros en vivo. Siempre con YOHEV.
+              12 meses de transformación. 12 retiros en vivo con YOHEV.
             </p>
             <p className="text-lg text-black/80 mb-12 max-w-2xl">
               Un viaje profundo de sanación, consciencia y transformación personal. Cada mes, un nuevo retiro facilitado directamente por YOHEV. Cada retiro, una nueva oportunidad de evolucionar.
@@ -44,9 +44,14 @@ export default function ClubRetiroSagrado() {
                   <ArrowRight size={24} />
                 </Button>
               </a>
+              <a href="https://www.i3cdigital.com/products/club-de-retiro-sagrado" target="_blank" rel="noopener noreferrer">
+                <Button size="lg" variant="outline" className="border-black text-black hover:bg-black/10 font-bold text-lg px-8 py-6">
+                  Acceso de miembros
+                </Button>
+              </a>
               <Link href="/retiro-sagrado">
                 <Button size="lg" variant="outline" className="border-black text-black hover:bg-black/10 font-bold text-lg px-8 py-6">
-                  Conocer más
+                  Próximo Retiro
                 </Button>
               </Link>
             </div>
@@ -74,7 +79,7 @@ export default function ClubRetiroSagrado() {
                       Retiros Mensuales con YOHEV
                     </h3>
                     <p className="text-muted-foreground">
-                      Cada primer domingo del mes (8-12 hrs CDMX). Conexión en directo con la comunidad. Facilitados directamente por YOHEV. Disponibles mientras mantengas tu membresía activa.
+                      Cada primer domingo del mes (8-12 hrs CDMX). Conexión en directo, online, por Zoom.
                     </p>
                   </div>
                 </div>
@@ -116,7 +121,7 @@ export default function ClubRetiroSagrado() {
                       Contenido Exclusivo
                     </h3>
                     <p className="text-muted-foreground">
-                      Acceso a grabaciones de todos los retiros. Contenido exclusivo solo para miembros del Club. Disponible mientras mantengas tu membresía activa.
+                      Acceso a grabaciones de todos los retiros. Contenido exclusivo solo para miembros del Club.
                     </p>
                   </div>
                 </div>
@@ -286,7 +291,7 @@ export default function ClubRetiroSagrado() {
                     "Acceso a retiros en vivo con YOHEV",
                     "Todas las grabaciones disponibles",
                     "Comunidad de miembros",
-                    "Acceso permanente a grabaciones",
+                    "Acceso a grabaciones",
                     "Cancelable cuando quieras"
                   ].map((benefit, idx) => (
                     <li key={idx} className="flex items-center gap-3 text-foreground">
@@ -325,7 +330,7 @@ export default function ClubRetiroSagrado() {
                     "Acceso a retiros en vivo con YOHEV",
                     "Todas las grabaciones disponibles",
                     "Comunidad de miembros",
-                    "Acceso permanente a grabaciones",
+                    "Acceso a grabaciones",
                     "Ahorro de $1,000 vs mensual"
                   ].map((benefit, idx) => (
                     <li key={idx} className="flex items-center gap-3 text-foreground">
