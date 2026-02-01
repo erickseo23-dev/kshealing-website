@@ -371,12 +371,10 @@ export default function ElLibro() {
           <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
             El libro es el primer paso. Los ejercicios y videos de transmisión te guiarán hacia la experiencia directa de la Energía Keiouvos Stharef.
           </p>
-          <a href="https://a.co/d/ini6U2Y" target="_blank" rel="noopener noreferrer">
-            <Button size="lg" className="bg-primary hover:bg-primary/90 text-white gap-2">
-              Obtener el Libro
-              <ArrowRight size={20} />
-            </Button>
-          </a>
+          <Button size="lg" className="bg-primary hover:bg-primary/90 text-white gap-2" onClick={() => window.open('https://a.co/d/ini6U2Y', '_blank')}>
+            Obtener el Libro
+            <ArrowRight size={20} />
+          </Button>
         </div>
       </section>
 
@@ -404,12 +402,8 @@ export default function ElLibro() {
                   La base fundamental de la sanación energética. Aprende a trabajar directamente con la Energía Keiouvos Stharef.
                 </p>
                 <div className="space-y-2">
-                  <a href="https://a.co/d/ini6U2Y" target="_blank" rel="noopener noreferrer" className="block">
-                    <Button variant="outline" className="w-full text-xs">Pasta Blanda - $24.99</Button>
-                  </a>
-                  <a href="https://a.co/d/45jDr6p" target="_blank" rel="noopener noreferrer" className="block">
-                    <Button variant="outline" className="w-full text-xs">Ebook Kindle - $9.99</Button>
-                  </a>
+                  <Button variant="outline" className="w-full text-xs" onClick={() => window.open('https://a.co/d/ini6U2Y', '_blank')}>Pasta Blanda - $24.99</Button>
+                  <Button variant="outline" className="w-full text-xs" onClick={() => window.open('https://a.co/d/45jDr6p', '_blank')}>Ebook Kindle - $9.99</Button>
                 </div>
               </div>
             </div>
@@ -425,12 +419,8 @@ export default function ElLibro() {
                   Obra de Claribel Puga que explora la sabiduría ancestral de los arcángeles y su influencia en la transformación.
                 </p>
                 <div className="space-y-2">
-                  <a href="https://a.co/d/en9RPql" target="_blank" rel="noopener noreferrer" className="block">
-                    <Button variant="outline" className="w-full text-xs">Pasta Blanda - $28.99</Button>
-                  </a>
-                  <a href="https://a.co/d/6Tg6XGj" target="_blank" rel="noopener noreferrer" className="block">
-                    <Button variant="outline" className="w-full text-xs">Ebook Kindle - $12.99</Button>
-                  </a>
+                  <Button variant="outline" className="w-full text-xs" onClick={() => window.open('https://a.co/d/en9RPql', '_blank')}>Pasta Blanda - $28.99</Button>
+                  <Button variant="outline" className="w-full text-xs" onClick={() => window.open('https://a.co/d/6Tg6XGj', '_blank')}>Ebook Kindle - $12.99</Button>
                 </div>
               </div>
             </div>
@@ -446,12 +436,8 @@ export default function ElLibro() {
                   Obra conjunta de Claribel Puga y YOHEV que narra un viaje transformador a través de los reinos astrales.
                 </p>
                 <div className="space-y-2">
-                  <a href="https://a.co/d/fJyOYVP" target="_blank" rel="noopener noreferrer" className="block">
-                    <Button variant="outline" className="w-full text-xs">Pasta Blanda - $32.99</Button>
-                  </a>
-                  <a href="https://a.co/d/2RWWKcJ" target="_blank" rel="noopener noreferrer" className="block">
-                    <Button variant="outline" className="w-full text-xs">Ebook Kindle - $14.99</Button>
-                  </a>
+                  <Button variant="outline" className="w-full text-xs" onClick={() => window.open('https://a.co/d/fJyOYVP', '_blank')}>Pasta Blanda - $32.99</Button>
+                  <Button variant="outline" className="w-full text-xs" onClick={() => window.open('https://a.co/d/2RWWKcJ', '_blank')}>Ebook Kindle - $14.99</Button>
                 </div>
               </div>
             </div>
