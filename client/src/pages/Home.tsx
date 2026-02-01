@@ -330,7 +330,7 @@ export default function Home() {
                 description: "Una experiencia inmersiva de transformación profunda. Retiros presenciales donde experimentarás transmisiones intensivas de Energía KS en comunidad.",
                 image: "/images/retiro-sagrado-program.png",
                 color: "from-accent/20 to-primary/10",
-                href: "/retiro-sagrado",
+                href: "/club-retiro-sagrado",
               },
             ].map((program, idx) => (
               <Card key={idx} className="overflow-hidden border-border/50 hover:shadow-xl transition-all hover:-translate-y-2 flex flex-col">
