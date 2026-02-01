@@ -381,13 +381,13 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto mb-8">
             {eventos.slice(0, 3).map((event) => (
-              <Card key={event.id} className="overflow-hidden border-border/50 hover:shadow-lg transition-shadow flex flex-col">
+              <Card key={event.id} className="overflow-hidden border-border/50 hover:shadow-lg transition-all hover:-translate-y-1 flex flex-col">
                 {event.imagen && (
                   <div className="relative h-48 overflow-hidden bg-muted">
                     <img
                       src={event.imagen}
                       alt={event.title}
-                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                      className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
                     />
                   </div>
                 )}
@@ -409,9 +409,11 @@ export default function Home() {
                       {event.description}
                     </p>
                   </div>
-                  <Button className="w-full mt-6 bg-primary hover:bg-primary/90 text-white">
-                    Más Información
-                  </Button>
+                  <Link href={event.tipo === "Retiro Sagrado" ? "/club-retiro-sagrado" : "/eventos"}>
+                    <Button className="w-full mt-6 bg-primary hover:bg-primary/90 text-white">
+                      Más Información
+                    </Button>
+                  </Link>
                 </div>
               </Card>
             ))}
@@ -478,9 +480,6 @@ export default function Home() {
                         </Button>
                       </a>
                     </Link>
-                    <Button variant="outline" className="w-full">
-                      Descargar Introducción Gratis
-                    </Button>
                   </div>
                 </Card>
               </div>

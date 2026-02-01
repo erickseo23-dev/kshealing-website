@@ -101,10 +101,6 @@ export default function ElLibro() {
                     </Button>
                   </a>
                 </Link>
-                <Button size="lg" variant="outline" gap-2>
-                  <Download size={20} />
-                  Muestra Gratis
-                </Button>
               </div>
             </div>
           </div>
