@@ -103,17 +103,43 @@ export default function RetiroSagrado() {
             <p className="text-muted-foreground font-semibold">¿Te resuena este retiro?</p>
             <Button 
               size="lg" 
-              variant="outline"
               onClick={() => {
                 const url = window.location.href;
                 const text = "Retiro Sagrado 8: La Arquitectura del Amor - Del amor herido al Amor como principio divino";
                 window.open(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}&quote=${encodeURIComponent(text)}`, '_blank', 'width=600,height=400');
               }}
-              className="gap-2"
+              className="gap-2 bg-[#1877F2] hover:bg-[#165FD8] text-white"
             >
               <Share2 size={18} />
               Compartir en Facebook
             </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* Visual Gallery Section */}
+      <section className="py-20 md:py-32 bg-background">
+        <div className="container mx-auto px-4">
+          <h2 className="font-display text-4xl font-bold text-foreground mb-12 text-center">
+            Relaciones Sanas, Amor Consciente
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            <div className="relative group">
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 rounded-2xl blur-2xl"></div>
+              <img 
+                src="/images/retiro-8-amor-divino.png" 
+                alt="Pareja en Amor" 
+                className="relative w-full rounded-2xl shadow-2xl object-cover aspect-video group-hover:shadow-3xl transition-shadow"
+              />
+            </div>
+            <div className="relative group">
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 rounded-2xl blur-2xl"></div>
+              <img 
+                src="/images/retiro-8-transformacion-amor.png" 
+                alt="Familia en Amor" 
+                className="relative w-full rounded-2xl shadow-2xl object-cover aspect-video group-hover:shadow-3xl transition-shadow"
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -371,6 +397,86 @@ export default function RetiroSagrado() {
                 </p>
               </div>
             </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials Section */}
+      <section className="py-20 md:py-32 bg-primary/5">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="font-display text-4xl font-bold text-foreground mb-12 text-center">
+              Testimonios del Retiro 8
+            </h2>
+            <p className="text-center text-muted-foreground mb-12 text-lg">
+              Historias de transformación en relaciones y vínculos familiares
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <Card className="p-8 border-border/50 bg-background">
+                <div className="flex items-center gap-2 mb-4">
+                  <div className="flex gap-1">
+                    {[...Array(5)].map((_, i) => (
+                      <Star key={i} size={16} className="fill-primary text-primary" />
+                    ))}
+                  </div>
+                </div>
+                <p className="text-muted-foreground italic mb-6">
+                  "Después del retiro, mi relación cambió completamente. No porque hiciera algo diferente, sino porque dejé de necesitar que mi pareja 'me completara'. Ahora amamos desde un lugar de paz, no de miedo."
+                </p>
+                <p className="font-semibold text-foreground">María C.</p>
+                <p className="text-sm text-muted-foreground">Pareja de 8 años</p>
+              </Card>
+              <Card className="p-8 border-border/50 bg-background">
+                <div className="flex items-center gap-2 mb-4">
+                  <div className="flex gap-1">
+                    {[...Array(5)].map((_, i) => (
+                      <Star key={i} size={16} className="fill-primary text-primary" />
+                    ))}
+                  </div>
+                </div>
+                <p className="text-muted-foreground italic mb-6">
+                  "Lo que más me sorprendió fue entender que no estaba "roto" en el amor. Simplemente amaba desde un filtro herido. Ahora veo a mis hijos y a mi pareja con otros ojos."
+                </p>
+                <p className="font-semibold text-foreground">Roberto M.</p>
+                <p className="text-sm text-muted-foreground">Padre de 3 hijos</p>
+              </Card>
+              <Card className="p-8 border-border/50 bg-background">
+                <div className="flex items-center gap-2 mb-4">
+                  <div className="flex gap-1">
+                    {[...Array(5)].map((_, i) => (
+                      <Star key={i} size={16} className="fill-primary text-primary" />
+                    ))}
+                  </div>
+                </div>
+                <p className="text-muted-foreground italic mb-6">
+                  "Vine al retiro con el corazón cerrado. Salí con la capacidad de amar sin perderme. La meditación de 'Recordar el Amor' fue lo que más me transformó."
+                </p>
+                <p className="font-semibold text-foreground">Alejandra T.</p>
+                <p className="text-sm text-muted-foreground">Relación reciente</p>
+              </Card>
+              <Card className="p-8 border-border/50 bg-background">
+                <div className="flex items-center gap-2 mb-4">
+                  <div className="flex gap-1">
+                    {[...Array(5)].map((_, i) => (
+                      <Star key={i} size={16} className="fill-primary text-primary" />
+                    ))}
+                  </div>
+                </div>
+                <p className="text-muted-foreground italic mb-6">
+                  "Después de 20 años de matrimonio, creía que todo estaba 'resuelto'. Este retiro me mostró que aún había capas profundas de sanación. Mi familia lo siente."
+                </p>
+                <p className="font-semibold text-foreground">Carlos L.</p>
+                <p className="text-sm text-muted-foreground">Matrimonio de 20 años</p>
+              </Card>
+            </div>
+            <div className="mt-12 p-8 bg-background rounded-lg border border-primary/20 text-center">
+              <p className="text-foreground font-semibold mb-2">
+                Estos testimonios reflejan cambios reales en cómo las personas se relacionan consigo mismas y con otros.
+              </p>
+              <p className="text-muted-foreground text-sm">
+                Los resultados varían según la apertura y disposición de cada participante.
+              </p>
+            </div>
           </div>
         </div>
       </section>
