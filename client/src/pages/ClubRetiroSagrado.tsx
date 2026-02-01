@@ -17,7 +17,7 @@ export default function ClubRetiroSagrado() {
   const retirosSagrados2026 = eventos.filter(evento => evento.tipo === "Retiro Sagrado").slice(0, 12);
 
   const shareOnSocial = (platform: string, retiroTitle: string, retiroDescription?: string) => {
-    const clubUrl = 'https://www.i3cdigital.com/products/club-de-retiro-sagrado';
+    const clubUrl = window.location.origin + '/club-retiro-sagrado';
     const text = `Descubre el Retiro Sagrado: ${retiroTitle} con YOHEV. ${retiroDescription || 'Transformación, sanación y consciencia.'} Únete al Club del Retiro Sagrado.`;
     
     const shareUrls: { [key: string]: string } = {
