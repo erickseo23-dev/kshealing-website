@@ -2,7 +2,6 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Link } from "wouter";
 import { Calendar, MapPin, Users, Clock, ArrowRight } from "lucide-react";
 import { eventos } from "@/lib/events";
 
@@ -93,19 +92,10 @@ export default function Eventos() {
                     )}
                   </div>
 
-                  {evento.tipo === "Retiro Sagrado" ? (
-                    <Link href="/club-retiro-sagrado" className="block">
-                      <Button className="w-full bg-primary hover:bg-primary/90 text-white gap-2">
-                        Unirse al Club
-                        <ArrowRight size={16} />
-                      </Button>
-                    </Link>
-                  ) : (
-                    <Button className="w-full bg-primary hover:bg-primary/90 text-white gap-2">
-                      Reservar Ahora
-                      <ArrowRight size={16} />
-                    </Button>
-                  )}
+                  <Button className="w-full bg-primary hover:bg-primary/90 text-white gap-2">
+                    Reservar Ahora
+                    <ArrowRight size={16} />
+                  </Button>
                 </div>
               </Card>
             ))}
