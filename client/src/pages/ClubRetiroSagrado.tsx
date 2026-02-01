@@ -38,7 +38,7 @@ export default function ClubRetiroSagrado() {
               Un viaje profundo de sanación, consciencia y transformación personal. Cada mes, un nuevo retiro facilitado directamente por YOHEV. Cada retiro, una nueva oportunidad de evolucionar.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <a href={kajabi_anual} target="_blank" rel="noopener noreferrer">
+              <a href="#pricing">
                 <Button size="lg" className="bg-white hover:bg-white/90 text-primary font-bold text-lg px-8 py-6 gap-2">
                   Unirse al Club Ahora
                   <ArrowRight size={24} />
@@ -261,7 +261,7 @@ export default function ClubRetiroSagrado() {
       </section>
 
       {/* Pricing Section - Dual Options */}
-      <section className="py-20 md:py-32 bg-primary/5">
+      <section id="pricing" className="py-20 md:py-32 bg-primary/5">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
             <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-6 text-center">
