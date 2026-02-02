@@ -220,6 +220,55 @@ export default function KSHealing() {
         </div>
       </section>
 
+      {/* Professional Practitioners Gallery */}
+      <section className="py-20 md:py-32 bg-gradient-to-b from-background via-primary/5 to-slate-900/30">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto mb-16 text-center">
+            <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-6">
+              Practicantes <span className="text-primary">Profesionales</span>
+            </h2>
+            <p className="text-lg text-muted-foreground leading-relaxed">
+              Mira a practicantes certificados en acción, transmitiendo energía con maestría y profesionalismo
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <div className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+              <img 
+                src="https://private-us-east-1.manuscdn.com/sessionFile/cJ0NsjiTEgFuWB5HAN1kHs/sandbox/KjiosYfUoQH403tp6MOJRa-img-1_1770058845000_na1fn_a3MtcHJhY3RpdGlvbmVyLXByb2Zlc3Npb25hbC1zZXNzaW9u.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvY0owTnNqaVRFZ0Z1V0I1SEFOMWtIcy9zYW5kYm94L0tqaW9zWWZVb1FINDAzdHA2TU9KUmEtaW1nLTFfMTc3MDA1ODg0NTAwMF9uYTFmbl9hM010Y0hKaFkzUnBkR2x2Ym1WeUxYQnliMlpsYzNOcGIyNWhiQzF6WlhOemFXOXUucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLHdfMTkyMCxoXzE5MjAvZm9ybWF0LHdlYnAvcXVhbGl0eSxxXzgwIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNzk4NzYxNjAwfX19XX0_&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=qsQ~gr6zlSAVoos6zuZ7Ztn1ZGb5aeub1qDGmDG6BHVw~uguoGs-yCGE4HCmxzG6eAOwLcaAdkBIUk0992mljqrq9DA21fGrnaHLvX7tPs6kbXH5ZWd-sjooou1BRO4fwyTIH5AcT1xEpOeb67I2ylG5clyQUP~MFicUj9hs5zfYY7qSCeWl5ke2gGPd5AIFjpNt-HwXQ0m0DQyFQmHIQLN-8vDS4x~YQczsEjoY72cZqhVkuik2i0Or2Tu7nkvjfepdgqsST~KedtG433P~TUM93qcUKSUG03Czp1RqLlU8ZJcfSltfF6CUu44vXCS2j5C4Lh5UTOlxXaO3dKR3ig__" 
+                alt="Practicante profesional en sesión" 
+                className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-300"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                <p className="text-white font-semibold">Sesión Profesional</p>
+              </div>
+            </div>
+
+            <div className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+              <img 
+                src="https://private-us-east-1.manuscdn.com/sessionFile/cJ0NsjiTEgFuWB5HAN1kHs/sandbox/KjiosYfUoQH403tp6MOJRa-img-2_1770058841000_na1fn_a3MtcHJhY3RpdGlvbmVyLXRyYWluaW5nLXNlc3Npb24.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvY0owTnNqaVRFZ0Z1V0I1SEFOMWtIcy9zYW5kYm94L0tqaW9zWWZVb1FINDAzdHA2TU9KUmEtaW1nLTJfMTc3MDA1ODg0MTAwMF9uYTFmbl9hM010Y0hKaFkzUnBkR2x2Ym1WeUxYUnlZV2x1YVc1bkxYTmxjM05wYjI0LnBuZz94LW9zcy1wcm9jZXNzPWltYWdlL3Jlc2l6ZSx3XzE5MjAsaF8xOTIwL2Zvcm1hdCx3ZWJwL3F1YWxpdHkscV84MCIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc5ODc2MTYwMH19fV19&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=Nfli~ABC6NV3fGFEBlDmJtpxWbVwHVepNCVcl4QKKUaQ1Qn618SYGwx29~7WfiNCwQLCMfEeBTqkkIAsbsHXiuCDS211orLDhLAZNe3-9hdgaHfJoww64TMjlDKbc3sUkU~cV9pmGiAkZvhKNRCkbmTYBjmm-ymlcvGs8bqSURcOHe6v0CNwkLINRg-XqCRTz79BbkG8cs6YED6JwfI0gLZTybt59h0XizlDgR4s90GwbZd1eGDbtf6lCGaiwnYt2r1jZJJ0Azu36vPr1QPfTRKx5dc8gQPMa0BRJpkcAgyFOR-fDEPCPnK8uoLV3V3AcscwS8vwUurIBUnoYhIljg__" 
+                alt="Practicante siendo entrenada" 
+                className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-300"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                <p className="text-white font-semibold">Entrenamiento Certificado</p>
+              </div>
+            </div>
+
+            <div className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+              <img 
+                src="https://private-us-east-1.manuscdn.com/sessionFile/cJ0NsjiTEgFuWB5HAN1kHs/sandbox/KjiosYfUoQH403tp6MOJRa-img-3_1770058839000_na1fn_a3MtcHJhY3RpdGlvbmVyLWFkdmFuY2VkLXByYWN0aWNl.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvY0owTnNqaVRFZ0Z1V0I1SEFOMWtIcy9zYW5kYm94L0tqaW9zWWZVb1FINDAzdHA2TU9KUmEtaW1nLTNfMTc3MDA1ODgzOTAwMF9uYTFmbl9hM010Y0hKaFkzUnBkR2x2Ym1WeUxXRmtkbUZ1WTJWa0xYQnlZV04wYVdObC5wbmc~eC1vc3MtcHJvY2Vzcz1pbWFnZS9yZXNpemUsd18xOTIwLGhfMTkyMC9mb3JtYXQsd2VicC9xdWFsaXR5LHFfODAiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE3OTg3NjE2MDB9fX1dfQ__&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=aM8D17jED8oMkJ~TRAYUSOmUBMviEQ6arsnTp8c3AhKCgX7g-42bEJxfaM~Q15YN~cpc95pVuOFrKokAe4YOD5Gy-KtMWMxYLKoPM69nc5fGKgMbpdI~YVgrQqZWO2uEGU3dKKRY9Eh1OcuY74BsBVt6vR2FNTKclHACQs1j9Ap5XUWY7tSOaTDxJAxjN5uoiQkzum92o-b~Qokc9d3z~vW1OdcDO21XekVkMtz1INs0OOOT7cT0P3zUtR2-H00OKTaXV~9C9xtcGf-FDDWLR3EHYW9MmZ74HMxu~nBck8RVfSJjurFUJ5o0eGYdrxhL-dcyy0ew7-OR7xXJAPypPw__" 
+                alt="Practicante avanzada" 
+                className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-300"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                <p className="text-white font-semibold">Maestría Profesional</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* What's Included */}
       <section className="py-20 md:py-32 bg-gradient-to-b from-slate-900/50 to-background">
         <div className="container mx-auto px-4">
