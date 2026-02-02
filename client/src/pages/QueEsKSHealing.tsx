@@ -438,14 +438,14 @@ export default function QueEsKSHealing() {
       {/* CTA Section - Enhanced */}
       <section className="py-20 md:py-32 bg-gradient-to-r from-primary via-primary/90 to-primary/80">
         <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center">
+          <div className="max-w-6xl mx-auto text-center">
             <h2 className="font-display text-4xl md:text-5xl font-bold text-white mb-6">
               Comienza Tu Viaje de Transformación
             </h2>
-            <p className="text-xl text-white/90 mb-10 leading-relaxed">
+            <p className="text-lg md:text-xl text-white/90 mb-12 leading-relaxed">
               Descubre cómo la Energía KS puede cambiar tu vida y reconectar contigo mismo.
             </p>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 justify-center">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 md:gap-4 justify-center">
               <Link href="/ks-healing">
                 <Button size="lg" className="w-full bg-white hover:bg-blue-50 text-primary gap-2">
                   Aprende KS Healing
