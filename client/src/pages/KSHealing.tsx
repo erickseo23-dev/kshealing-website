@@ -115,6 +115,21 @@ export default function KSHealing() {
         </div>
       </section>
 
+      {/* Professional Session Image - After Hero */}
+      <section className="py-20 md:py-32 bg-gradient-to-b from-background to-primary/5">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <div className="relative overflow-hidden rounded-2xl shadow-2xl">
+              <img 
+                src="https://private-us-east-1.manuscdn.com/sessionFile/cJ0NsjiTEgFuWB5HAN1kHs/sandbox/iGSDDzIRXcH5A0CLxFJ7HR-img-1_1770062980000_na1fn_a3MtaGVhbGluZy1wcmFjdGl0aW9uZXItbWFsZS1zZXNzaW9u.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvY0owTnNqaVRFZ0Z1V0I1SEFOMWtIcy9zYW5kYm94L2lHU0REeklSWGNINUEwQ0x4Rko3SFItaW1nLTFfMTc3MDA2Mjk4MDAwMF9uYTFmbl9hM010YUdWaGJHbHVaeTF3Y21GamRHbDBhVzl1WlhJdGJXRnNaUzF6WlhOemFXOXUucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLHdfMTkyMCxoXzE5MjAvZm9ybWF0LHdlYnAvcXVhbGl0eSxxXzgwIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNzk4NzYxNjAwfX19XX0_&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=SjUCyWqdz-ab0V1TwCOwsBFqLRKoVWRrohz~8oS0bizp4zaFHdTYRut3aOlMiPIZ3iB-bHNI1Pys3c0AlhcoafIYvyVp9bEjXbPCwZx54Cb3onw~3-gbuE5dQEJ6WMf1okvcaSrOUS3DyiUIyNWmneMATJTMn72uTHIVrA0dxIwmi4zpLealTR8Jxg3Mu41PNejiK19id8ZJo~5UDS3LAInoxFjW74afsXUHF9O69nUJz8V270KZzkERrlTs07OPYnSc7oKPmqqEuSNaBt3L2Wsv3rTJ9~1QdA08rWjwzOp~L3GnvS18DfT8ydJtHNeTJeC~xMhEfM8bnte8s~LZpg__" 
+                alt="Sesión profesional de KS Healing" 
+                className="w-full h-auto object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Why This Certification */}
       <section className="py-20 md:py-32 bg-gradient-to-b from-background via-primary/5 to-background">
         <div className="container mx-auto px-4">
@@ -148,41 +163,17 @@ export default function KSHealing() {
         </div>
       </section>
 
-      {/* Testimonials - Grid Visible */}
-      <section className="py-20 md:py-32 bg-gradient-to-br from-slate-950 via-blue-950/20 to-slate-950">
+      {/* Training Image - Distributed */}
+      <section className="py-20 md:py-32 bg-gradient-to-b from-background to-slate-900/10">
         <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto mb-16 text-center">
-            <h2 className="font-display text-4xl md:text-5xl font-bold text-white mb-6">
-              Historias de <span className="text-secondary" style={{color: '#fbbc0e'}}>Transformación</span>
-            </h2>
-            <p className="text-lg text-white/70 leading-relaxed">
-              Lo que otros practicantes han experimentado
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
-            {ksHealingTestimonials.map((testimonial, idx) => (
-              <Card key={idx} className="p-8 border-primary/30 bg-gradient-to-br from-primary/10 to-slate-900/40 backdrop-blur-sm hover:shadow-lg transition-all hover:-translate-y-2 duration-300">
-                <div className="flex gap-1 mb-6">
-                  {Array.from({ length: 5 }).map((_, i) => (
-                    <span key={i} className="text-secondary text-lg" style={{color: '#fbbc0e'}}>★</span>
-                  ))}
-                </div>
-
-                <p className="text-base md:text-lg text-white mb-6 leading-relaxed italic line-clamp-4">
-                  "{testimonial.quote}"
-                </p>
-
-                <div className="border-t border-primary/20 pt-6">
-                  <p className="font-display text-lg font-bold text-white mb-1">
-                    {testimonial.name}
-                  </p>
-                  <p className="text-sm text-secondary font-semibold" style={{color: '#fbbc0e'}}>
-                    {testimonial.title}
-                  </p>
-                </div>
-              </Card>
-            ))}
+          <div className="max-w-4xl mx-auto">
+            <div className="relative overflow-hidden rounded-2xl shadow-2xl">
+              <img 
+                src="https://private-us-east-1.manuscdn.com/sessionFile/cJ0NsjiTEgFuWB5HAN1kHs/sandbox/QNzd4Ewv2ZIOdzbbeCa2cU-img-1_1770063461000_na1fn_a3MtaGVhbGluZy10cmFpbmluZy1yZWFsLXBhdGllbnQ.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvY0owTnNqaVRFZ0Z1V0I1SEFOMWtIcy9zYW5kYm94L1FOemQ0RXd2MlpJT2R6YmJlQ2EyY1UtaW1nLTFfMTc3MDA2MzQ2MTAwMF9uYTFmbl9hM010YUdWaGJHbHVaeTEwY21GcGJtbHVaeTF5WldGc0xYQmhkR2xsYm5RLnBuZz94LW9zcy1wcm9jZXNzPWltYWdlL3Jlc2l6ZSx3XzE5MjAsaF8xOTIwL2Zvcm1hdCx3ZWJwL3F1YWxpdHkscV84MCIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc5ODc2MTYwMH19fV19&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=dbP2WbhLKEUBo-rwoeFtK1f9KKDMuc9q-YG1MZ9bES0ur64~-wYClx2V4lAcmu8ukipy6BF976oVVDiYzR4QBjufvHBvckZK63t7cJl54sO2P-VVPBkTSnVnRkWdz9iC4pjOBfMDow2xlAR8xMHJo02-voGc8uhr0kickg3TBUM7CedWcu4MkXQW2bX8PZMeDTkaJv8B~hBKa4EsfcFb-42I1H5JdqV~pRYkeHG9AbpoLMg~nTlyPM7U0vF8OGLu3Kvo7h~brEq7FzK-wSLNBho4xDwKNDuyj3877ALCHvdyqviNObcImbK-cZvKO6w0FLdV1MMfz8ReWwOyPTL79Q__" 
+                alt="Entrenamiento certificado" 
+                className="w-full h-auto object-cover"
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -220,50 +211,16 @@ export default function KSHealing() {
         </div>
       </section>
 
-      {/* Professional Practitioners Gallery */}
-      <section className="py-20 md:py-32 bg-gradient-to-b from-background via-primary/5 to-slate-900/30">
+      {/* Advanced Mastery Image - Distributed */}
+      <section className="py-20 md:py-32 bg-gradient-to-b from-background to-primary/5">
         <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto mb-16 text-center">
-            <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-6">
-              Practicantes <span className="text-primary">Profesionales</span>
-            </h2>
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              Mira a practicantes certificados en acción, transmitiendo energía con maestría y profesionalismo
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            <div className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
-              <img 
-                src="https://private-us-east-1.manuscdn.com/sessionFile/cJ0NsjiTEgFuWB5HAN1kHs/sandbox/iGSDDzIRXcH5A0CLxFJ7HR-img-1_1770062980000_na1fn_a3MtaGVhbGluZy1wcmFjdGl0aW9uZXItbWFsZS1zZXNzaW9u.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvY0owTnNqaVRFZ0Z1V0I1SEFOMWtIcy9zYW5kYm94L2lHU0REeklSWGNINUEwQ0x4Rko3SFItaW1nLTFfMTc3MDA2Mjk4MDAwMF9uYTFmbl9hM010YUdWaGJHbHVaeTF3Y21GamRHbDBhVzl1WlhJdGJXRnNaUzF6WlhOemFXOXUucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLHdfMTkyMCxoXzE5MjAvZm9ybWF0LHdlYnAvcXVhbGl0eSxxXzgwIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNzk4NzYxNjAwfX19XX0_&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=SjUCyWqdz-ab0V1TwCOwsBFqLRKoVWRrohz~8oS0bizp4zaFHdTYRut3aOlMiPIZ3iB-bHNI1Pys3c0AlhcoafIYvyVp9bEjXbPCwZx54Cb3onw~3-gbuE5dQEJ6WMf1okvcaSrOUS3DyiUIyNWmneMATJTMn72uTHIVrA0dxIwmi4zpLealTR8Jxg3Mu41PNejiK19id8ZJo~5UDS3LAInoxFjW74afsXUHF9O69nUJz8V270KZzkERrlTs07OPYnSc7oKPmqqEuSNaBt3L2Wsv3rTJ9~1QdA08rWjwzOp~L3GnvS18DfT8ydJtHNeTJeC~xMhEfM8bnte8s~LZpg__" 
-                alt="Practicante profesional masculino transmitiendo energía" 
-                className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-300"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-                <p className="text-white font-semibold">Sesión Profesional</p>
-              </div>
-            </div>
-
-            <div className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
-              <img 
-                src="https://private-us-east-1.manuscdn.com/sessionFile/cJ0NsjiTEgFuWB5HAN1kHs/sandbox/QNzd4Ewv2ZIOdzbbeCa2cU-img-1_1770063461000_na1fn_a3MtaGVhbGluZy10cmFpbmluZy1yZWFsLXBhdGllbnQ.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvY0owTnNqaVRFZ0Z1V0I1SEFOMWtIcy9zYW5kYm94L1FOemQ0RXd2MlpJT2R6YmJlQ2EyY1UtaW1nLTFfMTc3MDA2MzQ2MTAwMF9uYTFmbl9hM010YUdWaGJHbHVaeTEwY21GcGJtbHVaeTF5WldGc0xYQmhkR2xsYm5RLnBuZz94LW9zcy1wcm9jZXNzPWltYWdlL3Jlc2l6ZSx3XzE5MjAsaF8xOTIwL2Zvcm1hdCx3ZWJwL3F1YWxpdHkscV84MCIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc5ODc2MTYwMH19fV19&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=dbP2WbhLKEUBo-rwoeFtK1f9KKDMuc9q-YG1MZ9bES0ur64~-wYClx2V4lAcmu8ukipy6BF976oVVDiYzR4QBjufvHBvckZK63t7cJl54sO2P-VVPBkTSnVnRkWdz9iC4pjOBfMDow2xlAR8xMHJo02-voGc8uhr0kickg3TBUM7CedWcu4MkXQW2bX8PZMeDTkaJv8B~hBKa4EsfcFb-42I1H5JdqV~pRYkeHG9AbpoLMg~nTlyPM7U0vF8OGLu3Kvo7h~brEq7FzK-wSLNBho4xDwKNDuyj3877ALCHvdyqviNObcImbK-cZvKO6w0FLdV1MMfz8ReWwOyPTL79Q__" 
-                alt="Instructora entrenando a estudiante con paciente real" 
-                className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-300"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-                <p className="text-white font-semibold">Entrenamiento Certificado</p>
-              </div>
-            </div>
-
-            <div className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+          <div className="max-w-4xl mx-auto">
+            <div className="relative overflow-hidden rounded-2xl shadow-2xl">
               <img 
                 src="https://private-us-east-1.manuscdn.com/sessionFile/cJ0NsjiTEgFuWB5HAN1kHs/sandbox/iGSDDzIRXcH5A0CLxFJ7HR-img-3_1770062984000_na1fn_a3MtaGVhbGluZy1hZHZhbmNlZC1wcmFjdGl0aW9uZXI.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvY0owTnNqaVRFZ0Z1V0I1SEFOMWtIcy9zYW5kYm94L2lHU0REeklSWGNINUEwQ0x4Rko3SFItaW1nLTNfMTc3MDA2Mjk4NDAwMF9uYTFmbl9hM010YUdWaGJHbHVaeTFoWkhaaGJtTmxaQzF3Y21GamRHbDBhVzl1WlhJLnBuZz94LW9zcy1wcm9jZXNzPWltYWdlL3Jlc2l6ZSx3XzE5MjAsaF8xOTIwL2Zvcm1hdCx3ZWJwL3F1YWxpdHkscV84MCIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc5ODc2MTYwMH19fV19&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=S~e3P9fLLE4GFH0lCDjwzsXMRo5wHy10aZGV29onNsF-i0kM7BQXEQLnXes7vaXbn~2TvdEOWHF3Aa9nfZIYT0n6Fqygxat9gxJABDXdTGEqahL2m7g01JAMbmmQpzQopCbFevpM81DMO47imkAse0frM3xsLzsVD1OKpehdLVDXyCq0Ut0flBfnzHEiSCxMzkQzBf3HEZR7DB91FKuNzMkphnaPfsTeaglvzcbNqfSIMJGMn09EK8mHjw7e8y9daeM6IL4M41xfMDbsZnsbfUK2bpPNO66kcYX1d7zuu80jEYQQ74NpJX5EoSHIMTU5Eln3WL1Rka3R5DWy4qc6Cg__" 
-                alt="Maestro practicante masculino demostrando maestría" 
-                className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-300"
+                alt="Maestría profesional" 
+                className="w-full h-auto object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-                <p className="text-white font-semibold">Maestría Profesional</p>
-              </div>
             </div>
           </div>
         </div>
@@ -281,7 +238,7 @@ export default function KSHealing() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto mb-12">
+          <div className="max-w-3xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
             <Card className="p-8 border-primary/20 bg-gradient-to-br from-primary/5 to-slate-900/10">
               <div className="flex gap-4 mb-6">
                 <div className="flex-shrink-0">
@@ -550,6 +507,45 @@ export default function KSHealing() {
                 Cupo limitado - Solo 20 lugares disponibles
               </p>
             </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials - At the End */}
+      <section className="py-20 md:py-32 bg-gradient-to-br from-slate-950 via-blue-950/20 to-slate-950">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto mb-16 text-center">
+            <h2 className="font-display text-4xl md:text-5xl font-bold text-white mb-6">
+              Historias de <span className="text-secondary" style={{color: '#fbbc0e'}}>Transformación</span>
+            </h2>
+            <p className="text-lg text-white/70 leading-relaxed">
+              Lo que otros practicantes han experimentado
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+            {ksHealingTestimonials.map((testimonial, idx) => (
+              <Card key={idx} className="p-8 border-primary/30 bg-gradient-to-br from-primary/10 to-slate-900/40 backdrop-blur-sm hover:shadow-lg transition-all hover:-translate-y-2 duration-300">
+                <div className="flex gap-1 mb-6">
+                  {Array.from({ length: 5 }).map((_, i) => (
+                    <span key={i} className="text-secondary text-lg" style={{color: '#fbbc0e'}}>★</span>
+                  ))}
+                </div>
+
+                <p className="text-base md:text-lg text-white mb-6 leading-relaxed italic line-clamp-4">
+                  "{testimonial.quote}"
+                </p>
+
+                <div className="border-t border-primary/20 pt-6">
+                  <p className="font-display text-lg font-bold text-white mb-1">
+                    {testimonial.name}
+                  </p>
+                  <p className="text-sm text-secondary font-semibold" style={{color: '#fbbc0e'}}>
+                    {testimonial.title}
+                  </p>
+                </div>
+              </Card>
+            ))}
           </div>
         </div>
       </section>
