@@ -304,33 +304,24 @@ export default function KSHealing() {
                 </div>
               </div>
             </Card>
-          </div>
-        </div>
-      </section>
 
-      {/* Certification Details */}
-      <section className="py-20 md:py-32 bg-gradient-to-b from-background via-primary/5 to-background">
-        <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto mb-16 text-center">
-            <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-6">
-              Detalles de la <span className="text-primary">Certificación</span>
-            </h2>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-            {certDetails.map((detail, idx) => (
-              <Card key={idx} className="p-8 border-primary/20 bg-gradient-to-br from-primary/5 to-slate-900/10">
-                <h3 className="font-display text-xl font-bold text-foreground mb-3">
-                  {detail.title}
-                </h3>
-                <p className="text-muted-foreground mb-4">
-                  {detail.description}
-                </p>
-                <p className="text-secondary font-semibold" style={{color: '#fbbc0e'}}>
-                  {detail.date}
-                </p>
-              </Card>
-            ))}
+            <Card className="p-8 border-primary/20 bg-gradient-to-br from-primary/5 to-slate-900/10">
+              <div className="flex gap-4 mb-6">
+                <div className="flex-shrink-0">
+                  <div className="flex items-center justify-center h-12 w-12 rounded-md bg-secondary" style={{backgroundColor: '#fbbc0e'}}>
+                    <Check size={24} className="text-slate-950" />
+                  </div>
+                </div>
+                <div>
+                  <h3 className="font-display text-lg font-bold text-foreground">
+                    Manual y Material Descargable
+                  </h3>
+                  <p className="text-muted-foreground text-sm mt-2">
+                    Guías completas, ejercicios y recursos para tu práctica continua
+                  </p>
+                </div>
+              </div>
+            </Card>
           </div>
         </div>
       </section>
