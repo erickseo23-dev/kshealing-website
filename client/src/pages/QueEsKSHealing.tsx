@@ -99,7 +99,7 @@ export default function QueEsKSHealing() {
     <div className="min-h-screen flex flex-col bg-background">
       <Navigation />
 
-      {/* Hero Section - Improved */}
+      {/* Hero Section */}
       <section className="relative py-24 md:py-48 overflow-hidden">
         <div className="absolute inset-0">
           <img 
@@ -134,7 +134,7 @@ export default function QueEsKSHealing() {
         </div>
       </section>
 
-      {/* Definition Section - Enhanced */}
+      {/* Definition Section */}
       <section className="py-20 md:py-32 bg-gradient-to-br from-slate-950 via-blue-950/30 to-slate-950">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
@@ -155,7 +155,7 @@ export default function QueEsKSHealing() {
         </div>
       </section>
 
-      {/* How It Works - Redesigned */}
+      {/* How It Works */}
       <section className="py-20 md:py-32 bg-background relative overflow-hidden">
         <div className="absolute top-0 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl -z-10"></div>
         
@@ -232,7 +232,113 @@ export default function QueEsKSHealing() {
         </div>
       </section>
 
-      {/* Gallery Section - KS Healing Sessions */}
+      {/* Video Section - MOVED UP */}
+      <section className="py-20 md:py-32 bg-gradient-to-br from-slate-900 via-slate-900/95 to-primary/10">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="font-display text-4xl md:text-5xl font-bold text-white mb-6">
+                Explicación Directa de <span className="text-secondary" style={{color: '#fbbc0e'}}>YOHEV</span>
+              </h2>
+              <p className="text-lg text-white/80 leading-relaxed">
+                Escucha directamente de YOHEV qué es la Energía KS y cómo puede transformar tu vida
+              </p>
+            </div>
+            <div className="relative w-full bg-black rounded-2xl overflow-hidden shadow-2xl" style={{paddingBottom: '56.25%'}}>
+              <iframe
+                className="absolute top-0 left-0 w-full h-full"
+                src="https://www.youtube.com/embed/cGis_SmxC6Y"
+                title="Qué es la Energía KS - Explicación de YOHEV"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Benefits Section */}
+      <section className="py-20 md:py-32 bg-gradient-to-br from-background via-primary/3 to-background">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto mb-16 text-center">
+            <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-6">
+              Beneficios de <span className="text-primary">KS Healing</span>
+            </h2>
+            <p className="text-lg text-muted-foreground leading-relaxed">
+              Transformación integral en todos los aspectos de tu vida
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+            {benefits.map((benefit, idx) => {
+              const Icon = benefit.icon;
+              return (
+                <Card 
+                  key={idx} 
+                  className="p-8 border-primary/20 bg-gradient-to-br from-primary/5 to-slate-900/10 hover:shadow-lg transition-all hover:-translate-y-1 duration-300"
+                >
+                  <div className="flex items-start gap-4">
+                    <div className="w-12 h-12 rounded-lg bg-primary/20 flex items-center justify-center flex-shrink-0">
+                      <Icon size={24} className="text-primary" />
+                    </div>
+                    <div>
+                      <h3 className="font-display text-lg font-bold text-foreground mb-2">
+                        {benefit.title}
+                      </h3>
+                      <p className="text-sm text-muted-foreground leading-relaxed">
+                        {benefit.description}
+                      </p>
+                    </div>
+                  </div>
+                </Card>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      {/* Book Section - MOVED UP */}
+      <section className="py-20 md:py-32 bg-gradient-to-br from-slate-50 to-blue-50/30">
+        <div className="container mx-auto px-4">
+          <div className="max-w-5xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+              {/* Book Image */}
+              <div className="flex justify-center">
+                <div className="relative">
+                  <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 rounded-2xl blur-2xl"></div>
+                  <img 
+                    src="/images/portada-libro.png" 
+                    alt="Libro KS Healing" 
+                    className="relative w-full max-w-sm h-auto rounded-2xl shadow-2xl object-cover"
+                  />
+                </div>
+              </div>
+              
+              {/* Book Info */}
+              <div>
+                <h2 className="font-display text-4xl md:text-5xl font-bold text-primary mb-6 leading-tight">
+                  Conoce Más sobre <span style={{color: '#fbbc0e'}}>KS Healing</span> en el Libro
+                </h2>
+                <p className="text-lg text-foreground/80 mb-6 leading-relaxed">
+                  Sumérgete en una exploración profunda de la Energía KS a través de las páginas de este libro transformador. Descubre los fundamentos, técnicas y testimonios de cómo la Energía Keiouvos Stharef ha cambiado vidas en todo el mundo.
+                </p>
+                <p className="text-base text-foreground/70 mb-8 leading-relaxed">
+                  Un recurso esencial para quienes desean entender a fondo el sistema de sanación energética más revolucionario de nuestro tiempo.
+                </p>
+                <Link href="/el-libro">
+                  <Button size="lg" className="bg-primary hover:bg-primary/90 text-white gap-2">
+                    Explorar el Libro
+                    <ArrowRight size={20} />
+                  </Button>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Gallery Section - MOVED UP */}
       <section className="py-20 md:py-32 bg-gradient-to-b from-background to-secondary/5">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
@@ -291,102 +397,7 @@ export default function QueEsKSHealing() {
         </div>
       </section>
 
-      {/* Benefits Section - Asymmetric Layout */}
-      <section className="py-20 md:py-32 bg-gradient-to-br from-background via-primary/3 to-background">
-        <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto mb-16 text-center">
-            <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-6">
-              Beneficios de <span className="text-primary">KS Healing</span>
-            </h2>
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              Transformación integral en todos los aspectos de tu vida
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
-            {benefits.map((benefit, idx) => {
-              const Icon = benefit.icon;
-              return (
-                <Card 
-                  key={idx} 
-                  className="p-8 border-primary/20 bg-gradient-to-br from-primary/5 to-slate-900/10 hover:shadow-lg transition-all hover:-translate-y-1 duration-300"
-                >
-                  <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 rounded-lg bg-primary/20 flex items-center justify-center flex-shrink-0">
-                      <Icon size={24} className="text-primary" />
-                    </div>
-                    <div>
-                      <h3 className="font-display text-lg font-bold text-foreground mb-2">
-                        {benefit.title}
-                      </h3>
-                      <p className="text-sm text-muted-foreground leading-relaxed">
-                        {benefit.description}
-                      </p>
-                    </div>
-                  </div>
-                </Card>
-              );
-            })}
-          </div>
-        </div>
-      </section>
-
-      {/* Coherence Section */}
-      <section className="relative py-24 md:py-40 overflow-hidden">
-        <div className="absolute inset-0">
-          <img 
-            src="/images/ks-healing-coherence.f6g7h8i9.png" 
-            alt="Coherencia" 
-            className="w-full h-full object-cover object-center"
-          />
-          <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/40 to-black/60"></div>
-        </div>
-        
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="max-w-3xl">
-            <h2 className="font-display text-5xl md:text-6xl font-bold text-white mb-6 leading-tight">
-              Coherencia en Todos los Niveles
-            </h2>
-            <p className="text-xl md:text-2xl text-white/90 mb-8 font-serif leading-relaxed">
-              La Energía KS actúa de forma integrada, reorganizando tus sistemas energéticos hacia la armonía perfecta.
-            </p>
-            <Link href="/ks-healing">
-              <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-primary gap-2" style={{color: '#ffffff'}}>
-                Aprende KS Healing
-                <ArrowRight size={20} />
-              </Button>
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* Video Section */}
-      <section className="py-20 md:py-32 bg-gradient-to-br from-slate-900 via-slate-900/95 to-primary/10">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <div className="text-center mb-12">
-              <h2 className="font-display text-4xl md:text-5xl font-bold text-white mb-6">
-                Explicación Directa de <span className="text-secondary" style={{color: '#fbbc0e'}}>YOHEV</span>
-              </h2>
-              <p className="text-lg text-white/80 leading-relaxed">
-                Escucha directamente de YOHEV qué es la Energía KS y cómo puede transformar tu vida
-              </p>
-            </div>
-            <div className="relative w-full bg-black rounded-2xl overflow-hidden shadow-2xl" style={{paddingBottom: '56.25%'}}>
-              <iframe
-                className="absolute top-0 left-0 w-full h-full"
-                src="https://www.youtube.com/embed/cGis_SmxC6Y"
-                title="Qué es la Energía KS - Explicación de YOHEV"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              ></iframe>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Testimonials Carousel - Improved */}
+      {/* Testimonials Carousel */}
       <section className="py-20 md:py-32 bg-gradient-to-br from-slate-950 via-blue-950/20 to-slate-950">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto mb-16 text-center">
@@ -471,7 +482,36 @@ export default function QueEsKSHealing() {
         </div>
       </section>
 
-      {/* CTA Section - Enhanced */}
+      {/* Coherence Section */}
+      <section className="relative py-24 md:py-40 overflow-hidden">
+        <div className="absolute inset-0">
+          <img 
+            src="/images/ks-healing-coherence.f6g7h8i9.png" 
+            alt="Coherencia" 
+            className="w-full h-full object-cover object-center"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/40 to-black/60"></div>
+        </div>
+        
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="max-w-3xl">
+            <h2 className="font-display text-5xl md:text-6xl font-bold text-white mb-6 leading-tight">
+              Coherencia en Todos los Niveles
+            </h2>
+            <p className="text-xl md:text-2xl text-white/90 mb-8 font-serif leading-relaxed">
+              La Energía KS actúa de forma integrada, reorganizando tus sistemas energéticos hacia la armonía perfecta.
+            </p>
+            <Link href="/ks-healing">
+              <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-primary gap-2" style={{color: '#ffffff'}}>
+                Aprende KS Healing
+                <ArrowRight size={20} />
+              </Button>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section - MOVED TO END */}
       <section className="py-20 md:py-32 bg-gradient-to-r from-primary via-primary/90 to-primary/80">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto text-center">
@@ -506,46 +546,6 @@ export default function QueEsKSHealing() {
                   <ArrowRight size={20} />
                 </Button>
               </Link>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Book Section */}
-      <section className="py-20 md:py-32 bg-gradient-to-br from-slate-50 to-blue-50/30">
-        <div className="container mx-auto px-4">
-          <div className="max-w-5xl mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-              {/* Book Image */}
-              <div className="flex justify-center">
-                <div className="relative">
-                  <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 rounded-2xl blur-2xl"></div>
-                  <img 
-                    src="/images/portada-libro.png" 
-                    alt="Libro KS Healing" 
-                    className="relative w-full max-w-sm h-auto rounded-2xl shadow-2xl object-cover"
-                  />
-                </div>
-              </div>
-              
-              {/* Book Info */}
-              <div>
-                <h2 className="font-display text-4xl md:text-5xl font-bold text-primary mb-6 leading-tight">
-                  Conoce Más sobre <span style={{color: '#fbbc0e'}}>KS Healing</span> en el Libro
-                </h2>
-                <p className="text-lg text-foreground/80 mb-6 leading-relaxed">
-                  Sumérgete en una exploración profunda de la Energía KS a través de las páginas de este libro transformador. Descubre los fundamentos, técnicas y testimonios de cómo la Energía Keiouvos Stharef ha cambiado vidas en todo el mundo.
-                </p>
-                <p className="text-base text-foreground/70 mb-8 leading-relaxed">
-                  Un recurso esencial para quienes desean entender a fondo el sistema de sanación energética más revolucionario de nuestro tiempo.
-                </p>
-                <Link href="/el-libro">
-                  <Button size="lg" className="bg-primary hover:bg-primary/90 text-white gap-2">
-                    Explorar el Libro
-                    <ArrowRight size={20} />
-                  </Button>
-                </Link>
-              </div>
             </div>
           </div>
         </div>
