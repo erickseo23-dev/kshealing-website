@@ -229,10 +229,12 @@ export default function KSHealing() {
                   <span className="text-foreground">Preparación ideal para la certificación</span>
                 </li>
               </ul>
-              <Button size="lg" className="w-full bg-secondary hover:bg-secondary/90 text-slate-950 font-bold" style={{backgroundColor: '#fbbc0e'}}>
-                Comprar el Libro
-                <ArrowRight size={20} />
-              </Button>
+              <a href="https://a.co/d/0ffmcjLG" target="_blank" rel="noopener noreferrer">
+                <Button size="lg" className="w-full bg-secondary hover:bg-secondary/90 text-slate-950 font-bold" style={{backgroundColor: '#fbbc0e'}}>
+                  Comprar el Libro
+                  <ArrowRight size={20} />
+                </Button>
+              </a>
             </Card>
 
             {/* Option 2: Free Workshop */}
@@ -447,6 +449,17 @@ export default function KSHealing() {
               ))}
             </div>
           </div>
+
+          {/* Advanced Practitioner Image */}
+          <div className="max-w-3xl mx-auto mt-16">
+            <div className="relative overflow-hidden rounded-2xl shadow-2xl">
+              <img 
+                src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/xJxatuqQKjkiNbwb.png" 
+                alt="KS Healing Advanced Practitioner" 
+                className="w-full h-auto object-cover"
+              />
+            </div>
+          </div>
         </div>
       </section>
 
@@ -531,6 +544,17 @@ export default function KSHealing() {
                 <h3 className="font-display text-2xl font-bold text-foreground mb-2">10k+</h3>
                 <p className="text-muted-foreground">Vidas Transformadas</p>
               </Card>
+            </div>
+          </div>
+
+          {/* Community Celebration Image */}
+          <div className="max-w-5xl mx-auto mt-16">
+            <div className="relative overflow-hidden rounded-2xl shadow-2xl">
+              <img 
+                src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/rSpRpvihZcFKdXxn.png" 
+                alt="KS Healing Community Celebration" 
+                className="w-full h-auto object-cover"
+              />
             </div>
           </div>
         </div>
