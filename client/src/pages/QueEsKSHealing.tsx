@@ -325,7 +325,7 @@ export default function QueEsKSHealing() {
       </section>
 
       {/* Video Section */}
-      <section className="py-20 md:py-32 bg-gradient-to-br from-primary/5 to-slate-900/40">
+      <section className="py-20 md:py-32 bg-gradient-to-br from-slate-900 via-slate-900/95 to-primary/10">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
