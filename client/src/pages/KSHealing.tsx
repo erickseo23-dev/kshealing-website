@@ -195,7 +195,91 @@ export default function KSHealing() {
         </div>
       </section>
 
-      {/* 5. Next Certification - Moved Up */}
+      {/* 5. How to Start - Getting Started */}
+      <section className="py-20 md:py-32 bg-gradient-to-b from-background via-primary/3 to-background">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto mb-16 text-center">
+            <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-6">
+              Cómo <span className="text-primary">Empezar</span>
+            </h2>
+            <p className="text-lg text-muted-foreground leading-relaxed">
+              Recomendamos prepararte con uno de estos dos caminos antes de iniciar la certificación
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            {/* Option 1: Book */}
+            <Card className="p-8 border-primary/20 bg-gradient-to-br from-primary/5 to-slate-900/10 hover:shadow-lg transition-all hover:-translate-y-2 duration-300">
+              <div className="inline-block p-4 rounded-xl bg-gradient-to-br from-primary to-blue-600 mb-6">
+                <Award size={32} className="text-white" />
+              </div>
+              <h3 className="font-display text-2xl font-bold text-foreground mb-4">
+                Opción 1: El Libro de KS Healing
+              </h3>
+              <p className="text-muted-foreground leading-relaxed mb-6">
+                Adquiere el libro oficial de KS Healing para comprender profundamente los fundamentos de la Energía KS, la filosofía detrás del método y los principios que guían la práctica.
+              </p>
+              <ul className="space-y-3 mb-8">
+                <li className="flex gap-3">
+                  <Check size={20} className="text-primary flex-shrink-0 mt-0.5" />
+                  <span className="text-foreground">Comprensión profunda de los fundamentos</span>
+                </li>
+                <li className="flex gap-3">
+                  <Check size={20} className="text-primary flex-shrink-0 mt-0.5" />
+                  <span className="text-foreground">Acceso a la filosofía y principios del método</span>
+                </li>
+                <li className="flex gap-3">
+                  <Check size={20} className="text-primary flex-shrink-0 mt-0.5" />
+                  <span className="text-foreground">Preparación ideal para la certificación</span>
+                </li>
+              </ul>
+              <Button size="lg" className="w-full bg-secondary hover:bg-secondary/90 text-slate-950 font-bold" style={{backgroundColor: '#fbbc0e'}}>
+                Comprar el Libro
+                <ArrowRight size={20} />
+              </Button>
+            </Card>
+
+            {/* Option 2: Free Workshop */}
+            <Card className="p-8 border-primary/20 bg-gradient-to-br from-primary/5 to-slate-900/10 hover:shadow-lg transition-all hover:-translate-y-2 duration-300">
+              <div className="inline-block p-4 rounded-xl bg-gradient-to-br from-primary to-blue-600 mb-6">
+                <Sparkles size={32} className="text-white" />
+              </div>
+              <h3 className="font-display text-2xl font-bold text-foreground mb-4">
+                Opción 2: Taller Gratuito
+              </h3>
+              <p className="text-muted-foreground leading-relaxed mb-6">
+                Participa en el taller gratuito "KS Healing y Consciencia Crística" para experimentar directamente la Energía KS, conectar con la comunidad y decidir si la certificación es para ti.
+              </p>
+              <ul className="space-y-3 mb-8">
+                <li className="flex gap-3">
+                  <Check size={20} className="text-primary flex-shrink-0 mt-0.5" />
+                  <span className="text-foreground">Experiencia directa de la Energía KS</span>
+                </li>
+                <li className="flex gap-3">
+                  <Check size={20} className="text-primary flex-shrink-0 mt-0.5" />
+                  <span className="text-foreground">Conexión con la comunidad</span>
+                </li>
+                <li className="flex gap-3">
+                  <Check size={20} className="text-primary flex-shrink-0 mt-0.5" />
+                  <span className="text-foreground">100% Gratuito y sin compromiso</span>
+                </li>
+              </ul>
+              <Button size="lg" className="w-full border-primary text-primary hover:bg-primary/10" variant="outline">
+                Más Información del Taller
+                <ArrowRight size={20} />
+              </Button>
+            </Card>
+          </div>
+
+          <div className="max-w-2xl mx-auto mt-12 p-6 rounded-xl bg-gradient-to-r from-primary/10 to-blue-600/10 border border-primary/20">
+            <p className="text-center text-foreground leading-relaxed">
+              <span className="font-semibold">Nota:</span> Recomendamos completar al menos uno de estos caminos antes de inscribirse en la certificación. Esto asegura que tengas una base sólida y que entiendas completamente qué es KS Healing.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* 6. Next Certification - Moved Up */}
       <section className="py-20 md:py-32 bg-gradient-to-b from-background to-primary/5">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto mb-16 text-center">
@@ -262,7 +346,7 @@ export default function KSHealing() {
         </div>
       </section>
 
-      {/* 6. Program Structure - Grid */}
+      {/* 7. Program Structure - Grid */}
       <section className="py-20 md:py-32 bg-gradient-to-br from-background via-primary/3 to-background">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto mb-16 text-center">
@@ -295,7 +379,7 @@ export default function KSHealing() {
         </div>
       </section>
 
-      {/* 7. Mastery Image */}
+      {/* 8. Mastery Image */}
       <section className="py-20 md:py-32 bg-gradient-to-b from-background to-slate-900/10">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
@@ -310,7 +394,7 @@ export default function KSHealing() {
         </div>
       </section>
 
-      {/* 8. What's Included */}
+      {/* 9. What's Included */}
       <section className="py-20 md:py-32 bg-gradient-to-b from-background via-primary/5 to-background">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto mb-16 text-center">
@@ -346,7 +430,7 @@ export default function KSHealing() {
         </div>
       </section>
 
-      {/* 9. For Whom */}
+      {/* 10. For Whom */}
       <section className="py-20 md:py-32 bg-gradient-to-br from-background via-primary/3 to-background">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto mb-16 text-center">
@@ -373,7 +457,7 @@ export default function KSHealing() {
         </div>
       </section>
 
-      {/* 10. Transformation Journey */}
+      {/* 11. Transformation Journey */}
       <section className="py-20 md:py-32 bg-gradient-to-b from-background to-primary/5">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
@@ -425,7 +509,7 @@ export default function KSHealing() {
         </div>
       </section>
 
-      {/* 11. Community */}
+      {/* 12. Community */}
       <section className="py-20 md:py-32 bg-gradient-to-br from-background via-primary/3 to-background">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
@@ -459,7 +543,7 @@ export default function KSHealing() {
         </div>
       </section>
 
-      {/* 12. Testimonials - At the End */}
+      {/* 13. Testimonials - At the End */}
       <section className="py-20 md:py-32 bg-gradient-to-b from-background to-primary/5">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto mb-16 text-center">
@@ -496,7 +580,7 @@ export default function KSHealing() {
         </div>
       </section>
 
-      {/* 13. Final CTA */}
+      {/* 14. Final CTA */}
       <section className="py-20 md:py-32 bg-gradient-to-r from-primary/10 to-blue-600/10 border-t border-primary/20">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
