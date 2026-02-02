@@ -112,8 +112,8 @@ export default function QueEsKSHealing() {
         
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl">
-            <div className="inline-block mb-6 px-4 py-2 rounded-full bg-primary/20 border border-primary/50">
-              <p className="text-primary font-medium text-sm">ENERGÍA TRANSFORMADORA</p>
+            <div className="inline-block mb-6 px-4 py-2 rounded-full bg-white/20 border border-white/50 backdrop-blur-sm">
+              <p className="text-white font-medium text-sm font-semibold">ENERGÍA TRANSFORMADORA</p>
             </div>
             
             <h1 className="font-display text-6xl md:text-7xl font-bold text-white mb-6 leading-tight">
@@ -126,7 +126,7 @@ export default function QueEsKSHealing() {
             
             <Link href="/ks-healing">
               <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-primary gap-2" style={{color: '#ffffff'}}>
-                Explorar KS Healing
+                Aprende KS Healing
                 <ArrowRight size={20} />
               </Button>
             </Link>
