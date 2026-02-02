@@ -419,16 +419,28 @@ export default function QueEsKSHealing() {
             <p className="text-xl text-white/90 mb-10 leading-relaxed">
               Descubre cómo la Energía KS puede cambiar tu vida y reconectar contigo mismo.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 justify-center">
               <Link href="/ks-healing">
-                <Button size="lg" className="bg-white hover:bg-blue-50 text-primary gap-2">
-                  Explorar KS Healing
+                <Button size="lg" className="w-full bg-white hover:bg-blue-50 text-primary gap-2">
+                  Aprende KS Healing
                   <ArrowRight size={20} />
                 </Button>
               </Link>
-              <Link href="/eventos">
-                <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10 gap-2">
-                  Ver Próximos Eventos
+              <Link href="/contacto">
+                <Button size="lg" variant="outline" className="w-full border-white text-white hover:bg-white/10 gap-2">
+                  Agenda una Sesión con Yohev
+                  <ArrowRight size={20} />
+                </Button>
+              </Link>
+              <Link href="/practicantes">
+                <Button size="lg" variant="outline" className="w-full border-white text-white hover:bg-white/10 gap-2">
+                  Encuentra un Practicante
+                  <ArrowRight size={20} />
+                </Button>
+              </Link>
+              <Link href="/cursos-y-programas">
+                <Button size="lg" variant="outline" className="w-full border-white text-white hover:bg-white/10 gap-2">
+                  Cursos y Programas KS
                   <ArrowRight size={20} />
                 </Button>
               </Link>
