@@ -191,5 +191,26 @@ export const eventos: Event[] = [
     tipo: "Retiro Sagrado",
     tema: "Consciencia",
     modalidad: "Online en Vivo"
+  },
+  {
+    id: 12,
+    title: "Certificación Internacional en KS Healing Nivel Básico",
+    description: "Únete a una comunidad global de profesionales transformando vidas a través de la Energía KS. Certificación Internacional en 3 módulos intensivos.",
+    fecha: "22 de Febrero - 8 de Marzo, 2026",
+    ubicacion: "Online en vivo",
+    horario: "3 domingos consecutivos, 2 horas cada sesión",
+    participantes: "20 lugares disponibles",
+    precio: "$145 USD",
+    incluye: [
+      "Material en Video Pregrabado - Acceso completo a videos de cada módulo",
+      "Sesión en Vivo con YOHEV - 2 horas de transmisión directa en Zoom",
+      "Prácticas Online Programadas - Sesiones con facilitador certificado",
+      "Certificación Internacional - Reconocimiento oficial como Practicante de KS Healing"
+    ],
+    estado: "Abierto",
+    imagen: "/images/ks-healing-certification.png",
+    tipo: "Certificación",
+    tema: "KS Healing",
+    modalidad: "Online en Vivo"
   }
 ];
