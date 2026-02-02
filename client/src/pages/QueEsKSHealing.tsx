@@ -475,6 +475,46 @@ export default function QueEsKSHealing() {
         </div>
       </section>
 
+      {/* Book Section */}
+      <section className="py-20 md:py-32 bg-gradient-to-br from-slate-50 to-blue-50/30">
+        <div className="container mx-auto px-4">
+          <div className="max-w-5xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+              {/* Book Image */}
+              <div className="flex justify-center">
+                <div className="relative">
+                  <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 rounded-2xl blur-2xl"></div>
+                  <img 
+                    src="/images/portada-libro.png" 
+                    alt="Libro KS Healing" 
+                    className="relative w-full max-w-sm h-auto rounded-2xl shadow-2xl object-cover"
+                  />
+                </div>
+              </div>
+              
+              {/* Book Info */}
+              <div>
+                <h2 className="font-display text-4xl md:text-5xl font-bold text-primary mb-6 leading-tight">
+                  Conoce Más sobre <span style={{color: '#fbbc0e'}}>KS Healing</span> en el Libro
+                </h2>
+                <p className="text-lg text-foreground/80 mb-6 leading-relaxed">
+                  Sumérgete en una exploración profunda de la Energía KS a través de las páginas de este libro transformador. Descubre los fundamentos, técnicas y testimonios de cómo la Energía Keiouvos Stharef ha cambiado vidas en todo el mundo.
+                </p>
+                <p className="text-base text-foreground/70 mb-8 leading-relaxed">
+                  Un recurso esencial para quienes desean entender a fondo el sistema de sanación energética más revolucionario de nuestro tiempo.
+                </p>
+                <Link href="/el-libro">
+                  <Button size="lg" className="bg-primary hover:bg-primary/90 text-white gap-2">
+                    Explorar el Libro
+                    <ArrowRight size={20} />
+                  </Button>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <Footer />
     </div>
   );
