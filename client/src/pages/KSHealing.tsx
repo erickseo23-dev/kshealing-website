@@ -331,10 +331,6 @@ export default function KSHealing() {
                     Inscríbete Ahora
                     <ArrowRight size={20} />
                   </Button>
-                  <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-primary/10">
-                    Más Información
-                    <ArrowRight size={20} />
-                  </Button>
                 </div>
               </div>
 
@@ -358,23 +354,20 @@ export default function KSHealing() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            {modules.map((module, idx) => {
-              const IconComponent = module.icon;
-              return (
-                <Card key={idx} className="p-8 border-primary/20 bg-gradient-to-br from-primary/5 to-slate-900/10 hover:shadow-lg transition-all hover:-translate-y-2 duration-300">
-                  <div className="inline-block p-4 rounded-xl bg-gradient-to-br from-primary to-blue-600 mb-6">
-                    <IconComponent size={32} className="text-white" />
-                  </div>
-                  <h3 className="font-display text-xl font-bold text-foreground mb-4">
-                    {module.title}
-                  </h3>
-                  <p className="text-muted-foreground leading-relaxed">
-                    {module.description}
-                  </p>
-                </Card>
-              );
-            })}
+          <div className="max-w-3xl mx-auto space-y-4">
+            {modules.map((module, idx) => (
+              <details key={idx} className="group border border-primary/20 rounded-lg overflow-hidden bg-gradient-to-br from-primary/5 to-slate-900/10 hover:shadow-lg transition-all duration-300">
+                <summary className="flex items-center justify-between cursor-pointer p-6 font-display text-lg font-bold text-foreground hover:bg-primary/10 transition-colors">
+                  {module.title}
+                  <span className="text-primary transition-transform group-open:rotate-180" style={{color: '#fbbc0e'}}>
+                    ▼
+                  </span>
+                </summary>
+                <div className="px-6 pb-6 pt-2 border-t border-primary/10 text-muted-foreground leading-relaxed">
+                  {module.description}
+                </div>
+              </details>
+            ))}
           </div>
         </div>
       </section>
