@@ -404,6 +404,107 @@ export default function KSHealing() {
         </div>
       </section>
 
+      {/* Next Certification */}
+      <section className="py-20 md:py-32 bg-gradient-to-b from-background via-primary/5 to-background">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto mb-16 text-center">
+            <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-6">
+              Próxima <span className="text-primary">Certificación</span>
+            </h2>
+            <p className="text-lg text-muted-foreground leading-relaxed">
+              Todo lo que necesitas saber sobre la próxima cohorte
+            </p>
+          </div>
+
+          <div className="max-w-4xl mx-auto">
+            <Card className="p-8 md:p-12 border-primary/30 bg-gradient-to-br from-primary/10 to-slate-900/20">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                <div>
+                  <h3 className="font-display text-2xl font-bold text-foreground mb-4">Detalles Principales</h3>
+                  <div className="space-y-4">
+                    <div className="flex gap-4">
+                      <Calendar size={24} className="text-primary flex-shrink-0 mt-1" />
+                      <div>
+                        <p className="font-semibold text-foreground">Fechas</p>
+                        <p className="text-muted-foreground">22 Feb, 1 Mar, 8 Mar</p>
+                      </div>
+                    </div>
+                    <div className="flex gap-4">
+                      <Zap size={24} className="text-primary flex-shrink-0 mt-1" />
+                      <div>
+                        <p className="font-semibold text-foreground">Horario</p>
+                        <p className="text-muted-foreground">12:00 - 14:00 CDMX</p>
+                      </div>
+                    </div>
+                    <div className="flex gap-4">
+                      <Users size={24} className="text-primary flex-shrink-0 mt-1" />
+                      <div>
+                        <p className="font-semibold text-foreground">Modalidad</p>
+                        <p className="text-muted-foreground">Online en vivo</p>
+                      </div>
+                    </div>
+                    <div className="flex gap-4">
+                      <Award size={24} className="text-primary flex-shrink-0 mt-1" />
+                      <div>
+                        <p className="font-semibold text-foreground">Inversión</p>
+                        <p className="text-secondary font-bold text-lg" style={{color: '#fbbc0e'}}>$145 USD</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <h3 className="font-display text-2xl font-bold text-foreground mb-4">Lo que Incluye</h3>
+                  <ul className="space-y-3">
+                    <li className="flex gap-3">
+                      <Check size={20} className="text-secondary flex-shrink-0 mt-0.5" style={{color: '#fbbc0e'}} />
+                      <span className="text-foreground">3 módulos intensivos</span>
+                    </li>
+                    <li className="flex gap-3">
+                      <Check size={20} className="text-secondary flex-shrink-0 mt-0.5" style={{color: '#fbbc0e'}} />
+                      <span className="text-foreground">Sesiones con YOHEV</span>
+                    </li>
+                    <li className="flex gap-3">
+                      <Check size={20} className="text-secondary flex-shrink-0 mt-0.5" style={{color: '#fbbc0e'}} />
+                      <span className="text-foreground">Material pregrabado</span>
+                    </li>
+                    <li className="flex gap-3">
+                      <Check size={20} className="text-secondary flex-shrink-0 mt-0.5" style={{color: '#fbbc0e'}} />
+                      <span className="text-foreground">Prácticas con facilitador</span>
+                    </li>
+                    <li className="flex gap-3">
+                      <Check size={20} className="text-secondary flex-shrink-0 mt-0.5" style={{color: '#fbbc0e'}} />
+                      <span className="text-foreground">Manual descargable</span>
+                    </li>
+                    <li className="flex gap-3">
+                      <Check size={20} className="text-secondary flex-shrink-0 mt-0.5" style={{color: '#fbbc0e'}} />
+                      <span className="text-foreground">Certificación Internacional</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className="border-t border-primary/20 pt-8">
+                <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                  <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-slate-950 font-bold gap-2" style={{backgroundColor: '#fbbc0e'}}>
+                    Inscríbete Ahora
+                    <ArrowRight size={20} />
+                  </Button>
+                  <Button size="lg" variant="outline" className="border-primary text-foreground hover:bg-primary/10 gap-2">
+                    Más Información
+                    <ArrowRight size={20} />
+                  </Button>
+                </div>
+              </div>
+
+              <p className="text-center text-muted-foreground text-sm mt-6">
+                Cupo limitado - Solo 20 lugares disponibles
+              </p>
+            </Card>
+          </div>
+        </div>
+      </section>
+
       {/* Final CTA */}
       <section className="py-20 md:py-32 bg-gradient-to-r from-primary via-blue-600 to-primary relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
