@@ -324,6 +324,32 @@ export default function QueEsKSHealing() {
         </div>
       </section>
 
+      {/* Video Section */}
+      <section className="py-20 md:py-32 bg-gradient-to-br from-primary/5 to-slate-900/40">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="font-display text-4xl md:text-5xl font-bold text-white mb-6">
+                Explicación Directa de <span className="text-secondary" style={{color: '#fbbc0e'}}>YOHEV</span>
+              </h2>
+              <p className="text-lg text-white/80 leading-relaxed">
+                Escucha directamente de YOHEV qué es la Energía KS y cómo puede transformar tu vida
+              </p>
+            </div>
+            <div className="relative w-full bg-black rounded-2xl overflow-hidden shadow-2xl" style={{paddingBottom: '56.25%'}}>
+              <iframe
+                className="absolute top-0 left-0 w-full h-full"
+                src="https://www.youtube.com/embed/cGis_SmxC6Y"
+                title="Qué es la Energía KS - Explicación de YOHEV"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Testimonials Carousel - Improved */}
       <section className="py-20 md:py-32 bg-gradient-to-br from-slate-950 via-blue-950/20 to-slate-950">
         <div className="container mx-auto px-4">
@@ -428,7 +454,7 @@ export default function QueEsKSHealing() {
               </Link>
               <Link href="/contacto">
                 <Button size="lg" variant="outline" className="w-full border-white text-white hover:bg-white/10 gap-2">
-                  Agenda una Sesión con Yohev
+                  Agenda una Sesión con YOHEV
                   <ArrowRight size={20} />
                 </Button>
               </Link>
