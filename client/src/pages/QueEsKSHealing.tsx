@@ -232,7 +232,43 @@ export default function QueEsKSHealing() {
         </div>
       </section>
 
-      {/* Transformation Section */}
+      {/* Gallery Section - KS Healing Sessions */}
+      <section className="py-20 md:py-32 bg-gradient-to-b from-background to-secondary/5">
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-16">
+              <h2 className="font-display text-4xl md:text-5xl font-bold text-primary mb-6">
+                Sesiones de <span style={{color: '#fbbc0e'}}>KS Healing</span> en Acción
+              </h2>
+              <p className="text-lg text-foreground/70 leading-relaxed">
+                Visualiza cómo se realiza la transmisión de Energía KS en diferentes ambientes profesionales
+              </p>
+            </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {[
+                { src: '/images/ks-healing-session-1.png', alt: 'Sesión KS Healing 1' },
+                { src: '/images/ks-healing-session-2.png', alt: 'Sesión KS Healing 2' },
+                { src: '/images/ks-healing-session-3.png', alt: 'Sesión KS Healing 3' },
+                { src: '/images/ks-healing-session-4.png', alt: 'Sesión KS Healing 4' },
+              ].map((image, index) => (
+                <div key={index} className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105">
+                  <img
+                    src={image.src}
+                    alt={image.alt}
+                    className="w-full h-80 object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-start p-6">
+                    <p className="text-white font-serif text-lg">{image.alt}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials Section */}
       <section className="relative py-24 md:py-40 overflow-hidden">
         <div className="absolute inset-0">
           <img 
