@@ -144,10 +144,10 @@ export default function QueEsKSHealing() {
               </h2>
               <div className="space-y-6">
                 <p className="text-lg md:text-xl text-white/90 leading-relaxed">
-                  KS Healing es un sistema de sanación energética que utiliza la <span className="text-primary font-semibold">Energía Keiouvos Stharef</span> para facilitar transformación profunda en los sistemas energéticos humanos.
+                  KS Healing es un sistema de sanación energética que utiliza la <span className="font-semibold" style={{color: '#fbbc0e'}}>Energía Keiouvos Stharef</span> para facilitar transformación profunda en los sistemas energéticos humanos.
                 </p>
                 <p className="text-lg md:text-xl text-white/90 leading-relaxed">
-                  No es una religión, no requiere creencias previas, y funciona respetando el libre albedrío de cada persona. La Energía KS actúa en la <span className="text-primary font-semibold">coherencia pura</span>, reorganizando los campos energéticos hacia su estado natural de armonía y salud.
+                  No es una religión, no requiere creencias previas, y funciona respetando el libre albedrío de cada persona. La Energía KS actúa en la <span className="font-semibold" style={{color: '#fbbc0e'}}>coherencia pura</span>, reorganizando los campos energéticos hacia su estado natural de armonía y salud.
                 </p>
               </div>
             </Card>
