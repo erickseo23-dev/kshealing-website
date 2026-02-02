@@ -247,10 +247,10 @@ export default function QueEsKSHealing() {
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {[
-                { src: '/images/ks-healing-session-1.png', alt: 'Sesión KS Healing 1' },
-                { src: '/images/ks-healing-session-2.png', alt: 'Sesión KS Healing 2' },
-                { src: '/images/ks-healing-session-3.png', alt: 'Sesión KS Healing 3' },
-                { src: '/images/ks-healing-session-4.png', alt: 'Sesión KS Healing 4' },
+                { src: '/images/ks-healing-session-1.a7f2b3c1.png', alt: 'Sesión KS Healing 1' },
+                { src: '/images/ks-healing-session-2.d4e8f9a2.png', alt: 'Sesión KS Healing 2' },
+                { src: '/images/ks-healing-session-3.b1c5d6e7.png', alt: 'Sesión KS Healing 3' },
+                { src: '/images/ks-healing-session-4.f3g2h1i9.png', alt: 'Sesión KS Healing 4' },
               ].map((image, index) => (
                 <div key={index} className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105">
                   <img
