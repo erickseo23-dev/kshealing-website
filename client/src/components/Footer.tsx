@@ -101,7 +101,8 @@ export default function Footer() {
                 <MapPin size={16} className="text-primary flex-shrink-0 mt-0.5" />
                 <div>
                   <p className="text-muted-foreground">Ubicación</p>
-                  <p className="text-muted-foreground">Latinoamérica</p>
+                  <p className="text-muted-foreground">Av. Insurgentes 2177</p>
+                  <p className="text-muted-foreground">Tepic, Nay. Méx.</p>
                 </div>
               </div>
             </div>
