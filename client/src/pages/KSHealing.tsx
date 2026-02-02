@@ -613,10 +613,6 @@ export default function KSHealing() {
                 Inscríbete Ahora
                 <ArrowRight size={20} />
               </Button>
-              <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-primary/10">
-                Contactar
-                <ArrowRight size={20} />
-              </Button>
             </div>
 
             <p className="text-sm text-muted-foreground mt-8">
