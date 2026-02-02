@@ -108,10 +108,6 @@ export default function KSHealing() {
                 Inscríbete Ahora
                 <ArrowRight size={20} />
               </Button>
-              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10 gap-2">
-                Más Información
-                <ArrowRight size={20} />
-              </Button>
             </div>
 
             <div className="flex flex-wrap gap-6 text-white/80 text-sm mt-12">
@@ -159,14 +155,10 @@ export default function KSHealing() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+               <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {mainBenefits.map((benefit, idx) => {
-              const IconComponent = benefit.icon;
               return (
                 <Card key={idx} className="p-8 border-primary/20 bg-gradient-to-br from-primary/5 to-slate-900/10 hover:shadow-lg transition-all hover:-translate-y-2 duration-300">
-                  <div className="inline-block p-4 rounded-xl bg-gradient-to-br from-primary to-blue-600 mb-6">
-                    <IconComponent size={32} className="text-white" />
-                  </div>
                   <h3 className="font-display text-2xl font-bold text-foreground mb-4">
                     {benefit.title}
                   </h3>
@@ -210,8 +202,12 @@ export default function KSHealing() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {/* Option 1: Book */}
             <Card className="p-8 border-primary/20 bg-gradient-to-br from-primary/5 to-slate-900/10 hover:shadow-lg transition-all hover:-translate-y-2 duration-300">
-              <div className="inline-block p-4 rounded-xl bg-gradient-to-br from-primary to-blue-600 mb-6">
-                <Award size={32} className="text-white" />
+              <div className="relative overflow-hidden rounded-xl mb-6 h-64">
+                <img 
+                  src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/mQtJkKgneMgMTkmz.png" 
+                  alt="Libro KS Healing" 
+                  className="w-full h-full object-cover"
+                />
               </div>
               <h3 className="font-display text-2xl font-bold text-foreground mb-4">
                 Opción 1: El Libro de KS Healing
@@ -241,8 +237,12 @@ export default function KSHealing() {
 
             {/* Option 2: Free Workshop */}
             <Card className="p-8 border-primary/20 bg-gradient-to-br from-primary/5 to-slate-900/10 hover:shadow-lg transition-all hover:-translate-y-2 duration-300">
-              <div className="inline-block p-4 rounded-xl bg-gradient-to-br from-primary to-blue-600 mb-6">
-                <Sparkles size={32} className="text-white" />
+              <div className="relative overflow-hidden rounded-xl mb-6 h-64">
+                <img 
+                  src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/bKIoEAVTrrzvvghT.png" 
+                  alt="YOHEV dando taller" 
+                  className="w-full h-full object-cover"
+                />
               </div>
               <h3 className="font-display text-2xl font-bold text-foreground mb-4">
                 Opción 2: Taller Gratuito
