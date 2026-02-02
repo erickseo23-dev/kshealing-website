@@ -38,7 +38,7 @@ export default function BlogArticle1() {
           {/* Article Body */}
           <div className="prose prose-invert max-w-none">
             <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-              La transformación personal es uno de los viajes más profundos que una persona puede emprender. En KS Healing, entendemos que esta transformación no es solo mental o emocional, sino que ocurre a nivel energético fundamental. La Energía KS es un sistema de transmisión intencionalizada que activa cambios profundos en tu realidad.
+              La transformación personal es uno de los viajes más profundos que una persona puede emprender. En KS Healing, entendemos que esta transformación no es solo mental o emocional, sino que ocurre a nivel energético fundamental. La Energía KS es un sistema de transmisión intencionada que activa cambios profundos en tu realidad.
             </p>
 
             <h2 className="text-2xl font-display font-bold text-foreground mt-8 mb-4">

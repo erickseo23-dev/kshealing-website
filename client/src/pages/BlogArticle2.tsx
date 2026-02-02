@@ -107,7 +107,7 @@ export default function BlogArticle2() {
             </p>
 
             <p className="text-muted-foreground leading-relaxed mb-6">
-              El Chakra Timo es el centro de la <strong>verdad intencionalizada</strong>. Es donde tu intención se convierte en realidad. Mientras que el Chakra del Corazón es el centro del amor, el Chakra Timo es el centro del <em>poder creativo</em> que surge del amor.
+              El Chakra Timo es el centro de la <strong>verdad intencionada</strong>. Es donde tu intención se convierte en realidad. Mientras que el Chakra del Corazón es el centro del amor, el Chakra Timo es el centro del <em>poder creativo</em> que surge del amor.
             </p>
 
             <h3 className="text-xl font-semibold text-foreground mt-6 mb-3">

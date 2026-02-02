@@ -194,11 +194,11 @@ export default function QueEsKSHealing() {
               {
                 icon: Heart,
                 title: "La Transmisión",
-                description: "La Energía KS se transmite de forma intencionalizada a través de múltiples canales, llevando la frecuencia de alta coherencia directamente a tu sistema energético.",
+                description: "La Energía KS se transmite de forma intencionada a través de múltiples canales, llevando la frecuencia de alta coherencia directamente a tu sistema energético.",
                 points: [
                   "Sesiones privadas con facilitadores",
                   "Cursos y formaciones",
-                  "El libro intencionalizado",
+                  "El libro intencionado",
                 ],
               },
             ].map((item, idx) => {
@@ -316,7 +316,7 @@ export default function QueEsKSHealing() {
             </p>
             <Link href="/ks-healing">
               <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-primary gap-2" style={{color: '#ffffff'}}>
-                Conocer Más
+                Aprende KS Healing
                 <ArrowRight size={20} />
               </Button>
             </Link>

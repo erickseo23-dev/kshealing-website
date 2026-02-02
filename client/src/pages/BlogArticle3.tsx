@@ -101,7 +101,7 @@ export default function BlogArticle3() {
             </h2>
 
             <p className="text-muted-foreground leading-relaxed mb-6">
-              La Energía KS funciona a través de lo que llamamos "transmisión intencionalizada". Esta no es una energía en el sentido tradicional, sino una frecuencia de consciencia que se transmite de un Cuerpo KS activado a otro.
+              La Energía KS funciona a través de lo que llamamos "transmisión intencionada". Esta no es una energía en el sentido tradicional, sino una frecuencia de consciencia que se transmite de un Cuerpo KS activado a otro.
             </p>
 
             <p className="text-muted-foreground leading-relaxed mb-6">

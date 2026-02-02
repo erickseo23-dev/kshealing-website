@@ -18,7 +18,7 @@ export default function ElLibro() {
               El Libro de <span className="text-primary">KS Healing</span>
             </h1>
             <p className="text-xl text-muted-foreground mb-8 font-serif">
-              Un libro intencionalizado con Energía KS que es simultáneamente narrativa, manual técnico, sistema de ejercicios y transmisión energética viva.
+               Un libro intencionado con Energía KS que es simultáneamente narrativa, manual técnico, sistema de ejercicios y transmisión energética viva.
             </p>
             <p className="text-lg text-primary font-semibold">
               18 Capítulos • 234 Páginas • 10 Códigos QR con Videos de Transmisión
