@@ -461,24 +461,123 @@ export default function KSHealing() {
         </div>
       </section>
 
-      {/* CTA Section */}
+      {/* Certification Section */}
+      <section className="py-20 md:py-32 bg-gradient-to-b from-background to-primary/5">
+        <div className="container mx-auto px-4">
+          <div className="max-w-5xl mx-auto">
+            <div className="text-center mb-16">
+              <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-6">
+                Certificación Internacional en <span className="text-primary">KS Healing</span>
+              </h2>
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                Formación oficial impartida directamente por YOHEV. Activa tu Cuerpo KS y conviértete en practicante certificado.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
+              {/* Key Details */}
+              <Card className="p-8 border-primary/20 bg-gradient-to-br from-primary/5 to-slate-900/10">
+                <div className="text-4xl mb-4">📅</div>
+                <h3 className="font-display text-xl font-bold text-foreground mb-4">Próximas Fechas</h3>
+                <ul className="space-y-2 text-muted-foreground">
+                  <li className="font-semibold">3 domingos consecutivos</li>
+                  <li>22 de febrero</li>
+                  <li>1 de marzo</li>
+                  <li>8 de marzo</li>
+                  <li className="text-sm mt-3 pt-3 border-t border-primary/20">12:00 - 14:00 hrs (CDMX)</li>
+                </ul>
+              </Card>
+
+              <Card className="p-8 border-primary/20 bg-gradient-to-br from-primary/5 to-slate-900/10">
+                <div className="text-4xl mb-4">💻</div>
+                <h3 className="font-display text-xl font-bold text-foreground mb-4">Modalidad</h3>
+                <div className="space-y-3 text-muted-foreground">
+                  <p><span className="font-semibold text-foreground">100% Online en vivo</span></p>
+                  <p>Por Zoom con YOHEV</p>
+                  <p className="text-sm mt-4 pt-4 border-t border-primary/20"><span className="font-semibold text-foreground">Cupo limitado</span> para preservar la calidad</p>
+                </div>
+              </Card>
+
+              <Card className="p-8 border-secondary/50 bg-gradient-to-br from-secondary/20 to-yellow-500/10">
+                <div className="text-4xl mb-4">💰</div>
+                <h3 className="font-display text-xl font-bold text-foreground mb-4">Inversión</h3>
+                <div className="space-y-3">
+                  <p className="text-4xl font-bold text-secondary" style={{color: '#fbbc0e'}}>$145 USD</p>
+                  <p className="text-sm text-muted-foreground">Incluye:</p>
+                  <ul className="text-sm space-y-1 text-muted-foreground">
+                    <li>✓ 3 sesiones en vivo</li>
+                    <li>✓ Material completo</li>
+                    <li>✓ Certificación</li>
+                  </ul>
+                </div>
+              </Card>
+            </div>
+
+            {/* What's Included */}
+            <Card className="p-12 border-primary/20 bg-gradient-to-br from-primary/5 to-slate-900/10 mb-12">
+              <h3 className="font-display text-2xl font-bold text-foreground mb-8 text-center">¿Qué incluye la certificación?</h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                {[
+                  { icon: "🎓", title: "Clases en vivo con YOHEV", desc: "Sesiones guiadas directamente por el creador del sistema" },
+                  { icon: "⚡", title: "Entrega del Cuerpo KS", desc: "Activación energética central de la certificación" },
+                  { icon: "📚", title: "Material digital profesional", desc: "Manuales, infografías y material de estudio estructurado" },
+                  { icon: "👥", title: "Prácticas grupales supervisadas", desc: "Acompañadas por instructor certificado en KS Healing" },
+                  { icon: "🏆", title: "Certificación Internacional", desc: "Avalada dentro del sistema KS Healing" },
+                  { icon: "💡", title: "Formación estructurada", desc: "Fundamentos, uso y transmisión de la Energía KS" },
+                ].map((item, idx) => (
+                  <div key={idx} className="flex gap-4">
+                    <div className="text-3xl flex-shrink-0">{item.icon}</div>
+                    <div>
+                      <h4 className="font-semibold text-foreground mb-1">{item.title}</h4>
+                      <p className="text-sm text-muted-foreground">{item.desc}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </Card>
+
+            {/* For Whom */}
+            <Card className="p-8 border-primary/20 bg-gradient-to-br from-primary/5 to-slate-900/10 mb-12">
+              <h3 className="font-display text-2xl font-bold text-foreground mb-6 text-center">¿Para quién es esta certificación?</h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                {[
+                  "Personas en proceso de expansión de consciencia",
+                  "Terapeutas, facilitadores o guías energéticos",
+                  "Personas que desean transmitir energía de forma consciente",
+                  "Quienes sienten el llamado a trabajar con tecnologías energéticas",
+                ].map((item, idx) => (
+                  <div key={idx} className="flex gap-3">
+                    <Check size={20} className="text-primary flex-shrink-0 mt-0.5" />
+                    <p className="text-foreground">{item}</p>
+                  </div>
+                ))}
+              </div>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section - Enrollment */}
       <section className="py-20 md:py-32 bg-gradient-to-r from-primary via-primary/90 to-primary/80">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="font-display text-4xl md:text-5xl font-bold text-white mb-6">
-              Comienza Tu Transformación
+              Reserva Tu Lugar Ahora
             </h2>
-            <p className="text-lg md:text-xl text-white/90 mb-12 leading-relaxed">
-              Únete a miles de personas que han transformado sus vidas a través de KS Healing
+            <p className="text-lg md:text-xl text-white/90 mb-4 leading-relaxed">
+              Cupo limitado para preservar la calidad del proceso energético
+            </p>
+            <p className="text-base text-white/80 mb-12 leading-relaxed">
+              Da el primer paso en tu camino como practicante de KS Healing. Activa tu Cuerpo KS y aprende directamente de YOHEV.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-white hover:bg-blue-50 text-primary gap-2">
-                Comenzar Ahora
+              <Button size="lg" className="bg-white hover:bg-blue-50 text-primary gap-2 font-bold text-lg">
+                Inscribirse en la Certificación
                 <ArrowRight size={20} />
               </Button>
-              <Link href="/retiro-sagrado">
+              <Link href="/contacto">
                 <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10 gap-2">
-                  Ver Retiros
+                  Más Información
                   <ArrowRight size={20} />
                 </Button>
               </Link>
