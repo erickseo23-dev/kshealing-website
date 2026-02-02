@@ -57,11 +57,28 @@ export default function KSHealing() {
     },
   ];
 
+  const whatIncluded = [
+    { title: "Material en Video Pregrabado", description: "Acceso completo a videos de cada módulo para revisar cuando quieras" },
+    { title: "Sesión en Vivo con YOHEV", description: "2 horas de transmisión directa en Zoom para cada módulo" },
+    { title: "Prácticas Online Programadas", description: "Sesiones con facilitador certificado según tu disponibilidad" },
+    { title: "Certificación Internacional", description: "Reconocimiento oficial como Practicante de KS Healing" },
+    { title: "Manual y Material Descargable", description: "Guías completas, ejercicios y recursos para tu práctica continua" },
+  ];
+
+  const forWhom = [
+    "Quieres transformar tu vida a través de la Energía KS",
+    "Deseas ayudar a otros sanando energéticamente",
+    "Buscas una profesión con propósito y significado",
+    "Estás comprometido con tu crecimiento espiritual",
+    "Quieres unirte a una comunidad global de practicantes",
+    "Tienes curiosidad genuina por la sanación energética",
+  ];
+
   return (
     <div className="min-h-screen flex flex-col bg-background">
       <Navigation />
 
-      {/* Hero Section - Aspirational */}
+      {/* 1. Hero Section - Aspirational */}
       <section className="relative py-24 md:py-48 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
@@ -115,7 +132,7 @@ export default function KSHealing() {
         </div>
       </section>
 
-      {/* Professional Session Image - After Hero */}
+      {/* 2. Professional Session Image - After Hero */}
       <section className="py-20 md:py-32 bg-gradient-to-b from-background to-primary/5">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
@@ -130,7 +147,7 @@ export default function KSHealing() {
         </div>
       </section>
 
-      {/* Why This Certification */}
+      {/* 3. Why This Certification */}
       <section className="py-20 md:py-32 bg-gradient-to-b from-background via-primary/5 to-background">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto mb-16 text-center">
@@ -163,7 +180,7 @@ export default function KSHealing() {
         </div>
       </section>
 
-      {/* Training Image - Distributed */}
+      {/* 4. Training Image - Distributed */}
       <section className="py-20 md:py-32 bg-gradient-to-b from-background to-slate-900/10">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
@@ -178,7 +195,74 @@ export default function KSHealing() {
         </div>
       </section>
 
-      {/* Program Structure - Grid */}
+      {/* 5. Next Certification - Moved Up */}
+      <section className="py-20 md:py-32 bg-gradient-to-b from-background to-primary/5">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto mb-16 text-center">
+            <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-6">
+              Próxima <span className="text-primary">Certificación</span>
+            </h2>
+            <p className="text-lg text-muted-foreground leading-relaxed">
+              Todo lo que necesitas saber sobre la próxima cohorte
+            </p>
+          </div>
+
+          <div className="max-w-4xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+              {certDetails.map((detail, idx) => (
+                <Card key={idx} className="p-8 border-primary/20 bg-gradient-to-br from-primary/5 to-slate-900/10">
+                  <h3 className="font-display text-xl font-bold text-foreground mb-3">
+                    {detail.title}
+                  </h3>
+                  <p className="text-muted-foreground mb-4">
+                    {detail.description}
+                  </p>
+                  <p className="text-sm font-semibold text-primary" style={{color: '#fbbc0e'}}>
+                    {detail.date}
+                  </p>
+                </Card>
+              ))}
+            </div>
+
+            <div className="bg-gradient-to-r from-primary/10 to-blue-600/10 border border-primary/20 rounded-2xl p-8 md:p-12">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+                <div className="text-center">
+                  <p className="text-sm text-muted-foreground mb-2">Fechas</p>
+                  <p className="font-display text-2xl font-bold text-foreground">22 Feb, 1 Mar, 8 Mar</p>
+                </div>
+                <div className="text-center">
+                  <p className="text-sm text-muted-foreground mb-2">Horario</p>
+                  <p className="font-display text-2xl font-bold text-foreground">12:00 - 14:00 CDMX</p>
+                </div>
+                <div className="text-center">
+                  <p className="text-sm text-muted-foreground mb-2">Modalidad</p>
+                  <p className="font-display text-2xl font-bold text-foreground">Online en vivo</p>
+                </div>
+              </div>
+
+              <div className="border-t border-primary/20 pt-8">
+                <p className="text-lg font-bold text-foreground mb-4">Inversión: <span style={{color: '#fbbc0e'}}>$145 USD</span></p>
+                <div className="flex flex-col sm:flex-row gap-4">
+                  <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-slate-950 font-bold gap-2" style={{backgroundColor: '#fbbc0e'}}>
+                    Inscríbete Ahora
+                    <ArrowRight size={20} />
+                  </Button>
+                  <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-primary/10">
+                    Más Información
+                    <ArrowRight size={20} />
+                  </Button>
+                </div>
+              </div>
+
+              <p className="text-sm text-muted-foreground mt-6">
+                Cupo limitado - Solo 20 lugares disponibles
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 6. Program Structure - Grid */}
       <section className="py-20 md:py-32 bg-gradient-to-br from-background via-primary/3 to-background">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto mb-16 text-center">
@@ -195,8 +279,8 @@ export default function KSHealing() {
               const IconComponent = module.icon;
               return (
                 <Card key={idx} className="p-8 border-primary/20 bg-gradient-to-br from-primary/5 to-slate-900/10 hover:shadow-lg transition-all hover:-translate-y-2 duration-300">
-                  <div className="inline-block p-4 rounded-xl bg-gradient-to-br from-secondary to-yellow-500 mb-6" style={{background: 'linear-gradient(135deg, #fbbc0e, #f59e0b)'}}>
-                    <IconComponent size={32} className="text-slate-950" />
+                  <div className="inline-block p-4 rounded-xl bg-gradient-to-br from-primary to-blue-600 mb-6">
+                    <IconComponent size={32} className="text-white" />
                   </div>
                   <h3 className="font-display text-xl font-bold text-foreground mb-4">
                     {module.title}
@@ -211,13 +295,13 @@ export default function KSHealing() {
         </div>
       </section>
 
-      {/* Advanced Mastery Image - Distributed */}
-      <section className="py-20 md:py-32 bg-gradient-to-b from-background to-primary/5">
+      {/* 7. Mastery Image */}
+      <section className="py-20 md:py-32 bg-gradient-to-b from-background to-slate-900/10">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="relative overflow-hidden rounded-2xl shadow-2xl">
               <img 
-                src="https://private-us-east-1.manuscdn.com/sessionFile/cJ0NsjiTEgFuWB5HAN1kHs/sandbox/iGSDDzIRXcH5A0CLxFJ7HR-img-3_1770062984000_na1fn_a3MtaGVhbGluZy1hZHZhbmNlZC1wcmFjdGl0aW9uZXI.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvY0owTnNqaVRFZ0Z1V0I1SEFOMWtIcy9zYW5kYm94L2lHU0REeklSWGNINUEwQ0x4Rko3SFItaW1nLTNfMTc3MDA2Mjk4NDAwMF9uYTFmbl9hM010YUdWaGJHbHVaeTFoWkhaaGJtTmxaQzF3Y21GamRHbDBhVzl1WlhJLnBuZz94LW9zcy1wcm9jZXNzPWltYWdlL3Jlc2l6ZSx3XzE5MjAsaF8xOTIwL2Zvcm1hdCx3ZWJwL3F1YWxpdHkscV84MCIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc5ODc2MTYwMH19fV19&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=S~e3P9fLLE4GFH0lCDjwzsXMRo5wHy10aZGV29onNsF-i0kM7BQXEQLnXes7vaXbn~2TvdEOWHF3Aa9nfZIYT0n6Fqygxat9gxJABDXdTGEqahL2m7g01JAMbmmQpzQopCbFevpM81DMO47imkAse0frM3xsLzsVD1OKpehdLVDXyCq0Ut0flBfnzHEiSCxMzkQzBf3HEZR7DB91FKuNzMkphnaPfsTeaglvzcbNqfSIMJGMn09EK8mHjw7e8y9daeM6IL4M41xfMDbsZnsbfUK2bpPNO66kcYX1d7zuu80jEYQQ74NpJX5EoSHIMTU5Eln3WL1Rka3R5DWy4qc6Cg__" 
+                src="https://private-us-east-1.manuscdn.com/sessionFile/cJ0NsjiTEgFuWB5HAN1kHs/sandbox/Sxi0MGkM6ySD3Cf2bQpjlE-img-1_1770063821000_na1fn_a3MtcHJhY3RpdGlvbmVyLWFkdmFuY2VkLXByYWN0aWNl.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvY0owTnNqaVRFZ0Z1V0I1SEFOMWtIcy9zYW5kYm94L1N4aTBNR2tNNnlTRDNDZjJiUXBqbEUtaW1nLTFfMTc3MDA2MzgyMTAwMF9uYTFmbl9hM010Y0hKaFkzUnBkR2x2Ym1WeUxXRmtkbUZ1WTJWa0xYQnlZV04wYVdObC5wbmc~eC1vc3MtcHJvY2Vzcz1pbWFnZS9yZXNpemUsd18xOTIwLGhfMTkyMC9mb3JtYXQsd2VicC9xdWFsaXR5LHFfODAiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE3OTg3NjE2MDB9fX1dfQ__&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=Lhk6dDc0QYt4JmEZcHCrNsd8ECLdftPh5rWsK8IlmeZ9ulR61pyElstxx1IVm7AwyfE97tYj3HMsReQnkWRVKms8bzJLWa3LwsU6m~teEP~PSqYs5Chzig8uFQtiYTDqI56pKo9PFMef9l-tZd3HcO0KmXLqAs0XtA0g8n8Mlg3k~qww0pO~1MyrzyaXvBztagLme9BZpLUC4~wvvcdnfLdajhHtlnrqwHJSXyqsQurU6JoGk0-i1uPL0C3o~2NvwDvJdijWuzLn3EGCNPCHdxbO5-H25rUppwFGwW3pO15jF~5EjzG1~hoXAyGMYsLBzcw4Khk29Z3Ui6H0u1gkvQ__" 
                 alt="Maestría profesional" 
                 className="w-full h-auto object-cover"
               />
@@ -226,8 +310,8 @@ export default function KSHealing() {
         </div>
       </section>
 
-      {/* What's Included */}
-      <section className="py-20 md:py-32 bg-gradient-to-b from-slate-900/50 to-background">
+      {/* 8. What's Included */}
+      <section className="py-20 md:py-32 bg-gradient-to-b from-background via-primary/5 to-background">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto mb-16 text-center">
             <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-6">
@@ -238,125 +322,48 @@ export default function KSHealing() {
             </p>
           </div>
 
-          <div className="max-w-3xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
-            <Card className="p-8 border-primary/20 bg-gradient-to-br from-primary/5 to-slate-900/10">
-              <div className="flex gap-4 mb-6">
-                <div className="flex-shrink-0">
-                  <div className="flex items-center justify-center h-12 w-12 rounded-md bg-secondary" style={{backgroundColor: '#fbbc0e'}}>
-                    <Check size={24} className="text-slate-950" />
+          <div className="max-w-3xl mx-auto">
+            <div className="space-y-4">
+              {whatIncluded.map((item, idx) => (
+                <div key={idx} className="flex gap-4 p-6 rounded-xl bg-gradient-to-r from-primary/5 to-blue-600/5 border border-primary/10 hover:border-primary/30 transition-colors">
+                  <div className="flex-shrink-0">
+                    <div className="flex items-center justify-center h-6 w-6 rounded-full bg-primary/20">
+                      <Check size={16} className="text-primary" />
+                    </div>
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-foreground mb-1">
+                      {item.title}
+                    </h3>
+                    <p className="text-sm text-muted-foreground">
+                      {item.description}
+                    </p>
                   </div>
                 </div>
-                <div>
-                  <h3 className="font-display text-lg font-bold text-foreground">
-                    Material en Video Pregrabado
-                  </h3>
-                  <p className="text-muted-foreground text-sm mt-2">
-                    Acceso completo a videos de cada módulo para revisar cuando quieras
-                  </p>
-                </div>
-              </div>
-            </Card>
-
-            <Card className="p-8 border-primary/20 bg-gradient-to-br from-primary/5 to-slate-900/10">
-              <div className="flex gap-4 mb-6">
-                <div className="flex-shrink-0">
-                  <div className="flex items-center justify-center h-12 w-12 rounded-md bg-secondary" style={{backgroundColor: '#fbbc0e'}}>
-                    <Check size={24} className="text-slate-950" />
-                  </div>
-                </div>
-                <div>
-                  <h3 className="font-display text-lg font-bold text-foreground">
-                    Sesión en Vivo con YOHEV
-                  </h3>
-                  <p className="text-muted-foreground text-sm mt-2">
-                    2 horas de transmisión directa en Zoom para cada módulo
-                  </p>
-                </div>
-              </div>
-            </Card>
-
-            <Card className="p-8 border-primary/20 bg-gradient-to-br from-primary/5 to-slate-900/10">
-              <div className="flex gap-4 mb-6">
-                <div className="flex-shrink-0">
-                  <div className="flex items-center justify-center h-12 w-12 rounded-md bg-secondary" style={{backgroundColor: '#fbbc0e'}}>
-                    <Check size={24} className="text-slate-950" />
-                  </div>
-                </div>
-                <div>
-                  <h3 className="font-display text-lg font-bold text-foreground">
-                    Prácticas Online Programadas
-                  </h3>
-                  <p className="text-muted-foreground text-sm mt-2">
-                    Sesiones con facilitador certificado según tu disponibilidad
-                  </p>
-                </div>
-              </div>
-            </Card>
-
-            <Card className="p-8 border-primary/20 bg-gradient-to-br from-primary/5 to-slate-900/10">
-              <div className="flex gap-4 mb-6">
-                <div className="flex-shrink-0">
-                  <div className="flex items-center justify-center h-12 w-12 rounded-md bg-secondary" style={{backgroundColor: '#fbbc0e'}}>
-                    <Check size={24} className="text-slate-950" />
-                  </div>
-                </div>
-                <div>
-                  <h3 className="font-display text-lg font-bold text-foreground">
-                    Certificación Internacional
-                  </h3>
-                  <p className="text-muted-foreground text-sm mt-2">
-                    Reconocimiento oficial como Practicante de KS Healing
-                  </p>
-                </div>
-              </div>
-            </Card>
-
-            <Card className="p-8 border-primary/20 bg-gradient-to-br from-primary/5 to-slate-900/10">
-              <div className="flex gap-4 mb-6">
-                <div className="flex-shrink-0">
-                  <div className="flex items-center justify-center h-12 w-12 rounded-md bg-secondary" style={{backgroundColor: '#fbbc0e'}}>
-                    <Check size={24} className="text-slate-950" />
-                  </div>
-                </div>
-                <div>
-                  <h3 className="font-display text-lg font-bold text-foreground">
-                    Manual y Material Descargable
-                  </h3>
-                  <p className="text-muted-foreground text-sm mt-2">
-                    Guías completas, ejercicios y recursos para tu práctica continua
-                  </p>
-                </div>
-              </div>
-            </Card>
+              ))}
+            </div>
           </div>
         </div>
       </section>
 
-      {/* For Whom */}
-      <section className="py-20 md:py-32 bg-gradient-to-br from-slate-950 via-blue-950/20 to-slate-950">
+      {/* 9. For Whom */}
+      <section className="py-20 md:py-32 bg-gradient-to-br from-background via-primary/3 to-background">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto mb-16 text-center">
-            <h2 className="font-display text-4xl md:text-5xl font-bold text-white mb-6">
-              ¿Para <span className="text-secondary" style={{color: '#fbbc0e'}}>Quién</span> es?
+            <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-6">
+              ¿Para <span className="text-primary">Quién</span> es?
             </h2>
-            <p className="text-lg text-white/70 leading-relaxed">
+            <p className="text-lg text-muted-foreground leading-relaxed">
               Esta certificación es ideal para ti si...
             </p>
           </div>
 
           <div className="max-w-3xl mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              {[
-                "Quieres transformar tu vida a través de la Energía KS",
-                "Deseas ayudar a otros sanando energéticamente",
-                "Buscas una profesión con propósito y significado",
-                "Estás comprometido con tu crecimiento espiritual",
-                "Quieres unirte a una comunidad global de practicantes",
-                "Tienes curiosidad genuina por la sanación energética",
-              ].map((item, idx) => (
-                <div key={idx} className="flex gap-4 p-4 rounded-lg bg-primary/10 border border-primary/20">
-                  <Check size={24} className="text-secondary flex-shrink-0 mt-1" style={{color: '#fbbc0e'}} />
-                  <p className="text-white leading-relaxed">
+              {forWhom.map((item, idx) => (
+                <div key={idx} className="flex gap-3 p-4 rounded-lg bg-gradient-to-r from-primary/5 to-blue-600/5 border border-primary/10">
+                  <Sparkles size={20} className="text-primary flex-shrink-0 mt-0.5" />
+                  <p className="text-foreground leading-relaxed">
                     {item}
                   </p>
                 </div>
@@ -366,181 +373,120 @@ export default function KSHealing() {
         </div>
       </section>
 
-      {/* Transformation Gallery */}
-      <section className="py-20 md:py-32 bg-gradient-to-b from-background via-primary/5 to-background">
+      {/* 10. Transformation Journey */}
+      <section className="py-20 md:py-32 bg-gradient-to-b from-background to-primary/5">
         <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto mb-16 text-center">
+          <div className="max-w-3xl mx-auto text-center">
             <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-6">
               Tu Viaje de <span className="text-primary">Transformación</span>
             </h2>
-            <p className="text-lg text-muted-foreground leading-relaxed">
+            <p className="text-lg text-muted-foreground leading-relaxed mb-12">
               De estudiante a Practicante Certificado
             </p>
-          </div>
 
-          <div className="max-w-4xl mx-auto">
-            <img 
-              src="/images/ks-healing-transformation-journey.png" 
-              alt="Viaje de transformación" 
-              className="w-full rounded-2xl shadow-2xl"
-            />
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div className="relative">
+                <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                  <div className="w-12 h-12 rounded-full bg-primary/20 border-2 border-primary flex items-center justify-center">
+                    <span className="font-bold text-primary">1</span>
+                  </div>
+                </div>
+                <div className="pt-12 pb-8 px-6 rounded-xl bg-gradient-to-br from-primary/5 to-slate-900/10 border border-primary/10">
+                  <h3 className="font-display text-xl font-bold text-foreground mb-3">Inscripción</h3>
+                  <p className="text-muted-foreground">Acceso inmediato a material pregrabado y comunidad</p>
+                </div>
+              </div>
+
+              <div className="relative">
+                <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                  <div className="w-12 h-12 rounded-full bg-primary/20 border-2 border-primary flex items-center justify-center">
+                    <span className="font-bold text-primary">2</span>
+                  </div>
+                </div>
+                <div className="pt-12 pb-8 px-6 rounded-xl bg-gradient-to-br from-primary/5 to-slate-900/10 border border-primary/10">
+                  <h3 className="font-display text-xl font-bold text-foreground mb-3">Aprendizaje</h3>
+                  <p className="text-muted-foreground">Sesiones en vivo y prácticas con facilitadores certificados</p>
+                </div>
+              </div>
+
+              <div className="relative">
+                <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                  <div className="w-12 h-12 rounded-full bg-primary/20 border-2 border-primary flex items-center justify-center">
+                    <span className="font-bold text-primary">3</span>
+                  </div>
+                </div>
+                <div className="pt-12 pb-8 px-6 rounded-xl bg-gradient-to-br from-primary/5 to-slate-900/10 border border-primary/10">
+                  <h3 className="font-display text-xl font-bold text-foreground mb-3">Certificación</h3>
+                  <p className="text-muted-foreground">Reconocimiento internacional como Practicante de KS Healing</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Community */}
-      <section className="py-20 md:py-32 bg-gradient-to-br from-slate-900/50 to-background">
+      {/* 11. Community */}
+      <section className="py-20 md:py-32 bg-gradient-to-br from-background via-primary/3 to-background">
         <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto mb-16 text-center">
+          <div className="max-w-3xl mx-auto text-center">
             <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-6">
               Únete a Nuestra <span className="text-primary">Comunidad</span>
             </h2>
-            <p className="text-lg text-muted-foreground leading-relaxed">
+            <p className="text-lg text-muted-foreground leading-relaxed mb-12">
               Practicantes certificados transformando vidas en todo el mundo
             </p>
-          </div>
 
-          <div className="max-w-4xl mx-auto">
-            <img 
-              src="/images/ks-healing-community-celebration.png" 
-              alt="Comunidad de KS Healing" 
-              className="w-full rounded-2xl shadow-2xl"
-            />
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <Card className="p-8 border-primary/20 bg-gradient-to-br from-primary/5 to-slate-900/10">
+                <Users size={40} className="text-primary mx-auto mb-4" />
+                <h3 className="font-display text-2xl font-bold text-foreground mb-2">500+</h3>
+                <p className="text-muted-foreground">Practicantes Certificados</p>
+              </Card>
+
+              <Card className="p-8 border-primary/20 bg-gradient-to-br from-primary/5 to-slate-900/10">
+                <Award size={40} className="text-primary mx-auto mb-4" />
+                <h3 className="font-display text-2xl font-bold text-foreground mb-2">50+</h3>
+                <p className="text-muted-foreground">Países Representados</p>
+              </Card>
+
+              <Card className="p-8 border-primary/20 bg-gradient-to-br from-primary/5 to-slate-900/10">
+                <Heart size={40} className="text-primary mx-auto mb-4" />
+                <h3 className="font-display text-2xl font-bold text-foreground mb-2">10k+</h3>
+                <p className="text-muted-foreground">Vidas Transformadas</p>
+              </Card>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Next Certification */}
-      <section className="py-20 md:py-32 bg-gradient-to-b from-background via-primary/5 to-background">
+      {/* 12. Testimonials - At the End */}
+      <section className="py-20 md:py-32 bg-gradient-to-b from-background to-primary/5">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto mb-16 text-center">
             <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-6">
-              Próxima <span className="text-primary">Certificación</span>
+              Historias de <span className="text-primary">Transformación</span>
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Todo lo que necesitas saber sobre la próxima cohorte
-            </p>
-          </div>
-
-          <div className="max-w-4xl mx-auto">
-            <Card className="p-8 md:p-12 border-primary/30 bg-gradient-to-br from-primary/10 to-slate-900/20">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
-                <div>
-                  <h3 className="font-display text-2xl font-bold text-foreground mb-4">Detalles Principales</h3>
-                  <div className="space-y-4">
-                    <div className="flex gap-4">
-                      <Calendar size={24} className="text-primary flex-shrink-0 mt-1" />
-                      <div>
-                        <p className="font-semibold text-foreground">Fechas</p>
-                        <p className="text-muted-foreground">22 Feb, 1 Mar, 8 Mar</p>
-                      </div>
-                    </div>
-                    <div className="flex gap-4">
-                      <Zap size={24} className="text-primary flex-shrink-0 mt-1" />
-                      <div>
-                        <p className="font-semibold text-foreground">Horario</p>
-                        <p className="text-muted-foreground">12:00 - 14:00 CDMX</p>
-                      </div>
-                    </div>
-                    <div className="flex gap-4">
-                      <Users size={24} className="text-primary flex-shrink-0 mt-1" />
-                      <div>
-                        <p className="font-semibold text-foreground">Modalidad</p>
-                        <p className="text-muted-foreground">Online en vivo</p>
-                      </div>
-                    </div>
-                    <div className="flex gap-4">
-                      <Award size={24} className="text-primary flex-shrink-0 mt-1" />
-                      <div>
-                        <p className="font-semibold text-foreground">Inversión</p>
-                        <p className="text-secondary font-bold text-lg" style={{color: '#fbbc0e'}}>$145 USD</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div>
-                  <h3 className="font-display text-2xl font-bold text-foreground mb-4">Lo que Incluye</h3>
-                  <ul className="space-y-3">
-                    <li className="flex gap-3">
-                      <Check size={20} className="text-secondary flex-shrink-0 mt-0.5" style={{color: '#fbbc0e'}} />
-                      <span className="text-foreground">3 módulos intensivos</span>
-                    </li>
-                    <li className="flex gap-3">
-                      <Check size={20} className="text-secondary flex-shrink-0 mt-0.5" style={{color: '#fbbc0e'}} />
-                      <span className="text-foreground">Sesiones con YOHEV</span>
-                    </li>
-                    <li className="flex gap-3">
-                      <Check size={20} className="text-secondary flex-shrink-0 mt-0.5" style={{color: '#fbbc0e'}} />
-                      <span className="text-foreground">Material pregrabado</span>
-                    </li>
-                    <li className="flex gap-3">
-                      <Check size={20} className="text-secondary flex-shrink-0 mt-0.5" style={{color: '#fbbc0e'}} />
-                      <span className="text-foreground">Prácticas con facilitador</span>
-                    </li>
-                    <li className="flex gap-3">
-                      <Check size={20} className="text-secondary flex-shrink-0 mt-0.5" style={{color: '#fbbc0e'}} />
-                      <span className="text-foreground">Manual descargable</span>
-                    </li>
-                    <li className="flex gap-3">
-                      <Check size={20} className="text-secondary flex-shrink-0 mt-0.5" style={{color: '#fbbc0e'}} />
-                      <span className="text-foreground">Certificación Internacional</span>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-
-              <div className="border-t border-primary/20 pt-8">
-                <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-slate-950 font-bold gap-2" style={{backgroundColor: '#fbbc0e'}}>
-                    Inscríbete Ahora
-                    <ArrowRight size={20} />
-                  </Button>
-                  <Button size="lg" variant="outline" className="border-primary text-foreground hover:bg-primary/10 gap-2">
-                    Más Información
-                    <ArrowRight size={20} />
-                  </Button>
-                </div>
-              </div>
-
-              <p className="text-center text-muted-foreground text-sm mt-6">
-                Cupo limitado - Solo 20 lugares disponibles
-              </p>
-            </Card>
-          </div>
-        </div>
-      </section>
-
-      {/* Testimonials - At the End */}
-      <section className="py-20 md:py-32 bg-gradient-to-br from-slate-950 via-blue-950/20 to-slate-950">
-        <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto mb-16 text-center">
-            <h2 className="font-display text-4xl md:text-5xl font-bold text-white mb-6">
-              Historias de <span className="text-secondary" style={{color: '#fbbc0e'}}>Transformación</span>
-            </h2>
-            <p className="text-lg text-white/70 leading-relaxed">
               Lo que otros practicantes han experimentado
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
             {ksHealingTestimonials.map((testimonial, idx) => (
-              <Card key={idx} className="p-8 border-primary/30 bg-gradient-to-br from-primary/10 to-slate-900/40 backdrop-blur-sm hover:shadow-lg transition-all hover:-translate-y-2 duration-300">
-                <div className="flex gap-1 mb-6">
-                  {Array.from({ length: 5 }).map((_, i) => (
-                    <span key={i} className="text-secondary text-lg" style={{color: '#fbbc0e'}}>★</span>
+              <Card key={idx} className="p-8 border-primary/20 bg-gradient-to-br from-primary/5 to-slate-900/10">
+                <div className="flex gap-1 mb-4">
+                  {[...Array(testimonial.rating)].map((_, i) => (
+                    <span key={i} className="text-secondary" style={{color: '#fbbc0e'}}>★</span>
                   ))}
                 </div>
-
-                <p className="text-base md:text-lg text-white mb-6 leading-relaxed italic line-clamp-4">
+                <p className="text-foreground leading-relaxed mb-6 italic">
                   "{testimonial.quote}"
                 </p>
-
-                <div className="border-t border-primary/20 pt-6">
-                  <p className="font-display text-lg font-bold text-white mb-1">
+                <div className="border-t border-primary/10 pt-4">
+                  <p className="font-semibold text-foreground">
                     {testimonial.name}
                   </p>
-                  <p className="text-sm text-secondary font-semibold" style={{color: '#fbbc0e'}}>
+                  <p className="text-sm text-muted-foreground">
                     {testimonial.title}
                   </p>
                 </div>
@@ -550,34 +496,29 @@ export default function KSHealing() {
         </div>
       </section>
 
-      {/* Final CTA */}
-      <section className="py-20 md:py-32 bg-gradient-to-r from-primary via-blue-600 to-primary relative overflow-hidden">
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-0 left-0 w-96 h-96 bg-white rounded-full mix-blend-multiply filter blur-3xl"></div>
-          <div className="absolute bottom-0 right-0 w-96 h-96 bg-secondary rounded-full mix-blend-multiply filter blur-3xl" style={{backgroundColor: '#fbbc0e'}}></div>
-        </div>
-
-        <div className="container mx-auto px-4 relative z-10">
+      {/* 13. Final CTA */}
+      <section className="py-20 md:py-32 bg-gradient-to-r from-primary/10 to-blue-600/10 border-t border-primary/20">
+        <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="font-display text-4xl md:text-5xl font-bold text-white mb-6">
-              ¿Listo para Tu Transformación?
+            <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-6">
+              ¿Listo para Tu <span className="text-primary">Transformación</span>?
             </h2>
-            <p className="text-xl text-white/90 mb-8 leading-relaxed">
+            <p className="text-xl text-muted-foreground leading-relaxed mb-8">
               Únete a la próxima certificación y conviértete en un Practicante Certificado de KS Healing. Cupo limitado.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-white text-primary hover:bg-white/90 font-bold gap-2">
+              <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-slate-950 font-bold gap-2" style={{backgroundColor: '#fbbc0e'}}>
                 Inscríbete Ahora
                 <ArrowRight size={20} />
               </Button>
-              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10 gap-2">
+              <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-primary/10">
                 Contactar
                 <ArrowRight size={20} />
               </Button>
             </div>
 
-            <p className="text-white/70 text-sm mt-8">
+            <p className="text-sm text-muted-foreground mt-8">
               Próximas sesiones: 22 de Febrero, 1 de Marzo, 8 de Marzo • Online en vivo con YOHEV • $145 USD
             </p>
           </div>
