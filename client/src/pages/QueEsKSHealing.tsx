@@ -272,9 +272,9 @@ export default function QueEsKSHealing() {
       <section className="relative py-24 md:py-40 overflow-hidden">
         <div className="absolute inset-0">
           <img 
-            src="/images/ks-healing-transformation.png" 
+            src="/images/ks-healing-transformation.b2c3d4e5.png" 
             alt="Transformación" 
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover object-center"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/50 to-black/30"></div>
         </div>
@@ -335,9 +335,9 @@ export default function QueEsKSHealing() {
       <section className="relative py-24 md:py-40 overflow-hidden">
         <div className="absolute inset-0">
           <img 
-            src="/images/ks-healing-coherence.png" 
+            src="/images/ks-healing-coherence.f6g7h8i9.png" 
             alt="Coherencia" 
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover object-center"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/40 to-black/60"></div>
         </div>
