@@ -8,7 +8,6 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 
 export default function KSHealing() {
-  const [currentTestimonialIdx, setCurrentTestimonialIdx] = useState(0);
 
   const mainBenefits = [
     { title: "Transformación Profunda", description: "Cambios radicales en tu vida, relaciones y propósito", icon: Sparkles },
@@ -40,13 +39,7 @@ export default function KSHealing() {
     },
   ];
 
-  const handleNextTestimonial = () => {
-    setCurrentTestimonialIdx((prev) => (prev === ksHealingTestimonials.length - 1 ? 0 : prev + 1));
-  };
 
-  const handlePrevTestimonial = () => {
-    setCurrentTestimonialIdx((prev) => (prev === 0 ? ksHealingTestimonials.length - 1 : prev - 1));
-  };
 
   return (
     <div className="min-h-screen flex flex-col bg-background">
@@ -153,71 +146,32 @@ export default function KSHealing() {
             </p>
           </div>
 
-          <div className="max-w-3xl mx-auto">
-            <Card className="p-10 md:p-12 border-primary/30 bg-gradient-to-br from-primary/10 to-slate-900/40 backdrop-blur-sm">
-              {/* Stars */}
-              <div className="flex gap-1 mb-6">
-                {Array.from({ length: 5 }).map((_, i) => (
-                  <Star key={i} size={18} className="fill-secondary text-secondary" style={{color: '#fbbc0e'}} />
-                ))}
-              </div>
-
-              {/* Quote */}
-              <p className="text-lg md:text-xl text-white mb-8 leading-relaxed italic">
-                "{ksHealingTestimonials[currentTestimonialIdx].quote}"
-              </p>
-
-              {/* Author Info */}
-              <div className="border-t border-primary/20 pt-6 mb-8">
-                <p className="font-display text-xl font-bold text-white mb-2">
-                  {ksHealingTestimonials[currentTestimonialIdx].name}
-                </p>
-                <p className="text-sm text-secondary font-semibold" style={{color: '#fbbc0e'}}>
-                  {ksHealingTestimonials[currentTestimonialIdx].title}
-                </p>
-              </div>
-
-              {/* Navigation */}
-              <div className="flex items-center justify-between gap-4">
-                <Button
-                  onClick={handlePrevTestimonial}
-                  variant="outline"
-                  size="icon"
-                  className="border-primary text-primary hover:bg-primary/10"
-                >
-                  ←
-                </Button>
-
-                <div className="flex gap-2">
-                  {ksHealingTestimonials.map((_, idx) => (
-                    <button
-                      key={idx}
-                      onClick={() => setCurrentTestimonialIdx(idx)}
-                      className={`w-2 h-2 rounded-full transition-all ${
-                        idx === currentTestimonialIdx
-                          ? "bg-secondary w-8"
-                          : "bg-primary/30 hover:bg-primary/50"
-                      }`}
-                      style={{backgroundColor: idx === currentTestimonialIdx ? '#fbbc0e' : undefined}}
-                      aria-label={`Ir al testimonio ${idx + 1}`}
-                    />
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+            {ksHealingTestimonials.map((testimonial, idx) => (
+              <Card key={idx} className="p-8 border-primary/30 bg-gradient-to-br from-primary/10 to-slate-900/40 backdrop-blur-sm hover:shadow-lg transition-all hover:-translate-y-2 duration-300">
+                {/* Stars */}
+                <div className="flex gap-1 mb-6">
+                  {Array.from({ length: 5 }).map((_, i) => (
+                    <Star key={i} size={16} className="fill-secondary text-secondary" style={{color: '#fbbc0e'}} />
                   ))}
                 </div>
 
-                <Button
-                  onClick={handleNextTestimonial}
-                  variant="outline"
-                  size="icon"
-                  className="border-primary text-primary hover:bg-primary/10"
-                >
-                  →
-                </Button>
-              </div>
+                {/* Quote */}
+                <p className="text-base md:text-lg text-white mb-6 leading-relaxed italic line-clamp-4">
+                  "{testimonial.quote}"
+                </p>
 
-              <p className="text-center text-sm text-white/60 mt-6">
-                Testimonio {currentTestimonialIdx + 1} de {ksHealingTestimonials.length}
-              </p>
-            </Card>
+                {/* Author Info */}
+                <div className="border-t border-primary/20 pt-6">
+                  <p className="font-display text-lg font-bold text-white mb-1">
+                    {testimonial.name}
+                  </p>
+                  <p className="text-sm text-secondary font-semibold" style={{color: '#fbbc0e'}}>
+                    {testimonial.title}
+                  </p>
+                </div>
+              </Card>
+            ))}
           </div>
         </div>
       </section>
