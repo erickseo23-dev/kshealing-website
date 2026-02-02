@@ -464,7 +464,7 @@ export default function QueEsKSHealing() {
                   <ArrowRight size={20} />
                 </Button>
               </Link>
-              <Link href="/cursos-y-programas">
+              <Link href="/cursos">
                 <Button size="lg" variant="outline" className="w-full border-white text-white hover:bg-white/10 gap-2">
                   Cursos y Programas KS
                   <ArrowRight size={20} />
