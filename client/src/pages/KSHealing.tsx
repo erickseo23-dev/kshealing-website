@@ -23,19 +23,19 @@ export default function KSHealing() {
 
   const modules = [
     {
-      title: "Módulo 1: Fundamentos",
-      description: "Introducción a la Energía KS y principios fundamentales",
-      items: ["Historia de KS Healing", "Primeros pasos", "Meditaciones guiadas", "Integración básica"],
+      title: "Módulo 1: Activación del Cuerpo KS",
+      description: "Recibe el Cuerpo KS directamente de YOHEV y aprende cómo activarlo y conectarlo para utilizar la Energía KS de forma consciente.",
+      items: ["Recepción del Cuerpo KS", "Activación energética", "Conexión consciente", "Uso de la Energía KS"],
     },
     {
-      title: "Módulo 2: Práctica Profunda",
-      description: "Técnicas avanzadas y trabajo energético intensivo",
-      items: ["Técnicas avanzadas", "Trabajo personal", "Sanación emocional", "Expansión de campo"],
+      title: "Módulo 2: Técnica de Autosanación",
+      description: "Aprende a utilizar la Energía KS para sanarte a ti mismo y transformar tus patrones energéticos.",
+      items: ["Autosanación energética", "Liberación de bloqueos", "Transformación personal", "Integración de cambios"],
     },
     {
-      title: "Módulo 3: Maestría",
-      description: "Dominio completo y transmisión de la Energía KS",
-      items: ["Maestría energética", "Transmisión", "Facilitación", "Integración total"],
+      title: "Módulo 3: Técnica de Sanación Energética",
+      description: "Aprende a transmitir Energía KS a otros, tanto de manera presencial como a distancia.",
+      items: ["Transmisión de energía", "Sanación presencial", "Sanación a distancia", "Facilitación profesional"],
     },
   ];
 
@@ -515,24 +515,40 @@ export default function KSHealing() {
 
             {/* What's Included */}
             <Card className="p-12 border-primary/20 bg-gradient-to-br from-primary/5 to-slate-900/10 mb-12">
-              <h3 className="font-display text-2xl font-bold text-foreground mb-8 text-center">¿Qué incluye la certificación?</h3>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <h3 className="font-display text-2xl font-bold text-foreground mb-8 text-center">¿Qué incluye cada módulo?</h3>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
                 {[
-                  { icon: "🎓", title: "Clases en vivo con YOHEV", desc: "Sesiones guiadas directamente por el creador del sistema" },
-                  { icon: "⚡", title: "Entrega del Cuerpo KS", desc: "Activación energética central de la certificación" },
-                  { icon: "📚", title: "Material digital profesional", desc: "Manuales, infografías y material de estudio estructurado" },
-                  { icon: "👥", title: "Prácticas grupales supervisadas", desc: "Acompañadas por instructor certificado en KS Healing" },
-                  { icon: "🏆", title: "Certificación Internacional", desc: "Avalada dentro del sistema KS Healing" },
-                  { icon: "💡", title: "Formación estructurada", desc: "Fundamentos, uso y transmisión de la Energía KS" },
+                  { icon: "🎬", title: "Material en Video", desc: "Contenido pregrabado para estudio independiente" },
+                  { icon: "🔴", title: "Sesión en Vivo", desc: "2 horas en vivo por Zoom con YOHEV cada domingo" },
+                  { icon: "👥", title: "Prácticas Online", desc: "Sesiones programadas con facilitador designado" },
                 ].map((item, idx) => (
-                  <div key={idx} className="flex gap-4">
-                    <div className="text-3xl flex-shrink-0">{item.icon}</div>
-                    <div>
-                      <h4 className="font-semibold text-foreground mb-1">{item.title}</h4>
-                      <p className="text-sm text-muted-foreground">{item.desc}</p>
-                    </div>
+                  <div key={idx} className="flex flex-col items-center text-center">
+                    <div className="text-4xl mb-3">{item.icon}</div>
+                    <h4 className="font-semibold text-foreground mb-2">{item.title}</h4>
+                    <p className="text-sm text-muted-foreground">{item.desc}</p>
                   </div>
                 ))}
+              </div>
+              <div className="border-t border-primary/20 pt-8">
+                <h4 className="font-semibold text-foreground mb-4 text-center">Estructura de cada módulo:</h4>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div className="flex gap-3">
+                    <Check size={20} className="text-primary flex-shrink-0 mt-0.5" />
+                    <p className="text-foreground">Material en video pregrabado para tu ritmo de aprendizaje</p>
+                  </div>
+                  <div className="flex gap-3">
+                    <Check size={20} className="text-primary flex-shrink-0 mt-0.5" />
+                    <p className="text-foreground">Sesión de 2 horas en vivo por Zoom con YOHEV</p>
+                  </div>
+                  <div className="flex gap-3">
+                    <Check size={20} className="text-primary flex-shrink-0 mt-0.5" />
+                    <p className="text-foreground">Prácticas online programadas con facilitador certificado</p>
+                  </div>
+                  <div className="flex gap-3">
+                    <Check size={20} className="text-primary flex-shrink-0 mt-0.5" />
+                    <p className="text-foreground">Acompañamiento personalizado en tu aprendizaje</p>
+                  </div>
+                </div>
               </div>
             </Card>
 
