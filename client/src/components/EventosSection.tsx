@@ -47,9 +47,11 @@ export default function EventosSection() {
                     {event.description}
                   </p>
                 </div>
-                <Button className="w-full mt-6 bg-primary hover:bg-primary/90 text-white">
-                  Más Información
-                </Button>
+                <Link href={event.tipo === "Taller" ? "/taller-ks-healing" : event.tipo === "Certificación" ? "/ks-healing" : "/club-retiro-sagrado"}>
+                  <Button className="w-full mt-6 bg-primary hover:bg-primary/90 text-white">
+                    Más Información
+                  </Button>
+                </Link>
               </div>
             </Card>
           ))}
