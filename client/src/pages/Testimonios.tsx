@@ -3,6 +3,7 @@ import Footer from "@/components/Footer";
 import { Card } from "@/components/ui/card";
 import { Star } from "lucide-react";
 import { testimonios } from "@/lib/testimonials";
+import { Link } from "wouter";
 
 export default function Testimonios() {
   return (
@@ -75,9 +76,11 @@ export default function Testimonios() {
             <button className="px-8 py-3 rounded-lg bg-primary hover:bg-primary/90 text-white font-semibold transition-colors">
               Agendar Sesión
             </button>
-            <button className="px-8 py-3 rounded-lg border border-primary text-primary hover:bg-primary/5 font-semibold transition-colors">
-              Explorar Cursos
-            </button>
+            <Link href="/cursos">
+              <a className="px-8 py-3 rounded-lg border border-primary text-primary hover:bg-primary/5 font-semibold transition-colors inline-block">
+                Explorar Cursos
+              </a>
+            </Link>
           </div>
         </div>
       </section>
