@@ -55,7 +55,7 @@ export const eventos: Event[] = [
     description: "Únete a una comunidad global de profesionales transformando vidas a través de la Energía KS. Certificación Internacional en 3 módulos intensivos.",
     fecha: "22 de Febrero - 8 de Marzo, 2026",
     ubicacion: "Online en vivo",
-    horario: "3 domingos consecutivos, 2 horas cada sesión (Horarios: CDMX por confirmar / España por confirmar)",
+    horario: "3 domingos (22 Feb, 1 Mar, 8 Mar) - 12:00 - 14:00 hrs (CDMX) / 19:00 - 21:00 hrs (España)",
     participantes: "20 lugares disponibles",
     precio: "$145 USD",
     incluye: [
