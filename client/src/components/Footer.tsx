@@ -53,11 +53,11 @@ export default function Footer() {
           <div>
             <h3 className="font-display text-sm font-bold mb-4 text-foreground uppercase tracking-wide">Navegación</h3>
             <ul className="space-y-3 text-sm">
-              <li><Link href="/"><a className="text-muted-foreground hover:text-primary transition-colors">Home</a></Link></li>
-              <li><Link href="/sobre-yohev"><a className="text-muted-foreground hover:text-primary transition-colors">Sobre YOHEV</a></Link></li>
-              <li><Link href="/que-es-ks-healing"><a className="text-muted-foreground hover:text-primary transition-colors">¿Qué es KS Healing?</a></Link></li>
-              <li><Link href="/el-libro"><a className="text-muted-foreground hover:text-primary transition-colors">El Libro</a></Link></li>
-              <li><Link href="/blog"><a className="text-muted-foreground hover:text-primary transition-colors">Blog</a></Link></li>
+              <li><Link href="/" className="text-muted-foreground hover:text-primary transition-colors">Home</Link></li>
+              <li><Link href="/sobre-yohev" className="text-muted-foreground hover:text-primary transition-colors">Sobre YOHEV</Link></li>
+              <li><Link href="/que-es-ks-healing" className="text-muted-foreground hover:text-primary transition-colors">¿Qué es KS Healing?</Link></li>
+              <li><Link href="/el-libro" className="text-muted-foreground hover:text-primary transition-colors">El Libro</Link></li>
+              <li><Link href="/blog" className="text-muted-foreground hover:text-primary transition-colors">Blog</Link></li>
             </ul>
           </div>
 
@@ -65,8 +65,8 @@ export default function Footer() {
           <div>
             <h3 className="font-display text-sm font-bold mb-4 text-foreground uppercase tracking-wide">Servicios</h3>
             <ul className="space-y-3 text-sm">
-              <li><Link href="/eventos"><a className="text-muted-foreground hover:text-primary transition-colors">Eventos</a></Link></li>
-              <li><Link href="/testimonios"><a className="text-muted-foreground hover:text-primary transition-colors">Testimonios</a></Link></li>
+              <li><Link href="/eventos" className="text-muted-foreground hover:text-primary transition-colors">Eventos</Link></li>
+              <li><Link href="/testimonios" className="text-muted-foreground hover:text-primary transition-colors">Testimonios</Link></li>
             </ul>
           </div>
 
@@ -74,8 +74,8 @@ export default function Footer() {
           <div>
             <h3 className="font-display text-sm font-bold mb-4 text-foreground uppercase tracking-wide">Programas</h3>
             <ul className="space-y-3 text-sm">
-              <li><Link href="/cursos"><a className="text-muted-foreground hover:text-primary transition-colors">Cursos</a></Link></li>
-              <li><Link href="/blog"><a className="text-muted-foreground hover:text-primary transition-colors">Blog</a></Link></li>
+              <li><Link href="/cursos" className="text-muted-foreground hover:text-primary transition-colors">Cursos</Link></li>
+              <li><Link href="/blog" className="text-muted-foreground hover:text-primary transition-colors">Blog</Link></li>
             </ul>
           </div>
 
@@ -114,9 +114,9 @@ export default function Footer() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
             {/* Legal Links */}
             <div className="flex gap-6 text-sm justify-center md:justify-start">
-              <Link href="/politica-privacidad"><a className="text-muted-foreground hover:text-primary transition-colors">Política de Privacidad</a></Link>
-              <Link href="/terminos-servicio"><a className="text-muted-foreground hover:text-primary transition-colors">Términos de Servicio</a></Link>
-              <Link href="/politica-cookies"><a className="text-muted-foreground hover:text-primary transition-colors">Cookies</a></Link>
+              <Link href="/politica-privacidad" className="text-muted-foreground hover:text-primary transition-colors">Política de Privacidad</Link>
+              <Link href="/terminos-servicio" className="text-muted-foreground hover:text-primary transition-colors">Términos de Servicio</Link>
+              <Link href="/politica-cookies" className="text-muted-foreground hover:text-primary transition-colors">Cookies</Link>
             </div>
 
             {/* Copyright */}
