@@ -355,7 +355,7 @@ export default function Cursos() {
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
               Si tienes dudas sobre cuál programa es el más adecuado para ti, te recomendamos comenzar con el Taller Online Gratuito o KS Healing Nivel Básico como base sólida.
             </p>
-            <Link href="/sobre-yohev">
+            <Link href="/que-es-ks-healing">
               <Button size="lg" className="bg-primary hover:bg-primary/90 text-white gap-2">
                 Conoce más sobre KS Healing
                 <ArrowRight size={20} />
