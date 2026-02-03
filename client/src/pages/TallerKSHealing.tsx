@@ -366,7 +366,7 @@ export default function TallerKSHealing() {
             <p className="text-lg text-muted-foreground mb-6">
               Quienes lo sientan con claridad podrán acceder a la <strong>Certificación Internacional en KS Healing – Nivel Básico</strong>, donde se realiza la entrega directa del Cuerpo KS y la formación formal como practicante.
             </p>
-            <Link href="/cursos-y-programas">
+            <Link href="/ks-healing">
               <a className="inline-flex items-center gap-2 text-primary font-semibold hover:gap-3 transition-all">
                 Conocer más sobre la Certificación
                 <ArrowRight size={20} />
