@@ -113,6 +113,16 @@ export default function SobreYOHEV() {
                 </a>
               </div>
             </div>
+
+            {/* Image */}
+            <div className="relative">
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 rounded-2xl blur-2xl"></div>
+              <img 
+                src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/ytiWuRfJNXJOktaW.png" 
+                alt="Dr. Erick Gurrola - YOHEV" 
+                className="relative w-full rounded-2xl shadow-2xl object-cover aspect-square"
+              />
+            </div>
           </div>
 
           {/* KS Healing & D.A.R.T. Section */}
