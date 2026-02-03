@@ -364,7 +364,7 @@ export default function ElLibro() {
 
             {/* Libro 2 */}
             <div className="bg-card rounded-lg overflow-hidden border border-border hover:shadow-lg transition-shadow">
-              <img src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/VvfICiXfCafbccYq.jpg" alt="Secretos de los Arcángeles" className="w-full h-64 object-cover" />
+              <img src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/HAKTNJpBDRAqKEaU.png" alt="Secretos de los Arcángeles" className="w-full h-64 object-cover" />
               <div className="p-6">
                 <h3 className="font-display text-lg font-bold text-foreground mb-2">Secretos de los Arcángeles</h3>
                 <p className="text-sm text-muted-foreground mb-4">
@@ -379,7 +379,7 @@ export default function ElLibro() {
 
             {/* Libro 3 */}
             <div className="bg-card rounded-lg overflow-hidden border border-border hover:shadow-lg transition-shadow">
-              <img src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/mGBbilxbQQufoAXI.jpg" alt="Valentina en el Reino Astral" className="w-full h-64 object-cover" />
+              <img src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/pfHWcCuRUfpjzWCY.png" alt="Valentina en el Reino Astral" className="w-full h-64 object-cover" />
               <div className="p-6">
                 <h3 className="font-display text-lg font-bold text-foreground mb-2">Valentina en el Reino Astral</h3>
                 <p className="text-sm text-muted-foreground mb-4">
