@@ -73,7 +73,7 @@ const cursosPublicos = [
     duration: "3 semanas",
     investment: "145 USD",
     level: "Abierto a todos",
-    image: "/images/genetica-sagrada-workshop.png",
+    image: "https://private-us-east-1.manuscdn.com/sessionFile/cJ0NsjiTEgFuWB5HAN1kHs/sandbox/aa1v2zWj3WLVAQOIDAVvSD-img-1_1770104531000_na1fn_dGFsbGVyLWdlbmV0aWNhLXNhZ3JhZGEtbmV3.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvY0owTnNqaVRFZ0Z1V0I1SEFOMWtIcy9zYW5kYm94L2FhMXYyeldqM1dMVkFRT0lEQVZ2U0QtaW1nLTFfMTc3MDEwNDUzMTAwMF9uYTFmbl9kR0ZzYkdWeUxXZGxibVYwYVdOaExYTmhaM0poWkdFdGJtVjMucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLHdfMTkyMCxoXzE5MjAvZm9ybWF0LHdlYnAvcXVhbGl0eSxxXzgwIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNzk4NzYxNjAwfX19XX0_&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=v5rxV7Mqsp9GHxqEGM0YzoHu1bfnI55OfKXTv6hc0gBGkbGOfgVxjFclrvvstaqOWF4haGL9msioFsi2-evua~R-ms~e7sAUG3ZJvTLXtb2if0S8LTAqfpTsBdjpPOC1mmxV8ptycjkQHa7qVY2lw-iDYLHp4thcT9spg6oEH3lVXoIXk4nX2oNcNwo8aK327Tub2wHZeOAhM6fj2yu3t2sygjAOA~F6BL~UEdn~Q7xcnUznEmDgD27fvBAOzbPM9GvPal~1Iwb2gcJi387osBy0oGUdmDbMoOpumXys6Y~0gYxShfQXzOVbcsMyVBnm68TDonw~P4Ve8NWfDZ9arQ__",
     benefits: [
       "Exploración de las 12 capas del ADN",
       "Sanación de linaje ancestral",
@@ -96,7 +96,7 @@ const cursosAvanzados = [
     duration: "8 semanas",
     investment: "$497 USD",
     level: "Avanzado",
-    image: "/images/dart-therapy.png",
+    image: "https://private-us-east-1.manuscdn.com/sessionFile/cJ0NsjiTEgFuWB5HAN1kHs/sandbox/aa1v2zWj3WLVAQOIDAVvSD-img-2_1770104550000_na1fn_a3MtaGVhbGluZy1hdmFuemFkbw.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvY0owTnNqaVRFZ0Z1V0I1SEFOMWtIcy9zYW5kYm94L2FhMXYyeldqM1dMVkFRT0lEQVZ2U0QtaW1nLTJfMTc3MDEwNDU1MDAwMF9uYTFmbl9hM010YUdWaGJHbHVaeTFoZG1GdWVtRmtidy5wbmc~eC1vc3MtcHJvY2Vzcz1pbWFnZS9yZXNpemUsd18xOTIwLGhfMTkyMC9mb3JtYXQsd2VicC9xdWFsaXR5LHFfODAiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE3OTg3NjE2MDB9fX1dfQ__&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=W1q-6a~X9hNL3myn-xCh5e7URVn4hmQlzunbbBn1fzY59j0BodpEWYRO7JJPJFro2dBx-V3PF8SsOwFQJDmPteK4etoRsJL1-UN6AvjDMoJLIN34m2xZtgEM9~tIh9tkXlmWJWDd2Nx5xlEeb~KCBcgtaG3XRTHHr~6fcJD5rF-07wH1uk0frG0H-HKLW3sQpuDOsGyLQk6iO5ElaYrFKpy7SZ2CqdotjqYw2B7nw0F0HlksT5ApFryc2bQ62tcFSxGDDFKP6HXDlUMEl~jQKP1GdSbvWl02laqD4ffVumkyNw2KzF2gAK18YHw6KaY-lsQAH8o0IndHNhKLM9yCSg__",
     benefits: [
       "Técnicas avanzadas de transmisión",
       "Profundización en arquetipos divinos",
@@ -134,7 +134,7 @@ const cursosAvanzados = [
     duration: "8 semanas",
     investment: "$597 USD",
     level: "Avanzado",
-    image: "/images/retiro-sagrado-online.png",
+    image: "/images/genetica-sagrada-workshop.png",
     benefits: [
       "Formación como facilitador",
       "Técnicas avanzadas de transmisión",
@@ -148,12 +148,12 @@ const cursosAvanzados = [
   {
     id: 8,
     title: "Facilitador de KS Healing",
+    image: "https://private-us-east-1.manuscdn.com/sessionFile/cJ0NsjiTEgFuWB5HAN1kHs/sandbox/aa1v2zWj3WLVAQOIDAVvSD-img-3_1770104548000_na1fn_ZmFjaWxpdGFkb3Ita3MtaGVhbGluZw.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvY0owTnNqaVRFZ0Z1V0I1SEFOMWtIcy9zYW5kYm94L2FhMXYyeldqM1dMVkFRT0lEQVZ2U0QtaW1nLTNfMTc3MDEwNDU0ODAwMF9uYTFmbl9abUZqYVd4cGRHRmtiM0l0YTNNdGFHVmhiR2x1WncucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLHdfMTkyMCxoXzE5MjAvZm9ybWF0LHdlYnAvcXVhbGl0eSxxXzgwIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNzk4NzYxNjAwfX19XX0_&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=b2IZ7RO1urlTSh6XYk2ew2KLCnmBUTMk2quBUZKJIlDb~wFXP8ZemVfACrAJqqbjxmJpqGQ1qk4azvvEW2wYQwvIn2VtQ8oggj-dzWU9steeyguqOiZJ5BbTEIWBQwtbow4InpV-skt7iKoGYGaq0iYl~kh-ouVNYQ6Ku4Gkus6eTIvr06GYUTFiAatzqm2mPboG6UNNsWBxsYkVCCa1-oqmZUWp44DUBnV-GQReDzo6OiIlr6~36-ODc~A-gb~DvlEl7d3ciftbWnJ3Snf2LMEzC53aUiOxRAFlhpKgUMov20ZO1tDh5FvJJTEVyNMv~SHJucnBtS~GVbOv~hoQJQ__",
     subtitle: "Especialización en Sanación Energética",
     description: "Conviértete en facilitador certificado de KS Healing. Desarrolla las habilidades necesarias para guiar a otros en su transformación energética.",
     duration: "8 semanas",
     investment: "$597 USD",
     level: "Avanzado",
-    image: "/images/ks-healing-therapy.png",
     benefits: [
       "Formación como facilitador",
       "Técnicas de transmisión grupal",
@@ -167,12 +167,12 @@ const cursosAvanzados = [
   {
     id: 9,
     title: "Master en KS Healing",
+    image: "https://private-us-east-1.manuscdn.com/sessionFile/cJ0NsjiTEgFuWB5HAN1kHs/sandbox/aa1v2zWj3WLVAQOIDAVvSD-img-4_1770104545000_na1fn_bWFzdGVyLWtzLWhlYWxpbmc.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvY0owTnNqaVRFZ0Z1V0I1SEFOMWtIcy9zYW5kYm94L2FhMXYyeldqM1dMVkFRT0lEQVZ2U0QtaW1nLTRfMTc3MDEwNDU0NTAwMF9uYTFmbl9iV0Z6ZEdWeUxXdHpMV2hsWVd4cGJtYy5wbmc~eC1vc3MtcHJvY2Vzcz1pbWFnZS9yZXNpemUsd18xOTIwLGhfMTkyMC9mb3JtYXQsd2VicC9xdWFsaXR5LHFfODAiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE3OTg3NjE2MDB9fX1dfQ__&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=ezea2c~iJ2I5bjZF092lNb~OrFEq4Ym4b5t3yXnXN72pJlaMZYVyQESD0zRO1gNX8DFUZAW1IRo7zPH8X1jq0nf4t7P4ZlHY5jUKDOwudJ~43I4WJrvCb4mg5BfbmirrLZfzPmOVvfKd-aNjawAG3-DijEVd-cAqmt7ak7bbLZO8Xpdn-ErgvXUl5PplHdVRg5ql4uNXr2OynVUXP0R02U9-YPpLLah4tLsGRoOzGBPvr3fVWr6kyJ2fvoy3hvN5o01dpW0uczn~CHVr688HA67JAlDCvaAlTjbFQSiaaOY~Wf4~jY~CTyrX5cB3oB~Ja5pR2u7Enwf0hcbkGBwmLA__",
     subtitle: "Maestría en Transformación Energética",
     description: "El nivel más alto de especialización en KS Healing. Integra toda la sabiduría del sistema y conviértete en un maestro de la Energía Keiouvos Stharef.",
     duration: "Programa intensivo",
     investment: "Consultar",
     level: "Master",
-    image: "/images/retiro-8-amor-divino.png",
     benefits: [
       "Integración completa del sistema",
       "Transmisión de maestría",
