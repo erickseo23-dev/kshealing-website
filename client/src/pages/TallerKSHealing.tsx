@@ -68,88 +68,69 @@ export default function TallerKSHealing() {
       <Navigation />
 
       {/* Hero Section - Enhanced */}
-      <section className="relative w-full min-h-screen flex items-center justify-center overflow-hidden">
-        {/* Multi-layer background */}
-        <div className="absolute inset-0 bg-gradient-to-b from-slate-950 via-slate-900 to-background" />
-        
-        {/* Animated gradient orbs */}
-        <div className="absolute top-0 left-1/4 w-96 h-96 bg-primary/15 rounded-full mix-blend-screen filter blur-3xl opacity-40 animate-pulse" />
-        <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-primary/10 rounded-full mix-blend-screen filter blur-3xl opacity-30 animate-pulse" style={{animationDelay: '1s'}} />
-        
-        {/* Background image with subtle overlay */}
+      <section className="relative w-full h-screen flex items-center justify-center overflow-hidden">
+        {/* Background image */}
         <div
-          className="absolute inset-0 bg-cover bg-center opacity-35"
+          className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: 'url(https://private-us-east-1.manuscdn.com/sessionFile/cJ0NsjiTEgFuWB5HAN1kHs/sandbox/L3Wxg719Y8VC42GgkGkSpW-img-1_1770113174000_na1fn_dGFsbGVyLWhlcm8.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80)',
+            backgroundImage: 'url(https://private-us-east-1.manuscdn.com/sessionFile/cJ0NsjiTEgFuWB5HAN1kHs/sandbox/BwJg7sRQS8Nv81PIK5Z10X-img-1_1770115019000_na1fn_dGFsbGVyLWhlcm8tYmc.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvY0owTnNqaVRFZ0Z1V0I1SEFOMWtIcy9zYW5kYm94L0J3Smc3c1JRUzhOdjgxUElLNVoxMFgtaW1nLTFfMTc3MDExNTAxOTAwMF9uYTFmbl9kR0ZzYkdWeUxXaGxjbTh0WW1jLnBuZz94LW9zcy1wcm9jZXNzPWltYWdlL3Jlc2l6ZSx3XzE5MjAsaF8xOTIwL2Zvcm1hdCx3ZWJwL3F1YWxpdHkscV84MCIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc5ODc2MTYwMH19fV19&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=eV2WE-fDok~5ZOfSnSqMrWsmBAJc4iWs0jqEY8C1BPf0VeCJb5-ctOSEF0RXly9cBL4zGNYQvgH8DDyh-nhn~tLUUjgOO-jYyospJYP85~IfqbUuQkianXfmW3ggudEZ-k3Ib6fkVwqTLXnMdAas2mA6uLwIRa1KNoI2IWdnmk7VFrRVqyE75CxzT-tJUgFxc0KfZe6bVHc4YKRF6ZZQsc2vIgMCOkI8m9D0u80VyKQfC8uI7y4d2tIu3Vw0xhwoMpM7j8JtcHznKufT6DVcK5Tj5Z3CVIZ94YSNymMtnuCMHN6sJrysbqogrnTl2dP1g34IWlB416wGdV5qMj-WBQ__)',
             backgroundAttachment: 'fixed'
           }}
         />
         
-        {/* Multi-layer gradient overlays */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
-        <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-transparent to-black/30" />
+        {/* Dark overlay for text readability */}
+        <div className="absolute inset-0 bg-black/40" />
 
         <div className="relative z-10 container mx-auto px-4 text-center max-w-5xl py-20">
           {/* Badge */}
-          <div className="mb-8 inline-flex items-center gap-2 px-5 py-3 rounded-full bg-gradient-to-r from-primary/25 to-primary/10 backdrop-blur-md border border-primary/40 hover:border-primary/60 transition-all duration-300">
-            <Sparkles size={18} className="text-primary" />
-            <span className="text-sm font-semibold text-primary/95 tracking-wide">✨ Experiencia Vivencial Gratuita</span>
+          <div className="mb-6 inline-flex items-center gap-2 px-5 py-3 rounded-full bg-white/15 backdrop-blur-md border border-white/30 hover:border-white/50 transition-all duration-300">
+            <Sparkles size={18} className="text-white" />
+            <span className="text-sm font-semibold text-white tracking-wide">✨ Experiencia Vivencial Gratuita</span>
           </div>
 
           {/* Facilitator name */}
-          <div className="mb-8 text-lg text-primary font-bold tracking-widest uppercase opacity-90">
-            Impartido por <span className="text-transparent bg-gradient-to-r from-primary to-primary/60 bg-clip-text">YOHEV</span>
+          <div className="mb-6 text-lg text-white font-bold tracking-widest uppercase opacity-95">
+            Impartido por <span className="text-primary">YOHEV</span>
           </div>
           
           {/* Main heading */}
-          <h1 className="text-7xl md:text-8xl font-black text-white mb-6 leading-tight tracking-tight">
-            <span className="block mb-3">KS Healing</span>
+          <h1 className="text-6xl md:text-7xl font-black text-white mb-6 leading-tight tracking-tight drop-shadow-lg">
+            <span className="block mb-2">KS Healing</span>
             <span className="block">
               <span className="text-white">y la</span><br />
-              <span className="bg-gradient-to-r from-primary via-primary/80 to-primary/60 bg-clip-text text-transparent">Consciencia Crística</span>
+              <span className="text-primary drop-shadow-lg">Consciencia Crística</span>
             </span>
           </h1>
 
           {/* Subtitle */}
-          <p className="text-xl md:text-2xl text-white/80 mb-12 leading-relaxed max-w-3xl mx-auto font-light">
-            Una <strong className="text-white/95">experiencia energética profunda</strong> de 3 horas para conectar con la Energía KS, despertar tu sensibilidad y preparar tu campo para la transformación.
+          <p className="text-lg md:text-xl text-white/95 mb-10 leading-relaxed max-w-3xl mx-auto font-light drop-shadow-md">
+            Una <strong className="text-white">experiencia energética profunda</strong> de 3 horas para conectar con la Energía KS, despertar tu sensibilidad y preparar tu campo para la transformación.
           </p>
 
           {/* CTA Button */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
-            <Button size="lg" className="bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary/70 text-white px-12 py-7 text-lg font-bold rounded-lg shadow-2xl hover:shadow-primary/50 transition-all duration-300 transform hover:scale-105">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-10">
+            <Button size="lg" className="bg-primary hover:bg-primary/90 text-white px-12 py-6 text-lg font-bold rounded-lg shadow-2xl transition-all duration-300 transform hover:scale-105">
               Inscríbete al Taller
               <ArrowRight size={24} className="ml-3" />
             </Button>
           </div>
 
           {/* Event details card */}
-          <div className="bg-white/8 backdrop-blur-xl border border-white/20 rounded-2xl p-8 max-w-2xl mx-auto shadow-2xl hover:bg-white/10 transition-all duration-300">
-            <div className="flex flex-col md:flex-row justify-center items-center gap-6 text-white/90">
-              <div className="flex items-center gap-3">
-                <span className="text-3xl">📅</span>
-                <div className="text-left">
-                  <p className="text-xs text-white/60 uppercase tracking-wide font-semibold">Fecha</p>
-                  <p className="font-bold text-white text-lg">15 de febrero, 2026</p>
-                </div>
+          <div className="bg-white/12 backdrop-blur-lg border border-white/25 rounded-xl p-6 max-w-2xl mx-auto shadow-xl">
+            <div className="flex flex-col md:flex-row justify-center items-center gap-4 text-white/95 text-sm">
+              <div className="flex items-center gap-2">
+                <span className="text-2xl">📅</span>
+                <span className="font-semibold">15 de febrero</span>
               </div>
-              <div className="hidden md:block w-px h-14 bg-white/20" />
-              <div className="flex items-center gap-3">
-                <span className="text-3xl">⏱️</span>
-                <div className="text-left">
-                  <p className="text-xs text-white/60 uppercase tracking-wide font-semibold">Horario</p>
-                  <p className="font-bold text-white text-lg">10:00 - 13:00 CDMX</p>
-                  <p className="text-xs text-primary/80 font-medium">17:00 - 20:00 España</p>
-                </div>
+              <div className="hidden md:block w-px h-8 bg-white/20" />
+              <div className="flex items-center gap-2">
+                <span className="text-2xl">⏱️</span>
+                <span className="font-semibold">10:00 - 13:00 CDMX (17:00 - 20:00 España)</span>
               </div>
-              <div className="hidden md:block w-px h-14 bg-white/20" />
-              <div className="flex items-center gap-3">
-                <span className="text-3xl">💻</span>
-                <div className="text-left">
-                  <p className="text-xs text-white/60 uppercase tracking-wide font-semibold">Formato</p>
-                  <p className="font-bold text-white text-lg">Online en vivo</p>
-                  <p className="text-xs text-primary/80 font-medium">+ Grabación</p>
-                </div>
+              <div className="hidden md:block w-px h-8 bg-white/20" />
+              <div className="flex items-center gap-2">
+                <span className="text-2xl">💻</span>
+                <span className="font-semibold">Online en vivo + Grabación</span>
               </div>
             </div>
           </div>
