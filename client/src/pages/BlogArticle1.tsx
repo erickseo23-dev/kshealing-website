@@ -1,10 +1,24 @@
 import { Link } from 'wouter';
-import { ArrowLeft, Heart, Zap } from 'lucide-react';
+import Navigation from '@/components/Navigation';
+import Footer from '@/components/Footer';
+import { ArrowLeft, Heart, Zap, Facebook, Twitter, Linkedin, MessageCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 export default function BlogArticle1() {
+  const articleUrl = typeof window !== 'undefined' ? window.location.href : '';
+  const articleTitle = 'Cómo la Energía KS Transforma tu Realidad';
+  
+  const shareLinks = {
+    facebook: `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(articleUrl)}`,
+    twitter: `https://twitter.com/intent/tweet?url=${encodeURIComponent(articleUrl)}&text=${encodeURIComponent(articleTitle)}`,
+    linkedin: `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(articleUrl)}`,
+    whatsapp: `https://wa.me/?text=${encodeURIComponent(articleTitle + ' ' + articleUrl)}`
+  };
+
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background flex flex-col">
+      <Navigation />
+      
       {/* Header */}
       <header className="bg-gradient-to-r from-primary/10 to-accent/10 border-b border-border">
         <div className="container py-8">
@@ -24,7 +38,7 @@ export default function BlogArticle1() {
       </header>
 
       {/* Content */}
-      <main className="container py-12">
+      <main className="container py-12 flex-grow">
         <article className="max-w-3xl mx-auto">
           {/* Featured Image */}
           <div className="mb-8 rounded-lg overflow-hidden h-96">
@@ -33,6 +47,23 @@ export default function BlogArticle1() {
               alt="Transformación energética"
               className="w-full h-full object-cover"
             />
+          </div>
+
+          {/* Share Buttons */}
+          <div className="mb-8 flex items-center gap-4 flex-wrap pb-6 border-b border-border">
+            <span className="text-sm font-semibold text-muted-foreground">Compartir:</span>
+            <a href={shareLinks.facebook} target="_blank" rel="noopener noreferrer" className="p-2 rounded-lg bg-primary/10 hover:bg-primary/20 transition-colors" title="Compartir en Facebook">
+              <Facebook size={18} className="text-primary" />
+            </a>
+            <a href={shareLinks.twitter} target="_blank" rel="noopener noreferrer" className="p-2 rounded-lg bg-primary/10 hover:bg-primary/20 transition-colors" title="Compartir en Twitter">
+              <Twitter size={18} className="text-primary" />
+            </a>
+            <a href={shareLinks.linkedin} target="_blank" rel="noopener noreferrer" className="p-2 rounded-lg bg-primary/10 hover:bg-primary/20 transition-colors" title="Compartir en LinkedIn">
+              <Linkedin size={18} className="text-primary" />
+            </a>
+            <a href={shareLinks.whatsapp} target="_blank" rel="noopener noreferrer" className="p-2 rounded-lg bg-primary/10 hover:bg-primary/20 transition-colors" title="Compartir en WhatsApp">
+              <MessageCircle size={18} className="text-primary" />
+            </a>
           </div>
 
           {/* Article Body */}
@@ -48,80 +79,46 @@ export default function BlogArticle1() {
               La Energía KS (Keiouvos Stharef) es una frecuencia energética de alta vibración que funciona a través del Cuerpo KS, una estructura multidimensional que existe más allá de nuestro cuerpo físico. Esta energía opera en principios de sintropía, neguentropía y entrelazamiento cuántico, permitiendo que tu consciencia se alinee con la verdadera naturaleza de la realidad.
             </p>
 
-            <p className="text-muted-foreground leading-relaxed mb-6">
-              A diferencia de otras prácticas energéticas, KS Healing no busca solo aliviar síntomas. Busca transformar la raíz de los patrones que crean limitación en tu vida. Cuando tu Cuerpo KS se activa y se alinea, tu realidad externa comienza a reflejar esta coherencia interna.
-            </p>
-
             <h2 className="text-2xl font-display font-bold text-foreground mt-8 mb-4">
               Los Tres Pilares de la Transformación
             </h2>
-
-            <h3 className="text-xl font-semibold text-foreground mt-6 mb-3">
-              1. Coherencia Energética
-            </h3>
             <p className="text-muted-foreground leading-relaxed mb-6">
-              Tu cuerpo es un sistema energético complejo. Cuando diferentes partes de tu ser (físico, emocional, mental, espiritual) no están alineadas, experimentas conflicto interno. La Energía KS crea coherencia, sincronizando todas tus dimensiones en una sola frecuencia armónica. Esta coherencia es el primer paso hacia la transformación real.
+              La transformación a través de KS Healing se basa en tres pilares fundamentales que trabajan en conjunto para crear cambios profundos y duraderos en tu vida.
             </p>
 
             <h3 className="text-xl font-semibold text-foreground mt-6 mb-3">
-              2. Activación del Chakra Timo
+              1. Activación del Cuerpo KS
             </h3>
             <p className="text-muted-foreground leading-relaxed mb-6">
-              El Chakra Timo es el centro energético de la verdad y la intención. En la mayoría de las personas, este chakra está dormido o bloqueado. Cuando se activa a través de KS Healing, te conectas con tu verdadero propósito y tu poder creativo. Desde este lugar, tus intenciones se manifiestan con mayor facilidad.
+              El Cuerpo KS es tu verdadera naturaleza multidimensional. Cuando se activa, te conectas con tu poder inherente y tu capacidad de crear realidad. Esta activación es el primer paso hacia la transformación verdadera.
             </p>
 
             <h3 className="text-xl font-semibold text-foreground mt-6 mb-3">
-              3. Transmisión Intencionalizada
+              2. Alineación Energética
             </h3>
             <p className="text-muted-foreground leading-relaxed mb-6">
-              La transmisión de Energía KS no es pasiva. Es un proceso donde tu consciencia se alinea con la intención de transformación. Esta intención, combinada con la frecuencia energética, crea un campo de posibilidad donde los cambios profundos pueden ocurrir naturalmente.
+              La alineación energética significa armonizar todas tus frecuencias con la vibración de tu verdadero ser. Cuando estás alineado, la vida fluye sin resistencia. Las oportunidades aparecen, las relaciones se profundizan, y tu salud mejora naturalmente.
             </p>
 
-            <h2 className="text-2xl font-display font-bold text-foreground mt-8 mb-4">
-              Transformaciones que Reportan Nuestros Clientes
-            </h2>
-
-            <ul className="space-y-4 text-muted-foreground mb-6">
-              <li className="flex gap-3">
-                <span className="text-primary font-bold">✓</span>
-                <span><strong>Liberación de patrones limitantes:</strong> Muchas personas reportan que después de trabajar con KS Healing, patrones que las limitaban durante años simplemente desaparecen.</span>
-              </li>
-              <li className="flex gap-3">
-                <span className="text-primary font-bold">✓</span>
-                <span><strong>Mayor claridad mental:</strong> La confusión se disipa y la dirección de vida se vuelve clara.</span>
-              </li>
-              <li className="flex gap-3">
-                <span className="text-primary font-bold">✓</span>
-                <span><strong>Sanación emocional profunda:</strong> Traumas y heridas emocionales se integran y transforman.</span>
-              </li>
-              <li className="flex gap-3">
-                <span className="text-primary font-bold">✓</span>
-                <span><strong>Manifestación acelerada:</strong> Los objetivos y sueños comienzan a materializarse con mayor velocidad.</span>
-              </li>
-              <li className="flex gap-3">
-                <span className="text-primary font-bold">✓</span>
-                <span><strong>Conexión espiritual profunda:</strong> Se abre una conexión auténtica con tu verdadera naturaleza.</span>
-              </li>
-            </ul>
-
-            <h2 className="text-2xl font-display font-bold text-foreground mt-8 mb-4">
-              El Proceso de Transformación
-            </h2>
-
+            <h3 className="text-xl font-semibold text-foreground mt-6 mb-3">
+              3. Manifestación Consciente
+            </h3>
             <p className="text-muted-foreground leading-relaxed mb-6">
-              La transformación a través de KS Healing no ocurre de la noche a la mañana, pero es consistente y profunda. La mayoría de las personas comienzan a notar cambios en las primeras sesiones, pero la verdadera transformación se desarrolla a lo largo de semanas y meses.
-            </p>
-
-            <p className="text-muted-foreground leading-relaxed mb-6">
-              Lo importante es que esta transformación es <em>tuya</em>. No se trata de adoptar creencias externas, sino de activar tu propio poder innato de transformación. KS Healing simplemente facilita este proceso natural que ya existe dentro de ti.
+              Una vez activado y alineado, puedes manifestar conscientemente lo que deseas. No es visualización ordinaria, sino la capacidad de crear desde tu verdadera naturaleza divina. Tu realidad se convierte en una expresión de tu consciencia elevada.
             </p>
 
             <h2 className="text-2xl font-display font-bold text-foreground mt-8 mb-4">
-              Comienza Tu Transformación Hoy
+              Cómo Comienza la Transformación
             </h2>
+            <p className="text-muted-foreground leading-relaxed mb-6">
+              La transformación comienza con una decisión: la decisión de despertar a tu verdadera naturaleza. KS Healing proporciona el vehículo, pero eres tú quien debe tomar la decisión de cambiar. Una vez que tomas esa decisión, la Energía KS comienza a trabajar en múltiples niveles de tu ser.
+            </p>
 
-            <p className="text-muted-foreground leading-relaxed mb-8">
-              Si sientes que hay algo más en la vida, que hay un potencial sin explorar dentro de ti, entonces es momento de explorar KS Healing. La transformación que buscas no está fuera de ti. Está esperando ser activada.
+            <h2 className="text-2xl font-display font-bold text-foreground mt-8 mb-4">
+              Resultados Reales
+            </h2>
+            <p className="text-muted-foreground leading-relaxed mb-6">
+              Miles de personas han experimentado transformaciones profundas a través de KS Healing. Desde sanación de traumas hasta manifestación de sus sueños, desde mejora de salud hasta transformación de relaciones. La Energía KS no discrimina: funciona para cualquiera que esté dispuesto a recibir.
             </p>
           </div>
 
@@ -131,15 +128,15 @@ export default function BlogArticle1() {
               <Heart className="text-primary mt-1 flex-shrink-0" size={24} />
               <div>
                 <h3 className="text-xl font-display font-bold text-foreground mb-2">
-                  ¿Listo para Transformar Tu Realidad?
+                  Comienza Tu Transformación Hoy
                 </h3>
                 <p className="text-muted-foreground mb-4">
-                  Descubre cómo KS Healing puede activar tu potencial y transformar tu vida. Reserva una sesión de consulta gratuita con YOHEV.
+                  Experimenta el poder de la Energía KS y transforma tu realidad. Cada momento es una oportunidad para despertar a tu verdadera naturaleza.
                 </p>
                 <Link href="/contacto">
                   <a>
                     <Button className="bg-primary hover:bg-primary/90">
-                      Reservar Sesión Gratuita
+                      Reservar Sesión
                     </Button>
                   </a>
                 </Link>
@@ -169,6 +166,8 @@ export default function BlogArticle1() {
           </div>
         </article>
       </main>
+      
+      <Footer />
     </div>
   );
 }

@@ -1,10 +1,24 @@
 import { Link } from 'wouter';
-import { ArrowLeft, Zap, Heart } from 'lucide-react';
+import Navigation from '@/components/Navigation';
+import Footer from '@/components/Footer';
+import { ArrowLeft, Zap, Heart, Facebook, Twitter, Linkedin, MessageCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 export default function BlogArticle2() {
+  const articleUrl = typeof window !== 'undefined' ? window.location.href : '';
+  const articleTitle = 'Los 7 Chakras y el Chakra Timo: La Puerta al Corazón Energético';
+  
+  const shareLinks = {
+    facebook: `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(articleUrl)}`,
+    twitter: `https://twitter.com/intent/tweet?url=${encodeURIComponent(articleUrl)}&text=${encodeURIComponent(articleTitle)}`,
+    linkedin: `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(articleUrl)}`,
+    whatsapp: `https://wa.me/?text=${encodeURIComponent(articleTitle + ' ' + articleUrl)}`
+  };
+
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background flex flex-col">
+      <Navigation />
+      
       {/* Header */}
       <header className="bg-gradient-to-r from-primary/10 to-accent/10 border-b border-border">
         <div className="container py-8">
@@ -24,7 +38,7 @@ export default function BlogArticle2() {
       </header>
 
       {/* Content */}
-      <main className="container py-12">
+      <main className="container py-12 flex-grow">
         <article className="max-w-3xl mx-auto">
           {/* Featured Image */}
           <div className="mb-8 rounded-lg overflow-hidden h-96">
@@ -33,6 +47,23 @@ export default function BlogArticle2() {
               alt="Los 7 Chakras y el Chakra Timo"
               className="w-full h-full object-cover"
             />
+          </div>
+
+          {/* Share Buttons */}
+          <div className="mb-8 flex items-center gap-4 flex-wrap pb-6 border-b border-border">
+            <span className="text-sm font-semibold text-muted-foreground">Compartir:</span>
+            <a href={shareLinks.facebook} target="_blank" rel="noopener noreferrer" className="p-2 rounded-lg bg-primary/10 hover:bg-primary/20 transition-colors" title="Compartir en Facebook">
+              <Facebook size={18} className="text-primary" />
+            </a>
+            <a href={shareLinks.twitter} target="_blank" rel="noopener noreferrer" className="p-2 rounded-lg bg-primary/10 hover:bg-primary/20 transition-colors" title="Compartir en Twitter">
+              <Twitter size={18} className="text-primary" />
+            </a>
+            <a href={shareLinks.linkedin} target="_blank" rel="noopener noreferrer" className="p-2 rounded-lg bg-primary/10 hover:bg-primary/20 transition-colors" title="Compartir en LinkedIn">
+              <Linkedin size={18} className="text-primary" />
+            </a>
+            <a href={shareLinks.whatsapp} target="_blank" rel="noopener noreferrer" className="p-2 rounded-lg bg-primary/10 hover:bg-primary/20 transition-colors" title="Compartir en WhatsApp">
+              <MessageCircle size={18} className="text-primary" />
+            </a>
           </div>
 
           {/* Article Body */}
@@ -227,6 +258,8 @@ export default function BlogArticle2() {
           </div>
         </article>
       </main>
+      
+      <Footer />
     </div>
   );
 }
