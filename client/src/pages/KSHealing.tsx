@@ -7,6 +7,7 @@ import { Sparkles, Heart, Users, Award, Check, ArrowRight, Calendar, Zap } from 
 import { ksHealingTestimonials } from "@/lib/programTestimonials";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
+import { Link } from "wouter";
 
 export default function KSHealing() {
 
