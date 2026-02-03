@@ -105,7 +105,7 @@ export default function TallerKSHealing() {
           </div>
 
           <p className="text-sm text-white/70">
-            📅 Próxima sesión: Consulta fechas disponibles | ⏱️ Duración: 3 horas | 💻 Modalidad: Online en vivo + Grabación
+            📅 <strong>15 de febrero, 2026</strong> | ⏱️ 10:00 - 13:00 CDMX (17:00 - 20:00 España) | 💻 Online en vivo + Grabación
           </p>
         </div>
       </section>
@@ -131,30 +131,7 @@ export default function TallerKSHealing() {
               </p>
             </div>
 
-            <div className="bg-card rounded-lg p-8 border border-border">
-              <h3 className="text-2xl font-bold mb-6 flex items-center gap-3">
-                <Heart className="text-primary" size={28} />
-                Lo Que No Es Este Taller
-              </h3>
-              <ul className="space-y-4">
-                <li className="flex gap-3">
-                  <span className="text-primary font-bold">✗</span>
-                  <span className="text-muted-foreground">No es informativo ni teórico</span>
-                </li>
-                <li className="flex gap-3">
-                  <span className="text-primary font-bold">✗</span>
-                  <span className="text-muted-foreground">No entrega el Cuerpo KS (eso es en la Certificación)</span>
-                </li>
-                <li className="flex gap-3">
-                  <span className="text-primary font-bold">✗</span>
-                  <span className="text-muted-foreground">No sustituye tratamientos médicos o psicológicos</span>
-                </li>
-                <li className="flex gap-3">
-                  <span className="text-primary font-bold">✗</span>
-                  <span className="text-muted-foreground">No es una certificación formal</span>
-                </li>
-              </ul>
-            </div>
+
           </div>
         </div>
       </section>
