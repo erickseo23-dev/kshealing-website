@@ -81,20 +81,20 @@ export default function TallerKSHealing() {
         {/* Dark overlay for text readability */}
         <div className="absolute inset-0 bg-black/40" />
 
-        <div className="relative z-10 container mx-auto px-4 text-center max-w-5xl py-20">
+        <div className="relative z-10 container mx-auto px-4 text-center max-w-5xl py-8 md:py-20 flex flex-col justify-center h-full">
           {/* Badge */}
-          <div className="mb-6 inline-flex items-center gap-2 px-5 py-3 rounded-full bg-white/15 backdrop-blur-md border border-white/30 hover:border-white/50 transition-all duration-300">
-            <Sparkles size={18} className="text-white" />
-            <span className="text-sm font-semibold text-white tracking-wide">✨ Experiencia Vivencial Gratuita</span>
+          <div className="mb-4 md:mb-6 inline-flex items-center gap-2 px-4 md:px-5 py-2 md:py-3 rounded-full bg-white/15 backdrop-blur-md border border-white/30 hover:border-white/50 transition-all duration-300">
+            <Sparkles size={16} className="text-white" />
+            <span className="text-xs md:text-sm font-semibold text-white tracking-wide">✨ Experiencia Vivencial Gratuita</span>
           </div>
 
           {/* Facilitator name */}
-          <div className="mb-6 text-lg text-white font-bold tracking-widest uppercase opacity-95">
+          <div className="mb-4 md:mb-6 text-sm md:text-lg text-white font-bold tracking-widest uppercase opacity-95">
             Impartido por <span className="text-white">YOHEV</span>
           </div>
           
           {/* Main heading */}
-          <h1 className="text-6xl md:text-7xl font-black text-white mb-6 leading-tight tracking-tight drop-shadow-lg">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-black text-white mb-4 md:mb-6 leading-tight tracking-tight drop-shadow-lg">
             <span className="block mb-2">KS Healing</span>
             <span className="block">
               <span className="text-white">y la</span><br />
@@ -103,21 +103,21 @@ export default function TallerKSHealing() {
           </h1>
 
           {/* Subtitle */}
-          <p className="text-lg md:text-xl text-white/95 mb-10 leading-relaxed max-w-3xl mx-auto font-light drop-shadow-md">
+          <p className="text-sm md:text-lg lg:text-xl text-white/95 mb-6 md:mb-10 leading-relaxed max-w-3xl mx-auto font-light drop-shadow-md">
             Una <strong className="text-white">experiencia energética profunda</strong> de 3 horas para conectar con la Energía KS, despertar tu sensibilidad y preparar tu campo para la transformación.
           </p>
 
           {/* CTA Button */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-10">
-            <Button size="lg" className="bg-orange-500 hover:bg-orange-600 text-white px-12 py-6 text-lg font-bold rounded-lg shadow-2xl transition-all duration-300 transform hover:scale-105">
+          <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center mb-6 md:mb-10">
+            <Button size="lg" className="bg-orange-500 hover:bg-orange-600 text-white px-6 md:px-12 py-3 md:py-6 text-sm md:text-lg font-bold rounded-lg shadow-2xl transition-all duration-300 transform hover:scale-105">
               Inscríbete al Taller
               <ArrowRight size={24} className="ml-3" />
             </Button>
           </div>
 
           {/* Event details card */}
-          <div className="bg-white/12 backdrop-blur-lg border border-white/25 rounded-xl p-6 max-w-2xl mx-auto shadow-xl">
-            <div className="flex flex-col md:flex-row justify-center items-center gap-4 text-white/95 text-sm">
+          <div className="bg-white/12 backdrop-blur-lg border border-white/25 rounded-xl p-4 md:p-6 max-w-2xl mx-auto shadow-xl">
+            <div className="flex flex-col md:flex-row justify-center items-center gap-3 md:gap-4 text-white/95 text-xs md:text-sm">
               <div className="flex items-center gap-2">
                 <span className="text-2xl">📅</span>
                 <span className="font-semibold">15 de febrero</span>
