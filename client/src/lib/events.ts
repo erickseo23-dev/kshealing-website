@@ -28,7 +28,7 @@ export const eventos: Event[] = [
     precio: "Acceso al Club",
     incluye: ["Transmisión en vivo", "Meditación central: Recordar el Amor", "Reordenamiento interno profundo", "Certificado de participación"],
     estado: "Próximamente",
-    imagen: "https://ks-healing-images.s3.us-east-1.amazonaws.com/retiro-8-amor-divino.png",
+    imagen: "/images/retiro-8-amor-divino.png",
     tipo: "Retiro Sagrado",
     tema: "Relaciones",
     modalidad: "Online en Vivo"
@@ -65,7 +65,7 @@ export const eventos: Event[] = [
     precio: "Acceso al Club",
     incluye: ["Liberación suave de residuos energéticos", "Recuperación de energía personal", "Sellado y estabilización", "Certificado de participación"],
     estado: "Próximamente",
-    imagen: "https://ks-healing-images.s3.us-east-1.amazonaws.com/retiro-reinicio.png",
+    imagen: "/images/retiro-reinicio.png",
     tipo: "Retiro Sagrado",
     tema: "Transformación",
     modalidad: "Online en Vivo"
@@ -81,7 +81,7 @@ export const eventos: Event[] = [
     precio: "Acceso al Club",
     incluye: ["Identificación de patrones infantiles", "Sanar sin revivir trauma", "Reordenamiento desde el adulto consciente", "Certificado de participación"],
     estado: "Próximamente",
-    imagen: "https://ks-healing-images.s3.us-east-1.amazonaws.com/retiro-nino-interior.png",
+    imagen: "/images/retiro-nino-interior.png",
     tipo: "Retiro Sagrado",
     tema: "Sanación",
     modalidad: "Online en Vivo"
@@ -97,7 +97,7 @@ export const eventos: Event[] = [
     precio: "Acceso al Club",
     incluye: ["Exploración de la matriz emocional materna", "Liberación de culpa y lealtad", "Sanar sin cargar", "Certificado de participación"],
     estado: "Próximamente",
-    imagen: "https://ks-healing-images.s3.us-east-1.amazonaws.com/retiro-vinculo-materno.png",
+    imagen: "/images/retiro-vinculo-materno.png",
     tipo: "Retiro Sagrado",
     tema: "Relaciones",
     modalidad: "Online en Vivo"
@@ -113,7 +113,7 @@ export const eventos: Event[] = [
     precio: "Acceso al Club",
     incluye: ["Exploración de seguridad y límites", "Sanación de ausencia o rigidez paterna", "Recuperación de dirección personal", "Certificado de participación"],
     estado: "Próximamente",
-    imagen: "https://ks-healing-images.s3.us-east-1.amazonaws.com/retiro-fuerza-paterna.png",
+    imagen: "/images/retiro-fuerza-paterna.png",
     tipo: "Retiro Sagrado",
     tema: "Transformación",
     modalidad: "Online en Vivo"
@@ -129,7 +129,7 @@ export const eventos: Event[] = [
     precio: "Acceso al Club",
     incluye: ["Identificación del estrés normalizado", "Regulación del sistema nervioso", "Recuperación de calma", "Certificado de participación"],
     estado: "Próximamente",
-    imagen: "https://ks-healing-images.s3.us-east-1.amazonaws.com/retiro-estres.png",
+    imagen: "/images/retiro-estres.png",
     tipo: "Retiro Sagrado",
     tema: "Sanación",
     modalidad: "Online en Vivo"
@@ -145,7 +145,7 @@ export const eventos: Event[] = [
     precio: "Acceso al Club",
     incluye: ["Técnicas de soltar consciente", "Cierre de ciclos", "Liberación sin resistencia", "Certificado de participación"],
     estado: "Próximamente",
-    imagen: "https://ks-healing-images.s3.us-east-1.amazonaws.com/retiro-soltar.png",
+    imagen: "/images/retiro-soltar.png",
     tipo: "Retiro Sagrado",
     tema: "Transformación",
     modalidad: "Online en Vivo"
@@ -161,7 +161,7 @@ export const eventos: Event[] = [
     precio: "Acceso al Club",
     incluye: ["Identificación de automatismos", "Recuperación de soberanía", "Elecciones conscientes", "Certificado de participación"],
     estado: "Próximamente",
-    imagen: "https://ks-healing-images.s3.us-east-1.amazonaws.com/retiro-poder-elegir.png",
+    imagen: "/images/retiro-poder-elegir.png",
     tipo: "Retiro Sagrado",
     tema: "Consciencia",
     modalidad: "Online en Vivo"
@@ -177,7 +177,7 @@ export const eventos: Event[] = [
     precio: "Acceso al Club",
     incluye: ["Establecimiento de límites energéticos", "Protección del campo", "Soberanía personal", "Certificado de participación"],
     estado: "Próximamente",
-    imagen: "https://ks-healing-images.s3.us-east-1.amazonaws.com/retiro-proteccion.png",
+    imagen: "/images/retiro-proteccion.png",
     tipo: "Retiro Sagrado",
     tema: "Sanación",
     modalidad: "Online en Vivo"
@@ -193,7 +193,7 @@ export const eventos: Event[] = [
     precio: "Acceso al Club",
     incluye: ["Exploración del linaje", "Sanación de herencias", "Honrar sin repetir", "Certificado de participación"],
     estado: "Próximamente",
-    imagen: "https://ks-healing-images.s3.us-east-1.amazonaws.com/retiro-ancestros.png",
+    imagen: "/images/retiro-ancestros.png",
     tipo: "Retiro Sagrado",
     tema: "Transformación",
     modalidad: "Online en Vivo"
@@ -209,7 +209,7 @@ export const eventos: Event[] = [
     precio: "Acceso al Club",
     incluye: ["Recolección de energía", "Cierre de ciclos anuales", "Integración de aprendizajes", "Certificado de participación"],
     estado: "Próximamente",
-    imagen: "https://ks-healing-images.s3.us-east-1.amazonaws.com/retiro-cierre.png",
+    imagen: "/images/retiro-cierre.png",
     tipo: "Retiro Sagrado",
     tema: "Consciencia",
     modalidad: "Online en Vivo"
