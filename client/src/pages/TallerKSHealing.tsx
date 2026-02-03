@@ -198,7 +198,7 @@ export default function TallerKSHealing() {
               <div className="relative">
                 <div className="absolute inset-0 bg-gradient-to-br from-primary/40 to-primary/10 rounded-xl blur-2xl" />
                 <img
-                  src="/images/ks-healing-book.png"
+                  src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/GTnsaEwxAStNPnrW.png"
                   alt="Libro KS Healing"
                   className="relative w-full max-w-xs rounded-xl shadow-2xl object-cover"
                 />
