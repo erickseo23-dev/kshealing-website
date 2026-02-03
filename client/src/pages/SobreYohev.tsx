@@ -70,18 +70,8 @@ export default function SobreYOHEV() {
       <section className="py-20 md:py-32">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
-            {/* Image */}
-            <div className="relative order-2 lg:order-1">
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 rounded-2xl blur-2xl"></div>
-              <img 
-                src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/ytiWuRfJNXJOktaW.png" 
-                alt="Dr. Erick Gurrola - YOHEV" 
-                className="relative w-full rounded-2xl shadow-2xl object-cover aspect-square"
-              />
-            </div>
-
             {/* Content */}
-            <div className="order-1 lg:order-2">
+            <div>
               <h2 className="font-display text-4xl font-bold text-foreground mb-6">
                 Descubriendo el Propósito
               </h2>
@@ -128,7 +118,7 @@ export default function SobreYOHEV() {
           {/* KS Healing & D.A.R.T. Section */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20 py-12">
             {/* Image */}
-            <div className="relative order-1 lg:order-2">
+            <div className="relative order-2 lg:order-1">
               <div className="absolute inset-0 bg-gradient-to-br from-accent/20 to-primary/20 rounded-2xl blur-2xl"></div>
               <img 
                 src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/neOxXCbvzmLjVSSO.jpeg" 
@@ -138,7 +128,7 @@ export default function SobreYOHEV() {
             </div>
 
             {/* Content */}
-            <div className="order-2 lg:order-1">
+            <div className="order-1 lg:order-2">
               <h2 className="font-display text-4xl font-bold text-foreground mb-6">
                 La Energía KS y D.A.R.T.
               </h2>
