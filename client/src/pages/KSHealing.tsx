@@ -91,10 +91,6 @@ export default function KSHealing() {
 
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl">
-            <div className="inline-block mb-6 px-4 py-2 rounded-full bg-secondary/20 border border-secondary/40" style={{borderColor: '#fbbc0e40', backgroundColor: '#fbbc0e20'}}>
-              <span className="text-secondary font-semibold text-sm" style={{color: '#fbbc0e'}}>Cupo Limitado - 22 Feb, 1 Mar, 8 Mar</span>
-            </div>
-
             <h1 className="font-display text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
               Conviértete en <span className="text-secondary" style={{color: '#fbbc0e'}}>Practicante Certificado</span> de KS Healing
             </h1>
@@ -336,9 +332,7 @@ export default function KSHealing() {
                 </div>
               </div>
 
-              <p className="text-sm text-muted-foreground mt-6">
-                Cupo limitado - Solo 20 lugares disponibles
-              </p>
+
             </div>
           </div>
         </div>
@@ -605,7 +599,7 @@ export default function KSHealing() {
               ¿Listo para Tu <span className="text-primary">Transformación</span>?
             </h2>
             <p className="text-xl text-muted-foreground leading-relaxed mb-8">
-              Únete a la próxima certificación y conviértete en un Practicante Certificado de KS Healing. Cupo limitado.
+              Únete a la próxima certificación y conviértete en un Practicante Certificado de KS Healing.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

@@ -34,6 +34,27 @@ export const eventos: Event[] = [
     modalidad: "Online en Vivo"
   },
   {
+    id: 12,
+    title: "Certificación Internacional en KS Healing Nivel Básico",
+    description: "Únete a una comunidad global de profesionales transformando vidas a través de la Energía KS. Certificación Internacional en 3 módulos intensivos.",
+    fecha: "22 de Febrero - 8 de Marzo, 2026",
+    ubicacion: "Online en vivo",
+    horario: "3 domingos consecutivos, 2 horas cada sesión",
+    participantes: "20 lugares disponibles",
+    precio: "$145 USD",
+    incluye: [
+      "Material en Video Pregrabado - Acceso completo a videos de cada módulo",
+      "Sesión en Vivo con YOHEV - 2 horas de transmisión directa en Zoom",
+      "Prácticas Online Programadas - Sesiones con facilitador certificado",
+      "Certificación Internacional - Reconocimiento oficial como Practicante de KS Healing"
+    ],
+    estado: "Abierto",
+    imagen: "https://private-us-east-1.manuscdn.com/sessionFile/cJ0NsjiTEgFuWB5HAN1kHs/sandbox/QNzd4Ewv2ZIOdzbbeCa2cU-img-1_1770062980000_na1fn_a3MtaGVhbGluZy1wcmFjdGl0aW9uZXItbWFsZS1zZXNzaW9u.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvY0owTnNqaVRFZ0Z1V0I1SEFOMWtIcy9zYW5kYm94L1FOemQ0RXd2MlpJT2R6YmJlQ2EyY1UtaW1nLTFfMTc3MDA2Mjk4MDAwMF9uYTFmbl9hM010YUdWaGJHbHVaeTF3Y21GamRHbDBhVzl1WlhJdGJXRnNaUzF6WlhOemFXOXUucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLHdfMTkyMCxoXzE5MjAvZm9ybWF0LHdlYnAvcXVhbGl0eSxxXzgwIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNzk4NzYxNjAwfX19XX0_&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=SjUCyWqdz-ab0V1TwCOwsBFqLRKoVWRrohz~8oS0bizp4zaFHdTYRut3aOlMiPIZ3iB-bHNI1Pys3c0AlhcoafIYvyVp9bEjXbPCwZx54Cb3onw~3-gbuE5dQEJ6WMf1okvcaSrOUS3DyiUIyNWmneMATJTMn72uTHIVrA0dxIwmi4zpLealTR8Jxg3Mu41PNejiK19id8ZJo~5UDS3LAInoxFjW74afsXUHF9O69nUJz8V270KZzkERrlTs07OPYnSc7oKPmqqEuSNaBt3L2Wsv3rTJ9~1QdA08rWjwzOp~L3GnvS18DfT8ydJtHNeTJeC~xMhEfM8bnte8s~LZpg__",
+    tipo: "Certificación",
+    tema: "KS Healing",
+    modalidad: "Online en Vivo"
+  },
+  {
     id: 2,
     title: "Reinicio Energético Profundo",
     description: "Limpia el arrastre, recupera tu fuerza y renace desde tu centro. Distinguir cansancio físico vs arrastre energético.",
@@ -191,27 +212,6 @@ export const eventos: Event[] = [
     imagen: "/images/retiro-cierre.png",
     tipo: "Retiro Sagrado",
     tema: "Consciencia",
-    modalidad: "Online en Vivo"
-  },
-  {
-    id: 12,
-    title: "Certificación Internacional en KS Healing Nivel Básico",
-    description: "Únete a una comunidad global de profesionales transformando vidas a través de la Energía KS. Certificación Internacional en 3 módulos intensivos.",
-    fecha: "22 de Febrero - 8 de Marzo, 2026",
-    ubicacion: "Online en vivo",
-    horario: "3 domingos consecutivos, 2 horas cada sesión",
-    participantes: "20 lugares disponibles",
-    precio: "$145 USD",
-    incluye: [
-      "Material en Video Pregrabado - Acceso completo a videos de cada módulo",
-      "Sesión en Vivo con YOHEV - 2 horas de transmisión directa en Zoom",
-      "Prácticas Online Programadas - Sesiones con facilitador certificado",
-      "Certificación Internacional - Reconocimiento oficial como Practicante de KS Healing"
-    ],
-    estado: "Abierto",
-    imagen: "https://private-us-east-1.manuscdn.com/sessionFile/cJ0NsjiTEgFuWB5HAN1kHs/sandbox/QNzd4Ewv2ZIOdzbbeCa2cU-img-1_1770062980000_na1fn_a3MtaGVhbGluZy1wcmFjdGl0aW9uZXItbWFsZS1zZXNzaW9u.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvY0owTnNqaVRFZ0Z1V0I1SEFOMWtIcy9zYW5kYm94L1FOemQ0RXd2MlpJT2R6YmJlQ2EyY1UtaW1nLTFfMTc3MDA2Mjk4MDAwMF9uYTFmbl9hM010YUdWaGJHbHVaeTF3Y21GamRHbDBhVzl1WlhJdGJXRnNaUzF6WlhOemFXOXUucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLHdfMTkyMCxoXzE5MjAvZm9ybWF0LHdlYnAvcXVhbGl0eSxxXzgwIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNzk4NzYxNjAwfX19XX0_&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=SjUCyWqdz-ab0V1TwCOwsBFqLRKoVWRrohz~8oS0bizp4zaFHdTYRut3aOlMiPIZ3iB-bHNI1Pys3c0AlhcoafIYvyVp9bEjXbPCwZx54Cb3onw~3-gbuE5dQEJ6WMf1okvcaSrOUS3DyiUIyNWmneMATJTMn72uTHIVrA0dxIwmi4zpLealTR8Jxg3Mu41PNejiK19id8ZJo~5UDS3LAInoxFjW74afsXUHF9O69nUJz8V270KZzkERrlTs07OPYnSc7oKPmqqEuSNaBt3L2Wsv3rTJ9~1QdA08rWjwzOp~L3GnvS18DfT8ydJtHNeTJeC~xMhEfM8bnte8s~LZpg__",
-    tipo: "Certificación",
-    tema: "KS Healing",
     modalidad: "Online en Vivo"
   }
 ];
