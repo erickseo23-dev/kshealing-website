@@ -399,8 +399,12 @@ export default function Home() {
                       {event.description}
                     </p>
                   </div>
-                  <Link href={event.tipo === "Retiro Sagrado" ? "/club-retiro-sagrado" : event.tipo === "Certificación" ? "/ks-healing" : "/eventos"}>
-                    <Button className="w-full mt-6 bg-primary hover:bg-primary/90 text-white">
+                  <Link href={event.tipo === "Retiro Sagrado" ? "/club-retiro-sagrado" : event.tipo === "Certificación" ? "/ks-healing" : event.tipo === "Taller" ? "/taller-ks-healing" : "/eventos"}>
+                    <Button className={`w-full mt-6 text-white ${
+                      event.tipo === "Taller" 
+                        ? "bg-orange-500 hover:bg-orange-600" 
+                        : "bg-primary hover:bg-primary/90"
+                    }`}>
                       Más Información
                     </Button>
                   </Link>
