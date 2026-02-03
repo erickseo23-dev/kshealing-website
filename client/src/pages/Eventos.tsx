@@ -123,16 +123,9 @@ export default function Eventos() {
             <p className="text-lg text-muted-foreground mb-8">
               Suscríbete para recibir notificaciones de nuevos seminarios y retiros
             </p>
-            <div className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
-              <input
-                type="email"
-                placeholder="Tu email"
-                className="flex-1 px-4 py-3 rounded-lg border border-border bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary"
-              />
-              <Button className="bg-primary hover:bg-primary/90 text-white">
-                Suscribirse
-              </Button>
-            </div>
+            <Button className="bg-primary hover:bg-primary/90 text-white">
+              Suscribirse
+            </Button>
           </div>
         </div>
       </section>
