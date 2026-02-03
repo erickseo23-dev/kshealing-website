@@ -60,7 +60,7 @@ export default function SobreYOHEV() {
               Conoce a <span className="text-primary">YOHEV</span>
             </h1>
             <p className="text-xl text-muted-foreground mb-8">
-              Dr. Erick Gurrola: Pionero y Creador de KS Healing
+              Dr. Erick Gurrola: Maestro Espiritual, Pionero y Creador de KS Healing
             </p>
           </div>
         </div>
