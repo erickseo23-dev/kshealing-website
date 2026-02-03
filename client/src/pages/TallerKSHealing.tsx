@@ -67,46 +67,91 @@ export default function TallerKSHealing() {
     <div className="min-h-screen bg-background">
       <Navigation />
 
-      {/* Hero Section */}
+      {/* Hero Section - Enhanced */}
       <section className="relative w-full min-h-screen flex items-center justify-center overflow-hidden">
+        {/* Multi-layer background */}
+        <div className="absolute inset-0 bg-gradient-to-b from-slate-950 via-slate-900 to-background" />
+        
+        {/* Animated gradient orbs */}
+        <div className="absolute top-0 left-1/4 w-96 h-96 bg-primary/15 rounded-full mix-blend-screen filter blur-3xl opacity-40 animate-pulse" />
+        <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-primary/10 rounded-full mix-blend-screen filter blur-3xl opacity-30 animate-pulse" style={{animationDelay: '1s'}} />
+        
+        {/* Background image with subtle overlay */}
         <div
-          className="absolute inset-0 bg-cover bg-center"
+          className="absolute inset-0 bg-cover bg-center opacity-35"
           style={{
             backgroundImage: 'url(https://private-us-east-1.manuscdn.com/sessionFile/cJ0NsjiTEgFuWB5HAN1kHs/sandbox/L3Wxg719Y8VC42GgkGkSpW-img-1_1770113174000_na1fn_dGFsbGVyLWhlcm8.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80)',
             backgroundAttachment: 'fixed'
           }}
-        >
-          <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-black/30" />
-        </div>
+        />
+        
+        {/* Multi-layer gradient overlays */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-transparent to-black/30" />
 
-        <div className="relative z-10 container mx-auto px-4 text-center max-w-4xl">
-          <div className="mb-6 inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20">
-            <Sparkles size={16} className="text-primary" />
-            <span className="text-sm font-medium text-white">Experiencia Vivencial Gratuita</span>
+        <div className="relative z-10 container mx-auto px-4 text-center max-w-5xl py-20">
+          {/* Badge */}
+          <div className="mb-8 inline-flex items-center gap-2 px-5 py-3 rounded-full bg-gradient-to-r from-primary/25 to-primary/10 backdrop-blur-md border border-primary/40 hover:border-primary/60 transition-all duration-300">
+            <Sparkles size={18} className="text-primary" />
+            <span className="text-sm font-semibold text-primary/95 tracking-wide">✨ Experiencia Vivencial Gratuita</span>
           </div>
 
-          <div className="mb-6 text-xl text-primary/90 font-semibold tracking-wide">Impartido por YOHEV</div>
+          {/* Facilitator name */}
+          <div className="mb-8 text-lg text-primary font-bold tracking-widest uppercase opacity-90">
+            Impartido por <span className="text-transparent bg-gradient-to-r from-primary to-primary/60 bg-clip-text">YOHEV</span>
+          </div>
           
-          <h1 className="text-6xl md:text-7xl font-bold text-white mb-8 leading-tight">
-            KS Healing y la<br />
-            <span className="bg-gradient-to-r from-primary via-primary to-primary/80 bg-clip-text text-transparent">Consciencia Crística</span>
+          {/* Main heading */}
+          <h1 className="text-7xl md:text-8xl font-black text-white mb-6 leading-tight tracking-tight">
+            <span className="block mb-3">KS Healing</span>
+            <span className="block">
+              <span className="text-white">y la</span><br />
+              <span className="bg-gradient-to-r from-primary via-primary/80 to-primary/60 bg-clip-text text-transparent">Consciencia Crística</span>
+            </span>
           </h1>
 
-          <p className="text-xl text-white/90 mb-12 leading-relaxed max-w-2xl mx-auto">
-            Una experiencia energética profunda de 3 horas para conectar con la Energía KS, despertar tu sensibilidad y preparar tu campo para la transformación.
+          {/* Subtitle */}
+          <p className="text-xl md:text-2xl text-white/80 mb-12 leading-relaxed max-w-3xl mx-auto font-light">
+            Una <strong className="text-white/95">experiencia energética profunda</strong> de 3 horas para conectar con la Energía KS, despertar tu sensibilidad y preparar tu campo para la transformación.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-            <Button size="lg" className="bg-primary hover:bg-primary/90 text-white px-10 py-6 text-lg">
+          {/* CTA Button */}
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
+            <Button size="lg" className="bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary/70 text-white px-12 py-7 text-lg font-bold rounded-lg shadow-2xl hover:shadow-primary/50 transition-all duration-300 transform hover:scale-105">
               Inscríbete al Taller
               <ArrowRight size={24} className="ml-3" />
             </Button>
           </div>
 
-          <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg p-6 max-w-2xl mx-auto">
-            <p className="text-white/80">
-              📅 <strong className="text-white">15 de febrero, 2026</strong> | ⏱️ <strong>10:00 - 13:00 CDMX</strong> (17:00 - 20:00 España) | 💻 Online en vivo + Grabación
-            </p>
+          {/* Event details card */}
+          <div className="bg-white/8 backdrop-blur-xl border border-white/20 rounded-2xl p-8 max-w-2xl mx-auto shadow-2xl hover:bg-white/10 transition-all duration-300">
+            <div className="flex flex-col md:flex-row justify-center items-center gap-6 text-white/90">
+              <div className="flex items-center gap-3">
+                <span className="text-3xl">📅</span>
+                <div className="text-left">
+                  <p className="text-xs text-white/60 uppercase tracking-wide font-semibold">Fecha</p>
+                  <p className="font-bold text-white text-lg">15 de febrero, 2026</p>
+                </div>
+              </div>
+              <div className="hidden md:block w-px h-14 bg-white/20" />
+              <div className="flex items-center gap-3">
+                <span className="text-3xl">⏱️</span>
+                <div className="text-left">
+                  <p className="text-xs text-white/60 uppercase tracking-wide font-semibold">Horario</p>
+                  <p className="font-bold text-white text-lg">10:00 - 13:00 CDMX</p>
+                  <p className="text-xs text-primary/80 font-medium">17:00 - 20:00 España</p>
+                </div>
+              </div>
+              <div className="hidden md:block w-px h-14 bg-white/20" />
+              <div className="flex items-center gap-3">
+                <span className="text-3xl">💻</span>
+                <div className="text-left">
+                  <p className="text-xs text-white/60 uppercase tracking-wide font-semibold">Formato</p>
+                  <p className="font-bold text-white text-lg">Online en vivo</p>
+                  <p className="text-xs text-primary/80 font-medium">+ Grabación</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
