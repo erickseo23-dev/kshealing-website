@@ -47,7 +47,7 @@ const blogPosts = [
     date: "5 de Enero, 2026",
     category: "Sanación",
     readTime: "9 min",
-    image: "/images/blog-sintropía.png",
+    image: "/images/blog-sintropia.png",
     slug: "article-4",
   },
   {
