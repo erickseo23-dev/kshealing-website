@@ -262,10 +262,12 @@ export default function KSHealing() {
                   <span className="text-foreground">100% Gratuito y sin compromiso</span>
                 </li>
               </ul>
-              <Button size="lg" className="w-full border-primary text-primary hover:bg-primary/10" variant="outline">
-                Más Información del Taller
-                <ArrowRight size={20} />
-              </Button>
+              <Link href="/taller-ks-healing">
+                <Button size="lg" className="w-full bg-orange-500 hover:bg-orange-600 text-white">
+                  Más Información del Taller
+                  <ArrowRight size={20} />
+                </Button>
+              </Link>
             </Card>
           </div>
 
