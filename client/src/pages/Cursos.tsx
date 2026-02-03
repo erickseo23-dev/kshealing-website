@@ -287,6 +287,7 @@ export default function Cursos() {
       <section className="py-20 md:py-32 bg-gradient-to-br from-primary to-primary/80">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
+            <p className="text-accent font-semibold text-lg mb-4 uppercase tracking-wide">KS Healing Systems</p>
             <h1 className="font-display text-5xl md:text-6xl font-bold text-white mb-6">
               Nuestros <span className="text-accent">Cursos y Programas</span>
             </h1>
