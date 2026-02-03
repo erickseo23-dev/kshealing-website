@@ -1,15 +1,42 @@
 import { Link } from 'wouter';
+import { useEffect } from 'react';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import { ArrowLeft, Zap, Heart, Facebook, Twitter, Linkedin, MessageCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 export default function BlogArticle3() {
+  useEffect(() => {
+    const title = 'Entrelazamiento Cuántico y Consciencia: La Ciencia Detrás de KS Healing';
+    const description = 'Descubre cómo los principios de la física cuántica y el entrelazamiento explican cómo funciona KS Healing y cómo la consciencia crea la realidad.';
+    const image = '/images/blog-cuantica.png';
+    const url = window.location.href;
+
+    const updateMeta = (property: string, content: string) => {
+      let meta = document.querySelector(`meta[property="${property}"]`);
+      if (!meta) {
+        meta = document.createElement('meta');
+        meta.setAttribute('property', property);
+        document.head.appendChild(meta);
+      }
+      meta.setAttribute('content', content);
+    };
+
+    updateMeta('og:title', title);
+    updateMeta('og:description', description);
+    updateMeta('og:image', image);
+    updateMeta('og:url', url);
+    updateMeta('og:type', 'article');
+    updateMeta('twitter:title', title);
+    updateMeta('twitter:description', description);
+    updateMeta('twitter:image', image);
+    document.title = title + ' | KS Healing';
+  }, []);
   const articleUrl = typeof window !== 'undefined' ? window.location.href : '';
   const articleTitle = 'Entrelazamiento Cuántico y Consciencia: La Ciencia Detrás de KS Healing';
   
   const shareLinks = {
-    facebook: `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(articleUrl)}`,
+    facebook: `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(articleUrl)}&quote=${encodeURIComponent(articleTitle)}`,
     twitter: `https://twitter.com/intent/tweet?url=${encodeURIComponent(articleUrl)}&text=${encodeURIComponent(articleTitle)}`,
     linkedin: `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(articleUrl)}`,
     whatsapp: `https://wa.me/?text=${encodeURIComponent(articleTitle + ' ' + articleUrl)}`
