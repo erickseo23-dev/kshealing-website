@@ -29,7 +29,7 @@ export default function BlogArticle4() {
           {/* Featured Image */}
           <div className="mb-8 rounded-lg overflow-hidden h-96">
             <img 
-              src="/images/blog-sintropía.png" 
+              src="/images/blog-sintropia.png" 
               alt="Sintropía vs Entropía"
               className="w-full h-full object-cover"
             />
