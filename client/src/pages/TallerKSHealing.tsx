@@ -90,7 +90,7 @@ export default function TallerKSHealing() {
 
           {/* Facilitator name */}
           <div className="mb-6 text-lg text-white font-bold tracking-widest uppercase opacity-95">
-            Impartido por <span className="text-white bg-black/50 px-3 py-1 rounded-lg">YOHEV</span>
+            Impartido por <span className="text-white">YOHEV</span>
           </div>
           
           {/* Main heading */}
@@ -98,7 +98,7 @@ export default function TallerKSHealing() {
             <span className="block mb-2">KS Healing</span>
             <span className="block">
               <span className="text-white">y la</span><br />
-              <span className="text-white bg-black/50 px-4 py-2 rounded-lg inline-block">Consciencia Crística</span>
+              <span className="text-white drop-shadow-lg">Consciencia Crística</span>
             </span>
           </h1>
 
