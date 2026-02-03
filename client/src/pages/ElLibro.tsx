@@ -103,51 +103,7 @@ export default function ElLibro() {
             </div>
           </div>
 
-          {/* Chapters */}
-          <div className="mb-20">
-            <h2 className="font-display text-4xl font-bold text-foreground mb-12 text-center">
-              Los 18 Capítulos
-            </h2>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              {[
-                { num: "I", title: "La Academia", desc: "Primera Parte: El Viaje - Introducción al camino de YOHEV", part: "Primera Parte: El Viaje" },
-                { num: "II", title: "El Médico de Médicos", desc: "El encuentro que cambió todo" },
-                { num: "III", title: "El Maestro", desc: "La revelación de la misión divina" },
-                { num: "IV", title: "Sucesos Extraordinarios", desc: "Experiencias que transformaron la comprensión" },
-                { num: "V", title: "Camina Conmigo", desc: "La invitación al camino" },
-                { num: "VI", title: "La Nueva Academia", desc: "El nacimiento de KS Healing" },
-                { num: "VII", title: "YOHEV", desc: "Segunda Parte: La Energía KS - La identidad revelada", part: "Segunda Parte: La Energía KS" },
-                { num: "VIII", title: "Keiouvos Stharef", desc: "La Energía Crística explicada" },
-                { num: "IX", title: "Entropía, Neguentropía y Sintropía", desc: "Principios energéticos fundamentales" },
-                { num: "X", title: "Entrelazamiento", desc: "La interconexión de todas las cosas" },
-                { num: "XI", title: "Sistemas Energéticos", desc: "Estructura y funcionamiento" },
-                { num: "XII", title: "Cuerpos y Dimensiones", desc: "La multidimensionalidad del ser" },
-                { num: "XIII", title: "El Chakra Timo", desc: "El centro de la coherencia" },
-                { num: "XIV", title: "El Cuerpo KS", desc: "Estructura y activación del vehículo energético" },
-                { num: "XV", title: "Sobre La Terapia", desc: "Tercera Parte: KS Healing - Fundamentos de la práctica", part: "Tercera Parte: KS Healing" },
-                { num: "XVI", title: "Qué Esperar de La Terapia", desc: "Resultados y transformaciones" },
-                { num: "XVII", title: "Cómo Convertirme En Practicante", desc: "El camino de la certificación" },
-                { num: "XVIII", title: "Ética Terapéutica", desc: "Responsabilidad y compromiso" },
-              ].map((chapter) => (
-                <Card key={chapter.num} className="p-6 border-border/50 hover:shadow-lg transition-shadow">
-                  <div className="flex gap-4">
-                    <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
-                      <span className="font-display font-bold text-primary text-lg">{chapter.num}</span>
-                    </div>
-                    <div>
-                      <h3 className="font-display font-bold text-foreground mb-1">
-                        {chapter.title}
-                      </h3>
-                      <p className="text-sm text-muted-foreground">
-                        {chapter.desc}
-                      </p>
-                    </div>
-                  </div>
-                </Card>
-              ))}
-            </div>
-          </div>
 
           {/* Features */}
           <div className="mb-20">
