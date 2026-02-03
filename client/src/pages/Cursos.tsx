@@ -15,6 +15,7 @@ const cursos = [
     investment: "$297 USD",
     level: "Principiante",
     icon: "⚡",
+    image: "/images/ks-healing-therapy.png",
     benefits: [
       "Acompanamiento energetico consciente",
       "Tecnicas de presencia e intencion",
@@ -33,6 +34,7 @@ const cursos = [
     investment: "$397 USD",
     level: "Intermedio",
     icon: "🔄",
+    image: "/images/dart-therapy.png",
     benefits: [
       "Identificacion de arquetipos limitantes",
       "Renovacion de patrones internos",
@@ -51,6 +53,7 @@ const cursos = [
     investment: "$497 USD",
     level: "Avanzado",
     icon: "🧬",
+    image: "/images/genetica-sagrada-workshop.png",
     benefits: [
       "Exploracion de las 12 capas del ADN",
       "Sanacion de linaje ancestral",
@@ -69,6 +72,7 @@ const cursos = [
     investment: "$197 USD",
     level: "Principiante",
     icon: "🧘",
+    image: "/images/meditacion-ascendente.png",
     benefits: [
       "Expansion de consciencia",
       "Regulacion emocional",
@@ -87,6 +91,7 @@ const cursos = [
     investment: "Membresia Anual",
     level: "Todos los niveles",
     icon: "💕",
+    image: "/images/retiro-sagrado-online.png",
     benefits: [
       "Retiros mensuales en vivo via Zoom",
       "Acceso a todas las grabaciones",
@@ -124,8 +129,19 @@ export default function Cursos() {
             {cursos.map((curso) => (
               <Card
                 key={curso.id}
-                className="overflow-hidden hover:shadow-2xl transition-all duration-300 border-0 bg-card"
+                className="overflow-hidden hover:shadow-2xl transition-all duration-300 border-0 bg-card flex flex-col"
               >
+                {/* Image */}
+                {curso.image && (
+                  <div className="w-full h-48 overflow-hidden bg-muted">
+                    <img 
+                      src={curso.image} 
+                      alt={curso.title}
+                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                    />
+                  </div>
+                )}
+
                 {/* Header with gradient */}
                 <div className={`bg-gradient-to-r ${curso.color} p-8 text-white`}>
                   <div className="flex items-start justify-between mb-4">
