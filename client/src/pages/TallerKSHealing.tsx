@@ -2,7 +2,7 @@ import { Link } from 'wouter';
 import { useEffect, useState } from 'react';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
-import { ArrowRight, CheckCircle, Sparkles, Heart, Zap, Gift, Wind } from 'lucide-react';
+import { ArrowRight, CheckCircle, Sparkles, Heart, Zap, Gift, Wind, Quote } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 export default function TallerKSHealing() {
@@ -68,7 +68,7 @@ export default function TallerKSHealing() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="relative w-full h-screen flex items-center justify-center overflow-hidden">
+      <section className="relative w-full min-h-screen flex items-center justify-center overflow-hidden">
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
@@ -76,175 +76,198 @@ export default function TallerKSHealing() {
             backgroundAttachment: 'fixed'
           }}
         >
-          <div className="absolute inset-0 bg-black/40" />
+          <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-black/30" />
         </div>
 
-        <div className="relative z-10 container mx-auto px-4 text-center max-w-3xl">
+        <div className="relative z-10 container mx-auto px-4 text-center max-w-4xl">
           <div className="mb-6 inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20">
             <Sparkles size={16} className="text-primary" />
             <span className="text-sm font-medium text-white">Experiencia Vivencial Gratuita</span>
           </div>
 
-          <div className="mb-4 text-lg text-white/80 font-semibold">Impartido por YOHEV</div>
-          <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight">
+          <div className="mb-6 text-xl text-primary/90 font-semibold tracking-wide">Impartido por YOHEV</div>
+          
+          <h1 className="text-6xl md:text-7xl font-bold text-white mb-8 leading-tight">
             KS Healing y la<br />
-            <span className="text-primary">Consciencia Crística</span>
+            <span className="bg-gradient-to-r from-primary via-primary to-primary/80 bg-clip-text text-transparent">Consciencia Crística</span>
           </h1>
 
-          <p className="text-xl text-white/90 mb-8 leading-relaxed">
+          <p className="text-xl text-white/90 mb-12 leading-relaxed max-w-2xl mx-auto">
             Una experiencia energética profunda de 3 horas para conectar con la Energía KS, despertar tu sensibilidad y preparar tu campo para la transformación.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-            <Button size="lg" className="bg-primary hover:bg-primary/90 text-white px-8">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+            <Button size="lg" className="bg-primary hover:bg-primary/90 text-white px-10 py-6 text-lg">
               Inscríbete al Taller
-              <ArrowRight size={20} className="ml-2" />
+              <ArrowRight size={24} className="ml-3" />
             </Button>
           </div>
 
-          <p className="text-sm text-white/70">
-            📅 <strong>15 de febrero, 2026</strong> | ⏱️ 10:00 - 13:00 CDMX (17:00 - 20:00 España) | 💻 Online en vivo + Grabación
-          </p>
+          <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg p-6 max-w-2xl mx-auto">
+            <p className="text-white/80">
+              📅 <strong className="text-white">15 de febrero, 2026</strong> | ⏱️ <strong>10:00 - 13:00 CDMX</strong> (17:00 - 20:00 España) | 💻 Online en vivo + Grabación
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* About the Facilitator */}
+      <section className="py-24 bg-gradient-to-b from-background to-card/30">
+        <div className="container mx-auto px-4 max-w-5xl">
+          <div className="grid md:grid-cols-2 gap-16 items-center">
+            <div className="order-2 md:order-1">
+              <h2 className="text-4xl font-bold mb-8">Quién Guía Este Taller</h2>
+              <div className="h-1 w-20 bg-primary mb-8" />
+              
+              <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
+                <strong>YOHEV</strong> es el creador y director del sistema de enseñanza <strong>KS Healing Systems</strong>. Con profundo conocimiento en consciencia expandida y energía crística, YOHEV facilita experiencias transformadoras que trascienden lo teórico.
+              </p>
+              
+              <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
+                Su enfoque integra rigor espiritual con claridad pedagógica. En este taller, no solo enseña conceptos, sino que crea un espacio seguro para que experimentes directamente la Energía KS.
+              </p>
+
+              <blockquote className="border-l-4 border-primary pl-6 py-4 bg-primary/5 rounded-r-lg">
+                <p className="text-lg text-foreground italic">
+                  "Sé un sol en la tierra. Recuerda quién eres y entonces sé."
+                </p>
+                <p className="text-primary font-semibold mt-3">— YOHEV</p>
+              </blockquote>
+            </div>
+
+            <div className="order-1 md:order-2 flex justify-center">
+              <div className="relative">
+                <div className="absolute inset-0 bg-gradient-to-br from-primary/30 to-primary/10 rounded-2xl blur-2xl" />
+                <img
+                  src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/yozelzMfRVwNZHTM.png"
+                  alt="YOHEV"
+                  className="relative w-full max-w-sm rounded-2xl shadow-2xl object-cover"
+                />
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
       {/* Why This Workshop Exists */}
-      <section className="py-20 bg-background">
+      <section className="py-24 bg-background">
         <div className="container mx-auto px-4 max-w-4xl">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4">¿Por Qué Existe Este Taller?</h2>
             <div className="h-1 w-20 bg-primary mx-auto" />
           </div>
 
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div>
-              <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                Muchas personas hablan de energía, consciencia y sanación… pero pocas logran <strong>sostener esos estados en el cuerpo</strong>.
-              </p>
-              <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                KS Healing no busca elevarte fuera de ti. <strong>Busca ordenarte por dentro</strong>.
-              </p>
-              <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                Este taller es el umbral previo a la Certificación: un espacio para <strong>sentir, reconocer y decidir desde la consciencia</strong> — no desde la expectativa.
-              </p>
-            </div>
-
-
+          <div className="bg-gradient-to-br from-card to-card/50 rounded-2xl p-12 border border-primary/20">
+            <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
+              Muchas personas hablan de energía, consciencia y sanación… pero pocas logran <strong>sostener esos estados en el cuerpo</strong>.
+            </p>
+            <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
+              KS Healing no busca elevarte fuera de ti. <strong>Busca ordenarte por dentro</strong>.
+            </p>
+            <p className="text-lg text-muted-foreground leading-relaxed">
+              Este taller es el umbral previo a la Certificación: un espacio para <strong>sentir, reconocer y decidir desde la consciencia</strong> — no desde la expectativa.
+            </p>
           </div>
         </div>
       </section>
 
       {/* Based on the Book */}
-      <section className="py-20 bg-card border-y border-border">
-        <div className="container mx-auto px-4 max-w-4xl">
-          <div className="flex flex-col md:flex-row gap-12 items-center">
-            <div className="flex-1">
-              <h2 className="text-3xl font-bold mb-6">Basado en el Libro KS Healing</h2>
+      <section className="py-24 bg-card/50 border-y border-primary/20">
+        <div className="container mx-auto px-4 max-w-5xl">
+          <div className="flex flex-col md:flex-row gap-16 items-center">
+            <div className="flex-1 order-2 md:order-1">
+              <h2 className="text-4xl font-bold mb-8">Basado en el Libro KS Healing</h2>
+              <div className="h-1 w-20 bg-primary mb-8" />
+              
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
                 Todo el contenido de este taller está inspirado y estructurado a partir del libro <strong>KS Healing</strong>, traducido a una experiencia vivencial, guiada y accesible.
               </p>
-              <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
+              <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
                 No necesitas haber leído el libro. El taller es completamente autónomo y diseñado incluso para quienes nunca han trabajado con energía antes.
               </p>
-              <p className="text-primary font-semibold">
-                Impartido por: <span className="text-foreground">Yohev</span>
-              </p>
+              
+              <Link href="/el-libro">
+                <a className="inline-flex items-center gap-2 text-primary font-semibold hover:gap-3 transition-all">
+                  Conocer más sobre el libro
+                  <ArrowRight size={20} />
+                </a>
+              </Link>
             </div>
-            <div className="flex-1 flex justify-center">
-              <img
-                src="/images/ks-healing-book.png"
-                alt="Libro KS Healing"
-                className="w-48 h-auto rounded-lg shadow-lg"
-              />
+
+            <div className="flex-1 order-1 md:order-2 flex justify-center">
+              <div className="relative">
+                <div className="absolute inset-0 bg-gradient-to-br from-primary/40 to-primary/10 rounded-xl blur-2xl" />
+                <img
+                  src="/images/ks-healing-book.png"
+                  alt="Libro KS Healing"
+                  className="relative w-full max-w-xs rounded-xl shadow-2xl object-cover"
+                />
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       {/* The Four Exercises */}
-      <section className="py-20 bg-background">
-        <div className="container mx-auto px-4 max-w-5xl">
-          <div className="text-center mb-16">
+      <section className="py-24 bg-background">
+        <div className="container mx-auto px-4 max-w-6xl">
+          <div className="text-center mb-20">
             <h2 className="text-4xl font-bold mb-4">Los 4 Ejercicios Vivenciales</h2>
             <p className="text-lg text-muted-foreground">
               Experiencias guiadas diseñadas para abrir tu percepción sin forzar procesos
             </p>
-            <div className="h-1 w-20 bg-primary mx-auto mt-6" />
+            <div className="h-1 w-20 bg-primary mx-auto mt-8" />
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
-            {/* Exercise 1 */}
-            <div className="bg-card rounded-lg p-8 border border-border hover:border-primary/50 transition-colors">
-              <div className="flex items-start gap-4 mb-4">
-                <div className="p-3 rounded-lg bg-primary/10">
-                  <Zap className="text-primary" size={24} />
+            {[
+              {
+                icon: Zap,
+                title: 'Ejercicio 1: Conexión con el Campo KS',
+                description: 'Aprenderás a reconocer el Campo KS como una energía que no empuja, no invade y no exige, sino que ordena y estabiliza. No se trata de imaginar energía, sino de reconocer un campo que ya existe.'
+              },
+              {
+                icon: Wind,
+                title: 'Ejercicio 2: Activación de los Chakras de las Manos',
+                description: 'Prepararás tus manos como canales perceptivos, despertando la sensibilidad necesaria para el trabajo energético consciente (sin transmitir KS Healing formalmente aún).'
+              },
+              {
+                icon: Gift,
+                title: 'Ejercicio 3: Recepción de un Regalo Divino',
+                description: 'Un ejercicio profundo de conexión interna, donde permitirás que la Energía KS te entregue exactamente lo que puedes sostener hoy. Cada experiencia es distinta. Todas son legítimas.'
+              },
+              {
+                icon: Heart,
+                title: 'Ejercicio 4: Activación del Timo',
+                description: 'Afinarás el centro de coherencia del pecho, dejando tu sistema preparado para recibir el Cuerpo KS en la Certificación, sin activarlo todavía. Este ejercicio no completa el proceso. Lo deja listo.'
+              }
+            ].map((exercise, index) => {
+              const IconComponent = exercise.icon;
+              return (
+                <div key={index} className="group bg-gradient-to-br from-card to-card/50 rounded-xl p-8 border border-border hover:border-primary/50 transition-all hover:shadow-lg">
+                  <div className="flex items-start gap-4 mb-4">
+                    <div className="p-3 rounded-lg bg-primary/10 group-hover:bg-primary/20 transition-colors">
+                      <IconComponent className="text-primary" size={28} />
+                    </div>
+                    <h3 className="text-xl font-bold leading-snug">{exercise.title}</h3>
+                  </div>
+                  <p className="text-muted-foreground leading-relaxed">{exercise.description}</p>
                 </div>
-                <div>
-                  <h3 className="text-xl font-bold">Ejercicio 1: Conexión con el Campo KS</h3>
-                </div>
-              </div>
-              <p className="text-muted-foreground leading-relaxed">
-                Aprenderás a reconocer el Campo KS como una energía que no empuja, no invade y no exige, sino que <strong>ordena y estabiliza</strong>. No se trata de imaginar energía, sino de reconocer un campo que ya existe.
-              </p>
-            </div>
-
-            {/* Exercise 2 */}
-            <div className="bg-card rounded-lg p-8 border border-border hover:border-primary/50 transition-colors">
-              <div className="flex items-start gap-4 mb-4">
-                <div className="p-3 rounded-lg bg-primary/10">
-                  <Wind className="text-primary" size={24} />
-                </div>
-                <div>
-                  <h3 className="text-xl font-bold">Ejercicio 2: Activación de los Chakras de las Manos</h3>
-                </div>
-              </div>
-              <p className="text-muted-foreground leading-relaxed">
-                Prepararás tus manos como canales perceptivos, despertando la sensibilidad necesaria para el trabajo energético consciente (sin transmitir KS Healing formalmente aún).
-              </p>
-            </div>
-
-            {/* Exercise 3 */}
-            <div className="bg-card rounded-lg p-8 border border-border hover:border-primary/50 transition-colors">
-              <div className="flex items-start gap-4 mb-4">
-                <div className="p-3 rounded-lg bg-primary/10">
-                  <Gift className="text-primary" size={24} />
-                </div>
-                <div>
-                  <h3 className="text-xl font-bold">Ejercicio 3: Recepción de un Regalo Divino</h3>
-                </div>
-              </div>
-              <p className="text-muted-foreground leading-relaxed">
-                Un ejercicio profundo de conexión interna, donde permitirás que la Energía KS te entregue exactamente lo que puedes sostener hoy. <strong>Cada experiencia es distinta. Todas son legítimas.</strong>
-              </p>
-            </div>
-
-            {/* Exercise 4 */}
-            <div className="bg-card rounded-lg p-8 border border-border hover:border-primary/50 transition-colors">
-              <div className="flex items-start gap-4 mb-4">
-                <div className="p-3 rounded-lg bg-primary/10">
-                  <Heart className="text-primary" size={24} />
-                </div>
-                <div>
-                  <h3 className="text-xl font-bold">Ejercicio 4: Activación del Timo</h3>
-                </div>
-              </div>
-              <p className="text-muted-foreground leading-relaxed">
-                Afinarás el centro de coherencia del pecho, dejando tu sistema preparado para recibir el Cuerpo KS en la Certificación, sin activarlo todavía. <strong>Este ejercicio no completa el proceso. Lo deja listo.</strong>
-              </p>
-            </div>
+              );
+            })}
           </div>
         </div>
       </section>
 
       {/* What You'll Take Away */}
-      <section className="py-20 bg-card border-y border-border">
+      <section className="py-24 bg-card/50 border-y border-primary/20">
         <div className="container mx-auto px-4 max-w-4xl">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4">Qué Te Llevarás al Finalizar</h2>
             <div className="h-1 w-20 bg-primary mx-auto" />
           </div>
 
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid md:grid-cols-2 gap-8">
             {[
               'Una experiencia real con la Energía KS',
               'Comprensión clara de qué es (y qué no es) KS Healing',
@@ -263,41 +286,36 @@ export default function TallerKSHealing() {
       </section>
 
       {/* For Whom */}
-      <section className="py-20 bg-background">
+      <section className="py-24 bg-background">
         <div className="container mx-auto px-4 max-w-4xl">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4">¿Para Quién Es Este Taller?</h2>
             <div className="h-1 w-20 bg-primary mx-auto" />
           </div>
 
-          <div className="bg-primary/5 rounded-lg p-10 border border-primary/20">
-            <p className="text-lg text-foreground mb-6 leading-relaxed">
+          <div className="bg-gradient-to-br from-primary/10 to-primary/5 rounded-2xl p-12 border border-primary/30">
+            <p className="text-lg text-foreground mb-8 font-semibold">
               Este taller es para ti si:
             </p>
-            <ul className="space-y-4">
-              <li className="flex gap-4 items-start">
-                <span className="text-primary font-bold text-xl">✓</span>
-                <span className="text-lg text-muted-foreground">Sientes el llamado a trabajar con consciencia y energía</span>
-              </li>
-              <li className="flex gap-4 items-start">
-                <span className="text-primary font-bold text-xl">✓</span>
-                <span className="text-lg text-muted-foreground">Buscas algo más profundo que técnicas sueltas</span>
-              </li>
-              <li className="flex gap-4 items-start">
-                <span className="text-primary font-bold text-xl">✓</span>
-                <span className="text-lg text-muted-foreground">Quieres sentir antes de decidir</span>
-              </li>
-              <li className="flex gap-4 items-start">
-                <span className="text-primary font-bold text-xl">✓</span>
-                <span className="text-lg text-muted-foreground">Estás explorando la Certificación en KS Healing, pero deseas estar seguro</span>
-              </li>
-            </ul>
+            <div className="space-y-6">
+              {[
+                'Sientes el llamado a trabajar con consciencia y energía',
+                'Buscas algo más profundo que técnicas sueltas',
+                'Quieres sentir antes de decidir',
+                'Estás explorando la Certificación en KS Healing, pero deseas estar seguro'
+              ].map((item, index) => (
+                <div key={index} className="flex gap-4 items-start">
+                  <span className="text-primary font-bold text-2xl flex-shrink-0">✓</span>
+                  <span className="text-lg text-foreground">{item}</span>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
 
       {/* FAQ Section */}
-      <section className="py-20 bg-card border-y border-border">
+      <section className="py-24 bg-card/50 border-y border-primary/20">
         <div className="container mx-auto px-4 max-w-3xl">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4">Preguntas Frecuentes</h2>
@@ -306,13 +324,13 @@ export default function TallerKSHealing() {
 
           <div className="space-y-4">
             {faqItems.map((item, index) => (
-              <div key={index} className="border border-border rounded-lg overflow-hidden">
+              <div key={index} className="border border-border rounded-lg overflow-hidden hover:border-primary/50 transition-colors">
                 <button
                   onClick={() => setExpandedFaq(expandedFaq === index ? null : index)}
                   className="w-full p-6 flex items-center justify-between hover:bg-background/50 transition-colors text-left"
                 >
                   <h3 className="font-semibold text-lg text-foreground">{item.question}</h3>
-                  <span className={`text-primary transition-transform ${expandedFaq === index ? 'rotate-180' : ''}`}>
+                  <span className={`text-primary transition-transform flex-shrink-0 ${expandedFaq === index ? 'rotate-180' : ''}`}>
                     ▼
                   </span>
                 </button>
@@ -328,29 +346,30 @@ export default function TallerKSHealing() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-background">
+      <section className="py-24 bg-background">
         <div className="container mx-auto px-4 max-w-3xl text-center">
-          <h2 className="text-4xl font-bold mb-6">¿Sientes el Llamado?</h2>
+          <h2 className="text-5xl font-bold mb-8">¿Sientes el Llamado?</h2>
           <p className="text-xl text-muted-foreground mb-12 leading-relaxed">
             Si algo en ti reconoce este espacio, este taller es para ti. <br />
             <strong>Es completamente gratuito y abierto a quienes sientan el llamado.</strong>
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-            <Button size="lg" className="bg-primary hover:bg-primary/90 text-white px-8">
-              Acceder al Taller Gratuito
-              <ArrowRight size={20} className="ml-2" />
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
+            <Button size="lg" className="bg-primary hover:bg-primary/90 text-white px-10 py-6 text-lg">
+              Inscríbete al Taller
+              <ArrowRight size={24} className="ml-3" />
             </Button>
           </div>
 
-          <div className="bg-card rounded-lg p-8 border border-border">
+          <div className="bg-gradient-to-br from-card to-card/50 rounded-2xl p-10 border border-primary/20">
             <h3 className="text-2xl font-bold mb-4">Después del Taller</h3>
             <p className="text-lg text-muted-foreground mb-6">
               Quienes lo sientan con claridad podrán acceder a la <strong>Certificación Internacional en KS Healing – Nivel Básico</strong>, donde se realiza la entrega directa del Cuerpo KS y la formación formal como practicante.
             </p>
             <Link href="/cursos-y-programas">
-              <a className="text-primary font-semibold hover:underline">
-                Conocer más sobre la Certificación →
+              <a className="inline-flex items-center gap-2 text-primary font-semibold hover:gap-3 transition-all">
+                Conocer más sobre la Certificación
+                <ArrowRight size={20} />
               </a>
             </Link>
           </div>
