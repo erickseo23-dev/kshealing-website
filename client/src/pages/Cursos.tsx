@@ -16,8 +16,7 @@ const cursosPublicos = [
     duration: "3 Horas",
     investment: "GRATIS",
     level: "Abierto a todos",
-    icon: "⚡",
-    image: "/images/ks-healing-therapy.png",
+    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/vTRBQZgDDKzUWUdr.png",
     benefits: [
       "Introducción a la Energía KS",
       "Conexión con tu consciencia crítica",
@@ -25,17 +24,17 @@ const cursosPublicos = [
       "Comunidad de transformación"
     ],
     color: "from-blue-600 to-blue-800",
-    kajabi: "https://kajabi.com/taller-gratuito",
+    kajabi: "/eventos",
+    buttonText: "Más Información"
   },
   {
     id: 2,
     title: "Club del Retiro Sagrado",
     subtitle: "Transformación Mensual en Vivo",
     description: "Un programa de transformación continua con retiros mensuales en vivo vía Zoom. Acceso ilimitado a todos los retiros 2026 + grabaciones de retiros anteriores. Practica a tu ritmo y profundiza en cada enseñanza.",
-    duration: "12 meses",
-    investment: "Membresía Anual",
+    duration: "Membresía",
+    investment: "29 USD c/mes",
     level: "Abierto a todos",
-    icon: "💕",
     image: "/images/retiro-sagrado-online.png",
     benefits: [
       "Retiros mensuales en vivo vía Zoom",
@@ -44,7 +43,8 @@ const cursosPublicos = [
       "Práctica continua y sostenida"
     ],
     color: "from-rose-600 to-rose-800",
-    kajabi: "https://kajabi.com/club-retiro-sagrado",
+    kajabi: "/club-retiro-sagrado",
+    buttonText: "Más Información"
   },
   {
     id: 3,
@@ -52,9 +52,8 @@ const cursosPublicos = [
     subtitle: "Sanación Energética Consciente",
     description: "La base fundamental de la sanación energética. Aprende a trabajar directamente con la Energía Keiouvos Stharef para acompañar procesos internos, emocionales y de consciencia.",
     duration: "3 semanas",
-    investment: "$297 USD",
+    investment: "145 USD",
     level: "Principiante",
-    icon: "⚡",
     image: "/images/ks-healing-therapy.png",
     benefits: [
       "Acompañamiento energético consciente",
@@ -63,7 +62,8 @@ const cursosPublicos = [
       "Certificación como practicante"
     ],
     color: "from-blue-600 to-blue-800",
-    kajabi: "https://kajabi.com/ks-healing-basico",
+    kajabi: "/ks-healing",
+    buttonText: "Más Información"
   },
   {
     id: 4,
@@ -71,9 +71,8 @@ const cursosPublicos = [
     subtitle: "Las 12 Capas del ADN Espiritual",
     description: "Accede a la sabiduría ancestral de tu linaje. Explora las 12 capas de tu ADN espiritual y activa el potencial multidimensional que siempre estuvo en ti.",
     duration: "3 semanas",
-    investment: "$197 USD",
+    investment: "145 USD",
     level: "Abierto a todos",
-    icon: "🧬",
     image: "/images/genetica-sagrada-workshop.png",
     benefits: [
       "Exploración de las 12 capas del ADN",
@@ -82,7 +81,8 @@ const cursosPublicos = [
       "Integración de consciencia cósmica"
     ],
     color: "from-amber-600 to-amber-800",
-    kajabi: "https://kajabi.com/genetica-sagrada-taller",
+    kajabi: "/genetica-sagrada",
+    buttonText: "Más Información"
   },
 ];
 
@@ -96,8 +96,7 @@ const cursosAvanzados = [
     duration: "8 semanas",
     investment: "$497 USD",
     level: "Avanzado",
-    icon: "⚡",
-    image: "/images/ks-healing-therapy.png",
+    image: "/images/dart-therapy.png",
     benefits: [
       "Técnicas avanzadas de transmisión",
       "Profundización en arquetipos divinos",
@@ -106,7 +105,7 @@ const cursosAvanzados = [
     ],
     color: "from-indigo-600 to-indigo-800",
     kajabi: "https://kajabi.com/ks-healing-avanzado",
-    requiereBasico: true,
+    requiereAvanzado: true,
   },
   {
     id: 6,
@@ -116,7 +115,6 @@ const cursosAvanzados = [
     duration: "8 semanas",
     investment: "$397 USD",
     level: "Avanzado",
-    icon: "🔄",
     image: "/images/dart-therapy.png",
     benefits: [
       "Identificación de arquetipos limitantes",
@@ -136,8 +134,7 @@ const cursosAvanzados = [
     duration: "8 semanas",
     investment: "$597 USD",
     level: "Avanzado",
-    icon: "🧬",
-    image: "/images/genetica-sagrada-workshop.png",
+    image: "/images/retiro-sagrado-online.png",
     benefits: [
       "Formación como facilitador",
       "Técnicas avanzadas de transmisión",
@@ -156,7 +153,6 @@ const cursosAvanzados = [
     duration: "8 semanas",
     investment: "$597 USD",
     level: "Avanzado",
-    icon: "⚡",
     image: "/images/ks-healing-therapy.png",
     benefits: [
       "Formación como facilitador",
@@ -176,8 +172,7 @@ const cursosAvanzados = [
     duration: "Programa intensivo",
     investment: "Consultar",
     level: "Master",
-    icon: "👑",
-    image: "/images/ks-healing-therapy.png",
+    image: "/images/retiro-8-amor-divino.png",
     benefits: [
       "Integración completa del sistema",
       "Transmisión de maestría",
@@ -191,6 +186,8 @@ const cursosAvanzados = [
 ];
 
 function CursoCard({ curso, isAdvanced = false }: { curso: any; isAdvanced?: boolean }) {
+  const isPublic = !isAdvanced;
+  
   return (
     <Card
       className="overflow-hidden hover:shadow-2xl transition-all duration-300 border-0 bg-card flex flex-col"
@@ -212,18 +209,10 @@ function CursoCard({ curso, isAdvanced = false }: { curso: any; isAdvanced?: boo
         </div>
       )}
 
-      {/* Header with gradient */}
-      <div className={`bg-gradient-to-r ${curso.color} p-8 text-white`}>
-        <div className="flex items-start justify-between mb-4">
-          <div>
-            <div className="text-4xl mb-3">{curso.icon}</div>
-            <h2 className="font-display text-3xl font-bold mb-2">{curso.title}</h2>
-            <p className="text-white/90 text-lg">{curso.subtitle}</p>
-          </div>
-          <div className="bg-white/20 backdrop-blur px-3 py-1 rounded-full text-sm font-semibold whitespace-nowrap">
-            {curso.level}
-          </div>
-        </div>
+      {/* Header - Simplified */}
+      <div className="p-8 border-b border-border">
+        <h2 className="text-2xl font-bold text-foreground mb-2">{curso.title}</h2>
+        <p className="text-muted-foreground">{curso.subtitle}</p>
       </div>
 
       {/* Content */}
@@ -232,23 +221,25 @@ function CursoCard({ curso, isAdvanced = false }: { curso: any; isAdvanced?: boo
           {curso.description}
         </p>
 
-        {/* Info Grid */}
-        <div className="grid grid-cols-2 gap-4 mb-8 pb-8 border-b border-border">
-          <div className="flex items-center gap-3">
-            <Clock size={18} className="text-primary flex-shrink-0" />
-            <div>
-              <p className="text-xs text-muted-foreground">Duración</p>
-              <p className="font-semibold text-foreground">{curso.duration}</p>
+        {/* Info Grid - Only for public programs */}
+        {isPublic && (
+          <div className="grid grid-cols-2 gap-4 mb-8 pb-8 border-b border-border">
+            <div className="flex items-center gap-3">
+              <Clock size={18} className="text-primary flex-shrink-0" />
+              <div>
+                <p className="text-xs text-muted-foreground">Duración</p>
+                <p className="font-semibold text-foreground">{curso.duration}</p>
+              </div>
+            </div>
+            <div className="flex items-center gap-3">
+              <DollarSign size={18} className="text-primary flex-shrink-0" />
+              <div>
+                <p className="text-xs text-muted-foreground">Inversión</p>
+                <p className="font-semibold text-foreground">{curso.investment}</p>
+              </div>
             </div>
           </div>
-          <div className="flex items-center gap-3">
-            <DollarSign size={18} className="text-primary flex-shrink-0" />
-            <div>
-              <p className="text-xs text-muted-foreground">Inversión</p>
-              <p className="font-semibold text-foreground">{curso.investment}</p>
-            </div>
-          </div>
-        </div>
+        )}
 
         {/* Benefits */}
         <div className="mb-8 flex-1">
@@ -266,13 +257,15 @@ function CursoCard({ curso, isAdvanced = false }: { curso: any; isAdvanced?: boo
           </ul>
         </div>
 
-        {/* CTA Button */}
-        <a href={curso.kajabi} target="_blank" rel="noopener noreferrer">
-          <Button className="w-full bg-primary hover:bg-primary/90 text-white font-semibold py-3 flex items-center justify-center gap-2">
-            Inscribirse en Kajabi
-            <ArrowRight size={18} />
-          </Button>
-        </a>
+        {/* CTA Button - Only for public programs */}
+        {isPublic && (
+          <Link href={curso.kajabi}>
+            <Button className="w-full bg-primary hover:bg-primary/90 text-white font-semibold py-3 flex items-center justify-center gap-2">
+              {curso.buttonText}
+              <ArrowRight size={18} />
+            </Button>
+          </Link>
+        )}
       </div>
     </Card>
   );
