@@ -34,6 +34,22 @@ export const eventos: Event[] = [
     modalidad: "Online en Vivo"
   },
   {
+    id: 13,
+    title: "Taller Inline Gratuito KS Healing y La Consciencia Crísitica",
+    description: "Descubre cómo la Energía KS transforma tu consciencia crítica. Un taller interactivo donde exploraremos la conexión entre sanación energética y pensamiento consciente.",
+    fecha: "15 de Febrero, 2026",
+    ubicacion: "Online en vivo",
+    horario: "10:00 - 13:00 hrs (CDMX)",
+    participantes: "Ilimitado",
+    precio: "Gratuito",
+    incluye: ["Transmisión en vivo interactiva", "Introducción a KS Healing", "Ejercicio práctico de consciencia crítica", "Acceso a recursos descargables"],
+    estado: "Próximamente",
+    imagen: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/vTRBQZgDDKzUWUdr.png",
+    tipo: "Taller",
+    tema: "Consciencia",
+    modalidad: "Online en Vivo"
+  },
+  {
     id: 12,
     title: "Certificación Internacional en KS Healing Nivel Básico",
     description: "Únete a una comunidad global de profesionales transformando vidas a través de la Energía KS. Certificación Internacional en 3 módulos intensivos.",
