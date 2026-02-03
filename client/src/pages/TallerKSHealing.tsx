@@ -85,6 +85,7 @@ export default function TallerKSHealing() {
             <span className="text-sm font-medium text-white">Experiencia Vivencial Gratuita</span>
           </div>
 
+          <div className="mb-4 text-lg text-white/80 font-semibold">Impartido por YOHEV</div>
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight">
             KS Healing y la<br />
             <span className="text-primary">Consciencia Crística</span>
@@ -96,11 +97,8 @@ export default function TallerKSHealing() {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
             <Button size="lg" className="bg-primary hover:bg-primary/90 text-white px-8">
-              Acceder al Taller Gratuito
+              Inscríbete al Taller
               <ArrowRight size={20} className="ml-2" />
-            </Button>
-            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
-              Más Información
             </Button>
           </div>
 
