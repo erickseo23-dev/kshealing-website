@@ -131,7 +131,7 @@ export default function SobreYOHEV() {
             <div className="relative order-2 lg:order-1">
               <div className="absolute inset-0 bg-gradient-to-br from-accent/20 to-primary/20 rounded-2xl blur-2xl"></div>
               <img 
-                src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/vTRBQZgDDKzUWUdr.png" 
+                src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/neOxXCbvzmLjVSSO.jpeg" 
                 alt="KS Healing Method" 
                 className="relative w-full rounded-2xl shadow-2xl object-cover aspect-square"
               />
