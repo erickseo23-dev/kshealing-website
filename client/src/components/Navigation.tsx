@@ -43,9 +43,6 @@ export default function Navigation() {
 
         {/* CTA Button - Desktop */}
         <div className="hidden lg:flex items-center gap-4">
-          <Button className="bg-secondary hover:bg-secondary/90 text-slate-950 font-bold" style={{backgroundColor: '#fbbc0e'}}>
-            Inscríbete Ahora
-          </Button>
           <Link href="/club-retiro-sagrado">
             <Button className="bg-primary hover:bg-primary/90 text-white">
               Club

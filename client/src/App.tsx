@@ -2,6 +2,7 @@ import { Toaster } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import NotFound from "@/pages/NotFound";
 import { Route, Switch } from "wouter";
+import { useScrollToTop } from "@/hooks/useScrollToTop";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import { AuthProvider } from "./contexts/AuthContext";
@@ -47,6 +48,7 @@ import PoliticaCookies from "./pages/PoliticaCookies";
 import CookieConsent from "./components/CookieConsent";
 
 function Router() {
+  useScrollToTop();
   return (
     <Switch>
       <Route path={"/"} component={Home} />
@@ -99,6 +101,11 @@ function Router() {
 //   to keep consistent foreground/background color across components
 // - If you want to make theme switchable, pass `switchable` ThemeProvider and use `useTheme` hook
 
+function ScrollToTopWrapper() {
+  useScrollToTop();
+  return null;
+}
+
 function App() {
   return (
     <ErrorBoundary>
@@ -108,6 +115,7 @@ function App() {
       >
         <AuthProvider>
           <TooltipProvider>
+            <ScrollToTopWrapper />
             <Toaster />
             <Router />
             <CookieConsent />
