@@ -109,7 +109,7 @@ export default function TallerKSHealing() {
 
           {/* CTA Button */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-10">
-            <Button size="lg" className="bg-primary hover:bg-primary/90 text-white px-12 py-6 text-lg font-bold rounded-lg shadow-2xl transition-all duration-300 transform hover:scale-105">
+            <Button size="lg" className="bg-orange-500 hover:bg-orange-600 text-white px-12 py-6 text-lg font-bold rounded-lg shadow-2xl transition-all duration-300 transform hover:scale-105">
               Inscríbete al Taller
               <ArrowRight size={24} className="ml-3" />
             </Button>
@@ -381,7 +381,7 @@ export default function TallerKSHealing() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
-            <Button size="lg" className="bg-primary hover:bg-primary/90 text-white px-10 py-6 text-lg">
+            <Button size="lg" className="bg-orange-500 hover:bg-orange-600 text-white px-10 py-6 text-lg font-bold">
               Inscríbete al Taller
               <ArrowRight size={24} className="ml-3" />
             </Button>
