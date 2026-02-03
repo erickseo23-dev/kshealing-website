@@ -35,7 +35,7 @@ export const eventos: Event[] = [
   },
   {
     id: 13,
-    title: "Taller Inline Gratuito KS Healing y La Consciencia Crísitica",
+    title: "Taller Online Gratuito KS Healing y La Consciencia Crísitica",
     description: "Descubre cómo la Energía KS transforma tu consciencia crítica. Un taller interactivo donde exploraremos la conexión entre sanación energética y pensamiento consciente.",
     fecha: "15 de Febrero, 2026",
     ubicacion: "Online en vivo",
