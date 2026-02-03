@@ -195,7 +195,7 @@ export default function SobreYOHEV() {
           {/* Key Message */}
           <div className="max-w-3xl mx-auto bg-gradient-to-r from-primary/10 to-accent/10 border border-primary/20 rounded-2xl p-12 text-center mb-20">
             <p className="font-display text-3xl font-bold text-foreground mb-4">
-              "Erick es solo un hombre, con más defectos que virtudes."
+              "Erick es solo un hombre..."
             </p>
             <p className="text-lg text-muted-foreground mb-6">
               Pero hay una parte de mi ser que es mucho más inmensa que el hombre y que aún estoy conociendo: mi alma, YOHEV.
