@@ -349,9 +349,7 @@ export default function ElLibro() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Libro 1 */}
             <div className="bg-card rounded-lg overflow-hidden border border-border hover:shadow-lg transition-shadow">
-              <div className="bg-gradient-to-br from-blue-100 to-slate-100 h-40 flex items-center justify-center">
-                <span className="text-5xl">📕</span>
-              </div>
+              <img src="https://m.media-amazon.com/images/I/81vCGDgFpnL._SY466_.jpg" alt="KS Healing" className="w-full h-64 object-cover" />
               <div className="p-6">
                 <h3 className="font-display text-lg font-bold text-foreground mb-2">KS Healing</h3>
                 <p className="text-sm text-muted-foreground mb-4">
@@ -366,9 +364,7 @@ export default function ElLibro() {
 
             {/* Libro 2 */}
             <div className="bg-card rounded-lg overflow-hidden border border-border hover:shadow-lg transition-shadow">
-              <div className="bg-gradient-to-br from-blue-100 to-slate-100 h-40 flex items-center justify-center">
-                <span className="text-5xl">📘</span>
-              </div>
+              <img src="https://m.media-amazon.com/images/I/71RhQVMEo2L._SY466_.jpg" alt="Secretos de los Arcángeles" className="w-full h-64 object-cover" />
               <div className="p-6">
                 <h3 className="font-display text-lg font-bold text-foreground mb-2">Secretos de los Arcángeles</h3>
                 <p className="text-sm text-muted-foreground mb-4">
@@ -383,9 +379,7 @@ export default function ElLibro() {
 
             {/* Libro 3 */}
             <div className="bg-card rounded-lg overflow-hidden border border-border hover:shadow-lg transition-shadow">
-              <div className="bg-gradient-to-br from-blue-100 to-slate-100 h-40 flex items-center justify-center">
-                <span className="text-5xl">📙</span>
-              </div>
+              <img src="https://m.media-amazon.com/images/I/81qYDDvMXwL._SY466_.jpg" alt="Valentina en el Reino Astral" className="w-full h-64 object-cover" />
               <div className="p-6">
                 <h3 className="font-display text-lg font-bold text-foreground mb-2">Valentina en el Reino Astral</h3>
                 <p className="text-sm text-muted-foreground mb-4">
