@@ -24,7 +24,7 @@ const cursosPublicos = [
       "Comunidad de transformación"
     ],
     color: "from-blue-600 to-blue-800",
-    kajabi: "/eventos",
+    kajabi: "/taller-ks-healing",
     buttonText: "Más Información"
   },
   {
