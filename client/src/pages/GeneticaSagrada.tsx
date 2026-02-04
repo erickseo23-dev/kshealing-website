@@ -292,7 +292,7 @@ export default function GeneticaSagrada() {
                   </div>
                   <div>
                     <p className="font-semibold text-foreground">Frecuencia:</p>
-                    <p>1 clase semanal (3 sábados consecutivos)</p>
+                    <p>1 clase semanal (3 domingos consecutivos)</p>
                   </div>
                   <div>
                     <p className="font-semibold text-foreground">Horario:</p>
