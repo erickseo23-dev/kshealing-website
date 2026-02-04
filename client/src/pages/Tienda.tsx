@@ -92,27 +92,15 @@ const productos = [
   },
   {
     id: 8,
-    nombre: "D.A.R.T. - Deep Archetypal Renewal Therapy",
-    precio: "Por definir",
-    descripcion: "Programa avanzado de transformación profunda que trabaja con arquetipos internos y renovación de patrones. Dirigido por YOHEV.",
-    categoria: "Cursos",
-    rating: 4.9,
-    resenas: 28,
-    imagen: "https://private-us-east-1.manuscdn.com/sessionFile/cJ0NsjiTEgFuWB5HAN1kHs/sandbox/uNCEXOdi2fzNwyVQRTMSAm-img-2_1770184393000_na1fn_ZGFydC10aGVyYXB5.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvY0owTnNqaVRFZ0Z1V0I1SEFOMWtIcy9zYW5kYm94L3VOQ0VYT2RpMmZ6Tnd5VlFSVE1TQW0taW1nLTJfMTc3MDE4NDM5MzAwMF9uYTFmbl9aR0Z5ZEMxMGFHVnlZWEI1LnBuZz94LW9zcy1wcm9jZXNzPWltYWdlL3Jlc2l6ZSx3XzE5MjAsaF8xOTIwL2Zvcm1hdCx3ZWJwL3F1YWxpdHkscV84MCIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc5ODc2MTYwMH19fV19&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=oTd0CUnzJ~xLAek~pGJK3d~4l2B4PmX4N6x39xbUJSyCV0Gq8yxuWCs-6nQoslQRm7tIcmJp04d6UEzV45x-0KXdPSbdHbb4nO0BHZf448WP2OXnn~eFEvs4Ofx3wMG-jIGSr-3fMpaGlFhwJkw9ZSdi3-BdF2v0SDvDGctHMd2RPEpFFSusR6kML~OhwK9HhOYhFt4e~cXI0uKBOmw~6vxoKtddcJpTP3h~PWQ61S2PPxunWvwQIoQjSqOb3zoHqil3cUJGZvzZAzVWo2bKXvzSz9tpTMbsfoE5~QGVk7gLD7v1lKF-kNuJgr~kntB-mvZsIELxEjyQK-Oupg6biQ__",
-    stock: "Disponible",
-    enlace: "https://kajabi.com",
-  },
-  {
-    id: 9,
-    nombre: "Genética Sagrada - Las 12 Capas del ADN",
-    precio: "Por definir",
-    descripcion: "Exploración profunda de las 12 dimensiones del ADN espiritual. Accede a la sabiduría ancestral de tu linaje y activa tu potencial multidimensional.",
+    nombre: "Club del Retiro Sagrado",
+    precio: "$500/mes",
+    descripcion: "12 meses de transformación. Retiros mensuales en vivo con YOHEV. Acceso a grabaciones ilimitadas, comunidad de miembros y contenido exclusivo. Cada mes, una nueva oportunidad de evolucionar.",
     categoria: "Cursos",
     rating: 5,
-    resenas: 35,
-    imagen: "https://private-us-east-1.manuscdn.com/sessionFile/cJ0NsjiTEgFuWB5HAN1kHs/sandbox/uNCEXOdi2fzNwyVQRTMSAm-img-3_1770184383000_na1fn_Z2VuZXRpY2Etc2FncmFkYS1jb3Vyc2U.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvY0owTnNqaVRFZ0Z1V0I1SEFOMWtIcy9zYW5kYm94L3VOQ0VYT2RpMmZ6Tnd5VlFSVE1TQW0taW1nLTNfMTc3MDE4NDM4MzAwMF9uYTFmbl9aMlZ1WlhScFkyRXRjMkZuY21Ga1lTMWpiM1Z5YzJVLnBuZz94LW9zcy1wcm9jZXNzPWltYWdlL3Jlc2l6ZSx3XzE5MjAsaF8xOTIwL2Zvcm1hdCx3ZWJwL3F1YWxpdHkscV84MCIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc5ODc2MTYwMH19fV19&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=X32HEIXc8NwFWGOOkfvq1diYxXUD32F2gXmOJPYYFHfSDbEaKr36G0Oe61~E2ZG83d~RJhnQBijXRRBcRQ1PsjvlAIwaoUW4rCZBNsXGHWkDeXiXLXwqCsrw85DqrYzrA3zFmf7Ig2HZXeB5tuOga94VRAjtgUjw-zZRjXxFqVyv97ZG6yxvB79ggFsjqum~YjLhEhUG~f0XFsXJ-yy8F1b2OFWsTLPTQJt8nxDrijNP6Vyc~djrpvogqQHXDJC4eJdpCxRZFPv0TSnpShtF5QsnD9xlREk2EG0aGhxciKue9KCRPv2ghUSMvV5-BYpkjHXbt-4Q-J6gsbCNSPcdiA__",
+    resenas: 156,
+    imagen: "https://private-us-east-1.manuscdn.com/sessionFile/cJ0NsjiTEgFuWB5HAN1kHs/sandbox/uNCEXOdi2fzNwyVQRTMSAm-img-4_1770184389000_na1fn_bWVkaXRhY2lvbi1hc2NlbmRlbnRl.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvY0owTnNqaVRFZ0Z1V0I1SEFOMWtIcy9zYW5kYm94L3VOQ0VYT2RpMmZ6Tnd5VlFSVE1TQW0taW1nLTRfMTc3MDE4NDM4OTAwMF9uYTFmbl9iV1ZrYVhSaFkybHZiaTFoYzJObGJtUmxiblJsLnBuZz94LW9zcy1wcm9jZXNzPWltYWdlL3Jlc2l6ZSx3XzE5MjAsaF8xOTIwL2Zvcm1hdCx3ZWJwL3F1YWxpdHkscV84MCIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc5ODc2MTYwMH19fV19&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=J1bxigJcXusmQJAZ2zIPeTm~M0e71FC4rbKk02Hce4Fm~22M-WwlzpGoSvwzQPFKfQQ6EiWZntMgAStqfmOLksz7mSM4XEGnaAaQc9vVztGQfZayvLNwTOYVJWGXR3YZCb1Q3QUbMKN9lr5-NXfiCiqvgtLVJ4A2B2DiKSlLuJaVcJ5-wbnAv2svijepT8bwWKDcI1jYFLmBYyhhJTwvah9XeO2A5-bwSWh7WzzpJI0JkUEtcPjJy9RZmyCgIwkcjPXBw~SOLGFYPB~B8p8gySATUU9IO00tWuV~hyCt65zGqdHC8GPZZSLi3wTTaBP-IvgeHC~dmgrkxKX617dFCJw__",
     stock: "Disponible",
-    enlace: "/genetica-sagrada",
+    enlace: "/club-retiro-sagrado",
   },
   {
     id: 10,
@@ -131,7 +119,7 @@ const productos = [
     nombre: "Taller Gratuito KS Healing",
     precio: "Gratis",
     descripcion: "Taller introductorio gratuito donde YOHEV comparte los fundamentos de la Energía KS Healing. Perfecto para principiantes que desean explorar esta metodología de transformación.",
-    categoria: "Talleres",
+    categoria: "Gratuito",
     rating: 5,
     resenas: 234,
     imagen: "https://private-us-east-1.manuscdn.com/sessionFile/cJ0NsjiTEgFuWB5HAN1kHs/sandbox/uNCEXOdi2fzNwyVQRTMSAm-img-4_1770184389000_na1fn_bWVkaXRhY2lvbi1hc2NlbmRlbnRl.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvY0owTnNqaVRFZ0Z1V0I1SEFOMWtIcy9zYW5kYm94L3VOQ0VYT2RpMmZ6Tnd5VlFSVE1TQW0taW1nLTRfMTc3MDE4NDM4OTAwMF9uYTFmbl9iV1ZrYVhSaFkybHZiaTFoYzJObGJtUmxiblJsLnBuZz94LW9zcy1wcm9jZXNzPWltYWdlL3Jlc2l6ZSx3XzE5MjAsaF8xOTIwL2Zvcm1hdCx3ZWJwL3F1YWxpdHkscV84MCIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc5ODc2MTYwMH19fV19&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=J1bxigJcXusmQJAZ2zIPeTm~M0e71FC4rbKk02Hce4Fm~22M-WwlzpGoSvwzQPFKfQQ6EiWZntMgAStqfmOLksz7mSM4XEGnaAaQc9vVztGQfZayvLNwTOYVJWGXR3YZCb1Q3QUbMKN9lr5-NXfiCiqvgtLVJ4A2B2DiKSlLuJaVcJ5-wbnAv2svijepT8bwWKDcI1jYFLmBYyhhJTwvah9XeO2A5-bwSWh7WzzpJI0JkUEtcPjJy9RZmyCgIwkcjPXBw~SOLGFYPB~B8p8gySATUU9IO00tWuV~hyCt65zGqdHC8GPZZSLi3wTTaBP-IvgeHC~dmgrkxKX617dFCJw__",
@@ -143,7 +131,7 @@ const productos = [
 export default function Tienda() {
   const [filtroCategoria, setFiltroCategoria] = useState("");
 
-  const categorias = ["Libros", "Cursos", "Talleres"];
+  const categorias = ["Libros", "Cursos", "Gratuito"];
   
   const productosFiltrados = filtroCategoria
     ? productos.filter((p) => p.categoria === filtroCategoria)
