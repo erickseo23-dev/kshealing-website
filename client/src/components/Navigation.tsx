@@ -43,11 +43,11 @@ export default function Navigation() {
 
         {/* CTA Button - Desktop */}
         <div className="hidden lg:flex items-center gap-4">
-          <Link href="/club-retiro-sagrado">
+          <a href="https://www.i3cdigital.com/library" target="_blank" rel="noopener noreferrer">
             <Button className="bg-primary hover:bg-primary/90 text-white">
-              Club
+              Area de Alumnos
             </Button>
-          </Link>
+          </a>
         </div>
 
         {/* Mobile Menu Button */}
@@ -73,11 +73,11 @@ export default function Navigation() {
                 </a>
               </Link>
             ))}
-            <Link href="/club-retiro-sagrado" className="block">
+            <a href="https://www.i3cdigital.com/library" target="_blank" rel="noopener noreferrer" className="block">
               <Button className="w-full bg-primary hover:bg-primary/90 text-white mt-4">
-                Club
+                Area de Alumnos
               </Button>
-            </Link>
+            </a>
           </div>
         </div>
       )}
