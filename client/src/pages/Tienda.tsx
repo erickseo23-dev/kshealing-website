@@ -81,7 +81,7 @@ const productos = [
   {
     id: 7,
     nombre: "KS Healing - Certificación",
-    precio: "Por definir",
+    precio: "$145",
     descripcion: "Programa de formación en la técnica de sanación energética KS Healing. Aprende a trabajar directamente con la Energía Keiouvos Stharef y convértete en practitioner certificado.",
     categoria: "Cursos",
     rating: 5,
@@ -93,8 +93,8 @@ const productos = [
   {
     id: 8,
     nombre: "Club del Retiro Sagrado",
-    precio: "$500/mes",
-    descripcion: "12 meses de transformación. Retiros mensuales en vivo con YOHEV. Acceso a grabaciones ilimitadas, comunidad de miembros y contenido exclusivo. Cada mes, una nueva oportunidad de evolucionar.",
+    precio: "$29/mes",
+    descripcion: "Membresía de transformación. Retiros mensuales en vivo con YOHEV. Acceso a grabaciones ilimitadas, comunidad de miembros y contenido exclusivo. Cada mes, una nueva oportunidad de evolucionar.",
     categoria: "Cursos",
     rating: 5,
     resenas: 156,
