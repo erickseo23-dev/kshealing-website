@@ -2,7 +2,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { ShoppingCart, Star, Heart, ExternalLink } from "lucide-react";
+import { Star, Heart, ExternalLink, BookOpen, Zap } from "lucide-react";
 import { useState } from "react";
 
 const productos = [
@@ -14,7 +14,7 @@ const productos = [
     categoria: "Libros",
     rating: 5,
     resenas: 87,
-    imagen: "📕",
+    imagen: "https://private-us-east-1.manuscdn.com/sessionFile/cJ0NsjiTEgFuWB5HAN1kHs/sandbox/uNCEXOdi2fzNwyVQRTMSAm-img-1_1770184381000_na1fn_a3MtaGVhbGluZy1jZXJ0aWZpY2F0aW9u.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvY0owTnNqaVRFZ0Z1V0I1SEFOMWtIcy9zYW5kYm94L3VOQ0VYT2RpMmZ6Tnd5VlFSVE1TQW0taW1nLTFfMTc3MDE4NDM4MTAwMF9uYTFmbl9hM010YUdWaGJHbHVaeTFqWlhKMGFXWnBZMkYwYVc5dS5wbmc~eC1vc3MtcHJvY2Vzcz1pbWFnZS9yZXNpemUsd18xOTIwLGhfMTkyMC9mb3JtYXQsd2VicC9xdWFsaXR5LHFfODAiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE3OTg3NjE2MDB9fX1dfQ__&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=TeDm~z5n~Hi2tQDzNR8k1NNVflfUlF3tOYTPYyzD7ibKXd8Th-IDPtk2WJTpskeEvuLG1Hs5Un70JgsnGhtux4EdBgqSPDz5o170dySkdZsRLlAHGBbySsEj9394fKJLq28LJ6tj2hOve2LIzjLx2ksi6Ltuy9kklt8wFVk6ndU4iDmwJQa8-0bO5m8WXzWxuiAuhAg~lgYKYYSNk1sNe6bSmi2jp0P45SG9dQGQXMOf0cEZjiokpEllAVs076aLyCJcFCRiNWEsbI87NZ4gj7zfxuAiCFEAaTwkomBLyp-fqnpXNriG6sdVzLhT~M0D5ledXvDLQOaG8K3g5Xynew__",
     stock: "En stock",
     enlace: "https://a.co/d/ini6U2Y",
   },
@@ -26,7 +26,7 @@ const productos = [
     categoria: "Libros",
     rating: 5,
     resenas: 156,
-    imagen: "📱",
+    imagen: "https://private-us-east-1.manuscdn.com/sessionFile/cJ0NsjiTEgFuWB5HAN1kHs/sandbox/uNCEXOdi2fzNwyVQRTMSAm-img-1_1770184381000_na1fn_a3MtaGVhbGluZy1jZXJ0aWZpY2F0aW9u.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvY0owTnNqaVRFZ0Z1V0I1SEFOMWtIcy9zYW5kYm94L3VOQ0VYT2RpMmZ6Tnd5VlFSVE1TQW0taW1nLTFfMTc3MDE4NDM4MTAwMF9uYTFmbl9hM010YUdWaGJHbHVaeTFqWlhKMGFXWnBZMkYwYVc5dS5wbmc~eC1vc3MtcHJvY2Vzcz1pbWFnZS9yZXNpemUsd18xOTIwLGhfMTkyMC9mb3JtYXQsd2VicC9xdWFsaXR5LHFfODAiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE3OTg3NjE2MDB9fX1dfQ__&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=TeDm~z5n~Hi2tQDzNR8k1NNVflfUlF3tOYTPYyzD7ibKXd8Th-IDPtk2WJTpskeEvuLG1Hs5Un70JgsnGhtux4EdBgqSPDz5o170dySkdZsRLlAHGBbySsEj9394fKJLq28LJ6tj2hOve2LIzjLx2ksi6Ltuy9kklt8wFVk6ndU4iDmwJQa8-0bO5m8WXzWxuiAuhAg~lgYKYYSNk1sNe6bSmi2jp0P45SG9dQGQXMOf0cEZjiokpEllAVs076aLyCJcFCRiNWEsbI87NZ4gj7zfxuAiCFEAaTwkomBLyp-fqnpXNriG6sdVzLhT~M0D5ledXvDLQOaG8K3g5Xynew__",
     stock: "Disponible",
     enlace: "https://a.co/d/45jDr6p",
   },
@@ -38,7 +38,7 @@ const productos = [
     categoria: "Libros",
     rating: 4.9,
     resenas: 64,
-    imagen: "📘",
+    imagen: "https://private-us-east-1.manuscdn.com/sessionFile/cJ0NsjiTEgFuWB5HAN1kHs/sandbox/uNCEXOdi2fzNwyVQRTMSAm-img-2_1770184393000_na1fn_ZGFydC10aGVyYXB5.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvY0owTnNqaVRFZ0Z1V0I1SEFOMWtIcy9zYW5kYm94L3VOQ0VYT2RpMmZ6Tnd5VlFSVE1TQW0taW1nLTJfMTc3MDE4NDM5MzAwMF9uYTFmbl9aR0Z5ZEMxMGFHVnlZWEI1LnBuZz94LW9zcy1wcm9jZXNzPWltYWdlL3Jlc2l6ZSx3XzE5MjAsaF8xOTIwL2Zvcm1hdCx3ZWJwL3F1YWxpdHkscV84MCIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc5ODc2MTYwMH19fV19&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=oTd0CUnzJ~xLAek~pGJK3d~4l2B4PmX4N6x39xbUJSyCV0Gq8yxuWCs-6nQoslQRm7tIcmJp04d6UEzV45x-0KXdPSbdHbb4nO0BHZf448WP2OXnn~eFEvs4Ofx3wMG-jIGSr-3fMpaGlFhwJkw9ZSdi3-BdF2v0SDvDGctHMd2RPEpFFSusR6kML~OhwK9HhOYhFt4e~cXI0uKBOmw~6vxoKtddcJpTP3h~PWQ61S2PPxunWvwQIoQjSqOb3zoHqil3cUJGZvzZAzVWo2bKXvzSz9tpTMbsfoE5~QGVk7gLD7v1lKF-kNuJgr~kntB-mvZsIELxEjyQK-Oupg6biQ__",
     stock: "En stock",
     enlace: "https://a.co/d/en9RPql",
   },
@@ -50,7 +50,7 @@ const productos = [
     categoria: "Libros",
     rating: 4.9,
     resenas: 42,
-    imagen: "📱",
+    imagen: "https://private-us-east-1.manuscdn.com/sessionFile/cJ0NsjiTEgFuWB5HAN1kHs/sandbox/uNCEXOdi2fzNwyVQRTMSAm-img-2_1770184393000_na1fn_ZGFydC10aGVyYXB5.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvY0owTnNqaVRFZ0Z1V0I1SEFOMWtIcy9zYW5kYm94L3VOQ0VYT2RpMmZ6Tnd5VlFSVE1TQW0taW1nLTJfMTc3MDE4NDM5MzAwMF9uYTFmbl9aR0Z5ZEMxMGFHVnlZWEI1LnBuZz94LW9zcy1wcm9jZXNzPWltYWdlL3Jlc2l6ZSx3XzE5MjAsaF8xOTIwL2Zvcm1hdCx3ZWJwL3F1YWxpdHkscV84MCIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc5ODc2MTYwMH19fV19&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=oTd0CUnzJ~xLAek~pGJK3d~4l2B4PmX4N6x39xbUJSyCV0Gq8yxuWCs-6nQoslQRm7tIcmJp04d6UEzV45x-0KXdPSbdHbb4nO0BHZf448WP2OXnn~eFEvs4Ofx3wMG-jIGSr-3fMpaGlFhwJkw9ZSdi3-BdF2v0SDvDGctHMd2RPEpFFSusR6kML~OhwK9HhOYhFt4e~cXI0uKBOmw~6vxoKtddcJpTP3h~PWQ61S2PPxunWvwQIoQjSqOb3zoHqil3cUJGZvzZAzVWo2bKXvzSz9tpTMbsfoE5~QGVk7gLD7v1lKF-kNuJgr~kntB-mvZsIELxEjyQK-Oupg6biQ__",
     stock: "Disponible",
     enlace: "https://a.co/d/6Tg6XGj",
   },
@@ -62,7 +62,7 @@ const productos = [
     categoria: "Libros",
     rating: 5,
     resenas: 78,
-    imagen: "📙",
+    imagen: "https://private-us-east-1.manuscdn.com/sessionFile/cJ0NsjiTEgFuWB5HAN1kHs/sandbox/uNCEXOdi2fzNwyVQRTMSAm-img-3_1770184383000_na1fn_Z2VuZXRpY2Etc2FncmFkYS1jb3Vyc2U.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvY0owTnNqaVRFZ0Z1V0I1SEFOMWtIcy9zYW5kYm94L3VOQ0VYT2RpMmZ6Tnd5VlFSVE1TQW0taW1nLTNfMTc3MDE4NDM4MzAwMF9uYTFmbl9aMlZ1WlhScFkyRXRjMkZuY21Ga1lTMWpiM1Z5YzJVLnBuZz94LW9zcy1wcm9jZXNzPWltYWdlL3Jlc2l6ZSx3XzE5MjAsaF8xOTIwL2Zvcm1hdCx3ZWJwL3F1YWxpdHkscV84MCIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc5ODc2MTYwMH19fV19&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=X32HEIXc8NwFWGOOkfvq1diYxXUD32F2gXmOJPYYFHfSDbEaKr36G0Oe61~E2ZG83d~RJhnQBijXRRBcRQ1PsjvlAIwaoUW4rCZBNsXGHWkDeXiXLXwqCsrw85DqrYzrA3zFmf7Ig2HZXeB5tuOga94VRAjtgUjw-zZRjXxFqVyv97ZG6yxvB79ggFsjqum~YjLhEhUG~f0XFsXJ-yy8F1b2OFWsTLPTQJt8nxDrijNP6Vyc~djrpvogqQHXDJC4eJdpCxRZFPv0TSnpShtF5QsnD9xlREk2EG0aGhxciKue9KCRPv2ghUSMvV5-BYpkjHXbt-4Q-J6gsbCNSPcdiA__",
     stock: "En stock",
     enlace: "https://a.co/d/fJyOYVP",
   },
@@ -74,7 +74,7 @@ const productos = [
     categoria: "Libros",
     rating: 5,
     resenas: 55,
-    imagen: "📱",
+    imagen: "https://private-us-east-1.manuscdn.com/sessionFile/cJ0NsjiTEgFuWB5HAN1kHs/sandbox/uNCEXOdi2fzNwyVQRTMSAm-img-3_1770184383000_na1fn_Z2VuZXRpY2Etc2FncmFkYS1jb3Vyc2U.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvY0owTnNqaVRFZ0Z1V0I1SEFOMWtIcy9zYW5kYm94L3VOQ0VYT2RpMmZ6Tnd5VlFSVE1TQW0taW1nLTNfMTc3MDE4NDM4MzAwMF9uYTFmbl9aMlZ1WlhScFkyRXRjMkZuY21Ga1lTMWpiM1Z5YzJVLnBuZz94LW9zcy1wcm9jZXNzPWltYWdlL3Jlc2l6ZSx3XzE5MjAsaF8xOTIwL2Zvcm1hdCx3ZWJwL3F1YWxpdHkscV84MCIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc5ODc2MTYwMH19fV19&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=X32HEIXc8NwFWGOOkfvq1diYxXUD32F2gXmOJPYYFHfSDbEaKr36G0Oe61~E2ZG83d~RJhnQBijXRRBcRQ1PsjvlAIwaoUW4rCZBNsXGHWkDeXiXLXwqCsrw85DqrYzrA3zFmf7Ig2HZXeB5tuOga94VRAjtgUjw-zZRjXxFqVyv97ZG6yxvB79ggFsjqum~YjLhEhUG~f0XFsXJ-yy8F1b2OFWsTLPTQJt8nxDrijNP6Vyc~djrpvogqQHXDJC4eJdpCxRZFPv0TSnpShtF5QsnD9xlREk2EG0aGhxciKue9KCRPv2ghUSMvV5-BYpkjHXbt-4Q-J6gsbCNSPcdiA__",
     stock: "Disponible",
     enlace: "https://a.co/d/2RWWKcJ",
   },
@@ -86,9 +86,9 @@ const productos = [
     categoria: "Cursos",
     rating: 5,
     resenas: 42,
-    imagen: "🎓",
+    imagen: "https://private-us-east-1.manuscdn.com/sessionFile/cJ0NsjiTEgFuWB5HAN1kHs/sandbox/uNCEXOdi2fzNwyVQRTMSAm-img-1_1770184381000_na1fn_a3MtaGVhbGluZy1jZXJ0aWZpY2F0aW9u.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvY0owTnNqaVRFZ0Z1V0I1SEFOMWtIcy9zYW5kYm94L3VOQ0VYT2RpMmZ6Tnd5VlFSVE1TQW0taW1nLTFfMTc3MDE4NDM4MTAwMF9uYTFmbl9hM010YUdWaGJHbHVaeTFqWlhKMGFXWnBZMkYwYVc5dS5wbmc~eC1vc3MtcHJvY2Vzcz1pbWFnZS9yZXNpemUsd18xOTIwLGhfMTkyMC9mb3JtYXQsd2VicC9xdWFsaXR5LHFfODAiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE3OTg3NjE2MDB9fX1dfQ__&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=TeDm~z5n~Hi2tQDzNR8k1NNVflfUlF3tOYTPYyzD7ibKXd8Th-IDPtk2WJTpskeEvuLG1Hs5Un70JgsnGhtux4EdBgqSPDz5o170dySkdZsRLlAHGBbySsEj9394fKJLq28LJ6tj2hOve2LIzjLx2ksi6Ltuy9kklt8wFVk6ndU4iDmwJQa8-0bO5m8WXzWxuiAuhAg~lgYKYYSNk1sNe6bSmi2jp0P45SG9dQGQXMOf0cEZjiokpEllAVs076aLyCJcFCRiNWEsbI87NZ4gj7zfxuAiCFEAaTwkomBLyp-fqnpXNriG6sdVzLhT~M0D5ledXvDLQOaG8K3g5Xynew__",
     stock: "Disponible",
-    enlace: "https://kajabi.com",
+    enlace: "https://www.i3cdigital.com/offers/FQuDTjNV/checkout",
   },
   {
     id: 8,
@@ -98,7 +98,7 @@ const productos = [
     categoria: "Cursos",
     rating: 4.9,
     resenas: 28,
-    imagen: "✨",
+    imagen: "https://private-us-east-1.manuscdn.com/sessionFile/cJ0NsjiTEgFuWB5HAN1kHs/sandbox/uNCEXOdi2fzNwyVQRTMSAm-img-2_1770184393000_na1fn_ZGFydC10aGVyYXB5.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvY0owTnNqaVRFZ0Z1V0I1SEFOMWtIcy9zYW5kYm94L3VOQ0VYT2RpMmZ6Tnd5VlFSVE1TQW0taW1nLTJfMTc3MDE4NDM5MzAwMF9uYTFmbl9aR0Z5ZEMxMGFHVnlZWEI1LnBuZz94LW9zcy1wcm9jZXNzPWltYWdlL3Jlc2l6ZSx3XzE5MjAsaF8xOTIwL2Zvcm1hdCx3ZWJwL3F1YWxpdHkscV84MCIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc5ODc2MTYwMH19fV19&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=oTd0CUnzJ~xLAek~pGJK3d~4l2B4PmX4N6x39xbUJSyCV0Gq8yxuWCs-6nQoslQRm7tIcmJp04d6UEzV45x-0KXdPSbdHbb4nO0BHZf448WP2OXnn~eFEvs4Ofx3wMG-jIGSr-3fMpaGlFhwJkw9ZSdi3-BdF2v0SDvDGctHMd2RPEpFFSusR6kML~OhwK9HhOYhFt4e~cXI0uKBOmw~6vxoKtddcJpTP3h~PWQ61S2PPxunWvwQIoQjSqOb3zoHqil3cUJGZvzZAzVWo2bKXvzSz9tpTMbsfoE5~QGVk7gLD7v1lKF-kNuJgr~kntB-mvZsIELxEjyQK-Oupg6biQ__",
     stock: "Disponible",
     enlace: "https://kajabi.com",
   },
@@ -110,9 +110,9 @@ const productos = [
     categoria: "Cursos",
     rating: 5,
     resenas: 35,
-    imagen: "🧬",
+    imagen: "https://private-us-east-1.manuscdn.com/sessionFile/cJ0NsjiTEgFuWB5HAN1kHs/sandbox/uNCEXOdi2fzNwyVQRTMSAm-img-3_1770184383000_na1fn_Z2VuZXRpY2Etc2FncmFkYS1jb3Vyc2U.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvY0owTnNqaVRFZ0Z1V0I1SEFOMWtIcy9zYW5kYm94L3VOQ0VYT2RpMmZ6Tnd5VlFSVE1TQW0taW1nLTNfMTc3MDE4NDM4MzAwMF9uYTFmbl9aMlZ1WlhScFkyRXRjMkZuY21Ga1lTMWpiM1Z5YzJVLnBuZz94LW9zcy1wcm9jZXNzPWltYWdlL3Jlc2l6ZSx3XzE5MjAsaF8xOTIwL2Zvcm1hdCx3ZWJwL3F1YWxpdHkscV84MCIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc5ODc2MTYwMH19fV19&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=X32HEIXc8NwFWGOOkfvq1diYxXUD32F2gXmOJPYYFHfSDbEaKr36G0Oe61~E2ZG83d~RJhnQBijXRRBcRQ1PsjvlAIwaoUW4rCZBNsXGHWkDeXiXLXwqCsrw85DqrYzrA3zFmf7Ig2HZXeB5tuOga94VRAjtgUjw-zZRjXxFqVyv97ZG6yxvB79ggFsjqum~YjLhEhUG~f0XFsXJ-yy8F1b2OFWsTLPTQJt8nxDrijNP6Vyc~djrpvogqQHXDJC4eJdpCxRZFPv0TSnpShtF5QsnD9xlREk2EG0aGhxciKue9KCRPv2ghUSMvV5-BYpkjHXbt-4Q-J6gsbCNSPcdiA__",
     stock: "Disponible",
-    enlace: "https://kajabi.com",
+    enlace: "/genetica-sagrada",
   },
   {
     id: 10,
@@ -122,46 +122,56 @@ const productos = [
     categoria: "Cursos",
     rating: 5,
     resenas: 89,
-    imagen: "🧘",
+    imagen: "https://private-us-east-1.manuscdn.com/sessionFile/cJ0NsjiTEgFuWB5HAN1kHs/sandbox/uNCEXOdi2fzNwyVQRTMSAm-img-4_1770184389000_na1fn_bWVkaXRhY2lvbi1hc2NlbmRlbnRl.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvY0owTnNqaVRFZ0Z1V0I1SEFOMWtIcy9zYW5kYm94L3VOQ0VYT2RpMmZ6Tnd5VlFSVE1TQW0taW1nLTRfMTc3MDE4NDM4OTAwMF9uYTFmbl9iV1ZrYVhSaFkybHZiaTFoYzJObGJtUmxiblJsLnBuZz94LW9zcy1wcm9jZXNzPWltYWdlL3Jlc2l6ZSx3XzE5MjAsaF8xOTIwL2Zvcm1hdCx3ZWJwL3F1YWxpdHkscV84MCIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc5ODc2MTYwMH19fV19&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=J1bxigJcXusmQJAZ2zIPeTm~M0e71FC4rbKk02Hce4Fm~22M-WwlzpGoSvwzQPFKfQQ6EiWZntMgAStqfmOLksz7mSM4XEGnaAaQc9vVztGQfZayvLNwTOYVJWGXR3YZCb1Q3QUbMKN9lr5-NXfiCiqvgtLVJ4A2B2DiKSlLuJaVcJ5-wbnAv2svijepT8bwWKDcI1jYFLmBYyhhJTwvah9XeO2A5-bwSWh7WzzpJI0JkUEtcPjJy9RZmyCgIwkcjPXBw~SOLGFYPB~B8p8gySATUU9IO00tWuV~hyCt65zGqdHC8GPZZSLi3wTTaBP-IvgeHC~dmgrkxKX617dFCJw__",
     stock: "Disponible",
     enlace: "https://kajabi.com",
+  },
+  {
+    id: 11,
+    nombre: "Taller Gratuito KS Healing",
+    precio: "Gratis",
+    descripcion: "Taller introductorio gratuito donde YOHEV comparte los fundamentos de la Energía KS Healing. Perfecto para principiantes que desean explorar esta metodología de transformación.",
+    categoria: "Talleres",
+    rating: 5,
+    resenas: 234,
+    imagen: "https://private-us-east-1.manuscdn.com/sessionFile/cJ0NsjiTEgFuWB5HAN1kHs/sandbox/uNCEXOdi2fzNwyVQRTMSAm-img-4_1770184389000_na1fn_bWVkaXRhY2lvbi1hc2NlbmRlbnRl.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvY0owTnNqaVRFZ0Z1V0I1SEFOMWtIcy9zYW5kYm94L3VOQ0VYT2RpMmZ6Tnd5VlFSVE1TQW0taW1nLTRfMTc3MDE4NDM4OTAwMF9uYTFmbl9iV1ZrYVhSaFkybHZiaTFoYzJObGJtUmxiblJsLnBuZz94LW9zcy1wcm9jZXNzPWltYWdlL3Jlc2l6ZSx3XzE5MjAsaF8xOTIwL2Zvcm1hdCx3ZWJwL3F1YWxpdHkscV84MCIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc5ODc2MTYwMH19fV19&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=J1bxigJcXusmQJAZ2zIPeTm~M0e71FC4rbKk02Hce4Fm~22M-WwlzpGoSvwzQPFKfQQ6EiWZntMgAStqfmOLksz7mSM4XEGnaAaQc9vVztGQfZayvLNwTOYVJWGXR3YZCb1Q3QUbMKN9lr5-NXfiCiqvgtLVJ4A2B2DiKSlLuJaVcJ5-wbnAv2svijepT8bwWKDcI1jYFLmBYyhhJTwvah9XeO2A5-bwSWh7WzzpJI0JkUEtcPjJy9RZmyCgIwkcjPXBw~SOLGFYPB~B8p8gySATUU9IO00tWuV~hyCt65zGqdHC8GPZZSLi3wTTaBP-IvgeHC~dmgrkxKX617dFCJw__",
+    stock: "Disponible",
+    enlace: "/taller-ks-healing",
   },
 ];
 
 export default function Tienda() {
   const [filtroCategoria, setFiltroCategoria] = useState("");
-  const [carrito, setCarrito] = useState<typeof productos>([]);
 
-  const categorias = ["Libros", "Cursos"];
+  const categorias = ["Libros", "Cursos", "Talleres"];
   
   const productosFiltrados = filtroCategoria
     ? productos.filter((p) => p.categoria === filtroCategoria)
     : productos;
-
-  const agregarAlCarrito = (producto: typeof productos[0]) => {
-    setCarrito([...carrito, producto]);
-  };
 
   return (
     <div className="min-h-screen flex flex-col bg-background">
       <Navigation />
 
       {/* Hero Section */}
-      <section className="py-16 md:py-24 bg-gradient-to-br from-blue-800 via-blue-900 to-slate-700 text-white">
+      <section className="py-16 md:py-24 bg-gradient-to-br from-primary/20 via-background to-accent/10">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="font-display text-5xl md:text-6xl font-bold mb-6">
-              Nuestros Libros
+            <h1 className="font-display text-5xl md:text-6xl font-bold mb-6 text-foreground">
+              Nuestra <span className="text-primary">Tienda</span>
             </h1>
-            <p className="text-xl text-white/90">
-              Explora la sabiduría y transformación a través de nuestras publicaciones
+            <p className="text-xl text-muted-foreground mb-4">
+              Accede a libros, cursos y programas de transformación diseñados para tu evolución espiritual
+            </p>
+            <p className="text-lg text-primary font-semibold">
+              Libros • Cursos • Programas • Talleres Gratuitos
             </p>
           </div>
         </div>
       </section>
 
       {/* Filters and Cart */}
-      <section className="py-8 bg-blue-50 border-b border-border">
+      <section className="py-8 bg-gradient-to-r from-primary/5 to-accent/5 border-b border-border">
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between mb-6">
             <div>
@@ -171,8 +181,8 @@ export default function Tienda() {
                   onClick={() => setFiltroCategoria("")}
                   className={`px-4 py-2 rounded-lg font-semibold transition-colors ${
                     filtroCategoria === ""
-                      ? "bg-blue-800 text-white"
-                      : "bg-background border border-border text-foreground hover:bg-blue-100"
+                      ? "bg-primary text-white"
+                      : "bg-background border border-border text-foreground hover:bg-primary/10"
                   }`}
                 >
                   Todos
@@ -183,8 +193,8 @@ export default function Tienda() {
                     onClick={() => setFiltroCategoria(cat)}
                     className={`px-4 py-2 rounded-lg font-semibold transition-colors ${
                       filtroCategoria === cat
-                        ? "bg-blue-800 text-white"
-                        : "bg-background border border-border text-foreground hover:bg-blue-100"
+                        ? "bg-primary text-white"
+                        : "bg-background border border-border text-foreground hover:bg-primary/10"
                     }`}
                   >
                     {cat}
@@ -201,17 +211,22 @@ export default function Tienda() {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {productosFiltrados.map((producto) => (
-              <Card key={producto.id} className="overflow-hidden hover:shadow-lg transition-shadow flex flex-col">
-                <div className="bg-gradient-to-br from-blue-100 to-slate-100 h-48 flex items-center justify-center relative group">
-                  <span className="text-6xl">{producto.imagen}</span>
+              <Card key={producto.id} className="overflow-hidden hover:shadow-lg transition-shadow flex flex-col h-full">
+                {/* Image Container */}
+                <div className="relative w-full h-64 bg-gradient-to-br from-primary/10 to-accent/10 overflow-hidden group">
+                  <img 
+                    src={producto.imagen}
+                    alt={producto.nombre}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
                   <button className="absolute top-3 right-3 p-2 rounded-lg bg-white/80 hover:bg-white transition-colors opacity-0 group-hover:opacity-100">
-                    <Heart size={20} className="text-blue-800" />
+                    <Heart size={20} className="text-primary" />
                   </button>
                 </div>
 
                 <div className="p-6 flex flex-col flex-grow">
                   <div className="mb-2">
-                    <span className="text-xs font-semibold text-blue-800 bg-blue-100 px-2 py-1 rounded">
+                    <span className="text-xs font-semibold text-primary bg-primary/10 px-2 py-1 rounded">
                       {producto.categoria}
                     </span>
                   </div>
@@ -231,7 +246,7 @@ export default function Tienda() {
                         <Star
                           key={i}
                           size={14}
-                          className={i < Math.floor(producto.rating) ? "fill-blue-500 text-blue-500" : "text-muted-foreground"}
+                          className={i < Math.floor(producto.rating) ? "fill-primary text-primary" : "text-muted-foreground"}
                         />
                       ))}
                     </div>
@@ -243,7 +258,7 @@ export default function Tienda() {
                   {/* Price */}
                   <div className="mb-4">
                     <div className="flex items-center gap-2">
-                      <span className="text-2xl font-bold text-blue-800">
+                      <span className="text-2xl font-bold text-primary">
                         {producto.precio}
                       </span>
                     </div>
@@ -252,19 +267,26 @@ export default function Tienda() {
                     </p>
                   </div>
 
-                  <a
-                    href={producto.enlace}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-full"
-                  >
-                    <Button
-                      className="w-full bg-blue-800 hover:bg-blue-900 text-white gap-2"
+                  {/* CTA Button */}
+                  {producto.enlace.startsWith("http") ? (
+                    <a
+                      href={producto.enlace}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="w-full"
                     >
-                      <ExternalLink size={16} />
-                      Ver en Amazon
-                    </Button>
-                  </a>
+                      <Button className="w-full bg-primary hover:bg-primary/90 text-white gap-2">
+                        <ExternalLink size={16} />
+                        {producto.categoria === "Libros" ? "Ver en Amazon" : "Inscribirse"}
+                      </Button>
+                    </a>
+                  ) : (
+                    <a href={producto.enlace} className="w-full">
+                      <Button className="w-full bg-primary hover:bg-primary/90 text-white gap-2">
+                        Más Información
+                      </Button>
+                    </a>
+                  )}
                 </div>
               </Card>
             ))}
@@ -272,15 +294,27 @@ export default function Tienda() {
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="py-16 md:py-24 bg-blue-50">
+      {/* CTA Section */}
+      <section className="py-16 md:py-24 bg-gradient-to-br from-primary/10 to-accent/10">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="font-display text-3xl font-bold text-foreground mb-6">
-            ¿Buscas más?
+          <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-6">
+            ¿Listo para tu transformación?
           </h2>
           <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Descubre nuestros programas de formación, cursos y meditaciones guiadas en la sección de Cursos.
+            Cada producto en nuestra tienda está diseñado con intención y energía para apoyar tu camino de evolución espiritual y sanación.
           </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="/taller-ks-healing">
+              <Button size="lg" className="bg-primary hover:bg-primary/90 text-white gap-2">
+                Explorar Taller Gratuito
+              </Button>
+            </a>
+            <a href="/ks-healing">
+              <Button size="lg" variant="outline" className="gap-2">
+                Ver Certificación
+              </Button>
+            </a>
+          </div>
         </div>
       </section>
 
