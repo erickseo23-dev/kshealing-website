@@ -146,9 +146,11 @@ export default function Blog() {
             <p className="text-lg text-muted-foreground mb-8">
               Suscríbete para recibir reflexiones, enseñanzas y actualizaciones sobre KS Healing
             </p>
-            <Button className="bg-primary hover:bg-primary/90 text-white">
-              Suscribirse
-            </Button>
+            <a href="https://www.i3cdigital.com/Newsletter" target="_blank" rel="noopener noreferrer">
+              <Button className="bg-primary hover:bg-primary/90 text-white">
+                Suscribirse
+              </Button>
+            </a>
           </div>
         </div>
       </section>
