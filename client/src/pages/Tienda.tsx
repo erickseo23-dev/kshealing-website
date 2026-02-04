@@ -102,18 +102,7 @@ const productos = [
     stock: "Disponible",
     enlace: "/club-retiro-sagrado",
   },
-  {
-    id: 10,
-    nombre: "Meditación Ascendente",
-    precio: "Por definir",
-    descripcion: "Método progresivo de expansión de consciencia. Desarrolla presencia, claridad interna y regulación emocional a través de la práctica continua guiada.",
-    categoria: "Cursos",
-    rating: 5,
-    resenas: 89,
-    imagen: "https://private-us-east-1.manuscdn.com/sessionFile/cJ0NsjiTEgFuWB5HAN1kHs/sandbox/uNCEXOdi2fzNwyVQRTMSAm-img-4_1770184389000_na1fn_bWVkaXRhY2lvbi1hc2NlbmRlbnRl.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvY0owTnNqaVRFZ0Z1V0I1SEFOMWtIcy9zYW5kYm94L3VOQ0VYT2RpMmZ6Tnd5VlFSVE1TQW0taW1nLTRfMTc3MDE4NDM4OTAwMF9uYTFmbl9iV1ZrYVhSaFkybHZiaTFoYzJObGJtUmxiblJsLnBuZz94LW9zcy1wcm9jZXNzPWltYWdlL3Jlc2l6ZSx3XzE5MjAsaF8xOTIwL2Zvcm1hdCx3ZWJwL3F1YWxpdHkscV84MCIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc5ODc2MTYwMH19fV19&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=J1bxigJcXusmQJAZ2zIPeTm~M0e71FC4rbKk02Hce4Fm~22M-WwlzpGoSvwzQPFKfQQ6EiWZntMgAStqfmOLksz7mSM4XEGnaAaQc9vVztGQfZayvLNwTOYVJWGXR3YZCb1Q3QUbMKN9lr5-NXfiCiqvgtLVJ4A2B2DiKSlLuJaVcJ5-wbnAv2svijepT8bwWKDcI1jYFLmBYyhhJTwvah9XeO2A5-bwSWh7WzzpJI0JkUEtcPjJy9RZmyCgIwkcjPXBw~SOLGFYPB~B8p8gySATUU9IO00tWuV~hyCt65zGqdHC8GPZZSLi3wTTaBP-IvgeHC~dmgrkxKX617dFCJw__",
-    stock: "Disponible",
-    enlace: "https://kajabi.com",
-  },
+
   {
     id: 11,
     nombre: "Taller Gratuito KS Healing",
