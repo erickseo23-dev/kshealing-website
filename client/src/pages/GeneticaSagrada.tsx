@@ -110,8 +110,8 @@ export default function GeneticaSagrada() {
         <div className="absolute inset-0 bg-black/60"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl mx-auto text-center">
-            <div className="inline-block mb-6 px-4 py-2 rounded-full bg-primary/10 border border-primary/20">
-              <span className="text-primary font-semibold">🧬 Taller Online</span>
+            <div className="inline-block mb-6 px-4 py-2 rounded-full bg-white/10 border border-white/30 backdrop-blur-sm">
+              <span className="text-white font-semibold">🧬 Taller Online</span>
             </div>
             <h1 className="font-display text-5xl md:text-6xl font-bold text-white mb-6 drop-shadow-lg">
               Genética <span className="text-amber-300">Sagrada</span>
