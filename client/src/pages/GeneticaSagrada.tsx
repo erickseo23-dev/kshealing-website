@@ -107,7 +107,7 @@ export default function GeneticaSagrada() {
         backgroundSize: 'cover',
         backgroundPosition: 'center'
       } as React.CSSProperties}>
-        <div className="absolute inset-0 bg-black/40"></div>
+        <div className="absolute inset-0 bg-black/60"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl mx-auto text-center">
             <div className="inline-block mb-6 px-4 py-2 rounded-full bg-primary/10 border border-primary/20">
@@ -123,10 +123,10 @@ export default function GeneticaSagrada() {
               "No se trata de cambiar tu ADN… sino de recordar cómo suena cuando vibra con la melodía de tu alma."
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-primary hover:bg-primary/90 text-white">
+              <Button size="lg" className="bg-amber-500 hover:bg-amber-600 text-white font-bold shadow-lg">
                 Inscribirse Ahora
               </Button>
-              <Button size="lg" variant="outline">
+              <Button size="lg" className="bg-white/20 hover:bg-white/30 text-white font-bold backdrop-blur-sm border border-white/40 shadow-lg">
                 Ver Próximas Fechas
               </Button>
             </div>
