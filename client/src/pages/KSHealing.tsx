@@ -101,10 +101,12 @@ export default function KSHealing() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-slate-950 font-bold gap-2" style={{backgroundColor: '#fbbc0e'}}>
-                Inscríbete Ahora
-                <ArrowRight size={20} />
-              </Button>
+              <a href="https://www.i3cdigital.com/offers/FQuDTjNV/checkout" target="_blank" rel="noopener noreferrer">
+                <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-slate-950 font-bold gap-2" style={{backgroundColor: '#fbbc0e'}}>
+                  Inscríbete Ahora
+                  <ArrowRight size={20} />
+                </Button>
+              </a>
             </div>
 
             <div className="flex flex-wrap gap-6 text-white/80 text-sm mt-12">
@@ -328,10 +330,12 @@ export default function KSHealing() {
               <div className="border-t border-primary/20 pt-8">
                 <p className="text-lg font-bold text-foreground mb-4">Inversión: <span style={{color: '#fbbc0e'}}>$145 USD</span></p>
                 <div className="flex flex-col sm:flex-row gap-4">
-                  <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-slate-950 font-bold gap-2" style={{backgroundColor: '#fbbc0e'}}>
-                    Inscríbete Ahora
-                    <ArrowRight size={20} />
-                  </Button>
+                  <a href="https://www.i3cdigital.com/offers/FQuDTjNV/checkout" target="_blank" rel="noopener noreferrer">
+                    <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-slate-950 font-bold gap-2" style={{backgroundColor: '#fbbc0e'}}>
+                      Inscríbete Ahora
+                      <ArrowRight size={20} />
+                    </Button>
+                  </a>
                 </div>
               </div>
 
@@ -606,10 +610,12 @@ export default function KSHealing() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-slate-950 font-bold gap-2" style={{backgroundColor: '#fbbc0e'}}>
-                Inscríbete Ahora
-                <ArrowRight size={20} />
-              </Button>
+              <a href="https://www.i3cdigital.com/offers/FQuDTjNV/checkout" target="_blank" rel="noopener noreferrer">
+                <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-slate-950 font-bold gap-2" style={{backgroundColor: '#fbbc0e'}}>
+                  Inscríbete Ahora
+                  <ArrowRight size={20} />
+                </Button>
+              </a>
             </div>
 
             <p className="text-sm text-muted-foreground mt-8">
