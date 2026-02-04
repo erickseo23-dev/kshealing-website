@@ -102,19 +102,25 @@ export default function GeneticaSagrada() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="py-20 md:py-32 bg-gradient-to-br from-background via-background to-primary/5">
-        <div className="container mx-auto px-4">
+      <section className="py-20 md:py-32 relative overflow-hidden" style={{
+        backgroundImage: 'url(https://private-us-east-1.manuscdn.com/sessionFile/cJ0NsjiTEgFuWB5HAN1kHs/sandbox/Js0dfk85wsrGUkQVkwD7PM-img-1_1770182404000_na1fn_Z2VuZXRpY2Etc2FncmFkYS1oZXJvLWJn.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundAttachment: 'fixed'
+      }}>
+        <div className="absolute inset-0 bg-black/40"></div>
+        <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl mx-auto text-center">
             <div className="inline-block mb-6 px-4 py-2 rounded-full bg-primary/10 border border-primary/20">
               <span className="text-primary font-semibold">🧬 Taller Online</span>
             </div>
-            <h1 className="font-display text-5xl md:text-6xl font-bold text-foreground mb-6">
-              Genética <span className="text-primary">Sagrada</span>
+            <h1 className="font-display text-5xl md:text-6xl font-bold text-white mb-6 drop-shadow-lg">
+              Genética <span className="text-amber-300">Sagrada</span>
             </h1>
-            <p className="text-xl text-muted-foreground mb-6">
+            <p className="text-xl text-white/90 mb-6 drop-shadow-md">
               Afina las 12 CAPAS de tu ADN Cuántico a su Octava Divina
             </p>
-            <p className="text-lg text-muted-foreground mb-8 italic">
+            <p className="text-lg text-white/80 mb-8 italic drop-shadow-md">
               "No se trata de cambiar tu ADN… sino de recordar cómo suena cuando vibra con la melodía de tu alma."
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
