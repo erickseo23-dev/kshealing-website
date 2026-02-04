@@ -109,12 +109,10 @@ export default function TallerKSHealing() {
 
           {/* CTA Button */}
           <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center mb-6 md:mb-10">
-            <a href="https://www.i3cdigital.com/offers/LAMKt6vL" target="_blank" rel="noopener noreferrer">
-              <Button size="lg" className="bg-orange-500 hover:bg-orange-600 text-white px-6 md:px-12 py-3 md:py-6 text-sm md:text-lg font-bold rounded-lg shadow-2xl transition-all duration-300 transform hover:scale-105">
-                Inscríbete al Taller
-                <ArrowRight size={24} className="ml-3" />
-              </Button>
-            </a>
+            <Button size="lg" className="bg-orange-500 hover:bg-orange-600 text-white px-6 md:px-12 py-3 md:py-6 text-sm md:text-lg font-bold rounded-lg shadow-2xl transition-all duration-300 transform hover:scale-105">
+              Inscríbete al Taller
+              <ArrowRight size={24} className="ml-3" />
+            </Button>
           </div>
 
           {/* Event details card */}
@@ -383,12 +381,10 @@ export default function TallerKSHealing() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
-            <a href="https://www.i3cdigital.com/offers/LAMKt6vL" target="_blank" rel="noopener noreferrer">
-              <Button size="lg" className="bg-orange-500 hover:bg-orange-600 text-white px-10 py-6 text-lg font-bold">
-                Inscríbete al Taller
-                <ArrowRight size={24} className="ml-3" />
-              </Button>
-            </a>
+            <Button size="lg" className="bg-orange-500 hover:bg-orange-600 text-white px-10 py-6 text-lg font-bold">
+              Inscríbete al Taller
+              <ArrowRight size={24} className="ml-3" />
+            </Button>
           </div>
 
           <div className="bg-gradient-to-br from-card to-card/50 rounded-2xl p-10 border border-primary/20">

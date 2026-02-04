@@ -1,5 +1,5 @@
-import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { Card } from "@/components/ui/card";
 import { Link } from "wouter";
 import { ArrowRight, Check, Dna, Zap, Heart, Users, Star, BookOpen, ChevronDown } from "lucide-react";
 import Navigation from "@/components/Navigation";
@@ -102,35 +102,26 @@ export default function GeneticaSagrada() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="relative h-screen md:h-[600px] flex items-center justify-center overflow-hidden" style={{
-        backgroundImage: 'url(https://private-us-east-1.manuscdn.com/sessionFile/cJ0NsjiTEgFuWB5HAN1kHs/sandbox/emFwEl4u9Dz06ddgXdC7ZC-img-1_1770181646000_na1fn_Z2VuZXRpY2Etc2FncmFkYS1oZXJv.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80)',
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundAttachment: 'fixed'
-      }}>
-        {/* Overlay */}
-        <div className="absolute inset-0 bg-black/50"></div>
-        
-        {/* Content */}
-        <div className="relative z-10 container mx-auto px-4">
+      <section className="py-20 md:py-32 bg-gradient-to-br from-background via-background to-primary/5">
+        <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
-            <div className="inline-block mb-6 px-4 py-2 rounded-full bg-primary/20 border border-primary/40 backdrop-blur-sm">
-              <span className="text-primary font-semibold text-sm md:text-base">✨ Taller Online Transformacional</span>
+            <div className="inline-block mb-6 px-4 py-2 rounded-full bg-primary/10 border border-primary/20">
+              <span className="text-primary font-semibold">🧬 Taller Online</span>
             </div>
-            <h1 className="font-display text-5xl md:text-7xl font-bold text-white mb-6 drop-shadow-lg">
-              Genética <span className="text-amber-300">Sagrada</span>
+            <h1 className="font-display text-5xl md:text-6xl font-bold text-foreground mb-6">
+              Genética <span className="text-primary">Sagrada</span>
             </h1>
-            <p className="text-xl md:text-2xl text-white mb-6 drop-shadow-md font-medium">
+            <p className="text-xl text-muted-foreground mb-6">
               Afina las 12 CAPAS de tu ADN Cuántico a su Octava Divina
             </p>
-            <p className="text-lg md:text-xl text-amber-100 mb-8 italic drop-shadow-md">
+            <p className="text-lg text-muted-foreground mb-8 italic">
               "No se trata de cambiar tu ADN… sino de recordar cómo suena cuando vibra con la melodía de tu alma."
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-amber-500 hover:bg-amber-600 text-white font-semibold text-base md:text-lg px-8 py-6">
+              <Button size="lg" className="bg-primary hover:bg-primary/90 text-white">
                 Inscribirse Ahora
               </Button>
-              <Button size="lg" className="bg-white/20 hover:bg-white/30 text-white font-semibold text-base md:text-lg px-8 py-6 border border-white/40 backdrop-blur-sm">
+              <Button size="lg" variant="outline">
                 Ver Próximas Fechas
               </Button>
             </div>
@@ -162,15 +153,22 @@ export default function GeneticaSagrada() {
                 <div className="flex gap-4">
                   <Check size={20} className="text-primary flex-shrink-0 mt-1" />
                   <div>
-                    <h4 className="font-semibold text-foreground mb-1">Técnicas de Afinación Energética</h4>
-                    <p className="text-muted-foreground">Aprenderás ejercicios prácticos para afinar cada capa de tu ADN</p>
+                    <h4 className="font-semibold text-foreground mb-1">Identificación de Desentonaciones</h4>
+                    <p className="text-muted-foreground">Descubrirás qué ha desentonado cada capa: traumas, linajes ancestrales, karmas, represión</p>
                   </div>
                 </div>
                 <div className="flex gap-4">
                   <Check size={20} className="text-primary flex-shrink-0 mt-1" />
                   <div>
-                    <h4 className="font-semibold text-foreground mb-1">Integración y Manifestación</h4>
-                    <p className="text-muted-foreground">Cómo integrar estos cambios y manifestar tu verdadero potencial</p>
+                    <h4 className="font-semibold text-foreground mb-1">Afinación Multidimensional</h4>
+                    <p className="text-muted-foreground">Afinarás capa por capa desde tu Yo físico, emocional, mental, universal y divino</p>
+                  </div>
+                </div>
+                <div className="flex gap-4">
+                  <Check size={20} className="text-primary flex-shrink-0 mt-1" />
+                  <div>
+                    <h4 className="font-semibold text-foreground mb-1">Conexión con el Arquetipo Divino</h4>
+                    <p className="text-muted-foreground">YOHEV conectará el Arquetipo Divino Original a cada una de tus capas y a tu vida cotidiana</p>
                   </div>
                 </div>
               </div>
@@ -184,118 +182,238 @@ export default function GeneticaSagrada() {
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto mb-16 text-center">
             <h2 className="font-display text-4xl font-bold text-foreground mb-6">
-              Las 12 Capas del <span className="text-primary">ADN Sagrado</span>
+              Las 12 Capas del <span className="text-primary">ADN Cuántico</span>
             </h2>
             <p className="text-lg text-muted-foreground">
-              Cada capa representa una dimensión diferente de tu ser y contiene información crucial para tu evolución
+              Cada capa representa una dimensión de tu ser que será afinada a su Octava Divina
             </p>
           </div>
-          <div className="max-w-4xl mx-auto space-y-4">
-            {dnaLayers.map((layer) => (
-              <Card
-                key={layer.number}
-                className="p-6 cursor-pointer border-border/50 hover:border-primary/50 transition-all"
-                onClick={() => setExpandedLayer(expandedLayer === layer.number ? null : layer.number)}
-              >
-                <div className="flex items-start justify-between">
-                  <div className="flex gap-4 flex-1">
-                    <div className="flex-shrink-0 w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center">
-                      <span className="font-bold text-primary">{layer.number}</span>
-                    </div>
-                    <div className="flex-1">
-                      <h3 className="font-semibold text-lg text-foreground mb-1">{layer.name}</h3>
-                      <p className="text-muted-foreground text-sm">{layer.description.substring(0, 100)}...</p>
-                    </div>
-                  </div>
-                  <ChevronDown
-                    size={20}
-                    className={`flex-shrink-0 text-muted-foreground transition-transform ${
-                      expandedLayer === layer.number ? 'rotate-180' : ''
-                    }`}
-                  />
-                </div>
-                {expandedLayer === layer.number && (
-                  <div className="mt-6 pt-6 border-t border-border/50 space-y-4">
-                    <div>
-                      <p className="text-muted-foreground">{layer.description}</p>
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-foreground mb-2">Enfoque del taller:</h4>
-                      <p className="text-muted-foreground">{layer.focus}</p>
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-foreground mb-2">Beneficios:</h4>
-                      <ul className="space-y-1">
-                        {layer.benefits.map((benefit, idx) => (
-                          <li key={idx} className="flex gap-2 text-muted-foreground">
-                            <Check size={16} className="text-primary flex-shrink-0 mt-0.5" />
-                            {benefit}
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-                )}
-              </Card>
-            ))}
+
+          <div className="max-w-4xl mx-auto mb-16">
+            <img 
+              src="/images/adn-cuantico-12-capas-circular-final.png" 
+              alt="Las 12 Capas del ADN Cuantico" 
+              className="w-full h-auto rounded-lg shadow-2xl border border-primary/20"
+            />
           </div>
         </div>
       </section>
 
-      {/* Program Structure */}
+      {/* Expandable DNA Layers Details */}
+      <section className="py-20 md:py-32">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <div className="mb-16 text-center">
+              <h2 className="font-display text-4xl font-bold text-foreground mb-6">
+                Descripción Detallada de las <span className="text-primary">12 Capas</span>
+              </h2>
+              <p className="text-lg text-muted-foreground">
+                Haz clic en cada capa para explorar su significado y beneficios
+              </p>
+            </div>
+
+            <div className="space-y-4">
+              {dnaLayers.map((layer) => (
+                <Card 
+                  key={layer.number}
+                  className="border-border/50 overflow-hidden transition-all duration-300 hover:shadow-lg"
+                >
+                  <button
+                    onClick={() => setExpandedLayer(expandedLayer === layer.number ? null : layer.number)}
+                    className="w-full p-6 flex items-center justify-between bg-gradient-to-r from-background to-primary/5 hover:from-primary/5 hover:to-primary/10 transition-colors"
+                  >
+                    <div className="flex items-center gap-4 text-left">
+                      <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0">
+                        <span className="text-primary font-bold text-lg">{layer.number}</span>
+                      </div>
+                      <div>
+                        <h3 className="font-display text-xl font-bold text-foreground">
+                          {layer.name}
+                        </h3>
+                        <p className="text-sm text-muted-foreground mt-1">
+                          {layer.focus}
+                        </p>
+                      </div>
+                    </div>
+                    <ChevronDown 
+                      size={24} 
+                      className={`text-primary flex-shrink-0 transition-transform duration-300 ${
+                        expandedLayer === layer.number ? 'rotate-180' : ''
+                      }`}
+                    />
+                  </button>
+
+                  {expandedLayer === layer.number && (
+                    <div className="px-6 pb-6 border-t border-border/50 bg-background/50">
+                      <div className="space-y-6 mt-6">
+                        <div>
+                          <h4 className="font-semibold text-foreground mb-3">Descripción</h4>
+                          <p className="text-muted-foreground leading-relaxed">
+                            {layer.description}
+                          </p>
+                        </div>
+
+                        <div>
+                          <h4 className="font-semibold text-foreground mb-3">Beneficios de la Afinación</h4>
+                          <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
+                            {layer.benefits.map((benefit, idx) => (
+                              <div key={idx} className="flex gap-3 p-3 rounded-lg bg-primary/5 border border-primary/10">
+                                <Check size={18} className="text-primary flex-shrink-0 mt-0.5" />
+                                <p className="text-sm text-muted-foreground">{benefit}</p>
+                              </div>
+                            ))}
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  )}
+                </Card>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Program Details */}
+      <section className="py-20 md:py-32 bg-primary/5">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+              <Card className="p-8 border-border/50 bg-gradient-to-br from-primary/10 to-background">
+                <h3 className="font-display text-2xl font-bold text-foreground mb-6">Estructura del Taller</h3>
+                <div className="space-y-4 text-muted-foreground">
+                  <div>
+                    <p className="font-semibold text-foreground">Duración:</p>
+                    <p>3 semanas</p>
+                  </div>
+                  <div>
+                    <p className="font-semibold text-foreground">Modalidad:</p>
+                    <p>Online en vivo por Zoom</p>
+                  </div>
+                  <div>
+                    <p className="font-semibold text-foreground">Frecuencia:</p>
+                    <p>1 clase semanal (3 sábados consecutivos)</p>
+                  </div>
+                  <div>
+                    <p className="font-semibold text-foreground">Horario:</p>
+                    <p>11:00 a 14:00 hrs (CDMX)</p>
+                  </div>
+                  <div>
+                    <p className="font-semibold text-foreground">Acceso:</p>
+                    <p>Grabaciones disponibles por tiempo indefinido</p>
+                  </div>
+                </div>
+              </Card>
+
+              <Card className="p-8 border-border/50 bg-gradient-to-br from-primary/10 to-background">
+                <h3 className="font-display text-2xl font-bold text-foreground mb-6">Qué Incluye</h3>
+                <ul className="space-y-3 text-muted-foreground">
+                  <li className="flex gap-3">
+                    <Check size={20} className="text-primary flex-shrink-0 mt-0.5" />
+                    <span>3 clases semanales en vivo con YOHEV (grabadas)</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <Check size={20} className="text-primary flex-shrink-0 mt-0.5" />
+                    <span>Manual completo del taller con estructura de las 12 capas</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <Check size={20} className="text-primary flex-shrink-0 mt-0.5" />
+                    <span>Ejercicios de activación de cada capa del ADN energético</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <Check size={20} className="text-primary flex-shrink-0 mt-0.5" />
+                    <span>Audios y códigos de afinación de las 12 capas</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <Check size={20} className="text-primary flex-shrink-0 mt-0.5" />
+                    <span>Guía para mantener tu ADN activado/afinado</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <Check size={20} className="text-primary flex-shrink-0 mt-0.5" />
+                    <span>Acceso a grupo privado para seguimiento e integración</span>
+                  </li>
+                </ul>
+              </Card>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* For Whom */}
+      <section className="py-20 md:py-32 bg-gradient-to-br from-primary/5 via-background to-accent/5">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto">
+            <h2 className="font-display text-4xl font-bold text-foreground mb-12 text-center">
+              Este Taller es para Ti si...
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {[
+                "Sientes que tu alma guarda un diseño original más elevado que aún no has manifestado",
+                "Has hecho trabajo personal pero algo aún no termina de desbloquearse",
+                "Quieres comprender y afinar tus bloqueos físicos, emocionales, mentales o espirituales",
+                "Estás listo para recibir una activación profunda de las 12 capas de tu ADN desde la Energía KS",
+              ].map((reason, idx) => (
+                <Card key={idx} className="p-6 border-border/50 bg-background">
+                  <div className="flex gap-4">
+                    <Heart size={24} className="text-primary flex-shrink-0 mt-1" />
+                    <p className="text-muted-foreground">{reason}</p>
+                  </div>
+                </Card>
+              ))}
+            </div>
+            <p className="text-center text-muted-foreground mt-8">
+              <span className="font-semibold text-foreground">Abierto a todo el público a partir de 9 años</span> (menores acompañados por adulto)
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Multidimensional Consciousness Section */}
+      <section className="py-20 md:py-32">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
+            <div className="relative">
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 rounded-2xl blur-2xl"></div>
+              <img 
+                src="/images/genetica-sagrada-multidimensional.png" 
+                alt="Consciencia Multidimensional" 
+                className="relative w-full rounded-2xl shadow-2xl object-cover aspect-video"
+              />
+            </div>
+            <div>
+              <h2 className="font-display text-4xl font-bold text-foreground mb-6">
+                Expande tu <span className="text-primary">Consciencia Multidimensional</span>
+              </h2>
+              <div className="space-y-4 text-muted-foreground mb-8">
+                <p className="text-lg leading-relaxed">
+                  Eres mucho más que tu cuerpo físico. Tu consciencia existe simultáneamente en múltiples dimensiones, conectada con tus encarnaciones pasadas, presentes y futuras.
+                </p>
+                <p className="text-lg leading-relaxed">
+                  Genética Sagrada te enseña a navegar estas dimensiones, integrando la sabiduría de todas tus vidas en una sola consciencia unificada y coherente.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials Section */}
       <section className="py-20 md:py-32">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto mb-16 text-center">
             <h2 className="font-display text-4xl font-bold text-foreground mb-6">
-              Estructura del <span className="text-primary">Taller</span>
+              Conexiones <span className="text-primary">Ancestrales</span>
             </h2>
+            <p className="text-lg text-muted-foreground">
+              Descubre cómo Genética Sagrada ha reconectado a personas con su linaje
+            </p>
           </div>
-          <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
-            <Card className="p-8 border-border/50 bg-gradient-to-br from-primary/10 to-background">
-              <div className="flex gap-4 mb-4">
-                <BookOpen size={24} className="text-primary flex-shrink-0" />
-                <h3 className="font-semibold text-lg text-foreground">Modalidad</h3>
-              </div>
-              <p>Online en vivo por Zoom</p>
-            </Card>
-            <Card className="p-8 border-border/50 bg-gradient-to-br from-primary/10 to-background">
-              <div className="flex gap-4 mb-4">
-                <Zap size={24} className="text-primary flex-shrink-0" />
-                <h3 className="font-semibold text-lg text-foreground">Frecuencia</h3>
-              </div>
-              <p>1 clase semanal (3 domingos consecutivos)</p>
-            </Card>
-            <Card className="p-8 border-border/50 bg-gradient-to-br from-primary/10 to-background">
-              <div className="flex gap-4 mb-4">
-                <Clock size={24} className="text-primary flex-shrink-0" />
-                <h3 className="font-semibold text-lg text-foreground">Horario</h3>
-              </div>
-              <p>11:00 a 14:00 hrs (CDMX)</p>
-            </Card>
-            <Card className="p-8 border-border/50 bg-gradient-to-br from-primary/10 to-background">
-              <div className="flex gap-4 mb-4">
-                <Star size={24} className="text-primary flex-shrink-0" />
-                <h3 className="font-semibold text-lg text-foreground">Acceso</h3>
-              </div>
-              <p>Grabaciones disponibles por tiempo indefinido</p>
-            </Card>
-          </div>
-        </div>
-      </section>
 
-      {/* Testimonials */}
-      <section className="py-20 md:py-32 bg-primary/5">
-        <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto mb-16 text-center">
-            <h2 className="font-display text-4xl font-bold text-foreground mb-6">
-              Lo que dicen nuestros <span className="text-primary">Participantes</span>
-            </h2>
-          </div>
-          <div className="max-w-4xl mx-auto grid md:grid-cols-3 gap-8">
-            {geneticaSagradaTestimonials.slice(0, 3).map((testimonial, idx) => (
-              <Card key={idx} className="p-8 border-border/50">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            {geneticaSagradaTestimonials.map((testimonial) => (
+              <Card key={testimonial.id} className="p-6 border-border/50 hover:shadow-lg transition-shadow">
                 <div className="flex gap-1 mb-4">
-                  {[...Array(testimonial.rating)].map((_, i) => (
+                  {[...Array(5)].map((_, i) => (
                     <Star key={i} size={16} className="fill-primary text-primary" />
                   ))}
                 </div>
@@ -303,6 +421,9 @@ export default function GeneticaSagrada() {
                 <div>
                   <p className="font-semibold text-foreground">{testimonial.name}</p>
                   <p className="text-sm text-muted-foreground">{testimonial.title}</p>
+                  {testimonial.certification && (
+                    <p className="text-sm text-primary mt-1">✓ {testimonial.certification}</p>
+                  )}
                 </div>
               </Card>
             ))}
@@ -315,45 +436,19 @@ export default function GeneticaSagrada() {
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="font-display text-4xl font-bold text-foreground mb-6">
-              ¿Listo para Activar tu Potencial?
+              Activa y Resuena en la <span className="text-primary">Octava Divina</span> de tu ADN
             </h2>
-            <p className="text-xl text-muted-foreground mb-8">
-              Únete a nuestra próxima cohorte y comienza tu transformación energética
+            <p className="text-lg text-muted-foreground mb-8">
+              Tu alma ya sabe… ahora tu ADN lo recordará.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-primary hover:bg-primary/90 text-white">
-                Inscribirse Ahora
-              </Button>
-              <Button size="lg" variant="outline">
-                Más Información
-              </Button>
-            </div>
+            <Button size="lg" className="bg-primary hover:bg-primary/90 text-white">
+              Inscribirse Ahora
+            </Button>
           </div>
         </div>
       </section>
 
       <Footer />
     </div>
-  );
-}
-
-// Add Clock icon since it's not in lucide-react by default
-function Clock(props: any) {
-  return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      {...props}
-    >
-      <circle cx="12" cy="12" r="10"></circle>
-      <polyline points="12 6 12 12 16 14"></polyline>
-    </svg>
   );
 }

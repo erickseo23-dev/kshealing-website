@@ -132,11 +132,9 @@ export default function Eventos() {
             <p className="text-lg text-muted-foreground mb-8">
               Suscríbete para recibir notificaciones de nuevos seminarios y retiros
             </p>
-            <a href="https://www.i3cdigital.com/Newsletter" target="_blank" rel="noopener noreferrer">
-              <Button className="bg-primary hover:bg-primary/90 text-white">
-                Suscribirse
-              </Button>
-            </a>
+            <Button className="bg-primary hover:bg-primary/90 text-white">
+              Suscribirse
+            </Button>
           </div>
         </div>
       </section>
