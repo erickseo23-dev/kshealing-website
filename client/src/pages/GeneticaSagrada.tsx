@@ -344,6 +344,22 @@ export default function GeneticaSagrada() {
         </div>
       </section>
 
+      {/* Image Section 1 - Meditation */}
+      <section className="py-16 px-4 bg-background">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div>
+              <h2 className="text-4xl font-bold mb-4 text-foreground">Transformación Profunda</h2>
+              <p className="text-lg text-foreground/80 mb-6">La Genética Sagrada te permite acceder a los 12 niveles de tu ser, desde tu ADN físico hasta tu conexión con el Universo Multidimensional. Cada capa contiene sabiduría, poder y potencial dormido esperando ser activado.</p>
+              <p className="text-lg text-foreground/80">A través de esta activación progresiva, experimentarás una transformación que va más allá de lo mental, tocando las raíces más profundas de tu existencia.</p>
+            </div>
+            <div className="rounded-lg overflow-hidden shadow-2xl">
+              <img src="https://private-us-east-1.manuscdn.com/sessionFile/cJ0NsjiTEgFuWB5HAN1kHs/sandbox/4SroGaEVAgF8SKXM0dw1YK-img-1_1770183504000_na1fn_Z2VuZXRpY2Etc2FncmFkYS1zZWN0aW9uMQ.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvY0owTnNqaVRFZ0Z1V0I1SEFOMWtIcy9zYW5kYm94LzRTcm9HYUVWQWdGOFNLWE0wZHcxWUstaW1nLTFfMTc3MDE4MzUwNDAwMF9uYTFmbl9aMlZ1WlhScFkyRXRjMkZuY21Ga1lTMXpaV04wYVc5dU1RLnBuZz94LW9zcy1wcm9jZXNzPWltYWdlL3Jlc2l6ZSx3XzE5MjAsaF8xOTIwL2Zvcm1hdCx3ZWJwL3F1YWxpdHkscV84MCIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc5ODc2MTYwMH19fV19&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=X6cjV10ah3k8TZMNu2xQOtCRISEcZtW6BHE1-vZsjBnvTxJulpg8eQBuMMTQnXp7vyYKBvXCS2Iu9HkxGNpSoNPui1MldSiht4XqftIYDXodWnLvo7wQOpgJsCkF-Ad2QmejVIwo582DRvdfT0XYI~6OQtx3ICcUVicbHI86X0Y85crOIUxBeoGUrkXbZ0RICb80OQTfYK8jZAW8W3VJ8PeRuvYvcE8HFohYKhFtVzu3R-ZvFNamTrf-C1fbD-QR3zwLRxwPHjZkx7W753H1Y-Z56yE1DmUxs5VZsd91lQXjcVW0EvBEiaVUISpFbBqHx9HjSatbAsGMDM2Cf2buvA__" alt="Meditación Sagrada" className="w-full h-auto object-cover" />
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* For Whom */}
       <section className="py-20 md:py-32 bg-gradient-to-br from-primary/5 via-background to-accent/5">
         <div className="container mx-auto px-4">
@@ -397,6 +413,22 @@ export default function GeneticaSagrada() {
                   Genética Sagrada te enseña a navegar estas dimensiones, integrando la sabiduría de todas tus vidas en una sola consciencia unificada y coherente.
                 </p>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Image Section 2 - DNA Healing */}
+      <section className="py-16 px-4 bg-background">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div className="rounded-lg overflow-hidden shadow-2xl order-2 md:order-1">
+              <img src="https://private-us-east-1.manuscdn.com/sessionFile/cJ0NsjiTEgFuWB5HAN1kHs/sandbox/4SroGaEVAgF8SKXM0dw1YK-img-2_1770183506000_na1fn_Z2VuZXRpY2Etc2FncmFkYS1zZWN0aW9uMg.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvY0owTnNqaVRFZ0Z1V0I1SEFOMWtIcy9zYW5kYm94LzRTcm9HYUVWQWdGOFNLWE0wZHcxWUstaW1nLTJfMTc3MDE4MzUwNjAwMF9uYTFmbl9aMlZ1WlhScFkyRXRjMkZuY21Ga1lTMXpaV04wYVc5dU1nLnBuZz94LW9zcy1wcm9jZXNzPWltYWdlL3Jlc2l6ZSx3XzE5MjAsaF8xOTIwL2Zvcm1hdCx3ZWJwL3F1YWxpdHkscV84MCIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc5ODc2MTYwMH19fV19&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=L5YuIH8E3KGxid5xMdGPEo-t4NNtUReHYfhoPANUvUt-lhYgysP92fFzR4itVKuMY8tAxMcoiDEhDD0k75aE2AnVPZiFx0HmvleBwMacSv0e0OkEj~Apclrk7FC-fjyJ37Wh0Z~t1a8Fu4oGiM3tdXXh1Ms~Q~gPy0q0G8RlNreWVIZyIJjJrsTDcPII~Wb9aE2csJww~pOzY9ZCBeAAF4S1dZKiJlDZzogRPureRKRMs2XEl5wgiJvlzR29~pB4Z2wZDMAhNi1k~kDDLAyoyhj3BhmiHeuQjDeDBci8o~dEEPAoufJ-JYF3C2PZ6oBraOdTsDHyb3NEcEpvItTx~w__" alt="Sanación del ADN" className="w-full h-auto object-cover" />
+            </div>
+            <div className="order-1 md:order-2">
+              <h2 className="text-4xl font-bold mb-4 text-foreground">Sanación Genética Integral</h2>
+              <p className="text-lg text-foreground/80 mb-6">Cada nivel de tu Genética Sagrada contiene información, traumas, bloqueos y potencial. A través de técnicas específicas, accedemos a cada capa para liberar lo que no te sirve y activar lo que necesitas.</p>
+              <p className="text-lg text-foreground/80">La sanación no es solo mental o emocional, es una transformación que toca tu ADN, tu linaje, tu alma y tu conexión con lo divino.</p>
             </div>
           </div>
         </div>
