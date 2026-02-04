@@ -103,11 +103,10 @@ export default function GeneticaSagrada() {
 
       {/* Hero Section */}
       <section className="py-20 md:py-32 relative overflow-hidden" style={{
-        backgroundImage: 'url(https://private-us-east-1.manuscdn.com/sessionFile/cJ0NsjiTEgFuWB5HAN1kHs/sandbox/Js0dfk85wsrGUkQVkwD7PM-img-1_1770182404000_na1fn_Z2VuZXRpY2Etc2FncmFkYS1oZXJvLWJn.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80)',
+        backgroundImage: 'url(https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/iLFmjXJKZCHmJsRY.png)',
         backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundAttachment: 'fixed'
-      }}>
+        backgroundPosition: 'center'
+      } as React.CSSProperties}>
         <div className="absolute inset-0 bg-black/40"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl mx-auto text-center">
