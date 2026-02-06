@@ -4,10 +4,18 @@ import { Card } from "@/components/ui/card";
 import { Star } from "lucide-react";
 import { testimonios } from "@/lib/testimonials";
 import { Link } from "wouter";
+import { SEO } from "@/components/SEO";
 
 export default function Testimonios() {
   return (
-    <div className="min-h-screen flex flex-col bg-background">
+    <>
+      <SEO
+        title="Testimonios - Historias de Transformación con KS Healing"
+        description="Lee historias reales de personas que han experimentado transformación profunda a través de KS Healing. Descubre cómo la energía crística cambia vidas."
+        keywords="testimonios KS Healing, historias de transformación, sanación energética, experiencias reales, YOHEV"
+        canonicalUrl="https://kshealing.com/testimonios"
+      />
+      <div className="min-h-screen flex flex-col bg-background">
       <Navigation />
 
       {/* Hero Section */}
@@ -87,5 +95,6 @@ export default function Testimonios() {
 
       <Footer />
     </div>
+    </>
   );
 }

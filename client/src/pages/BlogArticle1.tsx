@@ -4,8 +4,32 @@ import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import { ArrowLeft, Heart, Zap, Facebook, Twitter, Linkedin, MessageCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { SEO } from '@/components/SEO';
 
 export default function BlogArticle1() {
+  return (
+    <>
+      <SEO
+        title="Cómo la Energía KS Transforma tu Realidad"
+        description="La transformación personal ocurre a nivel energético fundamental. Descubre cómo la Energía KS activa cambios profundos en tu realidad."
+        keywords="energía KS, transformación personal, realidad, sanación energética, consciencia"
+        canonicalUrl="https://kshealing.com/blog/article-1"
+      />
+      <BlogArticle1Content />
+    </>
+  );
+}
+
+function BlogArticle1Content() {
+  return (
+    <div className="min-h-screen flex flex-col bg-background">
+      <Navigation />
+      <ContentComponent />
+    </div>
+  );
+}
+
+function ContentComponent() {
   useEffect(() => {
     // Actualizar metadatos de Open Graph dinámicamente
     const title = 'Cómo la Energía KS Transforma tu Realidad';

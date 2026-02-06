@@ -4,8 +4,23 @@ import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import { ArrowLeft, Heart, Star, Facebook, Twitter, Linkedin, MessageCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { SEO } from '@/components/SEO';
 
 export default function BlogArticle5() {
+  return (
+    <>
+      <SEO
+        title="Testimonios Reales: Cómo KS Healing Cambió Vidas"
+        description="Lee historias reales de transformación de profesionales que experimentaron cambios profundos a través de KS Healing."
+        keywords="testimonios, historias de transformación, KS Healing, cambio de vida, sanación"
+        canonicalUrl="https://kshealing.com/blog/article-5"
+      />
+      <BlogArticle5Content />
+    </>
+  );
+}
+
+function BlogArticle5Content() {
   useEffect(() => {
     const title = 'Testimonios Reales: Cómo KS Healing Cambió Vidas';
     const description = 'Lee historias reales de transformación de profesionales que experimentaron cambios profundos a través de KS Healing.';
@@ -88,7 +103,7 @@ export default function BlogArticle5() {
   ];
 
   return (
-    <div className="min-h-screen bg-background flex flex-col">
+    <div className="min-h-screen flex flex-col bg-background">
       <Navigation />
       
       {/* Header */}

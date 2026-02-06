@@ -5,10 +5,18 @@ import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 import { Calendar, MapPin, Users, Clock, ArrowRight } from "lucide-react";
 import { eventos } from "@/lib/events";
+import { SEO } from "@/components/SEO";
 
 export default function Eventos() {
   return (
-    <div className="min-h-screen flex flex-col bg-background">
+    <>
+      <SEO
+        title="Eventos y Seminarios KS Healing - Transmisiones de Energía Crística"
+        description="Descubre los próximos eventos y seminarios de KS Healing. Experiencias transformadoras con transmisión directa de energía crística con YOHEV."
+        keywords="eventos KS Healing, seminarios, talleres, transmisiones, energía crística, YOHEV, transformación"
+        canonicalUrl="https://kshealing.com/eventos"
+      />
+      <div className="min-h-screen flex flex-col bg-background">
       <Navigation />
 
       {/* Hero Section */}
@@ -143,5 +151,6 @@ export default function Eventos() {
 
       <Footer />
     </div>
+    </>
   );
 }

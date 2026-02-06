@@ -4,8 +4,23 @@ import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import { ArrowLeft, Zap, Heart, Facebook, Twitter, Linkedin, MessageCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { SEO } from '@/components/SEO';
 
 export default function BlogArticle3() {
+  return (
+    <>
+      <SEO
+        title="Entrelazamiento Cuántico y Consciencia: La Ciencia Detrás de KS Healing"
+        description="Descubre cómo los principios de la física cuántica y el entrelazamiento explican cómo funciona KS Healing y cómo la consciencia crea la realidad."
+        keywords="física cuántica, entrelazamiento, consciencia, KS Healing, ciencia, realidad"
+        canonicalUrl="https://kshealing.com/blog/article-3"
+      />
+      <BlogArticle3Content />
+    </>
+  );
+}
+
+function BlogArticle3Content() {
   useEffect(() => {
     const title = 'Entrelazamiento Cuántico y Consciencia: La Ciencia Detrás de KS Healing';
     const description = 'Descubre cómo los principios de la física cuántica y el entrelazamiento explican cómo funciona KS Healing y cómo la consciencia crea la realidad.';
@@ -43,7 +58,7 @@ export default function BlogArticle3() {
   };
 
   return (
-    <div className="min-h-screen bg-background flex flex-col">
+    <div className="min-h-screen flex flex-col bg-background">
       <Navigation />
       
       {/* Header */}

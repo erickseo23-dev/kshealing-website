@@ -5,10 +5,20 @@ import { Link } from "wouter";
 import { ArrowRight, Heart, Lightbulb, Users, Facebook, Instagram, Youtube, Music } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import { SEO } from "@/components/SEO";
 
 export default function SobreYOHEV() {
   const [youtubeVideos, setYoutubeVideos] = useState<any[]>([]);
   const [loading, setLoading] = useState(true);
+  
+  const seoContent = (
+    <SEO
+      title="Sobre YOHEV - Maestro de Energía Crística KS Healing"
+      description="Conoce a YOHEV, maestro y transmisor de la Energía Keiouvos Stharef. Descubre su misión de transformación global y su trabajo en sanación energética crística."
+      keywords="YOHEV, maestro KS Healing, energía crística, sanación energética, transformación espiritual, Keiouvos Stharef"
+      canonicalUrl="https://kshealing.com/sobre-yohev"
+    />
+  );
 
   useEffect(() => {
     // Fetch latest YouTube videos
@@ -49,7 +59,9 @@ export default function SobreYOHEV() {
   const displayVideos = youtubeVideos.length > 0 ? youtubeVideos : placeholderVideos;
 
   return (
-    <div className="min-h-screen flex flex-col bg-background">
+    <>
+      {seoContent}
+      <div className="min-h-screen flex flex-col bg-background">
       <Navigation />
 
       {/* Hero Section */}
@@ -394,5 +406,6 @@ export default function SobreYOHEV() {
 
       <Footer />
     </div>
+    </>
   );
 }

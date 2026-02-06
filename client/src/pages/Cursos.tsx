@@ -5,6 +5,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Link } from "wouter";
 import { Card } from "@/components/ui/card";
+import { SEO } from "@/components/SEO";
 
 // Sección 1: Programas para Público General
 const cursosPublicos = [
@@ -271,10 +272,16 @@ function CursoCard({ curso, isAdvanced = false }: { curso: any; isAdvanced?: boo
   );
 }
 
-export default function Cursos() {
+function CursosPage() {
   return (
-    <div className="min-h-screen bg-background">
-      <Navigation />
+    <>
+      <SEO
+        title="Cursos y Certificaciones KS Healing - Formación en Energía Crística"
+        description="Aprende KS Healing con cursos certificados. Desde talleres gratuitos hasta programas avanzados de formación en sanación energética crística."
+        keywords="cursos KS Healing, certificación, formación, energía crística, taller gratuito, programa avanzado, YOHEV"
+        canonicalUrl="https://kshealing.com/cursos"
+      />
+      <div className="min-h-screen flex flex-col bg-background"> <Navigation />
 
       {/* Hero Section */}
       <section className="py-20 md:py-32 bg-gradient-to-br from-primary to-primary/80">
@@ -367,5 +374,8 @@ export default function Cursos() {
 
       <Footer />
     </div>
+    </>
   );
 }
+
+export default CursosPage;

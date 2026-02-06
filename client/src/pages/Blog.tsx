@@ -4,6 +4,7 @@ import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 import { Calendar, User, ArrowRight } from "lucide-react";
+import { SEO } from "@/components/SEO";
 
 const blogPosts = [
   {
@@ -65,7 +66,14 @@ const blogPosts = [
 
 export default function Blog() {
   return (
-    <div className="min-h-screen flex flex-col bg-background">
+    <>
+      <SEO
+        title="Blog KS Healing - Artículos sobre Energía Crística y Transformación"
+        description="Lee artículos sobre KS Healing, energía crística, chakras, sanación energética y transformación espiritual. Contenido exclusivo de YOHEV."
+        keywords="blog KS Healing, artículos, energía crística, chakras, sanación, transformación espiritual, YOHEV"
+        canonicalUrl="https://kshealing.com/blog"
+      />
+      <div className="min-h-screen flex flex-col bg-background">
       <Navigation />
 
       {/* Hero Section */}
@@ -157,5 +165,6 @@ export default function Blog() {
 
       <Footer />
     </div>
+    </>
   );
 }
