@@ -4,11 +4,19 @@ import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import { ArrowLeft, Zap, Heart, Facebook, Twitter, Linkedin, MessageCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { SEO } from '@/components/SEO';
+import { SEO } from "@/components/SEO";
+import { SchemaArticle } from "@/components/SchemaArticle";
 
 export default function BlogArticle2() {
   return (
     <>
+      <SchemaArticle
+        title="Los 7 Chakras y el Chakra Timo: La Puerta al Corazón Energético"
+        description="Explora el sistema de chakras y descubre el Chakra Timo, el octavo chakra olvidado que es la puerta a tu poder creativo infinito."
+        image="/images/blog-chakras.png"
+        datePublished="2024-01-15"
+        url="https://kshealing.com/blog/article-2"
+      />
       <SEO
         title="Los 7 Chakras y el Chakra Timo: La Puerta al Corazón Energético"
         description="Explora el sistema de chakras y descubre el Chakra Timo, el octavo chakra olvidado que es la puerta a tu poder creativo infinito."

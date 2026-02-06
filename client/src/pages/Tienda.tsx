@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { ShoppingCart, Star, Heart, ExternalLink } from "lucide-react";
 import { useState } from "react";
 import { SEO } from "@/components/SEO";
+import { SchemaProduct } from "@/components/SchemaProduct";
 
 const productos = [
   {
@@ -134,6 +135,20 @@ export default function Tienda() {
   const [filtroCategoria, setFiltroCategoria] = useState<string | null>(null);
   const [carrito, setCarrito] = useState<typeof productos>([]);
   
+  // Generar schemas para los primeros 3 productos destacados
+  const productSchemas = productos.slice(0, 3).map(p => (
+    <SchemaProduct
+      key={p.id}
+      name={p.nombre}
+      description={p.descripcion}
+      image={p.imagen}
+      price={p.precio.replace('$', '').replace('Por definir', '0')}
+      url={p.enlace}
+      ratingValue={p.rating}
+      ratingCount={p.resenas}
+    />
+  ));
+  
   const seoContent = (
     <SEO
       title="Tienda KS Healing - Libros, Cursos y Programas"
@@ -155,6 +170,7 @@ export default function Tienda() {
 
   return (
     <>
+      {productSchemas}
       {seoContent}
       <div className="min-h-screen flex flex-col bg-background">
       <Navigation />

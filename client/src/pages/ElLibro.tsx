@@ -5,10 +5,20 @@ import { ArrowRight, BookOpen, QrCode, Play, Download, CheckCircle2, Zap } from 
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { SEO } from "@/components/SEO";
+import { SchemaProduct } from "@/components/SchemaProduct";
 
 export default function ElLibro() {
   return (
     <>
+      <SchemaProduct
+        name="KS Healing: La Nueva Frecuencia Crística"
+        description="Libro intencionalizado con Energía KS. 18 capítulos, 234 páginas, 10 códigos QR con transmisiones de energía. Manual técnico, narrativa y ejercicios de transformación profunda."
+        image="https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/MrRNPEinRqrTZOhj.png"
+        price="24.99"
+        url="https://kshealing.com/el-libro"
+        ratingValue={5}
+        ratingCount={87}
+      />
       <SEO
         title="KS Healing: La Nueva Frecuencia Crística - Libro Intencionalizado"
         description="Lee el libro intencionalizado de KS Healing. 18 capítulos, 234 páginas, 10 códigos QR con transmisiones de energía. Manual técnico, narrativa y ejercicios de transformación profunda."

@@ -4,11 +4,19 @@ import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import { ArrowLeft, Zap, Heart, Facebook, Twitter, Linkedin, MessageCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { SEO } from '@/components/SEO';
+import { SEO } from "@/components/SEO";
+import { SchemaArticle } from "@/components/SchemaArticle";
 
 export default function BlogArticle4() {
   return (
     <>
+      <SchemaArticle
+        title="Sintropía vs Entropía: Por Qué Tu Cuerpo Necesita Regeneración Energética"
+        description="Comprende la diferencia entre sintropía y entropía, y cómo tu cuerpo necesita regeneración energética constante para mantener coherencia y vitalidad."
+        image="/images/blog-sintropia.png"
+        datePublished="2024-01-25"
+        url="https://kshealing.com/blog/article-4"
+      />
       <SEO
         title="Sintropía vs Entropía: Por Qué Tu Cuerpo Necesita Regeneración Energética"
         description="Comprende la diferencia entre sintropía y entropía, y cómo tu cuerpo necesita regeneración energética constante para mantener coherencia y vitalidad."

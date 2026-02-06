@@ -4,11 +4,19 @@ import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import { ArrowLeft, Heart, Star, Facebook, Twitter, Linkedin, MessageCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { SEO } from '@/components/SEO';
+import { SEO } from "@/components/SEO";
+import { SchemaArticle } from "@/components/SchemaArticle";
 
 export default function BlogArticle5() {
   return (
     <>
+      <SchemaArticle
+        title="Testimonios Reales: Cómo KS Healing Cambió Vidas"
+        description="Lee historias reales de transformación de profesionales que experimentaron cambios profundos a través de KS Healing."
+        image="/images/blog-testimonios.png"
+        datePublished="2024-02-01"
+        url="https://kshealing.com/blog/article-5"
+      />
       <SEO
         title="Testimonios Reales: Cómo KS Healing Cambió Vidas"
         description="Lee historias reales de transformación de profesionales que experimentaron cambios profundos a través de KS Healing."

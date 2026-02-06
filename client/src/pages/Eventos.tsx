@@ -6,10 +6,24 @@ import { Link } from "wouter";
 import { Calendar, MapPin, Users, Clock, ArrowRight } from "lucide-react";
 import { eventos } from "@/lib/events";
 import { SEO } from "@/components/SEO";
+import { SchemaEvent } from "@/components/SchemaEvent";
 
 export default function Eventos() {
+  // Generar schema para el primer evento destacado
+  const eventSchema = (
+    <SchemaEvent
+      name="Seminario de Energía KS Healing"
+      description="Experiencia transformadora con transmisión directa de Energía KS. Seminario en vivo con YOHEV."
+      image="/images/evento-principal.png"
+      startDate="2026-03-15T09:00:00Z"
+      endDate="2026-03-15T18:00:00Z"
+      url="https://kshealing.com/eventos"
+    />
+  );
+  
   return (
     <>
+      {eventSchema}
       <SEO
         title="Eventos y Seminarios KS Healing - Transmisiones de Energía Crística"
         description="Descubre los próximos eventos y seminarios de KS Healing. Experiencias transformadoras con transmisión directa de energía crística con YOHEV."

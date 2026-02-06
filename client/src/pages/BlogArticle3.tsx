@@ -4,11 +4,19 @@ import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import { ArrowLeft, Zap, Heart, Facebook, Twitter, Linkedin, MessageCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { SEO } from '@/components/SEO';
+import { SEO } from "@/components/SEO";
+import { SchemaArticle } from "@/components/SchemaArticle";
 
 export default function BlogArticle3() {
   return (
     <>
+      <SchemaArticle
+        title="Entrelazamiento Cuántico y Consciencia: La Ciencia Detrás de KS Healing"
+        description="Descubre cómo los principios de la física cuántica y el entrelazamiento explican cómo funciona KS Healing y cómo la consciencia crea la realidad."
+        image="/images/blog-cuantica.png"
+        datePublished="2024-01-20"
+        url="https://kshealing.com/blog/article-3"
+      />
       <SEO
         title="Entrelazamiento Cuántico y Consciencia: La Ciencia Detrás de KS Healing"
         description="Descubre cómo los principios de la física cuántica y el entrelazamiento explican cómo funciona KS Healing y cómo la consciencia crea la realidad."
