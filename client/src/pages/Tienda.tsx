@@ -4,6 +4,7 @@ import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ShoppingCart, Star, Heart, ExternalLink } from "lucide-react";
 import { useState } from "react";
+import { SEO } from "@/components/SEO";
 
 const productos = [
   {
@@ -129,10 +130,20 @@ const productos = [
 ];
 
 export default function Tienda() {
-  const [filtroCategoria, setFiltroCategoria] = useState("");
+  const [filtroActivo, setFiltroActivo] = useState("Todos");
+  const [filtroCategoria, setFiltroCategoria] = useState<string | null>(null);
   const [carrito, setCarrito] = useState<typeof productos>([]);
+  
+  const seoContent = (
+    <SEO
+      title="Tienda KS Healing - Libros, Cursos y Programas"
+      description="Compra libros, cursos, certificaciones y programas de KS Healing. Acceso a transmisiones de energía, meditaciones y recursos de transformación espiritual."
+      keywords="tienda KS Healing, libros, cursos, certificación, energía crística, sanación energética, YOHEV"
+      canonicalUrl="https://kshealing.com/tienda"
+    />
+  );
 
-  const categorias = ["Libros", "Cursos"];
+  const categorias = ["Todos", "Libros", "Cursos", "Gratuito"];
   
   const productosFiltrados = filtroCategoria
     ? productos.filter((p) => p.categoria === filtroCategoria)
@@ -143,7 +154,9 @@ export default function Tienda() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col bg-background">
+    <>
+      {seoContent}
+      <div className="min-h-screen flex flex-col bg-background">
       <Navigation />
 
       {/* Hero Section */}
@@ -286,5 +299,6 @@ export default function Tienda() {
 
       <Footer />
     </div>
+    </>
   );
 }

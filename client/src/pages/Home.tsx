@@ -7,6 +7,8 @@ import { Link } from "wouter";
 import { Sparkles, Heart, Zap, BookOpen, Users, ArrowRight, Star } from "lucide-react";
 import { eventos } from "@/lib/events";
 import { testimonios } from "@/lib/testimonials";
+import { SEO } from "@/components/SEO";
+import CookieConsent from "@/components/CookieConsent";
 
 function TestimonialsCarousel() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -133,6 +135,13 @@ function TestimonialsCarousel() {
 
 export default function Home() {
   return (
+    <>
+      <SEO
+        title="KS Healing - Energía Crística para la Transformación"
+        description="Descubre la Energía Keiouvos Stharef, un sistema de sanación energética que facilita transformación profunda. Aprende con YOHEV a través de sesiones, cursos, meditaciones y el libro intencionalizado."
+        keywords="sanación energética, energía KS, Keiouvos Stharef, transformación espiritual, meditación, YOHEV, coherencia energética, consciencia crística"
+        canonicalUrl="https://kshealing.com/"
+      />
     <div className="min-h-screen flex flex-col bg-background">
       <Navigation />
 
@@ -584,7 +593,8 @@ export default function Home() {
         </div>
       </section>
 
-      <Footer />
+      <CookieConsent />
     </div>
+    </>
   );
 }

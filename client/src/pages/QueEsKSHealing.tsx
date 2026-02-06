@@ -5,6 +5,7 @@ import { Link } from "wouter";
 import { ArrowRight, CheckCircle2, Zap, Brain, Heart, ChevronLeft, ChevronRight, Star } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import { SEO } from "@/components/SEO";
 
 export default function QueEsKSHealing() {
   const [currentTestimonial, setCurrentTestimonial] = useState(0);
@@ -96,7 +97,14 @@ export default function QueEsKSHealing() {
   ];
 
   return (
-    <div className="min-h-screen flex flex-col bg-background">
+    <>
+      <SEO
+        title="¿Qué es KS Healing? - Energía Crística para Transformación"
+        description="Descubre qué es KS Healing: un sistema de sanación energética basado en la Energía Keiouvos Stharef. Aprende cómo funciona y cómo puede transformar tu vida."
+        keywords="KS Healing, energía crística, sanación energética, transformación espiritual, coherencia energética, Keiouvos Stharef"
+        canonicalUrl="https://kshealing.com/que-es-ks-healing"
+      />
+      <div className="min-h-screen flex flex-col bg-background">
       <Navigation />
 
       {/* Hero Section */}
@@ -553,5 +561,6 @@ export default function QueEsKSHealing() {
 
       <Footer />
     </div>
+    </>
   );
 }
