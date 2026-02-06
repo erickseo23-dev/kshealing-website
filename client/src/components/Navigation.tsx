@@ -12,7 +12,6 @@ export default function Navigation() {
     { label: "SOBRE YOHEV", href: "/sobre-yohev" },
     { label: "CURSOS Y PROGRAMAS", href: "/cursos" },
     { label: "EL LIBRO", href: "/el-libro" },
-    { label: "TIENDA", href: "/tienda" },
     { label: "BLOG", href: "/blog" },
     { label: "TESTIMONIOS", href: "/testimonios" },
     { label: "EVENTOS", href: "/eventos" },

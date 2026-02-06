@@ -222,15 +222,15 @@ export default function BlogArticle3() {
               <Heart className="text-primary mt-1 flex-shrink-0" size={24} />
               <div>
                 <h3 className="text-xl font-display font-bold text-foreground mb-2">
-                  Experimenta la Física Cuántica de la Consciencia
+                  Profundiza en KS Healing
                 </h3>
                 <p className="text-muted-foreground mb-4">
-                  Descubre cómo KS Healing aplica los principios cuánticos para transformar tu vida. Reserva una sesión hoy.
+                  Descubre cómo KS Healing aplica los principios cuánticos para transformar tu vida. Lee "KS Healing: La Nueva Frecuencia Crística" y despierta tu verdadero potencial.
                 </p>
-                <Link href="/contacto">
+                <Link href="/el-libro">
                   <a>
                     <Button className="bg-primary hover:bg-primary/90">
-                      Reservar Sesión
+                      Conocer el Libro
                     </Button>
                   </a>
                 </Link>

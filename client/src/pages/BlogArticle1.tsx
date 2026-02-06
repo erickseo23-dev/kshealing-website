@@ -211,15 +211,15 @@ export default function BlogArticle1() {
               <Heart className="text-primary mt-1 flex-shrink-0" size={24} />
               <div>
                 <h3 className="text-xl font-display font-bold text-foreground mb-2">
-                  Comienza Tu Transformación Hoy
+                  Profundiza en KS Healing
                 </h3>
                 <p className="text-muted-foreground mb-4">
-                  Experimenta el poder de la Energía KS y transforma tu realidad. Cada momento es una oportunidad para despertar a tu verdadera naturaleza.
+                  Descubre todos los secretos de la Energía KS y cómo transformar tu realidad. Lee "KS Healing: La Nueva Frecuencia Crística" y accede a conocimiento profundo que cambiará tu vida.
                 </p>
-                <Link href="/contacto">
+                <Link href="/el-libro">
                   <a>
                     <Button className="bg-primary hover:bg-primary/90">
-                      Reservar Sesión
+                      Conocer el Libro
                     </Button>
                   </a>
                 </Link>

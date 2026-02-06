@@ -247,15 +247,15 @@ export default function BlogArticle2() {
               <Heart className="text-primary mt-1 flex-shrink-0" size={24} />
               <div>
                 <h3 className="text-xl font-display font-bold text-foreground mb-2">
-                  Activa Tu Chakra Timo Hoy
+                  Profundiza en KS Healing
                 </h3>
                 <p className="text-muted-foreground mb-4">
-                  Descubre el poder de tu Chakra Timo a través de una sesión de KS Healing. Reserva tu consulta gratuita ahora.
+                  Descubre todos los secretos del Chakra Timo y cómo activar tu poder creativo. Lee "KS Healing: La Nueva Frecuencia Crística" y transforma tu vida.
                 </p>
-                <Link href="/contacto">
+                <Link href="/el-libro">
                   <a>
                     <Button className="bg-primary hover:bg-primary/90">
-                      Reservar Sesión
+                      Conocer el Libro
                     </Button>
                   </a>
                 </Link>

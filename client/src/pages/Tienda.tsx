@@ -2,7 +2,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Star, Heart, ExternalLink, BookOpen, Zap } from "lucide-react";
+import { ShoppingCart, Star, Heart, ExternalLink } from "lucide-react";
 import { useState } from "react";
 
 const productos = [
@@ -14,7 +14,7 @@ const productos = [
     categoria: "Libros",
     rating: 5,
     resenas: 87,
-    imagen: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/MrRNPEinRqrTZOhj.png",
+    imagen: "📕",
     stock: "En stock",
     enlace: "https://a.co/d/ini6U2Y",
   },
@@ -26,7 +26,7 @@ const productos = [
     categoria: "Libros",
     rating: 5,
     resenas: 156,
-    imagen: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/DIwtEkxVYJefxHIS.jpg",
+    imagen: "📱",
     stock: "Disponible",
     enlace: "https://a.co/d/45jDr6p",
   },
@@ -38,7 +38,7 @@ const productos = [
     categoria: "Libros",
     rating: 4.9,
     resenas: 64,
-    imagen: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/wTcABhDGePqFMEqs.png",
+    imagen: "📘",
     stock: "En stock",
     enlace: "https://a.co/d/en9RPql",
   },
@@ -50,7 +50,7 @@ const productos = [
     categoria: "Libros",
     rating: 4.9,
     resenas: 42,
-    imagen: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/nGTwEzzpNKfmvssq.jpg",
+    imagen: "📱",
     stock: "Disponible",
     enlace: "https://a.co/d/6Tg6XGj",
   },
@@ -62,7 +62,7 @@ const productos = [
     categoria: "Libros",
     rating: 5,
     resenas: 78,
-    imagen: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/vupSRnQDEVzOSrUx.png",
+    imagen: "📙",
     stock: "En stock",
     enlace: "https://a.co/d/fJyOYVP",
   },
@@ -74,81 +74,94 @@ const productos = [
     categoria: "Libros",
     rating: 5,
     resenas: 55,
-    imagen: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/ZpJlBfWKHmLtpdxZ.jpg",
+    imagen: "📱",
     stock: "Disponible",
     enlace: "https://a.co/d/2RWWKcJ",
   },
   {
     id: 7,
     nombre: "KS Healing - Certificación",
-    precio: "$145",
-    descripcion: "Programa de formación en la técnica de sanación energética KS Healing. Aprende a trabajar directamente con la Energía Keiouvos Stharef y convértete en practitioner certificado.",
+    precio: "Por definir",
+    descripcion: "Programa de formación en la técnica de sanación energética KS Healing. Aprende a trabajar directamente con la Energía Keiouvos Stharef y conviértete en practitioner certificado.",
     categoria: "Cursos",
     rating: 5,
     resenas: 42,
-    imagen: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/KzMWJULlZLjXxGFa.png",
+    imagen: "🎓",
     stock: "Disponible",
-    enlace: "https://www.i3cdigital.com/offers/FQuDTjNV/checkout",
+    enlace: "https://kajabi.com",
   },
   {
     id: 8,
-    nombre: "Club del Retiro Sagrado",
-    precio: "$29/mes",
-    descripcion: "Membresía de transformación. Retiros mensuales en vivo con YOHEV. Acceso a grabaciones ilimitadas, comunidad de miembros y contenido exclusivo. Cada mes, una nueva oportunidad de evolucionar.",
+    nombre: "D.A.R.T. - Deep Archetypal Renewal Therapy",
+    precio: "Por definir",
+    descripcion: "Programa avanzado de transformación profunda que trabaja con arquetipos internos y renovación de patrones. Dirigido por YOHEV.",
+    categoria: "Cursos",
+    rating: 4.9,
+    resenas: 28,
+    imagen: "✨",
+    stock: "Disponible",
+    enlace: "https://kajabi.com",
+  },
+  {
+    id: 9,
+    nombre: "Genética Sagrada - Las 12 Capas del ADN",
+    precio: "Por definir",
+    descripcion: "Exploración profunda de las 12 dimensiones del ADN espiritual. Accede a la sabiduría ancestral de tu linaje y activa tu potencial multidimensional.",
     categoria: "Cursos",
     rating: 5,
-    resenas: 156,
-    imagen: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/mEaEKxUPTCzmhtpD.jpg",
+    resenas: 35,
+    imagen: "🧬",
     stock: "Disponible",
-    enlace: "/club-retiro-sagrado",
+    enlace: "https://kajabi.com",
   },
-
   {
-    id: 11,
-    nombre: "Taller Gratuito KS Healing",
-    precio: "Gratis",
-    descripcion: "Taller introductorio gratuito donde YOHEV comparte los fundamentos de la Energía KS Healing. Perfecto para principiantes que desean explorar esta metodología de transformación.",
-    categoria: "Gratuito",
+    id: 10,
+    nombre: "Meditación Ascendente",
+    precio: "Por definir",
+    descripcion: "Método progresivo de expansión de consciencia. Desarrolla presencia, claridad interna y regulación emocional a través de la práctica continua guiada.",
+    categoria: "Cursos",
     rating: 5,
-    resenas: 234,
-    imagen: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/ApFIpMkfyrfGeKPH.png",
+    resenas: 89,
+    imagen: "🧘",
     stock: "Disponible",
-    enlace: "/taller-ks-healing",
+    enlace: "https://kajabi.com",
   },
 ];
 
 export default function Tienda() {
   const [filtroCategoria, setFiltroCategoria] = useState("");
+  const [carrito, setCarrito] = useState<typeof productos>([]);
 
-  const categorias = ["Libros", "Cursos", "Gratuito"];
+  const categorias = ["Libros", "Cursos"];
   
   const productosFiltrados = filtroCategoria
     ? productos.filter((p) => p.categoria === filtroCategoria)
     : productos;
+
+  const agregarAlCarrito = (producto: typeof productos[0]) => {
+    setCarrito([...carrito, producto]);
+  };
 
   return (
     <div className="min-h-screen flex flex-col bg-background">
       <Navigation />
 
       {/* Hero Section */}
-      <section className="py-16 md:py-24 bg-gradient-to-br from-primary/20 via-background to-accent/10">
+      <section className="py-16 md:py-24 bg-gradient-to-br from-blue-800 via-blue-900 to-slate-700 text-white">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="font-display text-5xl md:text-6xl font-bold mb-6 text-foreground">
-              Nuestra <span className="text-primary">Tienda</span>
+            <h1 className="font-display text-5xl md:text-6xl font-bold mb-6">
+              Nuestros Libros
             </h1>
-            <p className="text-xl text-muted-foreground mb-4">
-              Accede a libros, cursos y programas de transformación diseñados para tu evolución espiritual
-            </p>
-            <p className="text-lg text-primary font-semibold">
-              Libros • Cursos • Programas • Talleres Gratuitos
+            <p className="text-xl text-white/90">
+              Explora la sabiduría y transformación a través de nuestras publicaciones
             </p>
           </div>
         </div>
       </section>
 
       {/* Filters and Cart */}
-      <section className="py-8 bg-gradient-to-r from-primary/5 to-accent/5 border-b border-border">
+      <section className="py-8 bg-blue-50 border-b border-border">
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between mb-6">
             <div>
@@ -158,8 +171,8 @@ export default function Tienda() {
                   onClick={() => setFiltroCategoria("")}
                   className={`px-4 py-2 rounded-lg font-semibold transition-colors ${
                     filtroCategoria === ""
-                      ? "bg-primary text-white"
-                      : "bg-background border border-border text-foreground hover:bg-primary/10"
+                      ? "bg-blue-800 text-white"
+                      : "bg-background border border-border text-foreground hover:bg-blue-100"
                   }`}
                 >
                   Todos
@@ -170,8 +183,8 @@ export default function Tienda() {
                     onClick={() => setFiltroCategoria(cat)}
                     className={`px-4 py-2 rounded-lg font-semibold transition-colors ${
                       filtroCategoria === cat
-                        ? "bg-primary text-white"
-                        : "bg-background border border-border text-foreground hover:bg-primary/10"
+                        ? "bg-blue-800 text-white"
+                        : "bg-background border border-border text-foreground hover:bg-blue-100"
                     }`}
                   >
                     {cat}
@@ -188,22 +201,17 @@ export default function Tienda() {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {productosFiltrados.map((producto) => (
-              <Card key={producto.id} className="overflow-hidden hover:shadow-lg transition-shadow flex flex-col h-full">
-                {/* Image Container */}
-                <div className="relative w-full h-64 bg-gradient-to-br from-primary/10 to-accent/10 overflow-hidden group">
-                  <img 
-                    src={producto.imagen}
-                    alt={producto.nombre}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
+              <Card key={producto.id} className="overflow-hidden hover:shadow-lg transition-shadow flex flex-col">
+                <div className="bg-gradient-to-br from-blue-100 to-slate-100 h-48 flex items-center justify-center relative group">
+                  <span className="text-6xl">{producto.imagen}</span>
                   <button className="absolute top-3 right-3 p-2 rounded-lg bg-white/80 hover:bg-white transition-colors opacity-0 group-hover:opacity-100">
-                    <Heart size={20} className="text-primary" />
+                    <Heart size={20} className="text-blue-800" />
                   </button>
                 </div>
 
                 <div className="p-6 flex flex-col flex-grow">
                   <div className="mb-2">
-                    <span className="text-xs font-semibold text-primary bg-primary/10 px-2 py-1 rounded">
+                    <span className="text-xs font-semibold text-blue-800 bg-blue-100 px-2 py-1 rounded">
                       {producto.categoria}
                     </span>
                   </div>
@@ -223,7 +231,7 @@ export default function Tienda() {
                         <Star
                           key={i}
                           size={14}
-                          className={i < Math.floor(producto.rating) ? "fill-primary text-primary" : "text-muted-foreground"}
+                          className={i < Math.floor(producto.rating) ? "fill-blue-500 text-blue-500" : "text-muted-foreground"}
                         />
                       ))}
                     </div>
@@ -235,7 +243,7 @@ export default function Tienda() {
                   {/* Price */}
                   <div className="mb-4">
                     <div className="flex items-center gap-2">
-                      <span className="text-2xl font-bold text-primary">
+                      <span className="text-2xl font-bold text-blue-800">
                         {producto.precio}
                       </span>
                     </div>
@@ -244,26 +252,19 @@ export default function Tienda() {
                     </p>
                   </div>
 
-                  {/* CTA Button */}
-                  {producto.enlace.startsWith("http") ? (
-                    <a
-                      href={producto.enlace}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="w-full"
+                  <a
+                    href={producto.enlace}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full"
+                  >
+                    <Button
+                      className="w-full bg-blue-800 hover:bg-blue-900 text-white gap-2"
                     >
-                      <Button className="w-full bg-primary hover:bg-primary/90 text-white gap-2">
-                        <ExternalLink size={16} />
-                        {producto.categoria === "Libros" ? "Ver en Amazon" : "Inscribirse"}
-                      </Button>
-                    </a>
-                  ) : (
-                    <a href={producto.enlace} className="w-full">
-                      <Button className="w-full bg-primary hover:bg-primary/90 text-white gap-2">
-                        Más Información
-                      </Button>
-                    </a>
-                  )}
+                      <ExternalLink size={16} />
+                      Ver en Amazon
+                    </Button>
+                  </a>
                 </div>
               </Card>
             ))}
@@ -271,27 +272,15 @@ export default function Tienda() {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-16 md:py-24 bg-gradient-to-br from-primary/10 to-accent/10">
+      {/* CTA */}
+      <section className="py-16 md:py-24 bg-blue-50">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-6">
-            ¿Listo para tu transformación?
+          <h2 className="font-display text-3xl font-bold text-foreground mb-6">
+            ¿Buscas más?
           </h2>
           <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Cada producto en nuestra tienda está diseñado con intención y energía para apoyar tu camino de evolución espiritual y sanación.
+            Descubre nuestros programas de formación, cursos y meditaciones guiadas en la sección de Cursos.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="/taller-ks-healing">
-              <Button size="lg" className="bg-primary hover:bg-primary/90 text-white gap-2">
-                Explorar Taller Gratuito
-              </Button>
-            </a>
-            <a href="/ks-healing">
-              <Button size="lg" variant="outline" className="gap-2">
-                Ver Certificación
-              </Button>
-            </a>
-          </div>
         </div>
       </section>
 

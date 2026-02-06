@@ -244,15 +244,15 @@ export default function BlogArticle4() {
               <Heart className="text-primary mt-1 flex-shrink-0" size={24} />
               <div>
                 <h3 className="text-xl font-display font-bold text-foreground mb-2">
-                  Activa la Sintropía en Tu Cuerpo
+                  Profundiza en KS Healing
                 </h3>
                 <p className="text-muted-foreground mb-4">
-                  Experimenta la regeneración y transformación a través de KS Healing. Comienza tu viaje hacia la sintropía hoy.
+                  Descubre los secretos de la sintropía, entropía y neguentropía. Lee "KS Healing: La Nueva Frecuencia Crística" y activa tu regeneración celular.
                 </p>
-                <Link href="/contacto">
+                <Link href="/el-libro">
                   <a>
                     <Button className="bg-primary hover:bg-primary/90">
-                      Reservar Sesión
+                      Conocer el Libro
                     </Button>
                   </a>
                 </Link>

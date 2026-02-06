@@ -240,15 +240,15 @@ export default function BlogArticle5() {
               <Heart className="text-primary mt-1 flex-shrink-0" size={24} />
               <div>
                 <h3 className="text-xl font-display font-bold text-foreground mb-2">
-                  Comienza Tu Transformación Hoy
+                  Profundiza en KS Healing
                 </h3>
                 <p className="text-muted-foreground mb-4">
-                  Como las personas en estos testimonios, tú también puedes experimentar una transformación profunda. Reserva tu sesión de consulta gratuita con YOHEV ahora.
+                  Como las personas en estos testimonios, tú también puedes experimentar una transformación profunda. Lee "KS Healing: La Nueva Frecuencia Crística" y descubre cómo activar tu verdadero potencial.
                 </p>
-                <Link href="/contacto">
+                <Link href="/el-libro">
                   <a>
                     <Button className="bg-primary hover:bg-primary/90">
-                      Reservar Sesión Gratuita
+                      Conocer el Libro
                     </Button>
                   </a>
                 </Link>
