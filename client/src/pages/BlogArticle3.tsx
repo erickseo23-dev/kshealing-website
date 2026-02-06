@@ -155,7 +155,7 @@ export default function BlogArticle3() {
             </ul>
 
             <h2 className="text-2xl font-display font-bold text-foreground mt-8 mb-4">
-              La Transmisión Intencionalizada
+              La Transmisión Intencionada
             </h2>
 
             <p className="text-muted-foreground leading-relaxed mb-6">
