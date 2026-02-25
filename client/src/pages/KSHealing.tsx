@@ -83,7 +83,7 @@ export default function KSHealing() {
       <section className="relative py-24 md:py-48 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
-            src="/images/ks-healing-professionals-hero.png" 
+            src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/ullWqPyNLdEkQkIg.png" 
             alt="Profesionales de KS Healing" 
             className="w-full h-full object-cover"
           />

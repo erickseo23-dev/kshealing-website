@@ -14,7 +14,7 @@ export default function RetiroSagrado() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="py-20 md:py-32 bg-cover bg-center bg-no-repeat relative" style={{backgroundImage: 'url(/images/retiro-8-amor-divino.png)'}}>
+      <section className="py-20 md:py-32 bg-cover bg-center bg-no-repeat relative" style={{backgroundImage: 'url(https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/gCzkYldHFFRJUcnh.png)'}}>
         <div className="absolute inset-0 bg-black/50"></div>
         <div className="relative z-10">
           <div className="container mx-auto px-4">
@@ -80,7 +80,7 @@ export default function RetiroSagrado() {
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 rounded-2xl blur-2xl"></div>
                      <img 
-                src="/images/retiro-8-consciencia-amor.png" 
+                src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/aCpnQZquZjBhFGAn.png" 
                 alt="Consciencia del Amor" 
                 className="relative w-full rounded-2xl shadow-2xl object-cover aspect-video"
               />
@@ -134,7 +134,7 @@ export default function RetiroSagrado() {
             <div className="relative group">
               <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 rounded-2xl blur-2xl"></div>
               <img 
-                src="/images/retiro-8-amor-divino.png" 
+                src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/gCzkYldHFFRJUcnh.png" 
                 alt="Pareja en Amor" 
                 className="relative w-full rounded-2xl shadow-2xl object-cover aspect-video group-hover:shadow-3xl transition-shadow"
               />
@@ -142,7 +142,7 @@ export default function RetiroSagrado() {
             <div className="relative group">
               <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 rounded-2xl blur-2xl"></div>
               <img 
-                src="/images/retiro-8-transformacion-amor.png" 
+                src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/BCWWblXCNMpggPfd.png" 
                 alt="Familia en Amor" 
                 className="relative w-full rounded-2xl shadow-2xl object-cover aspect-video group-hover:shadow-3xl transition-shadow"
               />
@@ -569,14 +569,14 @@ export default function RetiroSagrado() {
 
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               {[
-                { title: "Retiro Sagrado 1 - VOLVER AL SILENCIO", image: "/images/retiro-volver-silencio.png" },
-                { title: "Retiro Sagrado 2 - LIMPIA TU ENERGÍA", image: "/images/retiro-limpia-energia.png" },
-                { title: "Retiro Sagrado 3 - CÓDIGOS DE LUZ", image: "/images/retiro-codigos-luz.png" },
-                { title: "Retiro Sagrado 4 - RECUPERA TU CENTRO", image: "/images/retiro-recupera-centro.png" },
-                { title: "Retiro Sagrado 5 - SANA Y CIERRA CICLOS", image: "/images/retiro-sana-ciclos.png" },
-                { title: "Retiro Sagrado 6 - CLAVES INTERNAS PARA EL BIENESTAR VERDADERO", image: "/images/retiro-claves-bienestar.png" },
-                { title: "Retiro Sagrado 7 - PRESENCIA VIVA", image: "/images/retiro-presencia-viva.png" },
-                { title: "Retiro Sagrado 8 - LA ARQUITECTURA DEL AMOR", image: "/images/retiro-8-amor-divino.png" },
+                { title: "Retiro Sagrado 1 - VOLVER AL SILENCIO", image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/yAWkbSAsDZEhZfSE.png" },
+                { title: "Retiro Sagrado 2 - LIMPIA TU ENERGÍA", image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/awwYPuBlxOHblLFU.png" },
+                { title: "Retiro Sagrado 3 - CÓDIGOS DE LUZ", image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/SlhMwHLojSoulpMw.png" },
+                { title: "Retiro Sagrado 4 - RECUPERA TU CENTRO", image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/yDLnhOHAVkuqDLHK.png" },
+                { title: "Retiro Sagrado 5 - SANA Y CIERRA CICLOS", image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/xSECzmGUyDixWbNv.png" },
+                { title: "Retiro Sagrado 6 - CLAVES INTERNAS PARA EL BIENESTAR VERDADERO", image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/rnjSKFLtTUKVGlty.png" },
+                { title: "Retiro Sagrado 7 - PRESENCIA VIVA", image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/bwDlHyNVFNgvsNIk.png" },
+                { title: "Retiro Sagrado 8 - LA ARQUITECTURA DEL AMOR", image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/gCzkYldHFFRJUcnh.png" },
               ].map((retiro, idx) => (
                 <div key={idx} className="group relative overflow-hidden rounded-lg h-40 cursor-pointer">
                   <img

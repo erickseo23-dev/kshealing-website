@@ -375,7 +375,7 @@ export default function GeneticaSagrada() {
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 rounded-2xl blur-2xl"></div>
               <img 
-                src="/images/genetica-sagrada-multidimensional.png" 
+                src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/ejySBNiZWxcfBRkN.png" 
                 alt="Consciencia Multidimensional" 
                 className="relative w-full rounded-2xl shadow-2xl object-cover aspect-video"
               />

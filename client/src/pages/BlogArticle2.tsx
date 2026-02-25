@@ -13,7 +13,7 @@ export default function BlogArticle2() {
       <SchemaArticle
         title="Los 7 Chakras y el Chakra Timo: La Puerta al Corazón Energético"
         description="Explora el sistema de chakras y descubre el Chakra Timo, el octavo chakra olvidado que es la puerta a tu poder creativo infinito."
-        image="/images/blog-chakras.png"
+        image="https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/ehjgkjmOjWfazhMG.png"
         datePublished="2024-01-15"
         url="https://kshealing.com/blog/article-2"
       />
@@ -32,7 +32,7 @@ function BlogArticle2Content() {
   useEffect(() => {
     const title = 'Los 7 Chakras y el Chakra Timo: La Puerta al Corazón Energético';
     const description = 'Explora el sistema de chakras y descubre el Chakra Timo, el octavo chakra olvidado que es la puerta a tu poder creativo infinito.';
-    const image = '/images/blog-chakras.png';
+    const image = 'https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/ehjgkjmOjWfazhMG.png';
     const url = window.location.href;
 
     const updateMeta = (property: string, content: string) => {
@@ -93,7 +93,7 @@ function BlogArticle2Content() {
           {/* Featured Image */}
           <div className="mb-8 rounded-lg overflow-hidden h-96">
             <img 
-              src="/images/blog-chakras.png" 
+              src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/ehjgkjmOjWfazhMG.png" 
               alt="Los 7 Chakras y el Chakra Timo"
               className="w-full h-full object-cover"
             />

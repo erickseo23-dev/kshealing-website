@@ -13,7 +13,7 @@ export default function BlogArticle5() {
       <SchemaArticle
         title="Testimonios Reales: Cómo KS Healing Cambió Vidas"
         description="Lee historias reales de transformación de profesionales que experimentaron cambios profundos a través de KS Healing."
-        image="/images/blog-testimonios.png"
+        image="https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/PfqwzMjlkDTLiyNS.png"
         datePublished="2024-02-01"
         url="https://kshealing.com/blog/article-5"
       />
@@ -32,7 +32,7 @@ function BlogArticle5Content() {
   useEffect(() => {
     const title = 'Testimonios Reales: Cómo KS Healing Cambió Vidas';
     const description = 'Lee historias reales de transformación de profesionales que experimentaron cambios profundos a través de KS Healing.';
-    const image = '/images/blog-testimonios.png';
+    const image = 'https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/PfqwzMjlkDTLiyNS.png';
     const url = window.location.href;
 
     const updateMeta = (property: string, content: string) => {
@@ -138,7 +138,7 @@ function BlogArticle5Content() {
           {/* Featured Image */}
           <div className="mb-8 rounded-lg overflow-hidden h-96">
             <img 
-              src="/images/blog-testimonios.png" 
+              src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/PfqwzMjlkDTLiyNS.png" 
               alt="Testimonios Reales"
               className="w-full h-full object-cover"
             />

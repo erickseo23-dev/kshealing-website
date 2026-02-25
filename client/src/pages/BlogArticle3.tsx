@@ -13,7 +13,7 @@ export default function BlogArticle3() {
       <SchemaArticle
         title="Entrelazamiento Cuántico y Consciencia: La Ciencia Detrás de KS Healing"
         description="Descubre cómo los principios de la física cuántica y el entrelazamiento explican cómo funciona KS Healing y cómo la consciencia crea la realidad."
-        image="/images/blog-cuantica.png"
+        image="https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/BJdRujuOLkovuKSc.png"
         datePublished="2024-01-20"
         url="https://kshealing.com/blog/article-3"
       />
@@ -32,7 +32,7 @@ function BlogArticle3Content() {
   useEffect(() => {
     const title = 'Entrelazamiento Cuántico y Consciencia: La Ciencia Detrás de KS Healing';
     const description = 'Descubre cómo los principios de la física cuántica y el entrelazamiento explican cómo funciona KS Healing y cómo la consciencia crea la realidad.';
-    const image = '/images/blog-cuantica.png';
+    const image = 'https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/BJdRujuOLkovuKSc.png';
     const url = window.location.href;
 
     const updateMeta = (property: string, content: string) => {
@@ -93,7 +93,7 @@ function BlogArticle3Content() {
           {/* Featured Image */}
           <div className="mb-8 rounded-lg overflow-hidden h-96">
             <img 
-              src="/images/blog-cuantica.png" 
+              src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/BJdRujuOLkovuKSc.png" 
               alt="Entrelazamiento Cuántico y Consciencia"
               className="w-full h-full object-cover"
             />

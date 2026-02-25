@@ -36,7 +36,7 @@ const cursosPublicos = [
     duration: "Membresía",
     investment: "29 USD c/mes",
     level: "Abierto a todos",
-    image: "/images/retiro-sagrado-online.png",
+    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/cHOVxqdqtgVSWklK.png",
     benefits: [
       "Retiros mensuales en vivo vía Zoom",
       "Acceso a todas las grabaciones",
@@ -55,7 +55,7 @@ const cursosPublicos = [
     duration: "3 semanas",
     investment: "145 USD",
     level: "Principiante",
-    image: "/images/ks-healing-therapy.png",
+    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/vnrXjKIGBRvhMHvB.png",
     benefits: [
       "Acompañamiento energético consciente",
       "Técnicas de presencia e intención",
@@ -116,7 +116,7 @@ const cursosAvanzados = [
     duration: "8 semanas",
     investment: "$397 USD",
     level: "Avanzado",
-    image: "/images/dart-therapy.png",
+    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/cyZtpJloRLJjOCdV.png",
     benefits: [
       "Identificación de arquetipos limitantes",
       "Renovación de patrones internos",
@@ -135,7 +135,7 @@ const cursosAvanzados = [
     duration: "8 semanas",
     investment: "$597 USD",
     level: "Avanzado",
-    image: "/images/genetica-sagrada-workshop.png",
+    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/yjqKfsbBDgHvLQiu.png",
     benefits: [
       "Formación como facilitador",
       "Técnicas avanzadas de transmisión",

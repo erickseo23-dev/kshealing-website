@@ -111,7 +111,7 @@ export default function QueEsKSHealing() {
       <section className="relative py-24 md:py-48 overflow-hidden">
         <div className="absolute inset-0">
           <img 
-            src="/images/ks-healing-hero.png" 
+            src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/guCyQktxgRQNRYTs.png" 
             alt="Energía KS" 
             className="w-full h-full object-cover"
           />
@@ -316,7 +316,7 @@ export default function QueEsKSHealing() {
                 <div className="relative">
                   <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 rounded-2xl blur-2xl"></div>
                   <img 
-                    src="/images/portada-libro.png" 
+                    src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/TRJrmHzjHDLvlTeZ.png" 
                     alt="Libro KS Healing" 
                     className="relative w-full max-w-sm h-auto rounded-2xl shadow-2xl object-cover"
                   />
@@ -361,10 +361,10 @@ export default function QueEsKSHealing() {
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {[
-                { src: '/images/ks-healing-session-1.a7f2b3c1.png', alt: 'Sesión KS Healing 1' },
-                { src: '/images/ks-healing-session-2.d4e8f9a2.png', alt: 'Sesión KS Healing 2' },
-                { src: '/images/ks-healing-session-3.b1c5d6e7.png', alt: 'Sesión KS Healing 3' },
-                { src: '/images/ks-healing-session-4.f3g2h1i9.png', alt: 'Sesión KS Healing 4' },
+                { src: 'https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/misETkzPXgwOlOUu.png', alt: 'Sesión KS Healing 1' },
+                { src: 'https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/moXHpaGRvOOgYSom.png', alt: 'Sesión KS Healing 2' },
+                { src: 'https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/rTDIDzokmIyQJLkj.png', alt: 'Sesión KS Healing 3' },
+                { src: 'https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/DFQFNvLBPnsDkTcK.png', alt: 'Sesión KS Healing 4' },
               ].map((image, index) => (
                 <div key={index} className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105">
                   <img
@@ -386,7 +386,7 @@ export default function QueEsKSHealing() {
       <section className="relative py-24 md:py-40 overflow-hidden">
         <div className="absolute inset-0">
           <img 
-            src="/images/ks-healing-transformation.b2c3d4e5.png" 
+            src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/sRgjyjmqGIuSXPPX.png" 
             alt="Transformación" 
             className="w-full h-full object-cover object-center"
           />
@@ -494,7 +494,7 @@ export default function QueEsKSHealing() {
       <section className="relative py-24 md:py-40 overflow-hidden">
         <div className="absolute inset-0">
           <img 
-            src="/images/ks-healing-coherence.f6g7h8i9.png" 
+            src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/rVoNnwvlSfpCAWoy.png" 
             alt="Coherencia" 
             className="w-full h-full object-cover object-center"
           />

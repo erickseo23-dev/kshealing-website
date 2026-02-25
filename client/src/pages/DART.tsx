@@ -43,7 +43,7 @@ export default function DART() {
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-br from-accent/20 to-primary/20 rounded-2xl blur-2xl"></div>
               <img 
-                src="/images/dart-archetypal-transformation.png" 
+                src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/SQuFMJBVFdaVgkdj.png" 
                 alt="D.A.R.T. Transformacion Arquetipica" 
                 className="relative w-full rounded-2xl shadow-2xl object-cover aspect-video"
               />
@@ -144,7 +144,7 @@ export default function DART() {
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-br from-accent/20 to-primary/20 rounded-2xl blur-2xl"></div>
               <img 
-                src="/images/dart-neural-patterns.png" 
+                src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/jlICIOTIEtXlgNKy.png" 
                 alt="Reestructuración Neural" 
                 className="relative w-full rounded-2xl shadow-2xl object-cover aspect-video"
               />
@@ -220,7 +220,7 @@ export default function DART() {
             <div className="relative order-2 lg:order-1">
               <div className="absolute inset-0 bg-gradient-to-br from-accent/20 to-primary/20 rounded-2xl blur-2xl"></div>
               <img 
-                src="/images/dart-consciousness-expansion.png" 
+                src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/UkTBjpbZPmdUyxBP.png" 
                 alt="Expansión de Consciencia" 
                 className="relative w-full rounded-2xl shadow-2xl object-cover aspect-video"
               />

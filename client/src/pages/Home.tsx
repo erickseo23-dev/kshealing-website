@@ -147,7 +147,7 @@ export default function Home() {
 
       {/* Hero Section */}
       <section className="relative py-24 md:py-40 text-white overflow-hidden" style={{
-        backgroundImage: 'url(/images/hero-background.png)',
+        backgroundImage: 'url(https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/FHDIPPFbHKyjzuWd.png)',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundAttachment: 'fixed'
@@ -308,28 +308,28 @@ export default function Home() {
               {
                 title: "KS Healing",
                 description: "La base fundamental de la sanación energética. Aprende a trabajar directamente con la Energía Keiouvos Stharef para transformar tu campo vibracional y recordar tu verdadera naturaleza divina.",
-                image: "/images/ks-healing-therapy.png",
+                image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/vnrXjKIGBRvhMHvB.png",
                 color: "from-primary/20 to-primary/5",
                 href: "/ks-healing",
               },
               {
                 title: "D.A.R.T.",
                 description: "Deep Archetypal Renewal Therapy. Trabaja en la raíz de tus patrones internos para reemplazar arquetipos negativos por arquetipos positivos y balanceados.",
-                image: "/images/dart-therapy.png",
+                image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/cyZtpJloRLJjOCdV.png",
                 color: "from-accent/20 to-accent/5",
                 href: "/dart",
               },
               {
                 title: "Genética Sagrada",
                 description: "Accede a la sabiduría ancestral de tu linaje. Activa tu ADN espiritual y reconecta con el poder hereditario de tu familia.",
-                image: "/images/genetica-sagrada-workshop.png",
+                image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/yjqKfsbBDgHvLQiu.png",
                 color: "from-primary/20 to-accent/10",
                 href: "/genetica-sagrada",
               },
               {
                 title: "Retiro Sagrado",
                 description: "Una experiencia inmersiva de transformación profunda. Retiros presenciales donde experimentarás transmisiones intensivas de Energía KS en comunidad.",
-                image: "/images/retiro-sagrado-online.png",
+                image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/cHOVxqdqtgVSWklK.png",
                 color: "from-accent/20 to-primary/10",
                 href: "/club-retiro-sagrado",
               },
@@ -509,7 +509,7 @@ export default function Home() {
                 titulo: "Cómo la Energía KS Transforma tu Realidad",
                 descripcion: "Descubre los 3 pilares de transformación que hacen de KS Healing un sistema único",
                 fecha: "15 Enero 2026",
-                imagen: "/images/blog-transformacion.png",
+                imagen: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/UPSnMlTDLhRkkwAN.png",
                 link: "/blog/article-1",
               },
               {
@@ -517,7 +517,7 @@ export default function Home() {
                 titulo: "Los 7 Chakras y el Chakra Timo",
                 descripcion: "Explora el centro de tu poder creativo y su conexión con la Energía Crística",
                 fecha: "12 Enero 2026",
-                imagen: "/images/blog-chakras.png",
+                imagen: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/ehjgkjmOjWfazhMG.png",
                 link: "/blog/article-2",
               },
               {
@@ -525,7 +525,7 @@ export default function Home() {
                 titulo: "Entrelazamiento Cuántico y Consciencia",
                 descripcion: "La ciencia detrás de KS Healing: cómo la cuántica explica la transformación",
                 fecha: "8 Enero 2026",
-                imagen: "/images/blog-cuantica.png",
+                imagen: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/BJdRujuOLkovuKSc.png",
                 link: "/blog/article-3",
               },
             ].map((post) => (

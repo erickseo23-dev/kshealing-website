@@ -18,6 +18,22 @@ export interface Event {
 export const eventos: Event[] = [
   // Ordenados por fecha cronológica
   {
+    id: 0,
+    title: "Presencia Viva",
+    description: "Un retiro para iniciar el nuevo ciclo desde la consciencia y no desde la prisa. Enseña a habitar el presente como base de claridad, calma y coherencia en la vida cotidiana.",
+    fecha: "Domingo, 4 de Enero, 2026",
+    ubicacion: "Club del Retiro Sagrado",
+    horario: "8:00 - 12:00 hrs (CDMX) / 15:00 - 19:00 hrs (España)",
+    participantes: "Ilimitado",
+    precio: "Acceso al Club",
+    incluye: ["Sesión en vivo con YOHEV", "Grabación disponible", "Acceso a comunidad", "Materiales de apoyo"],
+    estado: "Ya Disponible",
+    imagen: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/bwDlHyNVFNgvsNIk.png",
+    tipo: "Retiro Sagrado",
+    tema: "Presencia",
+    modalidad: "Online en Vivo"
+  },
+  {
     id: 1,
     title: "La Arquitectura del Amor",
     description: "Del amor herido al Amor como principio divino. Amor como principio universal, no como drama humano.",
@@ -27,8 +43,8 @@ export const eventos: Event[] = [
     participantes: "Ilimitado",
     precio: "Acceso al Club",
     incluye: ["Transmisión en vivo", "Meditación central: Recordar el Amor", "Reordenamiento interno profundo", "Certificado de participación"],
-    estado: "Próximamente",
-    imagen: "/images/retiro-8-amor-divino.png",
+    estado: "Ya Disponible",
+    imagen: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/gCzkYldHFFRJUcnh.png",
     tipo: "Retiro Sagrado",
     tema: "Relaciones",
     modalidad: "Online en Vivo"
@@ -81,7 +97,7 @@ export const eventos: Event[] = [
     precio: "Acceso al Club",
     incluye: ["Liberación suave de residuos energéticos", "Recuperación de energía personal", "Sellado y estabilización", "Certificado de participación"],
     estado: "Próximamente",
-    imagen: "/images/retiro-reinicio.png",
+    imagen: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/JhmfIIBSsKixKYTp.png",
     tipo: "Retiro Sagrado",
     tema: "Transformación",
     modalidad: "Online en Vivo"
@@ -97,7 +113,7 @@ export const eventos: Event[] = [
     precio: "Acceso al Club",
     incluye: ["Identificación de patrones infantiles", "Sanar sin revivir trauma", "Reordenamiento desde el adulto consciente", "Certificado de participación"],
     estado: "Próximamente",
-    imagen: "/images/retiro-nino-interior.png",
+    imagen: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/VilmLqqDtgInyNrt.png",
     tipo: "Retiro Sagrado",
     tema: "Sanación",
     modalidad: "Online en Vivo"
@@ -113,7 +129,7 @@ export const eventos: Event[] = [
     precio: "Acceso al Club",
     incluye: ["Exploración de la matriz emocional materna", "Liberación de culpa y lealtad", "Sanar sin cargar", "Certificado de participación"],
     estado: "Próximamente",
-    imagen: "/images/retiro-vinculo-materno.png",
+    imagen: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/aEmOStczwGCLviCw.png",
     tipo: "Retiro Sagrado",
     tema: "Relaciones",
     modalidad: "Online en Vivo"
@@ -129,7 +145,7 @@ export const eventos: Event[] = [
     precio: "Acceso al Club",
     incluye: ["Exploración de seguridad y límites", "Sanación de ausencia o rigidez paterna", "Recuperación de dirección personal", "Certificado de participación"],
     estado: "Próximamente",
-    imagen: "/images/retiro-fuerza-paterna.png",
+    imagen: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/JgAVzSzhxZNnKDAE.png",
     tipo: "Retiro Sagrado",
     tema: "Transformación",
     modalidad: "Online en Vivo"
@@ -145,7 +161,7 @@ export const eventos: Event[] = [
     precio: "Acceso al Club",
     incluye: ["Identificación del estrés normalizado", "Regulación del sistema nervioso", "Recuperación de calma", "Certificado de participación"],
     estado: "Próximamente",
-    imagen: "/images/retiro-estres.png",
+    imagen: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/qqTFjXiFpvcVHnry.png",
     tipo: "Retiro Sagrado",
     tema: "Sanación",
     modalidad: "Online en Vivo"
@@ -161,7 +177,7 @@ export const eventos: Event[] = [
     precio: "Acceso al Club",
     incluye: ["Técnicas de soltar consciente", "Cierre de ciclos", "Liberación sin resistencia", "Certificado de participación"],
     estado: "Próximamente",
-    imagen: "/images/retiro-soltar.png",
+    imagen: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/CssIHQgNGfpPclOl.png",
     tipo: "Retiro Sagrado",
     tema: "Transformación",
     modalidad: "Online en Vivo"
@@ -177,7 +193,7 @@ export const eventos: Event[] = [
     precio: "Acceso al Club",
     incluye: ["Identificación de automatismos", "Recuperación de soberanía", "Elecciones conscientes", "Certificado de participación"],
     estado: "Próximamente",
-    imagen: "/images/retiro-poder-elegir.png",
+    imagen: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/PWCWWXokMvvbuHAT.png",
     tipo: "Retiro Sagrado",
     tema: "Consciencia",
     modalidad: "Online en Vivo"
@@ -193,7 +209,7 @@ export const eventos: Event[] = [
     precio: "Acceso al Club",
     incluye: ["Establecimiento de límites energéticos", "Protección del campo", "Soberanía personal", "Certificado de participación"],
     estado: "Próximamente",
-    imagen: "/images/retiro-proteccion.png",
+    imagen: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/mjLVgRJUmSmOBnUd.png",
     tipo: "Retiro Sagrado",
     tema: "Sanación",
     modalidad: "Online en Vivo"
@@ -209,7 +225,7 @@ export const eventos: Event[] = [
     precio: "Acceso al Club",
     incluye: ["Exploración del linaje", "Sanación de herencias", "Honrar sin repetir", "Certificado de participación"],
     estado: "Próximamente",
-    imagen: "/images/retiro-ancestros.png",
+    imagen: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/MVAVXNlSzQDfLXcz.png",
     tipo: "Retiro Sagrado",
     tema: "Transformación",
     modalidad: "Online en Vivo"
@@ -225,7 +241,7 @@ export const eventos: Event[] = [
     precio: "Acceso al Club",
     incluye: ["Recolección de energía", "Cierre de ciclos anuales", "Integración de aprendizajes", "Certificado de participación"],
     estado: "Próximamente",
-    imagen: "/images/retiro-cierre.png",
+    imagen: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/DZbuvSAgAwEaNanY.png",
     tipo: "Retiro Sagrado",
     tema: "Consciencia",
     modalidad: "Online en Vivo"

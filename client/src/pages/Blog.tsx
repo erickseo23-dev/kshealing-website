@@ -15,7 +15,7 @@ const blogPosts = [
     date: "15 de Enero, 2026",
     category: "Transformación",
     readTime: "8 min",
-    image: "/images/blog-transformacion.png",
+    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/UPSnMlTDLhRkkwAN.png",
     slug: "article-1",
   },
   {
@@ -26,7 +26,7 @@ const blogPosts = [
     date: "12 de Enero, 2026",
     category: "Energía",
     readTime: "10 min",
-    image: "/images/blog-chakras.png",
+    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/ehjgkjmOjWfazhMG.png",
     slug: "article-2",
   },
   {
@@ -37,7 +37,7 @@ const blogPosts = [
     date: "8 de Enero, 2026",
     category: "Ciencia",
     readTime: "12 min",
-    image: "/images/blog-cuantica.png",
+    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/BJdRujuOLkovuKSc.png",
     slug: "article-3",
   },
   {
@@ -48,7 +48,7 @@ const blogPosts = [
     date: "5 de Enero, 2026",
     category: "Sanación",
     readTime: "9 min",
-    image: "/images/blog-sintropia.png",
+    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/waCaXVDCtOKUiaro.png",
     slug: "article-4",
   },
   {
@@ -59,7 +59,7 @@ const blogPosts = [
     date: "1 de Enero, 2026",
     category: "Testimonios",
     readTime: "10 min",
-    image: "/images/blog-testimonios.png",
+    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/PfqwzMjlkDTLiyNS.png",
     slug: "article-5",
   },
 ];

@@ -13,28 +13,28 @@ interface GalleryImage {
 const galleryImages: GalleryImage[] = [
   {
     id: 1,
-    src: "/images/retiro-momento-1.png",
+    src: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/FHlkYbIUBuofjimb.png",
     alt: "Círculo de meditación grupal",
     title: "Círculo de Meditación",
     description: "Momentos de profunda conexión durante las sesiones grupales de sanación",
   },
   {
     id: 2,
-    src: "/images/retiro-momento-2.png",
+    src: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/fpvGhsblbIIuaIPd.png",
     alt: "Transformación energética",
     title: "Transformación Energética",
     description: "Experiencias de sanación profunda y activación de chakras",
   },
   {
     id: 3,
-    src: "/images/retiro-momento-3.png",
+    src: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/bBCLQqChCGHqzjuC.png",
     alt: "Unidad y conexión",
     title: "Unidad y Conexión",
     description: "La fuerza de la comunidad en el viaje de transformación espiritual",
   },
   {
     id: 4,
-    src: "/images/retiro-momento-4.png",
+    src: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/tDxngqlMFzXwAxkJ.png",
     alt: "Breakthrough espiritual",
     title: "Breakthrough Espiritual",
     description: "Momentos de iluminación y expansión de conciencia",

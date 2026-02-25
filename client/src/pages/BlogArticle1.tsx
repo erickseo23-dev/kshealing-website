@@ -34,7 +34,7 @@ function ContentComponent() {
     // Actualizar metadatos de Open Graph dinámicamente
     const title = 'Cómo la Energía KS Transforma tu Realidad';
     const description = 'La transformación personal ocurre a nivel energético fundamental. Descubre cómo la Energía KS activa cambios profundos en tu realidad.';
-    const image = '/images/blog-transformacion.png';
+    const image = 'https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/UPSnMlTDLhRkkwAN.png';
     const url = window.location.href;
 
     // Actualizar og:title
@@ -150,7 +150,7 @@ function ContentComponent() {
           {/* Featured Image */}
           <div className="mb-8 rounded-lg overflow-hidden h-96">
             <img 
-              src="/images/blog-transformacion.png" 
+              src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/UPSnMlTDLhRkkwAN.png" 
               alt="Transformación energética"
               className="w-full h-full object-cover"
             />

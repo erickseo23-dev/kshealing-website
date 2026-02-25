@@ -36,37 +36,37 @@ export default function ClubRetiroSagrado() {
     {
       id: 1,
       nombre: "Volver al Silencio",
-      img: "/images/retiro-volver-silencio.png",
+      img: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/yAWkbSAsDZEhZfSE.png",
       descripcion: "Un retiro para aquietar el ruido interno, soltar la sobreestimulación y regresar al centro. Un espacio de pausa consciente donde el silencio se convierte en guía y claridad."
     },
     {
       id: 2,
       nombre: "Limpia tu Energía",
-      img: "/images/retiro-limpia-energia.png",
+      img: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/awwYPuBlxOHblLFU.png",
       descripcion: "Un encuentro para liberar cargas emocionales, mentales y energéticas acumuladas. Ideal para quienes sienten cansancio profundo, saturación interna o desgaste invisible."
     },
     {
       id: 3,
       nombre: "Códigos de Luz",
-      img: "/images/retiro-codigos-luz.png",
+      img: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/SlhMwHLojSoulpMw.png",
       descripcion: "Un retiro de reconexión con el orden interno y la información sutil de equilibrio. Permite recordar estados de coherencia profunda y alineación más allá del esfuerzo mental."
     },
     {
       id: 4,
       nombre: "Recupera tu Centro",
-      img: "/images/retiro-recupera-centro.png",
+      img: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/yDLnhOHAVkuqDLHK.png",
       descripcion: "Diseñado para volver al eje interno cuando la vida, el estrés o las emociones desbalancean. Un espacio para reencontrarte contigo y restablecer estabilidad en medio del movimiento."
     },
     {
       id: 5,
       nombre: "Sana y Cierra Ciclos",
-      img: "/images/retiro-sana-ciclos.png",
+      img: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/xSECzmGUyDixWbNv.png",
       descripcion: "Un retiro para cerrar procesos abiertos, relaciones y etapas inconclusas sin arrastre. Ayuda a liberar lo que ya cumplió su función y recuperar energía para el presente."
     },
     {
       id: 6,
       nombre: "Claves Internas para el Bienestar Verdadero",
-      img: "/images/retiro-claves-bienestar.png",
+      img: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/rnjSKFLtTUKVGlty.png",
       descripcion: "Un encuentro de comprensión profunda sobre lo que realmente sostiene el bienestar. Integra regulación emocional, coherencia mental, presencia corporal y orden energético."
     }
   ];
@@ -79,7 +79,7 @@ export default function ClubRetiroSagrado() {
       <section className="relative py-20 md:py-32 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
-            src="/images/retiro-8-amor-divino.png" 
+            src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/gCzkYldHFFRJUcnh.png" 
             alt="Club del Retiro Sagrado" 
             className="w-full h-full object-cover"
           />
@@ -205,44 +205,17 @@ export default function ClubRetiroSagrado() {
             </p>
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {/* Presencia Viva - Enero 2026 - Ya Disponible */}
-              <Card 
-                key="presencia-viva" 
-                className="overflow-hidden border-border/50 bg-background hover:shadow-lg transition-all cursor-pointer relative"
-                onClick={() => setSelectedRetiro({
-                  id: 'presencia-viva',
-                  title: 'Presencia Viva',
-                  fecha: 'Domingo, 4 de enero de 2026',
-                  horario: '8:00 - 12:00 hrs (CDMX)',
-                  modalidad: 'Online en Vivo',
-                  participantes: 'Comunidad del Club',
-                  imagen: '/images/retiro-presencia-viva.png',
-                  description: 'Un retiro para iniciar el nuevo ciclo desde la consciencia y no desde la prisa. Enseña a habitar el presente como base de claridad, calma y coherencia en la vida cotidiana.',
-                  incluye: ['Sesión en vivo con YOHEV', 'Grabación disponible', 'Acceso a comunidad', 'Materiales de apoyo']
-                })}
-              >
-                <div className="absolute top-4 right-4 bg-primary text-white px-3 py-1 rounded-full text-xs font-bold z-10">
-                  YA DISPONIBLE
-                </div>
-                <div className="relative h-40 overflow-hidden">
-                  <img 
-                    src="/images/retiro-presencia-viva.png" 
-                    alt="Presencia Viva"
-                    className="w-full h-full object-cover hover:scale-105 transition-transform"
-                  />
-                </div>
-                <div className="p-4">
-                  <p className="text-sm text-primary font-semibold mb-1">Enero</p>
-                  <h3 className="font-semibold text-foreground text-sm">Presencia Viva</h3>
-                </div>
-              </Card>
-
               {retirosSagrados2026.map((retiro) => (
                 <Card 
                   key={retiro.id} 
-                  className="overflow-hidden border-border/50 bg-background hover:shadow-lg transition-all cursor-pointer"
+                  className="overflow-hidden border-border/50 bg-background hover:shadow-lg transition-all cursor-pointer relative"
                   onClick={() => setSelectedRetiro(retiro)}
                 >
+                  {retiro.estado === "Ya Disponible" && (
+                    <div className="absolute top-4 right-4 bg-primary text-white px-3 py-1 rounded-full text-xs font-bold z-10">
+                      YA DISPONIBLE
+                    </div>
+                  )}
                   <div className="relative h-40 overflow-hidden">
                     <img 
                       src={retiro.imagen} 

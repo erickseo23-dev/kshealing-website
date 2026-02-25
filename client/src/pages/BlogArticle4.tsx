@@ -13,7 +13,7 @@ export default function BlogArticle4() {
       <SchemaArticle
         title="Sintropía vs Entropía: Por Qué Tu Cuerpo Necesita Regeneración Energética"
         description="Comprende la diferencia entre sintropía y entropía, y cómo tu cuerpo necesita regeneración energética constante para mantener coherencia y vitalidad."
-        image="/images/blog-sintropia.png"
+        image="https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/waCaXVDCtOKUiaro.png"
         datePublished="2024-01-25"
         url="https://kshealing.com/blog/article-4"
       />
@@ -32,7 +32,7 @@ function BlogArticle4Content() {
   useEffect(() => {
     const title = 'Sintropía vs Entropía: Por Qué Tu Cuerpo Necesita Regeneración Energética';
     const description = 'Comprende la diferencia entre sintropía y entropía, y cómo tu cuerpo necesita regeneración energética constante para mantener coherencia y vitalidad.';
-    const image = '/images/blog-sintropia.png';
+    const image = 'https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/waCaXVDCtOKUiaro.png';
     const url = window.location.href;
 
     const updateMeta = (property: string, content: string) => {
@@ -93,7 +93,7 @@ function BlogArticle4Content() {
           {/* Featured Image */}
           <div className="mb-8 rounded-lg overflow-hidden h-96">
             <img 
-              src="/images/blog-sintropia.png" 
+              src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/waCaXVDCtOKUiaro.png" 
               alt="Sintropía vs Entropía"
               className="w-full h-full object-cover"
             />
