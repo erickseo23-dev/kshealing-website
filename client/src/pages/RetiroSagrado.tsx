@@ -14,28 +14,28 @@ export default function RetiroSagrado() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="py-20 md:py-32 bg-cover bg-center bg-no-repeat relative" style={{backgroundImage: 'url(https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/gCzkYldHFFRJUcnh.png)'}}>
+      <section className="py-20 md:py-32 bg-cover bg-center bg-no-repeat relative" style={{backgroundImage: 'url(https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/bwDlHyNVFNgvsNIk.png)'}}>
         <div className="absolute inset-0 bg-black/50"></div>
         <div className="relative z-10">
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto text-center">
               <div className="inline-block mb-6 px-4 py-2 rounded-full bg-white/20 backdrop-blur-sm border border-white/30">
-                <span className="text-white font-semibold">💕 Retiro Sagrado 8 - CON YOHEV</span>
+                <span className="text-white font-semibold">🌿 Retiro Sagrado 9 - CON YOHEV</span>
               </div>
               <h1 className="font-display text-5xl md:text-6xl font-bold text-white mb-6 drop-shadow-lg">
-                La Arquitectura <span className="text-yellow-300">del Amor</span>
+                Reinicio <span className="text-yellow-300">Energético Profundo</span>
               </h1>
               <p className="text-lg text-white font-semibold mb-4 drop-shadow">
                 Facilitado directamente por YOHEV
               </p>
               <p className="text-xl text-white mb-6 drop-shadow">
-                Del amor herido al Amor como principio divino
+                Libera el arrastre y recupera tu fuerza interior
               </p>
               <p className="text-lg text-white mb-8 italic drop-shadow">
-                "El Amor verdadero no te rompe, te recuerda quién eres."
+                "No necesitas más fuerza. Necesitas menos carga."
               </p>
               <div className="inline-block mb-6 px-4 py-2 rounded-full bg-white/20 backdrop-blur-sm border border-white/30">
-                <span className="text-white font-semibold">📅 Domingo 8 de Febrero | 7:00 - 11:00 hrs (CDMX)</span>
+                <span className="text-white font-semibold">📅 Sábado 1 de Marzo | 8:00 - 12:00 hrs (CDMX)</span>
               </div>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link href="/club-retiro-sagrado">
@@ -55,17 +55,17 @@ export default function RetiroSagrado() {
           <div className="max-w-3xl mx-auto">
             <Card className="p-12 border-border/50 bg-gradient-to-br from-background to-primary/10">
               <h2 className="font-display text-3xl font-bold text-foreground mb-6">
-                Es un espacio para recordar qué es realmente el <span className="text-primary">Amor</span>
+                Marzo es un mes de <span className="text-primary">Renacimiento</span>
               </h2>
               <div className="space-y-4 text-muted-foreground text-lg leading-relaxed">
                 <p>
-                  Un espacio para <span className="font-semibold text-foreground">recordar qué es realmente el Amor</span> y permitir que ese recuerdo reordene la forma en que amas, te vinculas y te entregas.
+                  Pero no siempre nos sentimos así. El cambio de estación trae movimiento, luz, actividad... y muchas veces nos encuentra cansados, saturados mentalmente, emocionalmente cargados.
                 </p>
                 <p className="mt-6">
-                  El amor humano suele doler no porque amar sea un error, sino porque amamos desde estructuras internas heridas, condicionadas y programadas.
+                  <span className="font-semibold text-foreground">No estás bloqueado. Estás cargado.</span>
                 </p>
                 <p className="font-semibold text-foreground mt-6">
-                  Este retiro no trabaja relaciones específicas. Trabaja la arquitectura interna desde la cual te relacionas con todo: contigo, con los demás, y con la vida.
+                  Este retiro es un espacio para hacer un reinicio real, no superficial.
                 </p>
               </div>
             </Card>
@@ -73,37 +73,61 @@ export default function RetiroSagrado() {
         </div>
       </section>
 
-      {/* The Love Principle */}
+      {/* What is Energy Reset */}
       <section className="py-20 md:py-32">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 rounded-2xl blur-2xl"></div>
-                     <img 
+              <img 
                 src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/aCpnQZquZjBhFGAn.png" 
-                alt="Consciencia del Amor" 
+                alt="Reinicio Energético" 
                 className="relative w-full rounded-2xl shadow-2xl object-cover aspect-video"
               />
             </div>
             <div>
               <h2 className="font-display text-4xl font-bold text-foreground mb-6">
-                El Amor como <span className="text-primary">Principio Divino</span>
+                ¿Qué es un <span className="text-primary">Reinicio Energético?</span>
               </h2>
               <div className="space-y-4 text-muted-foreground mb-8">
                 <p className="text-lg leading-relaxed">
-                  El Amor no es solo una emoción. Es un principio universal que une, ordena, da coherencia y sostiene la creación.
+                  No es una limpieza dramática. No es una experiencia intensa. No es "subir la vibración".
                 </p>
                 <p className="text-lg leading-relaxed">
-                  El problema no es el amor. El problema es que el ego humano interpreta el amor a través de heridas, miedos y carencias, y desde ahí lo convierte en una experiencia dolorosa.
+                  Es algo mucho más simple y profundo:
                 </p>
-                <p className="text-lg leading-relaxed font-semibold text-foreground">
-                  No sufrimos por amar. Sufrimos por el filtro desde el que amamos.
+                <ul className="space-y-2 text-lg">
+                  <li className="flex gap-2">
+                    <span className="text-primary">•</span>
+                    <span>Liberar lo que ya no corresponde</span>
+                  </li>
+                  <li className="flex gap-2">
+                    <span className="text-primary">•</span>
+                    <span>Soltar acumulación emocional y mental</span>
+                  </li>
+                  <li className="flex gap-2">
+                    <span className="text-primary">•</span>
+                    <span>Recuperar energía dispersa</span>
+                  </li>
+                  <li className="flex gap-2">
+                    <span className="text-primary">•</span>
+                    <span>Reordenar el campo interno</span>
+                  </li>
+                  <li className="flex gap-2">
+                    <span className="text-primary">•</span>
+                    <span>Restablecer tu eje antes de seguir avanzando</span>
+                  </li>
+                </ul>
+                <p className="text-lg leading-relaxed font-semibold text-foreground mt-6">
+                  La mayoría de las personas no necesitan más fuerza. Necesitan menos carga.
                 </p>
               </div>
             </div>
           </div>
         </div>
-      </section>      {/* Share Section */}
+      </section>
+
+      {/* Share Section */}
       <section className="py-12 md:py-16 bg-background border-t border-border">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -112,7 +136,7 @@ export default function RetiroSagrado() {
               size="lg" 
               onClick={() => {
                 const url = window.location.href;
-                const text = "Retiro Sagrado 8: La Arquitectura del Amor - Del amor herido al Amor como principio divino";
+                const text = "Retiro Sagrado 9: Reinicio Energético Profundo - Libera el arrastre y recupera tu fuerza interior";
                 window.open(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}&quote=${encodeURIComponent(text)}`, '_blank', 'width=600,height=400');
               }}
               className="gap-2 bg-[#1877F2] hover:bg-[#165FD8] text-white"
@@ -124,88 +148,31 @@ export default function RetiroSagrado() {
         </div>
       </section>
 
-      {/* Visual Gallery Section */}
+      {/* Why March */}
       <section className="py-20 md:py-32 bg-background">
         <div className="container mx-auto px-4">
           <h2 className="font-display text-4xl font-bold text-foreground mb-12 text-center">
-            Relaciones Sanas, Amor Consciente
+            ¿Por Qué Marzo es el Momento Ideal?
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             <div className="relative group">
               <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 rounded-2xl blur-2xl"></div>
-              <img 
-                src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/gCzkYldHFFRJUcnh.png" 
-                alt="Pareja en Amor" 
-                className="relative w-full rounded-2xl shadow-2xl object-cover aspect-video group-hover:shadow-3xl transition-shadow"
-              />
+              <Card className="relative p-8 border-border/50 bg-background group-hover:shadow-3xl transition-shadow">
+                <Leaf size={32} className="text-primary mb-4" />
+                <h3 className="font-semibold text-foreground text-lg mb-4">Equilibrio Natural</h3>
+                <p className="text-muted-foreground">
+                  El equinoccio marca un punto de equilibrio natural. La naturaleza se reajusta. La luz y la sombra se equilibran. Tu sistema también puede hacerlo.
+                </p>
+              </Card>
             </div>
             <div className="relative group">
               <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 rounded-2xl blur-2xl"></div>
-              <img 
-                src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/BCWWblXCNMpggPfd.png" 
-                alt="Familia en Amor" 
-                className="relative w-full rounded-2xl shadow-2xl object-cover aspect-video group-hover:shadow-3xl transition-shadow"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Testimonials Section */}
-      <section className="py-20 md:py-32 bg-primary/5">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="font-display text-4xl font-bold text-foreground mb-12 text-center">
-              ¿Qué Distorsiona el Amor Humano?
-            </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <Card className="p-8 border-border/50 bg-background">
-                <h3 className="font-semibold text-foreground mb-4 flex items-center gap-2">
-                  <Heart size={20} className="text-primary" />
-                  Lo que Cargamos
-                </h3>
-                <ul className="space-y-3 text-muted-foreground">
-                  <li className="flex gap-2">
-                    <span className="text-primary">•</span>
-                    <span>Arquetipos inconscientes del amor</span>
-                  </li>
-                  <li className="flex gap-2">
-                    <span className="text-primary">•</span>
-                    <span>Aprendizajes tempranos</span>
-                  </li>
-                  <li className="flex gap-2">
-                    <span className="text-primary">•</span>
-                    <span>Experiencias no resueltas</span>
-                  </li>
-                  <li className="flex gap-2">
-                    <span className="text-primary">•</span>
-                    <span>Heridas emocionales</span>
-                  </li>
-                </ul>
-              </Card>
-              <Card className="p-8 border-border/50 bg-background">
-                <h3 className="font-semibold text-foreground mb-4 flex items-center gap-2">
-                  <Zap size={20} className="text-primary" />
-                  Cómo se Vive
-                </h3>
-                <ul className="space-y-3 text-muted-foreground">
-                  <li className="flex gap-2">
-                    <span className="text-primary">•</span>
-                    <span>Miedo a perder</span>
-                  </li>
-                  <li className="flex gap-2">
-                    <span className="text-primary">•</span>
-                    <span>Apego y dependencia</span>
-                  </li>
-                  <li className="flex gap-2">
-                    <span className="text-primary">•</span>
-                    <span>Sacrificio excesivo</span>
-                  </li>
-                  <li className="flex gap-2">
-                    <span className="text-primary">•</span>
-                    <span>Control y abandono de uno mismo</span>
-                  </li>
-                </ul>
+              <Card className="relative p-8 border-border/50 bg-background group-hover:shadow-3xl transition-shadow">
+                <Sparkles size={32} className="text-primary mb-4" />
+                <h3 className="font-semibold text-foreground text-lg mb-4">Momento Perfecto</h3>
+                <p className="text-muted-foreground">
+                  Sacude el desgaste del inicio de año, libera estrés acumulado, reorganiza tu energía antes de que el ritmo aumente, y entra a la primavera con claridad y fuerza interna.
+                </p>
               </Card>
             </div>
           </div>
@@ -213,7 +180,7 @@ export default function RetiroSagrado() {
       </section>
 
       {/* What We'll Work */}
-      <section className="py-20 md:py-32">
+      <section className="py-20 md:py-32 bg-primary/5">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="font-display text-4xl font-bold text-foreground mb-12 text-center">
@@ -221,14 +188,14 @@ export default function RetiroSagrado() {
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {[
-                "Comprender el Amor como principio divino, no como emoción cambiante",
-                "Identificar los filtros internos desde los que cada uno ama",
-                "Reconocer los arquetipos inconscientes del amor que operan en tu vida",
-                "Conectar con el modelo original del Amor",
-                "Permitir que ese modelo reordene tu mente inconsciente",
-                "Liberar distorsiones sin forzar procesos ni revivir historias",
-                "Abrir espacio para relaciones más claras, libres y coherentes",
-                "Permitir que el Amor haga su trabajo en ti"
+                "Identificar dónde se acumula el arrastre energético",
+                "Diferenciar cansancio físico de carga emocional",
+                "Liberar residuos mentales repetitivos",
+                "Recuperar energía que se quedó dispersa",
+                "Reordenar tu campo sin forzar procesos",
+                "Sellar tu sistema con estabilidad y coherencia",
+                "Permitir que tu sistema vuelva a su estado natural",
+                "Entrar a la primavera con fuerza renovada"
               ].map((item, idx) => (
                 <div key={idx} className="flex gap-4">
                   <Check size={20} className="text-primary flex-shrink-0 mt-1" />
@@ -238,7 +205,38 @@ export default function RetiroSagrado() {
             </div>
             <div className="mt-12 p-8 bg-primary/5 rounded-lg border border-primary/20">
               <p className="text-foreground font-semibold text-center">
-                No se trata de "hacer algo" con el amor. Se trata de permitir que el Amor haga su trabajo en ti.
+                No se trata de hacer algo extraordinario. Se trata de permitir que tu sistema vuelva a su estado natural de equilibrio.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Who is This For */}
+      <section className="py-20 md:py-32">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="font-display text-4xl font-bold text-foreground mb-12 text-center">
+              ¿Cómo Saber si Necesitas Este Retiro?
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+              {[
+                "Te sientes cansado sin razón clara",
+                "Estás haciendo lo correcto, pero no te sientes ligero",
+                "Te cuesta concentrarte",
+                "Sientes saturación emocional",
+                "Te cuesta descansar profundamente",
+                "Iniciaste el año con impulso, pero ya estás perdiendo fuerza"
+              ].map((item, idx) => (
+                <div key={idx} className="flex gap-4 p-4 bg-background rounded-lg border border-primary/20">
+                  <Star size={20} className="text-primary flex-shrink-0" />
+                  <p className="text-muted-foreground">{item}</p>
+                </div>
+              ))}
+            </div>
+            <div className="p-8 bg-primary/5 rounded-lg border border-primary/20">
+              <p className="text-foreground text-center">
+                <span className="font-semibold">No necesitas estar en crisis.</span> A veces solo necesitas reiniciar.
               </p>
             </div>
           </div>
@@ -254,22 +252,23 @@ export default function RetiroSagrado() {
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
               {[
-                "Menos dependencia emocional",
-                "Mayor claridad en relaciones",
-                "Menos miedo a perder",
-                "Más coherencia interna",
-                "Vínculos más honestos",
-                "Paz al amar, sin cerrarse"
+                "Mayor claridad mental",
+                "Sensación de ligereza",
+                "Energía más estable",
+                "Mejor descanso",
+                "Enfoque renovado",
+                "Mayor presencia corporal"
               ].map((item, idx) => (
                 <div key={idx} className="flex gap-4 p-4 bg-background rounded-lg">
-                  <Star size={20} className="text-primary flex-shrink-0" />
+                  <Sparkles size={20} className="text-primary flex-shrink-0" />
                   <p className="text-muted-foreground">{item}</p>
                 </div>
               ))}
             </div>
             <div className="p-8 bg-background rounded-lg border border-primary/20">
               <p className="text-foreground text-center">
-                No porque "hicieron algo bien", sino porque <span className="font-semibold">el orden interno cambia la experiencia externa.</span>
+                No porque "hicieron algo",<br />
+                sino porque <span className="font-semibold">dejaron de sostener lo que ya no correspondía.</span>
               </p>
             </div>
           </div>
@@ -287,122 +286,81 @@ export default function RetiroSagrado() {
               <ul className="space-y-4 text-muted-foreground">
                 <li className="flex gap-3">
                   <Leaf size={20} className="text-primary flex-shrink-0 mt-0.5" />
-                  <span>El Amor como principio universal</span>
+                  <span>Llegada y estabilización del sistema nervioso</span>
                 </li>
                 <li className="flex gap-3">
                   <Leaf size={20} className="text-primary flex-shrink-0 mt-0.5" />
-                  <span>El filtro humano del amor</span>
+                  <span>Identificación de cargas invisibles</span>
                 </li>
                 <li className="flex gap-3">
                   <Leaf size={20} className="text-primary flex-shrink-0 mt-0.5" />
-                  <span>Arquetipos inconscientes del amor herido</span>
+                  <span>Liberación consciente sin dramatización</span>
                 </li>
                 <li className="flex gap-3">
                   <Leaf size={20} className="text-primary flex-shrink-0 mt-0.5" />
-                  <span>El modelo divino del Amor</span>
+                  <span>Recuperación de energía personal</span>
                 </li>
                 <li className="flex gap-3">
                   <Leaf size={20} className="text-primary flex-shrink-0 mt-0.5" />
-                  <span>Reordenamiento interno profundo</span>
+                  <span>Reordenamiento del campo interno</span>
                 </li>
                 <li className="flex gap-3">
                   <Leaf size={20} className="text-primary flex-shrink-0 mt-0.5" />
-                  <span>Amar desde el orden, no desde la herida</span>
+                  <span>Anclaje de fuerza y claridad</span>
                 </li>
                 <li className="flex gap-3">
                   <Leaf size={20} className="text-primary flex-shrink-0 mt-0.5" />
-                  <span>Meditación central: "Recordar el Amor"</span>
+                  <span>Meditación central de reinicio</span>
                 </li>
                 <li className="flex gap-3">
                   <Leaf size={20} className="text-primary flex-shrink-0 mt-0.5" />
-                  <span>Cierre y código vibracional</span>
+                  <span>Sellado energético de primavera</span>
                 </li>
               </ul>
-            </Card>
-          </div>
-        </div>
-      </section>
-
-      {/* For Whom */}
-      <section className="py-20 md:py-32 bg-primary/5">
-        <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto">
-            <h2 className="font-display text-4xl font-bold text-foreground mb-12 text-center">
-              ¿Para Quién es Este Retiro?
-            </h2>
-            <Card className="p-12 border-border/50 bg-background">
-              <p className="text-muted-foreground mb-8">Este retiro es para ti si:</p>
-              <ul className="space-y-4 text-muted-foreground mb-8">
-                <li className="flex gap-3">
-                  <Check size={20} className="text-primary flex-shrink-0 mt-0.5" />
-                  <span>Sientes que amar te ha desgastado</span>
-                </li>
-                <li className="flex gap-3">
-                  <Check size={20} className="text-primary flex-shrink-0 mt-0.5" />
-                  <span>Repites patrones en relaciones</span>
-                </li>
-                <li className="flex gap-3">
-                  <Check size={20} className="text-primary flex-shrink-0 mt-0.5" />
-                  <span>Te cuesta amar sin perderte</span>
-                </li>
-                <li className="flex gap-3">
-                  <Check size={20} className="text-primary flex-shrink-0 mt-0.5" />
-                  <span>Quieres sanar sin forzar procesos emocionales</span>
-                </li>
-                <li className="flex gap-3">
-                  <Check size={20} className="text-primary flex-shrink-0 mt-0.5" />
-                  <span>Buscas un enfoque profundo, no superficial</span>
-                </li>
-              </ul>
-              <div className="p-6 bg-primary/5 rounded-lg border border-primary/20">
-                <p className="text-foreground font-semibold text-center">
-                  No importa si estás en pareja o no. El trabajo ocurre dentro.
-                </p>
-              </div>
             </Card>
           </div>
         </div>
       </section>
 
       {/* How to Access */}
-      <section className="py-20 md:py-32">
+      <section className="py-20 md:py-32 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
             <h2 className="font-display text-4xl font-bold text-foreground mb-12 text-center">
               ¿Cómo Accedes al Retiro?
             </h2>
             <Card className="p-12 border-border/50 bg-gradient-to-br from-background to-primary/10">
-              <p className="text-muted-foreground mb-8">
-                Este retiro forma parte del <span className="font-semibold text-foreground">Club del Retiro Sagrado.</span>
+              <p className="text-muted-foreground text-lg mb-6">
+                Este retiro forma parte del <span className="font-semibold text-foreground">Club del Retiro Sagrado</span>.
               </p>
-              <p className="text-muted-foreground mb-8">Al ser miembro del Club obtienes:</p>
-              <ul className="space-y-4 text-muted-foreground mb-8">
-                <li className="flex gap-3">
-                  <Users size={20} className="text-primary flex-shrink-0 mt-0.5" />
+              <p className="text-muted-foreground text-lg mb-6">
+                Al ser miembro del Club obtienes:
+              </p>
+              <ul className="space-y-3 text-muted-foreground mb-8">
+                <li className="flex gap-2">
+                  <span className="text-primary">✓</span>
                   <span>Acceso en vivo a este retiro</span>
                 </li>
-                <li className="flex gap-3">
-                  <Users size={20} className="text-primary flex-shrink-0 mt-0.5" />
+                <li className="flex gap-2">
+                  <span className="text-primary">✓</span>
                   <span>Acceso a todas las grabaciones de retiros anteriores</span>
                 </li>
-                <li className="flex gap-3">
-                  <Users size={20} className="text-primary flex-shrink-0 mt-0.5" />
+                <li className="flex gap-2">
+                  <span className="text-primary">✓</span>
                   <span>Acceso a los retiros futuros mientras tu membresía esté activa</span>
                 </li>
-                <li className="flex gap-3">
-                  <Users size={20} className="text-primary flex-shrink-0 mt-0.5" />
+                <li className="flex gap-2">
+                  <span className="text-primary">✓</span>
                   <span>Invitación a terapias energéticas en vivo que se publican después en redes</span>
                 </li>
-                <li className="flex gap-3">
-                  <Users size={20} className="text-primary flex-shrink-0 mt-0.5" />
+                <li className="flex gap-2">
+                  <span className="text-primary">✓</span>
                   <span>Un espacio continuo de trabajo interno, no eventos aislados</span>
                 </li>
               </ul>
-              <div className="p-6 bg-primary/5 rounded-lg border border-primary/20">
-                <p className="text-foreground font-semibold text-center">
-                  No se vende este retiro por separado. El acceso es únicamente a través del Club.
-                </p>
-              </div>
+              <p className="text-foreground font-semibold">
+                No se vende este retiro por separado. El acceso es únicamente a través del Club.
+              </p>
             </Card>
           </div>
         </div>
@@ -415,224 +373,76 @@ export default function RetiroSagrado() {
             <h2 className="font-display text-4xl font-bold text-foreground mb-12 text-center">
               Testimonios del Club del Retiro Sagrado
             </h2>
-            <p className="text-center text-muted-foreground mb-12 text-lg">
-              Experiencias de miembros que han accedido a todos los retiros pasados y en vivo
-            </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <Card className="p-8 border-border/50 bg-background">
-                <div className="flex items-center gap-2 mb-4">
-                  <div className="flex gap-1">
-                    {[...Array(5)].map((_, i) => (
-                      <Star key={i} size={16} className="fill-primary text-primary" />
-                    ))}
+              {retiroSagradoTestimonials.slice(0, 4).map((testimonial, idx) => (
+                <Card key={idx} className="p-8 border-border/50 bg-background">
+                  <p className="text-muted-foreground mb-6 italic">"{testimonial.quote}"</p>
+                  <div>
+                    <p className="font-semibold text-foreground">{testimonial.name}</p>
+                    <p className="text-sm text-muted-foreground">{testimonial.title}</p>
                   </div>
-                </div>
-                <p className="text-muted-foreground italic mb-6">
-                  "Soy miembro desde hace 8 meses y he asistido a todos los retiros en vivo. Cada uno me ha dado herramientas diferentes. Ahora reviso las grabaciones de los retiros pasados cuando necesito profundizar en un tema específico."
-                </p>
-                <p className="font-semibold text-foreground">María C.</p>
-                <p className="text-sm text-muted-foreground">Miembro del Club - 8 meses</p>
-              </Card>
-              <Card className="p-8 border-border/50 bg-background">
-                <div className="flex items-center gap-2 mb-4">
-                  <div className="flex gap-1">
-                    {[...Array(5)].map((_, i) => (
-                      <Star key={i} size={16} className="fill-primary text-primary" />
-                    ))}
-                  </div>
-                </div>
-                <p className="text-muted-foreground italic mb-6">
-                  "Lo mejor del Club es tener acceso a todas las grabaciones. He revisado 'Volver al Silencio' más de 5 veces. Cada visión me revela algo nuevo. Es como tener un maestro disponible siempre."
-                </p>
-                <p className="font-semibold text-foreground">Roberto M.</p>
-                <p className="text-sm text-muted-foreground">Miembro del Club - 1 año</p>
-              </Card>
-              <Card className="p-8 border-border/50 bg-background">
-                <div className="flex items-center gap-2 mb-4">
-                  <div className="flex gap-1">
-                    {[...Array(5)].map((_, i) => (
-                      <Star key={i} size={16} className="fill-primary text-primary" />
-                    ))}
-                  </div>
-                </div>
-                <p className="text-muted-foreground italic mb-6">
-                  "Perdí algunos retiros en vivo por trabajo, pero poder verlos grabados me permitió no quedarme atrás. El Club es flexible y realmente se adapta a tu ritmo de vida."
-                </p>
-                <p className="font-semibold text-foreground">Alejandra T.</p>
-                <p className="text-sm text-muted-foreground">Miembro del Club - 6 meses</p>
-              </Card>
-              <Card className="p-8 border-border/50 bg-background">
-                <div className="flex items-center gap-2 mb-4">
-                  <div className="flex gap-1">
-                    {[...Array(5)].map((_, i) => (
-                      <Star key={i} size={16} className="fill-primary text-primary" />
-                    ))}
-                  </div>
-                </div>
-                <p className="text-muted-foreground italic mb-6">
-                  "Después de estar en el Club, mi familia ha notado el cambio. No es solo un retiro, es un proceso continuo. Poder acceder a todos los retiros anteriores ha sido transformador."
-                </p>
-                <p className="font-semibold text-foreground">Carlos L.</p>
-                <p className="text-sm text-muted-foreground">Miembro del Club - 10 meses</p>
-              </Card>
-            </div>
-            <div className="mt-12 p-8 bg-background rounded-lg border border-primary/20 text-center">
-              <p className="text-foreground font-semibold mb-2">
-                Acceso ilimitado a todos los retiros en vivo + grabaciones de retiros anteriores
-              </p>
-              <p className="text-muted-foreground text-sm">
-                Practica a tu ritmo, revisa cuantas veces necesites, integra profundamente cada enseñanza.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Próximos Retiros Section */}
-      <section className="py-20 md:py-32 bg-background border-t border-border">
-        <div className="container mx-auto px-4">
-          <div className="max-w-5xl mx-auto">
-            <div className="mb-16">
-              <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-6 text-center">
-                Próximos <span className="text-primary">Retiros 2026</span>
-              </h2>
-              <p className="text-lg text-muted-foreground text-center">
-                Continúa tu transformación con los retiros que vienen. Cada mes, un nuevo tema, una nueva oportunidad.
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-              {eventos
-                .filter(e => e.tipo === "Retiro Sagrado")
-                .slice(1, 4)
-                .map(retiro => (
-                  <Card key={retiro.id} className="p-6 border-border/50 bg-gradient-to-br from-background to-primary/5 hover:shadow-lg transition-all">
-                    {retiro.imagen && (
-                      <div className="relative h-32 overflow-hidden rounded-lg mb-4 bg-muted">
-                        <img
-                          src={retiro.imagen}
-                          alt={retiro.title}
-                          className="w-full h-full object-cover"
-                        />
-                      </div>
-                    )}
-                    <div className="inline-block mb-3 px-3 py-1 rounded-full bg-primary/10 border border-primary/20">
-                      <span className="text-primary font-semibold text-sm">{retiro.tema}</span>
-                    </div>
-                    <h3 className="font-display text-lg font-bold text-foreground mb-2">
-                      {retiro.title}
-                    </h3>
-                    <p className="text-sm text-muted-foreground mb-4">{retiro.description}</p>
-                    <div className="space-y-2 mb-4">
-                      <div className="flex items-center gap-2 text-sm text-foreground">
-                        <Calendar size={14} className="text-primary" />
-                        <span>{retiro.fecha}</span>
-                      </div>
-                      <div className="flex items-center gap-2 text-sm text-foreground">
-                        <Clock size={14} className="text-primary" />
-                        <span>{retiro.horario}</span>
-                      </div>
-                    </div>
-                    <Link href="/club-retiro-sagrado">
-                      <Button size="sm" className="w-full bg-primary hover:bg-primary/90 text-white">
-                        Ver Detalles
-                      </Button>
-                    </Link>
-                  </Card>
-                ))}
-            </div>
-
-            <div className="text-center">
-              <Link href="/club-retiro-sagrado">
-                <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-primary/10 gap-2">
-                  Ver Todos los Retiros 2026
-                  <ArrowRight size={20} />
-                </Button>
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Retiros Pasados Section */}
-      <section className="py-20 md:py-32 bg-primary/5 border-t border-border">
-        <div className="container mx-auto px-4">
-          <div className="max-w-5xl mx-auto">
-            <div className="mb-16">
-              <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-6 text-center">
-                Retiros Incluidos en tu <span className="text-primary">Membresía</span>
-              </h2>
-              <p className="text-lg text-muted-foreground text-center">
-                Acceso a toda la biblioteca de retiros anteriores. Revive, integra y profundiza en tu práctica.
-              </p>
-            </div>
-
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-              {[
-                { title: "Retiro Sagrado 1 - VOLVER AL SILENCIO", image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/yAWkbSAsDZEhZfSE.png" },
-                { title: "Retiro Sagrado 2 - LIMPIA TU ENERGÍA", image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/awwYPuBlxOHblLFU.png" },
-                { title: "Retiro Sagrado 3 - CÓDIGOS DE LUZ", image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/SlhMwHLojSoulpMw.png" },
-                { title: "Retiro Sagrado 4 - RECUPERA TU CENTRO", image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/yDLnhOHAVkuqDLHK.png" },
-                { title: "Retiro Sagrado 5 - SANA Y CIERRA CICLOS", image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/xSECzmGUyDixWbNv.png" },
-                { title: "Retiro Sagrado 6 - CLAVES INTERNAS PARA EL BIENESTAR VERDADERO", image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/rnjSKFLtTUKVGlty.png" },
-                { title: "Retiro Sagrado 7 - PRESENCIA VIVA", image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/bwDlHyNVFNgvsNIk.png" },
-                { title: "Retiro Sagrado 8 - LA ARQUITECTURA DEL AMOR", image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/gCzkYldHFFRJUcnh.png" },
-              ].map((retiro, idx) => (
-                <div key={idx} className="group relative overflow-hidden rounded-lg h-40 cursor-pointer">
-                  <img
-                    src={retiro.image}
-                    alt={retiro.title}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
-                  />
-                  <div className="absolute inset-0 bg-black/40 group-hover:bg-black/60 transition-colors flex items-end p-4">
-                    <p className="text-white font-semibold text-sm">{retiro.title}</p>
-                  </div>
-                </div>
+                </Card>
               ))}
             </div>
+          </div>
+        </div>
+      </section>
 
-            <div className="mt-12 p-8 bg-background rounded-lg border border-primary/20 text-center">
-              <p className="text-foreground font-semibold mb-2">
-                Acceso ilimitado a todos los retiros grabados
-              </p>
-              <p className="text-muted-foreground mb-6">
-                Integrados en tu membresía del Club del Retiro Sagrado. Practica a tu ritmo, revisa cuantas veces necesites.
-              </p>
-              <Link href="/club-retiro-sagrado">
-                <Button size="lg" className="bg-primary hover:bg-primary/90 text-white">
-                  Unirse al Club
-                </Button>
-              </Link>
-            </div>
+      {/* Next Retreats */}
+      <section className="py-20 md:py-32">
+        <div className="container mx-auto px-4">
+          <h2 className="font-display text-4xl font-bold text-foreground mb-12 text-center">
+            Próximos Retiros 2026
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            {eventos.slice(2, 5).map((retiro, idx) => (
+              <Card key={idx} className="overflow-hidden border-border/50 hover:shadow-lg transition-shadow">
+                <div className="aspect-video bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center">
+                  <Sparkles size={48} className="text-primary/50" />
+                </div>
+                <div className="p-6">
+                  <p className="text-sm text-primary font-semibold mb-2">{retiro.tema}</p>
+                  <h3 className="font-semibold text-foreground mb-3">{retiro.title}</h3>
+                  <p className="text-sm text-muted-foreground mb-4">{retiro.description}</p>
+                  <p className="text-sm text-muted-foreground mb-4">
+                    <Calendar size={14} className="inline mr-1" />
+                    {retiro.fecha}
+                  </p>
+                  <Link href="/club-retiro-sagrado">
+                    <Button variant="outline" size="sm" className="w-full">
+                      Ver Detalles
+                    </Button>
+                  </Link>
+                </div>
+              </Card>
+            ))}
           </div>
         </div>
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 md:py-32 bg-gradient-to-br from-primary/10 via-background to-background">
+      <section className="py-20 md:py-32 bg-gradient-to-r from-primary/10 to-accent/10">
         <div className="container mx-auto px-4">
-          <div className="max-w-2xl mx-auto text-center">
+          <div className="max-w-3xl mx-auto text-center">
             <h2 className="font-display text-4xl font-bold text-foreground mb-6">
-              El Amor Verdadero No Te Rompe
+              Una Idea Final
             </h2>
             <p className="text-xl text-muted-foreground mb-8">
-              Te recuerda quién eres.
+              No necesitas más disciplina.<br />
+              No necesitas más fuerza.
             </p>
-            <p className="text-lg text-muted-foreground mb-12">
-              Si sientes el llamado, este espacio es para ti.
+            <p className="text-2xl font-semibold text-foreground mb-8">
+              Necesitas menos carga.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/club-retiro-sagrado">
-                <Button size="lg" className="bg-primary hover:bg-primary/90 text-white">
-                  Unirse al Club del Retiro Sagrado
-                </Button>
-              </Link>
-              <Link href="/club-retiro-sagrado">
-                <Button size="lg" variant="outline">
-                  Ver Todos los Retiros 2026
-                </Button>
-              </Link>
-            </div>
+            <p className="text-lg text-muted-foreground mb-8">
+              Si sientes que es momento de reiniciar, este espacio es para ti.
+            </p>
+            <Link href="/club-retiro-sagrado">
+              <Button size="lg" className="bg-primary hover:bg-primary/90 text-white">
+                Unirse al Club del Retiro Sagrado
+                <ArrowRight size={18} className="ml-2" />
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
