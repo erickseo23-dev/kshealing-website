@@ -18,6 +18,22 @@ export interface Event {
 export const eventos: Event[] = [
   // Ordenados por fecha cronológica
   {
+    id: 2,
+    title: "Reinicio Energético Profundo",
+    description: "Limpia el arrastre, recupera tu fuerza y renace desde tu centro. Distinguir cansancio físico vs arrastre energético.",
+    fecha: "1 de Marzo, 2026",
+    ubicacion: "Club del Retiro Sagrado",
+    horario: "8:00 - 12:00 hrs (CDMX) / 15:00 - 19:00 hrs (España)",
+    participantes: "Ilimitado",
+    precio: "Acceso al Club",
+    incluye: ["Liberación suave de residuos energéticos", "Recuperación de energía personal", "Sellado y estabilización", "Certificado de participación"],
+    estado: "Próximamente",
+    imagen: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/JhmfIIBSsKixKYTp.png",
+    tipo: "Retiro Sagrado",
+    tema: "Transformación",
+    modalidad: "Online en Vivo"
+  },
+  {
     id: 13,
     title: "Taller Online Gratuito KS Healing y La Consciencia Crísitica",
     description: "Descubre cómo la Energía KS transforma tu consciencia crítica. Un taller interactivo donde exploraremos la conexión entre sanación energética y pensamiento consciente.",
@@ -52,22 +68,6 @@ export const eventos: Event[] = [
     imagen: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/HVhXRvxQEBwQkYur.png",
     tipo: "Certificación",
     tema: "KS Healing",
-    modalidad: "Online en Vivo"
-  },
-  {
-    id: 2,
-    title: "Reinicio Energético Profundo",
-    description: "Limpia el arrastre, recupera tu fuerza y renace desde tu centro. Distinguir cansancio físico vs arrastre energético.",
-    fecha: "1 de Marzo, 2026",
-    ubicacion: "Club del Retiro Sagrado",
-    horario: "8:00 - 12:00 hrs (CDMX) / 15:00 - 19:00 hrs (España)",
-    participantes: "Ilimitado",
-    precio: "Acceso al Club",
-    incluye: ["Liberación suave de residuos energéticos", "Recuperación de energía personal", "Sellado y estabilización", "Certificado de participación"],
-    estado: "Próximamente",
-    imagen: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/JhmfIIBSsKixKYTp.png",
-    tipo: "Retiro Sagrado",
-    tema: "Transformación",
     modalidad: "Online en Vivo"
   },
   {
