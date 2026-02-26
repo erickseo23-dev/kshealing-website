@@ -14,7 +14,7 @@ export default function RetiroSagrado() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="py-20 md:py-32 bg-cover bg-center bg-no-repeat relative" style={{backgroundImage: 'url(https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/bwDlHyNVFNgvsNIk.png)'}}>
+      <section className="py-20 md:py-32 bg-cover bg-center bg-no-repeat relative" style={{backgroundImage: 'url(https://private-us-east-1.manuscdn.com/sessionFile/cJ0NsjiTEgFuWB5HAN1kHs/sandbox/qyyIPacCEvbJKkc0uLVEag-img-1_1772067476000_na1fn_cmV0aXJvLW1hcnpvLWhlcm8tbXVqZXItam93ZW4.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvY0owTnNqaVRFZ0Z1V0I1SEFOMWtIcy9zYW5kYm94L3F5eUlQYWNDRXZiSktrYzB1TFZFYWctaW1nLTFfMTc3MjA2NzQ3NjAwMF9uYTFmbl9jbVYwYVhKdkxXMWhjbnB2TFdobGNtOHRiWFZxWlhJdGFtOTJaVzQucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLHdfMTkyMCxoXzE5MjAvZm9ybWF0LHdlYnAvcXVhbGl0eSxxXzgwIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNzk4NzYxNjAwfX19XX0_&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=Otu9-L7rX8prACRrubl2CfczTMDsK9hOJx1ur~8FLo2WSLLCd50jQ6N3lZ~bg08-l39t0BdpnBF5i9vPXlxoB31z8aO7UoigYrGZ7Z6v1iJlqXEVh0~5Y4u4sYnlkehVqMlh-NNdDmXAm7gaO2gSUnrHSwXJZSgto0JurVNDQjpPmdsq6jufoSzElqpb3pj8CGO3UO1CiBiF-vu5B7CJSb~xHIWe~qPAjca8wziqgOUfzw0NWQyoWZmZ0J7Mk6vEMhyhyUKVRX1QDbtgJlStYyPGEW1S0pYUZ0FlYvi30YyzZVMszAPCL~VQs3Xiu3Z5zSdbNmMEQLP6PIS3YpvvkA__)'}}>
         <div className="absolute inset-0 bg-black/50"></div>
         <div className="relative z-10">
           <div className="container mx-auto px-4">
@@ -80,7 +80,7 @@ export default function RetiroSagrado() {
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 rounded-2xl blur-2xl"></div>
               <img 
-                src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/aCpnQZquZjBhFGAn.png" 
+                src="https://private-us-east-1.manuscdn.com/sessionFile/cJ0NsjiTEgFuWB5HAN1kHs/sandbox/qyyIPacCEvbJKkc0uLVEag-img-2_1772067476000_na1fn_cmV0aXJvLW1hcnpvLXJlc2V0LWVuZXJnZXRpY28.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvY0owTnNqaVRFZ0Z1V0I1SEFOMWtIcy9zYW5kYm94L3F5eUlQYWNDRXZiSktrYzB1TFZFYWctaW1nLTJfMTc3MjA2NzQ3NjAwMF9uYTFmbl9jbVYwYVhKdkxXMWhjbnB2TFhKbGMyVjBMV1Z1WlhKblpYUnBZMjgucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLHdfMTkyMCxoXzE5MjAvZm9ybWF0LHdlYnAvcXVhbGl0eSxxXzgwIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNzk4NzYxNjAwfX19XX0_&Key-Pair-Id=K2HSFNDJXOU9ZS&Signature=pRmsTHykfSVncREKQnydU8E6YlfkL0zpEn4MoYlGzgMVvPhCw9Ft1HRSlqrNuiPN8A6ai3CxhJLQIuXbrkHD2us9d2uFgM1T~x~w8LFmMl7fuX71H8lXndTNzOYidYJLT4UibPerrcffXV5Dsh0GxdSv3XxX~Lam0B22D6LHnyylNVcq29qoNsdu5UECVCDS6X2QVGp7UQn3MQpmAVB1nKqF7wDdo0VdmCTqTzT0tGVwKaRae8M6V3-ueb0FbDQTaVyFsAgylFgwxuw6cgTu6oq8v1fwePKdtc8a0x2ok3uUaUOlW1SAEyX0d6jImCLQK7qKFEmey00EbD6yzSzUQw__" 
                 alt="Reinicio Energético" 
                 className="relative w-full rounded-2xl shadow-2xl object-cover aspect-video"
               />
