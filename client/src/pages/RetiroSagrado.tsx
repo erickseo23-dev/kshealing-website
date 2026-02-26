@@ -366,6 +366,33 @@ export default function RetiroSagrado() {
         </div>
       </section>
 
+      {/* CTA Section - Una Idea Final */}
+      <section className="py-20 md:py-32 bg-gradient-to-r from-primary/10 to-accent/10">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto text-center">
+            <h2 className="font-display text-4xl font-bold text-foreground mb-6">
+              Una Idea Final
+            </h2>
+            <p className="text-xl text-muted-foreground mb-8">
+              No necesitas más disciplina.<br />
+              No necesitas más fuerza.
+            </p>
+            <p className="text-2xl font-semibold text-foreground mb-8">
+              Necesitas menos carga.
+            </p>
+            <p className="text-lg text-muted-foreground mb-8">
+              Si sientes que es momento de reiniciar, este espacio es para ti.
+            </p>
+            <Link href="/club-retiro-sagrado">
+              <Button size="lg" className="bg-primary hover:bg-primary/90 text-white">
+                Unirse al Club del Retiro Sagrado
+                <ArrowRight size={18} className="ml-2" />
+              </Button>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Testimonials Section */}
       <section className="py-20 md:py-32 bg-primary/5">
         <div className="container mx-auto px-4">
@@ -420,32 +447,7 @@ export default function RetiroSagrado() {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-20 md:py-32 bg-gradient-to-r from-primary/10 to-accent/10">
-        <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center">
-            <h2 className="font-display text-4xl font-bold text-foreground mb-6">
-              Una Idea Final
-            </h2>
-            <p className="text-xl text-muted-foreground mb-8">
-              No necesitas más disciplina.<br />
-              No necesitas más fuerza.
-            </p>
-            <p className="text-2xl font-semibold text-foreground mb-8">
-              Necesitas menos carga.
-            </p>
-            <p className="text-lg text-muted-foreground mb-8">
-              Si sientes que es momento de reiniciar, este espacio es para ti.
-            </p>
-            <Link href="/club-retiro-sagrado">
-              <Button size="lg" className="bg-primary hover:bg-primary/90 text-white">
-                Unirse al Club del Retiro Sagrado
-                <ArrowRight size={18} className="ml-2" />
-              </Button>
-            </Link>
-          </div>
-        </div>
-      </section>
+
 
       <Footer />
     </div>
