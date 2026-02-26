@@ -18,38 +18,6 @@ export interface Event {
 export const eventos: Event[] = [
   // Ordenados por fecha cronológica
   {
-    id: 0,
-    title: "Presencia Viva",
-    description: "Un retiro para iniciar el nuevo ciclo desde la consciencia y no desde la prisa. Enseña a habitar el presente como base de claridad, calma y coherencia en la vida cotidiana.",
-    fecha: "Domingo, 4 de Enero, 2026",
-    ubicacion: "Club del Retiro Sagrado",
-    horario: "8:00 - 12:00 hrs (CDMX) / 15:00 - 19:00 hrs (España)",
-    participantes: "Ilimitado",
-    precio: "Acceso al Club",
-    incluye: ["Sesión en vivo con YOHEV", "Grabación disponible", "Acceso a comunidad", "Materiales de apoyo"],
-    estado: "Ya Disponible",
-    imagen: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/bwDlHyNVFNgvsNIk.png",
-    tipo: "Retiro Sagrado",
-    tema: "Presencia",
-    modalidad: "Online en Vivo"
-  },
-  {
-    id: 1,
-    title: "La Arquitectura del Amor",
-    description: "Del amor herido al Amor como principio divino. Amor como principio universal, no como drama humano.",
-    fecha: "8 de Febrero, 2026",
-    ubicacion: "Club del Retiro Sagrado",
-    horario: "7:00 - 11:00 hrs (CDMX) / 14:00 - 18:00 hrs (España)",
-    participantes: "Ilimitado",
-    precio: "Acceso al Club",
-    incluye: ["Transmisión en vivo", "Meditación central: Recordar el Amor", "Reordenamiento interno profundo", "Certificado de participación"],
-    estado: "Ya Disponible",
-    imagen: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/gCzkYldHFFRJUcnh.png",
-    tipo: "Retiro Sagrado",
-    tema: "Relaciones",
-    modalidad: "Online en Vivo"
-  },
-  {
     id: 13,
     title: "Taller Online Gratuito KS Healing y La Consciencia Crísitica",
     description: "Descubre cómo la Energía KS transforma tu consciencia crítica. Un taller interactivo donde exploraremos la conexión entre sanación energética y pensamiento consciente.",
