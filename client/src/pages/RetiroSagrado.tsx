@@ -402,6 +402,37 @@ export default function RetiroSagrado() {
         </div>
       </section>
 
+      {/* Enrollment Section */}
+      <section className="py-20 md:py-32 bg-gradient-to-r from-primary to-accent">
+        <div className="container mx-auto px-4">
+          <div className="max-w-2xl mx-auto text-center">
+            <h2 className="font-display text-4xl font-bold text-white mb-6">
+              ¿Listo para Reiniciar?
+            </h2>
+            <p className="text-lg text-white/90 mb-8">
+              Acceso a este retiro + todos los retiros del Club + grabaciones anteriores
+            </p>
+            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-8 mb-8 border border-white/20">
+              <p className="text-white/80 mb-4">Membresía al Club del Retiro Sagrado</p>
+              <p className="text-5xl font-bold text-white mb-2">$199</p>
+              <p className="text-white/70 text-sm mb-6">por mes • Cancela cuando quieras</p>
+              <Link href="/club-retiro-sagrado">
+                <Button size="lg" className="w-full bg-white text-primary hover:bg-white/90 font-semibold">
+                  Inscribirse Ahora
+                  <ArrowRight size={18} className="ml-2" />
+                </Button>
+              </Link>
+            </div>
+            <p className="text-white/70 text-sm">
+              O si quieres saber más sobre el Club y todos sus beneficios:
+            </p>
+            <Link href="/club-retiro-sagrado" className="text-white hover:text-white/80 underline mt-2 inline-block">
+              Conocer el Club del Retiro Sagrado
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Testimonials Section */}
       <section className="py-20 md:py-32 bg-primary/5">
         <div className="container mx-auto px-4">
