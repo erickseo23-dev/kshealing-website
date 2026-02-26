@@ -154,6 +154,9 @@ export default function RetiroSagrado() {
           <h2 className="font-display text-4xl font-bold text-foreground mb-12 text-center">
             ¿Por Qué Marzo es el Momento Ideal?
           </h2>
+          <div className="mb-12">
+            <img src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/IMxOiCSVBeCEUYZA.png" alt="Equinoccio de Primavera" className="w-full h-auto rounded-2xl shadow-lg" />
+          </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             <div className="relative group">
               <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 rounded-2xl blur-2xl"></div>
@@ -186,6 +189,9 @@ export default function RetiroSagrado() {
             <h2 className="font-display text-4xl font-bold text-foreground mb-12 text-center">
               ¿Qué Vamos a Trabajar?
             </h2>
+            <div className="mb-12">
+              <img src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/fTmsXInBtDfdPnOu.png" alt="Meditación y Transformación Energética" className="w-full h-auto rounded-2xl shadow-lg" />
+            </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {[
                 "Identificar dónde se acumula el arrastre energético",
@@ -219,6 +225,9 @@ export default function RetiroSagrado() {
             <h2 className="font-display text-4xl font-bold text-foreground mb-12 text-center">
               ¿Cómo Saber si Necesitas Este Retiro?
             </h2>
+            <div className="mb-12">
+              <img src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/oYrDAQuLyeypkEJD.png" alt="Claridad y Renovación" className="w-full h-auto rounded-2xl shadow-lg" />
+            </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
               {[
                 "Te sientes cansado sin razón clara",
