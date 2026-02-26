@@ -101,7 +101,7 @@ export default function KSHealing() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <a href="https://www.i3cdigital.com/offers/FQuDTjNV/checkout" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.i3cdigital.com/offers/DiQdf4PP" target="_blank" rel="noopener noreferrer">
                 <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-slate-950 font-bold gap-2" style={{backgroundColor: '#fbbc0e'}}>
                   Inscríbete Ahora
                   <ArrowRight size={20} />
@@ -330,7 +330,7 @@ export default function KSHealing() {
               <div className="border-t border-primary/20 pt-8">
                 <p className="text-lg font-bold text-foreground mb-4">Inversión: <span style={{color: '#fbbc0e'}}>$145 USD</span></p>
                 <div className="flex flex-col sm:flex-row gap-4">
-                  <a href="https://www.i3cdigital.com/offers/FQuDTjNV/checkout" target="_blank" rel="noopener noreferrer">
+                  <a href="https://www.i3cdigital.com/offers/DiQdf4PP" target="_blank" rel="noopener noreferrer">
                     <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-slate-950 font-bold gap-2" style={{backgroundColor: '#fbbc0e'}}>
                       Inscríbete Ahora
                       <ArrowRight size={20} />
@@ -610,7 +610,7 @@ export default function KSHealing() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="https://www.i3cdigital.com/offers/FQuDTjNV/checkout" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.i3cdigital.com/offers/DiQdf4PP" target="_blank" rel="noopener noreferrer">
                 <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-slate-950 font-bold gap-2" style={{backgroundColor: '#fbbc0e'}}>
                   Inscríbete Ahora
                   <ArrowRight size={20} />
