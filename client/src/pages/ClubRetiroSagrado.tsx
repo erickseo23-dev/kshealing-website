@@ -224,7 +224,9 @@ export default function ClubRetiroSagrado() {
                     />
                   </div>
                   <div className="p-4">
-                    <p className="text-sm text-primary font-semibold mb-1">{retiro.fecha.split(",")[0]}</p>
+                    <p className="text-sm text-primary font-semibold mb-1">
+                      {retiro.title === 'Presencia Viva' ? 'Enero' : retiro.title === 'La Arquitectura del Amor' ? 'Febrero' : retiro.fecha.split(' ')[0]}
+                    </p>
                     <h3 className="font-semibold text-foreground text-sm">{retiro.title}</h3>
                   </div>
                 </Card>
