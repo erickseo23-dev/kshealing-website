@@ -112,7 +112,7 @@ export default function KSHealing() {
             <div className="flex flex-wrap gap-6 text-white/80 text-sm mt-12">
               <div className="flex gap-2 items-center">
                 <Calendar size={18} className="text-secondary" style={{color: '#fbbc0e'}} />
-                <span>22 Feb, 1 Mar, 8 Mar</span>
+                <span>22 Mar, 29 Mar, 5 Abr</span>
               </div>
               <div className="flex gap-2 items-center">
                 <Users size={18} className="text-secondary" style={{color: '#fbbc0e'}} />
@@ -315,7 +315,7 @@ export default function KSHealing() {
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
                 <div className="text-center">
                   <p className="text-sm text-muted-foreground mb-2">Fechas</p>
-                  <p className="font-display text-2xl font-bold text-foreground">22 Feb, 1 Mar, 8 Mar</p>
+                  <p className="font-display text-2xl font-bold text-foreground">22 Mar, 29 Mar, 5 Abr</p>
                 </div>
                 <div className="text-center">
                   <p className="text-sm text-muted-foreground mb-2">Horario</p>
@@ -619,7 +619,7 @@ export default function KSHealing() {
             </div>
 
             <p className="text-sm text-muted-foreground mt-8">
-              Próximas sesiones: 22 de Febrero, 1 de Marzo, 8 de Marzo • Online en vivo con YOHEV • $145 USD
+              Próximas sesiones: 22 de Marzo, 29 de Marzo, 5 de Abril • Online en vivo con YOHEV • $145 USD
             </p>
           </div>
         </div>
