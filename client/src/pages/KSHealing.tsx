@@ -39,7 +39,7 @@ export default function KSHealing() {
     {
       title: "Sesiones en Vivo con YOHEV",
       description: "3 domingos consecutivos, 2 horas cada sesión",
-      date: "22 Feb, 1 Mar, 8 Mar",
+      date: "22 Mar, 29 Mar, 5 Abr",
     },
     {
       title: "Material Pregrabado",
