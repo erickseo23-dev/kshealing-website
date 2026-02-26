@@ -414,7 +414,7 @@ export default function RetiroSagrado() {
             </p>
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-8 mb-8 border border-white/20">
               <p className="text-white/80 mb-4">Membresía al Club del Retiro Sagrado</p>
-              <p className="text-5xl font-bold text-white mb-2">$29 USD</p>
+              <p className="text-5xl font-bold text-white mb-2">$29 USD <span className="text-2xl">(~500 MXN)</span></p>
               <p className="text-white/70 text-sm mb-6">por mes en dólares • Cancela cuando quieras</p>
               <a href="https://www.i3cdigital.com/offers/GdzCo9uE/checkout" target="_blank" rel="noopener noreferrer">
                 <Button size="lg" className="w-full bg-white text-primary hover:bg-white/90 font-semibold">
