@@ -316,7 +316,7 @@ export default function ElLibro() {
               {/* Community Image Card */}
               <div className="mb-12 rounded-2xl overflow-hidden border border-border/50 hover:shadow-lg transition-shadow">
                 <img 
-                  src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/depjnwckHUeRKfEp.png" 
+                  src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/pQGhYhNxjQqqiwIQ.png" 
                   alt="Comunidad de Lectores de KS Healing" 
                   className="w-full h-auto block"
                   loading="lazy"
