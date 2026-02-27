@@ -129,6 +129,13 @@ export default function Eventos() {
                         <ArrowRight size={16} />
                       </Button>
                     </Link>
+                  ) : evento.tipo === "Activación de Libro" ? (
+                    <Link href="/el-libro" className="block">
+                      <Button className="w-full bg-primary hover:bg-primary/90 text-white gap-2">
+                        Conseguir el libro
+                        <ArrowRight size={16} />
+                      </Button>
+                    </Link>
                   ) : (
                     <Link href="/taller-ks-healing" className="block">
                       <Button className="w-full bg-orange-500 hover:bg-orange-600 text-white gap-2">
