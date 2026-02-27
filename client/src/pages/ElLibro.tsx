@@ -313,6 +313,23 @@ export default function ElLibro() {
                 </Card>
               </div>
 
+              {/* Community Image Card */}
+              <Card className="overflow-hidden border-border/50 hover:shadow-lg transition-shadow mb-12">
+                <img 
+                  src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/XrVSMrcheSTuJuWl.png" 
+                  alt="Comunidad de Lectores de KS Healing" 
+                  className="w-full h-auto object-cover"
+                />
+                <div className="p-8 text-center">
+                  <h3 className="font-display text-2xl font-bold text-foreground mb-3">
+                    Somos Una Comunidad Global
+                  </h3>
+                  <p className="text-muted-foreground">
+                    Lectores de todo el mundo transformando sus vidas a través de la Energía KS. Cada persona que se une aporta su luz a nuestra comunidad.
+                  </p>
+                </div>
+              </Card>
+
               <div className="bg-gradient-to-r from-primary/10 to-accent/10 rounded-xl p-8 text-center border border-primary/20">
                 <p className="text-lg text-foreground mb-4">
                   <strong>Al registrar tu libro escaneando el código QR de la página 233,</strong> automáticamente formas parte de esta comunidad de transformación.
