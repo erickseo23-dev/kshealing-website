@@ -251,6 +251,79 @@ export default function ElLibro() {
             </div>
           </div>
 
+          {/* Reader Community Section */}
+          <div className="mb-20 bg-gradient-to-br from-primary/5 via-accent/5 to-primary/5 rounded-2xl p-12 border border-primary/20">
+            <div className="max-w-4xl mx-auto">
+              <div className="text-center mb-12">
+                <h2 className="font-display text-4xl font-bold text-foreground mb-4">
+                  La Comunidad de Lectores de YOHEV
+                </h2>
+                <p className="text-lg text-muted-foreground">
+                  Cuando obtienes el libro, accedes a mucho más que un libro impreso o digital
+                </p>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+                <Card className="p-8 border-border/50 hover:shadow-lg transition-shadow">
+                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
+                    <Zap size={24} className="text-primary" />
+                  </div>
+                  <h3 className="font-display text-xl font-bold text-foreground mb-4">
+                    Sesiones de Activación del Libro
+                  </h3>
+                  <p className="text-muted-foreground">
+                    Participa en sesiones en vivo con YOHEV donde se activa la energía del libro y se profundiza en los ejercicios. Transmisión directa de Energía KS para potenciar tu lectura.
+                  </p>
+                </Card>
+
+                <Card className="p-8 border-border/50 hover:shadow-lg transition-shadow">
+                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
+                    <BookOpen size={24} className="text-primary" />
+                  </div>
+                  <h3 className="font-display text-xl font-bold text-foreground mb-4">
+                    Círculos de Lectura
+                  </h3>
+                  <p className="text-muted-foreground">
+                    Únete a círculos de lectura exclusivos donde exploramos juntos los capítulos más profundos. Reflexión compartida, preguntas respondidas directamente por YOHEV.
+                  </p>
+                </Card>
+
+                <Card className="p-8 border-border/50 hover:shadow-lg transition-shadow">
+                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
+                    <CheckCircle2 size={24} className="text-primary" />
+                  </div>
+                  <h3 className="font-display text-xl font-bold text-foreground mb-4">
+                    Acceso a Comunidad Privada
+                  </h3>
+                  <p className="text-muted-foreground">
+                    Comunidad exclusiva de lectores donde compartimos experiencias, dudas y transformaciones. Espacio seguro para conectar con otros en el camino.
+                  </p>
+                </Card>
+
+                <Card className="p-8 border-border/50 hover:shadow-lg transition-shadow">
+                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
+                    <Zap size={24} className="text-primary" />
+                  </div>
+                  <h3 className="font-display text-xl font-bold text-foreground mb-4">
+                    Sorpresas y Beneficios Exclusivos
+                  </h3>
+                  <p className="text-muted-foreground">
+                    Acceso anticipado a nuevos eventos, descuentos especiales en certificaciones, materiales complementarios y mucho más que iremos revelando.
+                  </p>
+                </Card>
+              </div>
+
+              <div className="bg-gradient-to-r from-primary/10 to-accent/10 rounded-xl p-8 text-center border border-primary/20">
+                <p className="text-lg text-foreground mb-4">
+                  <strong>Al registrar tu libro escaneando el código QR de la página 233,</strong> automáticamente formas parte de esta comunidad de transformación.
+                </p>
+                <p className="text-muted-foreground">
+                  No es solo un libro. Es una puerta a una comunidad viva, en constante evolución, donde cada lector contribuye a la transformación colectiva.
+                </p>
+              </div>
+            </div>
+          </div>
+
           {/* Purchase Section */}
           <div id="comprar" className="max-w-4xl mx-auto bg-gradient-to-br from-primary/10 to-accent/10 border border-primary/20 rounded-2xl p-12">
             <h2 className="font-display text-3xl font-bold text-foreground mb-6 text-center">
