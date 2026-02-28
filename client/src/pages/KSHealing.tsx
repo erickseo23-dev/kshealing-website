@@ -120,7 +120,7 @@ export default function KSHealing() {
               </div>
               <div className="flex gap-2 items-center">
                 <Award size={18} className="text-secondary" style={{color: '#fbbc0e'}} />
-                <span>$257 USD</span>
+                <span>$257 USD (4500 MXN)</span>
               </div>
             </div>
           </div>
@@ -328,7 +328,7 @@ export default function KSHealing() {
               </div>
 
               <div className="border-t border-primary/20 pt-8">
-                <p className="text-lg font-bold text-foreground mb-4">Inversión: <span style={{color: '#fbbc0e'}}>$257 USD</span></p>
+                <p className="text-lg font-bold text-foreground mb-4">Inversión: <span style={{color: '#fbbc0e'}}>$257 USD (4500 MXN)</span></p>
                 <div className="flex flex-col sm:flex-row gap-4">
                   <a href="https://www.i3cdigital.com/offers/DiQdf4PP" target="_blank" rel="noopener noreferrer">
                     <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-slate-950 font-bold gap-2" style={{backgroundColor: '#fbbc0e'}}>
@@ -619,7 +619,7 @@ export default function KSHealing() {
             </div>
 
             <p className="text-sm text-muted-foreground mt-8">
-              Próximas sesiones: 22 de Marzo, 29 de Marzo, 5 de Abril • Online en vivo con YOHEV • $257 USD
+              Próximas sesiones: 22 de Marzo, 29 de Marzo, 5 de Abril • Online en vivo con YOHEV • $257 USD (4500 MXN)
             </p>
           </div>
         </div>
