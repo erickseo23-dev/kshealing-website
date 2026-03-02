@@ -121,9 +121,9 @@ export default function ProximosRetiros() {
                     <div className="space-y-4 mb-6">
                       <div className="flex items-start gap-3">
                         <Calendar size={18} className="text-primary flex-shrink-0 mt-0.5" />
-                        <div>
+                        <div className="min-w-0 flex-1">
                           <p className="text-sm text-muted-foreground">Fecha</p>
-                          <p className="text-foreground font-semibold">{retiro.fecha}</p>
+                          <p className="text-foreground font-semibold break-words">{retiro.fecha}</p>
                         </div>
                       </div>
 
