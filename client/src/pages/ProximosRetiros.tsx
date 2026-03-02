@@ -105,7 +105,7 @@ export default function ProximosRetiros() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
               {retirosFiltrados.map(retiro => (
                 <Link key={retiro.id} href={`/retiro-sagrado?id=${retiro.id}`}>
-                  <Card className="h-full p-8 border-border/50 bg-gradient-to-br from-background to-primary/5 hover:shadow-2xl transition-all cursor-pointer group">
+                  <Card className="h-full p-4 md:p-8 border-border/50 bg-gradient-to-br from-background to-primary/5 hover:shadow-2xl transition-all cursor-pointer group">
                     {/* Header */}
                     <div className="mb-6 pb-6 border-b border-border/50">
                       <div className="inline-block mb-3 px-3 py-1 rounded-full bg-primary/10 border border-primary/20">
@@ -123,7 +123,7 @@ export default function ProximosRetiros() {
                         <Calendar size={18} className="text-primary flex-shrink-0 mt-0.5" />
                         <div className="min-w-0 flex-1">
                           <p className="text-sm text-muted-foreground">Fecha</p>
-                          <p className="text-foreground font-semibold break-words">{retiro.fecha}</p>
+                          <p className="text-foreground font-semibold break-words text-sm md:text-base">{retiro.fecha}</p>
                         </div>
                       </div>
 
