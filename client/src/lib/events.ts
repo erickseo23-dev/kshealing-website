@@ -66,6 +66,22 @@ export const eventos: Event[] = [
     modalidad: "Online en Vivo"
   },
   {
+    id: 15,
+    title: "Activación del Libro KS Healing - Por YOHEV",
+    description: "Sesión especial de activación para lectores del libro KS Healing. Escanea el código QR de la página 233 con tu móvil para registrar tu libro y formar parte de la comunidad de lectores de YOHEV.",
+    fecha: "18/Marzo",
+    ubicacion: "Online en vivo por Zoom",
+    horario: "11:00 - 12:30 hrs (CDMX) / 18:00 - 19:30 hrs (España)",
+    participantes: "Ilimitado",
+    precio: "Gratuito",
+    incluye: ["Transmisión en vivo con YOHEV", "Activación de tu libro físico", "Acceso a comunidad de lectores", "Grabación disponible"],
+    estado: "Próximamente",
+    imagen: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/GTnsaEwxAStNPnrW.png",
+    tipo: "Activación de Libro",
+    tema: "Libro",
+    modalidad: "Online en Vivo"
+  },
+  {
     id: 12,
     title: "Certificación Internacional en KS Healing Nivel Básico",
     description: "Únete a una comunidad global de profesionales transformando vidas a través de la Energía KS. Certificación Internacional en 3 módulos intensivos.",
