@@ -455,6 +455,71 @@ export default function RetiroSagrado() {
         </div>
       </section>
 
+      {/* Available 2026 Retreats */}
+      <section className="py-20 md:py-32 bg-primary/5">
+        <div className="container mx-auto px-4">
+          <h2 className="font-display text-4xl font-bold text-foreground mb-12 text-center">
+            Retiros ya disponibles en tu membresía del 2026
+          </h2>
+          <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
+            Estos retiros ya están grabados y disponibles para acceder en cualquier momento dentro de tu membresía del Club del Retiro Sagrado.
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            <Card className="overflow-hidden border-border/50 hover:shadow-lg transition-shadow">
+              <div className="aspect-video bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center">
+                <Sparkles size={48} className="text-primary/50" />
+              </div>
+              <div className="p-6">
+                <div className="inline-block mb-3 px-3 py-1 rounded-full bg-green-100 text-green-700 text-xs font-semibold">
+                  Grabación Disponible
+                </div>
+                <p className="text-sm text-primary font-semibold mb-2">Enero 2026</p>
+                <h3 className="font-semibold text-foreground mb-3">Retiro Sagrado de Enero</h3>
+                <p className="text-sm text-muted-foreground mb-4">Acceso completo a la grabación del retiro de enero, disponible para ver en cualquier momento.</p>
+                <p className="text-sm text-muted-foreground mb-4">
+                  <Calendar size={14} className="inline mr-1" />
+                  Grabación completa
+                </p>
+              </div>
+            </Card>
+            <Card className="overflow-hidden border-border/50 hover:shadow-lg transition-shadow">
+              <div className="aspect-video bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center">
+                <Sparkles size={48} className="text-primary/50" />
+              </div>
+              <div className="p-6">
+                <div className="inline-block mb-3 px-3 py-1 rounded-full bg-green-100 text-green-700 text-xs font-semibold">
+                  Grabación Disponible
+                </div>
+                <p className="text-sm text-primary font-semibold mb-2">Febrero 2026</p>
+                <h3 className="font-semibold text-foreground mb-3">Retiro Sagrado de Febrero</h3>
+                <p className="text-sm text-muted-foreground mb-4">Acceso completo a la grabación del retiro de febrero, disponible para ver en cualquier momento.</p>
+                <p className="text-sm text-muted-foreground mb-4">
+                  <Calendar size={14} className="inline mr-1" />
+                  Grabación completa
+                </p>
+              </div>
+            </Card>
+            <Card className="overflow-hidden border-border/50 hover:shadow-lg transition-shadow">
+              <div className="aspect-video bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center">
+                <Sparkles size={48} className="text-primary/50" />
+              </div>
+              <div className="p-6">
+                <div className="inline-block mb-3 px-3 py-1 rounded-full bg-green-100 text-green-700 text-xs font-semibold">
+                  Grabación Disponible
+                </div>
+                <p className="text-sm text-primary font-semibold mb-2">Marzo 2026</p>
+                <h3 className="font-semibold text-foreground mb-3">Reinicio Energético Profundo</h3>
+                <p className="text-sm text-muted-foreground mb-4">Acceso completo a la grabación del retiro de marzo, disponible para ver en cualquier momento.</p>
+                <p className="text-sm text-muted-foreground mb-4">
+                  <Calendar size={14} className="inline mr-1" />
+                  Grabación completa
+                </p>
+              </div>
+            </Card>
+          </div>
+        </div>
+      </section>
+
       {/* Next Retreats */}
       <section className="py-20 md:py-32">
         <div className="container mx-auto px-4">
