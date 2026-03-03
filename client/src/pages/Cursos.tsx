@@ -53,7 +53,7 @@ const cursosPublicos = [
     subtitle: "Sanación Energética Consciente",
     description: "La base fundamental de la sanación energética. Aprende a trabajar directamente con la Energía Keiouvos Stharef para acompañar procesos internos, emocionales y de consciencia.",
     duration: "3 semanas",
-    investment: "145 USD",
+    investment: "$232 USD (3999 MXN)",
     level: "Principiante",
     image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/vnrXjKIGBRvhMHvB.png",
     benefits: [
@@ -72,7 +72,7 @@ const cursosPublicos = [
     subtitle: "Las 12 Capas del ADN Espiritual",
     description: "Accede a la sabiduría ancestral de tu linaje. Explora las 12 capas de tu ADN espiritual y activa el potencial multidimensional que siempre estuvo en ti.",
     duration: "3 semanas",
-    investment: "145 USD",
+    investment: "$232 USD (3999 MXN)",
     level: "Abierto a todos",
     image: "https://private-us-east-1.manuscdn.com/sessionFile/cJ0NsjiTEgFuWB5HAN1kHs/sandbox/aa1v2zWj3WLVAQOIDAVvSD-img-1_1770104531000_na1fn_dGFsbGVyLWdlbmV0aWNhLXNhZ3JhZGEtbmV3.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvY0owTnNqaVRFZ0Z1V0I1SEFOMWtIcy9zYW5kYm94L2FhMXYyeldqM1dMVkFRT0lEQVZ2U0QtaW1nLTFfMTc3MDEwNDUzMTAwMF9uYTFmbl9kR0ZzYkdWeUxXZGxibVYwYVdOaExYTmhaM0poWkdFdGJtVjMucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLHdfMTkyMCxoXzE5MjAvZm9ybWF0LHdlYnAvcXVhbGl0eSxxXzgwIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNzk4NzYxNjAwfX19XX0_&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=v5rxV7Mqsp9GHxqEGM0YzoHu1bfnI55OfKXTv6hc0gBGkbGOfgVxjFclrvvstaqOWF4haGL9msioFsi2-evua~R-ms~e7sAUG3ZJvTLXtb2if0S8LTAqfpTsBdjpPOC1mmxV8ptycjkQHa7qVY2lw-iDYLHp4thcT9spg6oEH3lVXoIXk4nX2oNcNwo8aK327Tub2wHZeOAhM6fj2yu3t2sygjAOA~F6BL~UEdn~Q7xcnUznEmDgD27fvBAOzbPM9GvPal~1Iwb2gcJi387osBy0oGUdmDbMoOpumXys6Y~0gYxShfQXzOVbcsMyVBnm68TDonw~P4Ve8NWfDZ9arQ__",
     benefits: [

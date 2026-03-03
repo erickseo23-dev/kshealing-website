@@ -73,7 +73,7 @@ export const eventos: Event[] = [
     ubicacion: "Online en vivo",
     horario: "3 domingos (22 Mar, 29 Mar, 5 Abr) - 12:00 - 14:00 hrs (CDMX) / 19:00 - 21:00 hrs (España)",
     participantes: "20 lugares disponibles",
-    precio: "$145 USD",
+    precio: "$232 USD (3999 MXN)",
     incluye: [
       "Material en Video Pregrabado - Acceso completo a videos de cada módulo",
       "Sesión en Vivo con YOHEV - 2 horas de transmisión directa en Zoom",
