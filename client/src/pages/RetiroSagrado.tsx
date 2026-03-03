@@ -23,19 +23,19 @@ export default function RetiroSagrado() {
                 <span className="text-white font-semibold">🌿 Retiro Sagrado 9 - CON YOHEV</span>
               </div>
               <h1 className="font-display text-5xl md:text-6xl font-bold text-white mb-6 drop-shadow-lg">
-                Reinicio <span className="text-yellow-300">Energético Profundo</span>
+                El Niño que <span className="text-yellow-300">Habita en Ti</span>
               </h1>
               <p className="text-lg text-white font-semibold mb-4 drop-shadow">
                 Facilitado directamente por YOHEV
               </p>
               <p className="text-xl text-white mb-6 drop-shadow">
-                Libera el arrastre y recupera tu fuerza interior
+                Sanar la raíz emocional sin revivir el dolor
               </p>
               <p className="text-lg text-white mb-8 italic drop-shadow">
-                "No necesitas más fuerza. Necesitas menos carga."
+                "El niño interior como estructura viva que sigue organizando decisiones y vínculos."
               </p>
               <div className="inline-block mb-6 px-4 py-2 rounded-full bg-white/20 backdrop-blur-sm border border-white/30">
-                <span className="text-white font-semibold">📅 Domingo 1 de Marzo | 8:00 - 12:00 hrs (CDMX)</span>
+                <span className="text-white font-semibold">📅 Domingo 5 de Abril | 8:00 - 12:00 hrs (CDMX)</span>
               </div>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a href="#enrollment">
@@ -55,17 +55,17 @@ export default function RetiroSagrado() {
           <div className="max-w-3xl mx-auto">
             <Card className="p-12 border-border/50 bg-gradient-to-br from-background to-primary/10">
               <h2 className="font-display text-3xl font-bold text-foreground mb-6">
-                Marzo es un mes de <span className="text-primary">Renacimiento</span>
+                El <span className="text-primary">Niño Interior</span> Sigue Organizando tu Vida
               </h2>
               <div className="space-y-4 text-muted-foreground text-lg leading-relaxed">
                 <p>
-                  Pero no siempre nos sentimos así. El cambio de estación trae movimiento, luz, actividad... y muchas veces nos encuentra cansados, saturados mentalmente, emocionalmente cargados.
+                  Tus decisiones, tus relaciones, tu forma de amar y recibir... todo está siendo influenciado por una estructura viva que se formó hace años.
                 </p>
                 <p className="mt-6">
-                  <span className="font-semibold text-foreground">No estás bloqueado. Estás cargado.</span>
+                  <span className="font-semibold text-foreground">El niño interior no es un concepto. Es una realidad energética que sigue operando desde las sombras.</span>
                 </p>
                 <p className="font-semibold text-foreground mt-6">
-                  Este retiro es un espacio para hacer un reinicio real, no superficial.
+                  Este retiro es un espacio para sanar esa raíz sin revivir el trauma.
                 </p>
               </div>
             </Card>
@@ -87,39 +87,39 @@ export default function RetiroSagrado() {
             </div>
             <div>
               <h2 className="font-display text-4xl font-bold text-foreground mb-6">
-                ¿Qué es un <span className="text-primary">Reinicio Energético?</span>
+                ¿Qué es el <span className="text-primary">Niño Interior?</span>
               </h2>
               <div className="space-y-4 text-muted-foreground mb-8">
                 <p className="text-lg leading-relaxed">
-                  No es una limpieza dramática. No es una experiencia intensa. No es "subir la vibración".
+                  No es un concepto terapéutico. Es una estructura energética viva que se formó cuando eras pequeño y sigue operando hoy.
                 </p>
                 <p className="text-lg leading-relaxed">
-                  Es algo mucho más simple y profundo:
+                  Influye en:
                 </p>
                 <ul className="space-y-2 text-lg">
                   <li className="flex gap-2">
                     <span className="text-primary">•</span>
-                    <span>Liberar lo que ya no corresponde</span>
+                    <span>Cómo tomas decisiones</span>
                   </li>
                   <li className="flex gap-2">
                     <span className="text-primary">•</span>
-                    <span>Soltar acumulación emocional y mental</span>
+                    <span>Cómo amas y recibes amor</span>
                   </li>
                   <li className="flex gap-2">
                     <span className="text-primary">•</span>
-                    <span>Recuperar energía dispersa</span>
+                    <span>Tus patrones de relación</span>
                   </li>
                   <li className="flex gap-2">
                     <span className="text-primary">•</span>
-                    <span>Reordenar el campo interno</span>
+                    <span>Tu relación con la autoridad</span>
                   </li>
                   <li className="flex gap-2">
                     <span className="text-primary">•</span>
-                    <span>Restablecer tu eje antes de seguir avanzando</span>
+                    <span>Tu capacidad de recibir y prosperar</span>
                   </li>
                 </ul>
                 <p className="text-lg leading-relaxed font-semibold text-foreground mt-6">
-                  La mayoría de las personas no necesitan más fuerza. Necesitan menos carga.
+                  Sanar esto sin revivir el trauma es posible. Y es transformador.
                 </p>
               </div>
             </div>
