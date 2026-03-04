@@ -78,7 +78,7 @@ export default function ClubRetiroSagrado() {
     {
       id: 8,
       nombre: "La Arquitectura del Amor",
-      img: "https://d2xsxph8kpxj0f.cloudfront.net/310519663213129151/grqzaM5C3pRuoX7dnGFBAz/arquitectura-del-amor-retreat-ADWfsSUpQxvJ2mpn5hjeH8.webp",
+      img: "https://d2xsxph8kpxj0f.cloudfront.net/310519663213129151/grqzaM5C3pRuoX7dnGFBAz/arquitectura-del-amor-couple-EddrtjoJULaDsnKrapS9u8.webp",
       descripcion: "Un retiro que explora la estructura fundamental del amor en todas sus dimensiones. Descubre cómo el amor construye, sana y transforma. Acceso completo a la grabación disponible para ver en cualquier momento dentro de tu membresía."
     },
     {
@@ -245,7 +245,10 @@ export default function ClubRetiroSagrado() {
                     <p className="text-sm text-primary font-semibold mb-1">
                       {retiro.fecha}
                     </p>
-                    <h3 className="font-semibold text-foreground text-sm">{retiro.title}</h3>
+                    <h3 className="font-semibold text-foreground text-sm mb-2">{retiro.title}</h3>
+                    <p className="text-xs text-muted-foreground line-clamp-2">
+                      {retiro.description || 'Un encuentro profundo de transformación y sanación.'}
+                    </p>
                   </div>
                 </Card>
               ))}
@@ -400,7 +403,10 @@ export default function ClubRetiroSagrado() {
                     />
                   </div>
                   <div className="p-4">
-                    <h3 className="font-semibold text-foreground text-sm">{retiro.nombre}</h3>
+                    <h3 className="font-semibold text-foreground text-sm mb-2">{retiro.nombre}</h3>
+                    <p className="text-xs text-muted-foreground line-clamp-2">
+                      {retiro.descripcion}
+                    </p>
                   </div>
                 </Card>
               ))}
