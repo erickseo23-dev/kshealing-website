@@ -14,7 +14,7 @@ export default function RetiroSagrado() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="py-20 md:py-32 bg-cover bg-center bg-no-repeat relative" style={{backgroundImage: 'url(https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/XJdkoaargGhEHhuy.png)'}}>
+      <section className="py-20 md:py-32 bg-cover bg-center bg-no-repeat relative" style={{backgroundImage: 'url(https://d2xsxph8kpxj0f.cloudfront.net/310519663213129151/grqzaM5C3pRuoX7dnGFBAz/hero-inner-child-Wkh3TYb93bP6YvZbv6dsib.png)'}}>
         <div className="absolute inset-0 bg-black/50"></div>
         <div className="relative z-10">
           <div className="container mx-auto px-4">
@@ -80,8 +80,8 @@ export default function RetiroSagrado() {
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 rounded-2xl blur-2xl"></div>
               <img 
-                src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/RlpopimQxAHRPGeg.png" 
-                alt="Reinicio Energético" 
+                src="https://d2xsxph8kpxj0f.cloudfront.net/310519663213129151/grqzaM5C3pRuoX7dnGFBAz/transformation-inner-child-KWRYmZtquTnDRUxyZRyBFD.png" 
+                alt="Transformación del Niño Interior" 
                 className="relative w-full rounded-2xl shadow-2xl object-cover aspect-video"
               />
             </div>
@@ -155,7 +155,7 @@ export default function RetiroSagrado() {
             ¿Por Qué Sanar el Niño Interior Ahora?
           </h2>
           <div className="mb-12">
-            <img src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/IMxOiCSVBeCEUYZA.png" alt="Sanación del Niño Interior" className="w-full h-auto rounded-2xl shadow-lg" />
+            <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663213129151/grqzaM5C3pRuoX7dnGFBAz/emotional-freedom-GziDw3jvZEHV9ny3tLELdr.png" alt="Libertad Emocional" className="w-full h-auto rounded-2xl shadow-lg" />
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             <div className="relative group">
@@ -190,7 +190,7 @@ export default function RetiroSagrado() {
               ¿Qué Vamos a Sanar?
             </h2>
             <div className="mb-12">
-              <img src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/fTmsXInBtDfdPnOu.png" alt="Meditación y Transformación Energética" className="w-full h-auto rounded-2xl shadow-lg" />
+              <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663213129151/grqzaM5C3pRuoX7dnGFBAz/meditation-healing-ANzNvbGQcREw4pAGLYe55.png" alt="Meditación y Sanación del Niño Interior" className="w-full h-auto rounded-2xl shadow-lg" />
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {[
@@ -226,7 +226,7 @@ export default function RetiroSagrado() {
               ¿Cómo Saber si Necesitas Este Retiro?
             </h2>
             <div className="mb-12">
-              <img src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/oYrDAQuLyeypkEJD.png" alt="Claridad y Renovación" className="w-full h-auto rounded-2xl shadow-lg" />
+              <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663213129151/grqzaM5C3pRuoX7dnGFBAz/relationship-healing-6EVcegKcAtUufeHsJSxwNn.png" alt="Sanación de Relaciones" className="w-full h-auto rounded-2xl shadow-lg" />
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
               {[
