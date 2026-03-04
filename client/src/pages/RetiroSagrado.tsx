@@ -433,29 +433,7 @@ export default function RetiroSagrado() {
         </div>
       </section>
 
-      {/* Testimonials Section */}
-      <section className="py-20 md:py-32 bg-primary/5">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="font-display text-4xl font-bold text-foreground mb-12 text-center">
-              Testimonios del Club del Retiro Sagrado
-            </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              {retiroSagradoTestimonials.slice(0, 4).map((testimonial, idx) => (
-                <Card key={idx} className="p-8 border-border/50 bg-background">
-                  <p className="text-muted-foreground mb-6 italic">"{testimonial.quote}"</p>
-                  <div>
-                    <p className="font-semibold text-foreground">{testimonial.name}</p>
-                    <p className="text-sm text-muted-foreground">{testimonial.title}</p>
-                  </div>
-                </Card>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Available 2026 Retreats */}
+      {/* Available 2026 Retreats - Updated */}
       <section className="py-20 md:py-32 bg-primary/5">
         <div className="container mx-auto px-4">
           <h2 className="font-display text-4xl font-bold text-foreground mb-12 text-center">
@@ -521,6 +499,29 @@ export default function RetiroSagrado() {
       </section>
 
       {/* Next Retreats */}
+
+      {/* Testimonials Section */}
+      <section className="py-20 md:py-32 bg-primary/5">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="font-display text-4xl font-bold text-foreground mb-12 text-center">
+              Testimonios del Club del Retiro Sagrado
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              {retiroSagradoTestimonials.slice(0, 4).map((testimonial, idx) => (
+                <Card key={idx} className="p-8 border-border/50 bg-background">
+                  <p className="text-muted-foreground mb-6 italic">"{testimonial.quote}"</p>
+                  <div>
+                    <p className="font-semibold text-foreground">{testimonial.name}</p>
+                    <p className="text-sm text-muted-foreground">{testimonial.title}</p>
+                  </div>
+                </Card>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="py-20 md:py-32">
         <div className="container mx-auto px-4">
           <h2 className="font-display text-4xl font-bold text-foreground mb-12 text-center">
