@@ -68,6 +68,24 @@ export default function ClubRetiroSagrado() {
       nombre: "Claves Internas para el Bienestar Verdadero",
       img: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/rnjSKFLtTUKVGlty.png",
       descripcion: "Un encuentro de comprensión profunda sobre lo que realmente sostiene el bienestar. Integra regulación emocional, coherencia mental, presencia corporal y orden energético."
+    },
+    {
+      id: 7,
+      nombre: "Retiro Sagrado de Octubre",
+      img: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/rnjSKFLtTUKVGlty.png",
+      descripcion: "Un encuentro profundo de transformación y sanación. Acceso completo a la grabación disponible para ver en cualquier momento dentro de tu membresía."
+    },
+    {
+      id: 8,
+      nombre: "Retiro Sagrado de Noviembre",
+      img: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/rnjSKFLtTUKVGlty.png",
+      descripcion: "Un encuentro profundo de transformación y sanación. Acceso completo a la grabación disponible para ver en cualquier momento dentro de tu membresía."
+    },
+    {
+      id: 9,
+      nombre: "Retiro Sagrado de Diciembre",
+      img: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/rnjSKFLtTUKVGlty.png",
+      descripcion: "Un encuentro profundo de transformación y sanación. Acceso completo a la grabación disponible para ver en cualquier momento dentro de tu membresía."
     }
   ];
 
@@ -198,7 +216,7 @@ export default function ClubRetiroSagrado() {
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
             <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-12 text-center">
-              Los 12 Retiros de 2026 con YOHEV
+              Próximos Retiros con YOHEV
             </h2>
             <p className="text-center text-muted-foreground mb-12 text-lg">
               Haz click en cualquier retiro para ver más detalles
@@ -225,7 +243,7 @@ export default function ClubRetiroSagrado() {
                   </div>
                   <div className="p-4">
                     <p className="text-sm text-primary font-semibold mb-1">
-                      {retiro.title === 'Presencia Viva' ? 'Enero' : retiro.title === 'La Arquitectura del Amor' ? 'Febrero' : retiro.fecha.split(' ')[0]}
+                      {retiro.fecha}
                     </p>
                     <h3 className="font-semibold text-foreground text-sm">{retiro.title}</h3>
                   </div>
@@ -361,7 +379,7 @@ export default function ClubRetiroSagrado() {
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
             <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-12 text-center">
-              Retiros 2025 - Incluidos en Tu Membresía
+              Retiros que ya están disponibles en tu membresía
             </h2>
             
             <p className="text-center text-muted-foreground mb-12 text-lg">
