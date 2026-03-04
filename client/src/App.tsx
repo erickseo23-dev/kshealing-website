@@ -16,6 +16,7 @@ import BlogArticle2 from "./pages/BlogArticle2";
 import BlogArticle3 from "./pages/BlogArticle3";
 import BlogArticle4 from "./pages/BlogArticle4";
 import BlogArticle5 from '@/pages/BlogArticle5';
+import BlogArticle6 from '@/pages/BlogArticle6';
 import Testimonios from '@/pages/Testimonios';
 import Eventos from '@/pages/Eventos';
 import TallerKSHealing from '@/pages/TallerKSHealing';
@@ -69,6 +70,7 @@ function Router() {
       <Route path={"/blog/article-3"} component={BlogArticle3} />
       <Route path={"/blog/article-4"} component={BlogArticle4} />
       <Route path={"/blog/article-5"} component={BlogArticle5} />
+      <Route path={"/blog/article-6"} component={BlogArticle6} />
       <Route path={"/testimonios"} component={Testimonios} />
          <Route path="/eventos" component={Eventos} />
       <Route path="/taller-ks-healing" component={TallerKSHealing} />

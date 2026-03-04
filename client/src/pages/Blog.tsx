@@ -62,6 +62,17 @@ const blogPosts = [
     image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/PfqwzMjlkDTLiyNS.png",
     slug: "article-5",
   },
+  {
+    id: 6,
+    title: "El Niño Interior: Cómo Sanar Patrones Emocionales Profundos",
+    excerpt: "Descubre cómo sanar tu niño interior y transformar patrones emocionales limitantes. La sanación del niño interior es la clave para relaciones auténticas y libertad emocional.",
+    author: "YOHEV",
+    date: "1 de Marzo, 2026",
+    category: "Sanación",
+    readTime: "11 min",
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663213129151/grqzaM5C3pRuoX7dnGFBAz/blog-inner-child-healing-FaNGXam9Ft2BWiX5ecw3nz.webp",
+    slug: "article-6",
+  },
 ];
 
 export default function Blog() {
