@@ -12,6 +12,63 @@ export default function RetiroSagrado() {
   const [selectedRetiro, setSelectedRetiro] = useState<any>(null);
   const [selectedRetiro2025, setSelectedRetiro2025] = useState<any>(null);
 
+  const retiros2025 = [
+    {
+      id: 1,
+      nombre: "Volver al Silencio",
+      img: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/yAWkbSAsDZEhZfSE.png",
+      descripcion: "Un retiro para aquietar el ruido interno, soltar la sobreestimulación y regresar al centro. Un espacio de pausa consciente donde el silencio se convierte en guía y claridad."
+    },
+    {
+      id: 2,
+      nombre: "Limpia tu Energía",
+      img: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/awwYPuBlxOHblLFU.png",
+      descripcion: "Un encuentro para liberar cargas emocionales, mentales y energéticas acumuladas. Ideal para quienes sienten cansancio profundo, saturación interna o desgaste invisible."
+    },
+    {
+      id: 3,
+      nombre: "Códigos de Luz",
+      img: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/SlhMwHLojSoulpMw.png",
+      descripcion: "Un retiro de reconexión con el orden interno y la información sutil de equilibrio. Permite recordar estados de coherencia profunda y alineación más allá del esfuerzo mental."
+    },
+    {
+      id: 4,
+      nombre: "Recupera tu Centro",
+      img: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/yDLnhOHAVkuqDLHK.png",
+      descripcion: "Diseñado para volver al eje interno cuando la vida, el estrés o las emociones desbalancean. Un espacio para reencontrarte contigo y restablecer estabilidad en medio del movimiento."
+    },
+    {
+      id: 5,
+      nombre: "Sana y Cierra Ciclos",
+      img: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/xSECzmGUyDixWbNv.png",
+      descripcion: "Un retiro para cerrar procesos abiertos, relaciones y etapas inconclusas sin arrastre. Ayuda a liberar lo que ya cumplió su función y recuperar energía para el presente."
+    },
+    {
+      id: 6,
+      nombre: "Claves Internas para el Bienestar Verdadero",
+      img: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/rnjSKFLtTUKVGlty.png",
+      descripcion: "Un encuentro de comprensión profunda sobre lo que realmente sostiene el bienestar. Integra regulación emocional, coherencia mental, presencia corporal y orden energético."
+    },
+    {
+      id: 7,
+      nombre: "Presencia Viva",
+      img: "https://d2xsxph8kpxj0f.cloudfront.net/310519663213129151/grqzaM5C3pRuoX7dnGFBAz/presencia-viva-retreat-jSoYc9AvwbYg8BDm4zgGKM.webp",
+      descripcion: "Un retiro de profunda presencia y consciencia. Aprende a estar completamente presente en cada momento, disolviendo distracciones y conectando con tu esencia más pura. Acceso completo a la grabación disponible para ver en cualquier momento dentro de tu membresía."
+    },
+    {
+      id: 8,
+      nombre: "La Arquitectura del Amor",
+      img: "https://d2xsxph8kpxj0f.cloudfront.net/310519663213129151/grqzaM5C3pRuoX7dnGFBAz/arquitectura-del-amor-couple-EddrtjoJULaDsnKrapS9u8.webp",
+      descripcion: "Un retiro que explora la estructura fundamental del amor en todas sus dimensiones. Descubre cómo el amor construye, sana y transforma. Acceso completo a la grabación disponible para ver en cualquier momento dentro de tu membresía."
+    },
+    {
+      id: 9,
+      nombre: "Reinicio Energético Profundo",
+      img: "https://d2xsxph8kpxj0f.cloudfront.net/310519663213129151/grqzaM5C3pRuoX7dnGFBAz/reinicio-energetico-retreat-j5cWC2a8g4Uszh94JgpFdt.webp",
+      descripcion: "Un retiro de renovación y reset energético. Limpia patrones antiguos, restablece tu energía vital y comienza de nuevo con claridad y poder. Acceso completo a la grabación disponible para ver en cualquier momento dentro de tu membresía."
+    }
+  ];
+
   return (
     <div className="min-h-screen flex flex-col bg-background">
       <Navigation />
@@ -448,23 +505,23 @@ export default function RetiroSagrado() {
               Haz click en cualquier retiro para ver más detalles
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {eventos.filter(e => e.tipo === "Retiro Sagrado" && e.estado === "Ya Disponible").slice(0, 9).map((retiro) => (
+              {retiros2025.map((retiro) => (
                 <Card 
                   key={retiro.id} 
                   className="overflow-hidden border-border/50 bg-primary/5 hover:shadow-lg transition-all cursor-pointer"
-                  onClick={() => setSelectedRetiro2025({...retiro, nombre: retiro.title, img: retiro.imagen, descripcion: retiro.description})}
+                  onClick={() => setSelectedRetiro2025(retiro)}
                 >
                   <div className="relative h-40 overflow-hidden">
                     <img 
-                      src={retiro.imagen} 
-                      alt={retiro.title}
+                      src={retiro.img} 
+                      alt={retiro.nombre}
                       className="w-full h-full object-cover hover:scale-105 transition-transform"
                     />
                   </div>
                   <div className="p-4">
-                    <h3 className="font-semibold text-foreground text-sm mb-2">{retiro.title}</h3>
+                    <h3 className="font-semibold text-foreground text-sm mb-2">{retiro.nombre}</h3>
                     <p className="text-xs text-muted-foreground line-clamp-2">
-                      {retiro.description}
+                      {retiro.descripcion}
                     </p>
                   </div>
                 </Card>
