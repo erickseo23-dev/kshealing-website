@@ -1,7 +1,7 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
-import { Check, Heart, Zap, Users, Star, Leaf, Sparkles, Share2, Calendar, Clock, MapPin, ArrowRight } from "lucide-react";
+import { Check, Heart, Zap, Users, Star, Leaf, Sparkles, Share2, Calendar, Clock, MapPin, ArrowRight, X } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { retiroSagradoTestimonials } from "@/lib/programTestimonials";
@@ -9,6 +9,9 @@ import { eventos } from "@/lib/events";
 import { useState } from "react";
 
 export default function RetiroSagrado() {
+  const [selectedRetiro, setSelectedRetiro] = useState<any>(null);
+  const [selectedRetiro2025, setSelectedRetiro2025] = useState<any>(null);
+
   return (
     <div className="min-h-screen flex flex-col bg-background">
       <Navigation />
@@ -433,55 +436,220 @@ export default function RetiroSagrado() {
         </div>
       </section>
 
-      {/* Retiros Disponibles 2026 */}
-      <section className="py-20 md:py-32">
+      {/* Retiros Disponibles Section - Same as Club */}
+      <section className="py-20 md:py-32 bg-background">
         <div className="container mx-auto px-4">
-          <h2 className="font-display text-4xl font-bold text-foreground mb-12 text-center">
-            Retiros ya disponibles en tu membresía del 2026
-          </h2>
-          <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-            Estos retiros ya están grabados y disponibles para acceder en cualquier momento dentro de tu membresía del Club del Retiro Sagrado.
-          </p>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            <Card className="overflow-hidden border-border/50 hover:shadow-lg transition-shadow">
-              <div className="aspect-video bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center">
-                <Sparkles size={48} className="text-primary/50" />
+          <div className="max-w-5xl mx-auto">
+            <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-12 text-center">
+              Retiros que ya están disponibles en tu membresía
+            </h2>
+            
+            <p className="text-center text-muted-foreground mb-12 text-lg">
+              Haz click en cualquier retiro para ver más detalles
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {eventos.filter(e => e.tipo === "Retiro Sagrado" && e.estado === "Ya Disponible").slice(0, 9).map((retiro) => (
+                <Card 
+                  key={retiro.id} 
+                  className="overflow-hidden border-border/50 bg-primary/5 hover:shadow-lg transition-all cursor-pointer"
+                  onClick={() => setSelectedRetiro2025({...retiro, nombre: retiro.title, img: retiro.imagen, descripcion: retiro.description})}
+                >
+                  <div className="relative h-40 overflow-hidden">
+                    <img 
+                      src={retiro.imagen} 
+                      alt={retiro.title}
+                      className="w-full h-full object-cover hover:scale-105 transition-transform"
+                    />
+                  </div>
+                  <div className="p-4">
+                    <h3 className="font-semibold text-foreground text-sm mb-2">{retiro.title}</h3>
+                    <p className="text-xs text-muted-foreground line-clamp-2">
+                      {retiro.description}
+                    </p>
+                  </div>
+                </Card>
+              ))}
+            </div>
+
+            {selectedRetiro2025 && (
+              <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4" onClick={() => setSelectedRetiro2025(null)}>
+                <Card className="max-w-2xl w-full bg-background border-border/50 max-h-[90vh] overflow-y-auto" onClick={(e) => e.stopPropagation()}>
+                  <div className="relative">
+                    <img 
+                      src={selectedRetiro2025.img} 
+                      alt={selectedRetiro2025.nombre}
+                      className="w-full h-64 object-cover"
+                    />
+                    <button
+                      onClick={() => setSelectedRetiro2025(null)}
+                      className="absolute top-4 right-4 bg-black/50 hover:bg-black/70 text-white p-2 rounded-full transition-all"
+                    >
+                      <X size={24} />
+                    </button>
+                  </div>
+                  
+                  <div className="p-8">
+                    <h2 className="font-display text-3xl font-bold text-foreground mb-4">
+                      {selectedRetiro2025.nombre}
+                    </h2>
+                    
+                    <p className="text-muted-foreground mb-6 text-lg leading-relaxed">
+                      {selectedRetiro2025.descripcion}
+                    </p>
+
+                    <div className="bg-primary/10 border border-primary/20 rounded-lg p-6 mb-8">
+                      <p className="text-foreground font-semibold flex items-center gap-2">
+                        <Check size={20} className="text-primary" />
+                        Este retiro ya está disponible en tu membresía
+                      </p>
+                      <p className="text-muted-foreground mt-2 text-sm">
+                        Accede a la grabación completa desde tu plataforma de miembro
+                      </p>
+                    </div>
+
+                    <div className="border-t border-border/30 pt-6">
+                      <a href="https://www.i3cdigital.com/products/club-de-retiro-sagrado" target="_blank" rel="noopener noreferrer">
+                        <Button size="lg" className="w-full bg-primary hover:bg-primary/90 text-white font-bold py-6">
+                          Acceder a Mi Membresía
+                        </Button>
+                      </a>
+                    </div>
+                  </div>
+                </Card>
               </div>
-              <div className="p-6">
-                <div className="inline-block mb-3 px-3 py-1 rounded-full bg-green-100 text-green-700 text-xs font-semibold">
-                  Grabación Disponible
-                </div>
-                <p className="text-sm text-primary font-semibold mb-2">Enero 2026</p>
-                <h3 className="font-semibold text-foreground mb-3">Retiro Sagrado de Enero</h3>
-                <p className="text-sm text-muted-foreground mb-4">Acceso completo a la grabación del retiro de enero, disponible para ver en cualquier momento.</p>
+            )}
+          </div>
+        </div>
+      </section>
+
+      {/* Próximos Retiros Section - Same as Club */}
+      <section className="py-20 md:py-32 bg-primary/5">
+        <div className="container mx-auto px-4">
+          <div className="max-w-5xl mx-auto">
+            <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-12 text-center">
+              Próximos Retiros con YOHEV
+            </h2>
+            <p className="text-center text-muted-foreground mb-12 text-lg">
+              Haz click en cualquier retiro para ver más detalles
+            </p>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {eventos.filter(e => e.tipo === "Retiro Sagrado").slice(0, 12).map((retiro) => (
+                <Card 
+                  key={retiro.id} 
+                  className="overflow-hidden border-border/50 bg-background hover:shadow-lg transition-all cursor-pointer relative"
+                  onClick={() => setSelectedRetiro(retiro)}
+                >
+                  {retiro.estado === "Ya Disponible" && (
+                    <div className="absolute top-4 right-4 bg-primary text-white px-3 py-1 rounded-full text-xs font-bold z-10">
+                      YA DISPONIBLE
+                    </div>
+                  )}
+                  <div className="relative h-40 overflow-hidden">
+                    <img 
+                      src={retiro.imagen} 
+                      alt={retiro.title}
+                      className="w-full h-full object-cover hover:scale-105 transition-transform"
+                    />
+                  </div>
+                  <div className="p-4">
+                    <p className="text-sm text-primary font-semibold mb-1">
+                      {retiro.fecha}
+                    </p>
+                    <h3 className="font-semibold text-foreground text-sm mb-2">{retiro.title}</h3>
+                    <p className="text-xs text-muted-foreground line-clamp-2">
+                      {retiro.description || 'Un encuentro profundo de transformación y sanación.'}
+                    </p>
+                  </div>
+                </Card>
+              ))}
+            </div>
+
+            {selectedRetiro && (
+              <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4" onClick={() => setSelectedRetiro(null)}>
+                <Card className="max-w-2xl w-full bg-background border-border/50 max-h-[90vh] overflow-y-auto" onClick={(e) => e.stopPropagation()}>
+                  <div className="relative">
+                    <img 
+                      src={selectedRetiro.imagen} 
+                      alt={selectedRetiro.title}
+                      className="w-full h-64 object-cover"
+                    />
+                    <button
+                      onClick={() => setSelectedRetiro(null)}
+                      className="absolute top-4 right-4 bg-black/50 hover:bg-black/70 text-white p-2 rounded-full transition-all"
+                    >
+                      <X size={24} />
+                    </button>
+                  </div>
+                  
+                  <div className="p-8">
+                    <h2 className="font-display text-3xl font-bold text-foreground mb-4">
+                      {selectedRetiro.title}
+                    </h2>
+                    
+                    <p className="text-muted-foreground mb-6 text-lg leading-relaxed">
+                      {selectedRetiro.description}
+                    </p>
+
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                      <div className="flex items-start gap-3">
+                        <Calendar size={24} className="text-primary flex-shrink-0 mt-1" />
+                        <div>
+                          <p className="text-sm text-muted-foreground">Fecha</p>
+                          <p className="font-semibold text-foreground">{selectedRetiro.fecha}</p>
+                        </div>
+                      </div>
+
+                      <div className="flex items-start gap-3">
+                        <Clock size={24} className="text-primary flex-shrink-0 mt-1" />
+                        <div>
+                          <p className="text-sm text-muted-foreground">Horario</p>
+                          <p className="font-semibold text-foreground">{selectedRetiro.horario}</p>
+                        </div>
+                      </div>
+
+                      <div className="flex items-start gap-3">
+                        <MapPin size={24} className="text-primary flex-shrink-0 mt-1" />
+                        <div>
+                          <p className="text-sm text-muted-foreground">Modalidad</p>
+                          <p className="font-semibold text-foreground">{selectedRetiro.modalidad}</p>
+                        </div>
+                      </div>
+
+                      <div className="flex items-start gap-3">
+                        <Users size={24} className="text-primary flex-shrink-0 mt-1" />
+                        <div>
+                          <p className="text-sm text-muted-foreground">Participantes</p>
+                          <p className="font-semibold text-foreground">{selectedRetiro.participantes}</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    {selectedRetiro.incluye && selectedRetiro.incluye.length > 0 && (
+                      <div className="mb-8">
+                        <h3 className="font-semibold text-foreground mb-4 text-lg">Incluye:</h3>
+                        <ul className="space-y-2">
+                          {selectedRetiro.incluye.map((item: string, idx: number) => (
+                            <li key={idx} className="flex items-center gap-2 text-muted-foreground">
+                              <Check size={18} className="text-primary flex-shrink-0" />
+                              {item}
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
+
+                    <div className="border-t border-border/30 pt-6">
+                      <a href="#pricing">
+                        <Button size="lg" className="w-full bg-primary hover:bg-primary/90 text-white font-bold py-6">
+                          Unirse al Club para Acceder
+                        </Button>
+                      </a>
+                    </div>
+                  </div>
+                </Card>
               </div>
-            </Card>
-            <Card className="overflow-hidden border-border/50 hover:shadow-lg transition-shadow">
-              <div className="aspect-video bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center">
-                <Sparkles size={48} className="text-primary/50" />
-              </div>
-              <div className="p-6">
-                <div className="inline-block mb-3 px-3 py-1 rounded-full bg-green-100 text-green-700 text-xs font-semibold">
-                  Grabación Disponible
-                </div>
-                <p className="text-sm text-primary font-semibold mb-2">Febrero 2026</p>
-                <h3 className="font-semibold text-foreground mb-3">Retiro Sagrado de Febrero</h3>
-                <p className="text-sm text-muted-foreground mb-4">Acceso completo a la grabación del retiro de febrero, disponible para ver en cualquier momento.</p>
-              </div>
-            </Card>
-            <Card className="overflow-hidden border-border/50 hover:shadow-lg transition-shadow">
-              <div className="aspect-video bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center">
-                <Sparkles size={48} className="text-primary/50" />
-              </div>
-              <div className="p-6">
-                <div className="inline-block mb-3 px-3 py-1 rounded-full bg-green-100 text-green-700 text-xs font-semibold">
-                  Grabación Disponible
-                </div>
-                <p className="text-sm text-primary font-semibold mb-2">Marzo 2026</p>
-                <h3 className="font-semibold text-foreground mb-3">Reinicio Energético Profundo</h3>
-                <p className="text-sm text-muted-foreground mb-4">Acceso completo a la grabación del retiro de marzo, disponible para ver en cualquier momento.</p>
-              </div>
-            </Card>
+            )}
           </div>
         </div>
       </section>
