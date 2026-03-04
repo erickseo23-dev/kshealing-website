@@ -136,7 +136,7 @@ export default function RetiroSagrado() {
               size="lg" 
               onClick={() => {
                 const url = window.location.href;
-                const text = "Retiro Sagrado 9: Reinicio Energético Profundo - Libera el arrastre y recupera tu fuerza interior";
+                const text = "Retiro Sagrado 9: El Niño que Habita en Ti - Sana la raíz emocional sin revivir el dolor";
                 window.open(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}&quote=${encodeURIComponent(text)}`, '_blank', 'width=600,height=400');
               }}
               className="gap-2 bg-[#1877F2] hover:bg-[#165FD8] text-white"
@@ -152,19 +152,19 @@ export default function RetiroSagrado() {
       <section className="py-20 md:py-32 bg-background">
         <div className="container mx-auto px-4">
           <h2 className="font-display text-4xl font-bold text-foreground mb-12 text-center">
-            ¿Por Qué Marzo es el Momento Ideal?
+            ¿Por Qué Sanar el Niño Interior Ahora?
           </h2>
           <div className="mb-12">
-            <img src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/IMxOiCSVBeCEUYZA.png" alt="Equinoccio de Primavera" className="w-full h-auto rounded-2xl shadow-lg" />
+            <img src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/IMxOiCSVBeCEUYZA.png" alt="Sanación del Niño Interior" className="w-full h-auto rounded-2xl shadow-lg" />
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             <div className="relative group">
               <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 rounded-2xl blur-2xl"></div>
               <Card className="relative p-8 border-border/50 bg-background group-hover:shadow-3xl transition-shadow">
-                <Leaf size={32} className="text-primary mb-4" />
-                <h3 className="font-semibold text-foreground text-lg mb-4">Equilibrio Natural</h3>
+                <Heart size={32} className="text-primary mb-4" />
+                <h3 className="font-semibold text-foreground text-lg mb-4">Transformación Profunda</h3>
                 <p className="text-muted-foreground">
-                  El equinoccio marca un punto de equilibrio natural. La naturaleza se reajusta. La luz y la sombra se equilibran. Tu sistema también puede hacerlo.
+                  Sanar el niño interior no es revivir el trauma. Es identificar la estructura viva que sigue organizando tus decisiones y transformarla desde la consciencia del adulto.
                 </p>
               </Card>
             </div>
@@ -172,9 +172,9 @@ export default function RetiroSagrado() {
               <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 rounded-2xl blur-2xl"></div>
               <Card className="relative p-8 border-border/50 bg-background group-hover:shadow-3xl transition-shadow">
                 <Sparkles size={32} className="text-primary mb-4" />
-                <h3 className="font-semibold text-foreground text-lg mb-4">Momento Perfecto</h3>
+                <h3 className="font-semibold text-foreground text-lg mb-4">Libertad Emocional</h3>
                 <p className="text-muted-foreground">
-                  Sacude el desgaste del inicio de año, libera estrés acumulado, reorganiza tu energía antes de que el ritmo aumente, y entra a la primavera con claridad y fuerza interna.
+                  Recupera tu poder de decisión, libérate de patrones repetitivos, sana tus vínculos desde la raíz y entra en relaciones desde tu verdadero ser, no desde las heridas del pasado.
                 </p>
               </Card>
             </div>
@@ -187,21 +187,21 @@ export default function RetiroSagrado() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="font-display text-4xl font-bold text-foreground mb-12 text-center">
-              ¿Qué Vamos a Trabajar?
+              ¿Qué Vamos a Sanar?
             </h2>
             <div className="mb-12">
               <img src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/fTmsXInBtDfdPnOu.png" alt="Meditación y Transformación Energética" className="w-full h-auto rounded-2xl shadow-lg" />
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {[
-                "Identificar dónde se acumula el arrastre energético",
-                "Diferenciar cansancio físico de carga emocional",
-                "Liberar residuos mentales repetitivos",
-                "Recuperar energía que se quedó dispersa",
-                "Reordenar tu campo sin forzar procesos",
-                "Sellar tu sistema con estabilidad y coherencia",
-                "Permitir que tu sistema vuelva a su estado natural",
-                "Entrar a la primavera con fuerza renovada"
+                "Identificar patrones del niño interior que siguen operando",
+                "Reconocer cómo influye en tus decisiones y relaciones",
+                "Sanar la raíz sin revivir el trauma",
+                "Reordenarte desde el adulto consciente",
+                "Transformar patrones de relación",
+                "Recuperar tu libertad emocional",
+                "Sanar vínculos desde la raíz",
+                "Entrar en relaciones desde tu verdadero ser"
               ].map((item, idx) => (
                 <div key={idx} className="flex gap-4">
                   <Check size={20} className="text-primary flex-shrink-0 mt-1" />
@@ -211,7 +211,7 @@ export default function RetiroSagrado() {
             </div>
             <div className="mt-12 p-8 bg-primary/5 rounded-lg border border-primary/20">
               <p className="text-foreground font-semibold text-center">
-                No se trata de hacer algo extraordinario. Se trata de permitir que tu sistema vuelva a su estado natural de equilibrio.
+                No se trata de revivir el trauma. Se trata de identificar la estructura viva del niño interior y transformarla desde la consciencia del adulto.
               </p>
             </div>
           </div>
@@ -230,12 +230,12 @@ export default function RetiroSagrado() {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
               {[
-                "Te sientes cansado sin razón clara",
-                "Estás haciendo lo correcto, pero no te sientes ligero",
-                "Te cuesta concentrarte",
-                "Sientes saturación emocional",
-                "Te cuesta descansar profundamente",
-                "Iniciaste el año con impulso, pero ya estás perdiendo fuerza"
+                "Tus relaciones se repiten en patrones que no entiendes",
+                "Tomas decisiones desde el miedo, no desde tu verdadero ser",
+                "Te cuesta recibir amor o prosperidad",
+                "Sientes que \"algo\" controla tus acciones desde adentro",
+                "Repites los mismos conflictos en diferentes relaciones",
+                "Quieres sanar, pero no sabes por dónde empezar"
               ].map((item, idx) => (
                 <div key={idx} className="flex gap-4 p-4 bg-background rounded-lg border border-primary/20">
                   <Star size={20} className="text-primary flex-shrink-0" />
@@ -245,7 +245,7 @@ export default function RetiroSagrado() {
             </div>
             <div className="p-8 bg-primary/5 rounded-lg border border-primary/20">
               <p className="text-foreground text-center">
-                <span className="font-semibold">No necesitas estar en crisis.</span> A veces solo necesitas reiniciar.
+                <span className="font-semibold">Si reconoces estos patrones,</span> el niño interior sigue operando desde las sombras. Este retiro es para ti.
               </p>
             </div>
           </div>
@@ -261,12 +261,12 @@ export default function RetiroSagrado() {
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
               {[
-                "Mayor claridad mental",
-                "Sensación de ligereza",
-                "Energía más estable",
-                "Mejor descanso",
-                "Enfoque renovado",
-                "Mayor presencia corporal"
+                "Libertad para tomar decisiones propias",
+                "Relaciones más auténticas",
+                "Capacidad de recibir amor sin culpa",
+                "Patrones de relación transformados",
+                "Conexión con tu verdadero ser",
+                "Prosperidad desde tu poder personal"
               ].map((item, idx) => (
                 <div key={idx} className="flex gap-4 p-4 bg-background rounded-lg">
                   <Sparkles size={20} className="text-primary flex-shrink-0" />
@@ -277,7 +277,7 @@ export default function RetiroSagrado() {
             <div className="p-8 bg-background rounded-lg border border-primary/20">
               <p className="text-foreground text-center">
                 No porque "hicieron algo",<br />
-                sino porque <span className="font-semibold">dejaron de sostener lo que ya no correspondía.</span>
+                sino porque <span className="font-semibold">sanaron la raíz y el niño interior se transformó.</span>
               </p>
             </div>
           </div>
@@ -299,31 +299,31 @@ export default function RetiroSagrado() {
                 </li>
                 <li className="flex gap-3">
                   <Leaf size={20} className="text-primary flex-shrink-0 mt-0.5" />
-                  <span>Identificación de cargas invisibles</span>
+                  <span>Identificación de patrones del niño interior</span>
                 </li>
                 <li className="flex gap-3">
                   <Leaf size={20} className="text-primary flex-shrink-0 mt-0.5" />
-                  <span>Liberación consciente sin dramatización</span>
+                  <span>Reconocimiento de cómo influye en tus decisiones</span>
                 </li>
                 <li className="flex gap-3">
                   <Leaf size={20} className="text-primary flex-shrink-0 mt-0.5" />
-                  <span>Recuperación de energía personal</span>
+                  <span>Sanación de la raíz sin revivir el trauma</span>
                 </li>
                 <li className="flex gap-3">
                   <Leaf size={20} className="text-primary flex-shrink-0 mt-0.5" />
-                  <span>Reordenamiento del campo interno</span>
+                  <span>Transformación desde la consciencia del adulto</span>
                 </li>
                 <li className="flex gap-3">
                   <Leaf size={20} className="text-primary flex-shrink-0 mt-0.5" />
-                  <span>Anclaje de fuerza y claridad</span>
+                  <span>Liberación de patrones de relación</span>
                 </li>
                 <li className="flex gap-3">
                   <Leaf size={20} className="text-primary flex-shrink-0 mt-0.5" />
-                  <span>Meditación central de reinicio</span>
+                  <span>Meditación de reconexión con tu verdadero ser</span>
                 </li>
                 <li className="flex gap-3">
                   <Leaf size={20} className="text-primary flex-shrink-0 mt-0.5" />
-                  <span>Sellado energético de primavera</span>
+                  <span>Sellado de tu libertad emocional</span>
                 </li>
               </ul>
             </Card>
@@ -383,14 +383,14 @@ export default function RetiroSagrado() {
               Una Idea Final
             </h2>
             <p className="text-xl text-muted-foreground mb-8">
-              No necesitas más disciplina.<br />
-              No necesitas más fuerza.
+              No necesitas más terapia.<br />
+              No necesitas más razón.
             </p>
             <p className="text-2xl font-semibold text-foreground mb-8">
-              Necesitas menos carga.
+              Necesitas sanar la raíz.
             </p>
             <p className="text-lg text-muted-foreground mb-8">
-              Si sientes que es momento de reiniciar, este espacio es para ti.
+              Si sientes que el niño interior sigue controlando tu vida, este espacio es para ti.
             </p>
             <a href="#enrollment">
               <Button size="lg" className="bg-primary hover:bg-primary/90 text-white">
@@ -407,7 +407,7 @@ export default function RetiroSagrado() {
         <div className="container mx-auto px-4">
           <div className="max-w-2xl mx-auto text-center">
             <h2 className="font-display text-4xl font-bold text-white mb-6">
-              ¿Listo para Reiniciar?
+              ¿Listo para Sanar?
             </h2>
             <p className="text-lg text-white/90 mb-8">
               Acceso a este retiro + todos los retiros del Club + grabaciones anteriores
