@@ -433,11 +433,11 @@ export default function RetiroSagrado() {
         </div>
       </section>
 
-      {/* Available 2026 Retreats - Updated */}
-      <section className="py-20 md:py-32 bg-primary/5">
+      {/* Retiros Disponibles 2026 */}
+      <section className="py-20 md:py-32">
         <div className="container mx-auto px-4">
           <h2 className="font-display text-4xl font-bold text-foreground mb-12 text-center">
-            Retiros ya disponibles en tu membresía del 2026 ✨
+            Retiros ya disponibles en tu membresía del 2026
           </h2>
           <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
             Estos retiros ya están grabados y disponibles para acceder en cualquier momento dentro de tu membresía del Club del Retiro Sagrado.
@@ -454,10 +454,6 @@ export default function RetiroSagrado() {
                 <p className="text-sm text-primary font-semibold mb-2">Enero 2026</p>
                 <h3 className="font-semibold text-foreground mb-3">Retiro Sagrado de Enero</h3>
                 <p className="text-sm text-muted-foreground mb-4">Acceso completo a la grabación del retiro de enero, disponible para ver en cualquier momento.</p>
-                <p className="text-sm text-muted-foreground mb-4">
-                  <Calendar size={14} className="inline mr-1" />
-                  Grabación completa
-                </p>
               </div>
             </Card>
             <Card className="overflow-hidden border-border/50 hover:shadow-lg transition-shadow">
@@ -471,10 +467,6 @@ export default function RetiroSagrado() {
                 <p className="text-sm text-primary font-semibold mb-2">Febrero 2026</p>
                 <h3 className="font-semibold text-foreground mb-3">Retiro Sagrado de Febrero</h3>
                 <p className="text-sm text-muted-foreground mb-4">Acceso completo a la grabación del retiro de febrero, disponible para ver en cualquier momento.</p>
-                <p className="text-sm text-muted-foreground mb-4">
-                  <Calendar size={14} className="inline mr-1" />
-                  Grabación completa
-                </p>
               </div>
             </Card>
             <Card className="overflow-hidden border-border/50 hover:shadow-lg transition-shadow">
@@ -488,17 +480,11 @@ export default function RetiroSagrado() {
                 <p className="text-sm text-primary font-semibold mb-2">Marzo 2026</p>
                 <h3 className="font-semibold text-foreground mb-3">Reinicio Energético Profundo</h3>
                 <p className="text-sm text-muted-foreground mb-4">Acceso completo a la grabación del retiro de marzo, disponible para ver en cualquier momento.</p>
-                <p className="text-sm text-muted-foreground mb-4">
-                  <Calendar size={14} className="inline mr-1" />
-                  Grabación completa
-                </p>
               </div>
             </Card>
           </div>
         </div>
       </section>
-
-      {/* Next Retreats */}
 
       {/* Testimonials Section */}
       <section className="py-20 md:py-32 bg-primary/5">
