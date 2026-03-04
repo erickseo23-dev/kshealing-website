@@ -459,7 +459,7 @@ export default function RetiroSagrado() {
       <section className="py-20 md:py-32 bg-primary/5">
         <div className="container mx-auto px-4">
           <h2 className="font-display text-4xl font-bold text-foreground mb-12 text-center">
-            Retiros ya disponibles en tu membresía del 2026
+            Retiros ya disponibles en tu membresía del 2026 ✨
           </h2>
           <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
             Estos retiros ya están grabados y disponibles para acceder en cualquier momento dentro de tu membresía del Club del Retiro Sagrado.
