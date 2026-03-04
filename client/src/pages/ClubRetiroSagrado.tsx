@@ -71,21 +71,21 @@ export default function ClubRetiroSagrado() {
     },
     {
       id: 7,
-      nombre: "Retiro Sagrado de Octubre",
-      img: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/rnjSKFLtTUKVGlty.png",
-      descripcion: "Un encuentro profundo de transformación y sanación. Acceso completo a la grabación disponible para ver en cualquier momento dentro de tu membresía."
+      nombre: "Presencia Viva",
+      img: "https://d2xsxph8kpxj0f.cloudfront.net/310519663213129151/grqzaM5C3pRuoX7dnGFBAz/presencia-viva-retreat-jSoYc9AvwbYg8BDm4zgGKM.webp",
+      descripcion: "Un retiro de profunda presencia y consciencia. Aprende a estar completamente presente en cada momento, disolviendo distracciones y conectando con tu esencia más pura. Acceso completo a la grabación disponible para ver en cualquier momento dentro de tu membresía."
     },
     {
       id: 8,
-      nombre: "Retiro Sagrado de Noviembre",
-      img: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/rnjSKFLtTUKVGlty.png",
-      descripcion: "Un encuentro profundo de transformación y sanación. Acceso completo a la grabación disponible para ver en cualquier momento dentro de tu membresía."
+      nombre: "La Arquitectura del Amor",
+      img: "https://d2xsxph8kpxj0f.cloudfront.net/310519663213129151/grqzaM5C3pRuoX7dnGFBAz/arquitectura-del-amor-retreat-ADWfsSUpQxvJ2mpn5hjeH8.webp",
+      descripcion: "Un retiro que explora la estructura fundamental del amor en todas sus dimensiones. Descubre cómo el amor construye, sana y transforma. Acceso completo a la grabación disponible para ver en cualquier momento dentro de tu membresía."
     },
     {
       id: 9,
-      nombre: "Retiro Sagrado de Diciembre",
-      img: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/rnjSKFLtTUKVGlty.png",
-      descripcion: "Un encuentro profundo de transformación y sanación. Acceso completo a la grabación disponible para ver en cualquier momento dentro de tu membresía."
+      nombre: "Reinicio Energético Profundo",
+      img: "https://d2xsxph8kpxj0f.cloudfront.net/310519663213129151/grqzaM5C3pRuoX7dnGFBAz/reinicio-energetico-retreat-j5cWC2a8g4Uszh94JgpFdt.webp",
+      descripcion: "Un retiro de renovación y reset energético. Limpia patrones antiguos, restablece tu energía vital y comienza de nuevo con claridad y poder. Acceso completo a la grabación disponible para ver en cualquier momento dentro de tu membresía."
     }
   ];
 
