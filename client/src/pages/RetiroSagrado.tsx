@@ -80,8 +80,8 @@ export default function RetiroSagrado() {
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 rounded-2xl blur-2xl"></div>
               <img 
-                src="https://d2xsxph8kpxj0f.cloudfront.net/310519663213129151/grqzaM5C3pRuoX7dnGFBAz/transformation-inner-child-KWRYmZtquTnDRUxyZRyBFD.png" 
-                alt="Transformación del Niño Interior" 
+                src="https://d2xsxph8kpxj0f.cloudfront.net/310519663213129151/grqzaM5C3pRuoX7dnGFBAz/man-inner-child-healing-anyvamPKx5eCcPv6uhKrFU.webp" 
+                alt="Hombre en Meditación y Sanación del Niño Interior" 
                 className="relative w-full rounded-2xl shadow-2xl object-cover aspect-video"
               />
             </div>
@@ -155,7 +155,7 @@ export default function RetiroSagrado() {
             ¿Por Qué Sanar el Niño Interior Ahora?
           </h2>
           <div className="mb-12">
-            <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663213129151/grqzaM5C3pRuoX7dnGFBAz/emotional-freedom-GziDw3jvZEHV9ny3tLELdr.png" alt="Libertad Emocional" className="w-full h-auto rounded-2xl shadow-lg" />
+            <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663213129151/grqzaM5C3pRuoX7dnGFBAz/man-transformation-freedom-bsbHWNgDrMLmYA9CjnzihM.webp" alt="Transformación y Libertad del Hombre" className="w-full h-auto rounded-2xl shadow-lg" />
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             <div className="relative group">
