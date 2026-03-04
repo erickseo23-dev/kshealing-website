@@ -20,7 +20,7 @@ export default function RetiroSagrado() {
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto text-center">
               <div className="inline-block mb-6 px-4 py-2 rounded-full bg-white/20 backdrop-blur-sm border border-white/30">
-                <span className="text-white font-semibold">🌿 Retiro Sagrado 9 - CON YOHEV</span>
+                <span className="text-white font-semibold">🌿 Retiro Sagrado 10 - CON YOHEV</span>
               </div>
               <h1 className="font-display text-5xl md:text-6xl font-bold text-white mb-6 drop-shadow-lg">
                 El Niño que <span className="text-yellow-300">Habita en Ti</span>
@@ -190,7 +190,7 @@ export default function RetiroSagrado() {
               ¿Qué Vamos a Sanar?
             </h2>
             <div className="mb-12">
-              <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663213129151/grqzaM5C3pRuoX7dnGFBAz/meditation-healing-ANzNvbGQcREw4pAGLYe55.png" alt="Meditación y Sanación del Niño Interior" className="w-full h-auto rounded-2xl shadow-lg" />
+              <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663213129151/grqzaM5C3pRuoX7dnGFBAz/meditation-healing-BJkpk6iTNFduXPoQ5r6rvL.webp" alt="Meditación y Sanación del Niño Interior" className="w-full h-auto rounded-2xl shadow-lg" />
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {[
@@ -226,7 +226,7 @@ export default function RetiroSagrado() {
               ¿Cómo Saber si Necesitas Este Retiro?
             </h2>
             <div className="mb-12">
-              <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663213129151/grqzaM5C3pRuoX7dnGFBAz/relationship-healing-6EVcegKcAtUufeHsJSxwNn.png" alt="Sanación de Relaciones" className="w-full h-auto rounded-2xl shadow-lg" />
+              <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663213129151/grqzaM5C3pRuoX7dnGFBAz/inner-child-patterns-TmCkAT4kpMuU3zDFNN6yws.webp" alt="Identificación de Patrones del Niño Interior" className="w-full h-auto rounded-2xl shadow-lg" />
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
               {[
