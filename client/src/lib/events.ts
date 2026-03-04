@@ -81,7 +81,7 @@ export const eventos: Event[] = [
     precio: "Acceso al Club",
     incluye: ["Identificación de patrones infantiles", "Sanar sin revivir trauma", "Reordenamiento desde el adulto consciente", "Certificado de participación"],
     estado: "Próximamente",
-    imagen: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/VilmLqqDtgInyNrt.png",
+    imagen: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/aEmOStczwGCLviCw.png",
     tipo: "Retiro Sagrado",
     tema: "Sanación",
     modalidad: "Online en Vivo"
@@ -145,7 +145,7 @@ export const eventos: Event[] = [
     precio: "Acceso al Club",
     incluye: ["Técnicas de soltar consciente", "Cierre de ciclos", "Liberación sin resistencia", "Certificado de participación"],
     estado: "Próximamente",
-    imagen: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/CssIHQgNGfpPclOl.png",
+    imagen: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/qqTFjXiFpvcVHnry.png",
     tipo: "Retiro Sagrado",
     tema: "Transformación",
     modalidad: "Online en Vivo"
