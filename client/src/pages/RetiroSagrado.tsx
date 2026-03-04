@@ -560,7 +560,37 @@ export default function RetiroSagrado() {
         </div>
       </section>
 
-
+      {/* Próximos Retiros */}
+      <section className="py-20 md:py-32 bg-primary/5">
+        <div className="container mx-auto px-4">
+          <h2 className="font-display text-4xl font-bold text-foreground mb-12 text-center">
+            Próximos Retiros 2026
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            {eventos.slice(2, 5).map((retiro, idx) => (
+              <Card key={idx} className="overflow-hidden border-border/50 hover:shadow-lg transition-shadow">
+                <div className="aspect-video bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center">
+                  <Sparkles size={48} className="text-primary/50" />
+                </div>
+                <div className="p-6">
+                  <p className="text-sm text-primary font-semibold mb-2">{retiro.tema}</p>
+                  <h3 className="font-semibold text-foreground mb-3">{retiro.title}</h3>
+                  <p className="text-sm text-muted-foreground mb-4">{retiro.description}</p>
+                  <p className="text-sm text-muted-foreground mb-4">
+                    <Calendar size={14} className="inline mr-1" />
+                    {retiro.fecha}
+                  </p>
+                  <Link href="/club-retiro-sagrado">
+                    <Button variant="outline" size="sm" className="w-full">
+                      Ver Detalles
+                    </Button>
+                  </Link>
+                </div>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
 
       <Footer />
     </div>
