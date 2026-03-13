@@ -95,7 +95,7 @@ export default function RetiroSagrado() {
                 "El niño interior como estructura viva que sigue organizando decisiones y vínculos."
               </p>
               <div className="inline-block mb-6 px-4 py-2 rounded-full bg-white/20 backdrop-blur-sm border border-white/30">
-                <span className="text-white font-semibold">📅 Domingo 5 de Abril | 8:00 - 12:00 hrs (CDMX)</span>
+                <span className="text-white font-semibold">📅 Domingo 12 de Abril | 8:00 - 12:00 hrs (CDMX)</span>
               </div>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a href="#enrollment">
