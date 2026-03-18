@@ -42,8 +42,8 @@ export default function KSHealing() {
       date: "22 Mar, 29 Mar, 5 Abr",
     },
     {
-      title: "Material Pregrabado",
-      description: "Videos completos de cada módulo para revisar cuando quieras",
+      title: "Versión Digital del Libro KS Healing",
+      description: "Acceso a la versión digital del libro 'KS Healing y la Consciencia Crística'",
       date: "Acceso inmediato",
     },
     {
@@ -59,7 +59,7 @@ export default function KSHealing() {
   ];
 
   const whatIncluded = [
-    { title: "Material en Video Pregrabado", description: "Acceso completo a videos de cada módulo para revisar cuando quieras" },
+    { title: "Versión Digital del Libro y Manual", description: "Acceso a la versión digital del libro 'KS Healing y la Consciencia Crística' + Manual del Curso" },
     { title: "Sesión en Vivo con YOHEV", description: "2 horas de transmisión directa en Zoom para cada módulo" },
     { title: "Prácticas Online Programadas", description: "Sesiones con facilitador certificado según tu disponibilidad" },
     { title: "Certificación Internacional", description: "Reconocimiento oficial como Practicante de KS Healing" },
@@ -319,7 +319,7 @@ export default function KSHealing() {
                 </div>
                 <div className="text-center">
                   <p className="text-sm text-muted-foreground mb-2">Horario</p>
-                  <p className="font-display text-2xl font-bold text-foreground">12:00 - 14:00 CDMX</p>
+                  <p className="font-display text-2xl font-bold text-foreground">10:00 - 12:00 CDMX</p>
                 </div>
                 <div className="text-center">
                   <p className="text-sm text-muted-foreground mb-2">Modalidad</p>
