@@ -55,11 +55,11 @@ export const eventos: Event[] = [
     description: "Únete a una comunidad global de profesionales transformando vidas a través de la Energía KS. Certificación Internacional en 3 módulos intensivos.",
     fecha: "22 Mar - 12 Abr",
     ubicacion: "Online en vivo",
-    horario: "3 domingos (22 Mar, 29 Mar, 12 Abr) - 12:00 - 14:00 hrs (CDMX) / 19:00 - 21:00 hrs (España)",
+    horario: "3 domingos (22 Mar, 29 Mar, 12 Abr) - 10:00 - 12:00 hrs (CDMX) / 17:00 - 19:00 hrs (España)",
     participantes: "20 lugares disponibles",
     precio: "$232 USD (3999 MXN)",
     incluye: [
-      "Material en Video Pregrabado - Acceso completo a videos de cada módulo",
+      "Versión Digital del Libro KS Healing y la Consciencia Crística + Manual del Curso - Acceso completo",
       "Sesión en Vivo con YOHEV - 2 horas de transmisión directa en Zoom",
       "Prácticas Online Programadas - Sesiones con facilitador certificado",
       "Certificación Internacional - Reconocimiento oficial como Practicante de KS Healing"
