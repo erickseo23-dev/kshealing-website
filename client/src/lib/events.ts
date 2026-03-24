@@ -18,38 +18,6 @@ export interface Event {
 export const eventos: Event[] = [
   // Ordenados por fecha cronológica
   {
-    id: 13,
-    title: "Taller Online Gratuito KS Healing y La Consciencia Crísitica",
-    description: "Descubre cómo la Energía KS transforma tu consciencia crítica. Un taller interactivo donde exploraremos la conexión entre sanación energética y pensamiento consciente.",
-    fecha: "15 de Marzo",
-    ubicacion: "Online en vivo",
-    horario: "10:00 - 13:00 hrs (CDMX) / 17:00 - 20:00 hrs (España)",
-    participantes: "Ilimitado",
-    precio: "Gratuito",
-    incluye: ["Transmisión en vivo interactiva", "Introducción a KS Healing", "Ejercicio práctico de consciencia crítica", "Acceso a recursos descargables"],
-    estado: "Próximamente",
-    imagen: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/vTRBQZgDDKzUWUdr.png",
-    tipo: "Taller",
-    tema: "Consciencia",
-    modalidad: "Online en Vivo"
-  },
-  {
-    id: 15,
-    title: "Activación del Libro KS Healing - Por YOHEV",
-    description: "Sesión especial de activación para lectores del libro KS Healing. Escanea el código QR de la página 233 con tu móvil para registrar tu libro y formar parte de la comunidad de lectores de YOHEV.",
-    fecha: "18 de Marzo",
-    ubicacion: "Online en vivo por Zoom",
-    horario: "11:00 - 12:30 hrs (CDMX) / 18:00 - 19:30 hrs (España)",
-    participantes: "Ilimitado",
-    precio: "Gratuito",
-    incluye: ["Transmisión en vivo con YOHEV", "Activación de tu libro físico", "Acceso a comunidad de lectores", "Grabación disponible"],
-    estado: "Próximamente",
-    imagen: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/GTnsaEwxAStNPnrW.png",
-    tipo: "Activación de Libro",
-    tema: "Libro",
-    modalidad: "Online en Vivo"
-  },
-  {
     id: 12,
     title: "Certificación Internacional en KS Healing Nivel Básico",
     description: "Únete a una comunidad global de profesionales transformando vidas a través de la Energía KS. Certificación Internacional en 3 módulos intensivos.",
