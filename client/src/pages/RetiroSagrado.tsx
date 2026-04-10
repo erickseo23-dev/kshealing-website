@@ -391,89 +391,22 @@ export default function RetiroSagrado() {
         </div>
       </section>
 
-      {/* How to Access */}
-      <section className="py-20 md:py-32 bg-background">
-        <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto">
-            <h2 className="font-display text-4xl font-bold text-foreground mb-12 text-center">
-              ¿Cómo Accedes al Retiro?
-            </h2>
-            <Card className="p-12 border-border/50 bg-gradient-to-br from-background to-primary/10">
-              <p className="text-muted-foreground text-lg mb-6">
-                Este retiro forma parte del <span className="font-semibold text-foreground">Club del Retiro Sagrado</span>.
-              </p>
-              <p className="text-muted-foreground text-lg mb-6">
-                Al ser miembro del Club obtienes:
-              </p>
-              <ul className="space-y-3 text-muted-foreground mb-8">
-                <li className="flex gap-2">
-                  <span className="text-primary">✓</span>
-                  <span>Acceso en vivo a este retiro</span>
-                </li>
-                <li className="flex gap-2">
-                  <span className="text-primary">✓</span>
-                  <span>Acceso a todas las grabaciones de retiros anteriores</span>
-                </li>
-                <li className="flex gap-2">
-                  <span className="text-primary">✓</span>
-                  <span>Acceso a los retiros futuros mientras tu membresía esté activa</span>
-                </li>
-                <li className="flex gap-2">
-                  <span className="text-primary">✓</span>
-                  <span>Invitación a terapias energéticas en vivo que se publican después en redes</span>
-                </li>
-                <li className="flex gap-2">
-                  <span className="text-primary">✓</span>
-                  <span>Un espacio continuo de trabajo interno, no eventos aislados</span>
-                </li>
-              </ul>
-              <p className="text-foreground font-semibold">
-                No se vende este retiro por separado. El acceso es únicamente a través del Club.
-              </p>
-            </Card>
-          </div>
-        </div>
-      </section>
-
-      {/* CTA Section - Una Idea Final */}
-      <section className="py-20 md:py-32 bg-gradient-to-r from-primary/10 to-accent/10">
-        <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center">
-            <h2 className="font-display text-4xl font-bold text-foreground mb-6">
-              Una Idea Final
-            </h2>
-            <p className="text-xl text-muted-foreground mb-8">
-              No necesitas más terapia.<br />
-              No necesitas más razón.
-            </p>
-            <p className="text-2xl font-semibold text-foreground mb-8">
-              Necesitas sanar la raíz.
-            </p>
-            <p className="text-lg text-muted-foreground mb-8">
-              Si sientes que el niño interior sigue controlando tu vida, este espacio es para ti.
-            </p>
-            <a href="#enrollment">
-              <Button size="lg" className="bg-primary hover:bg-primary/90 text-white">
-                Inscribirme a este Retiro
-                <ArrowRight size={18} className="ml-2" />
-              </Button>
-            </a>
-          </div>
-        </div>
-      </section>
-
       {/* Enrollment Section */}
       <section id="enrollment" className="py-20 md:py-32 bg-gradient-to-r from-primary to-accent">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
-            <h2 className="font-display text-4xl font-bold text-white mb-12 text-center">
-              ¿Listo para Sanar?
+            <h2 className="font-display text-4xl font-bold text-white mb-6 text-center">
+              ¿Cómo Accedes al Retiro?
             </h2>
+            <p className="text-center text-lg text-white/90 mb-12">
+              Tienes dos opciones para acceder a este retiro. Ambas tienen el mismo precio. Elige la que mejor se adapte a ti:
+            </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
               {/* Option 1: Single Retiro */}
               <div className="bg-white/10 backdrop-blur-sm rounded-lg p-8 border border-white/20 hover:border-white/40 transition-all">
                 <p className="text-white/80 mb-4 font-semibold">Acceso Individual</p>
-                <h3 className="text-2xl font-bold text-white mb-4">El Niño que Habita en Ti</h3>
+                <h3 className="text-2xl font-bold text-white mb-2">El Niño que Habita en Ti</h3>
+                <p className="text-white/70 text-sm mb-4">Perfecto si solo quieres este retiro</p>
                 <ul className="space-y-2 text-white/80 text-sm mb-6">
                   <li className="flex gap-2">
                     <span className="text-white">✓</span>
@@ -496,6 +429,9 @@ export default function RetiroSagrado() {
                     <ArrowRight size={18} className="ml-2" />
                   </Button>
                 </a>
+                <p className="text-white/70 text-sm mt-6 border-t border-white/20 pt-4">
+                  Ideal para explorar el trabajo de YOHEV sin compromiso a largo plazo.
+                </p>
               </div>
 
               {/* Divider */}
@@ -506,7 +442,8 @@ export default function RetiroSagrado() {
               {/* Option 2: Club Membership */}
               <div className="bg-white/10 backdrop-blur-sm rounded-lg p-8 border border-white/20 hover:border-white/40 transition-all">
                 <p className="text-white/80 mb-4 font-semibold">Acceso Completo</p>
-                <h3 className="text-2xl font-bold text-white mb-4">Membresía al Club del Retiro Sagrado</h3>
+                <h3 className="text-2xl font-bold text-white mb-2">Membresía al Club del Retiro Sagrado</h3>
+                <p className="text-white/70 text-sm mb-4">Perfecto si quieres acceso continuo</p>
                 <ul className="space-y-2 text-white/80 text-sm mb-6">
                   <li className="flex gap-2">
                     <span className="text-white">✓</span>
@@ -529,6 +466,9 @@ export default function RetiroSagrado() {
                     <ArrowRight size={18} className="ml-2" />
                   </Button>
                 </a>
+                <p className="text-white/70 text-sm mt-6 border-t border-white/20 pt-4">
+                  Un espacio continuo de transformacion, no eventos aislados.
+                </p>
               </div>
             </div>
             <div className="text-center">
@@ -757,6 +697,33 @@ export default function RetiroSagrado() {
                 </Card>
               </div>
             )}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section - Una Idea Final */}
+      <section className="py-20 md:py-32 bg-gradient-to-r from-primary/10 to-accent/10">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto text-center">
+            <h2 className="font-display text-4xl font-bold text-foreground mb-6">
+              Una Idea Final
+            </h2>
+            <p className="text-xl text-muted-foreground mb-8">
+              No necesitas más terapia.<br />
+              No necesitas más razón.
+            </p>
+            <p className="text-2xl font-semibold text-foreground mb-8">
+              Necesitas sanar la raíz.
+            </p>
+            <p className="text-lg text-muted-foreground mb-8">
+              Si sientes que el niño interior sigue controlando tu vida, este espacio es para ti.
+            </p>
+            <a href="#enrollment">
+              <Button size="lg" className="bg-primary hover:bg-primary/90 text-white">
+                Inscribirme a este Retiro
+                <ArrowRight size={18} className="ml-2" />
+              </Button>
+            </a>
           </div>
         </div>
       </section>
