@@ -401,7 +401,7 @@ export default function RetiroSagrado() {
             <p className="text-center text-lg text-white/90 mb-12">
               Tienes dos opciones para acceder a este retiro. Ambas tienen el mismo precio. Elige la que mejor se adapte a ti:
             </p>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12 max-w-4xl mx-auto">
               {/* Option 1: Single Retiro */}
               <div className="bg-white/10 backdrop-blur-sm rounded-lg p-8 border border-white/20 hover:border-white/40 transition-all">
                 <p className="text-white/80 mb-4 font-semibold">Acceso Individual</p>
@@ -460,7 +460,7 @@ export default function RetiroSagrado() {
                 </ul>
                 <p className="text-5xl font-bold text-white mb-2">$29 USD <span className="text-2xl">(~500 MXN)</span></p>
                 <p className="text-white/70 text-sm mb-6">por mes • Cancela cuando quieras</p>
-                <a href="https://www.i3cdigital.com/offers/GdzCo9uE/checkout" target="_blank" rel="noopener noreferrer">
+                <a href="https://cursos.institutoascendant.com/offers/GdzCo9uE/checkout" target="_blank" rel="noopener noreferrer">
                   <Button size="lg" className="w-full bg-white text-primary hover:bg-white/90 font-semibold">
                     Inscribirse Ahora
                     <ArrowRight size={18} className="ml-2" />
