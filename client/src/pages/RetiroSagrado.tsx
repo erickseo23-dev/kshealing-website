@@ -73,14 +73,36 @@ export default function RetiroSagrado() {
     <div className="min-h-screen flex flex-col bg-background">
       <Navigation />
 
+      {/* Masterclass Video Section */}
+      <section className="py-16 md:py-24 bg-gradient-to-b from-background to-primary/5">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="font-display text-4xl font-bold text-foreground mb-4">Mira la Grabación de la Masterclass</h2>
+              <p className="text-lg text-muted-foreground">Descubre cómo sanar el niño interior sin revivir el trauma</p>
+            </div>
+            <div className="relative w-full" style={{paddingBottom: '56.25%'}}>
+              <iframe
+                className="absolute top-0 left-0 w-full h-full rounded-2xl shadow-2xl"
+                src="https://www.youtube.com/embed/-SNtOLIuXBE"
+                title="Masterclass: El Niño que Habita en Ti"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Hero Section */}
       <section className="py-20 md:py-32 bg-cover bg-center bg-no-repeat relative" style={{backgroundImage: 'url(https://d2xsxph8kpxj0f.cloudfront.net/310519663213129151/grqzaM5C3pRuoX7dnGFBAz/hero-inner-child-Wkh3TYb93bP6YvZbv6dsib.png)'}}>
         <div className="absolute inset-0 bg-black/50"></div>
         <div className="relative z-10">
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto text-center">
-              <div className="inline-block mb-6 px-4 py-2 rounded-full bg-white/20 backdrop-blur-sm border border-white/30">
-                <span className="text-white font-semibold">🌿 Retiro Sagrado 10 - CON YOHEV</span>
+              <div className="inline-block mb-8 px-8 py-4 rounded-full bg-white/30 backdrop-blur-md border border-white/50 shadow-lg">
+                <span className="text-white font-bold text-2xl md:text-3xl">🌿 Retiro Sagrado 10 - CON YOHEV</span>
               </div>
               <h1 className="font-display text-5xl md:text-6xl font-bold text-white mb-6 drop-shadow-lg">
                 El Niño que <span className="text-yellow-300">Habita en Ti</span>
