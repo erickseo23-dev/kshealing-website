@@ -434,11 +434,6 @@ export default function RetiroSagrado() {
                 </p>
               </div>
 
-              {/* Divider */}
-              <div className="flex items-center justify-center md:col-span-2">
-                <div className="text-white/60 text-2xl font-bold">O</div>
-              </div>
-
               {/* Option 2: Club Membership */}
               <div className="bg-white/10 backdrop-blur-sm rounded-lg p-8 border border-white/20 hover:border-white/40 transition-all">
                 <p className="text-white/80 mb-4 font-semibold">Acceso Completo</p>
