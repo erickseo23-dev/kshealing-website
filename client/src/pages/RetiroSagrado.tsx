@@ -187,23 +187,18 @@ export default function RetiroSagrado() {
         </div>
       </section>
 
-      {/* Share Section */}
-      <section className="py-12 md:py-16 bg-background border-t border-border">
+      {/* CTA Section 1 */}
+      <section className="py-12 md:py-16 bg-gradient-to-r from-primary/10 to-accent/10 border-t border-primary/20">
         <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <p className="text-muted-foreground font-semibold">¿Te resuena este retiro?</p>
-            <Button 
-              size="lg" 
-              onClick={() => {
-                const url = window.location.href;
-                const text = "Retiro Sagrado 9: El Niño que Habita en Ti - Sana la raíz emocional sin revivir el dolor";
-                window.open(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}&quote=${encodeURIComponent(text)}`, '_blank', 'width=600,height=400');
-              }}
-              className="gap-2 bg-[#1877F2] hover:bg-[#165FD8] text-white"
-            >
-              <Share2 size={18} />
-              Compartir en Facebook
-            </Button>
+          <div className="max-w-3xl mx-auto text-center">
+            <h3 className="text-2xl font-bold text-foreground mb-4">¿Listo para transformar tu vida?</h3>
+            <p className="text-muted-foreground mb-6">Descubre cómo sanar el niño interior y recuperar tu libertad emocional.</p>
+            <a href="#enrollment">
+              <Button size="lg" className="bg-primary hover:bg-primary/90 text-white gap-2">
+                <ArrowRight size={18} />
+                Inscribirme a este Retiro
+              </Button>
+            </a>
           </div>
         </div>
       </section>
@@ -387,6 +382,22 @@ export default function RetiroSagrado() {
                 </li>
               </ul>
             </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section 2 */}
+      <section className="py-16 md:py-20 bg-background">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto text-center">
+            <h3 className="text-3xl font-bold text-foreground mb-4">Sana tu Nino Interior</h3>
+            <p className="text-muted-foreground text-lg mb-8">Un retiro disenado para transformar la raiz de tus patrones emocionales sin revivir el trauma. Recupera tu libertad y vuelve a ti.</p>
+            <a href="#enrollment">
+              <Button size="lg" className="bg-primary hover:bg-primary/90 text-white gap-2">
+                <ArrowRight size={18} />
+                Inscribirme a este Retiro
+              </Button>
+            </a>
           </div>
         </div>
       </section>
