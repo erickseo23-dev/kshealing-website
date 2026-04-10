@@ -273,6 +273,22 @@ export default function RetiroSagrado() {
         </div>
       </section>
 
+      {/* CTA Section 2 */}
+      <section className="py-16 md:py-20 bg-gradient-to-r from-primary/10 to-accent/10 border-t border-primary/20 border-b border-accent/20">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto text-center">
+            <h3 className="text-3xl font-bold text-foreground mb-4">Sana tu Nino Interior</h3>
+            <p className="text-muted-foreground text-lg mb-8">Un retiro disenado para transformar la raiz de tus patrones emocionales sin revivir el trauma. Recupera tu libertad y vuelve a ti.</p>
+            <a href="#enrollment">
+              <Button size="lg" className="bg-primary hover:bg-primary/90 text-white gap-2">
+                <ArrowRight size={18} />
+                Inscribirme a este Retiro
+              </Button>
+            </a>
+          </div>
+        </div>
+      </section>
+
       {/* Who is This For */}
       <section className="py-20 md:py-32">
         <div className="container mx-auto px-4">
@@ -382,22 +398,6 @@ export default function RetiroSagrado() {
                 </li>
               </ul>
             </Card>
-          </div>
-        </div>
-      </section>
-
-      {/* CTA Section 2 */}
-      <section className="py-16 md:py-20 bg-background">
-        <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center">
-            <h3 className="text-3xl font-bold text-foreground mb-4">Sana tu Nino Interior</h3>
-            <p className="text-muted-foreground text-lg mb-8">Un retiro disenado para transformar la raiz de tus patrones emocionales sin revivir el trauma. Recupera tu libertad y vuelve a ti.</p>
-            <a href="#enrollment">
-              <Button size="lg" className="bg-primary hover:bg-primary/90 text-white gap-2">
-                <ArrowRight size={18} />
-                Inscribirme a este Retiro
-              </Button>
-            </a>
           </div>
         </div>
       </section>
