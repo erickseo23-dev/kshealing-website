@@ -110,10 +110,10 @@ export default function RetiroSagrado() {
       </section>
 
       {/* The Problem */}
-      <section className="py-20 md:py-32 bg-primary/5">
+      <section className="py-20 md:py-32 bg-gradient-to-b from-primary/5 via-accent/5 to-background">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
-            <Card className="p-12 border-border/50 bg-gradient-to-br from-background to-primary/10">
+            <Card className="p-12 border-2 border-primary/30 bg-gradient-to-br from-background via-primary/5 to-accent/5 shadow-xl hover:shadow-2xl transition-shadow">
               <h2 className="font-display text-3xl font-bold text-foreground mb-6">
                 El <span className="text-primary">Niño Interior</span> Sigue Organizando tu Vida
               </h2>
@@ -209,7 +209,7 @@ export default function RetiroSagrado() {
       </section>
 
       {/* Why March */}
-      <section className="py-20 md:py-32 bg-background">
+      <section className="py-20 md:py-32 bg-gradient-to-b from-background via-primary/5 to-accent/5">
         <div className="container mx-auto px-4">
           <h2 className="font-display text-4xl font-bold text-foreground mb-12 text-center">
             ¿Por Qué Sanar el Niño Interior Ahora?
@@ -217,10 +217,10 @@ export default function RetiroSagrado() {
           <div className="mb-12">
             <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663213129151/grqzaM5C3pRuoX7dnGFBAz/man-transformation-freedom-bsbHWNgDrMLmYA9CjnzihM.webp" alt="Transformación y Libertad del Hombre" className="w-full h-auto rounded-2xl shadow-lg" />
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             <div className="relative group">
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 rounded-2xl blur-2xl"></div>
-              <Card className="relative p-8 border-border/50 bg-background group-hover:shadow-3xl transition-shadow">
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/30 to-accent/30 rounded-2xl blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <Card className="relative p-8 border-2 border-primary/20 bg-gradient-to-br from-background to-primary/5 group-hover:shadow-2xl transition-all duration-300 group-hover:border-primary/40">
                 <Heart size={32} className="text-primary mb-4" />
                 <h3 className="font-semibold text-foreground text-lg mb-4">Transformación Profunda</h3>
                 <p className="text-muted-foreground">
@@ -229,8 +229,8 @@ export default function RetiroSagrado() {
               </Card>
             </div>
             <div className="relative group">
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 rounded-2xl blur-2xl"></div>
-              <Card className="relative p-8 border-border/50 bg-background group-hover:shadow-3xl transition-shadow">
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/30 to-accent/30 rounded-2xl blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <Card className="relative p-8 border-2 border-accent/20 bg-gradient-to-br from-background to-accent/5 group-hover:shadow-2xl transition-all duration-300 group-hover:border-accent/40">
                 <Sparkles size={32} className="text-primary mb-4" />
                 <h3 className="font-semibold text-foreground text-lg mb-4">Libertad Emocional</h3>
                 <p className="text-muted-foreground">
@@ -243,7 +243,7 @@ export default function RetiroSagrado() {
       </section>
 
       {/* What We'll Work */}
-      <section className="py-20 md:py-32 bg-primary/5">
+      <section className="py-20 md:py-32 bg-gradient-to-b from-accent/5 via-primary/5 to-background">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="font-display text-4xl font-bold text-foreground mb-12 text-center">
@@ -313,7 +313,7 @@ export default function RetiroSagrado() {
       </section>
 
       {/* What Can Change */}
-      <section className="py-20 md:py-32 bg-primary/5">
+      <section className="py-20 md:py-32 bg-gradient-to-b from-primary/5 via-accent/5 to-background">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="font-display text-4xl font-bold text-foreground mb-12 text-center">
