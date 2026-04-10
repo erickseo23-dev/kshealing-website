@@ -470,7 +470,40 @@ export default function RetiroSagrado() {
               ¿Listo para Sanar?
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-              {/* Option 1: Club Membership */}
+              {/* Option 1: Single Retiro */}
+              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-8 border border-white/20 hover:border-white/40 transition-all">
+                <p className="text-white/80 mb-4 font-semibold">Acceso Individual</p>
+                <h3 className="text-2xl font-bold text-white mb-4">El Niño que Habita en Ti</h3>
+                <ul className="space-y-2 text-white/80 text-sm mb-6">
+                  <li className="flex gap-2">
+                    <span className="text-white">✓</span>
+                    <span>Acceso en vivo al retiro</span>
+                  </li>
+                  <li className="flex gap-2">
+                    <span className="text-white">✓</span>
+                    <span>Grabación disponible</span>
+                  </li>
+                  <li className="flex gap-2">
+                    <span className="text-white">✓</span>
+                    <span>Acceso por 30 días</span>
+                  </li>
+                </ul>
+                <p className="text-5xl font-bold text-white mb-2">$29 USD <span className="text-2xl">(~500 MXN)</span></p>
+                <p className="text-white/70 text-sm mb-6">compra única • Acceso 30 días</p>
+                <a href="https://cursos.institutoascendant.com/offers/6c23Rxto" target="_blank" rel="noopener noreferrer">
+                  <Button size="lg" className="w-full bg-white text-primary hover:bg-white/90 font-semibold">
+                    Comprar Ahora
+                    <ArrowRight size={18} className="ml-2" />
+                  </Button>
+                </a>
+              </div>
+
+              {/* Divider */}
+              <div className="flex items-center justify-center md:col-span-2">
+                <div className="text-white/60 text-2xl font-bold">O</div>
+              </div>
+
+              {/* Option 2: Club Membership */}
               <div className="bg-white/10 backdrop-blur-sm rounded-lg p-8 border border-white/20 hover:border-white/40 transition-all">
                 <p className="text-white/80 mb-4 font-semibold">Acceso Completo</p>
                 <h3 className="text-2xl font-bold text-white mb-4">Membresía al Club del Retiro Sagrado</h3>
@@ -487,48 +520,12 @@ export default function RetiroSagrado() {
                     <span className="text-white">✓</span>
                     <span>Grabaciones anteriores</span>
                   </li>
-                  <li className="flex gap-2">
-                    <span className="text-white">✓</span>
-                    <span>Terapias energéticas en vivo</span>
-                  </li>
                 </ul>
-                <p className="text-5xl font-bold text-white mb-2">$29 USD</p>
+                <p className="text-5xl font-bold text-white mb-2">$29 USD <span className="text-2xl">(~500 MXN)</span></p>
                 <p className="text-white/70 text-sm mb-6">por mes • Cancela cuando quieras</p>
                 <a href="https://www.i3cdigital.com/offers/GdzCo9uE/checkout" target="_blank" rel="noopener noreferrer">
                   <Button size="lg" className="w-full bg-white text-primary hover:bg-white/90 font-semibold">
                     Inscribirse Ahora
-                    <ArrowRight size={18} className="ml-2" />
-                  </Button>
-                </a>
-              </div>
-
-              {/* Option 2: Single Retiro */}
-              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-8 border border-white/20 hover:border-white/40 transition-all">
-                <p className="text-white/80 mb-4 font-semibold">Acceso Individual</p>
-                <h3 className="text-2xl font-bold text-white mb-4">El Niño que Habita en Ti</h3>
-                <ul className="space-y-2 text-white/80 text-sm mb-6">
-                  <li className="flex gap-2">
-                    <span className="text-white">✓</span>
-                    <span>Acceso en vivo al retiro</span>
-                  </li>
-                  <li className="flex gap-2">
-                    <span className="text-white">✓</span>
-                    <span>Grabación disponible</span>
-                  </li>
-                  <li className="flex gap-2">
-                    <span className="text-white">✓</span>
-                    <span>Acceso de por vida</span>
-                  </li>
-                  <li className="flex gap-2">
-                    <span className="text-white">✓</span>
-                    <span>Materiales del retiro</span>
-                  </li>
-                </ul>
-                <p className="text-5xl font-bold text-white mb-2">$29 USD</p>
-                <p className="text-white/70 text-sm mb-6">compra única • Acceso permanente</p>
-                <a href="https://cursos.institutoascendant.com/offers/6c23Rxto" target="_blank" rel="noopener noreferrer">
-                  <Button size="lg" className="w-full bg-white text-primary hover:bg-white/90 font-semibold">
-                    Comprar Ahora
                     <ArrowRight size={18} className="ml-2" />
                   </Button>
                 </a>
