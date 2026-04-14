@@ -18,6 +18,48 @@ export interface Event {
 export const eventos: Event[] = [
   // Ordenados por fecha cronológica
   {
+    id: 13,
+    title: "Taller Online Gratuito: KS Healing y la Consciencia Crística - Latinoamérica",
+    description: "Una experiencia vivencial de 3 horas para conectar con la Energía KS, despertar tu sensibilidad energética y preparar tu campo para la transformación. Impartido por Yohev.",
+    fecha: "19 de Abril",
+    ubicacion: "Online en vivo",
+    horario: "3:00 PM - 6:00 PM CDMX",
+    participantes: "Ilimitado",
+    precio: "Gratuito",
+    incluye: [
+      "Experiencia vivencial de 3 horas",
+      "Conexión con la Energía KS",
+      "Ejercicios guiados de sensibilidad energética",
+      "Acceso a grabación si no puedes asistir en vivo"
+    ],
+    estado: "Abierto",
+    imagen: "https://d2xsxph8kpxj0f.cloudfront.net/310519663213129151/grqzaM5C3pRuoX7dnGFBAz/taller-latinoamerica-DMQZFqu4fzgX4eqso8KzvV.webp",
+    tipo: "Taller",
+    tema: "KS Healing",
+    modalidad: "Online en Vivo"
+  },
+  {
+    id: 14,
+    title: "Taller Online Gratuito: KS Healing y la Consciencia Crística - Europa",
+    description: "Una experiencia vivencial de 3 horas para conectar con la Energía KS, despertar tu sensibilidad energética y preparar tu campo para la transformación. Impartido por Yohev.",
+    fecha: "19 de Abril",
+    ubicacion: "Online en vivo",
+    horario: "3:00 PM - 6:00 PM España",
+    participantes: "Ilimitado",
+    precio: "Gratuito",
+    incluye: [
+      "Experiencia vivencial de 3 horas",
+      "Conexión con la Energía KS",
+      "Ejercicios guiados de sensibilidad energética",
+      "Acceso a grabación si no puedes asistir en vivo"
+    ],
+    estado: "Abierto",
+    imagen: "https://d2xsxph8kpxj0f.cloudfront.net/310519663213129151/grqzaM5C3pRuoX7dnGFBAz/taller-europa-V38JZRTKvMYNJ4TBo3LGSh.webp",
+    tipo: "Taller",
+    tema: "KS Healing",
+    modalidad: "Online en Vivo"
+  },
+  {
     id: 12,
     title: "Certificación Internacional en KS Healing Nivel Básico",
     description: "Únete a una comunidad global de profesionales transformando vidas a través de la Energía KS. Certificación Internacional en 3 módulos intensivos.",

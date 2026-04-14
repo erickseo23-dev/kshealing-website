@@ -22,6 +22,52 @@ export interface Event {
 
 export const events: Event[] = [
   {
+    id: 'taller-ks-healing-latam-2026-apr',
+    title: 'Taller Online Gratuito: KS Healing y la Consciencia Crística - Latinoamérica',
+    description: 'Una experiencia vivencial de 3 horas para conectar con la Energía KS, despertar tu sensibilidad energética y preparar tu campo para la transformación. Impartido por Yohev.',
+    category: 'workshop',
+    startDate: new Date(2026, 3, 19, 15, 0), // April 19, 2026 at 3:00 PM CDMX
+    endDate: new Date(2026, 3, 19, 18, 0), // April 19, 2026 at 6:00 PM CDMX
+    schedule: 'Domingo 19 de abril, 3:00 PM - 6:00 PM CDMX',
+    location: 'Online en vivo',
+    format: 'online',
+    instructor: 'YOHEV',
+    price: 0,
+    currency: 'USD',
+    capacity: 500,
+    enrolled: 0,
+    includes: [
+      'Experiencia vivencial de 3 horas',
+      'Conexión con la Energía KS',
+      'Ejercicios guiados de sensibilidad energética',
+      'Acceso a grabación si no puedes asistir en vivo'
+    ],
+    link: 'https://cursos.institutoascendant.com/offers/dyrFDaF9/checkout'
+  },
+  {
+    id: 'taller-ks-healing-europa-2026-apr',
+    title: 'Taller Online Gratuito: KS Healing y la Consciencia Crística - Europa',
+    description: 'Una experiencia vivencial de 3 horas para conectar con la Energía KS, despertar tu sensibilidad energética y preparar tu campo para la transformación. Impartido por Yohev.',
+    category: 'workshop',
+    startDate: new Date(2026, 3, 19, 15, 0), // April 19, 2026 at 3:00 PM Spain time
+    endDate: new Date(2026, 3, 19, 18, 0), // April 19, 2026 at 6:00 PM Spain time
+    schedule: 'Domingo 19 de abril, 3:00 PM - 6:00 PM España',
+    location: 'Online en vivo',
+    format: 'online',
+    instructor: 'YOHEV',
+    price: 0,
+    currency: 'USD',
+    capacity: 500,
+    enrolled: 0,
+    includes: [
+      'Experiencia vivencial de 3 horas',
+      'Conexión con la Energía KS',
+      'Ejercicios guiados de sensibilidad energética',
+      'Acceso a grabación si no puedes asistir en vivo'
+    ],
+    link: 'https://cursos.institutoascendant.com/offers/GSCYnm2q/checkout'
+  },
+  {
     id: 'ks-healing-basic-2026-feb',
     title: 'Certificación Internacional en KS Healing Nivel Básico',
     description: 'Únete a una comunidad global de profesionales transformando vidas a través de la Energía KS. Certificación Internacional en 3 módulos intensivos.',

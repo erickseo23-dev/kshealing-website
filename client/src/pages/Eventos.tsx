@@ -136,6 +136,13 @@ export default function Eventos() {
                         <ArrowRight size={16} />
                       </Button>
                     </Link>
+                  ) : evento.tipo === "Taller" ? (
+                    <a href={evento.id === 13 ? "https://cursos.institutoascendant.com/offers/dyrFDaF9/checkout" : "https://cursos.institutoascendant.com/offers/GSCYnm2q/checkout"} target="_blank" rel="noopener noreferrer" className="block">
+                      <Button className="w-full bg-orange-500 hover:bg-orange-600 text-white gap-2">
+                        Inscríbete Ahora
+                        <ArrowRight size={16} />
+                      </Button>
+                    </a>
                   ) : (
                     <Link href="/taller-ks-healing" className="block">
                       <Button className="w-full bg-orange-500 hover:bg-orange-600 text-white gap-2">
