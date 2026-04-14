@@ -107,32 +107,67 @@ export default function TallerKSHealing() {
             Una <strong className="text-white">experiencia energética profunda</strong> de 3 horas para conectar con la Energía KS, despertar tu sensibilidad y preparar tu campo para la transformación.
           </p>
 
-          {/* CTA Button */}
-          <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center mb-6 md:mb-10">
-            <a href="https://www.i3cdigital.com/offers/UFRzvjLW" target="_blank" rel="noopener noreferrer">
-              <Button size="lg" className="bg-orange-500 hover:bg-orange-600 text-white px-6 md:px-12 py-3 md:py-6 text-sm md:text-lg font-bold rounded-lg shadow-2xl transition-all duration-300 transform hover:scale-105">
-                Inscríbete al Taller
-                <ArrowRight size={24} className="ml-3" />
+          {/* CTA Buttons - Dual regions */}
+          <div className="flex flex-col gap-4 md:flex-row md:gap-6 justify-center mb-6 md:mb-10 w-full">
+            <a href="https://cursos.institutoascendant.com/offers/dyrFDaF9/checkout" target="_blank" rel="noopener noreferrer" className="flex-1 md:flex-none">
+              <Button size="lg" className="w-full md:w-auto bg-orange-500 hover:bg-orange-600 text-white px-6 md:px-10 py-3 md:py-6 text-sm md:text-base font-bold rounded-lg shadow-2xl transition-all duration-300 transform hover:scale-105">
+                Inscríbete - Latinoamérica
+                <ArrowRight size={20} className="ml-2" />
+              </Button>
+            </a>
+            <a href="https://cursos.institutoascendant.com/offers/GSCYnm2q/checkout" target="_blank" rel="noopener noreferrer" className="flex-1 md:flex-none">
+              <Button size="lg" className="w-full md:w-auto bg-blue-600 hover:bg-blue-700 text-white px-6 md:px-10 py-3 md:py-6 text-sm md:text-base font-bold rounded-lg shadow-2xl transition-all duration-300 transform hover:scale-105">
+                Inscríbete - Europa
+                <ArrowRight size={20} className="ml-2" />
               </Button>
             </a>
           </div>
 
-          {/* Event details card */}
-          <div className="bg-white/12 backdrop-blur-lg border border-white/25 rounded-xl p-4 md:p-6 max-w-2xl mx-auto shadow-xl">
-            <div className="flex flex-col md:flex-row justify-center items-center gap-3 md:gap-4 text-white/95 text-xs md:text-sm">
-              <div className="flex items-center gap-2">
-                <span className="text-2xl">📅</span>
-                <span className="font-semibold">15 de marzo</span>
+          {/* Event details card - Dual sessions */}
+          <div className="space-y-4 max-w-4xl mx-auto">
+            {/* Latin America Session */}
+            <div className="bg-white/12 backdrop-blur-lg border border-white/25 rounded-xl p-4 md:p-6 shadow-xl">
+              <div className="text-center md:text-left">
+                <p className="text-white/80 text-xs md:text-sm font-semibold mb-3 uppercase tracking-wide">Para Latinoamérica</p>
+                <div className="flex flex-col md:flex-row justify-center md:justify-start items-center gap-3 md:gap-6 text-white/95 text-xs md:text-sm">
+                  <div className="flex items-center gap-2">
+                    <span className="text-2xl">📅</span>
+                    <span className="font-semibold">Domingo 19 de abril</span>
+                  </div>
+                  <div className="hidden md:block w-px h-8 bg-white/20" />
+                  <div className="flex items-center gap-2">
+                    <span className="text-2xl">⏱️</span>
+                    <span className="font-semibold">3:00 PM - 6:00 PM CDMX</span>
+                  </div>
+                  <div className="hidden md:block w-px h-8 bg-white/20" />
+                  <div className="flex items-center gap-2">
+                    <span className="text-2xl">💻</span>
+                    <span className="font-semibold">Online en vivo + Grabación</span>
+                  </div>
+                </div>
               </div>
-              <div className="hidden md:block w-px h-8 bg-white/20" />
-              <div className="flex items-center gap-2">
-                <span className="text-2xl">⏱️</span>
-                <span className="font-semibold">10:00 - 13:00 CDMX (17:00 - 20:00 España)</span>
-              </div>
-              <div className="hidden md:block w-px h-8 bg-white/20" />
-              <div className="flex items-center gap-2">
-                <span className="text-2xl">💻</span>
-                <span className="font-semibold">Online en vivo + Grabación</span>
+            </div>
+
+            {/* Europe Session */}
+            <div className="bg-white/12 backdrop-blur-lg border border-white/25 rounded-xl p-4 md:p-6 shadow-xl">
+              <div className="text-center md:text-left">
+                <p className="text-white/80 text-xs md:text-sm font-semibold mb-3 uppercase tracking-wide">Para Europa</p>
+                <div className="flex flex-col md:flex-row justify-center md:justify-start items-center gap-3 md:gap-6 text-white/95 text-xs md:text-sm">
+                  <div className="flex items-center gap-2">
+                    <span className="text-2xl">📅</span>
+                    <span className="font-semibold">Domingo 19 de abril</span>
+                  </div>
+                  <div className="hidden md:block w-px h-8 bg-white/20" />
+                  <div className="flex items-center gap-2">
+                    <span className="text-2xl">⏱️</span>
+                    <span className="font-semibold">3:00 PM - 6:00 PM España</span>
+                  </div>
+                  <div className="hidden md:block w-px h-8 bg-white/20" />
+                  <div className="flex items-center gap-2">
+                    <span className="text-2xl">💻</span>
+                    <span className="font-semibold">Online en vivo + Grabación</span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -373,22 +408,47 @@ export default function TallerKSHealing() {
         </div>
       </section>
 
-      {/* CTA Section */}
+      {/* CTA Section - Dual Events */}
       <section className="py-24 bg-background">
-        <div className="container mx-auto px-4 max-w-3xl text-center">
-          <h2 className="text-5xl font-bold mb-8">¿Sientes el Llamado?</h2>
-          <p className="text-xl text-muted-foreground mb-12 leading-relaxed">
-            Si algo en ti reconoce este espacio, este taller es para ti. <br />
-            <strong>Es completamente gratuito y abierto a quienes sientan el llamado.</strong>
-          </p>
+        <div className="container mx-auto px-4 max-w-5xl">
+          <div className="text-center mb-16">
+            <h2 className="text-5xl font-bold mb-8">¿Sientes el Llamado?</h2>
+            <p className="text-xl text-muted-foreground leading-relaxed">
+              Si algo en ti reconoce este espacio, este taller es para ti. <br />
+              <strong>Es completamente gratuito y abierto a quienes sientan el llamado.</strong>
+            </p>
+          </div>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
-            <a href="https://www.i3cdigital.com/offers/UFRzvjLW" target="_blank" rel="noopener noreferrer">
-              <Button size="lg" className="bg-orange-500 hover:bg-orange-600 text-white px-10 py-6 text-lg font-bold">
-                Inscríbete al Taller
-                <ArrowRight size={24} className="ml-3" />
-              </Button>
-            </a>
+          <div className="grid md:grid-cols-2 gap-8 mb-16">
+            {/* Latin America Event */}
+            <div className="bg-gradient-to-br from-orange-500/10 to-orange-500/5 rounded-2xl p-8 border border-orange-500/30">
+              <h3 className="text-2xl font-bold mb-4 text-orange-600">Taller para Latinoamérica</h3>
+              <p className="text-muted-foreground mb-6">
+                Domingo 19 de abril<br />
+                <strong className="text-foreground">3:00 PM - 6:00 PM CDMX</strong>
+              </p>
+              <a href="https://cursos.institutoascendant.com/offers/dyrFDaF9/checkout" target="_blank" rel="noopener noreferrer">
+                <Button size="lg" className="w-full bg-orange-500 hover:bg-orange-600 text-white py-6 text-lg font-bold">
+                  Inscríbete Ahora
+                  <ArrowRight size={24} className="ml-3" />
+                </Button>
+              </a>
+            </div>
+
+            {/* Europe Event */}
+            <div className="bg-gradient-to-br from-blue-600/10 to-blue-600/5 rounded-2xl p-8 border border-blue-600/30">
+              <h3 className="text-2xl font-bold mb-4 text-blue-600">Taller para Europa</h3>
+              <p className="text-muted-foreground mb-6">
+                Domingo 19 de abril<br />
+                <strong className="text-foreground">3:00 PM - 6:00 PM España</strong>
+              </p>
+              <a href="https://cursos.institutoascendant.com/offers/GSCYnm2q/checkout" target="_blank" rel="noopener noreferrer">
+                <Button size="lg" className="w-full bg-blue-600 hover:bg-blue-700 text-white py-6 text-lg font-bold">
+                  Inscríbete Ahora
+                  <ArrowRight size={24} className="ml-3" />
+                </Button>
+              </a>
+            </div>
           </div>
 
           <div className="bg-gradient-to-br from-card to-card/50 rounded-2xl p-10 border border-primary/20">
