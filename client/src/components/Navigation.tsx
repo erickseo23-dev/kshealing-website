@@ -43,7 +43,7 @@ export default function Navigation() {
 
         {/* CTA Button - Desktop */}
         <div className="hidden lg:flex items-center gap-4">
-          <a href="https://www.i3cdigital.com/library" target="_blank" rel="noopener noreferrer">
+          <a href="https://cursos.institutoascendant.com/library" target="_blank" rel="noopener noreferrer">
             <Button className="bg-primary hover:bg-primary/90 text-white">
               Area de Alumnos
             </Button>
@@ -73,7 +73,7 @@ export default function Navigation() {
                 </a>
               </Link>
             ))}
-            <a href="https://www.i3cdigital.com/library" target="_blank" rel="noopener noreferrer" className="block">
+            <a href="https://cursos.institutoascendant.com/library" target="_blank" rel="noopener noreferrer" className="block">
               <Button className="w-full bg-primary hover:bg-primary/90 text-white mt-4">
                 Area de Alumnos
               </Button>
