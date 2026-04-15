@@ -39,7 +39,7 @@ export default function KSHealing() {
     {
       title: "Sesiones en Vivo con YOHEV",
       description: "3 domingos consecutivos, 2 horas cada sesión",
-      date: "22 Mar, 29 Mar, 5 Abr",
+      date: "26 Abr, 3 May, 10 May",
     },
     {
       title: "Versión Digital del Libro KS Healing",
@@ -101,7 +101,7 @@ export default function KSHealing() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <a href="https://www.i3cdigital.com/offers/DiQdf4PP" target="_blank" rel="noopener noreferrer">
+              <a href="https://cursos.institutoascendant.com/offers/Sk3LCWoe" target="_blank" rel="noopener noreferrer">
                 <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-slate-950 font-bold gap-2" style={{backgroundColor: '#fbbc0e'}}>
                   Inscríbete Ahora
                   <ArrowRight size={20} />
@@ -112,7 +112,7 @@ export default function KSHealing() {
             <div className="flex flex-wrap gap-6 text-white/80 text-sm mt-12">
               <div className="flex gap-2 items-center">
                 <Calendar size={18} className="text-secondary" style={{color: '#fbbc0e'}} />
-                <span>22 Mar, 29 Mar, 5 Abr</span>
+                <span>26 Abr, 3 May, 10 May | 8:00-10:00 CDMX / 16:00-18:00 España</span>
               </div>
               <div className="flex gap-2 items-center">
                 <Users size={18} className="text-secondary" style={{color: '#fbbc0e'}} />
@@ -315,11 +315,11 @@ export default function KSHealing() {
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
                 <div className="text-center">
                   <p className="text-sm text-muted-foreground mb-2">Fechas</p>
-                  <p className="font-display text-2xl font-bold text-foreground">22 Mar, 29 Mar, 5 Abr</p>
+                  <p className="font-display text-2xl font-bold text-foreground">26 Abr, 3 May, 10 May</p>
                 </div>
                 <div className="text-center">
                   <p className="text-sm text-muted-foreground mb-2">Horario</p>
-                  <p className="font-display text-2xl font-bold text-foreground">10:00 - 12:00 CDMX</p>
+                  <p className="font-display text-2xl font-bold text-foreground">8:00 - 10:00 CDMX / 16:00 - 18:00 España</p>
                 </div>
                 <div className="text-center">
                   <p className="text-sm text-muted-foreground mb-2">Modalidad</p>
@@ -330,7 +330,7 @@ export default function KSHealing() {
               <div className="border-t border-primary/20 pt-8">
                 <p className="text-lg font-bold text-foreground mb-4">Inversión: <span style={{color: '#fbbc0e'}}>$232 USD (3999 MXN)</span></p>
                 <div className="flex flex-col sm:flex-row gap-4">
-                  <a href="https://www.i3cdigital.com/offers/DiQdf4PP" target="_blank" rel="noopener noreferrer">
+                  <a href="https://cursos.institutoascendant.com/offers/Sk3LCWoe" target="_blank" rel="noopener noreferrer">
                     <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-slate-950 font-bold gap-2" style={{backgroundColor: '#fbbc0e'}}>
                       Inscríbete Ahora
                       <ArrowRight size={20} />
@@ -610,7 +610,7 @@ export default function KSHealing() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="https://www.i3cdigital.com/offers/DiQdf4PP" target="_blank" rel="noopener noreferrer">
+              <a href="https://cursos.institutoascendant.com/offers/Sk3LCWoe" target="_blank" rel="noopener noreferrer">
                 <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-slate-950 font-bold gap-2" style={{backgroundColor: '#fbbc0e'}}>
                   Inscríbete Ahora
                   <ArrowRight size={20} />
@@ -619,7 +619,7 @@ export default function KSHealing() {
             </div>
 
             <p className="text-sm text-muted-foreground mt-8">
-              Próximas sesiones: 22 de Marzo, 29 de Marzo, 5 de Abril • Online en vivo con YOHEV • $232 USD (3999 MXN)
+              Próximas sesiones: 26 de Abril, 3 de Mayo, 10 de Mayo • 8:00-10:00 CDMX / 16:00-18:00 España • Online en vivo con YOHEV • $232 USD (3999 MXN)
             </p>
           </div>
         </div>
