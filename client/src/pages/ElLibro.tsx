@@ -45,6 +45,28 @@ export default function ElLibro() {
         </div>
       </section>
 
+      {/* Community Image Section - Right after Hero */}
+      <section className="py-12 md:py-20">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto rounded-2xl overflow-hidden border border-border/50 hover:shadow-lg transition-shadow">
+            <img 
+              src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/pQGhYhNxjQqqiwIQ.png" 
+              alt="Comunidad de Lectores de KS Healing" 
+              className="w-full h-auto block"
+              loading="lazy"
+            />
+            <div className="p-8 text-center bg-card">
+              <h3 className="font-display text-2xl font-bold text-foreground mb-3">
+                Somos Una Comunidad Global
+              </h3>
+              <p className="text-muted-foreground">
+                Lectores de todo el mundo transformando sus vidas a través de la Energía KS. Cada persona que se une aporta su luz a nuestra comunidad.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Main Content */}
       <section className="py-20 md:py-32">
         <div className="container mx-auto px-4">
@@ -414,15 +436,7 @@ export default function ElLibro() {
               </Card>
             </div>
 
-            <div className="text-center pt-8 border-t border-border">
-              <p className="text-muted-foreground mb-4">
-                ¿No estás seguro? Descarga una muestra gratuita del primer capítulo
-              </p>
-              <Button variant="outline" className="gap-2">
-                <Download size={20} />
-                Descargar Introducción Gratis
-              </Button>
-            </div>
+
           </div>
         </div>
       </section>
