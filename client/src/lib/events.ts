@@ -63,9 +63,9 @@ export const eventos: Event[] = [
     id: 12,
     title: "Certificación Internacional en KS Healing Nivel Básico",
     description: "Únete a una comunidad global de profesionales transformando vidas a través de la Energía KS. Certificación Internacional en 3 módulos intensivos.",
-    fecha: "22 Mar - 12 Abr",
+    fecha: "26 Abr - 10 May",
     ubicacion: "Online en vivo",
-    horario: "3 domingos (22 Mar, 29 Mar, 12 Abr) - 10:00 - 12:00 hrs (CDMX) / 17:00 - 19:00 hrs (España)",
+    horario: "3 domingos (26 Abr, 3 May, 10 May) - 8:00 - 10:00 hrs (CDMX) / 16:00 - 18:00 hrs (España)",
     participantes: "20 lugares disponibles",
     precio: "$232 USD (3999 MXN)",
     incluye: [
@@ -78,22 +78,6 @@ export const eventos: Event[] = [
     imagen: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/HVhXRvxQEBwQkYur.png",
     tipo: "Certificación",
     tema: "KS Healing",
-    modalidad: "Online en Vivo"
-  },
-  {
-    id: 3,
-    title: "El Niño que Habita en Ti",
-    description: "Sanar la raíz emocional sin revivir el dolor. El niño interior como estructura viva que sigue organizando decisiones y vínculos.",
-    fecha: "12 de Abril",
-    ubicacion: "Club del Retiro Sagrado",
-    horario: "8:00 - 12:00 hrs (CDMX) / 15:00 - 19:00 hrs (España)",
-    participantes: "Ilimitado",
-    precio: "Acceso al Club",
-    incluye: ["Identificación de patrones infantiles", "Sanar sin revivir trauma", "Reordenamiento desde el adulto consciente", "Certificado de participación"],
-    estado: "Próximamente",
-    imagen: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/VilmLqqDtgInyNrt.png",
-    tipo: "Retiro Sagrado",
-    tema: "Sanación",
     modalidad: "Online en Vivo"
   },
   {
