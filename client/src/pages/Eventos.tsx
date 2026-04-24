@@ -4,7 +4,7 @@ import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 import { Calendar, MapPin, Users, Clock, ArrowRight } from "lucide-react";
-import { eventos } from "@/lib/events";
+import { getUpcomingEvents, getDateParts, formatDate } from "@/lib/eventos";
 import { SEO } from "@/components/SEO";
 import { SchemaEvent } from "@/components/SchemaEvent";
 
@@ -51,21 +51,17 @@ export default function Eventos() {
       <section className="py-20 md:py-32">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            {eventos.map((evento) => (
+            {getUpcomingEvents("kshealing").map((evento: any) => (
               <Card key={evento.id} className="overflow-hidden hover:shadow-lg transition-shadow flex flex-col">
                 <div className="relative h-48 overflow-hidden bg-gradient-to-br from-primary/20 to-accent/20">
                   <img 
-                    src={evento.imagen} 
+                    src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&h=300&fit=crop" 
                     alt={evento.title}
                     className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                   />
                   <div className="absolute inset-0 bg-black/30"></div>
-                  <span className={`absolute top-4 right-4 text-xs font-semibold px-3 py-1 rounded-full ${
-                    evento.estado === "Abierto" 
-                      ? "bg-green-100 text-green-700" 
-                      : "bg-amber-100 text-amber-700"
-                  }`}>
-                    {evento.estado}
+                  <span className="absolute top-4 right-4 text-xs font-semibold px-3 py-1 rounded-full bg-green-100 text-green-700">
+                    Abierto
                   </span>
                 </div>
                 <div className="bg-gradient-to-r from-primary/10 to-accent/10 p-6 border-b border-border">
@@ -81,41 +77,31 @@ export default function Eventos() {
                   <div className="space-y-3 mb-6">
                     <div className="flex items-center gap-3 text-foreground">
                       <Calendar size={18} className="text-primary flex-shrink-0" />
-                      <span>{evento.fecha}</span>
+                      <span>{formatDate(evento.date)}</span>
                     </div>
                     <div className="flex items-center gap-3 text-foreground">
                       <MapPin size={18} className="text-primary flex-shrink-0" />
-                      <span>{evento.ubicacion}</span>
+                      <span>{evento.location}</span>
                     </div>
                     <div className="flex items-center gap-3 text-foreground">
                       <Clock size={18} className="text-primary flex-shrink-0" />
-                      <span>{evento.horario}</span>
+                      <span>{evento.startTime} - {evento.endTime}</span>
                     </div>
-                    <div className="flex items-center gap-3 text-foreground">
-                      <Users size={18} className="text-primary flex-shrink-0" />
-                      <span>{evento.participantes}</span>
-                    </div>
+                    {evento.capacity && (
+                      <div className="flex items-center gap-3 text-foreground">
+                        <Users size={18} className="text-primary flex-shrink-0" />
+                        <span>Capacidad: {evento.capacity}</span>
+                      </div>
+                    )}
                   </div>
 
                   <div className="mb-6 pb-6 border-b border-border">
                     <p className="font-semibold text-primary text-lg mb-3">
-                      {evento.precio}
+                      {evento.price === 0 ? "Gratuito" : evento.price ? `$${evento.price}` : "Consultar"}
                     </p>
-                    {evento.incluye && (
-                      <>
-                        <p className="text-sm font-semibold text-foreground mb-2">Incluye:</p>
-                        <ul className="text-sm text-muted-foreground space-y-1">
-                          {evento.incluye.map((item, idx) => (
-                            <li key={idx} className="flex items-center gap-2">
-                              <span className="text-primary">✓</span> {item}
-                            </li>
-                          ))}
-                        </ul>
-                      </>
-                    )}
                   </div>
 
-                  {evento.tipo === "Retiro Sagrado" ? (
+                  {evento.type === "retiro" ? (
                     <Link href="/club-retiro-sagrado" className="block">
                       <Button className="w-full bg-primary hover:bg-primary/90 text-white gap-2">
                         Unirse al Club
