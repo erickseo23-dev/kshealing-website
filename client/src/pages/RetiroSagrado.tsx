@@ -73,7 +73,6 @@ export default function RetiroSagrado() {
       img: "https://d2xsxph8kpxj0f.cloudfront.net/310519663213129151/grqzaM5C3pRuoX7dnGFBAz/man-transformation-freedom-bsbHWNgDrMLmYA9CjnzihM.webp",
       descripcion: "Sanar la raíz emocional sin revivir el dolor. El niño interior como estructura viva que sigue organizando decisiones y vínculos."
     }
-      }
   ];
 
   return (
@@ -104,7 +103,7 @@ export default function RetiroSagrado() {
                 "La energía materna representa nutrición, contención, cuidado, seguridad, recepción, sensibilidad y pertenencia."
               </p>
               <div className="inline-block mb-6 px-4 py-2 rounded-full bg-white/20 backdrop-blur-sm border border-white/30">
-                <span className="text-white font-semibold">📅 Domingo 17 de Mayo | 7:00 - 11:00 hrs (CDMX) / 3:00 - 7:00 PM España</span>
+                <span className="text-white font-semibold">📅 Domingo 17 de Mayo | 7:00 - 11:00 AM CDMX / 3:00 - 7:00 PM España</span>
               </div>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a href="#enrollment">

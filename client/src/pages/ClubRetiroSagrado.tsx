@@ -319,7 +319,7 @@ export default function ClubRetiroSagrado() {
                       <div className="mb-8">
                         <h3 className="font-semibold text-foreground mb-4 text-lg">Incluye:</h3>
                         <ul className="space-y-2">
-                          {selectedRetiro.incluye.map((item, idx) => (
+                          {selectedRetiro.incluye.map((item: string, idx: number) => (
                             <li key={idx} className="flex items-center gap-2 text-muted-foreground">
                               <Check size={18} className="text-primary flex-shrink-0" />
                               {item}
