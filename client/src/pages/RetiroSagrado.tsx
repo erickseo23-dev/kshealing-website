@@ -308,7 +308,7 @@ export default function RetiroSagrado() {
               🌿 Este Retiro es para Ti Si...
             </h2>
             <div className="mb-12">
-              <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663213129151/grqzaM5C3pRuoX7dnGFBAz/vinculo-materno-section-SVN9p72xc7itHvmGjaYpQY.webp" alt="Sanación del Vínculo Materno" className="w-full h-auto rounded-2xl shadow-lg" />
+              <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663213129151/grqzaM5C3pRuoX7dnGFBAz/vinculo-materno-for-you-mGGADyNtLGQLCxGmhomC6s.webp" alt="Este Retiro es para Ti" className="w-full h-auto rounded-2xl shadow-lg" />
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
               {[
@@ -341,6 +341,9 @@ export default function RetiroSagrado() {
             <h2 className="font-display text-4xl font-bold text-foreground mb-12 text-center">
               🌱 ¿Qué Puede Cambiar Después?
             </h2>
+            <div className="mb-12">
+              <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663213129151/grqzaM5C3pRuoX7dnGFBAz/vinculo-materno-benefits-ANZnMBxfNXgcNaM3gvJGix.webp" alt="Cambios Posibles" className="w-full h-auto rounded-2xl shadow-lg" />
+            </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
               {[
                 "Mayor paz emocional",
@@ -374,6 +377,9 @@ export default function RetiroSagrado() {
             <h2 className="font-display text-4xl font-bold text-foreground mb-12 text-center">
               🧘‍♀️ Estructura del Retiro (4 Horas)
             </h2>
+            <div className="mb-12">
+              <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663213129151/grqzaM5C3pRuoX7dnGFBAz/vinculo-materno-structure-ad8Y3gqHbPWkke3T5be9oQ.webp" alt="Estructura del Retiro" className="w-full h-auto rounded-2xl shadow-lg" />
+            </div>
             <Card className="p-12 border-border/50 bg-gradient-to-br from-background to-primary/10">
               <ul className="space-y-4 text-muted-foreground">
                 <li className="flex gap-3">
