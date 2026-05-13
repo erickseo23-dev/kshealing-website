@@ -599,7 +599,7 @@ export default function RetiroSagrado() {
             </p>
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {eventos.filter(e => e.tipo === "Retiro Sagrado" && e.title !== "El Vínculo Materno").slice(0, 12).map((retiro) => (
+              {eventos.filter((e: any) => e.type === "retiro" && !e.title.includes("El Vínculo Materno")).slice(0, 12).map((retiro) => (
                 <Card 
                   key={retiro.id} 
                   className="overflow-hidden border-border/50 bg-background hover:shadow-lg transition-all cursor-pointer relative"
