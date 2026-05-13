@@ -8,8 +8,8 @@ import { useState } from "react";
 import { eventos } from "@/lib/events";
 
 export default function ClubRetiroSagrado() {
-  const kajabi_mensual = "https://www.i3cdigital.com/offers/GdzCo9uE/checkout";
-  const kajabi_anual = "https://www.i3cdigital.com/offers/JvrtZ9TF";
+  const kajabi_mensual = "https://cursos.institutoascendant.com/offers/GdzCo9uE/checkout";
+  const kajabi_anual = "https://cursos.institutoascendant.com/offers/JvrtZ9TF/checkout";
   const [expandedFAQ, setExpandedFAQ] = useState<number | null>(null);
   const [selectedRetiro, setSelectedRetiro] = useState<any>(null);
   const [selectedRetiro2025, setSelectedRetiro2025] = useState<any>(null);
@@ -86,6 +86,12 @@ export default function ClubRetiroSagrado() {
       nombre: "Reinicio Energético Profundo",
       img: "https://d2xsxph8kpxj0f.cloudfront.net/310519663213129151/grqzaM5C3pRuoX7dnGFBAz/reinicio-energetico-retreat-j5cWC2a8g4Uszh94JgpFdt.webp",
       descripcion: "Un retiro de renovación y reset energético. Limpia patrones antiguos, restablece tu energía vital y comienza de nuevo con claridad y poder. Acceso completo a la grabación disponible para ver en cualquier momento dentro de tu membresía."
+    },
+    {
+      id: 10,
+      nombre: "El Niño que Habita en Ti",
+      img: "https://d2xsxph8kpxj0f.cloudfront.net/310519663213129151/grqzaM5C3pRuoX7dnGFBAz/man-transformation-freedom-bsbHWNgDrMLmYA9CjnzihM_1b393f77.webp",
+      descripcion: "Sanar la raíz emocional sin revivir el dolor. El niño interior como estructura viva que sigue organizando decisiones y vínculos. Acceso completo a la grabación disponible para ver en cualquier momento dentro de tu membresía."
     }
   ];
 
@@ -122,11 +128,6 @@ export default function ClubRetiroSagrado() {
                 <Button size="lg" className="bg-white hover:bg-white/90 text-primary font-bold text-lg px-8 py-6 gap-2">
                   Unirse al Club Ahora
                   <ArrowRight size={24} />
-                </Button>
-              </a>
-              <a href="https://www.i3cdigital.com/products/club-de-retiro-sagrado" target="_blank" rel="noopener noreferrer">
-                <Button size="lg" variant="outline" className="border-black text-black hover:bg-black/10 font-bold text-lg px-8 py-6">
-                  Acceso de miembros
                 </Button>
               </a>
               <Link href="/retiro-sagrado">

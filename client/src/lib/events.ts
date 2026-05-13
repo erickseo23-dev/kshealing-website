@@ -84,7 +84,7 @@ export const eventos: Event[] = [
     id: 4,
     title: "El Vínculo Materno",
     description: "La primera relación que modeló tu forma de amar y recibir. Sanar el vínculo sin rechazarlo ni idealizarlo.",
-    fecha: "10 de Mayo",
+    fecha: "17 de Mayo",
     ubicacion: "Club del Retiro Sagrado",
     horario: "8:00 - 12:00 hrs (CDMX) / 15:00 - 19:00 hrs (España)",
     participantes: "Ilimitado",
