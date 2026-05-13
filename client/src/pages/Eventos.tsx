@@ -55,7 +55,7 @@ export default function Eventos() {
               <Card key={evento.id} className="overflow-hidden hover:shadow-lg transition-shadow flex flex-col">
                 <div className="relative h-48 overflow-hidden bg-gradient-to-br from-primary/20 to-accent/20">
                   <img 
-                    src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&h=300&fit=crop" 
+                    src={evento.imagen || "https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&h=300&fit=crop"} 
                     alt={evento.title}
                     className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                   />
