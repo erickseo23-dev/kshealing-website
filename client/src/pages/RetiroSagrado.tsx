@@ -258,7 +258,7 @@ export default function RetiroSagrado() {
               🌿 ¿Qué Vamos a Trabajar en Este Retiro?
             </h2>
             <div className="mb-12">
-              <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663213129151/grqzaM5C3pRuoX7dnGFBAz/vinculo-materno-structure-pYhKqXzLmN9RwVfJ2aBcDe.webp" alt="Sanación del Vínculo Materno" className="w-full h-auto rounded-2xl shadow-lg" />
+              <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663213129151/grqzaM5C3pRuoX7dnGFBAz/vinculo-materno-structure_1c0712a6.png" alt="Sanación del Vínculo Materno" className="w-full h-auto rounded-2xl shadow-lg" />
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {[
