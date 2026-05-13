@@ -16,37 +16,37 @@ export default function RetiroSagrado() {
     {
       id: 1,
       nombre: "Volver al Silencio",
-      img: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/yAWkbSAsDZEhZfSE.png",
+      img: "https://d2xsxph8kpxj0f.cloudfront.net/310519663213129151/grqzaM5C3pRuoX7dnGFBAz/volver-al-silencio-retreat-BfWYuYcVmdPe2Pg5ZfdJyh.webp",
       descripcion: "Un retiro para aquietar el ruido interno, soltar la sobreestimulación y regresar al centro. Un espacio de pausa consciente donde el silencio se convierte en guía y claridad."
     },
     {
       id: 2,
       nombre: "Limpia tu Energía",
-      img: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/awwYPuBlxOHblLFU.png",
+      img: "https://d2xsxph8kpxj0f.cloudfront.net/310519663213129151/grqzaM5C3pRuoX7dnGFBAz/limpia-tu-energia-retreat-RtC5rwsxMsTym6kFMWwJGm.webp",
       descripcion: "Un encuentro para liberar cargas emocionales, mentales y energéticas acumuladas. Ideal para quienes sienten cansancio profundo, saturación interna o desgaste invisible."
     },
     {
       id: 3,
       nombre: "Códigos de Luz",
-      img: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/SlhMwHLojSoulpMw.png",
+      img: "https://d2xsxph8kpxj0f.cloudfront.net/310519663213129151/grqzaM5C3pRuoX7dnGFBAz/codigos-de-luz-retreat-GjftuCXw5u9boyNRuzQUqH.webp",
       descripcion: "Un retiro de reconexión con el orden interno y la información sutil de equilibrio. Permite recordar estados de coherencia profunda y alineación más allá del esfuerzo mental."
     },
     {
       id: 4,
       nombre: "Recupera tu Centro",
-      img: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/yDLnhOHAVkuqDLHK.png",
+      img: "https://d2xsxph8kpxj0f.cloudfront.net/310519663213129151/grqzaM5C3pRuoX7dnGFBAz/recupera-tu-centro-retreat-HJn2GL5TDqKm8aoXMBHKQ7.webp",
       descripcion: "Diseñado para volver al eje interno cuando la vida, el estrés o las emociones desbalancean. Un espacio para reencontrarte contigo y restablecer estabilidad en medio del movimiento."
     },
     {
       id: 5,
       nombre: "Sana y Cierra Ciclos",
-      img: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/xSECzmGUyDixWbNv.png",
+      img: "https://d2xsxph8kpxj0f.cloudfront.net/310519663213129151/grqzaM5C3pRuoX7dnGFBAz/sana-y-cierra-ciclos-retreat-8LaNiHoruPLkQrSC9ycieM.webp",
       descripcion: "Un retiro para cerrar procesos abiertos, relaciones y etapas inconclusas sin arrastre. Ayuda a liberar lo que ya cumplió su función y recuperar energía para el presente."
     },
     {
       id: 6,
       nombre: "Claves Internas para el Bienestar Verdadero",
-      img: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/rnjSKFLtTUKVGlty.png",
+      img: "https://d2xsxph8kpxj0f.cloudfront.net/310519663213129151/grqzaM5C3pRuoX7dnGFBAz/claves-internas-bienestar-retreat-7dPrX5K7gS5bB86rub3TkC.webp",
       descripcion: "Un encuentro de comprensión profunda sobre lo que realmente sostiene el bienestar. Integra regulación emocional, coherencia mental, presencia corporal y orden energético."
     },
     {
