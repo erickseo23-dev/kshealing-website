@@ -66,7 +66,14 @@ export default function RetiroSagrado() {
       nombre: "Reinicio Energético Profundo",
       img: "https://d2xsxph8kpxj0f.cloudfront.net/310519663213129151/grqzaM5C3pRuoX7dnGFBAz/reinicio-energetico-retreat-j5cWC2a8g4Uszh94JgpFdt.webp",
       descripcion: "Un retiro de renovación y reset energético. Limpia patrones antiguos, restablece tu energía vital y comienza de nuevo con claridad y poder. Acceso completo a la grabación disponible para ver en cualquier momento dentro de tu membresía."
+    },
+    {
+      id: 10,
+      nombre: "El Niño que Habita en Ti",
+      img: "https://d2xsxph8kpxj0f.cloudfront.net/310519663213129151/grqzaM5C3pRuoX7dnGFBAz/man-transformation-freedom-bsbHWNgDrMLmYA9CjnzihM.webp",
+      descripcion: "Sanar la raíz emocional sin revivir el dolor. El niño interior como estructura viva que sigue organizando decisiones y vínculos."
     }
+      }
   ];
 
   return (
@@ -97,7 +104,7 @@ export default function RetiroSagrado() {
                 "La energía materna representa nutrición, contención, cuidado, seguridad, recepción, sensibilidad y pertenencia."
               </p>
               <div className="inline-block mb-6 px-4 py-2 rounded-full bg-white/20 backdrop-blur-sm border border-white/30">
-                <span className="text-white font-semibold">📅 Domingo 17 de Mayo | 8:00 - 12:00 hrs (CDMX) / 3:00 - 7:00 PM España</span>
+                <span className="text-white font-semibold">📅 Domingo 17 de Mayo | 7:00 - 11:00 hrs (CDMX) / 3:00 - 7:00 PM España</span>
               </div>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a href="#enrollment">
@@ -422,7 +429,7 @@ export default function RetiroSagrado() {
               {/* Option 1: Single Retiro */}
               <div className="bg-white/10 backdrop-blur-sm rounded-lg p-8 border border-white/20 hover:border-white/40 transition-all">
                 <p className="text-white/80 mb-4 font-semibold">Acceso Individual</p>
-                <h3 className="text-2xl font-bold text-white mb-2">El Niño que Habita en Ti</h3>
+                <h3 className="text-2xl font-bold text-white mb-2">El Vínculo Materno</h3>
                 <p className="text-white/70 text-sm mb-4">Perfecto si solo quieres este retiro</p>
                 <ul className="space-y-2 text-white/80 text-sm mb-6">
                   <li className="flex gap-2">
