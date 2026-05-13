@@ -73,27 +73,7 @@ export default function RetiroSagrado() {
     <div className="min-h-screen flex flex-col bg-background">
       <Navigation />
 
-      {/* Masterclass Video Section */}
-      <section className="py-16 md:py-24 bg-gradient-to-b from-background to-primary/5">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <div className="text-center mb-12">
-              <h2 className="font-display text-4xl font-bold text-foreground mb-4">Mira la Grabación de la Masterclass</h2>
-              <p className="text-lg text-muted-foreground">Descubre cómo sanar el niño interior sin revivir el trauma</p>
-            </div>
-            <div className="relative w-full" style={{paddingBottom: '56.25%'}}>
-              <iframe
-                className="absolute top-0 left-0 w-full h-full rounded-2xl shadow-2xl"
-                src="https://www.youtube.com/embed/-SNtOLIuXBE"
-                title="Masterclass: El Niño que Habita en Ti"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              />
-            </div>
-          </div>
-        </div>
-      </section>
+
 
       {/* Hero Section */}
       <section className="py-20 md:py-32 bg-cover bg-center bg-no-repeat relative" style={{backgroundImage: 'url(https://d2xsxph8kpxj0f.cloudfront.net/310519663213129151/grqzaM5C3pRuoX7dnGFBAz/hero-inner-child-Wkh3TYb93bP6YvZbv6dsib.png)'}}>
@@ -102,22 +82,22 @@ export default function RetiroSagrado() {
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto text-center">
               <div className="inline-block mb-8 px-8 py-4 rounded-full bg-white/30 backdrop-blur-md border border-white/50 shadow-lg">
-                <span className="text-white font-bold text-2xl md:text-3xl">🌿 Retiro Sagrado 10 - CON YOHEV</span>
+                <span className="text-white font-bold text-2xl md:text-3xl">🌿 Retiro Sagrado 11 - CON YOHEV</span>
               </div>
               <h1 className="font-display text-5xl md:text-6xl font-bold text-white mb-6 drop-shadow-lg">
-                El Niño que <span className="text-yellow-300">Habita en Ti</span>
+                El Vínculo <span className="text-yellow-300">Materno</span>
               </h1>
               <p className="text-lg text-white font-semibold mb-4 drop-shadow">
                 Facilitado directamente por YOHEV
               </p>
               <p className="text-xl text-white mb-6 drop-shadow">
-                Sanar la raíz emocional sin revivir el dolor
+                La primera relación que modeló tu forma de amar, recibir y sentirte sostenido
               </p>
               <p className="text-lg text-white mb-8 italic drop-shadow">
-                "El niño interior como estructura viva que sigue organizando decisiones y vínculos."
+                "La energía materna representa nutrición, contención, cuidado, seguridad, recepción, sensibilidad y pertenencia."
               </p>
               <div className="inline-block mb-6 px-4 py-2 rounded-full bg-white/20 backdrop-blur-sm border border-white/30">
-                <span className="text-white font-semibold">📅 Domingo 12 de Abril | 8:00 - 12:00 hrs (CDMX)</span>
+                <span className="text-white font-semibold">📅 Domingo 17 de Mayo | 8:00 - 12:00 hrs (CDMX) / 3:00 - 7:00 PM España</span>
               </div>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a href="#enrollment">
@@ -137,17 +117,17 @@ export default function RetiroSagrado() {
           <div className="max-w-3xl mx-auto">
             <Card className="p-12 border-2 border-primary/30 bg-gradient-to-br from-background via-primary/5 to-accent/5 shadow-xl hover:shadow-2xl transition-shadow">
               <h2 className="font-display text-3xl font-bold text-foreground mb-6">
-                El <span className="text-primary">Niño Interior</span> Sigue Organizando tu Vida
+                🌿 <span className="text-primary">Hay Relaciones que No Terminan Cuando Crecemos</span>
               </h2>
               <div className="space-y-4 text-muted-foreground text-lg leading-relaxed">
                 <p>
-                  Tus decisiones, tus relaciones, tu forma de amar y recibir... todo está siendo influenciado por una estructura viva que se formó hace años.
+                  La relación con la madre no solo pertenece a la infancia. Permanece viva en la forma en que te relacionas, en cómo recibes amor, en cómo te cuidas, en lo que toleras, en cómo reaccionas emocionalmente y en la manera en que te sientes sostenido… o no.
                 </p>
                 <p className="mt-6">
-                  <span className="font-semibold text-foreground">El niño interior no es un concepto. Es una realidad energética que sigue operando desde las sombras.</span>
+                  <span className="font-semibold text-foreground">Aun cuando una persona ya es adulta, el vínculo materno sigue operando silenciosamente dentro del sistema emocional.</span>
                 </p>
                 <p className="font-semibold text-foreground mt-6">
-                  Este retiro es un espacio para sanar esa raíz sin revivir el trauma.
+                  Este retiro no es para juzgar a mamá. Tampoco para idealizarla. Es un espacio para comprender cómo ese vínculo ayudó a formar tu estructura emocional… y comenzar a reordenarla desde un lugar más consciente y amoroso.
                 </p>
               </div>
             </Card>
@@ -155,53 +135,58 @@ export default function RetiroSagrado() {
         </div>
       </section>
 
-      {/* What is Energy Reset */}
+      {/* What is Maternal Bond */}
       <section className="py-20 md:py-32">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 rounded-2xl blur-2xl"></div>
               <img 
-                src="https://d2xsxph8kpxj0f.cloudfront.net/310519663213129151/grqzaM5C3pRuoX7dnGFBAz/man-inner-child-healing-anyvamPKx5eCcPv6uhKrFU.webp" 
-                alt="Hombre en Meditación y Sanación del Niño Interior" 
+                src="https://d2xsxph8kpxj0f.cloudfront.net/310519663213129151/grqzaM5C3pRuoX7dnGFBAz/aEmOStczwGCLviCw.webp" 
+                alt="Mamá e hija abrazándose" 
                 className="relative w-full rounded-2xl shadow-2xl object-cover aspect-video"
               />
             </div>
             <div>
               <h2 className="font-display text-4xl font-bold text-foreground mb-6">
-                ¿Qué es el <span className="text-primary">Niño Interior?</span>
+                🌿 La Madre es Más que una <span className="text-primary">Persona</span>
               </h2>
               <div className="space-y-4 text-muted-foreground mb-8">
                 <p className="text-lg leading-relaxed">
-                  No es un concepto terapéutico. Es una estructura energética viva que se formó cuando eras pequeño y sigue operando hoy.
-                </p>
-                <p className="text-lg leading-relaxed">
-                  Influye en:
+                  La energía materna representa:
                 </p>
                 <ul className="space-y-2 text-lg">
                   <li className="flex gap-2">
                     <span className="text-primary">•</span>
-                    <span>Cómo tomas decisiones</span>
+                    <span>Nutrición</span>
                   </li>
                   <li className="flex gap-2">
                     <span className="text-primary">•</span>
-                    <span>Cómo amas y recibes amor</span>
+                    <span>Contención</span>
                   </li>
                   <li className="flex gap-2">
                     <span className="text-primary">•</span>
-                    <span>Tus patrones de relación</span>
+                    <span>Cuidado</span>
                   </li>
                   <li className="flex gap-2">
                     <span className="text-primary">•</span>
-                    <span>Tu relación con la autoridad</span>
+                    <span>Seguridad</span>
                   </li>
                   <li className="flex gap-2">
                     <span className="text-primary">•</span>
-                    <span>Tu capacidad de recibir y prosperar</span>
+                    <span>Recepción</span>
+                  </li>
+                  <li className="flex gap-2">
+                    <span className="text-primary">•</span>
+                    <span>Sensibilidad</span>
+                  </li>
+                  <li className="flex gap-2">
+                    <span className="text-primary">•</span>
+                    <span>Pertenencia</span>
                   </li>
                 </ul>
                 <p className="text-lg leading-relaxed font-semibold text-foreground mt-6">
-                  Sanar esto sin revivir el trauma es posible. Y es transformador.
+                  Cuando ese vínculo fue confuso, doloroso, ausente o sobrecargado, muchas personas desarrollan patrones que limitan su libertad.
                 </p>
               </div>
             </div>
@@ -213,8 +198,8 @@ export default function RetiroSagrado() {
       <section className="py-12 md:py-16 bg-gradient-to-r from-primary/10 to-accent/10 border-t border-primary/20">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
-            <h3 className="text-2xl font-bold text-foreground mb-4">¿Listo para transformar tu vida?</h3>
-            <p className="text-muted-foreground mb-6">Descubre cómo sanar el niño interior y recuperar tu libertad emocional.</p>
+            <h3 className="text-2xl font-bold text-foreground mb-4">¿Listo para sanar tu vínculo materno?</h3>
+            <p className="text-muted-foreground mb-6">Descubre cómo transformar tu relación con la energía materna y recuperar tu libertad emocional.</p>
             <a href="#enrollment">
               <Button size="lg" className="bg-primary hover:bg-primary/90 text-white gap-2">
                 <ArrowRight size={18} />
@@ -225,23 +210,23 @@ export default function RetiroSagrado() {
         </div>
       </section>
 
-      {/* Why March */}
+      {/* Why Maternal Bond */}
       <section className="py-20 md:py-32 bg-gradient-to-b from-background via-primary/5 to-accent/5">
         <div className="container mx-auto px-4">
           <h2 className="font-display text-4xl font-bold text-foreground mb-12 text-center">
-            ¿Por Qué Sanar el Niño Interior Ahora?
+            🌿 ¿Por Qué Sanar el Vínculo Materno Ahora?
           </h2>
           <div className="mb-12">
-            <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663213129151/grqzaM5C3pRuoX7dnGFBAz/man-transformation-freedom-bsbHWNgDrMLmYA9CjnzihM.webp" alt="Transformación y Libertad del Hombre" className="w-full h-auto rounded-2xl shadow-lg" />
+            <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663213129151/grqzaM5C3pRuoX7dnGFBAz/aEmOStczwGCLviCw.webp" alt="Sanación del Vínculo Materno" className="w-full h-auto rounded-2xl shadow-lg" />
           </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             <div className="relative group">
               <div className="absolute inset-0 bg-gradient-to-br from-primary/30 to-accent/30 rounded-2xl blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               <Card className="relative p-8 border-2 border-primary/20 bg-gradient-to-br from-background to-primary/5 group-hover:shadow-2xl transition-all duration-300 group-hover:border-primary/40">
                 <Heart size={32} className="text-primary mb-4" />
-                <h3 className="font-semibold text-foreground text-lg mb-4">Transformación Profunda</h3>
+                <h3 className="font-semibold text-foreground text-lg mb-4">Mayor Paz Emocional</h3>
                 <p className="text-muted-foreground">
-                  Sanar el niño interior no es revivir el trauma. Es identificar la estructura viva que sigue organizando tus decisiones y transformarla desde la consciencia del adulto.
+                  Menos culpa y autoexigencia. Más claridad en relaciones. Sensación de ligereza interna. Mayor capacidad de recibir. Más compasión hacia ti mismo.
                 </p>
               </Card>
             </div>
@@ -249,9 +234,9 @@ export default function RetiroSagrado() {
               <div className="absolute inset-0 bg-gradient-to-br from-primary/30 to-accent/30 rounded-2xl blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               <Card className="relative p-8 border-2 border-accent/20 bg-gradient-to-br from-background to-accent/5 group-hover:shadow-2xl transition-all duration-300 group-hover:border-accent/40">
                 <Sparkles size={32} className="text-primary mb-4" />
-                <h3 className="font-semibold text-foreground text-lg mb-4">Libertad Emocional</h3>
+                <h3 className="font-semibold text-foreground text-lg mb-4">Relaciones Más Conscientes</h3>
                 <p className="text-muted-foreground">
-                  Recupera tu poder de decisión, libérate de patrones repetitivos, sana tus vínculos desde la raíz y entra en relaciones desde tu verdadero ser, no desde las heridas del pasado.
+                  Relaciones menos reactivas y más conscientes. No porque olvides el pasado, sino porque dejas de estar gobernado por él.
                 </p>
               </Card>
             </div>
@@ -264,21 +249,19 @@ export default function RetiroSagrado() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="font-display text-4xl font-bold text-foreground mb-12 text-center">
-              ¿Qué Vamos a Sanar?
+              🌿 ¿Qué Vamos a Trabajar en Este Retiro?
             </h2>
             <div className="mb-12">
-              <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663213129151/grqzaM5C3pRuoX7dnGFBAz/meditation-healing-BJkpk6iTNFduXPoQ5r6rvL.webp" alt="Meditación y Sanación del Niño Interior" className="w-full h-auto rounded-2xl shadow-lg" />
+              <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663213129151/grqzaM5C3pRuoX7dnGFBAz/aEmOStczwGCLviCw.webp" alt="Sanación del Vínculo Materno" className="w-full h-auto rounded-2xl shadow-lg" />
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {[
-                "Identificar patrones del niño interior que siguen operando",
-                "Reconocer cómo influye en tus decisiones y relaciones",
-                "Sanar la raíz sin revivir el trauma",
-                "Reordenarte desde el adulto consciente",
-                "Transformar patrones de relación",
-                "Recuperar tu libertad emocional",
-                "Sanar vínculos desde la raíz",
-                "Entrar en relaciones desde tu verdadero ser"
+                "Comprender cómo el vínculo materno sigue influyendo en tu vida adulta",
+                "Identificar patrones emocionales relacionados con la madre",
+                "Reconocer cargas, lealtades o culpas inconscientes",
+                "Liberar tensión emocional acumulada en el campo afectivo",
+                "Reordenar la relación interna con la energía materna",
+                "Recuperar equilibrio emocional sin necesidad de confrontación ni drama"
               ].map((item, idx) => (
                 <div key={idx} className="flex gap-4">
                   <Check size={20} className="text-primary flex-shrink-0 mt-1" />
@@ -288,7 +271,7 @@ export default function RetiroSagrado() {
             </div>
             <div className="mt-12 p-8 bg-primary/5 rounded-lg border border-primary/20">
               <p className="text-foreground font-semibold text-center">
-                No se trata de revivir el trauma. Se trata de identificar la estructura viva del niño interior y transformarla desde la consciencia del adulto.
+                No se trata de revivir el pasado. Se trata de dejar de seguir viviéndolo inconscientemente.
               </p>
             </div>
           </div>
@@ -299,8 +282,8 @@ export default function RetiroSagrado() {
       <section className="py-16 md:py-20 bg-gradient-to-r from-primary/10 to-accent/10 border-t border-primary/20 border-b border-accent/20">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
-            <h3 className="text-3xl font-bold text-foreground mb-4">Sana tu Nino Interior</h3>
-            <p className="text-muted-foreground text-lg mb-8">Un retiro disenado para transformar la raiz de tus patrones emocionales sin revivir el trauma. Recupera tu libertad y vuelve a ti.</p>
+            <h3 className="text-3xl font-bold text-foreground mb-4">🌿 Sana tu Vínculo Materno</h3>
+            <p className="text-muted-foreground text-lg mb-8">Un retiro diseñado para comprender y reordenar tu relación con la energía materna. Sin juzgar, sin idealizar. Solo comprender y transformar.</p>
             <a href="#enrollment">
               <Button size="lg" className="bg-primary hover:bg-primary/90 text-white gap-2">
                 <ArrowRight size={18} />
@@ -316,19 +299,19 @@ export default function RetiroSagrado() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="font-display text-4xl font-bold text-foreground mb-12 text-center">
-              ¿Cómo Saber si Necesitas Este Retiro?
+              🌿 Este Retiro es para Ti Si...
             </h2>
             <div className="mb-12">
-              <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663213129151/grqzaM5C3pRuoX7dnGFBAz/inner-child-patterns-TmCkAT4kpMuU3zDFNN6yws.webp" alt="Identificación de Patrones del Niño Interior" className="w-full h-auto rounded-2xl shadow-lg" />
+              <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663213129151/grqzaM5C3pRuoX7dnGFBAz/inner-child-patterns-TmCkAT4kpMuU3zDFNN6yws.webp" alt="Sanación del Vínculo Materno" className="w-full h-auto rounded-2xl shadow-lg" />
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
               {[
-                "Tus relaciones se repiten en patrones que no entiendes",
-                "Tomas decisiones desde el miedo, no desde tu verdadero ser",
-                "Te cuesta recibir amor o prosperidad",
-                "Sientes que \"algo\" controla tus acciones desde adentro",
-                "Repites los mismos conflictos en diferentes relaciones",
-                "Quieres sanar, pero no sabes por dónde empezar"
+                "Te cuesta sentirte sostenido emocionalmente",
+                "Te sobrecargas cuidando a otros",
+                "Sientes culpa fácilmente",
+                "Te cuesta recibir ayuda, amor o atención",
+                "Hay heridas no resueltas con mamá",
+                "O simplemente quieres comprenderte más profundamente"
               ].map((item, idx) => (
                 <div key={idx} className="flex gap-4 p-4 bg-background rounded-lg border border-primary/20">
                   <Star size={20} className="text-primary flex-shrink-0" />
@@ -338,7 +321,7 @@ export default function RetiroSagrado() {
             </div>
             <div className="p-8 bg-primary/5 rounded-lg border border-primary/20">
               <p className="text-foreground text-center">
-                <span className="font-semibold">Si reconoces estos patrones,</span> el niño interior sigue operando desde las sombras. Este retiro es para ti.
+                <span className="font-semibold">No importa si tu madre estuvo presente, ausente, amorosa, exigente o contradictoria.</span> El trabajo ocurre dentro de ti.
               </p>
             </div>
           </div>
@@ -350,16 +333,17 @@ export default function RetiroSagrado() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="font-display text-4xl font-bold text-foreground mb-12 text-center">
-              ¿Qué Puede Cambiar Después?
+              🌱 ¿Qué Puede Cambiar Después?
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
               {[
-                "Libertad para tomar decisiones propias",
-                "Relaciones más auténticas",
-                "Capacidad de recibir amor sin culpa",
-                "Patrones de relación transformados",
-                "Conexión con tu verdadero ser",
-                "Prosperidad desde tu poder personal"
+                "Mayor paz emocional",
+                "Menos culpa y autoexigencia",
+                "Más claridad en relaciones",
+                "Sensación de ligereza interna",
+                "Mayor capacidad de recibir",
+                "Más compasión hacia ti mismo",
+                "Relaciones menos reactivas y más conscientes"
               ].map((item, idx) => (
                 <div key={idx} className="flex gap-4 p-4 bg-background rounded-lg">
                   <Sparkles size={20} className="text-primary flex-shrink-0" />
@@ -369,8 +353,8 @@ export default function RetiroSagrado() {
             </div>
             <div className="p-8 bg-background rounded-lg border border-primary/20">
               <p className="text-foreground text-center">
-                No porque "hicieron algo",<br />
-                sino porque <span className="font-semibold">sanaron la raíz y el niño interior se transformó.</span>
+                No porque olvides el pasado,<br />
+                sino porque <span className="font-semibold">dejas de estar gobernado por él.</span>
               </p>
             </div>
           </div>
@@ -382,37 +366,37 @@ export default function RetiroSagrado() {
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
             <h2 className="font-display text-4xl font-bold text-foreground mb-12 text-center">
-              Estructura del Retiro (4 Horas)
+              🧘‍♀️ Estructura del Retiro (4 Horas)
             </h2>
             <Card className="p-12 border-border/50 bg-gradient-to-br from-background to-primary/10">
               <ul className="space-y-4 text-muted-foreground">
                 <li className="flex gap-3">
                   <Leaf size={20} className="text-primary flex-shrink-0 mt-0.5" />
-                  <span>Llegada y estabilización del sistema nervioso</span>
+                  <span>La madre como matriz emocional</span>
                 </li>
                 <li className="flex gap-3">
                   <Leaf size={20} className="text-primary flex-shrink-0 mt-0.5" />
-                  <span>Identificación de patrones del niño interior</span>
+                  <span>Cómo el vínculo materno moldea la percepción del amor</span>
                 </li>
                 <li className="flex gap-3">
                   <Leaf size={20} className="text-primary flex-shrink-0 mt-0.5" />
-                  <span>Reconocimiento de cómo influye en tus decisiones</span>
+                  <span>Lealtades invisibles y cargas emocionales</span>
                 </li>
                 <li className="flex gap-3">
                   <Leaf size={20} className="text-primary flex-shrink-0 mt-0.5" />
-                  <span>Sanación de la raíz sin revivir el trauma</span>
+                  <span>El cuerpo emocional y la necesidad de contención</span>
                 </li>
                 <li className="flex gap-3">
                   <Leaf size={20} className="text-primary flex-shrink-0 mt-0.5" />
-                  <span>Transformación desde la consciencia del adulto</span>
+                  <span>Liberación consciente del arrastre afectivo</span>
                 </li>
                 <li className="flex gap-3">
                   <Leaf size={20} className="text-primary flex-shrink-0 mt-0.5" />
-                  <span>Liberación de patrones de relación</span>
+                  <span>Reordenamiento interno del vínculo materno</span>
                 </li>
                 <li className="flex gap-3">
                   <Leaf size={20} className="text-primary flex-shrink-0 mt-0.5" />
-                  <span>Meditación de reconexión con tu verdadero ser</span>
+                  <span>Meditación central: "Volver a Ser Sostenido"</span>
                 </li>
                 <li className="flex gap-3">
                   <Leaf size={20} className="text-primary flex-shrink-0 mt-0.5" />
