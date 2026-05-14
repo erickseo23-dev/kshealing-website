@@ -428,43 +428,12 @@ export default function RetiroSagrado() {
               ¿Cómo Accedes al Retiro?
             </h2>
             <p className="text-center text-lg text-white/90 mb-12">
-              Tienes dos opciones para acceder a este retiro. Ambas tienen el mismo precio. Elige la que mejor se adapte a ti:
+              Accede a este retiro a través de tu membresía al Club del Retiro Sagrado:
             </p>
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12 max-w-4xl mx-auto">
-              {/* Option 1: Single Retiro */}
-              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-8 border border-white/20 hover:border-white/40 transition-all">
-                <p className="text-white/80 mb-4 font-semibold">Acceso Individual</p>
-                <h3 className="text-2xl font-bold text-white mb-2">El Vínculo Materno</h3>
-                <p className="text-white/70 text-sm mb-4">Perfecto si solo quieres este retiro</p>
-                <ul className="space-y-2 text-white/80 text-sm mb-6">
-                  <li className="flex gap-2">
-                    <span className="text-white">✓</span>
-                    <span>Acceso en vivo al retiro</span>
-                  </li>
-                  <li className="flex gap-2">
-                    <span className="text-white">✓</span>
-                    <span>Grabación disponible</span>
-                  </li>
-                  <li className="flex gap-2">
-                    <span className="text-white">✓</span>
-                    <span>Acceso por 30 días</span>
-                  </li>
-                </ul>
-                <p className="text-5xl font-bold text-white mb-2">$29 USD <span className="text-2xl">(~500 MXN)</span></p>
-                <p className="text-white/70 text-sm mb-6">compra única • Acceso 30 días</p>
-                <a href="https://cursos.institutoascendant.com/offers/6c23Rxto" target="_blank" rel="noopener noreferrer">
-                  <Button size="lg" className="w-full bg-white text-primary hover:bg-white/90 font-semibold">
-                    Comprar Ahora
-                    <ArrowRight size={18} className="ml-2" />
-                  </Button>
-                </a>
-                <p className="text-white/70 text-sm mt-6 border-t border-white/20 pt-4">
-                  Ideal para explorar el trabajo de YOHEV sin compromiso a largo plazo.
-                </p>
-              </div>
+            <div className="flex justify-center mb-12">
+              {/* Club Membership */}
+              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-8 border border-white/20 hover:border-white/40 transition-all max-w-md">
 
-              {/* Option 2: Club Membership */}
-              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-8 border border-white/20 hover:border-white/40 transition-all">
                 <p className="text-white/80 mb-4 font-semibold">Acceso Completo</p>
                 <h3 className="text-2xl font-bold text-white mb-2">Membresía al Club del Retiro Sagrado</h3>
                 <p className="text-white/70 text-sm mb-4">Perfecto si quieres acceso continuo</p>
