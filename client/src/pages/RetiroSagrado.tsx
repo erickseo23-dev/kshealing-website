@@ -82,7 +82,7 @@ export default function RetiroSagrado() {
 
 
       {/* Hero Section */}
-      <section className="py-20 md:py-32 bg-cover bg-center bg-no-repeat relative" style={{backgroundImage: 'url(https://d2xsxph8kpxj0f.cloudfront.net/310519663213129151/grqzaM5C3pRuoX7dnGFBAz/aEmOStczwGCLviCw.webp)'}}>
+      <section className="py-20 md:py-32 bg-cover bg-center bg-no-repeat relative" style={{backgroundImage: 'url(https://d2xsxph8kpxj0f.cloudfront.net/310519663213129151/grqzaM5C3pRuoX7dnGFBAz/aEmOStczwGCLviCw_ca730b55.webp)'}}>
         <div className="absolute inset-0 bg-black/50"></div>
         <div className="relative z-10">
           <div className="container mx-auto px-4">
@@ -148,7 +148,7 @@ export default function RetiroSagrado() {
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 rounded-2xl blur-2xl"></div>
               <img 
-                src="https://d2xsxph8kpxj0f.cloudfront.net/310519663213129151/grqzaM5C3pRuoX7dnGFBAz/aEmOStczwGCLviCw.webp" 
+                src="https://d2xsxph8kpxj0f.cloudfront.net/310519663213129151/grqzaM5C3pRuoX7dnGFBAz/aEmOStczwGCLviCw_ca730b55.webp" 
                 alt="Mamá e hija abrazándose" 
                 className="relative w-full rounded-2xl shadow-2xl object-cover aspect-video"
               />
