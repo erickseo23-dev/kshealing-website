@@ -315,11 +315,11 @@ export default function KSHealing() {
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
                 <div className="text-center">
                   <p className="text-sm text-muted-foreground mb-2">Fechas</p>
-                  <p className="font-display text-2xl font-bold text-foreground">26 Abr, 3 May, 10 May</p>
+                  <p className="font-display text-2xl font-bold text-foreground">24 May, 31 May, 7 Jun</p>
                 </div>
                 <div className="text-center">
                   <p className="text-sm text-muted-foreground mb-2">Horario</p>
-                  <p className="font-display text-2xl font-bold text-foreground">8:00 - 10:00 CDMX / 16:00 - 18:00 España</p>
+                  <p className="font-display text-2xl font-bold text-foreground">12:00 - 14:00 CDMX</p>
                 </div>
                 <div className="text-center">
                   <p className="text-sm text-muted-foreground mb-2">Modalidad</p>
@@ -619,7 +619,7 @@ export default function KSHealing() {
             </div>
 
             <p className="text-sm text-muted-foreground mt-8">
-              Próximas sesiones: 26 de Abril, 3 de Mayo, 10 de Mayo • 8:00-10:00 CDMX / 16:00-18:00 España • Online en vivo con YOHEV • $232 USD (3999 MXN)
+              Próximas sesiones: Domingo 24 de mayo, Domingo 31 de mayo, Domingo 7 de junio • 12:00 a 14:00 hrs (Hora CDMX) • Online en vivo con YOHEV • $232 USD (3999 MXN)
             </p>
           </div>
         </div>
