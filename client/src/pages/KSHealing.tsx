@@ -39,7 +39,7 @@ export default function KSHealing() {
     {
       title: "Sesiones en Vivo con YOHEV",
       description: "3 domingos consecutivos, 2 horas cada sesión",
-      date: "26 Abr, 3 May, 10 May",
+      date: "24 May, 31 May, 7 Jun",
     },
     {
       title: "Versión Digital del Libro KS Healing",
@@ -101,7 +101,7 @@ export default function KSHealing() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <a href="https://cursos.institutoascendant.com/offers/Sk3LCWoe" target="_blank" rel="noopener noreferrer">
+              <a href="https://cursos.institutoascendant.com/offers/i2QiRzJr/checkout" target="_blank" rel="noopener noreferrer">
                 <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-slate-950 font-bold gap-2" style={{backgroundColor: '#fbbc0e'}}>
                   Inscríbete Ahora
                   <ArrowRight size={20} />
@@ -112,7 +112,7 @@ export default function KSHealing() {
             <div className="flex flex-wrap gap-6 text-white/80 text-sm mt-12">
               <div className="flex gap-2 items-center">
                 <Calendar size={18} className="text-secondary" style={{color: '#fbbc0e'}} />
-                <span>26 Abr, 3 May, 10 May | 8:00-10:00 CDMX / 16:00-18:00 España</span>
+                <span>Domingo 24 de mayo | Domingo 31 de mayo | Domingo 7 de junio<br/>12:00 a 14:00 hrs (Hora CDMX)</span>
               </div>
               <div className="flex gap-2 items-center">
                 <Users size={18} className="text-secondary" style={{color: '#fbbc0e'}} />
@@ -330,7 +330,7 @@ export default function KSHealing() {
               <div className="border-t border-primary/20 pt-8">
                 <p className="text-lg font-bold text-foreground mb-4">Inversión: <span style={{color: '#fbbc0e'}}>$232 USD (3999 MXN)</span></p>
                 <div className="flex flex-col sm:flex-row gap-4">
-                  <a href="https://cursos.institutoascendant.com/offers/Sk3LCWoe" target="_blank" rel="noopener noreferrer">
+                  <a href="https://cursos.institutoascendant.com/offers/i2QiRzJr/checkout" target="_blank" rel="noopener noreferrer">
                     <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-slate-950 font-bold gap-2" style={{backgroundColor: '#fbbc0e'}}>
                       Inscríbete Ahora
                       <ArrowRight size={20} />
@@ -610,7 +610,7 @@ export default function KSHealing() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="https://cursos.institutoascendant.com/offers/Sk3LCWoe" target="_blank" rel="noopener noreferrer">
+              <a href="https://cursos.institutoascendant.com/offers/i2QiRzJr/checkout" target="_blank" rel="noopener noreferrer">
                 <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-slate-950 font-bold gap-2" style={{backgroundColor: '#fbbc0e'}}>
                   Inscríbete Ahora
                   <ArrowRight size={20} />
