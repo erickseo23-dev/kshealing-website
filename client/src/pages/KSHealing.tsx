@@ -79,6 +79,33 @@ export default function KSHealing() {
     <div className="min-h-screen flex flex-col bg-background">
       <Navigation />
 
+      {/* 0. Master Class Video Section */}
+      <section className="py-16 md:py-24 bg-gradient-to-b from-slate-900/50 to-background">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-4">
+                Master Class: Energía Crística para la <span className="text-primary" style={{color: '#fbbc0e'}}>Transformación</span>
+              </h2>
+              <p className="text-lg text-muted-foreground">
+                Aprende directamente de YOHEV en esta sesión exclusiva
+              </p>
+            </div>
+            
+            <div className="relative w-full bg-black rounded-2xl overflow-hidden shadow-2xl" style={{paddingBottom: '56.25%'}}>
+              <iframe
+                className="absolute top-0 left-0 w-full h-full"
+                src="https://www.youtube.com/embed/BjMn1VU-nxU"
+                title="Master Class: Energía Crística para la Transformación"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* 1. Hero Section - Aspirational */}
       <section className="relative py-24 md:py-48 overflow-hidden">
         <div className="absolute inset-0 z-0">
