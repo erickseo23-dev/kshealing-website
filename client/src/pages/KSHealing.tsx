@@ -85,7 +85,7 @@ export default function KSHealing() {
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
               <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-4">
-                Master Class: Energía Crística para la <span className="text-primary" style={{color: '#fbbc0e'}}>Transformación</span>
+                Master Class: La Energía Crística en <span className="text-primary" style={{color: '#fbbc0e'}}>Mí</span>
               </h2>
               <p className="text-lg text-muted-foreground">
                 Aprende directamente de YOHEV en esta sesión exclusiva
@@ -96,7 +96,7 @@ export default function KSHealing() {
               <iframe
                 className="absolute top-0 left-0 w-full h-full"
                 src="https://www.youtube.com/embed/BjMn1VU-nxU"
-                title="Master Class: Energía Crística para la Transformación"
+                title="Master Class: La Energía Crística en Mí"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
