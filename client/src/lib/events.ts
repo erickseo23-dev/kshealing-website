@@ -102,7 +102,7 @@ export const eventos: Event[] = [
     description: "Autoridad, dirección y sostén interno. Cómo la figura paterna afecta decisiones, éxito y autoridad personal.",
     fecha: "7 de Junio",
     ubicacion: "Club del Retiro Sagrado",
-    horario: "10:00 - 14:00 hrs (CDMX) / 17:00 - 21:00 hrs (España)",
+    horario: "10:00 - 14:00 hrs (CDMX) / 18:00 - 22:00 hrs (España)",
     participantes: "Ilimitado",
     precio: "Acceso al Club",
     incluye: ["Exploración de seguridad y límites", "Sanación de ausencia o rigidez paterna", "Recuperación de dirección personal", "Certificado de participación"],
