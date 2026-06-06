@@ -72,6 +72,12 @@ export default function RetiroSagrado() {
       nombre: "El Niño que Habita en Ti",
       img: "https://d2xsxph8kpxj0f.cloudfront.net/310519663213129151/grqzaM5C3pRuoX7dnGFBAz/man-transformation-freedom-bsbHWNgDrMLmYA9CjnzihM.webp",
       descripcion: "Sanar la raíz emocional sin revivir el dolor. El niño interior como estructura viva que sigue organizando decisiones y vínculos."
+    },
+    {
+      id: 11,
+      nombre: "El Vínculo Materno",
+      img: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/aEmOStczwGCLviCw.png",
+      descripcion: "La primera relación que modeló tu forma de amar y recibir. Sanar el vínculo sin rechazarlo ni idealizarlo. Un espacio para comprender cómo ese vínculo ayudó a formar tu estructura emocional y comenzar a reordenarla desde un lugar más consciente y amoroso."
     }
   ];
 
@@ -82,28 +88,28 @@ export default function RetiroSagrado() {
 
 
       {/* Hero Section */}
-      <section className="py-20 md:py-32 bg-cover bg-center bg-no-repeat relative" style={{backgroundImage: 'url(https://d2xsxph8kpxj0f.cloudfront.net/310519663213129151/grqzaM5C3pRuoX7dnGFBAz/aEmOStczwGCLviCw_ca730b55.webp)'}}>
+      <section className="py-20 md:py-32 bg-cover bg-center bg-no-repeat relative" style={{backgroundImage: 'url(https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/JgAVzSzhxZNnKDAE.png)'}}>
         <div className="absolute inset-0 bg-black/50"></div>
         <div className="relative z-10">
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto text-center">
               <div className="inline-block mb-8 px-8 py-4 rounded-full bg-white/30 backdrop-blur-md border border-white/50 shadow-lg">
-                <span className="text-white font-bold text-2xl md:text-3xl">🌿 Retiro Sagrado 11 - CON YOHEV</span>
+                <span className="text-white font-bold text-2xl md:text-3xl">🌿 Retiro Sagrado 12 - CON YOHEV</span>
               </div>
               <h1 className="font-display text-5xl md:text-6xl font-bold text-white mb-6 drop-shadow-lg">
-                El Vínculo <span className="text-yellow-300">Materno</span>
+                La Fuerza <span className="text-yellow-300">Paterna</span>
               </h1>
               <p className="text-lg text-white font-semibold mb-4 drop-shadow">
                 Facilitado directamente por YOHEV
               </p>
               <p className="text-xl text-white mb-6 drop-shadow">
-                La primera relación que modeló tu forma de amar, recibir y sentirte sostenido
+                Autoridad, dirección y sostén interno. Cómo la figura paterna afecta tus decisiones, éxito y autoridad personal
               </p>
               <p className="text-lg text-white mb-8 italic drop-shadow">
-                "La energía materna representa nutrición, contención, cuidado, seguridad, recepción, sensibilidad y pertenencia."
+                "La energía paterna representa dirección, protección, límites, autoridad, sostener y ser sostenido."
               </p>
               <div className="inline-block mb-6 px-4 py-2 rounded-full bg-white/20 backdrop-blur-sm border border-white/30">
-                <span className="text-white font-semibold">📅 Domingo 17 de Mayo | 7:00 - 11:00 AM CDMX / 3:00 - 7:00 PM España</span>
+                <span className="text-white font-semibold">📅 Sábado 7 de Junio | 10:00 AM - 2:00 PM CDMX / 5:00 - 9:00 PM España</span>
               </div>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a href="#enrollment">
@@ -123,17 +129,17 @@ export default function RetiroSagrado() {
           <div className="max-w-3xl mx-auto">
             <Card className="p-12 border-2 border-primary/30 bg-gradient-to-br from-background via-primary/5 to-accent/5 shadow-xl hover:shadow-2xl transition-shadow">
               <h2 className="font-display text-3xl font-bold text-foreground mb-6">
-                🌿 <span className="text-primary">Hay Relaciones que No Terminan Cuando Crecemos</span>
+                🌿 <span className="text-primary">La Figura Paterna Sigue Operando en Tu Vida Adulta</span>
               </h2>
               <div className="space-y-4 text-muted-foreground text-lg leading-relaxed">
                 <p>
-                  La relación con la madre no solo pertenece a la infancia. Permanece viva en la forma en que te relacionas, en cómo recibes amor, en cómo te cuidas, en lo que toleras, en cómo reaccionas emocionalmente y en la manera en que te sientes sostenido… o no.
+                  La relación con el padre no termina en la infancia. Sigue viva en la forma en que tomas decisiones, en cómo ejerces autoridad, en tu relación con el éxito, en cómo te posicionas frente a los demás y en la manera en que te sientes sostenido… o no.
                 </p>
                 <p className="mt-6">
-                  <span className="font-semibold text-foreground">Aun cuando una persona ya es adulta, el vínculo materno sigue operando silenciosamente dentro del sistema emocional.</span>
+                  <span className="font-semibold text-foreground">Aun cuando una persona ya es adulta, el vínculo paterno sigue organizando silenciosamente el sistema interno de dirección, seguridad y autoridad.</span>
                 </p>
                 <p className="font-semibold text-foreground mt-6">
-                  Este retiro no es para juzgar a mamá. Tampoco para idealizarla. Es un espacio para comprender cómo ese vínculo ayudó a formar tu estructura emocional… y comenzar a reordenarla desde un lugar más consciente y amoroso.
+                  Este retiro no es para juzgar al papá. Tampoco para idealizarlo. Es un espacio para comprender cómo ese vínculo ayudó a formar tu estructura interna… y comenzar a reordenarla desde un lugar más consciente y libre.
                 </p>
               </div>
             </Card>
@@ -148,51 +154,51 @@ export default function RetiroSagrado() {
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 rounded-2xl blur-2xl"></div>
               <img 
-                src="https://d2xsxph8kpxj0f.cloudfront.net/310519663213129151/grqzaM5C3pRuoX7dnGFBAz/aEmOStczwGCLviCw_ca730b55.webp" 
-                alt="Mamá e hija abrazándose" 
+                src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/JgAVzSzhxZNnKDAE.png" 
+                alt="La Fuerza Paterna" 
                 className="relative w-full rounded-2xl shadow-2xl object-cover aspect-video"
               />
             </div>
             <div>
               <h2 className="font-display text-4xl font-bold text-foreground mb-6">
-                🌿 La Madre es Más que una <span className="text-primary">Persona</span>
+                🌿 El Padre es Más que una <span className="text-primary">Figura</span>
               </h2>
               <div className="space-y-4 text-muted-foreground mb-8">
                 <p className="text-lg leading-relaxed">
-                  La energía materna representa:
+                  La energía paterna representa:
                 </p>
                 <ul className="space-y-2 text-lg">
                   <li className="flex gap-2">
                     <span className="text-primary">•</span>
-                    <span>Nutrición</span>
+                    <span>Dirección</span>
                   </li>
                   <li className="flex gap-2">
                     <span className="text-primary">•</span>
-                    <span>Contención</span>
+                    <span>Protección</span>
                   </li>
                   <li className="flex gap-2">
                     <span className="text-primary">•</span>
-                    <span>Cuidado</span>
+                    <span>Límites</span>
                   </li>
                   <li className="flex gap-2">
                     <span className="text-primary">•</span>
-                    <span>Seguridad</span>
+                    <span>Autoridad</span>
                   </li>
                   <li className="flex gap-2">
                     <span className="text-primary">•</span>
-                    <span>Recepción</span>
+                    <span>Sostén</span>
                   </li>
                   <li className="flex gap-2">
                     <span className="text-primary">•</span>
-                    <span>Sensibilidad</span>
+                    <span>Confianza</span>
                   </li>
                   <li className="flex gap-2">
                     <span className="text-primary">•</span>
-                    <span>Pertenencia</span>
+                    <span>Permiso interno para crecer</span>
                   </li>
                 </ul>
                 <p className="text-lg leading-relaxed font-semibold text-foreground mt-6">
-                  Cuando ese vínculo fue confuso, doloroso, ausente o sobrecargado, muchas personas desarrollan patrones que limitan su libertad.
+                  Cuando ese vínculo fue confuso, ausente, rígido o contradictorio, muchas personas desarrollan patrones que limitan su dirección, autoridad y capacidad de avanzar.
                 </p>
               </div>
             </div>
@@ -204,8 +210,8 @@ export default function RetiroSagrado() {
       <section className="py-12 md:py-16 bg-gradient-to-r from-primary/10 to-accent/10 border-t border-primary/20">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
-            <h3 className="text-2xl font-bold text-foreground mb-4">¿Listo para sanar tu vínculo materno?</h3>
-            <p className="text-muted-foreground mb-6">Descubre cómo transformar tu relación con la energía materna y recuperar tu libertad emocional.</p>
+            <h3 className="text-2xl font-bold text-foreground mb-4">¿Listo para sanar tu vínculo paterno?</h3>
+            <p className="text-muted-foreground mb-6">Descubre cómo transformar tu relación con la energía paterna y recuperar tu autoridad y dirección interna.</p>
             <a href="#enrollment">
               <Button size="lg" className="bg-primary hover:bg-primary/90 text-white gap-2">
                 <ArrowRight size={18} />
@@ -220,19 +226,19 @@ export default function RetiroSagrado() {
       <section className="py-20 md:py-32 bg-gradient-to-b from-background via-primary/5 to-accent/5">
         <div className="container mx-auto px-4">
           <h2 className="font-display text-4xl font-bold text-foreground mb-12 text-center">
-            🌿 ¿Por Qué Sanar el Vínculo Materno Ahora?
+            🌿 ¿Por Qué Sanar el Vínculo Paterno Ahora?
           </h2>
             <div className="mb-12">
-              <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663213129151/grqzaM5C3pRuoX7dnGFBAz/vinculo-materno-benefits_27425270.png" alt="Sanación del Vínculo Materno" className="w-full h-auto rounded-2xl shadow-lg" />
+              <img src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/JgAVzSzhxZNnKDAE.png" alt="Sanación del Vínculo Paterno" className="w-full h-auto rounded-2xl shadow-lg" />
           </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             <div className="relative group">
               <div className="absolute inset-0 bg-gradient-to-br from-primary/30 to-accent/30 rounded-2xl blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               <Card className="relative p-8 border-2 border-primary/20 bg-gradient-to-br from-background to-primary/5 group-hover:shadow-2xl transition-all duration-300 group-hover:border-primary/40">
                 <Heart size={32} className="text-primary mb-4" />
-                <h3 className="font-semibold text-foreground text-lg mb-4">Mayor Paz Emocional</h3>
+                <h3 className="font-semibold text-foreground text-lg mb-4">Mayor Claridad y Dirección</h3>
                 <p className="text-muted-foreground">
-                  Menos culpa y autoexigencia. Más claridad en relaciones. Sensación de ligereza interna. Mayor capacidad de recibir. Más compasión hacia ti mismo.
+                  Más seguridad interna. Menos bloqueos ante el éxito. Mayor capacidad de tomar decisiones con firmeza. Relación más sana con la autoridad.
                 </p>
               </Card>
             </div>
@@ -240,9 +246,9 @@ export default function RetiroSagrado() {
               <div className="absolute inset-0 bg-gradient-to-br from-primary/30 to-accent/30 rounded-2xl blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               <Card className="relative p-8 border-2 border-accent/20 bg-gradient-to-br from-background to-accent/5 group-hover:shadow-2xl transition-all duration-300 group-hover:border-accent/40">
                 <Sparkles size={32} className="text-primary mb-4" />
-                <h3 className="font-semibold text-foreground text-lg mb-4">Relaciones Más Conscientes</h3>
+                <h3 className="font-semibold text-foreground text-lg mb-4">Autoridad Personal Recuperada</h3>
                 <p className="text-muted-foreground">
-                  Relaciones menos reactivas y más conscientes. No porque olvides el pasado, sino porque dejas de estar gobernado por él.
+                  Menos necesidad de aprobación externa. Más confianza en tu propio criterio. No porque olvides el pasado, sino porque dejas de estar gobernado por él.
                 </p>
               </Card>
             </div>
@@ -258,16 +264,16 @@ export default function RetiroSagrado() {
               🌿 ¿Qué Vamos a Trabajar en Este Retiro?
             </h2>
             <div className="mb-12">
-              <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663213129151/grqzaM5C3pRuoX7dnGFBAz/vinculo-materno-structure_24c51bed.png" alt="Sanación del Vínculo Materno" className="w-full h-auto rounded-2xl shadow-lg" />
+              <img src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/JgAVzSzhxZNnKDAE.png" alt="La Fuerza Paterna" className="w-full h-auto rounded-2xl shadow-lg" />
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {[
-                "Comprender cómo el vínculo materno sigue influyendo en tu vida adulta",
-                "Identificar patrones emocionales relacionados con la madre",
-                "Reconocer cargas, lealtades o culpas inconscientes",
-                "Liberar tensión emocional acumulada en el campo afectivo",
-                "Reordenar la relación interna con la energía materna",
-                "Recuperar equilibrio emocional sin necesidad de confrontación ni drama"
+                "Comprender cómo el vínculo paterno sigue influyendo en tu vida adulta",
+                "Identificar patrones relacionados con autoridad, dirección y éxito",
+                "Reconocer lealtades invisibles y mandatos heredados del padre",
+                "Liberar bloqueos internos vinculados a la figura paterna",
+                "Reordenar la relación interna con la energía paterna",
+                "Recuperar tu autoridad personal sin necesidad de confrontación"
               ].map((item, idx) => (
                 <div key={idx} className="flex gap-4">
                   <Check size={20} className="text-primary flex-shrink-0 mt-1" />
@@ -288,8 +294,8 @@ export default function RetiroSagrado() {
       <section className="py-16 md:py-20 bg-gradient-to-r from-primary/10 to-accent/10 border-t border-primary/20 border-b border-accent/20">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
-            <h3 className="text-3xl font-bold text-foreground mb-4">🌿 Sana tu Vínculo Materno</h3>
-            <p className="text-muted-foreground text-lg mb-8">Un retiro diseñado para comprender y reordenar tu relación con la energía materna. Sin juzgar, sin idealizar. Solo comprender y transformar.</p>
+            <h3 className="text-3xl font-bold text-foreground mb-4">🌿 Sana tu Vínculo Paterno</h3>
+            <p className="text-muted-foreground text-lg mb-8">Un retiro diseñado para comprender y reordenar tu relación con la energía paterna. Sin juzgar, sin idealizar. Solo comprender y transformar.</p>
             <a href="#enrollment">
               <Button size="lg" className="bg-primary hover:bg-primary/90 text-white gap-2">
                 <ArrowRight size={18} />
@@ -308,15 +314,15 @@ export default function RetiroSagrado() {
               🌿 Este Retiro es para Ti Si...
             </h2>
             <div className="mb-12">
-              <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663213129151/grqzaM5C3pRuoX7dnGFBAz/vinculo-materno-for-you_811eb8c4.png" alt="Este Retiro es para Ti" className="w-full h-auto rounded-2xl shadow-lg" />
+              <img src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/JgAVzSzhxZNnKDAE.png" alt="Este Retiro es para Ti" className="w-full h-auto rounded-2xl shadow-lg" />
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
               {[
-                "Te cuesta sentirte sostenido emocionalmente",
-                "Te sobrecargas cuidando a otros",
-                "Sientes culpa fácilmente",
-                "Te cuesta recibir ayuda, amor o atención",
-                "Hay heridas no resueltas con mamá",
+                "Te cuesta ejercer autoridad o tomar decisiones con firmeza",
+                "Tienes una relación complicada con el éxito o el dinero",
+                "Buscas aprobación externa constantemente",
+                "Sientes bloqueos ante figuras de autoridad",
+                "Hay heridas no resueltas con papá",
                 "O simplemente quieres comprenderte más profundamente"
               ].map((item, idx) => (
                 <div key={idx} className="flex gap-4 p-4 bg-background rounded-lg border border-primary/20">
@@ -327,7 +333,7 @@ export default function RetiroSagrado() {
             </div>
             <div className="p-8 bg-primary/5 rounded-lg border border-primary/20">
               <p className="text-foreground text-center">
-                <span className="font-semibold">No importa si tu madre estuvo presente, ausente, amorosa, exigente o contradictoria.</span> El trabajo ocurre dentro de ti.
+                <span className="font-semibold">No importa si tu padre estuvo presente, ausente, amoroso, exigente o contradictorio.</span> El trabajo ocurre dentro de ti.
               </p>
             </div>
           </div>
@@ -342,17 +348,17 @@ export default function RetiroSagrado() {
               🌱 ¿Qué Puede Cambiar Después?
             </h2>
             <div className="mb-12">
-              <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663213129151/grqzaM5C3pRuoX7dnGFBAz/vinculo-materno-benefits_27425270.png" alt="Cambios Posibles" className="w-full h-auto rounded-2xl shadow-lg" />
+              <img src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/JgAVzSzhxZNnKDAE.png" alt="Cambios Posibles" className="w-full h-auto rounded-2xl shadow-lg" />
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
               {[
-                "Mayor paz emocional",
-                "Menos culpa y autoexigencia",
-                "Más claridad en relaciones",
-                "Sensación de ligereza interna",
-                "Mayor capacidad de recibir",
-                "Más compasión hacia ti mismo",
-                "Relaciones menos reactivas y más conscientes"
+                "Mayor seguridad interna",
+                "Más claridad para tomar decisiones",
+                "Relación más sana con la autoridad",
+                "Menos bloqueos ante el éxito",
+                "Mayor confianza en tu propio criterio",
+                "Más capacidad de sostener y ser sostenido",
+                "Relaciones con figuras de autoridad más conscientes"
               ].map((item, idx) => (
                 <div key={idx} className="flex gap-4 p-4 bg-background rounded-lg">
                   <Sparkles size={20} className="text-primary flex-shrink-0" />
@@ -378,41 +384,41 @@ export default function RetiroSagrado() {
               🧘‍♀️ Estructura del Retiro (4 Horas)
             </h2>
             <div className="mb-12">
-              <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663213129151/grqzaM5C3pRuoX7dnGFBAz/vinculo-materno-structure_24c51bed.png" alt="Estructura del Retiro" className="w-full h-auto rounded-2xl shadow-lg" />
+              <img src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/JgAVzSzhxZNnKDAE.png" alt="Estructura del Retiro" className="w-full h-auto rounded-2xl shadow-lg" />
             </div>
             <Card className="p-12 border-border/50 bg-gradient-to-br from-background to-primary/10">
               <ul className="space-y-4 text-muted-foreground">
                 <li className="flex gap-3">
                   <Leaf size={20} className="text-primary flex-shrink-0 mt-0.5" />
-                  <span>La madre como matriz emocional</span>
+                  <span>El padre como estructura interna de dirección y autoridad</span>
                 </li>
                 <li className="flex gap-3">
                   <Leaf size={20} className="text-primary flex-shrink-0 mt-0.5" />
-                  <span>Cómo el vínculo materno moldea la percepción del amor</span>
+                  <span>Cómo el vínculo paterno moldea decisiones, éxito y autoridad personal</span>
                 </li>
                 <li className="flex gap-3">
                   <Leaf size={20} className="text-primary flex-shrink-0 mt-0.5" />
-                  <span>Lealtades invisibles y cargas emocionales</span>
+                  <span>Exploración de seguridad y límites internos</span>
                 </li>
                 <li className="flex gap-3">
                   <Leaf size={20} className="text-primary flex-shrink-0 mt-0.5" />
-                  <span>El cuerpo emocional y la necesidad de contención</span>
+                  <span>Sanación de ausencia o rigidez paterna</span>
                 </li>
                 <li className="flex gap-3">
                   <Leaf size={20} className="text-primary flex-shrink-0 mt-0.5" />
-                  <span>Liberación consciente del arrastre afectivo</span>
+                  <span>Liberación de mandatos y lealtades invisibles al linaje paterno</span>
                 </li>
                 <li className="flex gap-3">
                   <Leaf size={20} className="text-primary flex-shrink-0 mt-0.5" />
-                  <span>Reordenamiento interno del vínculo materno</span>
+                  <span>Reordenamiento interno del vínculo paterno</span>
                 </li>
                 <li className="flex gap-3">
                   <Leaf size={20} className="text-primary flex-shrink-0 mt-0.5" />
-                  <span>Meditación central: "Volver a Ser Sostenido"</span>
+                  <span>Meditación central: "Recuperar la Dirección Interna"</span>
                 </li>
                 <li className="flex gap-3">
                   <Leaf size={20} className="text-primary flex-shrink-0 mt-0.5" />
-                  <span>Sellado de tu libertad emocional</span>
+                  <span>Sellado de tu autoridad personal</span>
                 </li>
               </ul>
             </Card>
@@ -574,7 +580,7 @@ export default function RetiroSagrado() {
             </p>
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {eventos.filter((e: any) => e.type === "retiro" && !e.title.includes("El Vínculo Materno")).slice(0, 12).map((retiro) => (
+              {eventos.filter((e: any) => e.tipo === "Retiro Sagrado" && e.estado !== "Realizado").slice(0, 12).map((retiro) => (
                 <Card 
                   key={retiro.id} 
                   className="overflow-hidden border-border/50 bg-background hover:shadow-lg transition-all cursor-pointer relative"
@@ -698,19 +704,19 @@ export default function RetiroSagrado() {
       <section className="py-20 md:py-32 bg-gradient-to-r from-primary/10 to-accent/10">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="font-display text-4xl font-bold text-foreground mb-6">
-              Una Idea Final
-            </h2>
-            <p className="text-xl text-muted-foreground mb-8">
-              No necesitas más terapia.<br />
-              No necesitas más razón.
-            </p>
-            <p className="text-2xl font-semibold text-foreground mb-8">
-              Necesitas sanar la raíz.
-            </p>
-            <p className="text-lg text-muted-foreground mb-8">
-              Si sientes que el niño interior sigue controlando tu vida, este espacio es para ti.
-            </p>
+              <h2 className="font-display text-4xl font-bold text-foreground mb-6">
+                Una Idea Final
+              </h2>
+              <p className="text-xl text-muted-foreground mb-8">
+                No necesitas más análisis.<br />
+                No necesitas más razón.
+              </p>
+              <p className="text-2xl font-semibold text-foreground mb-8">
+                Necesitas sanar la raíz.
+              </p>
+              <p className="text-lg text-muted-foreground mb-8">
+                Si sientes que la figura paterna sigue organizando tus decisiones y límites, este espacio es para ti.
+              </p>
             <a href="#enrollment">
               <Button size="lg" className="bg-primary hover:bg-primary/90 text-white">
                 Inscribirme a este Retiro

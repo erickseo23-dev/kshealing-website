@@ -14,7 +14,7 @@ export default function ClubRetiroSagrado() {
   const [selectedRetiro, setSelectedRetiro] = useState<any>(null);
   const [selectedRetiro2025, setSelectedRetiro2025] = useState<any>(null);
 
-  const retirosSagrados2026 = eventos.filter(evento => evento.tipo === "Retiro Sagrado").slice(0, 12);
+  const retirosSagrados2026 = eventos.filter(evento => evento.tipo === "Retiro Sagrado" && evento.estado !== "Realizado").slice(0, 12);
 
   const shareOnSocial = (platform: string, retiroTitle: string, retiroDescription?: string) => {
     const clubUrl = window.location.origin + '/club-retiro-sagrado';
@@ -92,6 +92,12 @@ export default function ClubRetiroSagrado() {
       nombre: "El Niño que Habita en Ti",
       img: "https://d2xsxph8kpxj0f.cloudfront.net/310519663213129151/grqzaM5C3pRuoX7dnGFBAz/man-transformation-freedom-bsbHWNgDrMLmYA9CjnzihM_1b393f77.webp",
       descripcion: "Sanar la raíz emocional sin revivir el dolor. El niño interior como estructura viva que sigue organizando decisiones y vínculos. Acceso completo a la grabación disponible para ver en cualquier momento dentro de tu membresía."
+    },
+    {
+      id: 11,
+      nombre: "El Vínculo Materno",
+      img: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/aEmOStczwGCLviCw.png",
+      descripcion: "La primera relación que modeló tu forma de amar y recibir. Sanar el vínculo sin rechazarlo ni idealizarlo. Un espacio para comprender cómo ese vínculo ayudó a formar tu estructura emocional y comenzar a reordenarla desde un lugar más consciente y amoroso. Acceso completo a la grabación disponible para ver en cualquier momento dentro de tu membresía."
     }
   ];
 
