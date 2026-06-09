@@ -127,11 +127,18 @@ export default function KSHealing() {
               Únete a una comunidad global de profesionales transformando vidas a través de la Energía KS. Certificación Internacional en 3 módulos intensivos.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row gap-4 flex-wrap">
               <a href="https://cursos.institutoascendant.com/offers/i2QiRzJr/checkout" target="_blank" rel="noopener noreferrer">
-                <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-slate-950 font-bold gap-2" style={{backgroundColor: '#fbbc0e'}}>
+                <Button size="lg" className="font-bold gap-2 text-slate-950" style={{backgroundColor: '#fbbc0e'}}>
                   Inscríbete Ahora
-                  <ArrowRight size={20} />
+                  <span className="opacity-80 font-normal text-sm">— $3,999 MXN</span>
+                  <ArrowRight size={18} />
+                </Button>
+              </a>
+              <a href="https://institutoascendant.com/becas" target="_blank" rel="noopener noreferrer">
+                <Button size="lg" variant="outline" className="font-bold gap-2 border-amber-400/60 text-amber-400 hover:bg-amber-400/10 hover:border-amber-400">
+                  Solicitar Beca Ascendant®
+                  <span className="opacity-80 font-normal text-sm">— desde $1,999 MXN</span>
                 </Button>
               </a>
             </div>
@@ -149,12 +156,7 @@ export default function KSHealing() {
                 <Award size={18} className="text-secondary" style={{color: '#fbbc0e'}} />
                 <span>$232 USD (3999 MXN)</span>
               </div>
-              <div className="flex gap-2 items-center">
-                <span className="text-amber-400 text-xs font-semibold tracking-wide uppercase">Becas Ascendant®</span>
-                <span>Apoyo disponible de <strong className="text-amber-400">$2,000 MXN</strong> —{" "}
-                  <a href="https://institutoascendant.com/becas" className="underline underline-offset-2 text-amber-400/80 hover:text-amber-400">solicitar beca</a>
-                </span>
-              </div>
+
             </div>
           </div>
         </div>
@@ -642,23 +644,24 @@ export default function KSHealing() {
               Únete a la próxima certificación y conviértete en un Practicante Certificado de KS Healing.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center flex-wrap">
               <a href="https://cursos.institutoascendant.com/offers/i2QiRzJr/checkout" target="_blank" rel="noopener noreferrer">
-                <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-slate-950 font-bold gap-2" style={{backgroundColor: '#fbbc0e'}}>
+                <Button size="lg" className="font-bold gap-2 text-slate-950" style={{backgroundColor: '#fbbc0e'}}>
                   Inscríbete Ahora
-                  <ArrowRight size={20} />
+                  <span className="opacity-80 font-normal text-sm">— $3,999 MXN</span>
+                  <ArrowRight size={18} />
+                </Button>
+              </a>
+              <a href="https://institutoascendant.com/becas" target="_blank" rel="noopener noreferrer">
+                <Button size="lg" variant="outline" className="font-bold gap-2 border-amber-400/60 text-amber-400 hover:bg-amber-400/10 hover:border-amber-400">
+                  Solicitar Beca Ascendant®
+                  <span className="opacity-80 font-normal text-sm">— desde $1,999 MXN</span>
                 </Button>
               </a>
             </div>
 
             <p className="text-sm text-muted-foreground mt-8">
-              Próximas sesiones: Domingo 14 de junio, Domingo 21 de junio, Domingo 28 de junio • 12:00 a 14:00 hrs (Hora CDMX) • Online en vivo con YOHEV • $232 USD (3999 MXN)
-            </p>
-            <p className="text-sm mt-4" style={{ color: 'rgba(251,188,14,0.8)' }}>
-              ¿Necesitas apoyo económico?{" "}
-              <a href="https://institutoascendant.com/becas" className="underline underline-offset-2 font-semibold hover:opacity-80">
-                Solicita una beca de $2,000 MXN →
-              </a>
+              Próximas sesiones: Domingo 14 de junio, Domingo 21 de junio, Domingo 28 de junio • 12:00 a 14:00 hrs (Hora CDMX) • Online en vivo con YOHEV
             </p>
           </div>
         </div>
