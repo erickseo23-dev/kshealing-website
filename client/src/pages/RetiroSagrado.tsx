@@ -7,8 +7,15 @@ import Footer from "@/components/Footer";
 import { retiroSagradoTestimonials } from "@/lib/programTestimonials";
 import { eventos } from "@/lib/events";
 import { useState } from "react";
+import { useCurrency } from "@/hooks/useCurrency";
+
+// Retiro membership price map
+const RETIRO_PRICES = { MXN: '~$500 MXN', EUR: '€29 EUR', USD: '$29 USD' };
 
 export default function RetiroSagrado() {
+  const { prices: { currency } } = useCurrency();
+  const retiroPrice = RETIRO_PRICES[currency];
+
   const [selectedRetiro, setSelectedRetiro] = useState<any>(null);
   const [selectedRetiro2025, setSelectedRetiro2025] = useState<any>(null);
 
@@ -457,7 +464,7 @@ export default function RetiroSagrado() {
                     <span>Grabaciones anteriores</span>
                   </li>
                 </ul>
-                <p className="text-5xl font-bold text-white mb-2">$29 USD <span className="text-2xl">(~500 MXN)</span></p>
+                <p className="text-5xl font-bold text-white mb-2">{retiroPrice}</p>
                 <p className="text-white/70 text-sm mb-6">por mes • Cancela cuando quieras</p>
                 <a href="https://cursos.institutoascendant.com/offers/GdzCo9uE/checkout" target="_blank" rel="noopener noreferrer">
                   <Button size="lg" className="w-full bg-white text-primary hover:bg-white/90 font-semibold">

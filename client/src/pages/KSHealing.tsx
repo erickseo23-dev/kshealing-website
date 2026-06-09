@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Navigation from "@/components/Navigation";
+import { useCurrency } from "@/hooks/useCurrency";
 import Footer from "@/components/Footer";
 import { Sparkles, Heart, Users, Award, Check, ArrowRight, Calendar, Zap } from "lucide-react";
 import { ksHealingTestimonials } from "@/lib/programTestimonials";
@@ -10,6 +11,7 @@ import { Card } from "@/components/ui/card";
 import { Link } from "wouter";
 
 export default function KSHealing() {
+  const { prices } = useCurrency();
 
   const mainBenefits = [
     { title: "Transformación Profunda", description: "Cambios radicales en tu vida, relaciones y propósito", icon: Sparkles },
@@ -131,14 +133,14 @@ export default function KSHealing() {
               <a href="https://cursos.institutoascendant.com/offers/i2QiRzJr/checkout" target="_blank" rel="noopener noreferrer">
                 <Button size="lg" className="font-bold gap-2 text-slate-950" style={{backgroundColor: '#fbbc0e'}}>
                   Inscríbete Ahora
-                  <span className="opacity-80 font-normal text-sm">— $3,999 MXN</span>
+                  <span className="opacity-80 font-normal text-sm">— {prices.full}</span>
                   <ArrowRight size={18} />
                 </Button>
               </a>
               <a href="https://institutoascendant.com/becas" target="_blank" rel="noopener noreferrer">
                 <Button size="lg" className="font-bold gap-2 text-slate-950 border-0" style={{background: "linear-gradient(135deg, #f5a623 0%, #fbbc0e 100%)"}}>
                   Solicitar Beca Ascendant®
-                  <span className="opacity-80 font-normal text-sm">— desde $1,999 MXN</span>
+                  <span className="opacity-80 font-normal text-sm">— {prices.beca}</span>
                 </Button>
               </a>
             </div>
@@ -362,14 +364,14 @@ export default function KSHealing() {
                   <a href="https://cursos.institutoascendant.com/offers/i2QiRzJr/checkout" target="_blank" rel="noopener noreferrer">
                     <Button size="lg" className="font-bold gap-2 text-slate-950" style={{backgroundColor: '#fbbc0e'}}>
                       Inscríbete Ahora
-                      <span className="opacity-80 font-normal text-sm">— $3,999 MXN</span>
+                      <span className="opacity-80 font-normal text-sm">— {prices.full}</span>
                       <ArrowRight size={18} />
                     </Button>
                   </a>
                   <a href="https://institutoascendant.com/becas" target="_blank" rel="noopener noreferrer">
                     <Button size="lg" className="font-bold gap-2 text-slate-950 border-0" style={{background: "linear-gradient(135deg, #f5a623 0%, #fbbc0e 100%)"}}>
                       Solicitar Beca Ascendant®
-                      <span className="opacity-80 font-normal text-sm">— desde $1,999 MXN</span>
+                      <span className="opacity-80 font-normal text-sm">— {prices.beca}</span>
                     </Button>
                   </a>
                 </div>
@@ -649,14 +651,14 @@ export default function KSHealing() {
               <a href="https://cursos.institutoascendant.com/offers/i2QiRzJr/checkout" target="_blank" rel="noopener noreferrer">
                 <Button size="lg" className="font-bold gap-2 text-slate-950" style={{backgroundColor: '#fbbc0e'}}>
                   Inscríbete Ahora
-                  <span className="opacity-80 font-normal text-sm">— $3,999 MXN</span>
+                  <span className="opacity-80 font-normal text-sm">— {prices.full}</span>
                   <ArrowRight size={18} />
                 </Button>
               </a>
               <a href="https://institutoascendant.com/becas" target="_blank" rel="noopener noreferrer">
                 <Button size="lg" className="font-bold gap-2 text-slate-950 border-0" style={{background: "linear-gradient(135deg, #f5a623 0%, #fbbc0e 100%)"}}>
                   Solicitar Beca Ascendant®
-                  <span className="opacity-80 font-normal text-sm">— desde $1,999 MXN</span>
+                  <span className="opacity-80 font-normal text-sm">— {prices.beca}</span>
                 </Button>
               </a>
             </div>
