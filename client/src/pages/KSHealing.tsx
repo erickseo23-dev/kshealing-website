@@ -358,12 +358,18 @@ export default function KSHealing() {
               </div>
 
               <div className="border-t border-primary/20 pt-8">
-                <p className="text-lg font-bold text-foreground mb-4">Inversión: <span style={{color: '#fbbc0e'}}>$232 USD (3999 MXN)</span></p>
-                <div className="flex flex-col sm:flex-row gap-4">
+                <div className="flex flex-col sm:flex-row gap-4 flex-wrap">
                   <a href="https://cursos.institutoascendant.com/offers/i2QiRzJr/checkout" target="_blank" rel="noopener noreferrer">
-                    <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-slate-950 font-bold gap-2" style={{backgroundColor: '#fbbc0e'}}>
+                    <Button size="lg" className="font-bold gap-2 text-slate-950" style={{backgroundColor: '#fbbc0e'}}>
                       Inscríbete Ahora
-                      <ArrowRight size={20} />
+                      <span className="opacity-80 font-normal text-sm">— $3,999 MXN</span>
+                      <ArrowRight size={18} />
+                    </Button>
+                  </a>
+                  <a href="https://institutoascendant.com/becas" target="_blank" rel="noopener noreferrer">
+                    <Button size="lg" variant="outline" className="font-bold gap-2 border-amber-400/60 text-amber-400 hover:bg-amber-400/10 hover:border-amber-400">
+                      Solicitar Beca Ascendant®
+                      <span className="opacity-80 font-normal text-sm">— desde $1,999 MXN</span>
                     </Button>
                   </a>
                 </div>
