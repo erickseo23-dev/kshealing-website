@@ -139,7 +139,7 @@ export default function KSHealing() {
             <div className="flex flex-wrap gap-6 text-white/80 text-sm mt-12">
               <div className="flex gap-2 items-center">
                 <Calendar size={18} className="text-secondary" style={{color: '#fbbc0e'}} />
-                <span>Domingo 24 de mayo | Domingo 31 de mayo | Domingo 7 de junio<br/>12:00 a 14:00 hrs (Hora CDMX)</span>
+                <span>Domingo 14 de junio | Domingo 21 de junio | Domingo 28 de junio<br/>12:00 a 14:00 hrs (Hora CDMX)</span>
               </div>
               <div className="flex gap-2 items-center">
                 <Users size={18} className="text-secondary" style={{color: '#fbbc0e'}} />
@@ -342,7 +342,7 @@ export default function KSHealing() {
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
                 <div className="text-center">
                   <p className="text-sm text-muted-foreground mb-2">Fechas</p>
-                  <p className="font-display text-2xl font-bold text-foreground">24 May, 31 May, 7 Jun</p>
+                  <p className="font-display text-2xl font-bold text-foreground">14 Jun, 21 Jun, 28 Jun</p>
                 </div>
                 <div className="text-center">
                   <p className="text-sm text-muted-foreground mb-2">Horario</p>
@@ -646,7 +646,7 @@ export default function KSHealing() {
             </div>
 
             <p className="text-sm text-muted-foreground mt-8">
-              Próximas sesiones: Domingo 24 de mayo, Domingo 31 de mayo, Domingo 7 de junio • 12:00 a 14:00 hrs (Hora CDMX) • Online en vivo con YOHEV • $232 USD (3999 MXN)
+              Próximas sesiones: Domingo 14 de junio, Domingo 21 de junio, Domingo 28 de junio • 12:00 a 14:00 hrs (Hora CDMX) • Online en vivo con YOHEV • $232 USD (3999 MXN)
             </p>
           </div>
         </div>
