@@ -152,11 +152,6 @@ export default function KSHealing() {
                 <Users size={18} className="text-secondary" style={{color: '#fbbc0e'}} />
                 <span>Online en vivo con YOHEV</span>
               </div>
-              <div className="flex gap-2 items-center">
-                <Award size={18} className="text-secondary" style={{color: '#fbbc0e'}} />
-                <span>$232 USD (3999 MXN)</span>
-              </div>
-
             </div>
           </div>
         </div>
