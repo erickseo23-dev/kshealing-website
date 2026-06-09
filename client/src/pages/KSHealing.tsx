@@ -149,6 +149,12 @@ export default function KSHealing() {
                 <Award size={18} className="text-secondary" style={{color: '#fbbc0e'}} />
                 <span>$232 USD (3999 MXN)</span>
               </div>
+              <div className="flex gap-2 items-center">
+                <span className="text-amber-400 text-xs font-semibold tracking-wide uppercase">Becas Ascendant®</span>
+                <span>Apoyo disponible de <strong className="text-amber-400">$2,000 MXN</strong> —{" "}
+                  <a href="https://institutoascendant.com/becas" className="underline underline-offset-2 text-amber-400/80 hover:text-amber-400">solicitar beca</a>
+                </span>
+              </div>
             </div>
           </div>
         </div>
@@ -648,40 +654,12 @@ export default function KSHealing() {
             <p className="text-sm text-muted-foreground mt-8">
               Próximas sesiones: Domingo 14 de junio, Domingo 21 de junio, Domingo 28 de junio • 12:00 a 14:00 hrs (Hora CDMX) • Online en vivo con YOHEV • $232 USD (3999 MXN)
             </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Becas Ascendant Block */}
-      <section className="py-16 px-6" style={{ background: "linear-gradient(135deg, #0f1520 0%, #1a2035 100%)" }}>
-        <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
-          <div className="text-center md:text-left">
-            <p className="text-amber-400/70 text-xs tracking-[0.2em] uppercase mb-2">Programa Becas Ascendant®</p>
-            <h2 className="text-white text-2xl md:text-3xl mb-3" style={{ fontFamily: "'Cormorant Garamond', serif", fontWeight: 600 }}>
-              Accede a KS Healing con apoyo educativo
-            </h2>
-            <p className="text-white/60 text-base max-w-xl leading-relaxed mb-4">
-              La certificación KS Healing es elegible para el Programa Becas Ascendant®.
+            <p className="text-sm mt-4" style={{ color: 'rgba(251,188,14,0.8)' }}>
+              ¿Necesitas apoyo económico?{" "}
+              <a href="https://institutoascendant.com/becas" className="underline underline-offset-2 font-semibold hover:opacity-80">
+                Solicita una beca de $2,000 MXN →
+              </a>
             </p>
-            <div className="flex flex-wrap gap-4 justify-center md:justify-start">
-              <div className="text-center px-4 py-2 rounded" style={{ background: "rgba(251,188,14,0.12)", border: "1px solid rgba(251,188,14,0.3)" }}>
-                <p className="text-amber-400 font-bold text-lg">$2,000 MXN</p>
-                <p className="text-white/50 text-xs">Apoyo KS Healing Básico</p>
-              </div>
-              <div className="text-center px-4 py-2 rounded" style={{ background: "rgba(251,188,14,0.12)", border: "1px solid rgba(251,188,14,0.3)" }}>
-                <p className="text-amber-400 font-bold text-lg">$2,500 MXN</p>
-                <p className="text-white/50 text-xs">Apoyo KS Healing Avanzado</p>
-              </div>
-            </div>
-          </div>
-          <div className="flex-shrink-0">
-            <a
-              href="https://institutoascendant.com/becas"
-              className="inline-block text-slate-950 font-semibold tracking-wider uppercase text-sm px-10 py-4 transition-all duration-300 whitespace-nowrap"
-              style={{ background: "linear-gradient(135deg, #fbbc0e 0%, #f5a623 100%)" }}
-            >
-              Solicitar Beca
-            </a>
           </div>
         </div>
       </section>
