@@ -136,7 +136,7 @@ export default function KSHealing() {
                 </Button>
               </a>
               <a href="https://institutoascendant.com/becas" target="_blank" rel="noopener noreferrer">
-                <Button size="lg" variant="outline" className="font-bold gap-2 border-amber-400/60 text-amber-400 hover:bg-amber-400/10 hover:border-amber-400">
+                <Button size="lg" className="font-bold gap-2 text-slate-950 border-0" style={{background: "linear-gradient(135deg, #f5a623 0%, #fbbc0e 100%)"}}>
                   Solicitar Beca Ascendant®
                   <span className="opacity-80 font-normal text-sm">— desde $1,999 MXN</span>
                 </Button>
@@ -367,7 +367,7 @@ export default function KSHealing() {
                     </Button>
                   </a>
                   <a href="https://institutoascendant.com/becas" target="_blank" rel="noopener noreferrer">
-                    <Button size="lg" variant="outline" className="font-bold gap-2 border-amber-400/60 text-amber-400 hover:bg-amber-400/10 hover:border-amber-400">
+                    <Button size="lg" className="font-bold gap-2 text-slate-950 border-0" style={{background: "linear-gradient(135deg, #f5a623 0%, #fbbc0e 100%)"}}>
                       Solicitar Beca Ascendant®
                       <span className="opacity-80 font-normal text-sm">— desde $1,999 MXN</span>
                     </Button>
@@ -654,7 +654,7 @@ export default function KSHealing() {
                 </Button>
               </a>
               <a href="https://institutoascendant.com/becas" target="_blank" rel="noopener noreferrer">
-                <Button size="lg" variant="outline" className="font-bold gap-2 border-amber-400/60 text-amber-400 hover:bg-amber-400/10 hover:border-amber-400">
+                <Button size="lg" className="font-bold gap-2 text-slate-950 border-0" style={{background: "linear-gradient(135deg, #f5a623 0%, #fbbc0e 100%)"}}>
                   Solicitar Beca Ascendant®
                   <span className="opacity-80 font-normal text-sm">— desde $1,999 MXN</span>
                 </Button>
