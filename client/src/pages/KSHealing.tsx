@@ -665,11 +665,11 @@ export default function KSHealing() {
             </p>
             <div className="flex flex-wrap gap-4 justify-center md:justify-start">
               <div className="text-center px-4 py-2 rounded" style={{ background: "rgba(251,188,14,0.12)", border: "1px solid rgba(251,188,14,0.3)" }}>
-                <p className="text-amber-400 font-bold text-lg">$9,000 MXN</p>
+                <p className="text-amber-400 font-bold text-lg">$2,000 MXN</p>
                 <p className="text-white/50 text-xs">Apoyo KS Healing Básico</p>
               </div>
               <div className="text-center px-4 py-2 rounded" style={{ background: "rgba(251,188,14,0.12)", border: "1px solid rgba(251,188,14,0.3)" }}>
-                <p className="text-amber-400 font-bold text-lg">$19,000 MXN</p>
+                <p className="text-amber-400 font-bold text-lg">$2,500 MXN</p>
                 <p className="text-white/50 text-xs">Apoyo KS Healing Avanzado</p>
               </div>
             </div>
