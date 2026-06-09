@@ -130,7 +130,7 @@ export default function KSHealing() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 flex-wrap">
-              <a href="https://cursos.institutoascendant.com/offers/i2QiRzJr/checkout" target="_blank" rel="noopener noreferrer">
+              <a href="https://cursos.institutoascendant.com/offers/ENS2rBtj" target="_blank" rel="noopener noreferrer">
                 <Button size="lg" className="font-bold gap-2 text-slate-950" style={{backgroundColor: '#fbbc0e'}}>
                   Inscríbete Ahora
                   <span className="opacity-80 font-normal text-sm">— {prices.full}</span>
@@ -361,7 +361,7 @@ export default function KSHealing() {
 
               <div className="border-t border-primary/20 pt-8">
                 <div className="flex flex-col sm:flex-row gap-4 flex-wrap">
-                  <a href="https://cursos.institutoascendant.com/offers/i2QiRzJr/checkout" target="_blank" rel="noopener noreferrer">
+                  <a href="https://cursos.institutoascendant.com/offers/ENS2rBtj" target="_blank" rel="noopener noreferrer">
                     <Button size="lg" className="font-bold gap-2 text-slate-950" style={{backgroundColor: '#fbbc0e'}}>
                       Inscríbete Ahora
                       <span className="opacity-80 font-normal text-sm">— {prices.full}</span>
@@ -648,7 +648,7 @@ export default function KSHealing() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center flex-wrap">
-              <a href="https://cursos.institutoascendant.com/offers/i2QiRzJr/checkout" target="_blank" rel="noopener noreferrer">
+              <a href="https://cursos.institutoascendant.com/offers/ENS2rBtj" target="_blank" rel="noopener noreferrer">
                 <Button size="lg" className="font-bold gap-2 text-slate-950" style={{backgroundColor: '#fbbc0e'}}>
                   Inscríbete Ahora
                   <span className="opacity-80 font-normal text-sm">— {prices.full}</span>
