@@ -747,6 +747,33 @@ export default function ClubRetiroSagrado() {
         </div>
       </section>
 
+
+      {/* Becas Ascendant Block */}
+      <section className="py-16 px-6" style={{ background: "linear-gradient(135deg, #0f1520 0%, #1a2035 100%)" }}>
+        <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
+          <div className="text-center md:text-left">
+            <p className="text-amber-400/70 text-xs tracking-[0.2em] uppercase mb-2">Programa Becas Ascendant®</p>
+            <h2 className="text-white text-2xl md:text-3xl mb-3" style={{ fontFamily: "'Cormorant Garamond', serif", fontWeight: 600 }}>
+              Únete al Club con apoyo educativo
+            </h2>
+            <p className="text-white/60 text-base max-w-xl leading-relaxed mb-4">
+              El Club de Retiro Sagrado es elegible para el Programa Becas Ascendant®. Puedes recibir un{" "}
+              <span className="text-amber-400 font-semibold">apoyo educativo significativo</span>{" "}
+              sobre tu membresía. La disponibilidad es limitada.
+            </p>
+          </div>
+          <div className="flex-shrink-0">
+            <a
+              href="https://institutoascendant.com/becas"
+              className="inline-block text-slate-950 font-semibold tracking-wider uppercase text-sm px-10 py-4 transition-all duration-300 whitespace-nowrap"
+              style={{ background: "linear-gradient(135deg, #fbbc0e 0%, #f5a623 100%)" }}
+            >
+              Solicitar Beca
+            </a>
+          </div>
+        </div>
+      </section>
+
       <Footer />
     </div>
   );
