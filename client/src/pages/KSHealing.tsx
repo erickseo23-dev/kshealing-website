@@ -39,7 +39,7 @@ export default function KSHealing() {
     {
       title: "Sesiones en Vivo con YOHEV",
       description: "3 domingos consecutivos, 2 horas cada sesión",
-      date: "24 May, 31 May, 7 Jun",
+      date: "14 Jun, 21 Jun, 28 Jun",
     },
     {
       title: "Versión Digital del Libro KS Healing",
