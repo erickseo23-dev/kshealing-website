@@ -349,7 +349,7 @@ export default function DART() {
           </div>
           <div className="flex-shrink-0">
             <a
-              href="https://institutoascendant.com/becas"
+              href="https://cursos.institutoascendant.com/formulario-becas-ascendant"
               className="inline-block text-slate-950 font-semibold tracking-wider uppercase text-sm px-10 py-4 transition-all duration-300 whitespace-nowrap"
               style={{ background: "linear-gradient(135deg, #fbbc0e 0%, #f5a623 100%)" }}
             >
