@@ -15,15 +15,15 @@ export default function Contacto() {
   return (
     <>
       <Navigation />
-      <div className="min-h-screen bg-gradient-to-b from-[#0a0f1e] to-[#0d1528] pt-32 pb-24">
+      <div className="min-h-screen bg-gradient-to-b from-[#FAF8F5] to-white pt-32 pb-24">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-10">
 
           {/* Header */}
           <div className="text-center mb-16">
-            <h1 className="font-serif text-4xl lg:text-5xl font-bold text-white mb-5">
+            <h1 className="font-serif text-4xl lg:text-5xl font-bold text-[#2D2D2D] mb-5">
               Ponte en <em className="text-primary not-italic">Contacto</em>
             </h1>
-            <p className="text-lg text-white/60 max-w-xl mx-auto leading-relaxed">
+            <p className="text-lg text-[#666666] max-w-xl mx-auto leading-relaxed">
               ¿Tienes preguntas sobre nuestros programas, certificaciones o retiros? Escríbenos directamente y te responderemos a la brevedad.
             </p>
           </div>
@@ -34,31 +34,31 @@ export default function Contacto() {
             {/* Email */}
             <a
               href="mailto:contacto@kshealing.com?subject=Consulta%20KS%20Healing"
-              className="group bg-white/5 border border-white/10 rounded-2xl p-8 hover:border-primary/40 hover:bg-white/10 transition-all duration-300 flex flex-col items-center text-center"
+              className="group bg-white rounded-2xl p-8 shadow-sm border border-[#E8E4DF] hover:border-primary/40 hover:shadow-md transition-all duration-300 flex flex-col items-center text-center"
             >
               <div className="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
                 <Mail className="w-7 h-7 text-primary" />
               </div>
-              <h3 className="font-semibold text-white mb-2">Email</h3>
+              <h3 className="font-semibold text-[#2D2D2D] mb-2">Email</h3>
               <p className="text-primary text-sm font-medium group-hover:underline break-all">
                 contacto@kshealing.com
               </p>
-              <p className="text-white/40 text-xs mt-2">Haz clic para escribirnos</p>
+              <p className="text-[#999] text-xs mt-2">Haz clic para escribirnos</p>
             </a>
 
             {/* Teléfono */}
             <a
               href="tel:+523113931660"
-              className="group bg-white/5 border border-white/10 rounded-2xl p-8 hover:border-primary/40 hover:bg-white/10 transition-all duration-300 flex flex-col items-center text-center"
+              className="group bg-white rounded-2xl p-8 shadow-sm border border-[#E8E4DF] hover:border-primary/40 hover:shadow-md transition-all duration-300 flex flex-col items-center text-center"
             >
               <div className="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
                 <Phone className="w-7 h-7 text-primary" />
               </div>
-              <h3 className="font-semibold text-white mb-2">Teléfono</h3>
+              <h3 className="font-semibold text-[#2D2D2D] mb-2">Teléfono</h3>
               <p className="text-primary text-sm font-medium group-hover:underline">
                 +52 (311) 393-1660
               </p>
-              <p className="text-white/40 text-xs mt-2">Haz clic para llamarnos</p>
+              <p className="text-[#999] text-xs mt-2">Haz clic para llamarnos</p>
             </a>
 
             {/* WhatsApp */}
@@ -66,29 +66,29 @@ export default function Contacto() {
               href="https://wa.me/523113931660?text=Hola%2C%20me%20gustar%C3%ADa%20obtener%20m%C3%A1s%20informaci%C3%B3n%20sobre%20los%20programas%20de%20KS%20Healing."
               target="_blank"
               rel="noopener noreferrer"
-              className="group bg-white/5 border border-white/10 rounded-2xl p-8 hover:border-[#25D366]/40 hover:bg-white/10 transition-all duration-300 flex flex-col items-center text-center"
+              className="group bg-white rounded-2xl p-8 shadow-sm border border-[#E8E4DF] hover:border-[#25D366]/40 hover:shadow-md transition-all duration-300 flex flex-col items-center text-center"
             >
               <div className="w-14 h-14 bg-[#25D366]/10 rounded-xl flex items-center justify-center mb-4 group-hover:bg-[#25D366]/20 transition-colors">
                 <WhatsAppIcon className="w-7 h-7 text-[#25D366]" />
               </div>
-              <h3 className="font-semibold text-white mb-2">WhatsApp</h3>
+              <h3 className="font-semibold text-[#2D2D2D] mb-2">WhatsApp</h3>
               <p className="text-[#25D366] text-sm font-medium group-hover:underline">
                 +52 (311) 393-1660
               </p>
-              <p className="text-white/40 text-xs mt-2">Haz clic para chatear</p>
+              <p className="text-[#999] text-xs mt-2">Haz clic para chatear</p>
             </a>
 
           </div>
 
           {/* CTA adicional */}
-          <div className="bg-white/5 border border-white/10 rounded-2xl p-10 text-center">
-            <div className="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mx-auto mb-5">
+          <div className="bg-[#2D2D2D] rounded-2xl p-10 text-center">
+            <div className="w-14 h-14 bg-primary/20 rounded-xl flex items-center justify-center mx-auto mb-5">
               <MessageCircle className="w-7 h-7 text-primary" />
             </div>
             <h2 className="font-serif text-2xl lg:text-3xl font-semibold text-white mb-3">
               ¿Prefieres escribirnos directamente?
             </h2>
-            <p className="text-white/50 mb-8 max-w-md mx-auto">
+            <p className="text-white/60 mb-8 max-w-md mx-auto">
               Haz clic en el botón y se abrirá tu cliente de correo con nuestra dirección ya lista.
             </p>
             <a
