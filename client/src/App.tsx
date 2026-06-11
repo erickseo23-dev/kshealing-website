@@ -48,6 +48,7 @@ import ClubRetiroSagrado from "@/pages/ClubRetiroSagrado";
 import PoliticaPrivacidad from "./pages/PoliticaPrivacidad";
 import TerminosServicio from "./pages/TerminosServicio";
 import PoliticaCookies from "./pages/PoliticaCookies";
+import Contacto from "./pages/Contacto";
 import CookieConsent from "./components/CookieConsent";
 
 function Router() {
@@ -102,6 +103,7 @@ function Router() {
       <Route path={"/politica-privacidad"} component={PoliticaPrivacidad} />
       <Route path={"/terminos-servicio"} component={TerminosServicio} />
       <Route path={"/politica-cookies"} component={PoliticaCookies} />
+      <Route path={"/contacto"} component={Contacto} />
       <Route path={"/404"} component={NotFound} />
       <Route component={NotFound} />
     </Switch>

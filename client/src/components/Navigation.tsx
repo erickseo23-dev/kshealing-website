@@ -15,6 +15,7 @@ export default function Navigation() {
     { label: "BLOG", href: "/blog" },
     { label: "TESTIMONIOS", href: "/testimonios" },
     { label: "EVENTOS", href: "/eventos" },
+    { label: "CONTACTO", href: "/contacto" },
   ];
 
   return (
