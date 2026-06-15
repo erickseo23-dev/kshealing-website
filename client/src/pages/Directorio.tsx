@@ -14,7 +14,7 @@ import { useState, useEffect } from "react";
 // Para publicar: Archivo → Compartir → Publicar en la web → CSV → Copiar URL
 // El ID es la parte larga entre /d/ y /pub en la URL
 const SHEET_CSV_URL =
-  "https://docs.google.com/spreadsheets/d/SHEET_ID/pub?output=csv";
+  "https://docs.google.com/spreadsheets/d/e/2PACX-1vSdVFKONw_zH36YmlHVLfJC3vxu3KUtWJOZxuX-NEUxkWlKbre2LCBsE6v-COzptc_NCu2Kf1xoCOte/pub?gid=0&single=true&output=csv";
 // ─────────────────────────────────────────────────────────────────────────────
 
 interface Practicante {
@@ -108,7 +108,7 @@ export default function Directorio() {
   const [filtroPais, setFiltroPais] = useState("Todos los países");
 
   useEffect(() => {
-    if (SHEET_CSV_URL.includes("SHEET_ID")) {
+    if (!SHEET_CSV_URL || SHEET_CSV_URL.includes("SHEET_ID")) {
       // Sheet no configurada aún, usar datos de ejemplo
       setCargando(false);
       return;
