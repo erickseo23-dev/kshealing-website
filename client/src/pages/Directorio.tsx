@@ -388,40 +388,6 @@ export default function Directorio() {
         </div>
       </section>
 
-      {/* ── CTA ── */}
-      <section
-        className="py-20"
-        style={{
-          background: "linear-gradient(135deg, rgba(201,168,76,0.08) 0%, rgba(107,63,160,0.08) 100%)",
-          borderTop: "1px solid rgba(255,255,255,0.06)",
-        }}
-      >
-        <div className="container mx-auto px-4 text-center">
-          <div className="max-w-xl mx-auto">
-            <Award size={32} className="text-amber-400 mx-auto mb-4 opacity-80" />
-            <h2
-              className="text-3xl font-bold text-white mb-4"
-              style={{ fontFamily: "'Cormorant Garamond', serif" }}
-            >
-              ¿Eres Practicante Certificado?
-            </h2>
-            <p className="text-white/50 mb-8 text-sm leading-relaxed">
-              Si tienes una certificación activa de KS Healing, puedes solicitar aparecer en este directorio. Tu perfil será verificado por el equipo del Instituto antes de publicarse.
-            </p>
-            <a
-              href="mailto:contacto@kshealing.com?subject=Solicitud%20de%20registro%20en%20Directorio%20de%20Practicantes"
-              className="inline-flex items-center gap-2 px-8 py-3 rounded-full font-semibold text-sm transition-all hover:scale-105"
-              style={{
-                background: "linear-gradient(135deg, #c9a84c, #a07830)",
-                color: "#0a0a0f",
-              }}
-            >
-              <Mail size={16} />
-              Solicitar registro
-            </a>
-          </div>
-        </div>
-      </section>
 
       <Footer />
     </div>
