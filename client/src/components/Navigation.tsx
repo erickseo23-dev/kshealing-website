@@ -1,4 +1,4 @@
-import { Link } from "wouter";
+import { Link, useLocation } from "wouter";
 import { Menu, X, ChevronDown, Users, Mail } from "lucide-react";
 import { useState, useRef, useEffect } from "react";
 import { Button } from "@/components/ui/button";
@@ -7,6 +7,7 @@ export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
   const [contactOpen, setContactOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
+  const [, navigate] = useLocation();
 
   // Cerrar el dropdown al hacer clic fuera
   useEffect(() => {
@@ -82,24 +83,23 @@ export default function Navigation() {
                 {contactItems.map((item) => {
                   const Icon = item.icon;
                   return (
-                    <Link key={item.href} href={item.href}>
-                      <a
-                        className="flex items-center gap-3 px-4 py-3 text-sm transition-colors"
-                        style={{ color: "rgba(255,255,255,0.75)" }}
-                        onMouseEnter={(e) => {
-                          (e.currentTarget as HTMLElement).style.background = "rgba(201,168,76,0.1)";
-                          (e.currentTarget as HTMLElement).style.color = "#c9a84c";
-                        }}
-                        onMouseLeave={(e) => {
-                          (e.currentTarget as HTMLElement).style.background = "transparent";
-                          (e.currentTarget as HTMLElement).style.color = "rgba(255,255,255,0.75)";
-                        }}
-                        onClick={() => setContactOpen(false)}
-                      >
-                        <Icon size={15} style={{ color: "#c9a84c" }} />
-                        {item.label}
-                      </a>
-                    </Link>
+                    <button
+                      key={item.href}
+                      className="w-full flex items-center gap-3 px-4 py-3 text-sm transition-colors text-left"
+                      style={{ color: "rgba(255,255,255,0.75)", background: "transparent" }}
+                      onMouseEnter={(e) => {
+                        (e.currentTarget as HTMLElement).style.background = "rgba(201,168,76,0.1)";
+                        (e.currentTarget as HTMLElement).style.color = "#c9a84c";
+                      }}
+                      onMouseLeave={(e) => {
+                        (e.currentTarget as HTMLElement).style.background = "transparent";
+                        (e.currentTarget as HTMLElement).style.color = "rgba(255,255,255,0.75)";
+                      }}
+                      onClick={() => { setContactOpen(false); navigate(item.href); }}
+                    >
+                      <Icon size={15} style={{ color: "#c9a84c" }} />
+                      {item.label}
+                    </button>
                   );
                 })}
               </div>
@@ -148,15 +148,14 @@ export default function Navigation() {
               {contactItems.map((item) => {
                 const Icon = item.icon;
                 return (
-                  <Link key={item.href} href={item.href}>
-                    <a
-                      className="flex items-center gap-3 px-4 py-2 text-sm font-medium text-foreground hover:text-primary hover:bg-primary/5 rounded-md transition-colors"
-                      onClick={() => setIsOpen(false)}
-                    >
-                      <Icon size={15} style={{ color: "#c9a84c" }} />
-                      {item.label}
-                    </a>
-                  </Link>
+                  <button
+                    key={item.href}
+                    className="w-full flex items-center gap-3 px-4 py-2 text-sm font-medium text-foreground hover:text-primary hover:bg-primary/5 rounded-md transition-colors text-left"
+                    onClick={() => { setIsOpen(false); navigate(item.href); }}
+                  >
+                    <Icon size={15} style={{ color: "#c9a84c" }} />
+                    {item.label}
+                  </button>
                 );
               })}
             </div>
