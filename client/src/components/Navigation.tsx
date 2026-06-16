@@ -1,10 +1,23 @@
 import { Link } from "wouter";
-import { Menu, X } from "lucide-react";
-import { useState } from "react";
+import { Menu, X, ChevronDown, Users, Mail } from "lucide-react";
+import { useState, useRef, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
+  const [contactOpen, setContactOpen] = useState(false);
+  const dropdownRef = useRef<HTMLDivElement>(null);
+
+  // Cerrar el dropdown al hacer clic fuera
+  useEffect(() => {
+    function handleClickOutside(e: MouseEvent) {
+      if (dropdownRef.current && !dropdownRef.current.contains(e.target as Node)) {
+        setContactOpen(false);
+      }
+    }
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
 
   const navItems = [
     { label: "HOME", href: "/" },
@@ -15,7 +28,11 @@ export default function Navigation() {
     { label: "BLOG", href: "/blog" },
     { label: "TESTIMONIOS", href: "/testimonios" },
     { label: "EVENTOS", href: "/eventos" },
-    { label: "CONTACTO", href: "/contacto" },
+  ];
+
+  const contactItems = [
+    { label: "Contáctanos", href: "/contacto", icon: Mail },
+    { label: "Directorio de Practicantes", href: "/directorio", icon: Users },
   ];
 
   return (
@@ -40,6 +57,54 @@ export default function Navigation() {
               </a>
             </Link>
           ))}
+
+          {/* Dropdown CONTACTO */}
+          <div className="relative" ref={dropdownRef}>
+            <button
+              onClick={() => setContactOpen(!contactOpen)}
+              className="flex items-center gap-1 px-3 py-2 text-xs font-medium text-foreground hover:text-primary hover:bg-primary/5 rounded-md transition-colors whitespace-nowrap"
+            >
+              CONTACTO
+              <ChevronDown
+                size={13}
+                className={`transition-transform duration-200 ${contactOpen ? "rotate-180" : ""}`}
+              />
+            </button>
+
+            {contactOpen && (
+              <div
+                className="absolute right-0 top-full mt-1 w-52 rounded-lg shadow-xl overflow-hidden z-50"
+                style={{
+                  background: "linear-gradient(135deg, #0f0f1a, #1a1a2e)",
+                  border: "1px solid rgba(201,168,76,0.25)",
+                }}
+              >
+                {contactItems.map((item) => {
+                  const Icon = item.icon;
+                  return (
+                    <Link key={item.href} href={item.href}>
+                      <a
+                        className="flex items-center gap-3 px-4 py-3 text-sm transition-colors"
+                        style={{ color: "rgba(255,255,255,0.75)" }}
+                        onMouseEnter={(e) => {
+                          (e.currentTarget as HTMLElement).style.background = "rgba(201,168,76,0.1)";
+                          (e.currentTarget as HTMLElement).style.color = "#c9a84c";
+                        }}
+                        onMouseLeave={(e) => {
+                          (e.currentTarget as HTMLElement).style.background = "transparent";
+                          (e.currentTarget as HTMLElement).style.color = "rgba(255,255,255,0.75)";
+                        }}
+                        onClick={() => setContactOpen(false)}
+                      >
+                        <Icon size={15} style={{ color: "#c9a84c" }} />
+                        {item.label}
+                      </a>
+                    </Link>
+                  );
+                })}
+              </div>
+            )}
+          </div>
         </div>
 
         {/* CTA Button - Desktop */}
@@ -74,6 +139,28 @@ export default function Navigation() {
                 </a>
               </Link>
             ))}
+
+            {/* Contacto en móvil — sección con sub-items */}
+            <div className="pt-1">
+              <p className="px-4 py-1 text-xs font-bold uppercase tracking-wider" style={{ color: "#c9a84c" }}>
+                Contacto
+              </p>
+              {contactItems.map((item) => {
+                const Icon = item.icon;
+                return (
+                  <Link key={item.href} href={item.href}>
+                    <a
+                      className="flex items-center gap-3 px-4 py-2 text-sm font-medium text-foreground hover:text-primary hover:bg-primary/5 rounded-md transition-colors"
+                      onClick={() => setIsOpen(false)}
+                    >
+                      <Icon size={15} style={{ color: "#c9a84c" }} />
+                      {item.label}
+                    </a>
+                  </Link>
+                );
+              })}
+            </div>
+
             <a href="https://cursos.institutoascendant.com/library" target="_blank" rel="noopener noreferrer" className="block">
               <Button className="w-full bg-primary hover:bg-primary/90 text-white mt-4">
                 Area de Alumnos
