@@ -49,8 +49,8 @@ export default function Navigation() {
           </a>
         </Link>
 
-        {/* Desktop Navigation */}
-        <div className="hidden lg:flex items-center gap-1 overflow-x-auto">
+        {/* Desktop Navigation — sin overflow para que el dropdown sea visible */}
+        <div className="hidden lg:flex items-center gap-1">
           {navItems.map((item) => (
             <Link key={item.href} href={item.href}>
               <a className="px-3 py-2 text-xs font-medium text-foreground hover:text-primary hover:bg-primary/5 rounded-md transition-colors whitespace-nowrap">
@@ -62,7 +62,7 @@ export default function Navigation() {
           {/* Dropdown CONTACTO */}
           <div className="relative" ref={dropdownRef}>
             <button
-              onClick={() => setContactOpen(!contactOpen)}
+              onClick={() => setContactOpen((v) => !v)}
               className="flex items-center gap-1 px-3 py-2 text-xs font-medium text-foreground hover:text-primary hover:bg-primary/5 rounded-md transition-colors whitespace-nowrap"
             >
               CONTACTO
@@ -74,10 +74,10 @@ export default function Navigation() {
 
             {contactOpen && (
               <div
-                className="absolute right-0 top-full mt-1 w-52 rounded-lg shadow-xl overflow-hidden z-50"
+                className="absolute right-0 top-full mt-2 w-56 rounded-lg shadow-2xl z-[9999]"
                 style={{
                   background: "linear-gradient(135deg, #0f0f1a, #1a1a2e)",
-                  border: "1px solid rgba(201,168,76,0.25)",
+                  border: "1px solid rgba(201,168,76,0.3)",
                 }}
               >
                 {contactItems.map((item) => {
@@ -85,19 +85,22 @@ export default function Navigation() {
                   return (
                     <button
                       key={item.href}
-                      className="w-full flex items-center gap-3 px-4 py-3 text-sm transition-colors text-left"
-                      style={{ color: "rgba(255,255,255,0.75)", background: "transparent" }}
+                      className="w-full flex items-center gap-3 px-4 py-3 text-sm transition-all text-left first:rounded-t-lg last:rounded-b-lg"
+                      style={{ color: "rgba(255,255,255,0.8)", background: "transparent" }}
                       onMouseEnter={(e) => {
-                        (e.currentTarget as HTMLElement).style.background = "rgba(201,168,76,0.1)";
+                        (e.currentTarget as HTMLElement).style.background = "rgba(201,168,76,0.12)";
                         (e.currentTarget as HTMLElement).style.color = "#c9a84c";
                       }}
                       onMouseLeave={(e) => {
                         (e.currentTarget as HTMLElement).style.background = "transparent";
-                        (e.currentTarget as HTMLElement).style.color = "rgba(255,255,255,0.75)";
+                        (e.currentTarget as HTMLElement).style.color = "rgba(255,255,255,0.8)";
                       }}
-                      onClick={() => { setContactOpen(false); navigate(item.href); }}
+                      onClick={() => {
+                        setContactOpen(false);
+                        navigate(item.href);
+                      }}
                     >
-                      <Icon size={15} style={{ color: "#c9a84c" }} />
+                      <Icon size={15} style={{ color: "#c9a84c", flexShrink: 0 }} />
                       {item.label}
                     </button>
                   );
@@ -127,8 +130,8 @@ export default function Navigation() {
 
       {/* Mobile Navigation */}
       {isOpen && (
-        <div className="lg:hidden border-t border-border bg-background/98 backdrop-blur max-h-96 overflow-y-auto">
-          <div className="container mx-auto px-4 py-4 space-y-2">
+        <div className="lg:hidden border-t border-border bg-background/98 backdrop-blur max-h-[80vh] overflow-y-auto">
+          <div className="container mx-auto px-4 py-4 space-y-1">
             {navItems.map((item) => (
               <Link key={item.href} href={item.href}>
                 <a
@@ -140,8 +143,8 @@ export default function Navigation() {
               </Link>
             ))}
 
-            {/* Contacto en móvil — sección con sub-items */}
-            <div className="pt-1">
+            {/* Contacto en móvil */}
+            <div className="pt-2">
               <p className="px-4 py-1 text-xs font-bold uppercase tracking-wider" style={{ color: "#c9a84c" }}>
                 Contacto
               </p>
@@ -151,7 +154,10 @@ export default function Navigation() {
                   <button
                     key={item.href}
                     className="w-full flex items-center gap-3 px-4 py-2 text-sm font-medium text-foreground hover:text-primary hover:bg-primary/5 rounded-md transition-colors text-left"
-                    onClick={() => { setIsOpen(false); navigate(item.href); }}
+                    onClick={() => {
+                      setIsOpen(false);
+                      navigate(item.href);
+                    }}
                   >
                     <Icon size={15} style={{ color: "#c9a84c" }} />
                     {item.label}
@@ -160,8 +166,8 @@ export default function Navigation() {
               })}
             </div>
 
-            <a href="https://cursos.institutoascendant.com/library" target="_blank" rel="noopener noreferrer" className="block">
-              <Button className="w-full bg-primary hover:bg-primary/90 text-white mt-4">
+            <a href="https://cursos.institutoascendant.com/library" target="_blank" rel="noopener noreferrer" className="block pt-2">
+              <Button className="w-full bg-primary hover:bg-primary/90 text-white">
                 Area de Alumnos
               </Button>
             </a>
