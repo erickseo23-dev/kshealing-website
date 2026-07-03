@@ -95,28 +95,28 @@ export default function RetiroSagrado() {
 
 
       {/* Hero Section */}
-      <section className="py-20 md:py-32 bg-cover bg-center bg-no-repeat relative" style={{backgroundImage: 'url(https://d2xsxph8kpxj0f.cloudfront.net/310519663213129151/grqzaM5C3pRuoX7dnGFBAz/fuerza-paterna-hero-h4nXryFTC7Drcajzha7ocH.webp)'}}>
+      <section className="py-20 md:py-32 bg-cover bg-center bg-no-repeat relative" style={{backgroundImage: 'url(https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/CssIHQgNGfpPclOl.png)'}}>
         <div className="absolute inset-0 bg-black/50"></div>
         <div className="relative z-10">
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto text-center">
               <div className="inline-block mb-8 px-8 py-4 rounded-full bg-white/30 backdrop-blur-md border border-white/50 shadow-lg">
-                <span className="text-white font-bold text-2xl md:text-3xl">🌿 Retiro Sagrado 12 - CON YOHEV</span>
+                <span className="text-white font-bold text-2xl md:text-3xl">🌿 Retiro Sagrado 13 - CON YOHEV</span>
               </div>
               <h1 className="font-display text-5xl md:text-6xl font-bold text-white mb-6 drop-shadow-lg">
-                La Fuerza <span className="text-yellow-300">Paterna</span>
+                Rompe la Capa del <span className="text-yellow-300">Estrés Crónico</span>
               </h1>
               <p className="text-lg text-white font-semibold mb-4 drop-shadow">
                 Facilitado directamente por YOHEV
               </p>
               <p className="text-xl text-white mb-6 drop-shadow">
-                Autoridad, dirección y sostén interno. Cómo la figura paterna afecta tus decisiones, éxito y autoridad personal
+                Cuando vivir en alerta se volvió normal. Cuerpo en supervivencia y sistema nervioso saturado.
               </p>
               <p className="text-lg text-white mb-8 italic drop-shadow">
-                "La energía paterna representa dirección, protección, límites, autoridad, sostener y ser sostenido."
+                "El sistema nervioso no distingue entre el peligro real y el estrés crónico. Ambos activan la misma respuesta de supervivencia."
               </p>
               <div className="inline-block mb-6 px-4 py-2 rounded-full bg-white/20 backdrop-blur-sm border border-white/30">
-                <span className="text-white font-semibold">📅 Sábado 7 de Junio | 10:00 AM - 2:00 PM CDMX / 6:00 - 10:00 PM España</span>
+                <span className="text-white font-semibold">📅 Domingo 5 de Julio | 8:00 AM - 12:00 PM CDMX / 3:00 - 7:00 PM España</span>
               </div>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a href="#enrollment">
@@ -136,17 +136,17 @@ export default function RetiroSagrado() {
           <div className="max-w-3xl mx-auto">
             <Card className="p-12 border-2 border-primary/30 bg-gradient-to-br from-background via-primary/5 to-accent/5 shadow-xl hover:shadow-2xl transition-shadow">
               <h2 className="font-display text-3xl font-bold text-foreground mb-6">
-                🌿 <span className="text-primary">La Figura Paterna Sigue Operando en Tu Vida Adulta</span>
+                🌿 <span className="text-primary">El Estrés Crónico No Es Solo Cansancio</span>
               </h2>
               <div className="space-y-4 text-muted-foreground text-lg leading-relaxed">
                 <p>
-                  La relación con el padre no termina en la infancia. Sigue viva en la forma en que tomas decisiones, en cómo ejerces autoridad, en tu relación con el éxito, en cómo te posicionas frente a los demás y en la manera en que te sientes sostenido… o no.
+                  El estrés crónico no es solo tener mucho trabajo. Es un estado interno en el que el sistema nervioso aprendió a funcionar en modo alerta de forma permanente. Y cuando eso ocurre, el cuerpo ya no sabe cómo regresar a la calma por sí solo.
                 </p>
                 <p className="mt-6">
-                  <span className="font-semibold text-foreground">Aun cuando una persona ya es adulta, el vínculo paterno sigue organizando silenciosamente el sistema interno de dirección, seguridad y autoridad.</span>
+                  <span className="font-semibold text-foreground">Vivir en alerta constante se vuelve tan familiar que deja de sentirse como estrés. Se siente como normalidad. Y esa es precisamente la trampa.</span>
                 </p>
                 <p className="font-semibold text-foreground mt-6">
-                  Este retiro no es para juzgar al papá. Tampoco para idealizarlo. Es un espacio para comprender cómo ese vínculo ayudó a formar tu estructura interna… y comenzar a reordenarla desde un lugar más consciente y libre.
+                  Este retiro no es para analizar el estrés. Es para trabajar desde adentro con las capas emocionales y energéticas que lo sostienen, y comenzar a liberar el sistema nervioso de una forma que va más allá del descanso.
                 </p>
               </div>
             </Card>
@@ -168,44 +168,40 @@ export default function RetiroSagrado() {
             </div>
             <div>
               <h2 className="font-display text-4xl font-bold text-foreground mb-6">
-                🌿 El Padre es Más que una <span className="text-primary">Figura</span>
+                🌿 Lo Que el Estrés Crónico <span className="text-primary">Hace por Dentro</span>
               </h2>
               <div className="space-y-4 text-muted-foreground mb-8">
                 <p className="text-lg leading-relaxed">
-                  La energía paterna representa:
+                  Cuando el sistema nervioso vive en modo supervivencia, aparecen señales como:
                 </p>
                 <ul className="space-y-2 text-lg">
                   <li className="flex gap-2">
                     <span className="text-primary">•</span>
-                    <span>Dirección</span>
+                    <span>Dificultad para relajarse aunque no haya amenaza real</span>
                   </li>
                   <li className="flex gap-2">
                     <span className="text-primary">•</span>
-                    <span>Protección</span>
+                    <span>Tensión física sostenida sin causa aparente</span>
                   </li>
                   <li className="flex gap-2">
                     <span className="text-primary">•</span>
-                    <span>Límites</span>
+                    <span>Mente que no para, incluso en momentos de descanso</span>
                   </li>
                   <li className="flex gap-2">
                     <span className="text-primary">•</span>
-                    <span>Autoridad</span>
+                    <span>Irritabilidad o reactividad emocional desproporcionada</span>
                   </li>
                   <li className="flex gap-2">
                     <span className="text-primary">•</span>
-                    <span>Sostén</span>
+                    <span>Cansancio profundo que no se va con dormir</span>
                   </li>
                   <li className="flex gap-2">
                     <span className="text-primary">•</span>
-                    <span>Confianza</span>
-                  </li>
-                  <li className="flex gap-2">
-                    <span className="text-primary">•</span>
-                    <span>Permiso interno para crecer</span>
+                    <span>Sensación de estar siempre en guardia</span>
                   </li>
                 </ul>
                 <p className="text-lg leading-relaxed font-semibold text-foreground mt-6">
-                  Cuando ese vínculo fue confuso, ausente, rígido o contradictorio, muchas personas desarrollan patrones que limitan su dirección, autoridad y capacidad de avanzar.
+                  Estos no son síntomas de debilidad. Son señales de un sistema nervioso que aprendió a sobrevivir y que todavía no sabe que puede descansar.
                 </p>
               </div>
             </div>
@@ -217,8 +213,8 @@ export default function RetiroSagrado() {
       <section className="py-12 md:py-16 bg-gradient-to-r from-primary/10 to-accent/10 border-t border-primary/20">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
-            <h3 className="text-2xl font-bold text-foreground mb-4">¿Listo para sanar tu vínculo paterno?</h3>
-            <p className="text-muted-foreground mb-6">Descubre cómo transformar tu relación con la energía paterna y recuperar tu autoridad y dirección interna.</p>
+            <h3 className="text-2xl font-bold text-foreground mb-4">¿Listo para soltar el estrés crónico?</h3>
+            <p className="text-muted-foreground mb-6">Descubre cómo liberar las capas de tensión acumulada y recuperar un estado de calma real y sostenida.</p>
             <a href="#enrollment">
               <Button size="lg" className="bg-primary hover:bg-primary/90 text-white gap-2">
                 <ArrowRight size={18} />
@@ -233,19 +229,19 @@ export default function RetiroSagrado() {
       <section className="py-20 md:py-32 bg-gradient-to-b from-background via-primary/5 to-accent/5">
         <div className="container mx-auto px-4">
           <h2 className="font-display text-4xl font-bold text-foreground mb-12 text-center">
-            🌿 ¿Por Qué Sanar el Vínculo Paterno Ahora?
+            🌿 ¿Por Qué Trabajar el Estrés Crónico Desde Adentro?
           </h2>
             <div className="mb-12">
-              <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663213129151/grqzaM5C3pRuoX7dnGFBAz/fuerza-paterna-estructura-7t9SJUjkxfvBf9E2aqrxsY.webp" alt="Energía Paterna" className="w-full h-auto rounded-2xl shadow-lg" />
+              <img src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/CssIHQgNGfpPclOl.png" alt="Estrés Crónico" className="w-full h-auto rounded-2xl shadow-lg" />
           </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             <div className="relative group">
               <div className="absolute inset-0 bg-gradient-to-br from-primary/30 to-accent/30 rounded-2xl blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               <Card className="relative p-8 border-2 border-primary/20 bg-gradient-to-br from-background to-primary/5 group-hover:shadow-2xl transition-all duration-300 group-hover:border-primary/40">
                 <Heart size={32} className="text-primary mb-4" />
-                <h3 className="font-semibold text-foreground text-lg mb-4">Mayor Claridad y Dirección</h3>
+                <h3 className="font-semibold text-foreground text-lg mb-4">Regulación Real del Sistema Nervioso</h3>
                 <p className="text-muted-foreground">
-                  Más seguridad interna. Menos bloqueos ante el éxito. Mayor capacidad de tomar decisiones con firmeza. Relación más sana con la autoridad.
+                  No solo técnicas de respiración. Un trabajo profundo con las capas emocionales y energéticas que mantienen el sistema nervioso en alerta.
                 </p>
               </Card>
             </div>
@@ -253,9 +249,9 @@ export default function RetiroSagrado() {
               <div className="absolute inset-0 bg-gradient-to-br from-primary/30 to-accent/30 rounded-2xl blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               <Card className="relative p-8 border-2 border-accent/20 bg-gradient-to-br from-background to-accent/5 group-hover:shadow-2xl transition-all duration-300 group-hover:border-accent/40">
                 <Sparkles size={32} className="text-primary mb-4" />
-                <h3 className="font-semibold text-foreground text-lg mb-4">Autoridad Personal Recuperada</h3>
+                <h3 className="font-semibold text-foreground text-lg mb-4">Recuperación de Calma Sostenida</h3>
                 <p className="text-muted-foreground">
-                  Menos necesidad de aprobación externa. Más confianza en tu propio criterio. No porque olvides el pasado, sino porque dejas de estar gobernado por él.
+                  No la calma forzada de "tener que estar bien". La calma que emerge cuando el cuerpo y la mente dejan de percibir peligro donde no lo hay.
                 </p>
               </Card>
             </div>
@@ -271,16 +267,16 @@ export default function RetiroSagrado() {
               🌿 ¿Qué Vamos a Trabajar en Este Retiro?
             </h2>
             <div className="mb-12">
-              <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663213129151/grqzaM5C3pRuoX7dnGFBAz/fuerza-paterna-meditacion-Y5LbNSFJTrpHuNPft6UAZn.webp" alt="La Fuerza Paterna - Trabajo" className="w-full h-auto rounded-2xl shadow-lg" />
+              <img src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/CssIHQgNGfpPclOl.png" alt="Trabajo del Retiro" className="w-full h-auto rounded-2xl shadow-lg" />
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {[
-                "Comprender cómo el vínculo paterno sigue influyendo en tu vida adulta",
-                "Identificar patrones relacionados con autoridad, dirección y éxito",
-                "Reconocer lealtades invisibles y mandatos heredados del padre",
-                "Liberar bloqueos internos vinculados a la figura paterna",
-                "Reordenar la relación interna con la energía paterna",
-                "Recuperar tu autoridad personal sin necesidad de confrontación"
+                "Identificar el estrés normalizado: reconocer cuándo el cuerpo está en modo supervivencia sin saberlo",
+                "Comprender las capas emocionales que sostienen el estado de alerta crónica",
+                "Trabajar con Energía KS® para liberar tensión acumulada en el sistema nervioso",
+                "Regulación del sistema nervioso desde adentro, no solo desde la mente",
+                "Recuperar la capacidad de descansar, soltar y estar presente sin esfuerzo",
+                "Integrar un estado de calma que sea sostenible en la vida cotidiana"
               ].map((item, idx) => (
                 <div key={idx} className="flex gap-4">
                   <Check size={20} className="text-primary flex-shrink-0 mt-1" />
@@ -290,7 +286,7 @@ export default function RetiroSagrado() {
             </div>
             <div className="mt-12 p-8 bg-primary/5 rounded-lg border border-primary/20">
               <p className="text-foreground font-semibold text-center">
-                No se trata de revivir el pasado. Se trata de dejar de seguir viviéndolo inconscientemente.
+                No se trata de eliminar el estrés de tu vida. Se trata de que tu sistema interno deje de generarlo innecesariamente.
               </p>
             </div>
           </div>
@@ -301,8 +297,8 @@ export default function RetiroSagrado() {
       <section className="py-16 md:py-20 bg-gradient-to-r from-primary/10 to-accent/10 border-t border-primary/20 border-b border-accent/20">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
-            <h3 className="text-3xl font-bold text-foreground mb-4">🌿 Sana tu Vínculo Paterno</h3>
-            <p className="text-muted-foreground text-lg mb-8">Un retiro diseñado para comprender y reordenar tu relación con la energía paterna. Sin juzgar, sin idealizar. Solo comprender y transformar.</p>
+            <h3 className="text-3xl font-bold text-foreground mb-4">🌿 Libera el Estrés que Vive Dentro</h3>
+            <p className="text-muted-foreground text-lg mb-8">Un retiro diseñado para trabajar con el sistema nervioso desde adentro. No desde la fuerza de voluntad, sino desde la comprensión y la energía.</p>
             <a href="#enrollment">
               <Button size="lg" className="bg-primary hover:bg-primary/90 text-white gap-2">
                 <ArrowRight size={18} />
@@ -321,16 +317,16 @@ export default function RetiroSagrado() {
               🌿 Este Retiro es para Ti Si...
             </h2>
             <div className="mb-12">
-              <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663213129151/grqzaM5C3pRuoX7dnGFBAz/fuerza-paterna-vinculo-5Pv77k27GAeMUTDxRJJGey.webp" alt="Este Retiro es para Ti" className="w-full h-auto rounded-2xl shadow-lg" />
+              <img src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/CssIHQgNGfpPclOl.png" alt="Este Retiro es para Ti" className="w-full h-auto rounded-2xl shadow-lg" />
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
               {[
-                "Te cuesta ejercer autoridad o tomar decisiones con firmeza",
-                "Tienes una relación complicada con el éxito o el dinero",
-                "Buscas aprobación externa constantemente",
-                "Sientes bloqueos ante figuras de autoridad",
-                "Hay heridas no resueltas con papá",
-                "O simplemente quieres comprenderte más profundamente"
+                "Sientes que no puedes relajarte aunque no haya nada urgente",
+                "Tu mente no para, incluso cuando quieres descansar",
+                "Tienes tensión física sostenida: mandíbula, cuello, espalda, pecho",
+                "Te irritas con facilidad o reaccionas de forma desproporcionada",
+                "Estás cansado/a de estar cansado/a",
+                "O simplemente sientes que algo en ti vive en estado de alerta permanente"
               ].map((item, idx) => (
                 <div key={idx} className="flex gap-4 p-4 bg-background rounded-lg border border-primary/20">
                   <Star size={20} className="text-primary flex-shrink-0" />
@@ -340,7 +336,7 @@ export default function RetiroSagrado() {
             </div>
             <div className="p-8 bg-primary/5 rounded-lg border border-primary/20">
               <p className="text-foreground text-center">
-                <span className="font-semibold">No importa si tu padre estuvo presente, ausente, amoroso, exigente o contradictorio.</span> El trabajo ocurre dentro de ti.
+                <span className="font-semibold">No importa cuánto tiempo llevas así.</span> El sistema nervioso puede aprender a regularse. El trabajo ocurre dentro de ti.
               </p>
             </div>
           </div>
@@ -355,17 +351,17 @@ export default function RetiroSagrado() {
               🌱 ¿Qué Puede Cambiar Después?
             </h2>
             <div className="mb-12">
-              <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663213129151/grqzaM5C3pRuoX7dnGFBAz/fuerza-paterna-transformacion-JRFmcTLyLUKSZZuq4yAMiU.webp" alt="Transformación" className="w-full h-auto rounded-2xl shadow-lg" />
+              <img src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/CssIHQgNGfpPclOl.png" alt="Transformación" className="w-full h-auto rounded-2xl shadow-lg" />
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
               {[
-                "Mayor seguridad interna",
-                "Más claridad para tomar decisiones",
-                "Relación más sana con la autoridad",
-                "Menos bloqueos ante el éxito",
-                "Mayor confianza en tu propio criterio",
-                "Más capacidad de sostener y ser sostenido",
-                "Relaciones con figuras de autoridad más conscientes"
+                "Más capacidad de descansar de verdad",
+                "Mente más tranquila y menos reactiva",
+                "Cuerpo con menos tensión sostenida",
+                "Mayor presencia en el día a día",
+                "Respuestas más conscientes ante situaciones difíciles",
+                "Sensación de estar más dentro de ti y menos en guardia",
+                "Energía disponible para lo que realmente importa"
               ].map((item, idx) => (
                 <div key={idx} className="flex gap-4 p-4 bg-background rounded-lg">
                   <Sparkles size={20} className="text-primary flex-shrink-0" />
@@ -375,8 +371,8 @@ export default function RetiroSagrado() {
             </div>
             <div className="p-8 bg-background rounded-lg border border-primary/20">
               <p className="text-foreground text-center">
-                No porque olvides el pasado,<br />
-                sino porque <span className="font-semibold">dejas de estar gobernado por él.</span>
+                No porque elimines el estrés de tu vida,<br />
+                sino porque <span className="font-semibold">tu sistema interno deja de generarlo innecesariamente.</span>
               </p>
             </div>
           </div>
@@ -397,35 +393,27 @@ export default function RetiroSagrado() {
               <ul className="space-y-4 text-muted-foreground">
                 <li className="flex gap-3">
                   <Leaf size={20} className="text-primary flex-shrink-0 mt-0.5" />
-                  <span>El padre como estructura interna de dirección y autoridad</span>
+                  <span>Reconocimiento del estrés normalizado: cómo identificarlo cuando ya no se siente como estrés</span>
                 </li>
                 <li className="flex gap-3">
                   <Leaf size={20} className="text-primary flex-shrink-0 mt-0.5" />
-                  <span>Cómo el vínculo paterno moldea decisiones, éxito y autoridad personal</span>
+                  <span>Comprensión de las capas emocionales que sostienen el estado de alerta crónica</span>
                 </li>
                 <li className="flex gap-3">
                   <Leaf size={20} className="text-primary flex-shrink-0 mt-0.5" />
-                  <span>Exploración de seguridad y límites internos</span>
+                  <span>Trabajo energético con KS® para liberar tensión acumulada en el cuerpo y el sistema nervioso</span>
                 </li>
                 <li className="flex gap-3">
                   <Leaf size={20} className="text-primary flex-shrink-0 mt-0.5" />
-                  <span>Sanación de ausencia o rigidez paterna</span>
+                  <span>Regulación del sistema nervioso desde adentro, no solo desde la mente o la voluntad</span>
                 </li>
                 <li className="flex gap-3">
                   <Leaf size={20} className="text-primary flex-shrink-0 mt-0.5" />
-                  <span>Liberación de mandatos y lealtades invisibles al linaje paterno</span>
+                  <span>Meditación central: "Recuperación de Calma"</span>
                 </li>
                 <li className="flex gap-3">
                   <Leaf size={20} className="text-primary flex-shrink-0 mt-0.5" />
-                  <span>Reordenamiento interno del vínculo paterno</span>
-                </li>
-                <li className="flex gap-3">
-                  <Leaf size={20} className="text-primary flex-shrink-0 mt-0.5" />
-                  <span>Meditación central: "Recuperar la Dirección Interna"</span>
-                </li>
-                <li className="flex gap-3">
-                  <Leaf size={20} className="text-primary flex-shrink-0 mt-0.5" />
-                  <span>Sellado de tu autoridad personal</span>
+                  <span>Integración de un estado de calma sostenible en la vida cotidiana</span>
                 </li>
               </ul>
             </Card>
@@ -719,10 +707,10 @@ export default function RetiroSagrado() {
                 No necesitas más razón.
               </p>
               <p className="text-2xl font-semibold text-foreground mb-8">
-                Necesitas sanar la raíz.
+                Necesitas soltar la capa del estrés.
               </p>
               <p className="text-lg text-muted-foreground mb-8">
-                Si sientes que la figura paterna sigue organizando tus decisiones y límites, este espacio es para ti.
+                Si sientes que tu sistema nervioso vive en modo alerta aunque no haya peligro real, este espacio es para ti.
               </p>
             <a href="#enrollment">
               <Button size="lg" className="bg-primary hover:bg-primary/90 text-white">
