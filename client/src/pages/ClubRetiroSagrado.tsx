@@ -98,6 +98,12 @@ export default function ClubRetiroSagrado() {
       nombre: "El Vínculo Materno",
       img: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/aEmOStczwGCLviCw.png",
       descripcion: "La primera relación que modeló tu forma de amar y recibir. Sanar el vínculo sin rechazarlo ni idealizarlo. Un espacio para comprender cómo ese vínculo ayudó a formar tu estructura emocional y comenzar a reordenarla desde un lugar más consciente y amoroso. Acceso completo a la grabación disponible para ver en cualquier momento dentro de tu membresía."
+    },
+    {
+      id: 12,
+      nombre: "La Fuerza Paterna",
+      img: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/JgAVzSzhxZNnKDAE.png",
+      descripcion: "Autoridad, dirección y sostén interno. Cómo la figura paterna afecta decisiones, éxito y autoridad personal. Un espacio para comprender y reordenar la relación con la energía paterna sin juzgar ni idealizar. Acceso completo a la grabación disponible para ver en cualquier momento dentro de tu membresía."
     }
   ];
 
