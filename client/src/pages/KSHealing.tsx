@@ -41,7 +41,7 @@ export default function KSHealing() {
     {
       title: "Sesiones en Vivo con YOHEV",
       description: "3 domingos consecutivos, 2 horas cada sesión",
-      date: "14 Jun, 21 Jun, 28 Jun",
+      date: "23 Ago, 30 Ago, 6 Sep",
     },
     {
       title: "Versión Digital del Libro KS Healing",
@@ -347,7 +347,7 @@ export default function KSHealing() {
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
                 <div className="text-center">
                   <p className="text-sm text-muted-foreground mb-2">Fechas</p>
-                  <p className="font-display text-2xl font-bold text-foreground">14 Jun, 21 Jun, 28 Jun</p>
+                  <p className="font-display text-2xl font-bold text-foreground">23 Ago, 30 Ago, 6 Sep</p>
                 </div>
                 <div className="text-center">
                   <p className="text-sm text-muted-foreground mb-2">Horario</p>
@@ -361,7 +361,7 @@ export default function KSHealing() {
 
               <div className="border-t border-primary/20 pt-8">
                 <div className="flex flex-col sm:flex-row gap-4 flex-wrap">
-                  <a href="https://cursos.institutoascendant.com/offers/ENS2rBtj" target="_blank" rel="noopener noreferrer">
+                  <a href="https://cursos.institutoascendant.com/offers/7SaCLieS" target="_blank" rel="noopener noreferrer">
                     <Button size="lg" className="font-bold gap-2 text-slate-950" style={{backgroundColor: '#fbbc0e'}}>
                       Inscríbete Ahora
                       <span className="opacity-80 font-normal text-sm">— {prices.full}</span>
