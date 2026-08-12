@@ -130,7 +130,7 @@ export default function KSHealing() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 flex-wrap">
-              <a href="https://cursos.institutoascendant.com/offers/ENS2rBtj" target="_blank" rel="noopener noreferrer">
+              <a href="https://cursos.institutoascendant.com/offers/7SaCLieS" target="_blank" rel="noopener noreferrer">
                 <Button size="lg" className="font-bold gap-2 text-slate-950" style={{backgroundColor: '#fbbc0e'}}>
                   Inscríbete Ahora
                   <span className="opacity-80 font-normal text-sm">— {prices.full}</span>
@@ -148,7 +148,7 @@ export default function KSHealing() {
             <div className="flex flex-wrap gap-6 text-white/80 text-sm mt-12">
               <div className="flex gap-2 items-center">
                 <Calendar size={18} className="text-secondary" style={{color: '#fbbc0e'}} />
-                <span>Domingo 14 de junio | Domingo 21 de junio | Domingo 28 de junio<br/>12:00 a 14:00 hrs (Hora CDMX)</span>
+                <span>Domingo 23 de agosto | Domingo 30 de agosto | Domingo 6 de septiembre<br/>12:00 a 14:00 hrs (Hora CDMX)</span>
               </div>
               <div className="flex gap-2 items-center">
                 <Users size={18} className="text-secondary" style={{color: '#fbbc0e'}} />
@@ -648,7 +648,7 @@ export default function KSHealing() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center flex-wrap">
-              <a href="https://cursos.institutoascendant.com/offers/ENS2rBtj" target="_blank" rel="noopener noreferrer">
+              <a href="https://cursos.institutoascendant.com/offers/7SaCLieS" target="_blank" rel="noopener noreferrer">
                 <Button size="lg" className="font-bold gap-2 text-slate-950" style={{backgroundColor: '#fbbc0e'}}>
                   Inscríbete Ahora
                   <span className="opacity-80 font-normal text-sm">— {prices.full}</span>
@@ -664,7 +664,7 @@ export default function KSHealing() {
             </div>
 
             <p className="text-sm text-muted-foreground mt-8">
-              Próximas sesiones: Domingo 14 de junio, Domingo 21 de junio, Domingo 28 de junio • 12:00 a 14:00 hrs (Hora CDMX) • Online en vivo con YOHEV
+              Próximas sesiones: Domingo 23 de agosto, Domingo 30 de agosto, Domingo 6 de septiembre • 12:00 a 14:00 hrs (Hora CDMX) • Online en vivo con YOHEV
             </p>
           </div>
         </div>
