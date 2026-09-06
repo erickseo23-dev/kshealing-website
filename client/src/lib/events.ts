@@ -148,7 +148,7 @@ export const eventos: Event[] = [
     id: 8,
     title: "El Poder de Elegir",
     description: "Salir del automatismo y recuperar tu soberanía interna. Elecciones inconscientes, patrones repetidos y decisiones heredadas.",
-    fecha: "6 de Septiembre",
+    fecha: "13 de Septiembre",
     ubicacion: "Club del Retiro Sagrado",
     horario: "8:00 - 12:00 hrs (CDMX) / 15:00 - 19:00 hrs (España)",
     participantes: "Ilimitado",
