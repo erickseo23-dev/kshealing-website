@@ -20,6 +20,7 @@ export default function RetiroSagrado() {
   const [selectedRetiro2025, setSelectedRetiro2025] = useState<any>(null);
 
   const retiros2025 = [
+    ...eventos.filter(e => [6, 7].includes(e.id)).map(e => ({ id: e.id + 100, nombre: e.title, img: e.imagen, descripcion: e.description })),
     {
       id: 1,
       nombre: "Volver al Silencio",
@@ -94,333 +95,26 @@ export default function RetiroSagrado() {
 
 
 
-      {/* Hero Section */}
-      <section className="py-20 md:py-32 bg-cover bg-center bg-no-repeat relative" style={{backgroundImage: 'url(https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/CssIHQgNGfpPclOl.png)'}}>
-        <div className="absolute inset-0 bg-black/50"></div>
-        <div className="relative z-10">
-          <div className="container mx-auto px-4">
-            <div className="max-w-3xl mx-auto text-center">
-              <div className="inline-block mb-8 px-8 py-4 rounded-full bg-white/30 backdrop-blur-md border border-white/50 shadow-lg">
-                <span className="text-white font-bold text-2xl md:text-3xl">🌿 Retiro Sagrado 13 - CON YOHEV</span>
-              </div>
-              <h1 className="font-display text-5xl md:text-6xl font-bold text-white mb-6 drop-shadow-lg">
-                Rompe la Capa del <span className="text-yellow-300">Estrés Crónico</span>
-              </h1>
-              <p className="text-lg text-white font-semibold mb-4 drop-shadow">
-                Facilitado directamente por YOHEV
-              </p>
-              <p className="text-xl text-white mb-6 drop-shadow">
-                Cuando vivir en alerta se volvió normal. Cuerpo en supervivencia y sistema nervioso saturado.
-              </p>
-              <p className="text-lg text-white mb-8 italic drop-shadow">
-                "El sistema nervioso no distingue entre el peligro real y el estrés crónico. Ambos activan la misma respuesta de supervivencia."
-              </p>
-              <div className="inline-block mb-6 px-4 py-2 rounded-full bg-white/20 backdrop-blur-sm border border-white/30">
-                <span className="text-white font-semibold">📅 Domingo 5 de Julio | 8:00 AM - 12:00 PM CDMX / 3:00 - 7:00 PM España</span>
-              </div>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="#enrollment">
-                  <Button size="lg" className="bg-primary hover:bg-primary/90 text-white">
-                    Inscribirme a este Retiro
-                  </Button>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
+      {/* Retiro Sagrado 15 — Septiembre */}
+      <section className="py-20 md:py-32 bg-cover bg-center bg-no-repeat relative" style={{backgroundImage: 'url(https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/PWCWWXokMvvbuHAT.png)'}}>
+        <div className="absolute inset-0 bg-black/60"></div>
+        <div className="relative z-10 container mx-auto px-4"><div className="max-w-3xl mx-auto text-center">
+          <div className="inline-block mb-8 px-8 py-4 rounded-full bg-white/20 backdrop-blur-md border border-white/50"><span className="text-white font-bold text-2xl md:text-3xl">🌿 Retiro Sagrado 15 - CON YOHEV</span></div>
+          <h1 className="font-display text-5xl md:text-6xl font-bold text-white mb-6 drop-shadow-lg">El Poder de <span className="text-yellow-300">Elegir</span></h1>
+          <p className="text-lg text-white font-semibold mb-4">Facilitado directamente por YOHEV</p>
+          <p className="text-xl text-white mb-6">Salir del automatismo y recuperar tu soberanía interna. Elecciones inconscientes, patrones repetidos y decisiones heredadas.</p>
+          <p className="text-lg text-white mb-8 italic">Entre lo que has aprendido a repetir y lo que hoy deseas vivir, existe un espacio para elegir con conciencia.</p>
+          <div className="inline-block mb-6 px-4 py-2 rounded-2xl bg-white/20 backdrop-blur-sm border border-white/30"><span className="text-white font-semibold">📅 Domingo 13 de Septiembre | 8:00 AM - 12:00 PM CDMX / 3:00 - 7:00 PM España</span></div>
+          <div className="mt-8 text-center"><a href="#enrollment"><Button size="lg" className="bg-primary hover:bg-primary/90 text-white">Inscribirme a este Retiro</Button></a></div>
+        </div></div>
       </section>
-
-      {/* The Problem */}
-      <section className="py-20 md:py-32 bg-gradient-to-b from-primary/5 via-accent/5 to-background">
-        <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto">
-            <Card className="p-12 border-2 border-primary/30 bg-gradient-to-br from-background via-primary/5 to-accent/5 shadow-xl hover:shadow-2xl transition-shadow">
-              <h2 className="font-display text-3xl font-bold text-foreground mb-6">
-                🌿 <span className="text-primary">El Estrés Crónico No Es Solo Cansancio</span>
-              </h2>
-              <div className="space-y-4 text-muted-foreground text-lg leading-relaxed">
-                <p>
-                  El estrés crónico no es solo tener mucho trabajo. Es un estado interno en el que el sistema nervioso aprendió a funcionar en modo alerta de forma permanente. Y cuando eso ocurre, el cuerpo ya no sabe cómo regresar a la calma por sí solo.
-                </p>
-                <p className="mt-6">
-                  <span className="font-semibold text-foreground">Vivir en alerta constante se vuelve tan familiar que deja de sentirse como estrés. Se siente como normalidad. Y esa es precisamente la trampa.</span>
-                </p>
-                <p className="font-semibold text-foreground mt-6">
-                  Este retiro no es para analizar el estrés. Es para trabajar desde adentro con las capas emocionales y energéticas que lo sostienen, y comenzar a liberar el sistema nervioso de una forma que va más allá del descanso.
-                </p>
-              </div>
-            </Card>
-          </div>
-        </div>
-      </section>
-
-      {/* What is Maternal Bond */}
-      <section className="py-20 md:py-32">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
-            <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 rounded-2xl blur-2xl"></div>
-              <img 
-                src="https://d2xsxph8kpxj0f.cloudfront.net/310519663213129151/grqzaM5C3pRuoX7dnGFBAz/fuerza-paterna-vinculo-5Pv77k27GAeMUTDxRJJGey.webp" 
-                alt="La Fuerza Paterna - Vínculo" 
-                className="relative w-full rounded-2xl shadow-2xl object-cover aspect-video"
-              />
-            </div>
-            <div>
-              <h2 className="font-display text-4xl font-bold text-foreground mb-6">
-                🌿 Lo Que el Estrés Crónico <span className="text-primary">Hace por Dentro</span>
-              </h2>
-              <div className="space-y-4 text-muted-foreground mb-8">
-                <p className="text-lg leading-relaxed">
-                  Cuando el sistema nervioso vive en modo supervivencia, aparecen señales como:
-                </p>
-                <ul className="space-y-2 text-lg">
-                  <li className="flex gap-2">
-                    <span className="text-primary">•</span>
-                    <span>Dificultad para relajarse aunque no haya amenaza real</span>
-                  </li>
-                  <li className="flex gap-2">
-                    <span className="text-primary">•</span>
-                    <span>Tensión física sostenida sin causa aparente</span>
-                  </li>
-                  <li className="flex gap-2">
-                    <span className="text-primary">•</span>
-                    <span>Mente que no para, incluso en momentos de descanso</span>
-                  </li>
-                  <li className="flex gap-2">
-                    <span className="text-primary">•</span>
-                    <span>Irritabilidad o reactividad emocional desproporcionada</span>
-                  </li>
-                  <li className="flex gap-2">
-                    <span className="text-primary">•</span>
-                    <span>Cansancio profundo que no se va con dormir</span>
-                  </li>
-                  <li className="flex gap-2">
-                    <span className="text-primary">•</span>
-                    <span>Sensación de estar siempre en guardia</span>
-                  </li>
-                </ul>
-                <p className="text-lg leading-relaxed font-semibold text-foreground mt-6">
-                  Estos no son síntomas de debilidad. Son señales de un sistema nervioso que aprendió a sobrevivir y que todavía no sabe que puede descansar.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* CTA Section 1 */}
-      <section className="py-12 md:py-16 bg-gradient-to-r from-primary/10 to-accent/10 border-t border-primary/20">
-        <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center">
-            <h3 className="text-2xl font-bold text-foreground mb-4">¿Listo para soltar el estrés crónico?</h3>
-            <p className="text-muted-foreground mb-6">Descubre cómo liberar las capas de tensión acumulada y recuperar un estado de calma real y sostenida.</p>
-            <a href="#enrollment">
-              <Button size="lg" className="bg-primary hover:bg-primary/90 text-white gap-2">
-                <ArrowRight size={18} />
-                Inscribirme a este Retiro
-              </Button>
-            </a>
-          </div>
-        </div>
-      </section>
-
-      {/* Why Maternal Bond */}
-      <section className="py-20 md:py-32 bg-gradient-to-b from-background via-primary/5 to-accent/5">
-        <div className="container mx-auto px-4">
-          <h2 className="font-display text-4xl font-bold text-foreground mb-12 text-center">
-            🌿 ¿Por Qué Trabajar el Estrés Crónico Desde Adentro?
-          </h2>
-            <div className="mb-12">
-              <img src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/CssIHQgNGfpPclOl.png" alt="Estrés Crónico" className="w-full h-auto rounded-2xl shadow-lg" />
-          </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-            <div className="relative group">
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/30 to-accent/30 rounded-2xl blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              <Card className="relative p-8 border-2 border-primary/20 bg-gradient-to-br from-background to-primary/5 group-hover:shadow-2xl transition-all duration-300 group-hover:border-primary/40">
-                <Heart size={32} className="text-primary mb-4" />
-                <h3 className="font-semibold text-foreground text-lg mb-4">Regulación Real del Sistema Nervioso</h3>
-                <p className="text-muted-foreground">
-                  No solo técnicas de respiración. Un trabajo profundo con las capas emocionales y energéticas que mantienen el sistema nervioso en alerta.
-                </p>
-              </Card>
-            </div>
-            <div className="relative group">
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/30 to-accent/30 rounded-2xl blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              <Card className="relative p-8 border-2 border-accent/20 bg-gradient-to-br from-background to-accent/5 group-hover:shadow-2xl transition-all duration-300 group-hover:border-accent/40">
-                <Sparkles size={32} className="text-primary mb-4" />
-                <h3 className="font-semibold text-foreground text-lg mb-4">Recuperación de Calma Sostenida</h3>
-                <p className="text-muted-foreground">
-                  No la calma forzada de "tener que estar bien". La calma que emerge cuando el cuerpo y la mente dejan de percibir peligro donde no lo hay.
-                </p>
-              </Card>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* What We'll Work */}
-      <section className="py-20 md:py-32 bg-gradient-to-b from-accent/5 via-primary/5 to-background">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="font-display text-4xl font-bold text-foreground mb-12 text-center">
-              🌿 ¿Qué Vamos a Trabajar en Este Retiro?
-            </h2>
-            <div className="mb-12">
-              <img src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/CssIHQgNGfpPclOl.png" alt="Trabajo del Retiro" className="w-full h-auto rounded-2xl shadow-lg" />
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {[
-                "Identificar el estrés normalizado: reconocer cuándo el cuerpo está en modo supervivencia sin saberlo",
-                "Comprender las capas emocionales que sostienen el estado de alerta crónica",
-                "Trabajar con Energía KS® para liberar tensión acumulada en el sistema nervioso",
-                "Regulación del sistema nervioso desde adentro, no solo desde la mente",
-                "Recuperar la capacidad de descansar, soltar y estar presente sin esfuerzo",
-                "Integrar un estado de calma que sea sostenible en la vida cotidiana"
-              ].map((item, idx) => (
-                <div key={idx} className="flex gap-4">
-                  <Check size={20} className="text-primary flex-shrink-0 mt-1" />
-                  <p className="text-muted-foreground">{item}</p>
-                </div>
-              ))}
-            </div>
-            <div className="mt-12 p-8 bg-primary/5 rounded-lg border border-primary/20">
-              <p className="text-foreground font-semibold text-center">
-                No se trata de eliminar el estrés de tu vida. Se trata de que tu sistema interno deje de generarlo innecesariamente.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* CTA Section 2 */}
-      <section className="py-16 md:py-20 bg-gradient-to-r from-primary/10 to-accent/10 border-t border-primary/20 border-b border-accent/20">
-        <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center">
-            <h3 className="text-3xl font-bold text-foreground mb-4">🌿 Libera el Estrés que Vive Dentro</h3>
-            <p className="text-muted-foreground text-lg mb-8">Un retiro diseñado para trabajar con el sistema nervioso desde adentro. No desde la fuerza de voluntad, sino desde la comprensión y la energía.</p>
-            <a href="#enrollment">
-              <Button size="lg" className="bg-primary hover:bg-primary/90 text-white gap-2">
-                <ArrowRight size={18} />
-                Inscribirme a este Retiro
-              </Button>
-            </a>
-          </div>
-        </div>
-      </section>
-
-      {/* Who is This For */}
-      <section className="py-20 md:py-32">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="font-display text-4xl font-bold text-foreground mb-12 text-center">
-              🌿 Este Retiro es para Ti Si...
-            </h2>
-            <div className="mb-12">
-              <img src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/CssIHQgNGfpPclOl.png" alt="Este Retiro es para Ti" className="w-full h-auto rounded-2xl shadow-lg" />
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-              {[
-                "Sientes que no puedes relajarte aunque no haya nada urgente",
-                "Tu mente no para, incluso cuando quieres descansar",
-                "Tienes tensión física sostenida: mandíbula, cuello, espalda, pecho",
-                "Te irritas con facilidad o reaccionas de forma desproporcionada",
-                "Estás cansado/a de estar cansado/a",
-                "O simplemente sientes que algo en ti vive en estado de alerta permanente"
-              ].map((item, idx) => (
-                <div key={idx} className="flex gap-4 p-4 bg-background rounded-lg border border-primary/20">
-                  <Star size={20} className="text-primary flex-shrink-0" />
-                  <p className="text-muted-foreground">{item}</p>
-                </div>
-              ))}
-            </div>
-            <div className="p-8 bg-primary/5 rounded-lg border border-primary/20">
-              <p className="text-foreground text-center">
-                <span className="font-semibold">No importa cuánto tiempo llevas así.</span> El sistema nervioso puede aprender a regularse. El trabajo ocurre dentro de ti.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* What Can Change */}
-      <section className="py-20 md:py-32 bg-gradient-to-b from-primary/5 via-accent/5 to-background">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="font-display text-4xl font-bold text-foreground mb-12 text-center">
-              🌱 ¿Qué Puede Cambiar Después?
-            </h2>
-            <div className="mb-12">
-              <img src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/CssIHQgNGfpPclOl.png" alt="Transformación" className="w-full h-auto rounded-2xl shadow-lg" />
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-              {[
-                "Más capacidad de descansar de verdad",
-                "Mente más tranquila y menos reactiva",
-                "Cuerpo con menos tensión sostenida",
-                "Mayor presencia en el día a día",
-                "Respuestas más conscientes ante situaciones difíciles",
-                "Sensación de estar más dentro de ti y menos en guardia",
-                "Energía disponible para lo que realmente importa"
-              ].map((item, idx) => (
-                <div key={idx} className="flex gap-4 p-4 bg-background rounded-lg">
-                  <Sparkles size={20} className="text-primary flex-shrink-0" />
-                  <p className="text-muted-foreground">{item}</p>
-                </div>
-              ))}
-            </div>
-            <div className="p-8 bg-background rounded-lg border border-primary/20">
-              <p className="text-foreground text-center">
-                No porque elimines el estrés de tu vida,<br />
-                sino porque <span className="font-semibold">tu sistema interno deja de generarlo innecesariamente.</span>
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Retiro Structure */}
-      <section className="py-20 md:py-32">
-        <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto">
-            <h2 className="font-display text-4xl font-bold text-foreground mb-12 text-center">
-              🧘‍♀️ Estructura del Retiro (4 Horas)
-            </h2>
-            <div className="mb-12">
-              <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663213129151/grqzaM5C3pRuoX7dnGFBAz/fuerza-paterna-meditacion-Y5LbNSFJTrpHuNPft6UAZn.webp" alt="Estructura del Retiro" className="w-full h-auto rounded-2xl shadow-lg" />
-            </div>
-            <Card className="p-12 border-border/50 bg-gradient-to-br from-background to-primary/10">
-              <ul className="space-y-4 text-muted-foreground">
-                <li className="flex gap-3">
-                  <Leaf size={20} className="text-primary flex-shrink-0 mt-0.5" />
-                  <span>Reconocimiento del estrés normalizado: cómo identificarlo cuando ya no se siente como estrés</span>
-                </li>
-                <li className="flex gap-3">
-                  <Leaf size={20} className="text-primary flex-shrink-0 mt-0.5" />
-                  <span>Comprensión de las capas emocionales que sostienen el estado de alerta crónica</span>
-                </li>
-                <li className="flex gap-3">
-                  <Leaf size={20} className="text-primary flex-shrink-0 mt-0.5" />
-                  <span>Trabajo energético con KS® para liberar tensión acumulada en el cuerpo y el sistema nervioso</span>
-                </li>
-                <li className="flex gap-3">
-                  <Leaf size={20} className="text-primary flex-shrink-0 mt-0.5" />
-                  <span>Regulación del sistema nervioso desde adentro, no solo desde la mente o la voluntad</span>
-                </li>
-                <li className="flex gap-3">
-                  <Leaf size={20} className="text-primary flex-shrink-0 mt-0.5" />
-                  <span>Meditación central: "Recuperación de Calma"</span>
-                </li>
-                <li className="flex gap-3">
-                  <Leaf size={20} className="text-primary flex-shrink-0 mt-0.5" />
-                  <span>Integración de un estado de calma sostenible en la vida cotidiana</span>
-                </li>
-              </ul>
-            </Card>
-          </div>
-        </div>
-      </section>
-
+      <section className="py-16 md:py-24"><div className="container mx-auto px-4"><div className="max-w-4xl mx-auto"><h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-8">🌿 ¿Quién Está Eligiendo en Tu Vida?</h2><p className="text-lg text-muted-foreground leading-relaxed mb-6">A veces creemos que elegimos, pero respondemos desde la costumbre, el miedo a decepcionar o las expectativas de otros. Repetimos formas de relacionarnos, postergamos decisiones y seguimos caminos que nunca nos detuvimos a cuestionar.</p><p className="text-lg text-muted-foreground leading-relaxed mb-6">Reconocer un patrón abre la posibilidad de responder de otra manera. La conciencia comienza cuando puedes preguntarte: ¿esto lo elijo hoy o lo estoy repitiendo?</p><p className="text-lg text-muted-foreground leading-relaxed mb-6">En este retiro exploraremos las elecciones inconscientes, los patrones repetidos y las decisiones heredadas. Un espacio de reflexión, meditación y práctica con Energía KS® para recuperar tu criterio y dar pasos más conscientes en tu vida.</p></div></div></section>
+      <section className="py-16 md:py-24"><div className="container mx-auto px-4"><div className="max-w-4xl mx-auto"><h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-8">🌿 Cuando Eliges en Automático</h2><ul className="space-y-4"><li className="flex gap-3 text-lg text-muted-foreground"><Check size={20} className="text-primary flex-shrink-0 mt-1" /><span>Decir que sí cuando en realidad deseas decir que no.</span></li><li className="flex gap-3 text-lg text-muted-foreground"><Check size={20} className="text-primary flex-shrink-0 mt-1" /><span>Elegir para evitar el rechazo o la desaprobación.</span></li><li className="flex gap-3 text-lg text-muted-foreground"><Check size={20} className="text-primary flex-shrink-0 mt-1" /><span>Postergar decisiones por miedo a equivocarte.</span></li><li className="flex gap-3 text-lg text-muted-foreground"><Check size={20} className="text-primary flex-shrink-0 mt-1" /><span>Repetir vínculos o respuestas que ya no deseas sostener.</span></li><li className="flex gap-3 text-lg text-muted-foreground"><Check size={20} className="text-primary flex-shrink-0 mt-1" /><span>Confundir lo que quieres con lo que se espera de ti.</span></li><li className="flex gap-3 text-lg text-muted-foreground"><Check size={20} className="text-primary flex-shrink-0 mt-1" /><span>Seguir reglas familiares sin revisar si aún tienen sentido para ti.</span></li></ul><div className="mt-8"><p className="text-lg text-muted-foreground leading-relaxed mb-6">Observar estas respuestas sin juzgarte permite comprender de dónde vienen y explorar alternativas. Recuperar tu soberanía interna significa reconocer tu margen de acción y asumir tus decisiones con responsabilidad.</p></div><div className="mt-8 text-center"><a href="#enrollment"><Button size="lg" className="bg-primary hover:bg-primary/90 text-white">Inscribirme a este Retiro</Button></a></div></div></div></section>
+      <section className="py-16 md:py-24"><div className="container mx-auto px-4"><div className="max-w-4xl mx-auto"><h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-8">🌿 Recuperar Tu Soberanía Interna</h2><img src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/PWCWWXokMvvbuHAT.png" alt="El Poder de Elegir — Retiro Sagrado 15" className="w-full h-auto rounded-2xl shadow-lg mb-10" /><div className="grid grid-cols-1 md:grid-cols-2 gap-8"><Card className="p-8 border-primary/20 bg-primary/5"><h3 className="text-xl font-bold mb-4">Reconocer Tus Automatismos</h3><p className="text-lg text-muted-foreground leading-relaxed mb-6">Explorar las creencias, emociones y expectativas que influyen en tus decisiones. Distinguir una respuesta habitual de una elección que puedes revisar.</p></Card><Card className="p-8 border-primary/20 bg-primary/5"><h3 className="text-xl font-bold mb-4">Elegir con Conciencia</h3><p className="text-lg text-muted-foreground leading-relaxed mb-6">Escuchar lo que valoras, considerar tus posibilidades y responder con mayor claridad. Elegir también implica aceptar límites, consecuencias y la posibilidad de aprender.</p></Card></div></div></div></section>
+      <section className="py-16 md:py-24"><div className="container mx-auto px-4"><div className="max-w-4xl mx-auto"><h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-8">🌿 ¿Qué Vamos a Trabajar en Este Retiro?</h2><ul className="space-y-4"><li className="flex gap-3 text-lg text-muted-foreground"><Check size={20} className="text-primary flex-shrink-0 mt-1" /><span>Identificar elecciones inconscientes y reconocer cuándo actúas por costumbre.</span></li><li className="flex gap-3 text-lg text-muted-foreground"><Check size={20} className="text-primary flex-shrink-0 mt-1" /><span>Explorar patrones repetidos en tus relaciones y decisiones cotidianas.</span></li><li className="flex gap-3 text-lg text-muted-foreground"><Check size={20} className="text-primary flex-shrink-0 mt-1" /><span>Reconocer decisiones heredadas y expectativas que has hecho propias.</span></li><li className="flex gap-3 text-lg text-muted-foreground"><Check size={20} className="text-primary flex-shrink-0 mt-1" /><span>Distinguir lo que deseas elegir de lo que haces por miedo o aprobación.</span></li><li className="flex gap-3 text-lg text-muted-foreground"><Check size={20} className="text-primary flex-shrink-0 mt-1" /><span>Acompañar la autoobservación con meditación y práctica de Energía KS®.</span></li><li className="flex gap-3 text-lg text-muted-foreground"><Check size={20} className="text-primary flex-shrink-0 mt-1" /><span>Definir un paso concreto para practicar una elección más consciente.</span></li></ul><div className="mt-8 p-6 bg-primary/5 rounded-lg"><p className="text-lg text-muted-foreground leading-relaxed mb-6">No puedes controlar todas las circunstancias. Puedes explorar cómo responder y qué decisiones están a tu alcance.</p></div><div className="mt-8 text-center"><a href="#enrollment"><Button size="lg" className="bg-primary hover:bg-primary/90 text-white">Inscribirme a este Retiro</Button></a></div></div></div></section>
+      <section className="py-16 md:py-24"><div className="container mx-auto px-4"><div className="max-w-4xl mx-auto"><h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-8">🌿 Este Retiro es para Ti Si...</h2><ul className="space-y-4"><li className="flex gap-3 text-lg text-muted-foreground"><Check size={20} className="text-primary flex-shrink-0 mt-1" /><span>Sientes que tomas decisiones para complacer a otros.</span></li><li className="flex gap-3 text-lg text-muted-foreground"><Check size={20} className="text-primary flex-shrink-0 mt-1" /><span>Te cuesta distinguir tus deseos de las expectativas ajenas.</span></li><li className="flex gap-3 text-lg text-muted-foreground"><Check size={20} className="text-primary flex-shrink-0 mt-1" /><span>Repites situaciones o relaciones que quisieras vivir de otra manera.</span></li><li className="flex gap-3 text-lg text-muted-foreground"><Check size={20} className="text-primary flex-shrink-0 mt-1" /><span>Postergas decisiones importantes por miedo a equivocarte.</span></li><li className="flex gap-3 text-lg text-muted-foreground"><Check size={20} className="text-primary flex-shrink-0 mt-1" /><span>Quieres cuestionar creencias y decisiones heredadas.</span></li><li className="flex gap-3 text-lg text-muted-foreground"><Check size={20} className="text-primary flex-shrink-0 mt-1" /><span>Deseas actuar con mayor claridad, presencia y responsabilidad.</span></li></ul><div className="mt-8"><p className="text-lg text-muted-foreground leading-relaxed mb-6">Puedes comenzar con una decisión cotidiana. Este espacio te invita a observarte con honestidad y a explorar posibilidades a tu propio ritmo.</p></div></div></div></section>
+      <section className="py-16 md:py-24"><div className="container mx-auto px-4"><div className="max-w-4xl mx-auto"><h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-8">🌱 ¿Qué Puedes Llevarte de Este Encuentro?</h2><ul className="space-y-4"><li className="flex gap-3 text-lg text-muted-foreground"><Check size={20} className="text-primary flex-shrink-0 mt-1" /><span>Mayor claridad sobre lo que deseas y valoras.</span></li><li className="flex gap-3 text-lg text-muted-foreground"><Check size={20} className="text-primary flex-shrink-0 mt-1" /><span>Más facilidad para reconocer una respuesta automática.</span></li><li className="flex gap-3 text-lg text-muted-foreground"><Check size={20} className="text-primary flex-shrink-0 mt-1" /><span>Un espacio de pausa antes de decidir.</span></li><li className="flex gap-3 text-lg text-muted-foreground"><Check size={20} className="text-primary flex-shrink-0 mt-1" /><span>Más recursos para revisar patrones repetidos.</span></li><li className="flex gap-3 text-lg text-muted-foreground"><Check size={20} className="text-primary flex-shrink-0 mt-1" /><span>Mayor disposición para asumir tus decisiones sin castigarte.</span></li><li className="flex gap-3 text-lg text-muted-foreground"><Check size={20} className="text-primary flex-shrink-0 mt-1" /><span>Un paso concreto para llevar la conciencia a tu vida cotidiana.</span></li></ul><div className="mt-8"><p className="text-lg text-muted-foreground leading-relaxed mb-6">Cada proceso es personal. La invitación es practicar una forma de elegir más consciente, paso a paso.</p></div></div></div></section>
+      <section className="py-16 md:py-24"><div className="container mx-auto px-4"><div className="max-w-4xl mx-auto"><h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-8">🧘‍♀️ Estructura del Retiro (4 Horas)</h2><ul className="space-y-4"><li className="flex gap-3 text-lg text-muted-foreground"><Check size={20} className="text-primary flex-shrink-0 mt-1" /><span>Reconocimiento de automatismos: observar cómo eliges en la vida cotidiana.</span></li><li className="flex gap-3 text-lg text-muted-foreground"><Check size={20} className="text-primary flex-shrink-0 mt-1" /><span>Exploración de patrones repetidos, creencias y decisiones heredadas.</span></li><li className="flex gap-3 text-lg text-muted-foreground"><Check size={20} className="text-primary flex-shrink-0 mt-1" /><span>Práctica con Energía KS® para acompañar la presencia y la autoobservación.</span></li><li className="flex gap-3 text-lg text-muted-foreground"><Check size={20} className="text-primary flex-shrink-0 mt-1" /><span>Reflexión sobre soberanía interna, posibilidades y responsabilidad personal.</span></li><li className="flex gap-3 text-lg text-muted-foreground"><Check size={20} className="text-primary flex-shrink-0 mt-1" /><span>Meditación para conectar con la presencia y explorar una elección consciente.</span></li><li className="flex gap-3 text-lg text-muted-foreground"><Check size={20} className="text-primary flex-shrink-0 mt-1" /><span>Integración: elegir un paso concreto para aplicar lo explorado.</span></li></ul></div></div></section>
       {/* Enrollment Section */}
       <section id="enrollment" className="py-20 md:py-32 bg-gradient-to-r from-primary to-accent">
         <div className="container mx-auto px-4">
@@ -575,7 +269,7 @@ export default function RetiroSagrado() {
             </p>
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {eventos.filter((e: any) => e.tipo === "Retiro Sagrado" && e.estado !== "Realizado").slice(0, 12).map((retiro) => (
+              {eventos.filter((e: any) => e.tipo === "Retiro Sagrado" && e.estado !== "Realizado" && ![6, 7].includes(e.id)).slice(0, 12).map((retiro) => (
                 <Card 
                   key={retiro.id} 
                   className="overflow-hidden border-border/50 bg-background hover:shadow-lg transition-all cursor-pointer relative"
@@ -703,14 +397,13 @@ export default function RetiroSagrado() {
                 Una Idea Final
               </h2>
               <p className="text-xl text-muted-foreground mb-8">
-                No necesitas más análisis.<br />
-                No necesitas más razón.
+                A veces, una nueva dirección comienza con una pausa para escucharte.
               </p>
               <p className="text-2xl font-semibold text-foreground mb-8">
-                Necesitas soltar la capa del estrés.
+                Reconoce lo que repites. Recupera tu poder de elegir.
               </p>
               <p className="text-lg text-muted-foreground mb-8">
-                Si sientes que tu sistema nervioso vive en modo alerta aunque no haya peligro real, este espacio es para ti.
+                Si deseas dejar de decidir únicamente por costumbre, miedo o expectativas ajenas, te esperamos en El Poder de Elegir con YOHEV.
               </p>
             <a href="#enrollment">
               <Button size="lg" className="bg-primary hover:bg-primary/90 text-white">
