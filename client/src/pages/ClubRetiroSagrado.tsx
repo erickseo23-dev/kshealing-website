@@ -14,7 +14,12 @@ export default function ClubRetiroSagrado() {
   const [selectedRetiro, setSelectedRetiro] = useState<any>(null);
   const [selectedRetiro2025, setSelectedRetiro2025] = useState<any>(null);
 
-  const retirosSagrados2026 = eventos.filter(evento => evento.tipo === "Retiro Sagrado" && evento.estado !== "Realizado").slice(0, 12);
+  const retirosRealizados = eventos.filter(evento =>
+    evento.tipo === "Retiro Sagrado" && ["Realizado", "Ya Disponible"].includes(evento.estado)
+  );
+  const retirosSagrados2026 = eventos.filter(evento =>
+    evento.tipo === "Retiro Sagrado" && !["Realizado", "Ya Disponible"].includes(evento.estado)
+  ).slice(0, 12);
 
   const shareOnSocial = (platform: string, retiroTitle: string, retiroDescription?: string) => {
     const clubUrl = window.location.origin + '/club-retiro-sagrado';
@@ -107,6 +112,21 @@ export default function ClubRetiroSagrado() {
     }
   ];
 
+  // El calendario está ordenado por fecha; las grabaciones muestran primero las más recientes.
+  const retirosDisponibles = [
+    ...[...retirosRealizados].reverse().map(retiro => ({
+      id: retiro.id + 100,
+      nombre: retiro.title,
+      img: retiro.imagen,
+      descripcion: retiro.description,
+      fecha: `${retiro.fecha} de 2026`
+    })),
+    ...retiros2025
+      .filter(retiro => !retirosRealizados.some(evento => evento.title === retiro.nombre))
+      .reverse()
+      .map(retiro => ({ ...retiro, fecha: "" }))
+  ];
+
   return (
     <div className="min-h-screen flex flex-col bg-background">
       <Navigation />
@@ -172,7 +192,7 @@ export default function ClubRetiroSagrado() {
                       Retiros Mensuales con YOHEV
                     </h3>
                     <p className="text-muted-foreground">
-                      Cada primer domingo del mes (8-12 hrs CDMX). Conexión en directo, online, por Zoom.
+                      Un domingo al mes (8-12 hrs CDMX), en directo por Zoom. Consulta la fecha de cada encuentro en el calendario.
                     </p>
                   </div>
                 </div>
@@ -236,15 +256,15 @@ export default function ClubRetiroSagrado() {
             </p>
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {retirosSagrados2026.map((retiro) => (
+              {retirosSagrados2026.map((retiro, index) => (
                 <Card 
                   key={retiro.id} 
                   className="overflow-hidden border-border/50 bg-background hover:shadow-lg transition-all cursor-pointer relative"
                   onClick={() => setSelectedRetiro(retiro)}
                 >
-                  {retiro.estado === "Ya Disponible" && (
+                  {index === 0 && (
                     <div className="absolute top-4 right-4 bg-primary text-white px-3 py-1 rounded-full text-xs font-bold z-10">
-                      YA DISPONIBLE
+                      PRÓXIMO RETIRO
                     </div>
                   )}
                   <div className="relative h-40 overflow-hidden">
@@ -390,7 +410,7 @@ export default function ClubRetiroSagrado() {
         </div>
       </section>
 
-      {/* Retiros 2025 Section */}
+      {/* Grabaciones disponibles, de la más reciente a la más antigua */}
       <section className="py-20 md:py-32 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
@@ -402,7 +422,7 @@ export default function ClubRetiroSagrado() {
               Haz click en cualquier retiro para ver más detalles
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {retiros2025.map((retiro) => (
+              {retirosDisponibles.map((retiro) => (
                 <Card 
                   key={retiro.id} 
                   className="overflow-hidden border-border/50 bg-primary/5 hover:shadow-lg transition-all cursor-pointer"
@@ -416,6 +436,9 @@ export default function ClubRetiroSagrado() {
                     />
                   </div>
                   <div className="p-4">
+                    {retiro.fecha && (
+                      <p className="text-sm text-primary font-semibold mb-1">{retiro.fecha}</p>
+                    )}
                     <h3 className="font-semibold text-foreground text-sm mb-2">{retiro.nombre}</h3>
                     <p className="text-xs text-muted-foreground line-clamp-2">
                       {retiro.descripcion}
@@ -446,6 +469,9 @@ export default function ClubRetiroSagrado() {
                     <h2 className="font-display text-3xl font-bold text-foreground mb-4">
                       {selectedRetiro2025.nombre}
                     </h2>
+                    {selectedRetiro2025.fecha && (
+                      <p className="text-primary font-semibold mb-4">{selectedRetiro2025.fecha}</p>
+                    )}
                     
                     <p className="text-muted-foreground mb-6 text-lg leading-relaxed">
                       {selectedRetiro2025.descripcion}
@@ -672,7 +698,7 @@ export default function ClubRetiroSagrado() {
                 },
                 {
                   q: "¿A qué hora son los retiros y en qué zona horaria?",
-                  a: "Los retiros son cada primer domingo del mes de 8:00 a 12:00 hrs (CDMX). Febrero es excepción: domingo 8 de febrero de 7:00 a 11:00 hrs (CDMX). Todos los retiros son EN VIVO, POR ZOOM."
+                  a: `Los retiros se realizan un domingo al mes de 8:00 a 12:00 hrs (CDMX), en vivo por Zoom. Consulta las fechas en el calendario.${retirosSagrados2026[0] ? ` El próximo retiro es el ${retirosSagrados2026[0].fecha} de 2026: ${retirosSagrados2026[0].title}.` : ""}`
                 },
                 {
                   q: "¿Puedo ver los retiros si no estoy en la zona horaria CDMX?",
