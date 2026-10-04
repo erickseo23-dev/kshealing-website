@@ -14,7 +14,7 @@ export interface Event {
   date: string;
   endDate?: string;
   startTime: string;
-  endTime: string;
+  endTime?: string;
   timezone: string;
   type: "taller" | "certificacion" | "retiro" | "masterclass" | "sesion";
   format: "online" | "presencial" | "hibrido";
@@ -75,6 +75,26 @@ export const eventos: Event[] = [
     tags: ["retiro-sagrado", "ks-healing", "online"],
     accent: "#5A7A5A",
     imagen: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/qqTFjXiFpvcVHnry.png",
+  },
+  {
+    id: "evento-010",
+    title: "Retiro Sagrado 16: Protección Energética Consciente",
+    description: "Límites, campo y soberanía personal. No absorber cargas ajenas y protección sin cerrarse. Con YOHEV.",
+    date: "2026-10-11",
+    startTime: "12:00 p.m. CDMX",
+    timezone: "America/Mexico_City",
+    type: "retiro",
+    format: "online",
+    instructor: "yohev",
+    source: ["kshealing", "instituto"],
+    location: "Online en vivo",
+    capacity: "Ilimitada",
+    price: null,
+    currency: "MXN",
+    link: "https://www.kshealing.com/retiro-sagrado",
+    tags: ["retiro-sagrado", "ks-healing", "online"],
+    accent: "#7B6B8A",
+    imagen: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/mjLVgRJUmSmOBnUd.png",
   },
 ];
 

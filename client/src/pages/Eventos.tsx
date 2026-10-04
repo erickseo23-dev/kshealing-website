@@ -85,7 +85,7 @@ export default function Eventos() {
                     </div>
                     <div className="flex items-center gap-3 text-foreground">
                       <Clock size={18} className="text-primary flex-shrink-0" />
-                      <span>{evento.startTime} - {evento.endTime}</span>
+                      <span>{evento.startTime}{evento.endTime ? ` - ${evento.endTime}` : ""}</span>
                     </div>
                     {evento.capacity && (
                       <div className="flex items-center gap-3 text-foreground">

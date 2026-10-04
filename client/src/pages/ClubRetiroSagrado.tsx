@@ -192,7 +192,7 @@ export default function ClubRetiroSagrado() {
                       Retiros Mensuales con YOHEV
                     </h3>
                     <p className="text-muted-foreground">
-                      Un domingo al mes (8-12 hrs CDMX), en directo por Zoom. Consulta la fecha de cada encuentro en el calendario.
+                      Un domingo al mes, en directo por Zoom. Consulta la fecha y el horario de cada encuentro en el calendario.
                     </p>
                   </div>
                 </div>
@@ -278,6 +278,7 @@ export default function ClubRetiroSagrado() {
                     <p className="text-sm text-primary font-semibold mb-1">
                       {retiro.fecha}
                     </p>
+                    {retiro.id === 9 && <p className="text-xs text-primary font-semibold mb-2">Inicio: 12:00 p.m. CDMX</p>}
                     <h3 className="font-semibold text-foreground text-sm mb-2">{retiro.title}</h3>
                     <p className="text-xs text-muted-foreground line-clamp-2">
                       {retiro.description || 'Un encuentro profundo de transformación y sanación.'}
@@ -698,7 +699,7 @@ export default function ClubRetiroSagrado() {
                 },
                 {
                   q: "¿A qué hora son los retiros y en qué zona horaria?",
-                  a: `Los retiros se realizan un domingo al mes de 8:00 a 12:00 hrs (CDMX), en vivo por Zoom. Consulta las fechas en el calendario.${retirosSagrados2026[0] ? ` El próximo retiro es el ${retirosSagrados2026[0].fecha} de 2026: ${retirosSagrados2026[0].title}.` : ""}`
+                  a: `Los retiros se realizan un domingo al mes, en vivo por Zoom. Consulta la fecha y el horario de cada encuentro en el calendario.${retirosSagrados2026[0] ? ` El próximo retiro es el ${retirosSagrados2026[0].fecha} de 2026: ${retirosSagrados2026[0].title}. ${retirosSagrados2026[0].horario}.` : ""}`
                 },
                 {
                   q: "¿Puedo ver los retiros si no estoy en la zona horaria CDMX?",

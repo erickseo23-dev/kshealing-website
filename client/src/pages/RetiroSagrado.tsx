@@ -20,7 +20,7 @@ export default function RetiroSagrado() {
   const [selectedRetiro2025, setSelectedRetiro2025] = useState<any>(null);
 
   const retiros2025 = [
-    ...eventos.filter(e => [6, 7].includes(e.id)).map(e => ({ id: e.id + 100, nombre: e.title, img: e.imagen, descripcion: e.description })),
+    ...eventos.filter(e => [6, 7, 8].includes(e.id)).map(e => ({ id: e.id + 100, nombre: e.title, img: e.imagen, descripcion: e.description })),
     {
       id: 1,
       nombre: "Volver al Silencio",
@@ -95,26 +95,77 @@ export default function RetiroSagrado() {
 
 
 
-      {/* Retiro Sagrado 15 — Septiembre */}
-      <section className="py-20 md:py-32 bg-cover bg-center bg-no-repeat relative" style={{backgroundImage: 'url(https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/PWCWWXokMvvbuHAT.png)'}}>
+      {/* Retiro Sagrado 16 — Octubre */}
+      <section className="py-20 md:py-32 bg-cover bg-center bg-no-repeat relative" style={{backgroundImage: 'url(https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/mjLVgRJUmSmOBnUd.png)'}}>
         <div className="absolute inset-0 bg-black/60"></div>
         <div className="relative z-10 container mx-auto px-4"><div className="max-w-3xl mx-auto text-center">
-          <div className="inline-block mb-8 px-8 py-4 rounded-full bg-white/20 backdrop-blur-md border border-white/50"><span className="text-white font-bold text-2xl md:text-3xl">🌿 Retiro Sagrado 15 - CON YOHEV</span></div>
-          <h1 className="font-display text-5xl md:text-6xl font-bold text-white mb-6 drop-shadow-lg">El Poder de <span className="text-yellow-300">Elegir</span></h1>
+          <div className="inline-block mb-8 px-8 py-4 rounded-full bg-white/20 backdrop-blur-md border border-white/50"><span className="text-white font-bold text-2xl md:text-3xl">🌿 Retiro Sagrado 16 - CON YOHEV</span></div>
+          <h1 className="font-display text-5xl md:text-6xl font-bold text-white mb-6 drop-shadow-lg">Protección Energética <span className="text-yellow-300">Consciente</span></h1>
           <p className="text-lg text-white font-semibold mb-4">Facilitado directamente por YOHEV</p>
-          <p className="text-xl text-white mb-6">Salir del automatismo y recuperar tu soberanía interna. Elecciones inconscientes, patrones repetidos y decisiones heredadas.</p>
-          <p className="text-lg text-white mb-8 italic">Entre lo que has aprendido a repetir y lo que hoy deseas vivir, existe un espacio para elegir con conciencia.</p>
-          <div className="inline-block mb-6 px-4 py-2 rounded-2xl bg-white/20 backdrop-blur-sm border border-white/30"><span className="text-white font-semibold">📅 Domingo 13 de Septiembre | 8:00 AM - 12:00 PM CDMX / 3:00 - 7:00 PM España</span></div>
+          <p className="text-xl text-white mb-6">Límites, campo y soberanía personal. No absorber cargas ajenas y protección sin cerrarse.</p>
+          <p className="text-lg text-white mb-8 italic">Un espacio para cuidar tu energía, reconocer tus límites y relacionarte desde tu propio centro.</p>
+          <div className="inline-block mb-6 px-4 py-2 rounded-2xl bg-white/20 backdrop-blur-sm border border-white/30"><span className="text-white font-semibold">📅 Domingo 11 de octubre de 2026 | Inicio: 12:00 p.m. CDMX · 11:00 a.m. Mazatlán · 20:00 Madrid</span></div>
           <div className="mt-8 text-center"><a href="#enrollment"><Button size="lg" className="bg-primary hover:bg-primary/90 text-white">Inscribirme a este Retiro</Button></a></div>
         </div></div>
       </section>
-      <section className="py-16 md:py-24"><div className="container mx-auto px-4"><div className="max-w-4xl mx-auto"><h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-8">🌿 ¿Quién Está Eligiendo en Tu Vida?</h2><p className="text-lg text-muted-foreground leading-relaxed mb-6">A veces creemos que elegimos, pero respondemos desde la costumbre, el miedo a decepcionar o las expectativas de otros. Repetimos formas de relacionarnos, postergamos decisiones y seguimos caminos que nunca nos detuvimos a cuestionar.</p><p className="text-lg text-muted-foreground leading-relaxed mb-6">Reconocer un patrón abre la posibilidad de responder de otra manera. La conciencia comienza cuando puedes preguntarte: ¿esto lo elijo hoy o lo estoy repitiendo?</p><p className="text-lg text-muted-foreground leading-relaxed mb-6">En este retiro exploraremos las elecciones inconscientes, los patrones repetidos y las decisiones heredadas. Un espacio de reflexión, meditación y práctica con Energía KS® para recuperar tu criterio y dar pasos más conscientes en tu vida.</p></div></div></section>
-      <section className="py-16 md:py-24"><div className="container mx-auto px-4"><div className="max-w-4xl mx-auto"><h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-8">🌿 Cuando Eliges en Automático</h2><ul className="space-y-4"><li className="flex gap-3 text-lg text-muted-foreground"><Check size={20} className="text-primary flex-shrink-0 mt-1" /><span>Decir que sí cuando en realidad deseas decir que no.</span></li><li className="flex gap-3 text-lg text-muted-foreground"><Check size={20} className="text-primary flex-shrink-0 mt-1" /><span>Elegir para evitar el rechazo o la desaprobación.</span></li><li className="flex gap-3 text-lg text-muted-foreground"><Check size={20} className="text-primary flex-shrink-0 mt-1" /><span>Postergar decisiones por miedo a equivocarte.</span></li><li className="flex gap-3 text-lg text-muted-foreground"><Check size={20} className="text-primary flex-shrink-0 mt-1" /><span>Repetir vínculos o respuestas que ya no deseas sostener.</span></li><li className="flex gap-3 text-lg text-muted-foreground"><Check size={20} className="text-primary flex-shrink-0 mt-1" /><span>Confundir lo que quieres con lo que se espera de ti.</span></li><li className="flex gap-3 text-lg text-muted-foreground"><Check size={20} className="text-primary flex-shrink-0 mt-1" /><span>Seguir reglas familiares sin revisar si aún tienen sentido para ti.</span></li></ul><div className="mt-8"><p className="text-lg text-muted-foreground leading-relaxed mb-6">Observar estas respuestas sin juzgarte permite comprender de dónde vienen y explorar alternativas. Recuperar tu soberanía interna significa reconocer tu margen de acción y asumir tus decisiones con responsabilidad.</p></div><div className="mt-8 text-center"><a href="#enrollment"><Button size="lg" className="bg-primary hover:bg-primary/90 text-white">Inscribirme a este Retiro</Button></a></div></div></div></section>
-      <section className="py-16 md:py-24"><div className="container mx-auto px-4"><div className="max-w-4xl mx-auto"><h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-8">🌿 Recuperar Tu Soberanía Interna</h2><img src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/PWCWWXokMvvbuHAT.png" alt="El Poder de Elegir — Retiro Sagrado 15" className="w-full h-auto rounded-2xl shadow-lg mb-10" /><div className="grid grid-cols-1 md:grid-cols-2 gap-8"><Card className="p-8 border-primary/20 bg-primary/5"><h3 className="text-xl font-bold mb-4">Reconocer Tus Automatismos</h3><p className="text-lg text-muted-foreground leading-relaxed mb-6">Explorar las creencias, emociones y expectativas que influyen en tus decisiones. Distinguir una respuesta habitual de una elección que puedes revisar.</p></Card><Card className="p-8 border-primary/20 bg-primary/5"><h3 className="text-xl font-bold mb-4">Elegir con Conciencia</h3><p className="text-lg text-muted-foreground leading-relaxed mb-6">Escuchar lo que valoras, considerar tus posibilidades y responder con mayor claridad. Elegir también implica aceptar límites, consecuencias y la posibilidad de aprender.</p></Card></div></div></div></section>
-      <section className="py-16 md:py-24"><div className="container mx-auto px-4"><div className="max-w-4xl mx-auto"><h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-8">🌿 ¿Qué Vamos a Trabajar en Este Retiro?</h2><ul className="space-y-4"><li className="flex gap-3 text-lg text-muted-foreground"><Check size={20} className="text-primary flex-shrink-0 mt-1" /><span>Identificar elecciones inconscientes y reconocer cuándo actúas por costumbre.</span></li><li className="flex gap-3 text-lg text-muted-foreground"><Check size={20} className="text-primary flex-shrink-0 mt-1" /><span>Explorar patrones repetidos en tus relaciones y decisiones cotidianas.</span></li><li className="flex gap-3 text-lg text-muted-foreground"><Check size={20} className="text-primary flex-shrink-0 mt-1" /><span>Reconocer decisiones heredadas y expectativas que has hecho propias.</span></li><li className="flex gap-3 text-lg text-muted-foreground"><Check size={20} className="text-primary flex-shrink-0 mt-1" /><span>Distinguir lo que deseas elegir de lo que haces por miedo o aprobación.</span></li><li className="flex gap-3 text-lg text-muted-foreground"><Check size={20} className="text-primary flex-shrink-0 mt-1" /><span>Acompañar la autoobservación con meditación y práctica de Energía KS®.</span></li><li className="flex gap-3 text-lg text-muted-foreground"><Check size={20} className="text-primary flex-shrink-0 mt-1" /><span>Definir un paso concreto para practicar una elección más consciente.</span></li></ul><div className="mt-8 p-6 bg-primary/5 rounded-lg"><p className="text-lg text-muted-foreground leading-relaxed mb-6">No puedes controlar todas las circunstancias. Puedes explorar cómo responder y qué decisiones están a tu alcance.</p></div><div className="mt-8 text-center"><a href="#enrollment"><Button size="lg" className="bg-primary hover:bg-primary/90 text-white">Inscribirme a este Retiro</Button></a></div></div></div></section>
-      <section className="py-16 md:py-24"><div className="container mx-auto px-4"><div className="max-w-4xl mx-auto"><h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-8">🌿 Este Retiro es para Ti Si...</h2><ul className="space-y-4"><li className="flex gap-3 text-lg text-muted-foreground"><Check size={20} className="text-primary flex-shrink-0 mt-1" /><span>Sientes que tomas decisiones para complacer a otros.</span></li><li className="flex gap-3 text-lg text-muted-foreground"><Check size={20} className="text-primary flex-shrink-0 mt-1" /><span>Te cuesta distinguir tus deseos de las expectativas ajenas.</span></li><li className="flex gap-3 text-lg text-muted-foreground"><Check size={20} className="text-primary flex-shrink-0 mt-1" /><span>Repites situaciones o relaciones que quisieras vivir de otra manera.</span></li><li className="flex gap-3 text-lg text-muted-foreground"><Check size={20} className="text-primary flex-shrink-0 mt-1" /><span>Postergas decisiones importantes por miedo a equivocarte.</span></li><li className="flex gap-3 text-lg text-muted-foreground"><Check size={20} className="text-primary flex-shrink-0 mt-1" /><span>Quieres cuestionar creencias y decisiones heredadas.</span></li><li className="flex gap-3 text-lg text-muted-foreground"><Check size={20} className="text-primary flex-shrink-0 mt-1" /><span>Deseas actuar con mayor claridad, presencia y responsabilidad.</span></li></ul><div className="mt-8"><p className="text-lg text-muted-foreground leading-relaxed mb-6">Puedes comenzar con una decisión cotidiana. Este espacio te invita a observarte con honestidad y a explorar posibilidades a tu propio ritmo.</p></div></div></div></section>
-      <section className="py-16 md:py-24"><div className="container mx-auto px-4"><div className="max-w-4xl mx-auto"><h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-8">🌱 ¿Qué Puedes Llevarte de Este Encuentro?</h2><ul className="space-y-4"><li className="flex gap-3 text-lg text-muted-foreground"><Check size={20} className="text-primary flex-shrink-0 mt-1" /><span>Mayor claridad sobre lo que deseas y valoras.</span></li><li className="flex gap-3 text-lg text-muted-foreground"><Check size={20} className="text-primary flex-shrink-0 mt-1" /><span>Más facilidad para reconocer una respuesta automática.</span></li><li className="flex gap-3 text-lg text-muted-foreground"><Check size={20} className="text-primary flex-shrink-0 mt-1" /><span>Un espacio de pausa antes de decidir.</span></li><li className="flex gap-3 text-lg text-muted-foreground"><Check size={20} className="text-primary flex-shrink-0 mt-1" /><span>Más recursos para revisar patrones repetidos.</span></li><li className="flex gap-3 text-lg text-muted-foreground"><Check size={20} className="text-primary flex-shrink-0 mt-1" /><span>Mayor disposición para asumir tus decisiones sin castigarte.</span></li><li className="flex gap-3 text-lg text-muted-foreground"><Check size={20} className="text-primary flex-shrink-0 mt-1" /><span>Un paso concreto para llevar la conciencia a tu vida cotidiana.</span></li></ul><div className="mt-8"><p className="text-lg text-muted-foreground leading-relaxed mb-6">Cada proceso es personal. La invitación es practicar una forma de elegir más consciente, paso a paso.</p></div></div></div></section>
-      <section className="py-16 md:py-24"><div className="container mx-auto px-4"><div className="max-w-4xl mx-auto"><h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-8">🧘‍♀️ Estructura del Retiro (4 Horas)</h2><ul className="space-y-4"><li className="flex gap-3 text-lg text-muted-foreground"><Check size={20} className="text-primary flex-shrink-0 mt-1" /><span>Reconocimiento de automatismos: observar cómo eliges en la vida cotidiana.</span></li><li className="flex gap-3 text-lg text-muted-foreground"><Check size={20} className="text-primary flex-shrink-0 mt-1" /><span>Exploración de patrones repetidos, creencias y decisiones heredadas.</span></li><li className="flex gap-3 text-lg text-muted-foreground"><Check size={20} className="text-primary flex-shrink-0 mt-1" /><span>Práctica con Energía KS® para acompañar la presencia y la autoobservación.</span></li><li className="flex gap-3 text-lg text-muted-foreground"><Check size={20} className="text-primary flex-shrink-0 mt-1" /><span>Reflexión sobre soberanía interna, posibilidades y responsabilidad personal.</span></li><li className="flex gap-3 text-lg text-muted-foreground"><Check size={20} className="text-primary flex-shrink-0 mt-1" /><span>Meditación para conectar con la presencia y explorar una elección consciente.</span></li><li className="flex gap-3 text-lg text-muted-foreground"><Check size={20} className="text-primary flex-shrink-0 mt-1" /><span>Integración: elegir un paso concreto para aplicar lo explorado.</span></li></ul></div></div></section>
+      <section className="py-16 md:py-24"><div className="container mx-auto px-4"><div className="max-w-4xl mx-auto"><h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-8">🌿 Cuidar Tu Energía en el Encuentro con Otros</h2>
+<p className="text-lg text-muted-foreground leading-relaxed mb-6">Acompañar a otras personas puede llevarnos a confundir lo que sentimos con lo que les corresponde vivir. Escuchar, compartir y estar presentes también requiere reconocer nuestros propios límites.</p>
+<p className="text-lg text-muted-foreground leading-relaxed mb-6">En este retiro exploraremos la protección energética consciente desde tres ejes: el establecimiento de límites energéticos, la protección del campo y la soberanía personal.</p>
+<p className="text-lg text-muted-foreground leading-relaxed mb-6">Un espacio de reflexión, meditación y práctica con Energía KS® para observar cómo te relacionas y explorar formas de cuidarte sin cerrarte al encuentro.</p>
+</div></div></section>
+      <section className="py-16 md:py-24"><div className="container mx-auto px-4"><div className="max-w-4xl mx-auto"><h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-8">🌿 Reconocer lo Que Te Corresponde</h2>
+<ul className="space-y-4">
+<li className="flex gap-3 text-lg text-muted-foreground"><Check size={20} className="text-primary flex-shrink-0 mt-1" /><span>Observar cuándo haces tuyas las preocupaciones de otras personas.</span></li>
+<li className="flex gap-3 text-lg text-muted-foreground"><Check size={20} className="text-primary flex-shrink-0 mt-1" /><span>Reconocer tus límites antes de sobrepasarlos.</span></li>
+<li className="flex gap-3 text-lg text-muted-foreground"><Check size={20} className="text-primary flex-shrink-0 mt-1" /><span>Distinguir acompañar de asumir responsabilidades ajenas.</span></li>
+<li className="flex gap-3 text-lg text-muted-foreground"><Check size={20} className="text-primary flex-shrink-0 mt-1" /><span>Dar espacio a lo que sientes sin tener que resolverlo todo.</span></li>
+<li className="flex gap-3 text-lg text-muted-foreground"><Check size={20} className="text-primary flex-shrink-0 mt-1" /><span>Expresar lo que necesitas con claridad y respeto.</span></li>
+<li className="flex gap-3 text-lg text-muted-foreground"><Check size={20} className="text-primary flex-shrink-0 mt-1" /><span>Cuidar tu presencia en los vínculos cotidianos.</span></li>
+</ul>
+<div className="mt-8 text-center"><a href="#enrollment"><Button size="lg" className="bg-primary hover:bg-primary/90 text-white">Inscribirme a este Retiro</Button></a></div>
+</div></div></section>
+      <section className="py-16 md:py-24"><div className="container mx-auto px-4"><div className="max-w-4xl mx-auto"><h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-8">🌿 Límites, Campo y Soberanía Personal</h2>
+<img src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/mjLVgRJUmSmOBnUd.png" alt="Protección Energética Consciente — Retiro Sagrado 16" className="w-full h-auto rounded-2xl shadow-lg mb-10" />
+<p className="text-lg text-muted-foreground leading-relaxed mb-6">Los límites energéticos son una invitación a reconocer hasta dónde deseas involucrarte y qué necesitas para sostener tu propio espacio.</p>
+<p className="text-lg text-muted-foreground leading-relaxed mb-6">Exploraremos la protección del campo desde la presencia y la autoobservación. La soberanía personal se practica al reconocer lo propio y respetar también el espacio de los demás.</p>
+</div></div></section>
+      <section className="py-16 md:py-24"><div className="container mx-auto px-4"><div className="max-w-4xl mx-auto"><h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-8">🌿 ¿Qué Vamos a Trabajar en Este Retiro?</h2>
+<ul className="space-y-4">
+<li className="flex gap-3 text-lg text-muted-foreground"><Check size={20} className="text-primary flex-shrink-0 mt-1" /><span>Establecimiento de límites energéticos.</span></li>
+<li className="flex gap-3 text-lg text-muted-foreground"><Check size={20} className="text-primary flex-shrink-0 mt-1" /><span>Protección del campo desde una actitud consciente.</span></li>
+<li className="flex gap-3 text-lg text-muted-foreground"><Check size={20} className="text-primary flex-shrink-0 mt-1" /><span>Soberanía personal en tus relaciones.</span></li>
+<li className="flex gap-3 text-lg text-muted-foreground"><Check size={20} className="text-primary flex-shrink-0 mt-1" /><span>Reconocimiento de cargas ajenas que has asumido como propias.</span></li>
+<li className="flex gap-3 text-lg text-muted-foreground"><Check size={20} className="text-primary flex-shrink-0 mt-1" /><span>Práctica con Energía KS® y meditación para acompañar la presencia.</span></li>
+<li className="flex gap-3 text-lg text-muted-foreground"><Check size={20} className="text-primary flex-shrink-0 mt-1" /><span>Integración de límites y cuidado personal en la vida cotidiana.</span></li>
+</ul>
+<div className="mt-8 text-center"><a href="#enrollment"><Button size="lg" className="bg-primary hover:bg-primary/90 text-white">Inscribirme a este Retiro</Button></a></div>
+</div></div></section>
+      <section className="py-16 md:py-24"><div className="container mx-auto px-4"><div className="max-w-4xl mx-auto"><h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-8">🌿 Este Retiro es para Ti Si...</h2>
+<ul className="space-y-4">
+<li className="flex gap-3 text-lg text-muted-foreground"><Check size={20} className="text-primary flex-shrink-0 mt-1" /><span>Te cuesta poner límites sin sentir culpa.</span></li>
+<li className="flex gap-3 text-lg text-muted-foreground"><Check size={20} className="text-primary flex-shrink-0 mt-1" /><span>Sientes que asumes preocupaciones o responsabilidades que no te corresponden.</span></li>
+<li className="flex gap-3 text-lg text-muted-foreground"><Check size={20} className="text-primary flex-shrink-0 mt-1" /><span>Buscas cuidar tu energía al acompañar a otras personas.</span></li>
+<li className="flex gap-3 text-lg text-muted-foreground"><Check size={20} className="text-primary flex-shrink-0 mt-1" /><span>Quieres explorar la protección energética sin aislarte.</span></li>
+<li className="flex gap-3 text-lg text-muted-foreground"><Check size={20} className="text-primary flex-shrink-0 mt-1" /><span>Deseas relacionarte desde una mayor claridad sobre tu propio espacio.</span></li>
+</ul>
+</div></div></section>
+      <section className="py-16 md:py-24"><div className="container mx-auto px-4"><div className="max-w-4xl mx-auto"><h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-8">🌱 ¿Qué Puedes Explorar en Este Encuentro?</h2>
+<p className="text-lg text-muted-foreground leading-relaxed mb-6">Cada proceso es personal. Este espacio te invita a observarte a tu propio ritmo y a practicar formas conscientes de cuidar tus límites.</p>
+<ul className="space-y-4">
+<li className="flex gap-3 text-lg text-muted-foreground"><Check size={20} className="text-primary flex-shrink-0 mt-1" /><span>Mayor claridad para distinguir lo propio de lo ajeno.</span></li>
+<li className="flex gap-3 text-lg text-muted-foreground"><Check size={20} className="text-primary flex-shrink-0 mt-1" /><span>Recursos de autoobservación para reconocer cuándo necesitas una pausa.</span></li>
+<li className="flex gap-3 text-lg text-muted-foreground"><Check size={20} className="text-primary flex-shrink-0 mt-1" /><span>Una forma más consciente de expresar tus límites.</span></li>
+<li className="flex gap-3 text-lg text-muted-foreground"><Check size={20} className="text-primary flex-shrink-0 mt-1" /><span>Un paso concreto para cuidar tu espacio en la vida cotidiana.</span></li>
+</ul>
+</div></div></section>
+      <section className="py-16 md:py-24"><div className="container mx-auto px-4"><div className="max-w-4xl mx-auto"><h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-8">🧘‍♀️ Prácticas del Retiro</h2>
+<ul className="space-y-4">
+<li className="flex gap-3 text-lg text-muted-foreground"><Check size={20} className="text-primary flex-shrink-0 mt-1" /><span>Reflexión sobre límites, campo y soberanía personal.</span></li>
+<li className="flex gap-3 text-lg text-muted-foreground"><Check size={20} className="text-primary flex-shrink-0 mt-1" /><span>Exploración de situaciones en las que asumes cargas ajenas.</span></li>
+<li className="flex gap-3 text-lg text-muted-foreground"><Check size={20} className="text-primary flex-shrink-0 mt-1" /><span>Práctica de presencia y Energía KS® orientada al cuidado del propio espacio.</span></li>
+<li className="flex gap-3 text-lg text-muted-foreground"><Check size={20} className="text-primary flex-shrink-0 mt-1" /><span>Meditación e integración para llevar lo explorado a tus relaciones.</span></li>
+</ul>
+</div></div></section>
       {/* Enrollment Section */}
       <section id="enrollment" className="py-20 md:py-32 bg-gradient-to-r from-primary to-accent">
         <div className="container mx-auto px-4">
@@ -269,7 +320,7 @@ export default function RetiroSagrado() {
             </p>
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {eventos.filter((e: any) => e.tipo === "Retiro Sagrado" && e.estado !== "Realizado" && ![6, 7].includes(e.id)).slice(0, 12).map((retiro) => (
+              {eventos.filter((e: any) => e.tipo === "Retiro Sagrado" && e.estado !== "Realizado" && ![6, 7, 8].includes(e.id)).slice(0, 12).map((retiro) => (
                 <Card 
                   key={retiro.id} 
                   className="overflow-hidden border-border/50 bg-background hover:shadow-lg transition-all cursor-pointer relative"
@@ -375,7 +426,7 @@ export default function RetiroSagrado() {
                     )}
 
                     <div className="border-t border-border/30 pt-6">
-                      <a href="#pricing">
+                      <a href="#enrollment" onClick={() => setSelectedRetiro(null)}>
                         <Button size="lg" className="w-full bg-primary hover:bg-primary/90 text-white font-bold py-6">
                           Unirse al Club para Acceder
                         </Button>
@@ -397,13 +448,13 @@ export default function RetiroSagrado() {
                 Una Idea Final
               </h2>
               <p className="text-xl text-muted-foreground mb-8">
-                A veces, una nueva dirección comienza con una pausa para escucharte.
+                Cuidar tu energía comienza por reconocer tu propio espacio.
               </p>
               <p className="text-2xl font-semibold text-foreground mb-8">
-                Reconoce lo que repites. Recupera tu poder de elegir.
+                Habita tu centro. Reconoce tus límites. Relaciónate con presencia.
               </p>
               <p className="text-lg text-muted-foreground mb-8">
-                Si deseas dejar de decidir únicamente por costumbre, miedo o expectativas ajenas, te esperamos en El Poder de Elegir con YOHEV.
+                Te esperamos en Protección Energética Consciente con YOHEV para explorar límites, campo y soberanía personal, sin cerrarte al encuentro con los demás.
               </p>
             <a href="#enrollment">
               <Button size="lg" className="bg-primary hover:bg-primary/90 text-white">
