@@ -7,6 +7,7 @@ import Footer from "@/components/Footer";
 import { Link } from "wouter";
 import { Card } from "@/components/ui/card";
 import { SEO } from "@/components/SEO";
+import { ksBasicCohort } from "@/lib/ksBasicCohort";
 
 // Sección 1: Programas para Público General
 const cursosPublicos = [
@@ -51,7 +52,7 @@ const cursosPublicos = [
   {
     id: 3,
     title: "KS Healing Nivel Básico",
-    subtitle: "Sanación Energética Consciente",
+    subtitle: ksBasicCohort.sessionsLabel,
     description: "La base fundamental de la sanación energética. Aprende a trabajar directamente con la Energía Keiouvos Stharef para acompañar procesos internos, emocionales y de consciencia.",
     duration: "3 semanas",
     investment: null,
