@@ -41,8 +41,8 @@ export default function KSHealing() {
   const certDetails = [
     {
       title: "Sesiones en Vivo con YOHEV",
-      description: `3 sesiones en vivo, 2 horas cada sesión. ${ksBasicCohort.remainingSessionsLabel}`,
-      date: `Inicio: ${ksBasicCohort.startLabel}`,
+      description: "3 domingos consecutivos, 2 horas cada sesión",
+      date: ksBasicCohort.sessionsLabel,
     },
     {
       title: "Versión Digital del Libro KS Healing",
@@ -149,7 +149,7 @@ export default function KSHealing() {
             <div className="flex flex-wrap gap-6 text-white/80 text-sm mt-12">
               <div className="flex gap-2 items-center">
                 <Calendar size={18} className="text-secondary" style={{color: '#fbbc0e'}} />
-                <span>Inicio: {ksBasicCohort.startLabel}<br/>{ksBasicCohort.schedule}</span>
+                <span>{ksBasicCohort.sessionsLabel}<br/>{ksBasicCohort.schedule}</span>
               </div>
               <div className="flex gap-2 items-center">
                 <Users size={18} className="text-secondary" style={{color: '#fbbc0e'}} />
@@ -347,9 +347,8 @@ export default function KSHealing() {
             <div className="bg-gradient-to-r from-primary/10 to-blue-600/10 border border-primary/20 rounded-2xl p-8 md:p-12">
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
                 <div className="text-center">
-                  <p className="text-sm text-muted-foreground mb-2">Inicio</p>
-                  <p className="font-display text-2xl font-bold text-foreground">{ksBasicCohort.startLabel}</p>
-                  <p className="text-sm text-muted-foreground mt-2">{ksBasicCohort.remainingSessionsLabel}</p>
+                  <p className="text-sm text-muted-foreground mb-2">Fechas</p>
+                  <p className="font-display text-2xl font-bold text-foreground">{ksBasicCohort.sessionsLabel}</p>
                 </div>
                 <div className="text-center">
                   <p className="text-sm text-muted-foreground mb-2">Horario</p>
@@ -666,7 +665,7 @@ export default function KSHealing() {
             </div>
 
             <p className="text-sm text-muted-foreground mt-8">
-              Inicio: {ksBasicCohort.startLabel} • {ksBasicCohort.schedule} • {ksBasicCohort.modality}. {ksBasicCohort.remainingSessionsLabel}
+              {ksBasicCohort.sessionsLabel} • {ksBasicCohort.schedule} • {ksBasicCohort.modality}
             </p>
           </div>
         </div>

@@ -52,7 +52,7 @@ const cursosPublicos = [
   {
     id: 3,
     title: "KS Healing Nivel Básico",
-    subtitle: `Inicio: ${ksBasicCohort.startLabel}`,
+    subtitle: ksBasicCohort.sessionsLabel,
     description: "La base fundamental de la sanación energética. Aprende a trabajar directamente con la Energía Keiouvos Stharef para acompañar procesos internos, emocionales y de consciencia.",
     duration: "3 semanas",
     investment: null,

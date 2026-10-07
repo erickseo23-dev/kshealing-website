@@ -37,8 +37,9 @@ export const eventos: Event[] = [
   {
     id: "ks-healing-basico-2026-oct",
     title: "Certificación Internacional en KS Healing Nivel Básico",
-    description: `Certificación Internacional en 3 módulos intensivos con YOHEV. Inicio: ${ksBasicCohort.startLabel}. ${ksBasicCohort.remainingSessionsLabel}`,
+    description: `Certificación Internacional en 3 módulos intensivos con YOHEV. ${ksBasicCohort.sessionsLabel}.`,
     date: ksBasicCohort.startDate,
+    endDate: ksBasicCohort.endDate,
     startTime: ksBasicCohort.schedule,
     timezone: "America/Mexico_City",
     type: "certificacion",
