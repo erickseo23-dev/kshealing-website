@@ -9,6 +9,7 @@ import { ksHealingTestimonials } from "@/lib/programTestimonials";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Link } from "wouter";
+import { ksBasicCohort } from "@/lib/ksBasicCohort";
 
 export default function KSHealing() {
   const { prices } = useCurrency();
@@ -40,8 +41,8 @@ export default function KSHealing() {
   const certDetails = [
     {
       title: "Sesiones en Vivo con YOHEV",
-      description: "3 domingos consecutivos, 2 horas cada sesión",
-      date: "23 Ago, 30 Ago, 6 Sep",
+      description: `3 sesiones en vivo, 2 horas cada sesión. ${ksBasicCohort.remainingSessionsLabel}`,
+      date: `Inicio: ${ksBasicCohort.startLabel}`,
     },
     {
       title: "Versión Digital del Libro KS Healing",
@@ -148,7 +149,7 @@ export default function KSHealing() {
             <div className="flex flex-wrap gap-6 text-white/80 text-sm mt-12">
               <div className="flex gap-2 items-center">
                 <Calendar size={18} className="text-secondary" style={{color: '#fbbc0e'}} />
-                <span>Domingo 23 de agosto | Domingo 30 de agosto | Domingo 6 de septiembre<br/>12:00 a 14:00 hrs (Hora CDMX)</span>
+                <span>Inicio: {ksBasicCohort.startLabel}<br/>{ksBasicCohort.schedule}</span>
               </div>
               <div className="flex gap-2 items-center">
                 <Users size={18} className="text-secondary" style={{color: '#fbbc0e'}} />
@@ -346,12 +347,13 @@ export default function KSHealing() {
             <div className="bg-gradient-to-r from-primary/10 to-blue-600/10 border border-primary/20 rounded-2xl p-8 md:p-12">
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
                 <div className="text-center">
-                  <p className="text-sm text-muted-foreground mb-2">Fechas</p>
-                  <p className="font-display text-2xl font-bold text-foreground">23 Ago, 30 Ago, 6 Sep</p>
+                  <p className="text-sm text-muted-foreground mb-2">Inicio</p>
+                  <p className="font-display text-2xl font-bold text-foreground">{ksBasicCohort.startLabel}</p>
+                  <p className="text-sm text-muted-foreground mt-2">{ksBasicCohort.remainingSessionsLabel}</p>
                 </div>
                 <div className="text-center">
                   <p className="text-sm text-muted-foreground mb-2">Horario</p>
-                  <p className="font-display text-2xl font-bold text-foreground">12:00 - 14:00 CDMX</p>
+                  <p className="font-display text-2xl font-bold text-foreground">{ksBasicCohort.schedule}</p>
                 </div>
                 <div className="text-center">
                   <p className="text-sm text-muted-foreground mb-2">Modalidad</p>
@@ -664,7 +666,7 @@ export default function KSHealing() {
             </div>
 
             <p className="text-sm text-muted-foreground mt-8">
-              Próximas sesiones: Domingo 23 de agosto, Domingo 30 de agosto, Domingo 6 de septiembre • 12:00 a 14:00 hrs (Hora CDMX) • Online en vivo con YOHEV
+              Inicio: {ksBasicCohort.startLabel} • {ksBasicCohort.schedule} • {ksBasicCohort.modality}. {ksBasicCohort.remainingSessionsLabel}
             </p>
           </div>
         </div>
