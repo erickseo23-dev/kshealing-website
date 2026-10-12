@@ -7,6 +7,8 @@
  * - KS Healing: getEventsBySource("kshealing")
  */
 
+import { ksBasicCohort } from "./ksBasicCohort";
+
 export interface Event {
   id: string;
   title: string;
@@ -30,8 +32,29 @@ export interface Event {
   imagen?: string;
 }
 
-// Datos de eventos - Se sincroniza con eventos.json
+// Catálogo usado por las páginas del sitio. eventos.json es un catálogo histórico.
 export const eventos: Event[] = [
+  {
+    id: "ks-healing-basico-2026-oct",
+    title: "Certificación Internacional en KS Healing Nivel Básico",
+    description: `Certificación Internacional en 3 módulos intensivos con YOHEV. ${ksBasicCohort.sessionsLabel}.`,
+    date: ksBasicCohort.startDate,
+    endDate: ksBasicCohort.endDate,
+    startTime: ksBasicCohort.schedule,
+    timezone: "America/Mexico_City",
+    type: "certificacion",
+    format: "online",
+    instructor: "yohev",
+    source: ["kshealing"],
+    location: ksBasicCohort.modality,
+    capacity: null,
+    price: null,
+    currency: "MXN",
+    link: "/ks-healing",
+    tags: ["certificacion", "ks-healing", "formacion"],
+    accent: "#5A7A5A",
+    imagen: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663213129151/vnrXjKIGBRvhMHvB.png",
+  },
   {
     id: "evento-007",
     title: "Retiro Sagrado 13: Rompe la Capa del Estrés Crónico",
@@ -112,8 +135,15 @@ export function getEventsBySource(source: "instituto" | "kshealing"): Event[] {
  * @param source - "instituto" o "kshealing"
  * @returns Array de eventos ordenados por fecha
  */
-export function getUpcomingEvents(source: "instituto" | "kshealing"): Event[] {
-  const filtered = getEventsBySource(source);
+export function getUpcomingEvents(source: "instituto" | "kshealing", now = new Date()): Event[] {
+  // Mantener el evento visible durante todo su día local, incluso desde otros países.
+  const today = new Intl.DateTimeFormat("en-CA", {
+    timeZone: "America/Mexico_City",
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+  }).format(now);
+  const filtered = getEventsBySource(source).filter((event) => (event.endDate ?? event.date) >= today);
   return filtered.sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime());
 }
 

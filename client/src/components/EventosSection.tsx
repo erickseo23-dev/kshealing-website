@@ -2,7 +2,7 @@ import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 import { ArrowRight } from "lucide-react";
-import { eventos } from "@/lib/events";
+import { getUpcomingEvents, formatDate } from "@/lib/eventos";
 
 export default function EventosSection() {
   return (
@@ -18,7 +18,7 @@ export default function EventosSection() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto mb-8">
-          {eventos.slice(0, 3).map((event) => (
+          {getUpcomingEvents("kshealing").slice(0, 3).map((event) => (
             <Card key={event.id} className="overflow-hidden border-border/50 hover:shadow-lg transition-shadow flex flex-col">
               {event.imagen && (
                 <div className="relative h-48 overflow-hidden bg-muted">
@@ -32,26 +32,26 @@ export default function EventosSection() {
               <div className="p-6 flex flex-col flex-grow">
                 <div className="mb-4">
                   <span className="text-xs font-bold text-white bg-primary px-3 py-1 rounded-full">
-                    {event.tipo || "Evento"}
+                    {event.type === "certificacion" ? "Certificación" : event.type === "retiro" ? "Retiro" : event.type === "taller" ? "Taller" : "Evento"}
                   </span>
                 </div>
                 <div className="flex-grow">
-                  <p className="text-sm text-primary font-semibold mb-2">{event.fecha}</p>
+                  <p className="text-sm text-primary font-semibold mb-2">{formatDate(event.date)}</p>
                   <h3 className="font-display text-lg font-bold text-foreground mb-2">
                     {event.title}
                   </h3>
                   <p className="text-sm text-muted-foreground mb-3 flex items-center gap-2">
-                    📍 {event.ubicacion}
+                    📍 {event.location}
                   </p>
                   <p className="text-muted-foreground text-sm">
                     {event.description}
                   </p>
                 </div>
-                <Link href={event.tipo === "Taller" ? "/taller-ks-healing" : event.tipo === "Certificación" ? "/ks-healing" : "/club-retiro-sagrado"}>
+                <a href={event.link}>
                   <Button className="w-full mt-6 bg-primary hover:bg-primary/90 text-white">
                     Más Información
                   </Button>
-                </Link>
+                </a>
               </div>
             </Card>
           ))}
