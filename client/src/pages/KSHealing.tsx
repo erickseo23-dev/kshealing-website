@@ -131,19 +131,19 @@ export default function KSHealing() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 flex-wrap">
-              <a href="https://cursos.institutoascendant.com/offers/7SaCLieS" target="_blank" rel="noopener noreferrer">
-                <Button size="lg" className="font-bold gap-2 text-slate-950" style={{backgroundColor: '#fbbc0e'}}>
-                  Inscríbete Ahora
+              <div>
+                <Button disabled size="lg" className="font-bold gap-2 text-slate-950" style={{backgroundColor: '#fbbc0e'}}>
+                  Inscripciones próximamente
                   <span className="opacity-80 font-normal text-sm">— {prices.full}</span>
                   <ArrowRight size={18} />
                 </Button>
-              </a>
-              <a href="https://cursos.institutoascendant.com/formulario-becas-ascendant-KSHB-8c1bd084-460a-4695-8909-602232c934e7" target="_blank" rel="noopener noreferrer">
-                <Button size="lg" className="font-bold gap-2 text-slate-950 border-0" style={{background: "linear-gradient(135deg, #f5a623 0%, #fbbc0e 100%)"}}>
-                  Solicitar Beca Ascendant®
+              </div>
+              <div>
+                <Button disabled size="lg" className="font-bold gap-2 text-slate-950 border-0" style={{background: "linear-gradient(135deg, #f5a623 0%, #fbbc0e 100%)"}}>
+                  Becas próximamente
                   <span className="opacity-80 font-normal text-sm">— {prices.beca}</span>
                 </Button>
-              </a>
+              </div>
             </div>
 
             <div className="flex flex-wrap gap-6 text-white/80 text-sm mt-12">
@@ -362,19 +362,19 @@ export default function KSHealing() {
 
               <div className="border-t border-primary/20 pt-8">
                 <div className="flex flex-col sm:flex-row gap-4 flex-wrap">
-                  <a href="https://cursos.institutoascendant.com/offers/7SaCLieS" target="_blank" rel="noopener noreferrer">
-                    <Button size="lg" className="font-bold gap-2 text-slate-950" style={{backgroundColor: '#fbbc0e'}}>
-                      Inscríbete Ahora
+                  <div>
+                    <Button disabled size="lg" className="font-bold gap-2 text-slate-950" style={{backgroundColor: '#fbbc0e'}}>
+                      Inscripciones próximamente
                       <span className="opacity-80 font-normal text-sm">— {prices.full}</span>
                       <ArrowRight size={18} />
                     </Button>
-                  </a>
-                  <a href="https://cursos.institutoascendant.com/formulario-becas-ascendant-KSHB-8c1bd084-460a-4695-8909-602232c934e7" target="_blank" rel="noopener noreferrer">
-                    <Button size="lg" className="font-bold gap-2 text-slate-950 border-0" style={{background: "linear-gradient(135deg, #f5a623 0%, #fbbc0e 100%)"}}>
-                      Solicitar Beca Ascendant®
+                  </div>
+                  <div>
+                    <Button disabled size="lg" className="font-bold gap-2 text-slate-950 border-0" style={{background: "linear-gradient(135deg, #f5a623 0%, #fbbc0e 100%)"}}>
+                      Becas próximamente
                       <span className="opacity-80 font-normal text-sm">— {prices.beca}</span>
                     </Button>
-                  </a>
+                  </div>
                 </div>
               </div>
 
@@ -649,19 +649,19 @@ export default function KSHealing() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center flex-wrap">
-              <a href="https://cursos.institutoascendant.com/offers/7SaCLieS" target="_blank" rel="noopener noreferrer">
-                <Button size="lg" className="font-bold gap-2 text-slate-950" style={{backgroundColor: '#fbbc0e'}}>
-                  Inscríbete Ahora
+              <div>
+                <Button disabled size="lg" className="font-bold gap-2 text-slate-950" style={{backgroundColor: '#fbbc0e'}}>
+                  Inscripciones próximamente
                   <span className="opacity-80 font-normal text-sm">— {prices.full}</span>
                   <ArrowRight size={18} />
                 </Button>
-              </a>
-              <a href="https://cursos.institutoascendant.com/formulario-becas-ascendant-KSHB-8c1bd084-460a-4695-8909-602232c934e7" target="_blank" rel="noopener noreferrer">
-                <Button size="lg" className="font-bold gap-2 text-slate-950 border-0" style={{background: "linear-gradient(135deg, #f5a623 0%, #fbbc0e 100%)"}}>
-                  Solicitar Beca Ascendant®
+              </div>
+              <div>
+                <Button disabled size="lg" className="font-bold gap-2 text-slate-950 border-0" style={{background: "linear-gradient(135deg, #f5a623 0%, #fbbc0e 100%)"}}>
+                  Becas próximamente
                   <span className="opacity-80 font-normal text-sm">— {prices.beca}</span>
                 </Button>
-              </a>
+              </div>
             </div>
 
             <p className="text-sm text-muted-foreground mt-8">
